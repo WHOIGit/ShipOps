@@ -1,0 +1,106 @@
+#
+#
+#-----------------------------------------------
+#
+# created for testing parsing of $ME strings
+# t. thiel
+# 20160401
+#
+#-----------------------------------------------
+#--- Abstract Index Table
+#   1   
+#   2   
+#   3   
+#   4   
+#   5   
+#   6   
+#   7   
+#   8   
+#   9   
+#  10   
+#  11   
+#  12   
+#  13   
+#  14   
+#  15   
+#  16   
+#  
+#-----------------------------------------------
+#-----------------------------------------------
+
+[GENERAL]
+ROOT_DIR="/home/tthiel/dslog_test/data"
+#-----------------------------------------------
+#--- PAR - test parsing of $ME strings
+#-----------------------------------------------
+[INPUT_1]
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55602
+
+NUMBER_OF_CSV_PARSE=3
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SSSG_GENERIC"
+PARSE_ABSTRACT_INDEX_1=1
+GENERIC_HEADER_STRING_1="VDVBW"
+GENERIC_DELIMITER_CHARACTER_1=","
+GENERIC_DELIMITER_SKIP_COUNT_1=1
+GENERIC_INDEX_1=0
+GENERIC_DATA_TYPE_1=1
+GENERIC_DATA_PRECISION_1=2
+
+PARSE_DATATYPE_2="SSSG_GENERIC"
+PARSE_ABSTRACT_INDEX_2=2
+GENERIC_HEADER_STRING_2="VDVBW"
+GENERIC_DELIMITER_CHARACTER_2=","
+GENERIC_DELIMITER_SKIP_COUNT_2=4
+GENERIC_INDEX_2=3
+GENERIC_DATA_TYPE_2=1
+GENERIC_DATA_PRECISION_2=2
+
+PARSE_DATATYPE_3="SSSG_GENERIC"
+PARSE_ABSTRACT_INDEX_3=3
+GENERIC_HEADER_STRING_3="VDVBW"
+GENERIC_DELIMITER_CHARACTER_3=","
+GENERIC_DELIMITER_SKIP_COUNT_3=5
+GENERIC_INDEX_3=4
+GENERIC_DATA_TYPE_3=1
+GENERIC_DATA_PRECISION_3=2
+
+#-----------------------------------------------
+[OUTPUT_1]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=10
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="spd10_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=1
+OUTFIELD_HEADER_STRING_1="SPD_A"
+
+OUTFIELD_ABSTRACT_INDEX_2=2
+OUTFIELD_HEADER_STRING_2="SPD_B"
+
+OUTFIELD_ABSTRACT_INDEX_3=3
+OUTFIELD_HEADER_STRING_3="SPD_C"
+
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=3
+
+#DESTINATION_2=0
+#DESTINATION_2_IPADDRESS="127.0.0.1"
+#DESTINATION_2_SOCKET=44445
+
+#-----------------------------------------------
+#-----------------------------------------------

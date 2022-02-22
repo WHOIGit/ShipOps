@@ -1,0 +1,10 @@
+this is a todo list for dsLog
+
+1.   9/12/2011 add in a configuration output
+2.   make sure the serial port stuff really works
+3.   do the GUI so I can see the status outputs
+4.   monitor and report disk space
+5.   log the ini file
+6.   allow addition of new loggers and log dist'n outputs
+7.   allow the ability to put all data into a single file instead of separate files
+8.   put in a polled serial logger
