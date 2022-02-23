@@ -1,0 +1,202 @@
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+General notes:
+
+- svn co svn+ssh://tthiel@sssg11.whoi.edu/usr/local/svn/repos/dsLogCSV/trunk
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+2014-04-23
+Getting rolling again after new zealand trips.
+
+What does code do now:
+udpLogRxThread is launched - it waits for udp messages and then sends an SAS message to main thread if one is received.
+
+Main thread waits for msgs:
+SAS - for each defined prefixString - looks to see if that string is contained in the rcvd string
+    - if it is found then it parses for the integer value following the prefix.
+    - right now it just puts the parsed value into csvDataJunk....
+CSVMSG
+    - looks like a timer is started to send this message every second.
+    - right now it looks like it fors a string which includes the value of csvDataJunk
+    - this string is sent to the network and disk destinations.
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- cleanup csvLogThread.cpp - remove unused code and variables
+- probably svn commit #21
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- Change "thisDescriptor" to either "thisInputDescriptor" or "thisOutputDescriptor"
+- probably svn commit #22
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- eliminate initial output to files (always BAD_DATA)
+- probably svn commit #23
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- generate headers in LOG files
+- probably svn commit #24
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- added "MUST_CONTAIN" capability
+- probably svn commit #25
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- eliminate code to handle unused ini file entries
+- probably svn commit #26
+-----------------------------------------------------------
+- transcribing handwritten notes:
+- allow "UDP" and "FILE" as DESTINATION_TYPE
+- probably svn commit #27
+-----------------------------------------------------------
+2014-05-07
+- elementId to outfieldAbstractIndex
+- elementHeaderString to outfieldHeaderString
+- reorder csv_parse_descriptor_t elements
+- csvAbstractIndex to parseAbstractIndex
+- csvParseDataType to parseDataType
+- svn commit 28
+-----------------------------------------------------------
+2014-05-08
+- eliminate generateHeaders (had created and used USE_FILE_HEADER instead)
+- DESTINATION_TYPE_n change to DESTINATION_n_TYPE
+- replace MAX_N_OF_ELEMENT_ID with MAX_N_OF_ABSTRACT_DATA and MAX_N_OF_OUTFIELD
+- MAX_N_OF_CSV_PARSE change from 16 to 256
+- svn commit #29
+
+- remove dsLogStatusThread.h and dsLogStatusThread.cpp from build
+- remove initialization and display of logging.destinations[] structure from csvLogThread.cpp
+- in dsLogCsv.cpp remove initialization code for several unused variables
+   - input.dataType
+   - input.sourceName
+   - input.filenamePrefix
+   - input.timestampFlag
+   - input.dailyLogfilesFlag
+   - input.serial port info
+   - input.destinations[] info
+- #if out code to initialize variables used for user defined parsing - not yet implemented
+- svn commit #30
+   
+-----------------------------------------------------------
+2014-05-09
+- add MUST_CONTAIN2_n capability.
+- add MUST_NOT_CONTAIN_n capability.
+- add ability to specify output field widths.
+- add delimiter character after date field.
+- add delimiter character after time field.
+- svn commit #31
+
+-----------------------------------------------------------
+2014-05-10
+- added a ton of parsing rules. 
+   - dsLogCsv.h - add to enum
+   - dsLogCsv.cpp - parse for new rules when reading ini file
+   - csvLogThread.cpp - implement parsing of data values.
+   - no testing of new rules.  but it did not break existing stuff.
+-----------------------------------------------------------
+2014-05-27
+- add defines for a bunch more parsing types - but not yet implemented
+- start work to implement calculation of SSSV
+-----------------------------------------------------------
+2014-06-03
+- clean up some warnings in source
+- add " -Wno-unused-but-set-variable" to CFLAGS to supress other new warnings that showed up when working in Ubuntu 14.04.
+- svn commit #35
+-----------------------------------------------------------
+2014-06-05
+- code to setup calculation of SSSV has been written
+- svn commit #36
+-----------------------------------------------------------
+2014-06-06
+- code to perform calculation of SSSV has been written
+- svn commit #37
+-----------------------------------------------------------
+2014-06-07
+- code to setup and perform calculation of wind
+- svn commit #38
+-----------------------------------------------------------
+2014-06-08
+- code to allow control of TRUEWIND output - SPPED, DIRECTION, or BOTH
+- add default column headers for SSSV and TRUEWIND values
+- svn commit #39
+-----------------------------------------------------------
+2014-06-08
+- code to parse additional fields in $GPRMC
+- code to parse $GPRMB, $GPGGA, $GPVTG, $GPZDA
+- svn commit #40
+-----------------------------------------------------------
+2014-06-11
+- code to implement calculating BAROMETER
+- svn commit #41
+-----------------------------------------------------------
+2014-06-11
+- code to implement individual GPRMC date and time fields
+- svn commit #42
+-----------------------------------------------------------
+2014-06-12
+- code to implement MULTIPLE definitions of each calculated value
+- svn commit #43
+-----------------------------------------------------------
+2014-06-12
+- add (intptr_t) cast in dsLogCsv.cpp to eliminate "warning: cast to pointer from integer of different size. [-Wint-to-pointer-cast]"
+- svn commit #44
+-----------------------------------------------------------
+2014-06-12
+- add code to parse calcSSSV.  Add infrastructure for code to parse externally calculated truewind.
+- svn commit #45
+-----------------------------------------------------------
+2014-06-16
+- Fix parsing of salinity. 
+- Add start/stop scripts to repository
+- svn commit #46
+-----------------------------------------------------------
+2014-06-18
+- fix parsing of perl SSV. Change SSSV to SSV.
+- svn commit #47
+-----------------------------------------------------------
+2014-06-20
+- remove "_1" from end of strings defining the PARSE_DATATYPE's.
+- svn commit #48
+-----------------------------------------------------------
+2014-06-23
+- initial effort to add code to allow users to disable individual output_fields
+- svn commit #49
+-----------------------------------------------------------
+2014-06-23
+- finish up code to allow users to disable individual output_fields
+- reinstate mutex in logThisNow in dsLogCsv.cpp (time bomb)
+-    - was seeing output files stepping on one another
+- svn commit #50
+-----------------------------------------------------------
+2014-06-24
+- change all SSSV references to SSV
+- svn commit #51
+-----------------------------------------------------------
+2014-06-25
+- add parsing rules for LAT/LON in DECMIN and DECSEC.
+- svn commit #52
+-----------------------------------------------------------
+2014-06-25
+- Remove '_1' from names of CPD_PARSE_TYPES
+- svn commit #53
+-----------------------------------------------------------
+2014-06-26
+- Add parsing for TSS1, $PASHR, and $VDVBW strings.
+- svn commit #54
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
