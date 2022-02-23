@@ -1,0 +1,516 @@
+#Date, Time_GMT, Dec_Lat, Dec_Lon, SPD, HDT, COG, SOG, WXTP_Ta, WXTS_Ta, WXTP_Pa, WXTS_Pa, WXTP_Ri, WXTS_Ri, WXTP_Rc, WXTS_Rc, WXTP_Dm, WXTS_Dm, WXTP_Sm, WXTS_Sm, WXTP_Ua, WXTS_Ua, WXTP_TS, WXTS_TS, WXTP_TD, WXTS_TD, SWR, LWR, PAR, SBE45S, SBE48T, FLR, SSV, Depth12, Depth35, HdChkSum=00 
+#2013/03/23,00:00:01,-34.900096,-56.202505,000.00,068.7,071.6,0.04,18.8,18.7,1017.4,1017.4,0.0,0.0,83.82,63.73,277,304,0.4,0.6,40.1,40.0,0.40,0.59,342.75,10.99,-10.591,296.5,7.38,28.7496,20.4439,00091.80,1524.37,nan,nan
+#
+#
+#-----------------------------------------------
+#
+# created for running dsLogPostCsv on the R/V Atlantis
+# to create samos files after the fact
+#-----------------------------------------------
+#--- Abstract Index Table
+#   1   Gyrocompass Heading from $HEHDT
+#   2   GPS Latitude from $GPRMC
+#   3   GPS Longitude from $GPRMC
+#   4   GPS COG from $GPRMC
+#   5   GPS SOG from $GPRMC
+#   6   Temperature from SBE48
+#   7   Speed from $VDVBW
+#   8   LWR
+#   9   SWR
+#  10   Temperature from SBE45
+#  11   Conductivity from SBE45
+#  12   Salinity from SBE45
+#  13   Sound velocity from SBE45
+#  14   xCalc SSV perl
+#  15   Fluorometer
+#  16   Knudsen Depth12
+#  17   Knudsen Depth 3.5
+#  18   EM122  Center Depth KIDPT_DEPTH 
+#  19   
+#  20   Port Vaisala Address
+#  21   Port Vaisala Wind Direction
+#  22   Port Vaisala Wind Speed Min
+#  23   Port Vaisala Wind Speed Avg
+#  24   Port Vaisala Wind Speed Max
+#  25   Port Vaisala Temperature
+#  26   Port Vaisala Humidity
+#  27   Port Vaisala Pressure
+#  28   Port Vaisala Rain Accumulation
+#  29   Port Vaisala Rain Intensity
+#  30   Stbd Vaisala Address
+#  31   Stbd Vaisala Wind Direction
+#  32   Stbd Vaisala Wind Speed Min
+#  33   Stbd Vaisala Wind Speed Avg
+#  34   Stbd Vaisala Wind Speed Max
+#  35   Stbd Vaisala Temperature
+#  36   Stbd Vaisala Humidity
+#  37   Stbd Vaisala Pressure
+#  38   Stbd Vaisala Rain Accumulation
+#  39   Stbd Vaisala Rain Intensity
+#  40
+#  41
+#  42   CNAV GPS Latitude from $GPRMC
+#  43   CNAV GPS Longitude from $GPRMC
+#  44   CNAV GPS COG from $GPRMC
+#  45   CNAV GPS SOG from $GPRMC
+#  46   MX512 GPS Latitude from $GPRMC
+#  47   MX512 GPS Longitude from $GPRMC
+#  48   MX512 GPS COG from $GPRMC
+#  49   MX512 GPS SOG from $GPRMC
+#  50
+#  51
+#  52
+#  53
+#  54
+#  60  Coda PASHR  PASHR_HEADING
+#  61  Coda PASHR  PASHR_PITCH
+#  62  Coda PASHR  PASHR_ROLL
+#  63  Coda PASHR  PASHR_HEAVE
+#  64  Coda PASHR  PASHR_ROLL_ACCURACY
+#  65  Coda PASHR  PASHR_PITCH_ACCURACY
+#  66  Coda PASHR  PASHR_HEADING_ACCURACY
+#  67  Coda PASHR  PASHR_IMU_FLAG
+#
+#  70  PHINS HEHDT  PHINS_HEADING
+#  71  PHINS PHTRO  PHTRO_ROLL
+#  72  PHINS PHTRO  PHTRO_PITCH
+#  73  PHINS PHLIN  PHLIN_SURGE_LIN
+#  74  PHINS PHLIN  PHLIN_SWAY_LIN
+#  75  PHINS PHLIN  PHLIN_HEAVE_LIN
+#  76  PHINS PHSPD  PHSPD_SURGE_SPD
+#  77  PHINS PHSPD  PHSPD_SWAY_SPD
+#  78  PHINS PHSPD  PHSPD_HEAVE_SPD
+#  79  PHINS PHTRO  PHTRO_PITCH_FRAME
+#  80  PHINS PHTRO  PHTRO_ROLL_FRAME
+#
+#  90  SCIGPS GPRMC GPRMC_LAT_NOAA
+#  91  SCIGPS GPRMC GPRMC_LON_NOAA
+#  92  SCIGPS GPGGA GPGGA_LAT_NOAA
+#  93  SCIGPS GPGGA GPGGA_LON_NOAA
+#  94  SCIGPS GPRMC GPRMC_COG_SAMOS
+#  95  GYRO   HEHDT HEHDT_GYROHDG_SAMOS
+#
+#
+#
+#
+#
+#  
+#-----------------------------------------------
+#-----------------------------------------------
+
+[GENERAL]
+
+INPUT_DATA_DIR="/underway/raw/"
+ROOT_DIR="/underway/proc/"
+
+# To create a  single output file for entire date range set to 
+# SINGLE_LOGFILE_FLAG=1
+# To create daily or hourly output file set to 0
+
+SINGLE_LOGFILE_FLAG=0
+
+#-----------------------------------------------
+#--- POSTCSV - controls post processing mode
+#-----------------------------------------------
+[POSTCSV]
+START_YEAR=2015
+START_MONTH=2
+START_DAY=04
+START_HOUR=0
+START_MINUTE=0
+START_SECOND=0
+
+END_YEAR=2015
+END_MONTH=2
+END_DAY=04
+END_HOUR=23
+END_MINUTE=59
+END_SECOND=0
+
+
+#-----------------------------------------------
+#--- CNAV - dslog
+#-----------------------------------------------
+[INPUT_1]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="GPS"
+
+NUMBER_OF_CSV_PARSE=5
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="GPRMC_LAT_DECDEG"
+PARSE_ABSTRACT_INDEX_1=2
+OUTPUT_PRECISION=6
+
+PARSE_DATATYPE_2="GPRMC_LON_DECDEG"
+PARSE_ABSTRACT_INDEX_2=3
+
+PARSE_DATATYPE_3="GPRMC_SOG"
+PARSE_ABSTRACT_INDEX_3=5
+
+PARSE_DATATYPE_4="GPRMC_COG_SAMOS"
+PARSE_ABSTRACT_INDEX_4=94
+
+PARSE_DATATYPE_5="GPRMC_COG"
+PARSE_ABSTRACT_INDEX_5=4
+
+
+#-----------------------------------------------
+#--- Heading Data - dslog
+#-----------------------------------------------
+[INPUT_2]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="HDT"
+
+NUMBER_OF_CSV_PARSE=2
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="HEHDT_HDG_SAMOS"
+PARSE_ABSTRACT_INDEX_1=95
+
+PARSE_DATATYPE_2="HEHDT_HDG"
+PARSE_ABSTRACT_INDEX_2=1
+
+
+#-----------------------------------------------
+# Port Vaisala Sensor Data
+#-----------------------------------------------
+[INPUT_3]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="XTP"
+
+NUMBER_OF_CSV_PARSE=8
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+
+# Port Vai Address
+PARSE_DATATYPE_1="VAI_ADDRESS"
+PARSE_ABSTRACT_INDEX_1=20
+MUST_CONTAIN_1="WXTP"
+
+# Port Vai Wind Direction
+PARSE_DATATYPE_2="VAI_WIND_DIRECTION_AVG"
+PARSE_ABSTRACT_INDEX_2=21
+MUST_CONTAIN_2="WXTP"
+
+# Port Vai Wind Speed Avg
+PARSE_DATATYPE_3="VAI_WIND_SPEED_AVG"
+PARSE_ABSTRACT_INDEX_3=23
+MUST_CONTAIN_3="WXTP"
+
+# Port Vai Temperature
+PARSE_DATATYPE_4="VAI_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_4=25
+MUST_CONTAIN_4="WXTP"
+
+# Port Vai Humidity
+PARSE_DATATYPE_5="VAI_HUMIDITY"
+PARSE_ABSTRACT_INDEX_5=26
+MUST_CONTAIN_5="WXTP"
+
+# Port Vai Pressure
+PARSE_DATATYPE_6="VAI_PRESSURE"
+PARSE_ABSTRACT_INDEX_6=27
+MUST_CONTAIN_6="WXTP"
+
+# Port Vai Rain Accumulation
+PARSE_DATATYPE_7="VAI_RAIN_ACCUMULATION"
+PARSE_ABSTRACT_INDEX_7=28
+MUST_CONTAIN_7="WXTP"
+
+# Port Vai Rain Intensity
+PARSE_DATATYPE_8="VAI_RAIN_INTENSITY"
+PARSE_ABSTRACT_INDEX_8=29
+MUST_CONTAIN_8="WXTP"
+
+#-----------------------------------------------
+# Stbd Vaisala Sensor Data
+#-----------------------------------------------
+[INPUT_4]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="XTS"
+
+NUMBER_OF_CSV_PARSE=8
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+
+# Stbd Vai Address
+PARSE_DATATYPE_1="VAI_ADDRESS"
+PARSE_ABSTRACT_INDEX_1=30
+MUST_CONTAIN_1="WXTS"
+
+# Stbd Vai Wind Direction
+PARSE_DATATYPE_2="VAI_WIND_DIRECTION_AVG"
+PARSE_ABSTRACT_INDEX_2=31
+MUST_CONTAIN_2="WXTS"
+
+# Stbd Vai Wind Speed Avg
+PARSE_DATATYPE_3="VAI_WIND_SPEED_AVG"
+PARSE_ABSTRACT_INDEX_3=33
+MUST_CONTAIN_3="WXTS"
+
+# Stbd Vai Temperature
+PARSE_DATATYPE_4="VAI_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_4=35
+MUST_CONTAIN_4="WXTS"
+
+# Stbd Vai Humidity
+PARSE_DATATYPE_5="VAI_HUMIDITY"
+PARSE_ABSTRACT_INDEX_5=36
+MUST_CONTAIN_5="WXTS"
+
+# Stbd Vai Pressure
+PARSE_DATATYPE_6="VAI_PRESSURE"
+PARSE_ABSTRACT_INDEX_6=37
+MUST_CONTAIN_6="WXTS"
+
+# Stbd Vai Rain Accumulation
+PARSE_DATATYPE_7="VAI_RAIN_ACCUMULATION"
+PARSE_ABSTRACT_INDEX_7=38
+MUST_CONTAIN_7="WXTS"
+
+# Stbd Vai Rain Intensity
+PARSE_DATATYPE_8="VAI_RAIN_INTENSITY"
+PARSE_ABSTRACT_INDEX_8=39
+MUST_CONTAIN_8="WXTS"
+
+
+#-----------------------------------------------
+# SBE45
+#-----------------------------------------------
+[INPUT_5]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="SBE45"
+
+NUMBER_OF_CSV_PARSE=2
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+
+PARSE_DATATYPE_1="SBE45_CONDUCTIVITY"
+PARSE_ABSTRACT_INDEX_1=11
+
+PARSE_DATATYPE_2="SBE45_SALINITY"
+PARSE_ABSTRACT_INDEX_2=12
+
+#-----------------------------------------------
+# SBE48
+#-----------------------------------------------
+[INPUT_6]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="SBE48"
+
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SBE48_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_1=6
+
+#-----------------------------------------------
+# LWR
+#-----------------------------------------------
+[INPUT_7]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="LWR"
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+PARSE_DATATYPE_1="LWR_RADIATION"
+PARSE_ABSTRACT_INDEX_1=8
+
+#-----------------------------------------------
+# SWR
+#-----------------------------------------------
+[INPUT_8]
+INFILE_PREFIX="at"
+INFILE_EXTENSION="SWR"
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SWR_RADIATION"
+PARSE_ABSTRACT_INDEX_1=9
+
+
+
+### Quanties Calculated by dsLogCsv ###
+
+#-----------------------------------------------
+# PORT BAROMETER
+[BAROMETER_1]
+RAW_PRESSURE_ABSTRACT_INDEX=27
+SENSOR_HEIGHT=20.6
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# STBD BAROMETER
+[BAROMETER_2]
+RAW_PRESSURE_ABSTRACT_INDEX=37
+SENSOR_HEIGHT=20.6
+ 
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# Port TRUEWIND
+[TRUEWIND_1]
+WIND_DIR_ABSTRACT_INDEX=21
+WIND_SPEED_ABSTRACT_INDEX=23
+COG_ABSTRACT_INDEX=4
+SOG_ABSTRACT_INDEX=5
+HDG_ABSTRACT_INDEX=1
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# Stbd TRUEWIND
+[TRUEWIND_2]
+WIND_DIR_ABSTRACT_INDEX=31
+WIND_SPEED_ABSTRACT_INDEX=33
+COG_ABSTRACT_INDEX=4
+SOG_ABSTRACT_INDEX=5
+HDG_ABSTRACT_INDEX=1
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+#  Output 1 SAMOS file
+#-------------------------------------------------
+
+[OUTPUT_1]
+
+# ENABLE OUTPUT
+OUTPUT_ENABLE=1
+
+USE_FILE_HEADER=0
+
+# specify OUTPUT FORMAT for SAMOS
+OUTPUT_FILE_FORMAT="SAMOS"
+
+# specify ship call sign
+SHIP_CALL_SIGN="KAQP"
+
+#specify ship name
+SHIP_NAME="ATLANTIS"
+
+
+
+# specify output interval
+OUTPUT_INTERVAL=60
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="zz_sam_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=28
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="LA"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="LO"
+
+OUTFIELD_ABSTRACT_INDEX_3=5
+OUTFIELD_HEADER_STRING_3="SOG"
+
+OUTFIELD_ABSTRACT_INDEX_4=94
+OUTFIELD_HEADER_STRING_4="COG"
+
+OUTFIELD_ABSTRACT_INDEX_5=95
+OUTFIELD_HEADER_STRING_5="GY"
+
+OUTFIELD_ABSTRACT_INDEX_6=9
+OUTFIELD_HEADER_STRING_6="SWR"
+
+OUTFIELD_ABSTRACT_INDEX_7=8
+OUTFIELD_HEADER_STRING_7="LWR"
+
+OUTFIELD_ABSTRACT_INDEX_8=6
+OUTFIELD_HEADER_STRING_8="SST"
+
+OUTFIELD_ABSTRACT_INDEX_9=11
+OUTFIELD_HEADER_STRING_9="SSC"
+
+OUTFIELD_ABSTRACT_INDEX_10=12
+OUTFIELD_HEADER_STRING_10="SAL"
+
+OUTFIELD_TYPE_11="TRUEWIND_DIRECTION_2"
+OUTFIELD_HEADER_STRING_11="WSTD"
+
+OUTFIELD_TYPE_12="TRUEWIND_SPEED_2"
+OUTFIELD_HEADER_STRING_12="WSTS"
+
+
+OUTFIELD_ABSTRACT_INDEX_13=35
+OUTFIELD_HEADER_STRING_13="WSAT"
+
+OUTFIELD_TYPE_14="BAROMETER_2"
+OUTFIELD_HEADER_STRING_14="WSBP"
+
+OUTFIELD_ABSTRACT_INDEX_15=36
+OUTFIELD_HEADER_STRING_15="WSRH"
+
+OUTFIELD_ABSTRACT_INDEX_16=38
+OUTFIELD_HEADER_STRING_16="WSRC"
+
+OUTFIELD_ABSTRACT_INDEX_17=39
+OUTFIELD_HEADER_STRING_17="WSRI"
+
+OUTFIELD_ABSTRACT_INDEX_18=31
+OUTFIELD_HEADER_STRING_18="WSRD"
+
+OUTFIELD_ABSTRACT_INDEX_19=33
+OUTFIELD_HEADER_STRING_19="WSRS"
+
+OUTFIELD_TYPE_20="TRUEWIND_DIRECTION_1"
+OUTFIELD_HEADER_STRING_20="WPTD"
+
+OUTFIELD_TYPE_21="TRUEWIND_SPEED_1"
+OUTFIELD_HEADER_STRING_21="WPTS"
+
+
+OUTFIELD_ABSTRACT_INDEX_22=25
+OUTFIELD_HEADER_STRING_22="WPAT"
+
+OUTFIELD_TYPE_23="BAROMETER_1"
+OUTFIELD_HEADER_STRING_23="WPBP"
+
+OUTFIELD_ABSTRACT_INDEX_24=26
+OUTFIELD_HEADER_STRING_24="WPRH"
+
+OUTFIELD_ABSTRACT_INDEX_25=28
+OUTFIELD_HEADER_STRING_25="WPRC"
+
+OUTFIELD_ABSTRACT_INDEX_26=29
+OUTFIELD_HEADER_STRING_26="WPRI"
+
+OUTFIELD_ABSTRACT_INDEX_27=21
+OUTFIELD_HEADER_STRING_27="WPRD"
+
+OUTFIELD_ABSTRACT_INDEX_28=23
+OUTFIELD_HEADER_STRING_28="WPRS"
+
+#---------------------------------------
