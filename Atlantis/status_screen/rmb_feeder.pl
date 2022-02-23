@@ -1,0 +1,200 @@
+#!/usr/bin/perl
+#
+#   20110516       javery
+#                  non whoi ships port messages are raw: they don't have the format of
+#                  the calliope messages, with |header time message| separated by white space.
+#                  So they need to be "cooked" to get them from raw to calliope form.
+#
+#   20110527       javery
+#                  added --multi
+#                       this assumes two or more strings "seperated by "/n" aka newline
+#                       use join or split to join the line of split it
+#                        --multi join
+#                        --multi split
+#   20130417       lstolp
+#                  add options for udp data sent from dsLog
+#
+#   20130126       lstolp
+#                  did a bunch of clean up similar to rmc_feeder.pl
+#   20130129       ams and lws
+#                  -moved database connect and disconnect around
+#                  -now fuser shows the the database as not constantly open
+#                  
+#   20170613       lstolp
+#                  - updated for tmpfs for db
+
+
+
+
+use strict;
+use warnings;
+
+use DBI;
+use IO::Socket::INET;
+use Getopt::Long;
+
+$| = 1;
+
+my $debug = 1;
+
+# udp port.. this needs to be changed in dslog 
+my $port = "55704";
+
+# sqlite db setup
+my $db_name = "/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db";
+my $username;
+my $password;
+my $type;
+my $udp_type;
+
+# misc variables to initialize
+my $mesg;
+my @strings;
+my $field1;
+my $field2;
+my @data;
+my $data;
+my %rmb = ();
+my ($gps, $i, $gprmb, $spd, $distance, $ttwp);
+my (@keys, $key);
+
+# get options from the command line 
+GetOptions('debug' => \$debug, 'port=s' => \$port, 'database=s' => \$db_name,
+         'udptype=s' => \$udp_type,);
+
+print "Debug: $debug port: $port \n database: $db_name \n",
+        "udptype: $udp_type \n" if $debug;
+
+
+my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
+                { PrintError => 0} ) || die "Cannot connect.";
+
+my $table_result = $dbh->do( "CREATE TABLE latest_data (
+              header  VARCHAR(10) PRIMARY KEY ,
+              udp_time VARCHAR (10),
+              data VARCHAR (180),
+              timeEnter VARCHAR(120))" );
+
+
+# write immediately to the database
+$dbh->do("PRAGMA synchronous = OFF");
+
+# disconnect from the database before starting loop
+$dbh->disconnect();
+
+
+        my $sock = IO::Socket::INET->new(Proto => 'udp', LocalPort => $port, Reuse => 1 );
+while (1) {
+ 
+        $sock->recv($mesg, 180);
+        print STDERR "\n\n Start of loop input message:\n $mesg" if $debug;
+
+          if ($mesg =~ /\$GPRMB/)
+           {
+           print "found \$GPRMB\n" if $debug;
+           @strings = split ("_", $mesg);
+           $field1 = $strings[0];
+           print "\$strings[0] = $strings[0]\n" if $debug;
+           @data = split (",", $strings[0]);
+           $gps = shift @data;
+           print "\@data = @data\n" if $debug;
+           my @gprmb = qw /status error steer orgid destid dlat latd dlon lond DTWP bearing velocity alarm/;
+
+           $i = 0;
+            foreach $gprmb (@gprmb)
+            {
+              $rmb{$gprmb} = $data[$i];
+              $i++;
+            }
+
+       # calculate time to waypoint TTWP
+       # added if/else loop for when on station or speed is negative, otherwise barfs.
+       
+       $spd = $rmb{velocity};
+
+print STDERR "\n\n The value of velocity is:   *$rmb{velocity}*\n" if $debug;
+print STDERR "\n\n The value of spd is: *$spd*\n" if $debug;
+
+       $distance = $rmb{DTWP};
+ 
+	if ($spd <= 0) {
+		$rmb{TTWP} = $spd;    
+	
+my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
+                { PrintError => 0} ) || die "Cannot connect.";
+
+my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT ON latest_data
+        BEGIN
+            UPDATE latest_data SET timeEnter = strftime('%s', 'now')
+                        WHERE rowid = new.rowid;
+        END");    
+
+	    @keys = keys %rmb;
+            foreach $key (@keys)
+            {			
+              	if ($key eq "DTWP")
+              	{
+              	$dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              	VALUES ('$key', 'time', 'on station')");
+              	}
+             	if ($key eq "TTWP")
+              	{
+              	$dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              	VALUES ('$key', 'time', 'on station')");
+              	}
+			
+	   }
+
+  # write immediately to the database
+  $dbh->do("PRAGMA synchronous = OFF");
+  $dbh->disconnect();
+	}
+	else {
+       $ttwp = sprintf("%.2f",$distance / $spd);        
+       print "\$ttwp = $ttwp\n" if $debug;
+
+       $rmb{TTWP} = $ttwp;
+       
+      while ( my ($key, $value) = each(%rmb) ) {
+        print "$key => $value\n" if $debug;
+        }
+
+my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
+                { PrintError => 0} ) || die "Cannot connect.";
+
+my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT ON latest_data
+        BEGIN
+            UPDATE latest_data SET timeEnter = strftime('%s', 'now')
+                        WHERE rowid = new.rowid;
+        END");    
+
+
+       @keys = keys %rmb;
+         foreach $key (@keys)
+             {
+              if ($key eq "DTWP")
+              {       
+              $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              VALUES ('$key', '$field1', '$rmb{DTWP}')");
+              } 
+             if ($key eq "TTWP")
+              { 
+              $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              VALUES ('$key', '$field1', '$rmb{TTWP}')");
+              }    
+
+             } 
+
+  # write immediately to the database
+  $dbh->do("PRAGMA synchronous = OFF");
+  $dbh->disconnect();
+     
+   }
+
+# added sleep
+#  sleep 1;
+
+          }  else { print "NOT GPRMB\n" if $debug };
+  }  # close infinite while loop
+
+     close($sock);
