@@ -1,0 +1,254 @@
+[global]
+Theme = whoi
+port = 8080
+smtp host = ftp.tioga.whoi.edu
+Welcome title = <img src ="sm_whoi.jpg"><font size=5 color=black> Tioga's Elog</font>
+Group SSSG_equipment = CTD, Knudsen, ADCP, met_tower, xbt, uncontaminated_salt_water, ese_clock, wiring 
+Group Ship_equipment = Winches, Gyro, GPS, Power
+Group LAN_and_WAN = Network, Cisco_routers, SWAP
+Group Computers = computers
+Group Cruises = 2010
+
+Locked attributes = Revisions, Cruise,  Latitude,  Longitude
+
+############# SSSG Equipment  ######################################
+[CTD]
+Theme = whoi
+Comment =  Seabird 911+ system and sensors
+Attributes = Author, Cruise, Part, S/N, cal date, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+
+MOptions Part = CTD, CTD Sensor, Pylon, DeckUnit, Bottle
+MOptions Type = Routine, Problem, Problem Fixed, Configuration, Other
+Options Category = General, Hardware, Software, Other
+Extendable Options = Category
+Required Attributes = Author, S/N, cal date 
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, S/N, Type
+
+[Knudsen]
+Theme = whoi
+Comment = Knudsen: 33 kHz & 200 kHz 320B/R (S/N: K2K-04-0143)
+Attributes = Author, Cruise, S/N, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Options Type = Routine, Software Installation, Problem, Problem Fixed, Configuration, Other
+Options Category = General, Hardware, Software, Network, Other
+Extendable Options = Category
+Required Attributes = Author, S/N, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, S/N, Type
+
+[ADCP]
+Theme = whoi
+Comment =  Acoustic Doppler Current Profiler
+Attributes = Author, Cruise, S/N, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Options Type = Routine, Software Installation, Problem, Problem Fixed, Configuration, Other
+Options Category = General, Hardware, Software, Network, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, S/N, Type
+
+[met_tower]
+Theme = whoi
+Comment =  met_tower
+Attributes = Author, Cruise, Sensor,  S/N, cal date, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Options Sensor = Wind_WS425, Honeywell(Baro), Temp_VaisalaHMP45D, WTX520{1}
+{1} ROptions S/N = G0410026
+Options Type = Routine, Software Installation, Problem Fixed, Configuration, Other, install, calibration
+Extendable Options = Type
+Required Attributes = Author, S/N, cal date, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, S/N, Type
+
+[xbt]
+Theme = whoi
+Comment =  xbt, xbt launcher
+Attributes = Author, Cruise,  S/N, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Options Type = Routine, Software Installation, Problem Fixed, Configuration, Other
+Options Category = General, Hardware, Software, Network, Other
+Extendable Options = Category
+Required Attributes = Author, S/N, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, S/N, Type
+
+[uncontaminated_salt_water]
+Theme = whoi
+Comment = Plumbing and sensors
+Attributes = Author, Cruise, Sensor,  S/N, cal date, Category, Type, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Moptions Sensor = Fluorometer, SBE45, SBE48,pump,flowmeter 
+Options Category = General, Hardware, Software, Network, Plumbing, notes, Other, Replaced for Calibration, installed
+Options Type = Routine, Software Installation, Problem Fixed, Configuration, Calibration, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Sensor, S/N, Type
+
+[ese_clock]
+Theme = whoi
+Comment = ese satellite clocks
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Attributes = Author, Cruise, S/N, Type, Category, Subject
+MOptions Type = clock, serial, antenna, Other
+Options Category = problem, problem fixed, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+[wiring]
+Theme = whoi
+Comment = science wiring includig schematics
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Attributes = Author, Cruise,  Type, Category, Subject
+MOptions Type = schematic, notes, rs232, ethernet, antenna, Other
+Options Category = problem, problem_fix, documentation
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+##################  Ship's equipment  ##########################
+
+[Winches]
+Theme = whoi
+Comment = Winches and Wires
+Attributes = Author, Cruise, Type, Category, Subject
+Options Type = Winch, Wire, Slip Ring, Other
+Options Category = Problem, Problem Fixed, Hardware, Software, Network, Configuration, Other, .322 termination, Wire Replacement
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+[Gyro]
+Theme = whoi
+Comment = Gyro
+Attributes = Author, Cruise, Type, Category, Subject
+Options Type = Routine, Problem , Problem Fixed, Configuration, Other
+Extendable Options = Type
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+[GPS]
+Theme = whoi
+Comment = GPS
+Attributes = Author, Cruise, Type, Category, Subject
+Moptions Type = Garmin, Garmin 19XHVS, Furuno, Moxa
+MOptions Category = Problem, Problem fixed, Network, Configuration, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+[Power]
+Theme = whoi
+Comment = Ships power 
+Attributes = Author, Cruise, Type, Category, Subject
+Moptions Type = Inverter, Battery, Science_Rack, Other
+MOptions Category = Install, Problem, Problem fixed, Notes, Configuration, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+
+##########LAN_and_WAN
+
+[Network]
+Theme = whoi
+Comment = Ship Network
+Attributes = Author, Cruise, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+MOptions Type = FBB, Physical, Wireless, LAN, Cisco_Router, Other
+Options Category = General, Configuration, Problem, Problem fixed, notes
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+[SWAP]
+Theme = whoi
+Comment =  SWAP
+Attributes = Author, Cruise, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+MOptions Type = antenna, radio, OS, ethernet
+MOptions Category = General, Hardware, Software, Network, Problem, Problem Fixed, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+
+
+################ Computers
+
+[computers]
+Theme = whoi
+Comment = Computers
+Attributes = Author, Cruise, Computer, Type, Category, Subject
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+MOptions Computer = ftp, athena, adcp, knudsen, ctd, science, currents, tidatalog, r2rti01
+MOptions Type = Routine, Problem, Problem Fixed, Configuration, notes, Other
+MOptions Category = General, Hardware, Software, Network, notes, Other
+Extendable Options = Category
+Required Attributes = Author, Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Type
+
+
+
+############## Cruises
+
+[2010]
+Theme = whoi
+
+Comment = R/V Tioga
+Attributes = Event, Cruise, Station, Event-Type, Event-Activity, GPS_Time, Latitude, Longitude, Depth (meters), Author, Revisions, Comment
+
+
+Locked attributes = Revisions, Event, Cruise, GPS_Time, Latitude,  Longitude
+Subst on Edit Revisions = $Revisions<br>$date by $author
+Subst Event = OC462%Y%M###
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)
+Subst GPS_Time = $shell(/usr/local/elog/scripts/get_gps_latlon -o gps_time -p 55150)
+Subst Latitude = $shell(/usr/local/elog/scripts/get_gps_latlon -o lat -p 55150)
+Subst Longitude = $shell(/usr/local/elog/scripts/get_gps_latlon -o lon -p 55150)
+
+
+Options Event-Type = MET{6}, ADCP{2}, CTD{1}, Mooring{4}, Echosounder{2}, TSG{2}, Winch{3}, Trawl{3}, XBT{5}, Other
+{1} MOptions Event-Activity = Station:Deployed, Station:Bottom, Station:Recovered, Station:Abort, Station:Other
+{2} MOptions Event-Activity = Line:Start, Line:End, Line:Other, Line:Abort, Station
+{3} MOptions Event-Activity = Power:On, Power:Off, Max:Tenstion, Max:Speed
+{4} MOptions Event-Activity = Station:Arrive, Station:Release, Station:Surface, Station:OnBoard, Station:AnchorAway
+{5} MOptions Event-Activity = Station:Arrive, Station:Released, Station:Cut, Station:Abort
+{6} MOptions Event-Activity = Wind, Temp/humi, barometer 
+
+Subst Author = $author from $remote_host
+
+Required Attributes = Author, Event-Type
+Page Title = ELOG - $subject
+Reverse sort = 1
+Quick filter = Date, Event-Type, Event-Activity
+
+
