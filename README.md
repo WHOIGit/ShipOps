@@ -13,3 +13,4 @@
 - dsLog ini files reside under /home/dslog
 - Perl scripts reside under /usr/lib/cgi-bin/db_driven_data/status_screen on dockti.whoi.edu
 - elog scripts and config data reside under /usr/local/elog
+- elog source resides under /usr/local/src/elog-3.1.4/src

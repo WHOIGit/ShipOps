@@ -1,0 +1,1 @@
+#define GIT_REVISION "Wed Sep 26 12:02:28 2018 +0200 - 966e3dd"
