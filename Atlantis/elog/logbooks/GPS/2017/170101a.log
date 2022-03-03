@@ -1,0 +1,43 @@
+$@MID@$: 30
+Date: Sun, 01 Jan 2017 18:51:00 +0000
+Author: AH
+Type: Firmware
+gps: 
+Category: General Problem
+Subject: LEAP SECOND & FIRMWARE/SOFTWARE UPGRADES
+Cruise: at37-07
+Attachment: 170106_120944_solution_control.png,170108_123135_DP_GGA.png
+Encoding: HTML
+========================================
+<p>After the Leap Second was initiated by CNAV we lost our GGA string.&nbsp; Upon investigation I (Allison) found that the string was coming out of the receiver, but not the ports of the C-Navigator (i.e. the bridge feed still had GGA, but the science feed and others did not).&nbsp; I noted the C-Navigator software version and I emailed CNAV and Robbie for help.</p>
+<p>I switched the science feed over to the 1850 and decided to wait until the next day for responses to email (holiday weekend).</p>
+<p>Robbie downloaded the latest C-Navigator II software (version 6.3.4 - <var>our old version was 6.2.12)<big><samp>.&nbsp;&nbsp;</samp></big></var></p>
+<p>CNAV told me to Enable the DP GGA (I could not follow their directions exactly, but I sent screenshots of what I did).</p>
+<p>When I went up to do these items, I noted that the GGA string was coming in.&nbsp; Since we'd not updated the software for a while on the Navigator, and we are presently on a transit (good time to do), I decided to do that anyway.&nbsp; I upgraded the software to SW version 6.3.4.&nbsp; When I restarted the Navigator it gave me a message &quot;this receiver is running an older firmware version.&nbsp; Please upgrade the receiver to version 3.6.9 or later.&quot;&nbsp; So, I proceeded to upgrade the receiver firmware. to v3.6.9.0.&nbsp; Again, initially, the GGA string came back.&nbsp; However, I reboot the C-Navigator again and it once more disappeared.&nbsp; I relayed the problem to CNAV and they said,</p>
+<p>&quot;Also if you are able to try press menu&gt;&gt;C-Nav3050&gt;&gt;next page then restart.<br />
+Once there choose clear ephemeris and almanac.<br />
+<br />
+Once done it will take about 20 minutes for the receiver to start navigating again but the output should come back<br />
+functioning correctly again.&quot;</p>
+<p>So I tried that.&nbsp; So far it has been over an hour.&nbsp; All the other strings are coming through fine on port 3.</p>
+<p>CONTINUED ****</p>
+<p>The problem seems to be related to the number of strings being output.&nbsp; I was experimenting and turned off the GLL and the GGA came back.&nbsp; I was instructed:</p>
+<p>&quot;&gt; &gt; I saw in one of the screen shots that you had five messages enabled to output,can you disable the standard GGA message on those<br />
+&gt; &gt; settings and enable the GLL message and also leave DP GGA on to see if it helps your issue.&quot;</p>
+<p>which I did - that did not solve it.&nbsp; I have sent data files from just before and just after the leap second from port 3.&nbsp; I also sent the snapshot they described:</p>
+<p>&gt; &gt; C-NaviGator II<br />
+&gt; &gt; *&nbsp; Insert a USB stick into an available USB port on the C-NaviGator.<br />
+&gt; &gt; *&nbsp; Select Menu &gt;&gt; File &gt;&gt; Take Snapshot.<br />
+&gt; &gt; *&nbsp; Tap to highlight/select the USB stick, then press the Take Snapshot button.<br />
+&gt; &gt; *&nbsp; To retrieve the Snapshot file, remove the USB stick from the C-NaviGator and insert it in a PC.<br />
+&gt; &gt; *&nbsp; Navigate to the cnav/snapshot directory on the thumbdrive.<br />
+&gt; &gt; *&nbsp; The file can be viewed in a web browser or emailed to C-Nav Support for troubleshooting purposes.</p>
+<p>CONTINUED AGAIN ****</p>
+<p>2-Jan-2017 the CNAV support instructed me:</p>
+<h2>2) In Solution Control,<br />
+&nbsp;&nbsp;&nbsp;&nbsp; Try change &quot;Monitoring Data Rate&quot; from 2 to 1Hz/sec.<br />
+&nbsp;</h2>
+<p>This solution worked!!!!&nbsp;&nbsp; I still need to check the output from all ports to verify, reboot the C-Navigator to make sure it comes back okay, and check the system periodically through the day in order to make sure it is functioning properly.</p>
+<p>CONTINUED:</p>
+<p>I have now checked the feed directly out of port 3, the feed coming into the sonardyne, the feed coming into the em122 tru, the feed coming into the sssg phins, the feed coming out of the CNAV receiver COM2.&nbsp; I did not check the ship phins - but it is on the same feed as the sssg phins.&nbsp; Also of note:&nbsp; there were several more strings turned on coming out of the C-Navigator port 2 than are listed on the configuration sheet - do we need GLL &amp; VTG on this port???</p>
+<p>I also rebooted the C-Navigator and when it came back up all the strings from port 3 were there.&nbsp;</p>

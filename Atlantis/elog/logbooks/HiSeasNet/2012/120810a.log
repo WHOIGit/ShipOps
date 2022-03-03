@@ -1,0 +1,16 @@
+$@MID@$: 18
+Date: Fri, 10 Aug 2012 10:54:21 +0000
+Author: lstolp
+S/N: expand accelerator
+Type: Configuration
+Component: accelerator
+Subject: OS upgrade
+Cruise: at21-05
+Attachment: 
+Encoding: HTML
+========================================
+<p>upgraded flash:</p>
+<p>OLD: Accelerator OS6.1(0)&nbsp; Build 7.39&nbsp; 128 MB</p>
+<p>NEW: Accleraor OS7.0.1 Build 318&nbsp; 1GB</p>
+<p>&nbsp;</p>
+<p>I was unable to download the old configuration because I did not know the password</p>

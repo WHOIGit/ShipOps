@@ -1,0 +1,27 @@
+$@MID@$: 10
+Date: Wed, 06 Jul 2011 10:52:23 +0000
+Author: AH
+S/N: 
+Type: General Problem
+Component: other
+Subject: FTP Comm Port problem  /dev/ttyS0
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>Copy of email to Laura regarding one of the Comm Ports on ftp not working (the one that should be /dev/ttyS0)</p>
+<p>&nbsp;</p>
+<p>I fixed the .minirc. files so they match up.&nbsp; So, it is still <br />
+&gt;minicom hiseasnet&nbsp;&nbsp; <br />
+to get to the Cisco 2900 (that is presently in charge).&nbsp; However, at2 is&nbsp; <br />
+plugged into what I assume to be /dev/ttyS0 and I can't talk to it.&nbsp; It&nbsp;&nbsp; <br />
+works in a different device (meaning it is not the router).&nbsp; I tried <br />
+plugging a different router into /dev/ttyS0 and got nothing.&nbsp; I also tried<br />
+putting in a gps string and using minicom and then using the &quot;screen&quot; <br />
+command and got nothing.&nbsp; In other words, I think that Comm Port is not&nbsp;&nbsp; <br />
+working (I have identified the other comm port device names- /dev/ttyS1,&nbsp; <br />
+/dev/ttyS2, /dev/ttyS3).&nbsp; Is there something else it could be calling <br />
+itself?&nbsp; Or, do we need to change the card when we get a chance?<br />
+<br />
+<br />
+&nbsp;</p>

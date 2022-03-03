@@ -1,0 +1,12 @@
+$@MID@$: 7
+Date: Fri, 18 Oct 2013 16:40:40 +0000
+Author: rsl
+S/N: na
+Type: General Problem
+Category: Software
+Subject: No nav data collected
+Cruise: at26-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>We noticed that, in spite of all the &quot;lights&quot; being green, the system was not updating.&nbsp; Started a &quot;new&quot; cruise and that fixed it.&nbsp; (at26-06a)&nbsp; Jules speculates that this might have been caused by to many start/stops, or more likely, starting and stopping it too fast.&nbsp; Anyway, not sure, and Jules is aware of the problem.&nbsp; Suggest making sure software is full started before stopping, and vice versa.&nbsp; I don't think we should worry (yet) about how many times we start/stop in a cruise.</p>

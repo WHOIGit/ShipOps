@@ -1,0 +1,146 @@
+USEFUL AVTRAK INFORMATION - 20 July 2015
+
+-----------------------------------------------------------------------------------------------
+
+Settings in properly functioning SSSG Avtrak 0813:
+
+FV:FV2.01.00.05,PV1.03
+Firmware Version 2.01.00.05
+Protocol Version 1.03
+
+
+FS:0813,U001AA3,FL0016,FV2.01.00.05,PV1.03,TDR;MF;DIR;187;184;166,T-10;40;AC0.25,PR61000;AC0.100
+Address 0813
+Unique ID number 001AA3
+Functionality Level 0016 
+Firmware Version 2.01.00.05
+Protocol Version 1.03 
+Transducer - TDR; MF band; DIR type; 187,184,166 supported power levels; T-10 temperature AC accuracy of the sensor is 0.25; Pressure PR61000 accuracy of the sensor is 0.1
+
+VS:0813,WKT1,HPR45,BT1;LI_ION;VLT15.3;IDC-13.5;CAP2.4/80;T20.8,CHG
+Address 0813
+Wake Up Tone enabled
+HiPAP Channel 45
+Battery number 1 
+Battery type Li-ion
+Battery voltage 15.3V
+Current drain -13.5
+Ahr of battery capacity remaining 2.4/percent remaining 80%
+Battery temperature 20.8 
+If battery disconnected should see DIS here in the string
+Battery charger enabled
+
+
+CS:0813,TAT320,BLK100,RXW10000,TXW100,NPL187,SPL187,TPL187,LG40,DET50,CIS0,AT9,EC1,EU0,ME0,RSP0,PPR0
+Address 0813
+Turn around time 320ms
+Blocking delay 100ms
+Receiver wait 10000ms
+Transmitter wait 100ms
+Navigation power level 187dB
+SPL Telemetry start power level 187dB
+Telemetry data power level 187dB
+Linear gain 40dB
+Detection threshold 50%
+CIS channel 0
+Activity time index 9 - Instrument will remain active for 9 hours after last interrogation
+Common interrogate ranging enabled
+HPR400 ranging disabled
+MultiElement support disabled
+Responder mode disabled
+Pulse position replies disabled
+
+SC:0813,U001AA3,WKT1,HPR45,DIS0,CHG1,OV0,CAS0,AUTH
+Address 0813
+Unique Identity 001AA3
+Wake up Tone enabled 
+HiPAP channel 45
+Battery disconnected disabled
+Battery charger enabled
+Override low battery/tilt flag disabled
+Casius calibration mode disabled
+
+FVI:HOST;V2.01.00.05,U25;V01,U3;V1.02.00.00,PV1.03
+
+BV?
+DCMD?
+BST?
+
+PORT:0813,P0;BR9600;CF0,P1;BR9600;CF1
+Address 0813
+Port number 0 (default)
+Baud rate 9600 
+Configuration 0=command port
+Port number 1
+Baud rate 9600
+Configuration 1=modem data (raw binary)
+
+TIME:0813,TD18.39.46;13/01/00
+Address 0813
+Time and Date 18:39:46 Jan 15, 2000 (hmmm, I wonder if we need to set this)
+
+MS:0813,MV1,DD256,MD512,UD512,TS4,P1,MR1,SM1,THR0,ICT32,FQ0,MST0,B512/0
+Address 0813
+Modem version 1 (can't be altered by user)
+Data delay 256ms
+Modem delay 512ms
+Uplink delay 512ms
+Telemetry scheme 4 - RPSKv1 600bps 
+Port 1 (serial port)
+Master retries 1 (not usually changed)
+Subframes missed 1 (not usually changed)
+Threshold subframes 0
+Inter-character time 32ms
+Forward queue 0
+Master mode disabled, ICT and THR values mean nothing
+Buffer size 512kB, 0% used
+
+OWID:0x12;0x000000667a9b
+BATT PCB,000000DB338C,8065-002-01,D2,07/05/2009,LI_ION,STX4,UNPROG
+LPT I/F PCB,00000554D0F0,8065-038-01,B2,23/01/2009
+DSP MOD PCB,0000050A23A2,8050-036-01,B1,13/03/2009
+LPT TX PCB,00000509EF3A,8065-036-03,B4,07/05/2009,MF,DIR,PL193,PL187,PL169
+
+US?
+CKHW?
+
+SENS:0813,T21.69;AG0,PR100.0;AG0
+Address 0813
+Temperature reading 21.69 degC
+Age of reading 0 seconds
+Pressure reading 100.0 kPa
+Age of reading 0 seconds
+
+TEMP:21.54
+PRESS:-1.76
+
+
+---------------------------------------------------------------------------
+MISC NOTES
+
+Power level default = High
+i.e. NPL: Low
+
+Detection threshold default = 15
+i.e. DT: 13
+
+Output of a bench power supply unit to charge should be 24 volts current limited to around 1 amp.
+
+SSSG 0813 settings in Ranger program:
+AVT-813 | Interrogate IIS0813 | Reply CR50800 | TAT 320 | Update 10 secs (needs to be longer than acoustic round trip time)
+
+Al Duester's Notes:
+SC:U001AA5,DIS0 UN-disconnects battery (Note: U001AA5 is Sentry's ID)
+SC:U001AA5,DIS1 disconnects the battery for storage
+SC:U001AA5,CHG0 turns off charger for noise reduction (SSSG has not had to worry about this)
+SC:U001AA5,STR;CS stores CS commands to non-volatile memory, i.e. CS:NPL193   CS:NPL193,SPL193,TPL193,LG40
+
+Not case sensitive
+
+BEN (???) connects battery supply to battery connector?????
+
+
+
+
+
+

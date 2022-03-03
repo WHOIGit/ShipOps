@@ -1,0 +1,31 @@
+$@MID@$: 62
+Date: Fri, 08 May 2015 13:25:02 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Configuration
+Category: Hardware
+S/N: 
+Subject / Summary: TRU - all TX-36 slots should be filled when powering up TRU 
+Cruise: at27-b
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: 6 May 2015 19:43:30 +0200<br />
+From: USLYN_Subsea &lt;km.support.lynnwood@kongsberg.com&gt;<br />
+To: sssg@atlantis.whoi.edu<br />
+Subject: RE: Atlantis em122 (fwd) KM:009440023<br />
+<br />
+<br />
+Allison,<br />
+<br />
+The system needs to see all TX boards for boot. Running the system with an empty slot could cause interference or<br />
+damage to the TRU. It is recommended to keep this board in slot 24, so this board can take the load at boot and when<br />
+pinging.<br />
+<br />
+With Regards<br />
+<br />
+Mr. Tony Dahlheim<br />
+Field Service Engineer<br />
+Kongsberg Underwater Technology Inc<br />
+<br />
+&nbsp;</p>

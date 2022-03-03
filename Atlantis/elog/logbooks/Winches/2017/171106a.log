@@ -1,0 +1,65 @@
+$@MID@$: 64
+Date: Mon, 06 Nov 2017 11:15:54 +0000
+Author: AH
+Type: Slip Ring
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Fix
+Subject: Change Slipring & Re-meg .322" wire
+Cruise: at39-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>The slipring on the foreword winch was exhibiting low insulation resistance values in wet weather (was fine when dry).&nbsp; This problem was discovered prior to the summer lay-up period.&nbsp; However, for unknown reasons, the slipring never got changed.&nbsp; The slipring that was removed was a Meridian Labs slipring with mecca connectors.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is&nbsp;Model:&nbsp; MX0-6/WHOI&nbsp;&nbsp; Serial Number:&nbsp; 7.25&nbsp;</p>
+
+<p>One of the non-meridian type sliprings with mecca connectors has been installed.&nbsp;</p>
+
+<p>I am a little worried that this slipring might not work effectively.&nbsp; I rolled it 180 degrees and found that the mecca connectors had already started twisting on each other.&nbsp; The barrel also seems a little less &quot;slippy&quot; than the meridian sliprings.&nbsp; The meccas come straight out the end of this slipring (parallel to the deck).&nbsp; The connectors on all of the other sliprings we have make a 90 degree angle toward the ground and the connectors come out at the botom of that elbox (perpendicular to the deck).&nbsp; I adding a hose clamp to the barrel so that, on the bottom of the barrel (side facing the deck), it can be loosely wired to the winch frame (allowing it to spin about 90 degrees each direction, and preventing it from rotating completely around).</p>
+
+<p>Also - the SS cover (that surrounds the moving slipring to prevent someone walking into it) does not fit with this slipring.&nbsp; So, it remains on the list - make some sort of ~4-5&quot; extensions for the cover plate so it will fit around the slipring.&nbsp; We will probably figure out a quick, temporary solution.&nbsp; If there are to be more of this style slipring used, we should get something made out of SS.</p>
+
+<p>&nbsp;</p>
+
+<h2>MEGGER RESULTS</h2>
+
+<h2>by Allison Heater - 2017-Nov-05</h2>
+
+<p>.322&quot; wire from computer lab, through slipring (just replaced) to termination end</p>
+
+<p>Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</p>
+
+<h3>S/N:&nbsp; 154856</h3>
+
+<p>Fwd .322 Wire, NSF-3-C165</p>
+
+<p>Air temp: 27.9 C&nbsp; / &nbsp; 82.2 F</p>
+
+<p>&nbsp;Wire pair</p>
+
+<p>Wires &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+<p>Green-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.855 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.07 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.964 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+<p>Green-Red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.999&nbsp; GOhms &nbsp; &nbsp; &nbsp; 1.11 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.20 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.956 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>Green-White &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.338 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.05&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.26&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.900 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>Black-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.35 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.10&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 1.25 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.596 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>Black-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.676 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 0.99&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.21&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.634&nbsp; &nbsp;&nbsp;&nbsp;</p>
+
+<p>Red-White&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.732 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.01&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.20 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.627 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;CONTINUITY:</p>
+
+<p>Expected value:&nbsp;&nbsp; ~(8.024 km) * (30.8 Ohms/km) = ~247 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>Readings:&nbsp; Green-Red = 252 Ohms;&nbsp; Green-Black = 252 Ohms;&nbsp; Green-White = 253 Ohms; Green-ship = 0.92 Ohms.</p>
+
+<p>Red = 251 Ohms</p>
+
+<p>Black = 251 Ohms</p>
+
+<p>White = 252 Ohms</p>

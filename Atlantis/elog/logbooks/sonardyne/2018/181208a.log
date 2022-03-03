@@ -1,0 +1,87 @@
+$@MID@$: 32
+Date: Sat, 08 Dec 2018 10:34:45 +0000
+Author: AH - from Jon Howland / Mike Skowronski email
+Type: General Problem
+Category: 
+equipment: Sonardyne software
+Subject: Tracking Issues - Ranger 2 bugs
+Cruise: at42-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Fri, 7 Dec 2018 21:30:29 -0500<br />
+From: mskowronski &lt;mskowronski@whoi.edu&gt;<br />
+To: &quot;expldr@atlantis.whoi.edu&quot; &lt;expldr@atlantis.whoi.edu&gt;, Anthony P Tarantino &lt;atarantino@whoi.edu&gt;,<br />
+&nbsp; &nbsp; &quot;Rick Sanger (Rsanger@whoi.edu)&quot; &lt;Rsanger@whoi.edu&gt;, Lane Abrams &lt;labrams@whoi.edu&gt;, ops-group@whoi.edu,<br />
+&nbsp; &nbsp; ops-group@atlantis.whoi.edu<br />
+Subject: Fwd: Ranger 2 &amp; SMS<br />
+Parts/Attachments:<br />
+&nbsp; &nbsp;1 &nbsp; OK &nbsp; &nbsp; &nbsp; &nbsp;87 lines &nbsp;Text<br />
+&nbsp; &nbsp;2 Shown &nbsp; &nbsp;1,411 lines &nbsp;Text<br />
+----------------------------------------</p>
+
+<p><br />
+Hi All,</p>
+
+<p>Read below from back in May when Jon was having issues with SMS and ships heading in the sub due to Ranger 2 settings in<br />
+toplab. I believe this is the same reason why you were having issues with SMS last cruise when beacon 1012 (elevator) was in<br />
+the water with Alvin. I have corrected the settings for beacon 1012 in Ranger 2 and will confirm this if/when the elevator goes<br />
+in the water with the sub.</p>
+
+<p>Mike</p>
+
+<p>-------- Forwarded Message --------<br />
+Subject:<br />
+Ranger 2 &amp; SMS<br />
+Date:<br />
+Sat, 12 May 2018 10:10:51 -0400<br />
+From:<br />
+mskowronski &lt;mskowronski@whoi.edu&gt;<br />
+To:<br />
+Jonathan Howland &lt;jhowland@whoi.edu&gt;, Anthony P Tarantino &lt;atarantino@whoi.edu&gt;, Bruce Strickrott &lt;strickrott@whoi.edu&gt;,<br />
+expldr@atlantis.whoi.edu &lt;expldr@atlantis.whoi.edu&gt;<br />
+CC:<br />
+Rick Sanger (Rsanger@whoi.edu) &lt;Rsanger@whoi.edu&gt;, &#39;Sean Kelley&#39; &lt;skelley@whoi.edu&gt;</p>
+
+<p>Hi Jon, Todd, Bruce, Tony,</p>
+
+<p>Just a quick update on Ranger 2 and SMS. Well maybe not so quick...</p>
+
+<p>I spent the last day or so looking at Ranger 2 and SMS things. As suspected, Ranger 2 is the source of the problems and<br />
+continues to have some pretty significant bugs. These are the same issue that have be discussed on several occasions since they<br />
+were first noticed last summer, including when Kim Swords (Sonardyne) visited WHOI last fall.</p>
+
+<p>The issue stems from the fact that Ranger 2 does not properly use the assigned ping rate intervals for each tracked beacon. All<br />
+active beacons will ping based on the shortest assigned ping rate rather than their individually assigned rate. So, if one<br />
+beacon has a rate of 5 sec, the other 8sec and a third at 12sec, they all interrogate simultaneously at the 5 sec interval. For<br />
+topside tracking this may have only minor impact but for SMS it can have significant impact and may require substantial code<br />
+changes if Sonardyne does not fix this issue. Even the moxa&#39;s have a hard time dealing with how fast, and close together, all<br />
+the telegrams for each beacon are being sent out.</p>
+
+<p>Another bug is that not only do all the beacons interrogate at the same time, but once a beacon is activated, the ships<br />
+position also only refreshes at the beacon&#39;s interrogation rate. This is why the ships position is constantly timing out and<br />
+going red, until the next beacon tracking event occurs.</p>
+
+<p>[Jon], this is part of why you were having so much trouble getting SMS with the sub to work. You were dealing with the fact<br />
+that by default Ranger 2 seems to also send the ships position out as an ATSASCII telegram every time a beacon tracking event<br />
+occurs. What you were seeing is the ships ATSASCII telegram stomping on Alvin&rsquo;s telegrams. I&rsquo;ve disabled this to eliminate this<br />
+part of the issue.</p>
+
+<p>Due to what I discussed above, we do still have an issue if we try to track more than one beacon and send their positions down<br />
+to Alvin. Part of this seems to be Moxa related but I&rsquo;ll see if I can make a work around in both the Moxa and the USBL_2_DVL<br />
+program to handle this issue. I hadn&rsquo;t really planned on doing much engineering out here and don&rsquo;t seem to have the latest<br />
+USBL_2_DVL 604 code with me. I do have version 602 from SVC2013 and can probably adapt it if I am unable to get a copy of the<br />
+604 code from shore due to poor internet. I may also look at what I can do to Jon&rsquo;s revised SMS code that we want to migrate to<br />
+in Toplab anyway to see what I can do there. In the end there may be little more than hacks that can be done until we get<br />
+Sonardyne to fix the issues.</p>
+
+<p>Although we will have not trouble tracking Alvin during this series, it is unfortunate that these issues were not addressed<br />
+before the ship left WHOI.</p>
+
+<p>Let me know if you have any questions.</p>
+
+<p>Safe travels to those of you still in transit.</p>
+
+<p>Mike</p>
+
+<p>&nbsp;</p>

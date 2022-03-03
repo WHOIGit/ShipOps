@@ -1,0 +1,62 @@
+$@MID@$: 48
+Date: Sat, 23 Mar 2013 16:45:00 +0000
+Author: lstolp
+Type: Configuration
+name: atdatalog
+server type: datalog
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: samba setup
+Cruise: SHIPYARD
+Attachment: 
+Encoding: HTML
+========================================
+<p>mount /dev/sdb1 /underway and put in /etc/fstab:</p>
+<p>To figure out uuid: ls -alh /dev/disk/by-uuid</p>
+<p>root@atdatalog01:~# more /etc/fstab<br />
+# /etc/fstab: static file system information.<br />
+#<br />
+# Use 'blkid' to print the universally unique identifier for a<br />
+# device; this may be used with UUID= as a more robust way to name devices<br />
+# that works even if disks are added and removed. See fstab(5).<br />
+#<br />
+# &lt;file system&gt; &lt;mount point&gt;&nbsp;&nbsp; &lt;type&gt;&nbsp; &lt;options&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dump&gt;&nbsp; &lt;pass&gt;<br />
+proc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /proc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proc&nbsp;&nbsp;&nbsp; nodev,noexec,nosuid 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+# / was on /dev/sda1 during installation<br />
+UUID=3eb8ae3e-acda-4127-9967-6523620305b1 /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ext4&nbsp;&nbsp;&nbsp; errors=remount-ro 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+# swap was on /dev/sda5 during installation<br />
+UUID=ebcc9bd8-d887-4444-bfbc-7012d3508e65 none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; swap&nbsp;&nbsp;&nbsp; sw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+#<br />
+2173f64e-92e0-42b1-a322-dd0552385563&nbsp; /underway&nbsp;&nbsp;&nbsp; ext4&nbsp; &nbsp;&nbsp;&nbsp; errors=remount-ro 0&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>/etc/samba/sbm.conf</p>
+<p>[underway]<br />
+&nbsp; comment = underway<br />
+&nbsp;&nbsp; path = /underway<br />
+&nbsp;&nbsp; browseable = yes<br />
+&nbsp;&nbsp; public = yes<br />
+&nbsp;&nbsp; writable = yes<br />
+&nbsp;&nbsp; create mode = 0777<br />
+&nbsp;&nbsp; directory mask = 0777<br />
+&nbsp;&nbsp; create mask = 0777<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>adduser dslog passwd dslog</p>
+<p>touch /etc/samba/smbpasswd</p>
+<p>smbpasswd -a dslog</p>
+<p>&nbsp;</p>
+<p>root@atdatalog:/etc/samba# more smbpasswd <br />
+dslog:1001:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:756DF774549AC2B5ED4A52423CF38F22:[U&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]:LCT-514C57BE:<br />
+&nbsp;</p>
+<p>on mailhost:</p>
+<p>mountdslog</p>
+<p>#!/bin/bash<br />
+<br />
+if [ `mount |grep &quot;/home/data/underway&quot;|wc -w` -eq 0 ]<br />
+&nbsp;then<br />
+mount -t cifs //kndatalog/underway -ousername=dslog,password=&quot;dslog&quot;,rw /home/data/underway<br />
+&nbsp;fi<br />
+<br />
+&nbsp;</p>

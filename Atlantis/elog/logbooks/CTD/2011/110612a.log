@@ -1,0 +1,16 @@
+$@MID@$: 26
+Date: Sun, 12 Jun 2011 16:05:10 +0000
+Author: AH
+Type: Configuration
+Category: Other
+Sensor: Other
+S/N: 0383
+Calibration Date: 
+Subject / Summary: GPS - no longer going to deck unit
+Cruise: at18-05b
+link: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>The GPS is now going to the CTD computer rather than the deck unit - new option in SBE software</p>
+<p>A PCI card was added to the CTD computer and GPS is now connected to the COM4 port (other on the card is COM3 and also would work)</p>

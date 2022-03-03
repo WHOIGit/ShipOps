@@ -1,0 +1,29 @@
+$@MID@$: 2
+Date: Wed, 31 Aug 2016 18:04:07 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: networking
+Subject: World viewable IPs for Atlantis
+Cruise: at37-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Dwight will want several world viewable IP Numbers.<br />
+<br />
+These should be available.<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.9<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.10<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.11<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.12<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.13<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.14<br />
+<br />
+using<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.240<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; network 128.128.252.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 128.128.252.15<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gateway 128.128.252.1<br />
+<br />
+&nbsp;</p>

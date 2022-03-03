@@ -1,0 +1,44 @@
+$@MID@$: 6
+Date: Wed, 29 Jan 2014 20:12:09 +0000
+Author: Catie
+Type: Software
+Category: Routine
+Subject: 3PS Daily backup and WinchNewcruise setup
+Cruise: at26-11
+Attachment: 140129_201150_WinchDaily.bat,140130_180713_WinchNewcruise.bat
+Encoding: HTML
+========================================
+<p>-Must be logged on as user: science pwd: atlantis Do not use user &quot;user&quot;.</p>
+<p>-3PS logs data by default to C:\Documents and Settings\science\My  Documents\3PS\WinchMonitor\LogFiles\.... no way to change default path.</p>
+<p>-Create directory D:\Data\winch and share as &quot;winch&quot;</p>
+<p>-Create directory D:\Data\winch\archive to store past cruises</p>
+<p>-Create directory C:\Documents and Settings\science\My Documents\3PS\WinchMonitor\LogFiles\PreviousCruises so we have places for an original (C:\) and a backup (D:\)&nbsp; of the last ~1 year of casts.</p>
+<p>-D:\Data\winch is mounted on memory with:</p>
+<p>[sssg@mnemosyn bin]$ more mountwinch<br />
+#!/bin/bash<br />
+<br />
+if [ `mount |grep &quot;/home/shipdata/winch&quot;|wc -w` -eq 0 ]<br />
+&nbsp;then<br />
+&nbsp;mount -t cifs -ousername=science,password=atlantis //192.168.11.240/winch /home<br />
+/shipdata/winch/ <br />
+fi<br />
+&nbsp;</p>
+<p>-Implement WinchDaily.bat. WinchDaily.bat will copy files greater than 1 day old to the D:\ drive where it can be shared on memory.</p>
+<ul>
+    <li>Set up scheduled task in Windows. Currently running 1x/day, but could add  additional scheduled tasks to make it run more often.</li>
+    <li>Control Panel &gt; Scheduled Tasks &gt; Add Scheduled Task &gt;  &gt;&gt;&gt; Next &gt; Click &quot;Browse...&quot; and Browse for your WinchDaily.bat &gt; Click &quot;Daily&quot; &gt; Choose Start Time and &quot;Every  Day&quot; &gt; Enter user name (should show up automatically, ie  3PSKNML\science) and password (ie atlantis) &gt; Finish</li>
+</ul>
+<p>&nbsp;</p>
+<p>-To run WinchNewcruise.bat:</p>
+<ul>
+    <li>In command prompt type: WinchNewcruise ATxx-xx, where ATxx-xx is the PREVIOUS cruise (i.e. the cruise number you just FINISHED that you now wish to archive).</li>
+</ul>
+<p>WinchNewcruise.bat will:</p>
+<p>-Make sure all of the current cruise files have been backed up to D:\Data\winch<br />
+-Create a new directory in C:\\\\\\LogFiles\PreviousCruises\<br />
+-Clean out C:\\\\\\Logfiles\ and move the files to C:\\\\\\\PreviousCruises\(previouscruise)\<br />
+-Create a new directory D:\Data\winch\archive\(previouscruise)\<br />
+-Clean out D:\\winch\ and move the files to permanent archive in D:\\winch\archive\(previouscruise)\</p>
+<p>&nbsp;</p>
+<p>There is no harm in keeping the originals on C:\ and the backups and mount to memory on D:\. C:\'s hard drive space is limited however so it will be necessary to preen C:\\\\\LogFiles\PreviousCruises every year or so.</p>
+<p>&nbsp;</p>

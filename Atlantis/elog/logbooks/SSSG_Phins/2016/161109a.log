@@ -1,0 +1,12 @@
+$@MID@$: 16
+Date: Wed, 09 Nov 2016 21:42:30 +0000
+Author: AH
+Type: Configuration
+Subject: PITCH/ROLL OFFSETS - REQUIRES ATTENTION!!!!!!
+Cruise: at37-05
+Attachment: 161109_213750_pitch_roll_offsets0001.pdf,161109_214154_phins_lever_arms.JPG,161109_214221_pitch_roll_calculation0001.pdf
+Encoding: HTML
+========================================
+<p>The pitch offset in the phins is presently the wrong sign.&nbsp; It is entered as -0.142 it should be +0.142 (meaning bow down to make correction).&nbsp; As of</p>
+<p>2016-November this had not been fixed as a new patch test and Casius survey would be required.</p>
+<p>&nbsp;</p>

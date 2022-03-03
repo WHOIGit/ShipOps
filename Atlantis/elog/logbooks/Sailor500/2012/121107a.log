@@ -1,0 +1,41 @@
+$@MID@$: 1
+Date: Wed, 07 Nov 2012 21:00:43 +0000
+Author: lstolp
+Type: Configuration
+Category: Hardware
+Subject: new FBB put on in port, before cruise
+Cruise: at24-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>BDU is not completely setup but so far:</p>
+<table cellspacing="1" cellpadding="1" border="1" width="400">
+    <thead>
+        <tr>
+            <th width="185" scope="col">Port Number<span style="white-space: pre;" class="Apple-tab-span">	</span></th>
+            <th width="70" scope="col">Group</th>
+            <th width="25" scope="col">User</th>
+            <th width="97" scope="col">External IP</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="185">port 1</td>
+            <td width="70">Ship</td>
+            <td width="25">PA4174016</td>
+            <td width="97">216.86.242.74</td>
+        </tr>
+        <tr>
+            <td width="185">port 2</td>
+            <td width="70">SSSG</td>
+            <td width="25">PA174016</td>
+            <td width="97">216.86.249.253</td>
+        </tr>
+        <tr>
+            <td width="185">port 3</td>
+            <td width="70">Ship</td>
+            <td width="25">PA74016</td>
+            <td width="97">216.86.242.249</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+$@MID@$: 31
+Date: Thu, 06 Sep 2018 20:25:25 +0000
+Author: RLaird
+Type: Fix
+Category: Software
+equipment: Sonardyne software
+Subject: New software installed on Ranger2 computer
+Cruise: at42-01
+Attachment: 180906_204358_VersionHistory.pdf
+Encoding: HTML
+========================================
+<p>New software was installed on the Ranger 2 computer.&nbsp; No issues were found.&nbsp; The version presently installed in 4.06.02.5802&nbsp; (4.06.02)</p>
+
+<p>Fixes- The previous software could not read the proper motion string from the PHINS.&nbsp; (this due to PHINS screwing up the sign in all of the TSS strings.)&nbsp; The Ranger2 system normally takes a TSS based string, however, there is one Tate-Bryant string that it will accept.&nbsp; However, this string is also screwed up in the PHINS, by virtue of the fact that it has + signs in front of the positive numbers.&nbsp; (There should not be anything.&nbsp;&nbsp; Minus is -, plus is&nbsp; )&nbsp; Sonardyne modified the software to allow the PHINS string to work.&nbsp;</p>
+
+<p>There are also new features and some other bug fixes in the newer software.&nbsp; Overall, no changes should be noticed.&nbsp; Note that Sonardyne call for the removal and re-installation of the software.&nbsp;&nbsp; While you should probably have a copy of all the settings, so far, no software updates have ever erased the various settings.&nbsp; (i.e., removing the software does not remove the job files or configuration files.)</p>
+
+<p>See list of changes attached, along with the instructions for installing the software.&nbsp;&nbsp; You only need to look at the 4.06.* updates, as we were running 4.05* previously.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

@@ -1,0 +1,185 @@
+$@MID@$: 61
+Date: Mon, 09 Dec 2013 21:12:15 +0000
+Author: Catie
+Type: Configuration
+name: atdatalog | atguru | ftp | linus | mnemosyn | atguru
+server type: backup
+OS: Linux
+Location: Computer Lab
+Category: backups
+Subject: A summary of the Atlantis backup scheme
+Cruise: at26-09
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>General cruise data (adcp, ctd, multibeam, etc):</strong></p>
+
+<p>-The data lies on the original collection machine. Backup is to memory:/home/data/:</p>
+
+<p>atlantis@ftp: */5 * * * * /home/atlantis/bin/rsync_data&gt;&gt;/home/atlantis/logfiles/rsync_data.log 2&gt;&amp;1</p>
+
+<p>-Cruise data is also manually backed up throughout the cruise by periodic ftp:copysci and mksci_usb runs.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Atdatalog:</strong></p>
+
+<p>-Backed up to incrementally to atguru:/backups/datalog/:</p>
+
+<p>root@atguru: 50 2 * * * /root/bin/datalog_backup.sh &gt; /backups/logfiles/datalog_rsyncit.log</p>
+
+<p>Includes:</p>
+
+<p>SRC2=&quot;atdatalog:/home&quot;<br />
+SRC3=&quot;atdatalog:/root&quot;<br />
+SRC4=&quot;atdatalog:/etc&quot;<br />
+SRC4=&quot;atdatalog:/usr/local/src&quot;</p>
+
+<p>-No snapshottar. Data (/underway) is part of the data backup to memory above.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>FTP:</strong></p>
+
+<p>-Backed up incrementally to atguru:/backups/ftp/:</p>
+
+<p>root@atguru: 30 2 * * * /root/bin/ftp_backup.sh &gt; /backups/logfiles/ftp_rsyncit.log</p>
+
+<p>Includes:</p>
+
+<p>SRC2=&quot;ftp:/home&quot; (excludes /home/data)<br />
+SRC3=&quot;ftp:/var/www&quot; (excludes /var/www/html/squid-reports)<br />
+SRC4=&quot;ftp:/usr/lib/cgi-bin&quot;<br />
+SRC5=&quot;ftp:/usr/local/elog&quot;<br />
+SRC6=&quot;ftp:/var/cache/bind&quot;<br />
+SRC7=&quot;ftp:/etc&quot;<br />
+&nbsp;SRC8=&quot;ftp:/root/bin&quot;</p>
+
+<p>-Backed up with daily overwrite snapshottar to ftp:/backups/ (a separate physical drive from ftp:/)</p>
+
+<p>root@ftp: 15 6 * * * /root/bin/snapshottar.ftp</p>
+
+<p>Includes:</p>
+
+<p>/var/cache/bind</p>
+
+<p>/root (excludes many .* files)</p>
+
+<p>/home/sssg (excludes many .* files)</p>
+
+<p>/etc</p>
+
+<p>/usr/local/elog</p>
+
+<p>/usr/local/squid/etc</p>
+
+<p>/var/www/html (excludes many subdirectories. See /root/bin/donottar.snap.ftp for full list).</p>
+
+<p>/usr/lib/cgi-bin</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Mailhost:</strong></p>
+
+<p>-Backed up incrementally to atguru:/backups/mailhost:</p>
+
+<p>root@atguru: 10 2 * * * /root/bin/mailhost_backup.sh &gt; /backups/logfiles/mailhost_rsyncit.log</p>
+
+<p>Includes:</p>
+
+<p>SRC1=&quot;linus:/var/mail&quot;<br />
+SRC2=&quot;linus:/home&quot; (excludes /home/data)<br />
+SRC3=&quot;linus:/usr/local/cmail&quot;<br />
+SRC4=&quot;linus:/etc&quot;</p>
+
+<p>SRC5=&quot;linus:/root/bin&quot;</p>
+
+<p>&nbsp;</p>
+
+<p>-Backed up with daily overwrite snapshottar to linus:/backups/ (a separate physical drive from linus:/)</p>
+
+<p>root@linus: 15 3 * * * /root/bin/snapshottar.linus</p>
+
+<p>Includes:</p>
+
+<p>/usr/local/cmail</p>
+
+<p>/etc</p>
+
+<p>/root (excludes many .* files)</p>
+
+<p>/home/sssg (excludes many .* files)</p>
+
+<p>/var/cache/bind</p>
+
+<p>/var/spool/cron</p>
+
+<p>/var/spool/mail</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Memory:</strong></p>
+
+<p>-Backed up incrementally to an external USB hard drive: memory:/media/MemIncBak/memory:</p>
+
+<p>root@memory: 30 21 * * * /root/bin/memory_backup.sh &gt; /media/MemIncBak/logfiles/memory_rsyncit.log</p>
+
+<p>Includes:</p>
+
+<p>SRC1=&quot;/var/cache/bind&quot;<br />
+SRC2=&quot;/root&quot;<br />
+SRC3=&quot;/home/sssg&quot; (excludes /ThisIsATestZone/)<br />
+SRC4=&quot;/etc&quot;<br />
+SRC5=&quot;/usr/local/elog&quot;<br />
+SRC6=&quot;/shipdata&quot;<br />
+SRC7=&quot;/home/atlantis/bin&quot;</p>
+
+<p>&nbsp;</p>
+
+<p>-Backed up with daily overwrite snapshottar to memory:/backups/ (a separate physical drive from memory:/)</p>
+
+<p>root@memory: 15 6 * * * /root/bin/snapshottar.mem</p>
+
+<p>Includes:</p>
+
+<p>/var/cache/bind</p>
+
+<p>/root (excludes many .* files)</p>
+
+<p>/home/sssg (excludes many .* files)</p>
+
+<p>/etc</p>
+
+<p>/usr/local/elog</p>
+
+<p>/shipdata</p>
+
+<p>&nbsp;</p>
+
+<p>-Allison occasionally backs up memory:/home/sssg to an external hard drive, too.</p>
+
+<p><span style="color:rgb(255, 0, 0)">&nbsp;*because I like backups of backups :)</span></p>
+
+<p><strong>Atguru:</strong></p>
+
+<p>-Backed up with daily overwrite snapshottar to atguru:/:</p>
+
+<p>root@atguru: 15 4 * * * /root/bin/snapshottar</p>
+
+<p>Includes:</p>
+
+<p>/root</p>
+
+<p>/var/spool/cron</p>
+
+<p>-Snapshottar is copied over to ftp:/backups:</p>
+
+<p>root@atguru: 35 4 * * * /usr/bin/scp /atguru.snap.tar ftp:/backups/.</p>
+
+<p>-An original disk image to rebuild the guru is located on squidly(?). Write a new disk image to the guru SD card. There is a spare already-configured SD card in the Atguru box in the brown cabinets.</p>
+
+<p><span style="color:rgb(255, 0, 0)">*okay - maybe more backups of backups - there is also a copy of the image in sssg@memory://home/sssg/EQUIPMENT/Computers/ATGURU</span></p>
+
+<p><span style="color:rgb(0, 0, 255)">***PS - CATIE THIS IS SO EXTREMELY HELPFUL!</span></p>
+
+<p>&nbsp;</p>

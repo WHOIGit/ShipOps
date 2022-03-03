@@ -1,0 +1,62 @@
+$@MID@$: 4
+Date: Thu, 16 Feb 2012 15:49:22 +0000
+Author: rlaird
+Sensor: imet_barometer
+S/N: 301
+Calibration Date: 18 oct 2006
+Type: Routine
+Category: General
+Subject: Removed ASIMET BPR sensor from service, out of cal date.
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed BPR #301 as it's out of cal date.</p>
+$@MID@$: 5
+Date: Thu, 16 Feb 2012 15:56:18 +0000
+Author: rlaird
+Sensor: imet_barometer
+S/N: BPR 303
+Calibration Date: Jan 2012
+Type: Routine
+Category: General
+Subject: installed newly calibrated IMET BPR 
+Cruise: at19
+Revisions:  & Mon Feb 20 15:32:11 2012^M & Tue Feb 21 11:58:34 2012^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed newly calibrated ASIMET BPR sensor.</p>
+<p>&nbsp;</p>
+<p>lstolp 20120220&nbsp; added S/N</p>
+$@MID@$: 6
+Date: Thu, 16 Feb 2012 15:59:06 +0000
+Author: rlaird
+Sensor: imet_anemometer
+S/N: 305
+Calibration Date: 19 oct 2006
+Type: Routine
+Category: General
+Subject: Removed wind sensor from service, out of cal date.
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed ASIMET sensor from service, long out of cal date.&nbsp; No (obvious) problems with sensor.</p>
+$@MID@$: 7
+Date: Thu, 16 Feb 2012 16:01:11 +0000
+Author: rlaird
+Sensor: imet_anemometer
+S/N: WIND 306
+Calibration Date: Jan 2012
+Type: Routine
+Category: General
+Subject: installed newly calibrated IMET WND sensor
+Cruise: at19
+Revisions:  & Mon Feb 20 15:30:07 2012^M & Tue Feb 21 11:57:28 2012^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed newly calibrated IMET WND sensor.&nbsp;&nbsp; Index mark installed to bow of ship, as was old one.&nbsp;</p>
+<p>&nbsp;</p>
+<p>lstolp updated S/N.. when reffering to this instrument can duplicate this entry and change&nbsp; what is needed..</p>

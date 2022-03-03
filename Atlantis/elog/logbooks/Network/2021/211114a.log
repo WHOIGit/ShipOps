@@ -1,0 +1,80 @@
+$@MID@$: 98
+Date: Sun, 14 Nov 2021 20:03:20 +0000
+Author: Catie, Robbie
+S/N: 
+Type: Routine
+equipment: Cisco Router
+Subject: Reminder of what to do to plug into the WHOI dock
+Cruise: at44-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Feb 28, 2022 update.</p>
+
+<p>Had some trouble reconnecting to the shore upon arrival.&nbsp;&nbsp; Eric came down and sorted it out.&nbsp;&nbsp; There are now NO cable swaps to do.&nbsp; What follows is a mix of old and new notes.</p>
+
+<p><strong>Arrival</strong><br />
+-Contact IS (Edgar) ahead of time to remind them of arrival time, coordinate getting the spool of fiber and the fiber converter back, confirm where to plug into the pedestal.<br />
+-On the east face, fiber plugs into the pedestal that&#39;s closer inshore: closest to the stern if parked stern-in/starboard-to.<br />
+-Fiber comes into the SSSG shop and fiber converter then patches to 1601C to get it to the rack room.<br />
+-1601C is patched to sg20-1 port 5, which is vlan 240 (shorelink)<br />
+<span style="background-color:#FFD700">-vlan 240 is connected to the peplink and the old cisco router.&nbsp;&nbsp; The peplink will pick up an address, but we don&#39;t care about that at this time.&nbsp; (maybe in the future)</span><br />
+<span style="background-color:#FFD700">-The old cisco router is setup to connect with the WHOI network.</span><br />
+Then-<br />
+-On ftp, do /root/bin/route_cisco.&nbsp; (this changes the route from the peplink to the cisco router)<br />
+-On ftp, copy /etc/bind/named.conf.options.whoi over /etc/bind/named.conf&nbsp; (basically you are just changing the at sea 8.8.8.8 nameserver to 128.128. nameservers at whoi.)<br />
+-Once your named.conf.options matches named.conf.options.whoi, do &quot;service bind9 restart&quot;.<br />
+-You should now be able to do emponline and stuff without a vpn.</p>
+
+<p>And finally, disable the sophos logins:<br />
+Rules and policies &gt; LAN to WAN &gt; LAN_WAN_AnyTraffic &gt; change &quot;action&quot; from &quot;drop&quot; to &quot;accept&quot;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Departure</strong><br />
+-On ftp, do /root/bin/route_peplink&nbsp; (this changes the route from the peplink to the cisco router)<br />
+-On ftp, copy /etc/bind/named.conf.options.atsea over /etc/bind/named.conf<br />
+-Once your named.conf.options matches named.conf.options.whoi, do &quot;service bind9 restart&quot;.<br />
+-You should now be able to do emponline and stuff without a vpn.&nbsp; (??? Maybe?&nbsp; Maybe not.)</p>
+
+<p>And finally, disable the sophos logins:<br />
+Rules and policies &gt; LAN to WAN &gt; LAN_WAN_AnyTraffic &gt; change &quot;action&quot; from &quot;accept&quot; to &quot;drop&quot;</p>
+
+<p><s>-sg20-1 port 6 will carry vlan 240 to WAN1 of the peplink, and that should get you started with a high speed shore link. Don&#39;t forget to hit the &quot;connect&quot; button for WAN1 on the peplink dashboard, and probably change some of the default weighted balance section and some of the enforced rules in Network &gt; Outbound Policy in the peplink to get this going.</s></p>
+
+<p>&nbsp;</p>
+
+<p><s>Now, to make the WHOI internal stuff work at the dock, and allow IS to remote in, etc:<br />
+-sg20-1 port 7, also vlan 240, will carry the shorelink to Gi0/1 of the Cisco route<br />
+-Connect Gi0/0 of the Cisco router to eth1 of ftp. This will require you to unplug the cable currently in eth1 ftp (basically just LAN1 of the peplink, but it comes in via vlan 128 on the sg20-1 switch)<br />
+-On ftp, do /root/bin/route_cisco<br />
+-On ftp, edit /etc/bind/named.conf.options to look just like named.conf.options.whoi. Basically you are just changing the at sea 8.8.8.8 nameserver to 128.128. nameservers at whoi.</s><br />
+<s>-Once your named.conf.options matches named.conf.options.whoi, do &quot;service bind9 restart&quot;. </s><br />
+<s>-You should now be able to do emponline and stuff without a vpn.</s></p>
+
+<p><s>And finally, disable the sophos logins:</s><br />
+<s>Rules and policies &gt; LAN to WAN &gt; LAN_WAN_AnyTraffic &gt; change &quot;action&quot; from &quot;drop&quot; to &quot;accept&quot;</s></p>
+
+<p>&nbsp;</p>
+
+<p><s>When leaving the dock, do the reverse order of the above:</s></p>
+
+<p><s>-Change the Sophos back to drop</s></p>
+
+<p><s>-Change named.conf.options to match named.conf.options.atsea</s></p>
+
+<p><s>-service bind9 restart</s></p>
+
+<p><s>-plug peplink back into eth1 ftp (remember this is coming indirectly from peplink LAN1 via sg20-1 vlan128 ports 11,12,13)</s></p>
+
+<p><s>-/root/bin/route_peplink</s></p>
+
+<p><s>-Go into the peplink and re-do your Outbound Policy weighted balances and enforced routes for vpn or email or whatever the needs are based on being on the at-sea satellites.</s></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

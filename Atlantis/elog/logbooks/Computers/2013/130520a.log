@@ -1,0 +1,87 @@
+$@MID@$: 55
+Date: Mon, 20 May 2013 21:05:36 +0000
+Author: lstolp
+Type: Fix
+name: currents
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Hardware
+Subject: currents 1
+Cruise: atpostat2502
+Attachment: 
+Encoding: HTML
+========================================
+<p>replaced currents1 with new 1u computer and USB serial thingy.. running lates UHDAS and Xubuntu 12.04</p>
+<p>&nbsp;</p>
+<p># email from Jules.. she setup both to use USB serial device</p>
+<p>OK, so here's the status:<br />
+Currents2 logged happily overnight using the usb serial logging device.&nbsp;&nbsp; The earlier 'sensor_cfg.py' file<br />
+(configured for the Digi) is named sensor_cfg.py.digi <br />
+<br />
+Currents1 is all set up. I can't figure out how to get better screen resolution than 1280x1024. Could be<br />
+worse.&nbsp; Allison said not to worry. <br />
+<br />
+So, all is well. Happy cruising. <br />
+<br />
+(sent from a mobile device)<br />
+<br />
+<br />
+&nbsp;</p>
+$@MID@$: 56
+Date: Mon, 20 May 2013 22:37:36 +0000
+Author: lstolp
+Type: Configuration
+name: ftp
+server type: web
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: updated squid.conf.atse
+Cruise: atpostat2502
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;# ACCESS CONTROLS</p>
+<div># -----------------------------------------------------------------------------</div>
+<div>&nbsp;</div>
+<div>##</div>
+<div>## In general we don't do much access control via acls, since access is&nbsp;</div>
+<div>## already controlled via the firewall.</div>
+<div>## But if we wanted to block cache access to certain domains, we could do that</div>
+<div>## here. &nbsp;Though it probably makes more sense to do it in the firewall</div>
+<div>## since that is where we already control access.</div>
+<div>##</div>
+<div>&nbsp;</div>
+<div>## define a rule to match connections to blocked sites, where blocked sites</div>
+<div>## is defined in the /usr/local/squid/etc/blocked_sites file.</div>
+<div>&nbsp;</div>
+<div>acl blocked_sites url_regex -i &quot;/usr/local/squid/etc/blocked_sites&quot;</div>
+<div>&nbsp;</div>
+<div>## Added per Amy &nbsp; &nbsp; lstolp 20130520</div>
+<div>acl updates url_regex update</div>
+<div>acl dropbox url_regex dropbox</div>
+<div>&nbsp;</div>
+<div>## deny access to blocked sites</div>
+<div>http_access deny blocked_sites</div>
+<div>&nbsp;</div>
+<div># The following limits the number of conncurrent connections that can be opened</div>
+<div># by a single computer. &nbsp;connlimit listed elsewhere</div>
+<div># rlaird:2010-01-15: deny any requests in excess of &quot;connlimit&quot; ACL.</div>
+<div>http_access deny &nbsp;connlimit</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>## Added per Amy &nbsp; lstolp 20130520</div>
+<div>http_access deny updates</div>
+<div>http_access deny dropbox</div>
+<div>&nbsp;</div>
+<div>## allow general http access for all requests that have been forward to squid</div>
+<div>## Note: if the firewall did not already control access to squid we would put</div>
+<div>## more rules here for access control.</div>
+<div>http_access allow all</div>
+<div>&nbsp;</div>
+<div>## deny http access to any requests which we haven't handled above</div>
+<div>http_access deny all</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>

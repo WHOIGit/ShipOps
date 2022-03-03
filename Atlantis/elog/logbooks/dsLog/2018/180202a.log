@@ -1,0 +1,27 @@
+$@MID@$: 20
+Date: Fri, 02 Feb 2018 11:06:38 +0000
+Author: AH
+svn: 
+Type: Other
+Subject: SV feeder to em122 - regular config & PROBLEM SOLUTION
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>The SV is fed to the em122 from ftp.&nbsp; ftp takes UDP broadcast 55504 and send it out ttyS7 (serial port on ftp) via the script:</p>
+
+<p>/usr/lib/cgi-bin/db_driven_data/status_screen/<strong>redirect_svt_from_UDP.pl</strong></p>
+
+<p><strong>2018-July-6 UPDATE - it is on ttyS4 now.&nbsp; From the worklist, it looks like it may have flaked in March as well???&nbsp; Catie did not think Laura changed out the board in April 2018.</strong></p>
+
+<p>Since Laura installed the new ftp server, the serial port ttyS7 died once (around Nov 2017).&nbsp; The redirect script was running and the port just flaked out.&nbsp; When you:</p>
+
+<p>dmesg | grep tty</p>
+
+<p>that port was just gone.&nbsp; We tried rebooting, but it did not reappear.&nbsp;&nbsp;</p>
+
+<p>I switched the SV to ftp serial port ttyS4 and ran a different script <strong>test_redirect_svt_from_UDP.pl</strong> with the port assignment as ttyS4 (there is also a commented out line in the regular redirect script).&nbsp; THis worked fine.&nbsp; Today (Feb. 2, 2018 the groundhog came out of his den), I grepped and discovered ttyS7 had miraculously resurrected.&nbsp; I have switched all back to normal (ttyS7 &amp; redirect script).&nbsp; If the port dies again, it can be fairly quickly switched back to ttyS4 - the only open serial port on ftp right now.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

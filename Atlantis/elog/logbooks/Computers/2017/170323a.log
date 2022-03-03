@@ -1,0 +1,19 @@
+$@MID@$: 87
+Date: Thu, 23 Mar 2017 15:32:13 +0000
+Author: Catie
+Type: Build
+name: shipshare
+server type: 
+OS: 
+Location: Other
+Category: Hardware
+Subject: New shipshare computer
+Cruise: at37-10
+Attachment: 
+Encoding: HTML
+========================================
+<p>A new shipshare computer was installed 22 March 17. This computer hosts shipshare and no other files. PWs are in the PW file.</p>
+<p>It is now the proud owner of the &quot;office&quot; 192.168.12.3 ip address and should play nicely through cyberoam and iptables to other networks. It is NOT connected to the internet.</p>
+<p>The outboard office computer is now assigned the ip address 192.168.12.17 and does have internet access in iptables.</p>
+<p>&nbsp;</p>
+<p>I added an SSSG acct as an administrator just in case the regular administrator acct passwd gets changed and we need to work on the computer. ...ds</p>

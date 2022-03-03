@@ -1,0 +1,52 @@
+$@MID@$: 44
+Date: Mon, 18 Apr 2016 11:32:44 +0000
+Author: lstolp
+S/N: AT2
+Type: Configuration
+equipment: Other Router
+Subject: AT2 setup w/  both FBB  100.0/24 is the one working
+Cruise: at33-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">!</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">interface Ethernet1/0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;description FBB</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;ip address 192.168.100.46 255.255.255.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no ip proxy-arp</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;ip nat outside</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no ip split-horizon</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no ip mroute-cache</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;half-duplex</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no cdp enable</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">!</p>
+<div>&nbsp;</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">!</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">interface Ethernet1/3</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;description FBB port</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;ip address 192.168.0.5 255.255.255.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;ip nat outside</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no ip split-horizon</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no ip mroute-cache</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;half-duplex</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;fair-queue</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;no cdp enable</p>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ip nat inside source static 128.128.252.2 128.128.200.147 extendable</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ip nat inside source static 128.128.252.2 192.168.100.46 extendable</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ip nat inside source static 128.128.252.2 192.168.0.5 extendable</p>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ip route 0.0.0.0 0.0.0.0 192.168.100.1 210</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ip route 0.0.0.0 0.0.0.0 192.168.0.1 220</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;</p>
+</div>
+<div>&nbsp;</div>

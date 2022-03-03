@@ -1,0 +1,151 @@
+$@MID@$: 78
+Date: Mon, 04 Feb 2019 21:01:14 +0000
+Author: Emily
+S/N: 
+Type: Configuration
+equipment: Cisco Router
+Subject: How to Reset Default Shore Route
+Cruise: Shipyard 2019
+Attachment: 
+Encoding: HTML
+========================================
+<p>MIDD is providing us with internet while we are in the yard.&nbsp;</p>
+
+<p>Ian Thurston is the IT Manager and contact person for any issues we have.&nbsp;</p>
+
+<ul>
+	<li>Ian&#39;s email: ithurston@mareislanddrydock.com</li>
+	<li>Office phone: (707) 652-7356 x</li>
+	<li>Cell phone: (707) 653-3764 - he does respond to text messages&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>There is an antenna mounted on the aft rail of the doghouse and needs to be pointed at the main building (cream-colored, 2-story building with white trim).</li>
+	<li>The blue dots on the side indicate that there is power and a signal.</li>
+	<li>In the doghouse is the MIDD switch and a spare red cable, which you can plug into locally to see if you have a connection.</li>
+	<li>The cable runs from the doghouse switch down to the patch in the ROV Hanger. We have a blue labeled cable from the patch in the Computer Lab to the back of the Cisco router.</li>
+</ul>
+
+<p><strong><u>Directions from Laura on resetting the default route:</u></strong></p>
+
+<p>If Cisco gets power cycled then&nbsp;it will not have&nbsp;the static route to&nbsp;shore.&nbsp;<br />
+<br />
+It might be just a matter of adding the default route back in, but can you&nbsp;also send me the output from the commands to follow.<br />
+<br />
+<strong>1. On ftp logon as sssg and become sudo (sudo -s)</strong><br />
+<br />
+<strong>2. Enter minicom to access router administration</strong></p>
+
+<p>minicom hiseasnet&nbsp; (will bring up a minicom terminal)<br />
+login user: sssg&nbsp; &nbsp;(pw located in .pw file under &quot;older router&quot; hint: !!!)<br />
+<br />
+<strong>3. int&nbsp; &nbsp; &nbsp; &nbsp;</strong> &nbsp; &nbsp; &nbsp; &nbsp;(this will show you the interfaces and status of each, please send me the output from this)</p>
+
+<p>example (when on&nbsp;MIDD shore connection):</p>
+
+<p>Interface&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IP-Address&nbsp; &nbsp; &nbsp; OK? Method Status&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Protocol</p>
+
+<p>GigabitEthernet0/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;128.128.252.1&nbsp; &nbsp;YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; up</p>
+
+<p>GigabitEthernet0/1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;128.128.200.147 YES NVRAM&nbsp; down&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; down</p>
+
+<p>GigabitEthernet0/2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unassigned&nbsp; &nbsp; &nbsp; YES NVRAM&nbsp; down&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; down</p>
+
+<p>FastEthernet0/0/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 192.168.100.5&nbsp; &nbsp;YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; down</p>
+
+<p><strong>FastEthernet0/1/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 192.168.202.100 YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; up</strong></p>
+
+<p>FastEthernet0/2/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 128.128.252.201 YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; down</p>
+
+<p>Serial0/3/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unassigned&nbsp; &nbsp; &nbsp; YES NVRAM&nbsp; administratively down down</p>
+
+<p>Serial0/3/1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unassigned&nbsp; &nbsp; &nbsp; YES NVRAM&nbsp; administratively down down</p>
+
+<p>NVI0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;128.128.252.1&nbsp; &nbsp;YES unset&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; up</p>
+
+<p>Tunnel10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;192.168.252.201 YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; down</p>
+
+<p><br />
+**The shipyard interface should have 192.168.202.100 up up, if it does&nbsp;not than it is a shipyard issue, it the interface shows up up ie:<br />
+FastEthernet0/1/0&nbsp; &nbsp; &nbsp; &nbsp;192.168.202.100&nbsp; &nbsp; &nbsp; YES NVRAM&nbsp; up&nbsp; &nbsp; &nbsp;up<br />
+<br />
+<strong>4. Add the default route back, you should be able to cut and paste the following below:</strong><br />
+config term<br />
+ip route 0.0.0.0 0.0.0.0 192.168.202.1<br />
+exit<br />
+<br />
+<br />
+<strong>5. rn&nbsp; &nbsp; </strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(this command will show you how it is&nbsp;routing, send&nbsp;output)<br />
+<br />
+example:&nbsp;</p>
+
+<p>at-hiseasnet#rn</p>
+
+<p>Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;E1 - OSPF external type 1, E2 - OSPF external type 2</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;ia - IS-IS inter area, * - candidate default, U - per-user static route</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;o - ODR, P - periodic downloaded static route, + - replicated route</p>
+
+<p>&nbsp;</p>
+
+<p>Gateway of last resort is 192.168.202.1 to network 0.0.0.0</p>
+
+<p>&nbsp;</p>
+
+<p>S*&nbsp; &nbsp;&nbsp;<a href="http://0.0.0.0/0" target="_blank">0.0.0.0/0</a>&nbsp;[1/0] via 192.168.202.1</p>
+
+<p>&nbsp; &nbsp; &nbsp;&nbsp;<a href="http://128.128.0.0/16" target="_blank">128.128.0.0/16</a>&nbsp;is variably subnetted, 2 subnets, 2 masks</p>
+
+<p>C&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="http://128.128.252.0/28" target="_blank">128.128.252.0/28</a>&nbsp;is directly connected, GigabitEthernet0/0</p>
+
+<p>L&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="http://128.128.252.1/32" target="_blank">128.128.252.1/32</a>&nbsp;is directly connected, GigabitEthernet0/0</p>
+
+<p>&nbsp; &nbsp; &nbsp;&nbsp;<a href="http://192.168.202.0/24" target="_blank">192.168.202.0/24</a>&nbsp;is variably subnetted, 2 subnets, 2 masks</p>
+
+<p>C&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="http://192.168.202.0/24" target="_blank">192.168.202.0/24</a>&nbsp;is directly connected, FastEthernet0/1/0</p>
+
+<p>L&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="http://192.168.202.100/32" target="_blank">192.168.202.100/32</a>&nbsp;is directly connected, FastEthernet0/1/0</p>
+
+<p>&nbsp;</p>
+
+<p><strong>6. ping 192.168.202.1&nbsp; &nbsp; (this will show if it can reach the gateway)</strong><br />
+<br />
+It if is working at this point great. If not give me a call.<br />
+<br />
+<strong>7. on ftp:</strong><br />
+traceroute 8.8.8.8</p>
+
+<p>example:</p>
+
+<p>traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets</p>
+
+<p>&nbsp;1&nbsp; at-hiseasnet (128.128.252.1)&nbsp; 0.514 ms&nbsp; 0.493 ms&nbsp; 0.618 ms</p>
+
+<p>&nbsp;2&nbsp; 192.168.202.1 (192.168.202.1)&nbsp; 84.928 ms&nbsp; 87.538 ms&nbsp; 87.543 ms</p>
+
+<p>&nbsp;3&nbsp; 12.133.157.137 (12.133.157.137)&nbsp; 87.537 ms&nbsp; 87.594 ms&nbsp; 87.578 ms</p>
+
+<p>&nbsp;4&nbsp; 12.247.123.141 (12.247.123.141)&nbsp; 92.936 ms&nbsp; 92.936 ms&nbsp; 92.905 ms</p>
+
+<p>&nbsp;5&nbsp; 12.123.6.98 (12.123.6.98)&nbsp; 93.144 ms&nbsp; 97.766 ms&nbsp; 97.708 ms</p>
+
+<p>&nbsp;6&nbsp;&nbsp;<a href="http://cr1.sffca.ip.att.net/" target="_blank">cr1.sffca.ip.att.net</a>&nbsp;(12.122.110.65)&nbsp; 92.881 ms&nbsp; 92.195 ms&nbsp; 96.997 ms</p>
+
+<p>&nbsp;7&nbsp; 12.122.137.213 (12.122.137.213)&nbsp; 91.957 ms&nbsp; 21.369 ms&nbsp; 52.355 ms</p>
+
+<p>&nbsp;8&nbsp; 206.121.188.42 (206.121.188.42)&nbsp; 52.330 ms&nbsp; 52.324 ms 206.121.188.62 (206.121.188.62)&nbsp; 29.216 ms</p>
+
+<p>&nbsp;9&nbsp; 108.170.242.81 (108.170.242.81)&nbsp; 28.070 ms&nbsp; 28.816 ms&nbsp; 28.757 ms</p>
+
+<p>10&nbsp; 74.125.37.41 (74.125.37.41)&nbsp; 28.937 ms 108.170.232.61 (108.170.232.61)&nbsp; 28.936 ms 209.85.240.41 (209.85.240.41)&nbsp; 28.720 ms</p>

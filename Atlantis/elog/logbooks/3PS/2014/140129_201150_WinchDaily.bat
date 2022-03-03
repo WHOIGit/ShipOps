@@ -1,0 +1,1 @@
+robocopy /MINAGE:1 "C:\Documents and Settings\science\My Documents\3PS\WinchMonitor\LogFiles" "D:\Data\winch"

@@ -1,0 +1,16 @@
+$@MID@$: 60
+Date: Tue, 06 Aug 2013 01:30:39 +0000
+Author: Catie
+Type: Configuration
+name: ftp | linus
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: Mounting Linus on FTP
+Cruise: at26-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>As of AT26-05, the /root/bin/mountlinus script has been changed to use user:sci0 pass:sci0 to mount. In other words, sci0's password on linus is now officially sci0. It should not be changed to atlantis. Nothing else ever uses the sci0 user on linus anyway.</p>
+<p><strike>Each time newcruise is run, sci0's password is set back to sci0.  This makes /root/bin/mountlinus barf on ftp. Need to change sci0's  password back to its usual every time, namely to be able to mount linus  on ftp.</strike></p>

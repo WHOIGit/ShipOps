@@ -1,0 +1,30 @@
+$@MID@$: 88
+Date: Thu, 05 Jul 2018 13:37:27 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Other
+Category: Software
+S/N: 
+Subject / Summary: Recording em122 TRU strings
+Cruise: at40-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>In order to record the data coming into the TRU from COM2 (SIMRAD EM string - binary) go to:</p>
+
+<p>Tools -&gt; Custom -&gt; SIS datalogger&nbsp;&nbsp;&nbsp;&nbsp; there you can select the COM port and start recording the string (or looking at it).</p>
+$@MID@$: 89
+Date: Thu, 05 Jul 2018 14:08:00 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: General Problem
+Category: General
+S/N: 
+Subject / Summary: Attitude Errors on em122 emanating from the SIMRAD EM string coming from the phins
+Cruise: at40-03
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>SIMRAD EM string baud was changed back to 19,200 baud and 100 Hz.</strong>&nbsp; This solved the issue of the attitude errors on the em122.</p>
+
+<p>The string had been changed to 115,200 baud 200 Hz back in Nov 2016 to alleviate MPC Overload errors on the phins.&nbsp; It was probably never causing the errors.&nbsp; At any rate, it needed to be changed back in order to fix the em122 attitude issue.&nbsp; See cruise report at40-03 for more information.</p>

@@ -1,0 +1,15 @@
+$@MID@$: 81
+Date: Tue, 27 Sep 2016 01:43:22 +0000
+Author: Catie
+Type: Fix
+name: atdatalog
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: No EM122 atdatalog files being created - FIXED
+Cruise: at37-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>No .EM122 files were being created by atdatalog since the new radiation sensors went in to the file. Found the problem in dsLog.ini that both speed log and EM122 were in the file as INPUT_12. Changed EM122 to INPUT_13 and now .EM122 file is being created and EM122 depth is going into the proc CSV file.</p>

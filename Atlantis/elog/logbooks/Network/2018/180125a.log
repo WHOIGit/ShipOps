@@ -1,0 +1,17 @@
+$@MID@$: 64
+Date: Thu, 25 Jan 2018 16:06:05 +0000
+Author: dsims
+S/N: 
+Type: Configuration
+equipment: Subnet
+Subject: Assigned Alvin Expedition Leader a static science address
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size:16px">I added the Alvin Expedition Leader to the science hosts table per an e-mail with Laura.</span></p>
+
+<pre>
+<span style="font-size:16px">192.168.11.37	alvinexpldr.science.atlantis.whoi.edu		alvinexpldr</span></pre>
+
+<p>&nbsp;</p>

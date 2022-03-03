@@ -1,0 +1,11 @@
+$@MID@$: 23
+Date: Sun, 03 Jun 2018 16:09:41 +0000
+Author: Catie
+svn: 
+Type: inputs
+Subject: Knudsen 3260 into dsLog
+Cruise: at40-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>The newknudsen computer running the 3260 is sending its data out to dsLog via UDP on 55607. DsLog is then sending it out and to status screen on 55608. Serial out from Knudsen3260 computer is not in use for dsLog. Serial out can be used for other things though, like serial out to AT40-03 Lyle scientists.</p>

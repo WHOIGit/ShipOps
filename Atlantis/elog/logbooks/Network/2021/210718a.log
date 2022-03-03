@@ -1,0 +1,48 @@
+$@MID@$: 90
+Date: Sun, 18 Jul 2021 13:49:56 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+equipment: HIVE
+Subject: Post-midlife HIVE configs and how to send to HIVEs
+Cruise: at43-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Post-midlife, a new hive config had to be built to accomodate the VLANs changing from 11 &gt; 111 etc, and removal of the telpresence VLAN from the network.</p>
+
+<p>New config has VLANs 111 and 162 to serve Atlantis_WiFi SSID and Alvin_Wifi (hidden SSID) only.</p>
+
+<p>The new correct config is called &quot;AtlantisNewTryAgain&quot;.</p>
+
+<p>&nbsp;</p>
+
+<p>To reset and load this HIVE config into a hive:</p>
+
+<p>Plug a hive into a VLAN 111 access port on a POE switch, wait for light to turn green.</p>
+
+<p>Push and hold the reset button with a paperclip for at least 10-15 seconds, until the light stays solid blue and no longer blinks intermittently.</p>
+
+<p>Allow the HIVE to reboot, it should eventually reach a white light after ~5+ mins.</p>
+
+<p>Find the HIVE of interest by IP address in the hive manager software under the &quot;monitor&quot; tab. The &quot;connection&quot; hexagon for the HIVE of interest should be green.</p>
+
+<p>Put a check in the box in the left hand column and click &quot;Modify&quot;. The only thing that needs to be changed on the Edit screen should be the &quot;Network Policy&quot;, which should be selected in the dropdown menu to be &quot;AtlantisNewTryAgain&quot;. Then click &quot;Save&quot; at the top.</p>
+
+<p>Put a check in the box again in the left hand column and click &quot;Update...&quot; and then &quot;Update Devices&quot;.</p>
+
+<p>A popup box should then say &quot;Number of Devices to Update: 1&quot;. Check the box that says &quot;Perform a complete configuration update for all selected devices&quot;, and then the &quot;Update&quot; button.</p>
+
+<p>Wait for the HIVE to fully reboot to a green light. Once at a green light, unplug the HIVE from the switch and move it to plug into a VLAN 111, 162 trunk port on a POE switch.</p>
+
+<p>HIVE should reboot to a white light and be fully operational in ~5+ mins.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

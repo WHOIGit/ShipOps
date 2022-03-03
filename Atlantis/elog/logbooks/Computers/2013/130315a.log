@@ -1,0 +1,98 @@
+$@MID@$: 46
+Date: Fri, 15 Mar 2013 00:13:37 +0000
+Author: lstolp
+Type: Configuration
+name: linus | linus2
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: swapped computers.. now using ubuntu 10.04 server as mailhost
+Cruise: SHIPYARD
+Attachment: 
+Encoding: HTML
+========================================
+<p>Changes made to mail host post swap (linus now ubuntu 10.04)</p>
+<ul>
+    <li>Had to chown user.mail /var/mail/*</li>
+    <li>moved all mail in user's home directory to mail directory, some folders were duplicates esp sent-mail
+    <ul>
+        <li>/home/[user/sent-mail and /home/user/mail/sent-mail</li>
+        <li>when this occured I moved the older folder to sent-mail.datelastwritten</li>
+        <li>in some cases I may not have moved all the folders, because I was not sure what was mail and what was not, and they were very old.</li>
+    </ul>
+    </li>
+    <li>mail backup and user account backups are on atguru:/backups/mailhost, the original linus backups are in /backups/mailhost.fc4/</li>
+    <li>&nbsp;apt-get install aspell&nbsp;&nbsp; for pine spelling to work</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+$@MID@$: 47
+Date: Fri, 15 Mar 2013 11:06:39 +0000
+Author: lstolp
+Type: Configuration
+name: linus
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: dovecot.conf
+Cruise: SHIPYARD
+Attachment: 
+Encoding: HTML
+========================================
+<table cellspacing="0" cellpadding="0" class="frame">
+    <tbody>
+        <tr>
+            <td class="messageframe">
+            <p>made the following changes to dovecot</p>
+            <p># Disable LOGIN command and all other plaintext authentications unless<br />
+            # SSL/TLS is used (LOGINDISABLED capability). Note that if the remote IP<br />
+            # matches the local IP (ie. you're connecting from the same computer), the<br />
+            # connection is considered secure and plaintext authentication is allowed.<br />
+            disable_plaintext_auth = no<br />
+            &nbsp;</p>
+            <p>&nbsp;</p>
+            <p># Example shared namespace configuration<br />
+            # namespace setup for backwards compatibility with UW-IMAP<br />
+            # default namespace<br />
+            namespace private {<br />
+            &nbsp; separator = /<br />
+            &nbsp; prefix =<br />
+            &nbsp; inbox = yes<br />
+            }<br />
+            # for backwards compatibility:<br />
+            namespace private {<br />
+            &nbsp; separator = /<br />
+            &nbsp; prefix = mail/<br />
+            &nbsp; hidden = yes<br />
+            &nbsp; list = no&nbsp;&nbsp; # for v1.1+<br />
+            }<br />
+            namespace private {<br />
+            &nbsp; separator = /<br />
+            &nbsp; prefix = ~/mail/<br />
+            &nbsp; hidden = yes<br />
+            &nbsp; list = no&nbsp;&nbsp; # for v1.1+<br />
+            }<br />
+            namespace private {<br />
+            &nbsp; separator = /<br />
+            &nbsp; prefix = ~%u/mail/<br />
+            &nbsp; hidden = yes<br />
+            &nbsp; list = no&nbsp;&nbsp; # for v1.1+<br />
+            }<br />
+            <br />
+            <br />
+            &nbsp;<b> to get clients to see all folders need to uncheck &quot;subscribed folders only</b>&quot;</p>
+            <p>For OUTLOOK, check out this page (although they are enabling) : http://engineering.umass.edu/ecs/outlook-folders</p>
+            <p>I am pretty sure it's under the 'folders' tab up top.</p>
+            <p>For THUNDERBIRD</p>
+            <p>Tools --&gt; Account Settings --&gt; Sever Settings --&gt; Advanced --&gt; uncheck show only subscribed</p>
+            <p>http://www.uni.edu/its/support/article/295</p>
+            <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<center><a class="bottomlink" title="Goto ELOG home page" href="https://midas.psi.ch/elog/">ELOG V2.9.0-2411</a></center>
+<p>edit /etc/mailname to be atlantis.whoi.edu</p>

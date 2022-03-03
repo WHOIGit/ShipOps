@@ -1,0 +1,35 @@
+$@MID@$: 67
+Date: Mon, 26 Feb 2018 11:11:45 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: 
+Subject: 
+Cruise: at39-05
+Attachment: 
+Encoding: HTML
+Draft: aheater
+========================================
+<p>AH</p>
+$@MID@$: 68
+Date: Mon, 26 Feb 2018 11:18:40 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: HIVE
+Subject: TempusIC on WiFi - fancy hospital laptop
+Cruise: at39-05
+Attachment: 180226_111921_image002.png,180226_111927_image004.png,180226_111934_image009.jpg,180226_111941_CUD-89_(Iss1)_Updating_Wi-Fi_Settings_and_IP_Addresses_on_the_Tempus_IC.PDF
+Encoding: HTML
+========================================
+<p>Had some trouble getting the TempusIC laptop (fancy hospital laptop) to accept a manual ip address.&nbsp; So, Laura added a dhcp ip reservation to /etc/dhcp/dhcpd.conf&nbsp; :</p>
+
+<p>## Hospital fancy diagnostic laptop<br />
+host TempusIC {<br />
+&nbsp; &nbsp; hardware ethernet 00:10:7a:57:0a:1a;<br />
+&nbsp; &nbsp; fixed-address 192.168.11.11;<br />
+&nbsp; &nbsp; option domain-name &quot;science.atlantis.whoi.edu&quot;;<br />
+}<br />
+It was also added to the hosts.science table and to the cyberoam as a clientless user.</p>
+
+<p>PJ and I tested it, and it was able to hook up to the Wifi directly.&nbsp; In the TempusIC dhcp is left set to &quot;ON&quot;</p>

@@ -1,0 +1,16 @@
+$@MID@$: 2
+Date: Sun, 07 May 2017 15:05:49 +0000
+Author: AH
+Type: Instructions
+Location: Other
+Subject: NavG Notes
+Cruise: at37-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>1)&nbsp; If the positions look wrong in NavG, make sure that navest and still running in Toplab, and restart NavG if necessary - it could be displaying old positions.</p>
+<p>2)&nbsp; If a beacon will not track (or seems to track in positions of more than one beacon - track as sub and elevator)- check the ID of that beacon in Sonardyne.&nbsp; Those ID's are under edit-transponder - select the desired transponder - select &quot;advanced&quot; and &quot;Reports&quot;.&nbsp; The beacon ID's should be unique, and they should match what is specified in the navest vehicle ini file in Toplab.&nbsp; Also, from Jon Howland:</p>
+<p>&quot;the&nbsp; vehicles are defined in the code when you tell it what mode you are running<br />
+in--so, for example, Alvin Ship mode defines Alvin, Atlantis, and a couple of<br />
+elevators.&nbsp; So no, you can't define new ones&quot;</p>
+<p>which means, each version of NavG has a limited number of &quot;tabs&quot; defined.&nbsp; </p>

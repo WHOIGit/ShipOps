@@ -1,0 +1,15 @@
+$@MID@$: 18
+Date: Fri, 03 May 2013 21:34:56 +0000
+Author: rsl
+Sensor: WXTP
+S/N: E2320003
+Calibration Date: April 22, 2013
+Type: Calibration
+Category: Hardware
+Subject: New PTU S/N J0850029
+Cruise: WHOIDock
+Revisions:  & Tue May  7 14:26:03 2013^M
+Attachment: 130507_142553_WXT520-E2320003_PTU-J0850029_cal.pdf
+Encoding: HTML
+========================================
+<p>Installed new PTU in port Vaisala WXT520.&nbsp; Test date of PTU is 25 Feb, 2013, clock start when installed.&nbsp; (April 22, 2013)&nbsp; Good for two years.&nbsp; PTU replacement calibrates the temp/hum/bar.&nbsp; Wind and rain don't need calibration.</p>

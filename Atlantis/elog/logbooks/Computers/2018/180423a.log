@@ -1,0 +1,33 @@
+$@MID@$: 108
+Date: Mon, 23 Apr 2018 23:04:18 +0000
+Author: lstolp
+Type: Build
+name: bitdefender
+server type: network
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: bitDefender server installed on the ship
+Cruise: at39-06
+Attachment: 
+Encoding: HTML
+========================================
+<div>A bitDefender server was installed on the science network:</div>
+
+<ul>
+	<li>192.168.11.27 &nbsp;bitdefender.science. atlantis.whoi.edu</li>
+	<li>updated bind</li>
+	<li>the computer is set up as a server which is not the normal download from the IS website, it is using fullKit_unix64.tar</li>
+	<li>Mark Jones (IS security) changed the default profile (for all instances of WHOI bitDefender) to look for a relay (the ship&#39;s server) first and if not reachable look for the mothership (WHOI&#39;s server patronis.whoi.edu</li>
+	<li>there should be no configuration on either the clients or the server.</li>
+</ul>
+
+<div>&nbsp;</div>
+
+<div>To view traffic to and from the shore bitDefender server on ftp:</div>
+
+<div>tcpdump -i eth2 host 128.128.76.249</div>
+
+<div>&nbsp;</div>
+
+<div>***May 2018 - Brought up second ethernet port (em1) and assigned ip 192.168.12.27 to serve ship network</div>

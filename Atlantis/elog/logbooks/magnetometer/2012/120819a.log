@@ -1,0 +1,164 @@
+$@MID@$: 2
+Date: Sun, 19 Aug 2012 20:56:25 +0000
+Author: AH
+S/N: 13537
+Type: Routine
+Category: Hardware
+Subject: S/N of towfish is 13537
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">The serial number of our towfish is 13537</span></p>
+<p><span style="font-size: large;">The serial number of our missing isolation transceiver box is S/N 5486.&nbsp; I sent an email on 20aug2012 to Michael Daffern &lt;mike@marinemagnetics.com&gt; to ask if he could check to see if the box was there at Marine Magnetics (it might have been in the towfish box when we sent it back to get the new towfish shipped) - UPDATE - THIS ISOLATION TRANSCEIVER BOX IS AT MARINE MAGANETICS AS OF 20-AUG-2012 -as per email below from MIke Daffern:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Date: Mon, 20 Aug 2012 13:49:23 -0400<br />
+From: Michael Daffern &lt;mike@marinemagnetics.com&gt;<br />
+To: Atlantis SSSG &lt;sssg@atlantis.whoi.edu&gt;<br />
+Subject: Re: Magnetometer on Atlantis - troubleshooting... needs help<br />
+Parts/Attachments:<br />
+&nbsp;&nbsp; 1&nbsp;&nbsp; OK&nbsp;&nbsp;&nbsp;&nbsp; 103 lines&nbsp; Text<br />
+&nbsp;&nbsp; 2 Shown&nbsp;&nbsp; ~108 lines&nbsp; Text<br />
+----------------------------------------<br />
+<br />
+Hi Alison,<br />
+I had a look around, and?surprisingly, yes we do have a case from you. It was received as a repair?in June<br />
+2009?with the?Transceiver, a deck leader cable, power supply, and RS-232 cable in the case. According to the<br />
+technician who looked at it, we assessed the items and found no problems with them, but there was no RMA number<br />
+for them. Our sales department was supposed to contact you about what you wanted done with the items, but I<br />
+could not find any emails to say that we did that.?<br />
+<br />
+I had my repair tech take another look at them again today, and everything appears to work properly. Please<br />
+pass this on to the appropriate people on your enad and let us know where we can ship the items back to.<br />
+<br />
+Best regards,<br />
+<br />
+</span></p>
+$@MID@$: 3
+Date: Sun, 19 Aug 2012 21:08:34 +0000
+Author: AH
+S/N: 13537
+Type: General Problem
+Category: Hardware
+Subject: Can't Find Towfish
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>We had a problem with an intermittent ground connection in the BNC connector toward the fish end of the deck cable that we borrowed from Dan F.&nbsp; The connector had been installed at UW - it appears that they had to replace what was there in a pinch when the one on the deck cable got chewed up.</p>
+<p>The problem symptoms were - the power light would be yellow on the isolation transceiver, but when the fish was plugged in it would not turn to green and we did not get flashing blue data lights &amp; the software could &quot;not find the &quot;towfish&quot;</p>
+<p>The problem was finally isolated as coming from the BNC connector - see below for more descriptive emails.</p>
+<p>&nbsp;</p>
+<p>EMAIL To Dan Fornari DESCRIBING PROBLEM:</p>
+<p>Hi Dan,<br />
+<br />
+We are using our new towfish with your winch (and cable on the winch) and your deck<br />
+cable and your isolation transceiver box 5705 (the one without all the extra stickers<br />
+on it that puts out 48 volts rather than 33 volts). The main reason we are using your<br />
+winch is because the connector on your deck cable and the connector on your winch<br />
+were both changes to non-waterproof type BNC connectors.&nbsp;&nbsp; Therefore, your deck cable<br />
+would not mate with our winch cable.<br />
+<br />
+The magnetometer gave some rather spikey data for the first couple hours after<br />
+deployment (it worked fine for about 1/2 hour and then we went into a figure 8 to<br />
+calibrate and it got spikey and continued to be for about an hour after we completed<br />
+the 8 and were going down line).&nbsp; Suddenly the data smoothed out and seemed good.<br />
+The magnetometer seemed to work fine for the next 12 hours when suddenly we lost<br />
+communication to the fish.&nbsp; I was not up here so I don't know how the data looked<br />
+prior to that.&nbsp; We tried recycling the power, etc. and it came back up briefly but<br />
+then died again.<br />
+<br />
+Everything seems to be pointing to the cable on the winch:<br />
+<br />
+1)&nbsp; when powered I get 47.3 volts out to the end of the deck cable, but when I attach<br />
+the winch cable I have no voltage at the fish end.<br />
+<br />
+2)&nbsp; The figure 8 would likely have stressed the cable in the water more than our<br />
+straight lines - thusly hinting at a looming issue.<br />
+<br />
+3)&nbsp; When the isolation transceiver is powered and COM port is connected up I can talk<br />
+to the transceiver.&nbsp; But then when I plug the fish in I don't get a green light nor<br />
+does the COMM light on the transceiver flash (I get no response at all)<br />
+<br />
+My plan is to wait until morning and try again to call Marine Magnetics (tried twice<br />
+today).&nbsp; Perhaps they received my email late too.&nbsp; If I don't get any other ideas<br />
+from them I plan to bring out our winch and change the connector so that I can mate<br />
+it with your deck cable (I have one cut off end of cable with a waterproof BNC<br />
+connector on it but I am guessing it is going to be the wrong end so I will likely<br />
+not be able to make a pigtail to mate the two and will instead have to cut our winch<br />
+cable).&nbsp; I will then run the tests again and if it talks, we'll deploy.<br />
+<br />
+My biggest obstacle is that I strongly hesitate to cut the cable without getting some<br />
+sort of confirmation from someone in the know that that is the best course of action.<br />
+Hopefully I will reach Mike tomorrow and get that :)<br />
+<br />
+Thanks,<br />
+<br />
+Allison<br />
+<br />
+***************</p>
+<p>ANOTHER EMAIL DESCRIBING STATUS OF PROBLEM:</p>
+<p>Previously I sent this update, but I accidentally sent it from my own account so it<br />
+was too large and bounced back:<br />
+*******<br />
+Hi,<br />
+<br />
+Here's a maggie update.<br />
+<br />
+We are narrowing in on the problem.&nbsp; Right now it is looking like the problem is<br />
+actually the BNC connector on the towfish end of the deck cable (the one Washington<br />
+put on).&nbsp; It does not appear to have a proper ground anymore.&nbsp; I had measured the<br />
+voltage there and had a good reading five times in a row, but after we hooked up our<br />
+winch/tow cable and our fish and had a successful deck test and then unhooked it<br />
+moved the winch, replugged it in and tried it again and failed it became evident that<br />
+I needed to check it again (how's that for a run on sentence).&nbsp; ANyway, in that test<br />
+I found that if I measured the voltage putting the ground probe in various locations<br />
+I only got a good voltage reading in a few spots.<br />
+<br />
+James (our ComET) is more versed in BNC stuff, so I have enlisted him to reterminate<br />
+that end of the deck cable.&nbsp; We will then retest and hopefully that will prove to<br />
+have been the problem all along!&nbsp; At least I have to believe we are narrowing in on<br />
+this problem.<br />
+Allison<br />
+*******<br />
+<br />
+James completed the new connector, we did some deck tests, and the maggie is now back<br />
+in the water and functioning properly (and will hopefully stay that way).<br />
+<br />
+Thanks to all of your help, I think we have a far better understanding of the system<br />
+now, and that will be very useful if we have any further problems as well!&nbsp; Thanks,<br />
+thanks, thanks :)<br />
+<br />
+We are now running the SSSG towfish (S/N 13537), the SSSG winch, Dan Fornari's deck<br />
+cable, Dan's isolation transceiver bix #5705.&nbsp; I was able to make a pigtail (again<br />
+with James' help) from the piece of cable that came off of Dan's winch with the<br />
+waterproof BNC connector.&nbsp; So, I did not have to cut anything (when SSSG gets a new<br />
+deck cable that comes with the MArine MAgnetics standard connector we will be able to<br />
+plug it right in without changing the connector).<br />
+<br />
+I will give you all another update as we progress (hopefully 24 hours from now I'll<br />
+be telling you it's still running).<br />
+<br />
+Thanks again!!!!<br />
+<br />
+Allison<br />
+<br />
+PS - Dan - I do not believe there is any problem with your tow cable after all, but<br />
+once we settle in here and I have the time I'll try to run a few tests (as per<br />
+Marshall) and verify that statement.<br />
+<br />
+&nbsp;</p>
+$@MID@$: 4
+Date: Sun, 19 Aug 2012 21:25:11 +0000
+Author: AH - from Peter Lemmond
+S/N: 
+Type: Other
+Category: General
+Subject: Link to Estimated Values of Magnetic Field
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Link to Estimated Values of Magnetic Field:</p>
+<p>&nbsp;</p>
+<p>http://www.ngdc.noaa.gov/geomag-web/#igrfwmm</p>

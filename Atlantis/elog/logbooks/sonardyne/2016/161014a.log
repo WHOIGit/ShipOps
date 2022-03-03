@@ -1,0 +1,12 @@
+$@MID@$: 7
+Date: Fri, 14 Oct 2016 19:23:48 +0000
+Author: Catie
+Type: Other
+Category: Other
+equipment: 
+Subject: Tate-Bryant vs TSS angles
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>How roll is assumed to be measured is operator selectable,either with respect to the horizontal plane (the Hippy 120 or TSS convention) or to the plane tilted by the given pitch angle (i.e. as a rotation angle around the pitch tilted forward pointing x-axis). The latter convention (called Tate-Bryant in the POS/MV documentation) is used inside the (multibeam) system in all data displays and in logged data.</p>

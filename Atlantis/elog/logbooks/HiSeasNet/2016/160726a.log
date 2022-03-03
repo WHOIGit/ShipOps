@@ -1,0 +1,42 @@
+$@MID@$: 62
+Date: Tue, 26 Jul 2016 20:12:28 +0000
+Author: rlaird
+S/N: na
+Type: Routine
+Component: radome / antenna
+Subject: Setup for Van Dover cruise
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p>Rotated the feed from Transmit Left Hand to Transmit Right Hand.&nbsp;</p>
+<p>Added inline amplifier to transmit line.&nbsp; This will be removed when we go back to a normal setup with hiseasnet.&nbsp; (modem does not have enough output to drive the BUC to full output by itself.)</p>
+$@MID@$: 63
+Date: Tue, 26 Jul 2016 20:14:14 +0000
+Author: rlaird
+S/N: na
+Type: Fix
+Component: radome / antenna
+Subject: swapped cable
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p>Swapped out the LNB cable for new.&nbsp; (This is the LMR 400 coax that runs from the LNB to PCU.)&nbsp; Re-balanced antenna when completed.&nbsp; </p>
+$@MID@$: 64
+Date: Tue, 26 Jul 2016 20:24:42 +0000
+Author: rlaird
+S/N: DAC
+Type: Configuration
+Component: DAC
+Subject: DAC changes for VanDover cruise.
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p>Some DAC changes for Van Dover cruise.&nbsp; Some of these are for the cruise, other are permanent.</p>
+<p>-Dishscan type changed from 133 to 129.&nbsp; (Better tracking based on Karls observations.)&nbsp; (this is a &quot;permanent&quot; change)</p>
+<p>-New trim values.&nbsp; Old ltrim was -0009, new is 0006.&nbsp; Old az trim was -0019, new is 0001 (this is a &quot;permanent&quot; change)</p>
+<p>-New tracking frequency is 0963MHz, old was 1005MHz.&nbsp; (this is only for the Van Dover cruise.&nbsp; It should be set back when the antenna feed is rotated back.)</p>
+<p>-Auto threshold was found off.&nbsp; Tried to make it work, but it does not seem to work well.&nbsp; Left the system setup with manual threshold set to 1600.&nbsp; Present AGC at the dock in WHOI is 1810.&nbsp; (This is a &quot;permanent&quot; change.)</p>
+<p>&nbsp;</p>

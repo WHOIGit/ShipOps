@@ -1,0 +1,13 @@
+$@MID@$: 4
+Date: Thu, 25 Jan 2018 16:19:59 +0000
+Author: dsims
+Subject: Hosts listings moved
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size:16px">During the summer of 2017, Laura made a new directory /var/www/html/network where she put in copies of the current hosts tables.&nbsp; We were using /var/www/html/sssg/hosts before.&nbsp; I changed the links so all point to /var/www/html/network. &nbsp;</span></p>
+
+<p><span style="font-size:16px">When we are making changes to any hosts tables, copy the new tables to /var/www/html/network.</span></p>
+
+<p><span style="font-size:16px">&nbsp; </span></p>

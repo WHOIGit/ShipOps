@@ -1,0 +1,5 @@
+The .dat file is just and ascii file used to automate commands for an FTP session, you can read through it using an text editor.  To run this tool, at a command prompt:
+
+ftp -s:ftpputcmds.dat from the HWS connected to the sonar.
+
+This will upload the modified files to ignore open, shorted and low voltage channels.  You will need to extract the "toupload.zip" file to c:\temp\backup\ in preparation for running this.  Under c:\temp\backup\toupload\ you should have a number of "slot#" directories with the modified files.  You will need to restart the TRU when the new files are in place.

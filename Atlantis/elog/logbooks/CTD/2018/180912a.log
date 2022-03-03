@@ -1,0 +1,48 @@
+$@MID@$: 48
+Date: Wed, 12 Sep 2018 20:24:42 +0000
+Author: Elizabeth Ricci
+Type: Configuration
+Category: sensor
+Sensor: Altimeter
+S/N: VA500-46504
+Calibration Date: 
+Subject / Summary: Valeport altimeter added to CTD
+Cruise: at42-01
+link: 
+Revisions:  & Wed Sep 12 20:41:05 2018^M & Wed Sep 12 20:41:44 2018^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>A Valeport altimeter was added to the CTD:</p>
+
+<p>VA500</p>
+
+<p>s/n: 46504</p>
+
+<p>digital: Rs232 9600,n81</p>
+
+<p>alt in meters, 4Hz output</p>
+
+<p>0-5V analog range to 105m</p>
+
+<p>ANALOG LIMIT: 99.4&nbsp;</p>
+
+<p>Set up 2018Sep7&nbsp;Robbie, Catie, Elizabeth</p>
+
+<p>Installed 2018Sept10 Catie and Elizabeth</p>
+$@MID@$: 49
+Date: Wed, 12 Sep 2018 21:18:17 +0000
+Author: Catie
+Type: Fix
+Category: sensor
+Sensor: temp
+S/N: 
+Calibration Date: 
+Subject / Summary: Temp sensor 1714 gone bad - sub in spare 5161
+Cruise: at41
+link: 
+Revisions:  & Wed Sep 12 21:23:08 2018^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>Mid-cruise on AT41 SBE3 1714, installed as the primary temp sensor, started drifting off the secondary temp sensor, up to ~0.25 degrees. Swapped in spare 5161 and primary and secondary agreed again. Sent in for service. Wellwood brought 4328 as the new spare 6 Sept 18.</p>

@@ -1,0 +1,16 @@
+$@MID@$: 16
+Date: Wed, 07 Dec 2011 05:11:38 +0000
+Author: AH
+S/N: 
+Type: Routine
+equipment: 
+Subject: Starting ntop (network monitoring tool)
+Cruise: at18-14
+Attachment: 
+Encoding: HTML
+========================================
+<p>Make sure it's not already running:</p>
+<p>ps -ef | grep ntop</p>
+<p>if not:</p>
+<p>sudo ntop -u ntop -i eth0,eth1,eth2,eth3,eth4,eth5 -M -t 1 -d</p>
+<p>otherwise kill first (if it's not running properly)</p>

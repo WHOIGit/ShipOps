@@ -1,0 +1,36 @@
+$@MID@$: 2
+Date: Fri, 07 Oct 2011 11:27:56 +0000
+Author: AH
+Type: Configuration
+Category: Hardware
+Subject / Summary: Head Tank for 3.5
+Cruise: at18-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>&gt; PS - I am also wondering about the reason for the head tank for the 3.5<br />
+&gt; transducer array.&nbsp; Initially, I was thinking of the Johnson ships, and the<br />
+&gt; transducers there were behind a glass or plexiglass covering (not outside<br />
+&gt; the ship's hull) so they needed fluid between the transducer and the plate<br />
+&gt; covering.&nbsp; Why does the 3.5 need it?<br />
+<br />
+The 3.5 array is in a tank, so yes, the water, (or other fluid), is needed to<br />
+couple it out of the ship.&nbsp; (yes, right through the steel, no problem)&nbsp; The<br />
+array on the Atlantis appears to have a screwed on cover, allowing access from<br />
+the outside in a drydock.&nbsp; Hopefully it's watertight.&nbsp; (The one on the Knorr is<br />
+completely inside, no cover, not sure about the Oceanus.)<br />
+<br />
+The second reason for the closed well and header tank is to allow the system to<br />
+operate at full power.&nbsp; These transducers will cavitate if run at to high a<br />
+power while at atmospheric pressure.&nbsp; I don't have that data in front of me,<br />
+but it's a lot less than the 833 watts/transducer that the Knudsen can supply. <br />
+(12 transducers/10,000 watts)&nbsp; If the transducers are run under pressure, the<br />
+can accept much higher power levels without cavitating.&nbsp; I think the proper<br />
+pressure is something like 15 psi, but I'm not sure.<br />
+<br />
+The source for this is from a book, I think the title is &quot;acoustic systems<br />
+handbook&quot;, or something like that.&nbsp; There may be a copy on the boat.&nbsp; The other<br />
+source is the data sheet for the transducers.&nbsp; I'll see if I can locate either<br />
+of these and get a little more detail.<br />
+<br />
+&nbsp;</p>

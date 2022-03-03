@@ -1,0 +1,339 @@
+$@MID@$: 4
+Date: Mon, 02 Jul 2018 13:19:54 +0000
+Author: AH
+Subject / Summary: Summer 2018 worklist
+link: 
+Revisions:  & Mon Jul  2 13:20:30 2018^M & Mon Jul  2 13:23:07 2018^M
+Attachment: 
+Encoding: HTML
+========================================
+<p><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Template>Normal.dotm</o:Template>
+  <o:Revision>0</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Pages>1</o:Pages>
+  <o:Words>1469</o:Words>
+  <o:Characters>8377</o:Characters>
+  <o:Company>WHOI</o:Company>
+  <o:Lines>69</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>10287</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignInTxbx/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Arial;}
+</style>
+<![endif]--><!--StartFragment--></p>
+
+<p><strong><u><span style="font-size:12.0pt">5-6 DAY TRANSIT AT40-03</span></u></strong></p>
+
+<p>- inventory of alvin data tape drives, HDs etc</p>
+
+<p>-clean overhead black filters that cover the blowers in the labs Clean all lab overhead filters&nbsp; (last done in Feb 2018 AH)</p>
+
+<p>-Add a &ldquo;cables to remove at midlife list&rdquo; on google drive</p>
+
+<p>-check the GPS1 std dev in the phins - need to do via web interface.&nbsp; We had a few heading issues during at40-03 (one set).&nbsp; I did not see if GPS1 was beng dropped, but I think it started during a turn.&nbsp; It occurred to me (AH) that we have updated the firmware since the std dev was set.&nbsp; Maybe it did not get saved (see May 2, 2017 emails about this)</p>
+
+<p>-install switch between phins ethernet feed to TRU and phins (for webinterface) &ndash; test and see if causes problems</p>
+
+<p>-radvan cleaning - see SWAB 899&nbsp;&nbsp;&nbsp; Ask David about Rad Van cleaning- look at swab 899 (he said yes we ought to clean)- one spot on deck just barely above actionable for decks in rad van...should it be cleaned prior to Adams?</p>
+
+<p>-Deep filter cleaning of freezers, computers, multibeam</p>
+
+<p>-Defrost and clean all reefers / freezers - deep clean filters</p>
+
+<p>-Test status of multibeam 32 as a ready backup</p>
+
+<p><strong><u><span style="font-size:12.0pt">ARRIVAL AT WHOI (first few days)</span></u></strong></p>
+
+<p>-Get archive data to Rick - AT40-01 ship data (Alvin data already sent), AT40-02 Alvin and ship data, AT40-03</p>
+
+<p>-gravity tie at WHOI - Catie got some weird numbers too (WHOI to Bermuda, etc), Gravity Tie at WHOI dock</p>
+
+<p>-remove 10 x 5 gallon buckets of cores from walkin reefer (science pick up)</p>
+
+<p>-main lab Alvin rack UPS - open and examine, check batteries (just changed, but still check) put load back on and see if it shuts off. &nbsp;Confer with SCotty - should we get new one (he anticipates big changes at midlife, so do we buy one for 2 years?)</p>
+
+<p>-Clear misc ship&rsquo;s stores from science hold, namely port side - all available space needed for fall science - get all crew to remove their personal items.&nbsp; Empty hold of all items that don&rsquo;t belong</p>
+
+<p>-Empty chem van</p>
+
+<p>-Take tower down and swap LWR sensor - notify SAMOS when this is complete - they have deactivated the LWRAD on their end due to poor data quality and need to reactivate it (as of 15-Jun-2018)</p>
+
+<p>-Install and license 2 Fornari Alvin Macs w/ Adobe Premiere Pro Creative Cloud - Scotty</p>
+
+<p>-Ask Scotty about UPS for main lab rack- It shut itself off randomly in June...so perhaps it has issues. Rack is currently plugged straight into the wall. - I (AH) emailed him 18-June-2018 - will get with him when back at WHOI to test and replace if necessary.</p>
+
+<p><strong><u><span style="font-size:12.0pt">WHOI PORT STOP</span></u></strong></p>
+
+<p>-atdatalog01 - new - complete configuration - Set up new-new atdatalog01 as a ready spare &amp; test. Old atadatalog01 is the current spare but is unreliable.</p>
+
+<p>-Move cisco switch stacking module to UPS power</p>
+
+<p>**-serial card in new FTP &ndash; change???&nbsp; Lost ttyS7 while in use March 2018 and did not return after reboot</p>
+
+<p>-I do not think this was fixed by Laura in April &lsquo;18 &ndash;catie</p>
+
+<p>-update license for CNAV when we get to WHOI (JULY) - it expires around 20-July-2018 and we have new activation code (email 22-June-2018)</p>
+
+<p>-on web data display - knudsen plot seems a bit messed up - 3.5 title not displaying.&nbsp; Also, em122 is not part of plot (shouldn&rsquo;t it be?)</p>
+
+<p>-make the HSN spectrum analyzer work again</p>
+
+<p>-semi-annual hiseasnet A/C maintenance</p>
+
+<p>-See about moving flybridge hive further forward to better cover bow &ndash; started to look at this &ndash; it is on the port side of flybridge &ndash; I (ds) have contacted Robbie about getting us some more external cable.&nbsp; When I installed the Hive, the piece of cable thatI had was spliced and was bad.&nbsp;&nbsp; We didn&rsquo;t have a piece long enough to place it properly and I got the &ldquo;no money&rdquo; reply.&nbsp; I&rsquo;ll move it when we get to WHOI in the spring. 2018-jan-30 -- April 2018 - talked to RObbie.&nbsp; Waiting for the cable.</p>
+
+<p>-Order cap and cap off old maggie penetration port of Aframe</p>
+
+<p>-BUC software &ndash; connected in radome???&nbsp; Status of running software?</p>
+
+<p><s>-Get new flowmeter installed</s> Flowmeter does not appear to be the issue. Voltage going into teensy board on J1, but does not appear to be any voltage going out of teensy board on J2. Need to have Tim look at board or get a new one at WHOI this summer. - Catie&nbsp;</p>
+
+<p>-Test multibeam UPS batts</p>
+
+<p>-Check into duplicates, triples of UDP relays on ftp (6-June-2018) - (would it help if MOXA sent broadcasts to only ftp instead of 199.92.161.255??)</p>
+
+<p>-Inspect lab chairs and remove bad ones</p>
+
+<p>-Rebuild Neptune</p>
+
+<p>-Printer/plotter maintenance - I think someone came to WHOI in April, check and see.&nbsp; Top plotter is acting a bit wonky.&nbsp; Paper not loading and spooling well, but we are down to older used rolls that are curled the wrong direction (end of roll) so it might be more the paper</p>
+
+<p>-MET tower improvements - Robbie</p>
+
+<p>-Check calibration due dates for everything</p>
+
+<p>-Make new FTP/Linus Guru drive - will be full July sometime - 81% full 19-June-2018</p>
+
+<p>-GeoMapApp on memory2: Currently works, but only if you revert to the java installer versions available on the geomap disk itself. Got it to sucessfully work on Linux and Windows7 with these very old Java versions. New up-to-date versions of Java on Windows and Mac don&rsquo;t seem to work with our on-ship GeoMapApp server.&nbsp;&nbsp; Scientist found some of the files that needed updating and sent us email about during at40-03&nbsp; (19-June-2018).&nbsp; Also, email Vicki Ferrini and talk with her about updating</p>
+
+<p>-<span style="font-size:10.0pt"> Get the giant Gagne battery/inverter system which no longer really doing anything disconnected from the radome???? Robbie said that it not doing anythign for us, MIKE G. maybe doing something for him???</span></p>
+
+<p><span style="font-size:10.0pt">-Get a UPS system for the Hiseasnet pedestal installed. It has been UPS-less since April 2016 when pedestal was converted to 220V power. - revisit next year when there is some $$$</span></p>
+
+<p><strong><span style="font-size:10.0pt">-CTD - </span></strong><span style="font-size:10.0pt">Swap altimeter or get Y cable specifically made for Oxygen-Altimeter Y. This to resolve altimeter causing noise in oxygen sensor when connected via universal Y, don&rsquo;t know if this is the fault of the altimeter, cable, or both</span></p>
+
+<p><span style="font-size:10.0pt">- The rosette frame is looking pretty rough. Don&rsquo;t know what can be done to spiff it up - patch worn spots in powder coating to prevent corrosion, there are quite a few spots that need preservation work.</span></p>
+
+<p><span style="font-size:10.0pt">- Get Comet/SSSG megger serviced/calibrated (without disappearing into a black hole for a year!)</span></p>
+
+<p><span style="font-size:10.0pt">- Remove rust, re-paint, replace hardware with stainless (NO METAL) on lab science seawater flanges in labs - all are in bad shape.</span></p>
+
+<p><span style="font-size:10.0pt">- Clean up cables behind computer lab racks</span></p>
+
+<p><span style="font-size:10.0pt">- Clean up cables behind multibeam computers </span></p>
+
+<p><span style="font-size:10.0pt">- Reorganize locations of components and power and data cables in main lab Alvin rack to make more accessible/functional.</span></p>
+
+<p><span style="font-size:10.0pt">-Wire lube for all wires&nbsp; - at dock July<s> - </s>lube to be done by &nbsp;Chris G. substitutes</span></p>
+
+<p><span style="font-size:10.0pt">-reterminate CTD wire after lube</span></p>
+
+<p><span style="font-size:10.0pt">- Slipring update - <strong>did RObbie order sliprings?????</strong></span>The one we have in place is a plastic one.&nbsp; It has 4 clingy wires coming out the far end.&nbsp; It &ldquo;wants&rdquo; to spin on itself once these wires get to a certain place in the rotation.&nbsp; The slipring is wired and also has an additional safety line attached to the winch frame to prevent it form spinning.&nbsp; But, the first wire I used broke!&nbsp; Our back-up (one and only) is a fair weather only slipring!</p>
+
+<p><strong><span style="font-size:10.0pt">-</span></strong><span style="font-size:10.0pt"> Slip ring weather testing for MXO4 s/n 29</span></p>
+
+<p><strong><span style="font-size:10.0pt">-</span></strong><span style="font-size:10.0pt"> Chris Griner 0.322 cutback sample for break test &hellip; Will cut after Berenfeld cruise &ndash; did this get done??</span></p>
+
+<p><strong><span style="font-size:10.0pt">-</span></strong><span style="font-size:10.0pt">*Wash/clean the chemvan once emptied. Take off vent fan panel inside for routine maintenance check/grease. It&rsquo;s bound to be pretty rusty or salty.</span></p>
+
+<p><span style="font-size:10.0pt">-SOOGEE:</span></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><span style="font-size:10.0pt">Main lab</span></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><span style="font-size:10.0pt">Biolab</span></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><span style="font-size:10.0pt">Hydrolab</span></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><span style="font-size:10.0pt">Wetlab</span></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><span style="font-size:10.0pt">Computer lab</span></p>
+
+<p><span style="font-size:10.0pt">TRANSDUCER WELL - clean</span></p>
+
+<p>-FUMEHOODS &ndash; CERTIFICATIONS (August 2018) - put new certifications in fumehoods &ndash; clean fumehoods</p>
+
+<p><strong><span style="font-size:10.0pt">&nbsp;</span></strong><span style="font-size:10.0pt">- Routine service visit for Hydrolab Cospolich reefer and freezer. &ndash; did this get done when So-Low was serviced? </span></p>
+
+<p><span style="font-size:10.0pt">&nbsp;- Order and replace temperature gauge on Hydrolab Cospolich freezer (maybe as part of service visit, otherwise do it ourselves). &ndash; did this get done?</span></p>
+
+<p><strong><span style="font-size:10.0pt">&nbsp;</span></strong>-Send Robbie wishlist of items that got put off this year spending-wise - carry over from not to forget list</p>
+
+<p>-Send David comments, concerns, potential complications, unforeseen expenditures associated with MISO equipment acquisition - carry over from not to forget list</p>
+
+<p><strong><span style="font-size:10.0pt">September 2017 - Laura stuff - did this get done</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Move shipnet to 1 gig switch</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Order and install 2 10 port gig sg300 in alvin rack and jason hallway. POE</span></strong></p>
+
+<p style="margin-left:1.0in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9675;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Ordered 9/11</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Make hardware fix (eth1) part of boot sequence on ftp (do fix on armstrong)</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<s><span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></s>[endif]--><strong><s><span style="font-size:10.0pt">Install cyberoam w/ filter</span></s></strong></p>
+
+<p><strong><span style="font-size:10.0pt">&nbsp;</span></strong></p>
+
+<p><strong><span style="font-size:10.0pt">UPDATES TO MAILHOST/LINUS/FTP - Laura stuff - did this get done?????</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Need to bring extra MOBO/MEMORY/HD to ship for spares</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Extra sssg windoze machine? </span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%'><span style='mso-list:Ignore'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>[endif]--><strong><span style="font-size:10.0pt">Science USB-ordered need to bring down</span></strong></p>
+
+<p><strong><span style="color:#FF9900; font-size:10.0pt">Things that need fixing:</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%;color:#FF9900'><span style='mso-list:
+Ignore'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><strong><span style="color:#FF9900; font-size:10.0pt">NTP on mailhost and ftp, use old linus for ntp for now 199.92.161.164</span></strong></p>
+
+<p style="margin-left:.5in"><!--[if !supportLists]<span
+style='font-size:10.0pt;line-height:115%;color:#FF9900'><span style='mso-list:
+Ignore'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>[endif]--><strong><span style="color:#FF9900; font-size:10.0pt">Dovecot vs pine file locking.. </span></strong></p>
+
+<p><span style="font-size:10.0pt">&nbsp;</span></p>
+
+<p><s>&nbsp;</s></p>
+
+<p>&nbsp;</p>
+
+<p><strong><span style="font-size:18.0pt">To order:</span></strong></p>
+
+<p>Maggie Cap</p>
+
+<p>Woodhead bungs</p>
+
+<p>Valve knob for SSW 02 fwd</p>
+
+<p>Replenish stock of mops, dust pan sets for each lab</p>
+
+<p>PLOTTER SUPPLIES - paper:&nbsp; 36in. Wide, is it HP Q1397A 4.2 mil Universal bond?&nbsp;&nbsp;&nbsp;&nbsp; ink cartridges:&nbsp; 516<u>44M</u>, 516<u>44Y</u>, 516<u>44C</u>, 516<u>45A </u>&nbsp;&nbsp;we are down to one ink cartridge each</p>
+
+<p>External Ethernet cable for HIVE - flybridge</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Remove crap from ship:</p>
+
+<p>-Leaky alkaline battery disposal - ask Robbie</p>
+
+<p>-All Maggie gear, including the stuff shoved under the desk in the computer lab, so it can be gone through</p>
+
+<p>-2 Broda pingers, Broda RockSaw</p>
+
+<p>-Dead electronics: Keyboard, power strip</p>
+
+<p>&nbsp;</p>
+
+<p><strong><u><span style="font-size:18.0pt">DONE******DONE*********ALL BELOW THIS LINE IS COMPLETE</span></u></strong></p>
+
+<p><s>-Clean seawater sensor loop tubing, soon&hellip; </s>&nbsp;&nbsp;6/13/18 AH</p>
+
+<p>&nbsp;</p>
+
+<p>-<s>Update cyberoam license in port - by June 22&nbsp; </s>AH &amp; DS during at40-03</p>
+
+<p>&nbsp;</p>
+
+<p>-<s>finish documenting 2011 benchmarks in elog &ndash; done except for picure of PBM5 on flybridge (aft)</s>&nbsp;&nbsp;&nbsp; AH 6/2018</p>
+
+<p>&nbsp;</p>
+
+<p>-<s>replace debubbler check valve in bow thruster room</s>&nbsp; - someone did this 6/2018</p>
+
+<p>&nbsp;</p>
+
+<p><s>-Maggie &ndash; status of deck cable leaving hydrolab...is the run finished to somewhere?&nbsp; It is run into the overhead in the hydro lab.&nbsp; It can easily be run out through the passover when needed without having to live in the rov hanger and be exposed to corrosion. Run completed by Joe M</s></p>
+
+<p>&nbsp;</p>
+
+<p><s>Configure Moxa for seismic people Done Catie 7June18...GPS &amp; HDT serial feeds to them to come from normal sci jboxes...Phins, PKEL99, DBT, and KIDPT configured to come serial out from Moxa on SSSG net.</s></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><!--EndFragment--></p>

@@ -1,0 +1,14 @@
+$@MID@$: 2
+Date: Fri, 03 Feb 2012 21:48:52 +0000
+Author: rlaird
+S/N: 130077
+Clock: top_lab
+Type: Other
+Category: Fix
+Subject: Removed Top Lab Clock
+Cruise: at18-18
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed the Top Lab ESE clock and replaced it with one in which the 50% pulse has been inverted.&nbsp; This to provide proper 1pps pulse for the multibeam.</p>
+<p>Expl:&nbsp; Normal 185A ESE clock has a 1pps pulse that rises at the start of the second.&nbsp; The EM122 needs a pulse that falls at the start of the second.&nbsp; ESE supplied us with special firmware that does that.&nbsp; Installed new chip in clock, tested, seems to be fine, EM122 seems to be fixed.</p>

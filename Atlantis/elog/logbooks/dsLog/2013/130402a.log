@@ -1,0 +1,36 @@
+$@MID@$: 1
+Date: Tue, 02 Apr 2013 16:57:50 +0000
+Author: lstolp
+svn: 18
+Type: notes
+Subject: svn info
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>will give info about svn version:</p>
+<p>&nbsp;</p>
+<p>root@atdatalog01:~/dsLog# svn info<br />
+Path: .<br />
+URL: svn+ssh://sssg@sssg11.whoi.edu/usr/local/svn/repos/dsLog<br />
+Repository Root: svn+ssh://sssg@sssg11.whoi.edu/usr/local/svn/repos/dsLog<br />
+Repository UUID: e08966f8-1ac0-419d-820b-70f84d108046<br />
+Revision: 18<br />
+Node Kind: directory<br />
+Schedule: normal<br />
+Last Changed Author: tthiel<br />
+Last Changed Rev: 18<br />
+Last Changed Date: 2013-02-15 21:05:48 +0000 (Fri, 15 Feb 2013)<br />
+<br />
+&nbsp;</p>
+$@MID@$: 2
+Date: Tue, 02 Apr 2013 16:58:39 +0000
+Author: lstolp
+svn: 18
+Type: notes
+Subject: SSSG_dsLog_iniFileDescription_003.pdf
+Cruise: WHOIDock
+Attachment: 130402_165839_SSSG_dsLog_iniFileDescription_003.pdf
+Encoding: HTML
+========================================
+

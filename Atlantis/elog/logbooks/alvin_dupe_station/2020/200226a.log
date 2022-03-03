@@ -1,0 +1,15 @@
+$@MID@$: 16
+Date: Wed, 26 Feb 2020 19:33:29 +0000
+Author: Catie
+Type: Fix
+Location: Computer Lab / SSSG Duping Station
+S/N: 
+Subject: Sealog "failed to connect to localhost port 8000: Connection refused" errors 
+Cruise: at42-24
+Attachment: 
+Encoding: HTML
+========================================
+<p>If Sealog (on C+C computer) ever throws out &quot;failed to connect to localhost port 8000: Connection<br />
+refused&quot; errors, especially when running <strong>sealog_predive.pl, </strong>it means the sealog server is not running.</p>
+
+<p>Point a browser on alvindata01 to http://199.92.162.100:9001 and click the &quot;start&quot; link next to the &quot;sealog_server&quot; entry, and also for any other component that is not running (indicated by red buttons on left).</p>

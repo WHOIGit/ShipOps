@@ -1,0 +1,25 @@
+$@MID@$: 116
+Date: Sun, 11 Nov 2018 15:32:07 +0000
+Author: Catie
+Type: Build
+name: lima
+server type: 
+OS: Windows
+Location: Computer Lab
+Category: Software
+Subject: OpenCPN for GPRMB output and science use
+Cruise: at42-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>With the install of the new bridge ECDIS in August 2018, the cruise waypoints are no longer necessarily being entered into the bridge GPS and thus providing a GPRMB string for our status screens. Science has also requested a number of times to have access to a chart plotting program. Most other boats have OpenCPN, now we do too.</p>
+
+<p>The unused secondary hard drive inside Lima was used to create a Windows drive to run OpenCPN and associated peripherals. If Ubuntu Lima is still needed for some reason, it still exists, just boot to the Ubuntu drive. Windows and Ubuntu use the same Lima IP address, 192.168.11.12.</p>
+
+<p>OpenCPN is set to send out a GPRMB string with waypoint info on UDP port 55704. In ftp://usr/lib/cgi-bin/db_driven_data/status_screen/, rmb_feeder.pl is now a symbolic link to either rmb_feeder.pl.bridgegps or rmb_feeder.pl.opencpn, so you can swap the status screen easily between the bridge gps waypoints (if they use it) or opencpn waypoints.</p>
+
+<p>Cruise waypoints can be obtained by asking the second mate to export a csv from the ECDIS, or you/science can make up your own points. There is documentation for converting/uploading csv waypoints into OpenCPN using either python (installed on Windows Lima) or Excel and GPSBabel (also installed on Windows Lima) on Lima and on sssg_on_memory.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

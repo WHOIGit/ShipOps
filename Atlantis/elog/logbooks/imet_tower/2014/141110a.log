@@ -1,0 +1,26 @@
+$@MID@$: 24
+Date: Mon, 10 Nov 2014 12:03:34 +0000
+Author: AH
+Sensor: WXTP | WXTS | imet_barometer | imet_anemometer
+S/N: 
+Calibration Date: 
+Type: General Problem
+Category: General
+Subject: Stbd Vaisala Died - repowered and restarted
+Cruise: at26-23
+Revisions:  & Mon Nov 17 22:22:02 2014^M & Mon Nov 24 12:49:30 2014^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>Vaisala Outages - at26-23</p>
+<p>The Starboard Vaisala died for a while:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-24 &nbsp;&nbsp;&nbsp; 00:17 GMT - Stbd Vaisala stopped providing data</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-24 &nbsp;&nbsp;&nbsp; 12:35 GMT - I cycled power and the Stbd  Vaisala came back to life - had to restart the SBE48 with the netbook</p>
+<p>&nbsp;</p>
+<p>The Port Vaisala died for a while:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-17 &nbsp;&nbsp;&nbsp; 19:21 GMT - Port Vaisala stopped providing data</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-17 &nbsp;&nbsp;&nbsp; 22:09 GMT - I cycled power and the Port  Vaisala came back to life - had to restart the SBE48 with the netbook</p>
+<p>&nbsp;</p>
+<p>The Starboard Vaisala died for a while:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-10&nbsp;&nbsp;&nbsp;&nbsp; 07:53 GMT - Stbd Vaisala stopped providing data</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014-Nov-10&nbsp;&nbsp;&nbsp;&nbsp; 11:39 GMT - I cycled power and the Stbd Vaisala came back to life - had to restart the SBE48 with the netbook</p>

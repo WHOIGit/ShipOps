@@ -1,0 +1,94 @@
+-> TrxBoard Msg Board: RX32 Rack 7 Slot  0 10.2.1.10 sno 413216
+TrxBoard Msg Board: RX32 Rack 7 Slot  3 10.2.1.11 sno 413210
+TrxBoard Msg Board: RX32 Rack 7 Slot  1 10.2.1.12 sno 413213
+TrxBoard Msg Board: RX32 Rack 7 Slot  2 10.2.1.13 sno 413228
+BootMon Msg NewItem: TX36LC Rack 0, Slot 15, 10.2.1.150
+BootMon Msg NewItem: TX36LC Rack 0, Slot 21, 10.2.1.151
+BootMon Msg NewItem: TX36LC Rack 0, Slot 11, 10.2.1.152
+BootMon Msg NewItem: TX36LC Rack 0, Slot 16, 10.2.1.153
+BootMon Msg NewItem: TX36LC Rack 0, Slot 10, 10.2.1.154
+BootMon Msg NewItem: TX36LC Rack 0, Slot 12, 10.2.1.155
+BootMon Msg NewItem: TX36LC Rack 0, Slot  6, 10.2.1.156
+BootMon Msg NewItem: TX36LC Rack 0, Slot 20, 10.2.1.157
+BootMon Msg NewItem: TX36LC Rack 0, Slot 14, 10.2.1.158
+BootMon Msg NewItem: TX36LC Rack 0, Slot  2, 10.2.1.159
+BootMon Msg NewItem: TX36LC Rack 0, Slot 18, 10.2.1.160
+BootMon Msg NewItem: TX36LC Rack 0, Slot  8, 10.2.1.161
+BootMon Msg NewItem: TX36LC Rack 0, Slot 19, 10.2.1.162
+BootMon Msg NewItem: TX36LC Rack 0, Slot 22, 10.2.1.163
+BootMon Msg NewItem: TX36LC Rack 0, Slot  9, 10.2.1.164
+BootMon Msg NewItem: TX36LC Rack 0, Slot 13, 10.2.1.165
+BootMon Msg NewItem: TX36LC Rack 0, Slot 17, 10.2.1.166
+BootMon Msg NewItem: TX36LC Rack 0, Slot  7, 10.2.1.167
+BootMon Msg NewItem: TX36LC Rack 0, Slot  1, 10.2.1.168
+BootMon Msg NewItem: TX36LC Rack 0, Slot  4, 10.2.1.169
+BootMon Msg NewItem: TX36LC Rack 0, Slot  5, 10.2.1.170
+BootMon Msg NewItem: TX36LC Rack 0, Slot  3, 10.2.1.171
+BootMon Msg NewItem: TX36LC Rack 0, Slot  0, 10.2.1.172
+TrxBoard Msg Board: TX36 Rack 0 Slot 15 10.2.1.150 sno 212157
+TrxBoard Msg Board: TX36 Rack 0 Slot 21 10.2.1.151 sno 212152
+TrxBoard Msg Board: TX36 Rack 0 Slot 11 10.2.1.152 sno 231647
+TrxBoard Msg Board: TX36 Rack 0 Slot 16 10.2.1.153 sno 236593
+TrxBoard Msg Board: TX36 Rack 0 Slot 10 10.2.1.154 sno 231637
+TrxBoard Msg Board: TX36 Rack 0 Slot 12 10.2.1.155 sno 212195
+TrxBoard Msg Board: TX36 Rack 0 Slot  6 10.2.1.156 sno 212189
+TrxBoard Msg Board: TX36 Rack 0 Slot 20 10.2.1.157 sno 212138
+TrxBoard Msg Board: TX36 Rack 0 Slot 14 10.2.1.158 sno 212188
+TrxBoard Msg Board: TX36 Rack 0 Slot  2 10.2.1.159 sno 211164
+TrxBoard Msg Board: TX36 Rack 0 Slot 18 10.2.1.160 sno 212172
+TrxBoard Msg Board: TX36 Rack 0 Slot  8 10.2.1.161 sno 212198
+TrxBoard Msg Board: TX36 Rack 0 Slot 19 10.2.1.162 sno 211185
+TrxBoard Msg Board: TX36 Rack 0 Slot 22 10.2.1.163 sno 212190
+TrxBoard Msg Board: TX36 Rack 0 Slot  9 10.2.1.164 sno 212160
+TrxBoard Msg Board: TX36 Rack 0 Slot 13 10.2.1.165 sno 212169
+TrxBoard Msg Board: TX36 Rack 0 Slot 17 10.2.1.166 sno 212167
+TrxBoard Msg Board: TX36 Rack 0 Slot  7 10.2.1.167 sno 212162
+TrxBoard Msg Board: TX36 Rack 0 Slot  1 10.2.1.168 sno 212176
+TrxBoard Msg Board: TX36 Rack 0 Slot  4 10.2.1.169 sno 211191
+TrxBoard Msg Board: TX36 Rack 0 Slot  5 10.2.1.170 sno 212156
+TrxBoard Msg Board: TX36 Rack 0 Slot  3 10.2.1.171 sno 212197
+TrxBoard Msg Board: TX36 Rack 0 Slot  0 10.2.1.172 sno 212158
+TRX boards init not finished
+Boards connected :
+TX36: 23 of 24   RX32: 4 of 4   BSP: 2 of 2
+Status TRU:4
+Starting range dependent gain task
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)
+PU0 - setup
+connected PU 122 to OS 122
+Clock resync @ 2018.08.17 12.17.25
+CPU ticks 2166866944
+P03 - BITE 99
+P02 - OFFBWS Offset: 0  (Sel:1 Phy:1)
+S00 - Sound Velocity Profile:  2 points
+P20 - command and reply instTgm
+Starting AUX netport IP : 192.168.36.102:0xffff0000
+Attached TCP/IP interface to gei unit 1
+P40 - update parameter
+P40 - update parameter
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)
+PU0 - setup
+connected PU 122 to OS 122
+Clock resync @ 2018.08.17 12.18.46
+CPU ticks 2166867200
+P03 - BITE 99
+P02 - OFFBWS Offset: 0  (Sel:1 Phy:1)
+S00 - Sound Velocity Profile:  2 points
+P20 - command and reply instTgm
+P40 - update parameter
+P40 - update parameter
+P03 - BITE 16
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)
+PU0 - setup
+connected PU 122 to OS 122
+Clock resync @ 2018.08.17 12.22.11
+CPU ticks 2166868224
+P03 - BITE 99
+P02 - OFFBWS Offset: 0  (Sel:1 Phy:1)
+S00 - Sound Velocity Profile:  2 points
+P20 - command and reply instTgm
+P40 - update parameter
+P40 - update parameter
+P00 - OFFBWS Offset: 3  (Sel:2 Phy:1)

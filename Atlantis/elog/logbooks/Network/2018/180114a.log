@@ -1,0 +1,116 @@
+$@MID@$: 62
+Date: Sun, 14 Jan 2018 11:19:52 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: 
+Subject: DHCP - no addresses
+Cruise: at39-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>&gt; Hi Laura,<br />
+&gt; &nbsp;We&#39;ll be disconnecting the shore cable just after 1000.<br />
+&gt; &nbsp;Did Catie contact you?<br />
+&gt; &nbsp;Wifi isn&#39;t giving out addresses. &nbsp;Neither is wired on the science subnet.<br />
+&gt; aloha,&gt; ds</p>
+
+<p>RESPONSE:</p>
+
+<p>It looks like ftp is handing out leases again. I did not look to o hard, but I think it ran out of leases, with the wifi up, there<br />
+are a lot more things connecting. I did a</p>
+
+<p>cat /dev/null &gt; dhcpd.lease<br />
+/etc/init.d/isc-dhcp-server restart</p>
+
+<p>It loosk ok, is it?</p>
+
+<p>thanks, laura<br />
+&nbsp;</p>
+$@MID@$: 63
+Date: Sun, 14 Jan 2018 11:24:59 +0000
+Author: AH - emails
+S/N: 
+Type: General Problem
+equipment: Switch
+Subject: Smart switch -stacked switches, one missing
+Cruise: at39-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>&gt; Hi Laura-<br />
+&gt;&nbsp;<br />
+&gt; ComET came to me today about not being able to print on the bridge, so I started chasing it down to the best of my knowledge with the new smart switches.<br />
+&gt;&nbsp;<br />
+&gt; Found I can&#39;t ping the printer, 199.92.161.36. Found I can&#39;t ping the smart switch it is attached to, 199.92.161.105, but I can to all of the other ones<br />
+&gt; of that type, .101-.104 no problem. So likewise I can&#39;t get in to .105 to look at it.<br />
+&gt;&nbsp;<br />
+&gt; The chart room fiber I see is connected to the second, bottom cisco c2960x, which is unlabeled and likewise can&#39;t get to (.91 is the only c2960x online,<br />
+&gt; and I just couldn&#39;t log in as we do not have the proper users or passwords).<br />
+&gt;&nbsp;<br />
+&gt; Printer problem solved for the minute by just plugging it into sssg net the old fashioned way through the jacks, but really have no idea how to even start<br />
+&gt; with the chart room smart switch given the above cases.<br />
+&gt;&nbsp;<br />
+&gt; Catie<br />
+<strong>***RESPONSE:</strong></p>
+
+<p>Hi Catie,</p>
+
+<p>It does not look like the switches are stacked anymore. Can you check the cables on the back, maybe the second switch does not have power anymore?</p>
+
+<p>If both switches have power and the stacking cables are plugged into the back (there are kind of hard to take out), maybe try repowering both switches, plug<br />
+tc2960x back in first.</p>
+
+<p><br />
+Last login: Thu Aug 31 18:09:18 2017 from dhcp65.science.atlantis.whoi.edu<br />
+sssg@ftp:~$ ssh cisco@199.92.161.91</p>
+
+<p>pw: atl@whoi2017</p>
+
+<p>all the switches are cisco/atl@whoi2017 &nbsp;and most of them have sssg@regularolessgpw</p>
+
+<p>The problem w/ the printer (and I have to think the entire &#39;cabin net gone science&#39;) is that the second switch is not &#39;there&#39;.</p>
+
+<p>AT2960X-1#show switch stack-ports<br />
+&nbsp; Switch # &nbsp; &nbsp;Port 1 &nbsp; &nbsp; &nbsp; Port 2<br />
+&nbsp; -------- &nbsp; &nbsp;------ &nbsp; &nbsp; &nbsp; ------<br />
+&nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Down &nbsp; &nbsp; &nbsp; &nbsp; Down</p>
+
+<p><br />
+should &nbsp;show:<br />
+C2960X-1#show switch stack-ports<br />
+&nbsp; Switch # &nbsp; &nbsp;Port 1 &nbsp; &nbsp; &nbsp; Port 2<br />
+&nbsp; -------- &nbsp; &nbsp;------ &nbsp; &nbsp; &nbsp; ------<br />
+&nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ok &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ok<br />
+&nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ok &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ok<br />
+Let me know what you see with power and stacing cables and we can go from there. If it does not come up we can put the printer and the &#39;cabin gone science&#39;<br />
+and HIVEMAN on the first switch<br />
+thanks, laura</p>
+
+<p><strong>MORE ---:</strong></p>
+
+<p>Ok.. I can do some research and ask some questions, but I think further trouble shooting will be more disruptive ie taking down both switches and resetting<br />
+the stacking module. I think we can move everything up to switch1 for now. HIVES are still working, right?</p>
+
+<p>I updated the config on .91 C2960x-1 for the cabin2sci, hiveman, and trunk to chartroom. If you move the ethernet cables and the mm to the C2960x-1 it<br />
+should start working.</p>
+
+<p>Gi20 &nbsp;CABIN2SCI<br />
+Gi21 &nbsp; HIVEMAN</p>
+
+<p>The Chartroom MM fiber &nbsp;into Gi25</p>
+
+<p>&gt; I had checked before that the .92 had blinky lights, and it did. Checked again, stacking cables were in place with their lights lit. Repowered, booting<br />
+&gt; the top one first, and still no response from .92 now.<br />
+&gt;&nbsp;</p>
+
+<p>You will not get a response from .92 even when it is all working, because as &#39;stacked switches&#39; they will act and respond as one .91. The interfaces change<br />
+their numbering.</p>
+
+<p>&gt; Yes, the ssh to .91 does work, I was trying via a web browser before, which did not work.<br />
+&gt;&nbsp;</p>
+
+<p>I would rather we work on the CLI. There is no way I can say click here and here and here. Some of the web commands change more things than you really want<br />
+or expect.</p>
+
+<p>laura</p>

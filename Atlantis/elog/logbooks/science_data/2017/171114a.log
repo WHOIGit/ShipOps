@@ -1,0 +1,22 @@
+$@MID@$: 15
+Date: Tue, 14 Nov 2017 15:38:33 +0000
+Author: AH
+Type: Routine
+Subject: SAMOS - updated metadata on samos website
+Cruise: at39-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>I updated the metadata for the Atlantis on the SAMOS website:&nbsp; https://samos.coaps.fsu.edu&nbsp;&nbsp; (see elog entry 12 for directions on how to do this)</p>
+
+<p>CHANGES/ADDITIONS MADE:</p>
+
+<p>1)&nbsp; The PTU&#39;s in the Vaisala sensors (both port and stbd) were changed - this gives a new calibration date for the air temperatures (WPAT, WSAT_, the barometric pressures (WPBP, WSBP), and the relative humidities (WPRH &amp; WSRH).</p>
+
+<p>2)&nbsp; Thermosalinograph changes (since way back to 2013) were not up to date.&nbsp; I added the history and the newest.&nbsp; This involves calibration date changes for conductivity (SSC) and salinity (SAL)</p>
+
+<p>3)&nbsp; SBE48 hull mounted sensor changes were not up to date (since way back to 2012 - still some calibration dates missing).&nbsp; I added the history and the newest.&nbsp; The changes were due to calibration date changes for sea surface temperature (SST) when sensors were changed out.</p>
+
+<p>4)&nbsp; LWR / SWR - the dates of sensor swaps had been entered but the calibration dates were missing - I added these (otherwise no changes here).</p>
+
+<p>All other information remained the same.</p>

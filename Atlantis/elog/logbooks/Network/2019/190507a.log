@@ -1,0 +1,25 @@
+$@MID@$: 86
+Date: Tue, 07 May 2019 03:40:30 +0000
+Author: Emily
+S/N: 
+Type: Configuration
+equipment: HIVE
+Subject: Configured 8 Hives
+Cruise: at42-10
+Attachment: 
+Encoding: HTML
+========================================
+<p>According to HiveManager, we had 8 unconfigured hive routers. I followed procedures from the SSSG shared Google Drive below. Configuration was very fast (2 min) and all hive routers came back online afterward.&nbsp;</p>
+
+<p>Directions followed:</p>
+
+<p>&quot;The unconfigured devices need to be updated. To do this you can go to the configure tab and click on any of the unconfigured devices. First you want to click<br />
+modify and ensure that you are connected to the correct network (there should only be one network available to click - Atlantis). Next, click the update tab and let it do a<br />
+normal automatic update (there will be 2 pop-ups, that you click through). Each update takes several minutes while it reboots each hive router. Be aware that<br />
+while you do these updates it will boot anyone connected to the device.<br />
+<br />
+If for some reason the devices don&#39;t come back online after being updated, you can do a reset of the device. The reset button is located next to the cat cable<br />
+input (the device has to remain &#39;plugged in&#39; during the reset). Hold down the button for ~12 sec, the LED light will be blue and will blink, wait for the light to<br />
+stay solid. Again, all of the rebooting/updates takes several minutes to run through its processes.&quot;<br />
+<br />
+Have started a google doc for HIVE stuff SSSG-&gt;NETWORK-&gt;HIVE</p>

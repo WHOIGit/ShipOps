@@ -1,0 +1,13 @@
+$@MID@$: 3
+Date: Sat, 04 Feb 2012 14:11:50 +0000
+Author: Robbie
+S/N: 
+Clock: top_lab
+Type: Other
+Category: Configuration
+Subject: changed ESE clock in TopLab
+Cruise: at18-18
+Attachment: 
+Encoding: HTML
+========================================
+<p>changed clock in Top Lab, EM122 is now receiving proper 1pps signal.&nbsp; (pulse drops at start of second.)</p>

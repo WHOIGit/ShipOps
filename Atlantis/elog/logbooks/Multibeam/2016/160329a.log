@@ -1,0 +1,38 @@
+$@MID@$: 72
+Date: Tue, 29 Mar 2016 10:00:43 +0000
+Author: Catie
+System: EM122 - Kongsberg
+Type: Configuration
+Category: Hardware
+S/N: 
+Subject / Summary: New UPS
+Cruise: shipyard 2015-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>New UPS ordered for EM122 and installed 24 February 2016.</p>
+<p>http://www.apc.com/shop/eg/en/products/APC-Smart-UPS-RT-6000VA-230V-Marine/P-SURT6000XLIM</p>
+$@MID@$: 73
+Date: Tue, 29 Mar 2016 10:44:40 +0000
+Author: Catie
+System: EM122 - Kongsberg
+Type: Configuration
+Category: Hardware
+S/N: 
+Subject / Summary: Timeline of power supply/Tx board issues Dec 2015-Mar 2016 and AT33-03 Config
+Cruise: at33-03
+Attachment: 160329_102043_WO#00542S_Atlantis_HV-PSU_Trip_Report.docx
+Encoding: HTML
+========================================
+<p>Dec 7 2015: 170V Power Supply s/n 0844001012 operational but giving very poor BIST voltages.</p>
+<p>Dec 7 2015: Spare 170V Power Supply s/n 1008001011 installed into the system. BIST voltages returned to normal.</p>
+<p>Dec 14 2015: 170V Power Supply s/n 0844001012 shipped to Kongsberg for repair.</p>
+<p>Dec 14 2015: Bad Tx36 Boards s/n Slot 12:211131 Slot 23:211543 Slot 24:212173 sent to WHOI for in-house repair</p>
+<p>Jan 29 2016: The above repaired Tx36 boards re-installed in EM122. 170V Power Supply s/n 1008001011 failed to power up.</p>
+<p>Feb 25 2016: 170V Power Supply s/n 1438001007, new from Kongsberg, installed in EM122. Also failed to power up.</p>
+<p>Feb 26-March 5 2016: At-sea troubleshooting and service visit from Kongsberg March 4-5 in Barbados. Service report attached. Problem identified as power problems emanating from repaired Tx36 boards, repaired fuses running very hot and drawing excessive power. Additional 170V Power Supply (unopened, s/n unknown) shipped to Barbados from Norway.</p>
+<p>Final configuration post-Kongsberg visit:</p>
+<p>170V Power Supply s/n 1008001011 installed (working fine).</p>
+<p>New 170V Power Supply s/n 1438001007 aboard as spare (working fine). Original 170V Power Supply s/n 0844001012 still at Kongsberg. 170V Power Supply unopened, unknown s/n shipped from Norway ready for return shipment to...?</p>
+<p>Good, spare Tx36 board s/n 231647 installed in slot 12. </p>
+<p>Tx36 boards s/n 211543 and s/n 212173 (with fuses removed) installed in slots 23 and 24. Boards non-operational but serving as place holders in those slots. Tx36 board s/n 211131 (with fuses removed) available as non-operational spare.</p>

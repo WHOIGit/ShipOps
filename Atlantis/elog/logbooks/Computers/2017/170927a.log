@@ -1,0 +1,81 @@
+$@MID@$: 96
+Date: Wed, 27 Sep 2017 17:54:27 +0000
+Author: lstolp
+Type: Configuration
+name: ftp
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: RANCID FTP
+Cruise: at38
+Attachment: 
+Encoding: HTML
+========================================
+<p>RANCID is software that keeps track of switch configuration changes, can make a local copy of the switch configs using git.</p>
+
+<p>RANCID readme:&nbsp;/usr/local/rancid/README.org</p>
+
+<p>git clone ssh://ftp/usr/local/rancid/var/gitroot/atlantis</p>
+
+<p>to change user:</p>
+
+<p>git clone ssh://sssg@192.168.11.1/usr/local/rancid/var/gitroot/atlantis</p>
+
+<p>to update above repository:</p>
+
+<p>git pull</p>
+
+<p>&nbsp;</p>
+
+<p>#### updated rancid with more switches</p>
+
+<p>Edit /usr/local/rancid/var/atlantis/routers.db</p>
+
+<p>&nbsp;</p>
+
+<p>You should see some reasonable examples in there.</p>
+
+<p>&nbsp;</p>
+
+<p>Each line is a single record with, I think, three semi-colon separated</p>
+
+<p>fields: name; type; status</p>
+
+<p>&nbsp;</p>
+
+<p>whatever you put in for &quot;name&quot; is both what it attempts to pull the</p>
+
+<p>config from and what it announces in the messages. For this reason, I</p>
+
+<p>like to use DNS names rather than IPs (however, the docs recommend IPs).</p>
+
+<p>&nbsp;</p>
+
+<p>Clearly DNS changes need to be coordinated; but JK used IP&#39;s up the hill</p>
+
+<p>and both JP and I go crazy when we see messages about &quot;172.26.11.9&quot;</p>
+
+<p>&nbsp;</p>
+
+<p>Anyway, the discipline is to try to ssh to &quot;name&quot; before you write it</p>
+
+<p>into routers.db (or just watch and fix errors...).</p>
+
+<p>&nbsp;</p>
+
+<p>type is a name which needs to match in RANCiD&#39;s list of router scripts.</p>
+
+<p>On the Atlantis so far you only have 2 types: cisco, cisco-sb (the</p>
+
+<p>SG300&#39;s are are &quot;cisco small business&quot;)</p>
+
+<p>&nbsp;</p>
+
+<p>And &quot;status&quot; is &quot;up&quot; or [anything else]. So when I remove things I&#39;ll</p>
+
+<p>put [whatever] in there: &quot;down,&quot; &quot;removed,&quot; &quot;under repair,&quot; &quot;foo&quot; (it</p>
+
+<p>doesn&#39;t matter)</p>
+
+<p>&nbsp;</p>

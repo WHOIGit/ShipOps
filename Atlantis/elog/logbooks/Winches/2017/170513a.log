@@ -1,0 +1,55 @@
+$@MID@$: 60
+Date: Sat, 13 May 2017 21:10:50 +0000
+Author: AH
+Type: Wire
+Winch: 
+Wire: EM Cable / CTD conductor
+Category: General Problem
+Subject: 
+Cruise: at37-12
+Attachment: 170513_205921_LevelwindSheaves.jpg,170513_210552_322wire_squirrel_2.JPG
+Encoding: HTML
+========================================
+<p>Science scheduled some CTD casts for the transit back to Costa Rica.&nbsp; On May 11, we stopped to do a cast.&nbsp; Several days of<br />
+transit had gone by, during which we'd diverted for the storm, etc.&nbsp; So, some maintenance was done on the forward winch.&nbsp; While winch maintenance was being done the top levelwind sheave was rotated backwards into an upside-down position.&nbsp; The top levelwind assembly is free to swivel horizonally from its attachment point at the base and vertically around the center pin of the main levelwind sheave. In this case the whole top levelwind assembly was swiveled around 180 degrees in the vertical direction such that the two small horizontal rollers ended up &quot;behind&quot; the main sheave (on the opposite side of the sheave as the boom), as opposed to &quot;in front&quot; of the main sheave between the main sheave and the boom where it normally operates.<br />
+<br />
+The position of the levelwind sheave was not checked by the winch operator prior to launching the CTD. So needless to say when tension was<br />
+taken up on the winch, the wire was not fairleading nicely over the main levelwind sheave, but instead the weight was on the bottom<br />
+horizontal roller. From there the sheave swiveled around in the horizontal direction and the wire slid over to rest its weight on the metal<br />
+cheeks of the horizontal rollers. This is the position the wire was &quot;rescued&quot; from once the wire was stoppered off and the load transferred<br />
+to the crane.<br />
+&nbsp;</p>
+<p>So, we got the CTD in the water and down to about 10 meters.&nbsp; Something (exactly what I mam not sure) must have happened that caught the winch operators attention and he stopped and said he needed to check out the winch.&nbsp; Soon, the Bosun and Chief Mate were called. The Bosun put a yale grip on the wire and pulled it up to relieve tension. He was then able to get the wire back in place and re-secure everything in its correct location.&nbsp; So, initially, we restarted the cast from the water (just brought it to the surface and restarted the SBE software).<br />
+<br />
+We progressed with the cast down to 100 meters, where we turned control over to the lab.&nbsp; At that point we took over the winch&nbsp; and<br />
+started down.&nbsp; Because of the problem, initially focus was on the drum and not the 3PS graph, so it was not not immediately noticed that the tension values<br />
+were way out of wack.&nbsp; It seemed evident that somewhere in the process someone had pressed the zero tension button at one of the stations.<br />
+Since the only way we know how to fix that is to get the wire back in a slack position, we proceeded to recover the CTD.&nbsp; Upon recovering<br />
+the CTD and obtaining the necessary slack, it became obvious that the wire had been damaged.&nbsp; There was a weird squirrely swirl in it (see<br />
+attached photos).&nbsp; There was no distinctkinks, but there were areas along the swirl where the wire looked shiny like friction against a surface had removed some outer material<br />
+exposing the metal.&nbsp; It was determined that the best course of action was to cut off the section of wire.&nbsp; We'd been planning to take off<br />
+about 150 meters anyway, so we proceeded to do so at that time.&nbsp; We cut off ~150 meters leaving an outside tape reading of 8955.5 meters.<br />
+<br />
+We reterminated the wire (which caused us to miss that science cast). Near midnight, the termination was completed and we got the Bosun up<br />
+to pull test the termination.&nbsp; The Bosun decided to take up the slack on the wire and then use the hydroboom to apply tension up to<br />
+2500-3000 lbs. Unfortunately, the tension that was actually applied went as high as 10286 pounds (the tension exceeded 5000 pounds for 40<br />
+seconds, it exceeded 9000 lbs for 23 seconds of that time).&nbsp; The bosun made adjustments and decreased the tension and then we held the lower<br />
+tension for several minutes. After the wire was returned to it's slack position we examined it carefully, and examined the termination<br />
+(which had not slipped at all). The fact that the nominal breaking load had been exceeded was discussed by the Bosun and Chief Mate.&nbsp; I<br />
+hooked up the termination and wiring and checked to see if the conductors were still viable.&nbsp; The CTD was communicating and all seemed fine.<br />
+I'm just going to say here, so you don't get too worried - we do not lose the CTD.&nbsp; Anyway, we decided to do the cast to 2500 meters.&nbsp; It<br />
+was a judgement call that turned out all right.&nbsp; However, at the end of the cast, when the CTD returned to about 5 meters depth, the CTD<br />
+lost communications.&nbsp; We were unable to reinitiate communication so the power was secured and the CTD was recovered.&nbsp; After some testing to<br />
+determine where the problem might be, it was decided to cut an additional 30 meters of wire and reterminate all over again (outside tape reading 8926.5).&nbsp; The 30 meters<br />
+would account for the wire that was directly exposed to the excessive tension plus some additional wraps.<br />
+<br />
+After the second termination was completed, the wire was meggered.&nbsp; Prior to the bad pull test, we already had low insulation resistance<br />
+values on the red conductor (it was 54.5 MOhms) from red to ground.&nbsp; The white was also less than a GB (it was 414 MOhms prior to the pull<br />
+test - white to ground).&nbsp; The black conductor was solid though, testing over 1 GByte insulation resistance for all wires (blk-ground,<br />
+blk-red, blk-white). After the bad pull test the black wire to ground was still looking okay, but everything else was in the 10's of MOhms<br />
+(100 times lower than they ought to be).<br />
+</p>
+<p>After the science works was complete, another ~220 meters of wire was cut off.&nbsp; </p>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

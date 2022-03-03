@@ -1,0 +1,71 @@
+$@MID@$: 52
+Date: Sat, 31 Dec 2016 18:44:09 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: 
+Subject: UPDATING HOSTS!!!!!
+Cruise: at37-07
+Attachment: 
+Encoding: HTML
+Draft: dsims
+========================================
+<p>EVERYTIME HOSTS TABLES ARE UPDATED NEED TO CHECK/EDIT:&nbsp;&nbsp;&nbsp; ftp:/etc/hosts</p>
+
+<p>MAKE SURE at-hiseasnet 128.128.252.1</p>
+
+<p># modified 11/7/2006, akens whoi<br />
+# network color coded orange</p>
+
+<p># netmask 255.255.255.0<br />
+# nameserver 199.92.161.2<br />
+# nameserver 199.92.161.3<br />
+# gateway 199.92.161.3<br />
+# timeserver 199.92.161.2<br />
+# timeserver 199.92.161.3</p>
+
+<p># this is for the cricket plots<br />
+128.128.252.1 &nbsp; at-hiseasnet</p>
+
+<p>127.0.0.1 &nbsp; &nbsp; &nbsp; localhost &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; loopback loghost</p>
+
+<p>199.92.161.1 &nbsp; &nbsp;atgw.atlantis.whoi.edu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;atgw<br />
+199.92.161.3 &nbsp; &nbsp;ftp.atlantis.whoi.edu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; www ftp<br />
+199.92.161.5 &nbsp; &nbsp;zeus.atlantis.whoi.edu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;zeus</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>IS AT THE TOP&nbsp;&nbsp;&nbsp; -----see below</p>
+
+<p>&nbsp;</p>
+
+<p>Date: Thu, 22 Dec 2016 11:24:17 +0000 (UTC)<br />
+From: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Subject: Re: network graphs<br />
+<br />
+Did you update the hosts table and bind? this takes at-hiseasnet out of the host talbes. It needs to be at the top<br />
+<br />
+at-hiseasnet 128.128.252.1<br />
+<br />
+I fixed this early in the cruise. It will not work unless this is in the hosts table, so EVERYTIME you update DNS you need to<br />
+make sure this line is at the top of ftp:/etc/hosts<br />
+<br />
+Elog it, or put in part of &quot;this what you need to do to update hosts on the atlantis&quot; doc :).<br />
+<br />
+thanks, laura<br />
+<br />
+On Thu, 22 Dec 2016, atlantis sssg wrote:<br />
+<br />
+&gt;<br />
+&gt; Hi Laura,<br />
+&gt;<br />
+&gt;&nbsp; Did you do anything that would have killed our network graph plots?&nbsp; We lost our HSN graph at 2000gmt, 1300 L.<br />
+&gt;<br />
+&gt; aloha,<br />
+&gt; ds<br />
+&gt;<br />
+&gt;<br />
+&nbsp;</p>

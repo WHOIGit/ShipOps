@@ -1,0 +1,790 @@
+show run
+at-hiseasnet#show running-config 
+Building configuration...
+
+Current configuration : 8534 bytes
+!
+! Last configuration change at 00:36:12 UTC Thu Feb 2 2012 by sssg
+!
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname at-hiseasnet
+!
+boot-start-marker
+boot-end-marker
+!
+logging buffered 51200 warnings
+!
+no aaa new-model
+!
+no ipv6 cef
+ip source-route
+ip cef
+!
+ --More--         !
+!
+!
+no ip domain lookup
+ip domain name atlantis
+ip host ftp 128.128.252.2
+ip name-server 128.128.252.2
+multilink bundle-name authenticated
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1982963011
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1982963011
+ revocation-check none
+ rsakeypair TP-self-signed-1982963011
+!
+!
+crypto pki certificate chain TP-self-signed-1982963011
+ certificate self-signed 01
+  3082024F 308201B8 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31393832 39363330 3131301E 170D3130 30393039 31383433 
+ --More--           32365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 39383239 
+  36333031 3130819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100C0A1 FE34E3DD 67F9E3C7 5E95DAEE D2DEFA4A CE96E4F8 F0470120 586593E0 
+  E43927FA 407C3E0C EEEB7B60 9A412DCD 1AA1DBB7 84C26E81 46F31B3E 8209C887 
+  26C3B987 94AE22C9 9EAEB267 5C877FF3 E7E8F23A 77A30FC9 0FD0E2DB 28B5728C 
+  6BD3EB92 A15DADE0 2B69CF38 8E9F5F8D 3173546B 2E9192B5 3B600A37 EAFEA04C 
+  B1F50203 010001A3 77307530 0F060355 1D130101 FF040530 030101FF 30220603 
+  551D1104 1B301982 17796F75 726E616D 652E796F 7572646F 6D61696E 2E636F6D 
+  301F0603 551D2304 18301680 140A3B19 3EDB8CFD 17B0547C 65E5BCA9 738DADDD 
+  CA301D06 03551D0E 04160414 0A3B193E DB8CFD17 B0547C65 E5BCA973 8DADDDCA 
+  300D0609 2A864886 F70D0101 04050003 81810050 01B3AABF 26AE2E9F 1C55E662 
+  AF285578 917FA505 BF371BFB 3E3EF6A8 3AEA7EF2 1289D3E9 FE6E2923 5FE96BCB 
+  D231E15F DC96FD86 B2CD0798 940470BA 9C8500C9 40A3ADA6 0039D77A 387CFC1D 
+  32E8842E 85DBCD7F 29E03DBD EC86DCF0 6072F571 B493BF74 E0CF1449 803B05CF 
+  0B7EEC64 C0E3E5EF D804BFE7 E3F33BB1 FE401C
+  	quit
+license udi pid CISCO2911/K9 sn FTX1437A10R
+!
+!
+username sssg privilege 15 secret 5 $1$c0S5$tsRHem7Nd4kr.aK/w3CMc0
+username lstolp privilege 15 secret 5 $1$3hBz$KV93J5JZKtQCK5n2qCvZm.
+!
+ --More--         !
+!
+!
+!
+!
+interface Tunnel10
+ description HSN-over-FBB tunnel
+ bandwidth 432
+ ip address 192.168.252.201 255.255.255.252
+ ip access-group 128 in
+ no ip redirects
+ no ip unreachables
+ ip accounting output-packets
+ ip mtu 1336
+ ip tcp adjust-mss 1296
+ delay 100000
+ keepalive 10 3
+ traffic-shape rate 96000 7968 7968 1000
+ tunnel source GigabitEthernet0/2
+ tunnel destination 137.110.255.83
+!
+interface GigabitEthernet0/0
+ description HiSeasNet DMZ
+ --More--          ip address 128.128.252.1 255.255.255.240
+ ip nat inside
+ no ip virtual-reassembly
+ no ip route-cache cef
+ no ip route-cache
+ no ip split-horizon
+ duplex auto
+ speed auto
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ description internet from whoi dock
+ ip address 128.128.200.147 255.255.255.0
+ ip nat outside
+ no ip virtual-reassembly
+ no ip route-cache cef
+ no ip route-cache
+ no ip split-horizon
+ ip ospf message-digest-key 1 md5 7 123D0A14193D5E527A6B
+ duplex auto
+ speed auto
+ no cdp enable
+!
+ --More--         interface GigabitEthernet0/2
+ description WAN, FBB-LAN
+ ip dhcp client default-router distance 255
+ no ip dhcp client request tftp-server-address
+ no ip dhcp client request netbios-nameserver
+ no ip dhcp client request vendor-specific
+ no ip dhcp client request static-route
+ no ip dhcp client request domain-name
+ no ip dhcp client request dns-nameserver
+ ip address dhcp
+ ip mtu 1360
+ ip nat outside
+ ip virtual-reassembly
+ no ip route-cache cef
+ no ip route-cache
+ no ip split-horizon
+ duplex auto
+ speed auto
+ fair-queue
+ no cdp enable
+!
+interface FastEthernet0/0/0
+ ip address dhcp
+ --More--          ip nat outside
+ no ip virtual-reassembly
+ no ip route-cache cef
+ no ip route-cache
+ no ip split-horizon
+ shutdown
+ duplex auto
+ speed auto
+ no cdp enable
+!
+interface FastEthernet0/1/0
+ description ship backdoor
+ ip address 199.92.161.185 255.255.255.0
+ no ip route-cache cef
+ no ip route-cache
+ no ip split-horizon
+ duplex auto
+ speed auto
+ no cdp enable
+!
+interface Serial0/2/0
+ description "Serial line to satellite modem"
+ bandwidth 160000
+ --More--          ip address 128.128.252.201 255.255.255.252
+ ip access-group 128 in
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ ip accounting output-packets
+ ip mtu 1400
+ delay 35000
+ no keepalive
+ fair-queue
+ clock rate 2000000
+ no cdp enable
+!
+interface Serial0/2/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+router ospf 1
+ router-id 128.128.200.147
+ log-adjacency-changes
+ area 202 authentication message-digest
+ area 202 stub no-summary
+ --More--          passive-interface default
+ no passive-interface GigabitEthernet0/1
+ network 128.128.200.0 0.0.0.255 area 202
+!
+router bgp 64521
+ no synchronization
+ bgp log-neighbor-changes
+ network 128.128.0.0
+ timers bgp 8 20
+ redistribute connected
+ neighbor 128.128.252.202 remote-as 64521
+ neighbor 128.128.252.202 description ucsd-sdsc-roadnet-2611
+ neighbor 128.128.252.202 next-hop-self
+ neighbor 128.128.252.202 weight 30000
+ neighbor 128.128.252.202 distribute-list 28 out
+ neighbor 192.168.252.202 remote-as 64521
+ neighbor 192.168.252.202 description ucsd-sdsc-hiseasnet-2821-tunnel-via-fbb
+ neighbor 192.168.252.202 next-hop-self
+ neighbor 192.168.252.202 weight 25000
+ neighbor 192.168.252.202 distribute-list 28 out
+ no auto-summary
+!
+no ip forward-protocol nd
+ --More--         !
+no ip http server
+no ip http secure-server
+!
+ip nat pool WHOI-DOCK 128.128.200.147 128.128.200.147 prefix-length 24
+ip nat pool MARFAC-SHORE 137.110.144.66 137.110.144.66 prefix-length 24
+ip nat pool DHCP-SHORE 192.168.20.86 192.168.20.86 prefix-length 24
+ip nat pool FBB-SHORE 216.86.248.179 216.86.248.179 prefix-length 24
+ip nat inside source route-map dhcp-shore pool DHCP-SHORE
+ip nat inside source route-map fbb-shore pool FBB-SHORE
+ip nat inside source route-map marfac-shore pool MARFAC-SHORE
+ip nat inside source route-map whoi-dock pool WHOI-DOCK
+ip nat inside source static tcp 128.128.252.2 22 128.128.200.147 22 extendable
+ip nat inside source static tcp 128.128.252.2 80 128.128.200.147 80 extendable
+ip nat inside source static tcp 128.128.252.2 3000 128.128.200.147 3000 extendable
+ip nat inside source static tcp 128.128.252.2 8080 128.128.200.147 8080 extendable
+ip route 0.0.0.0 0.0.0.0 192.168.0.1 210
+ip route 137.110.255.83 255.255.255.255 GigabitEthernet0/2 dhcp
+!
+logging facility local2
+logging 128.128.252.2
+ --More--         access-list 1 permit 128.128.252.1
+access-list 1 permit 128.128.252.2
+access-list 28 permit 128.128.252.0 0.0.0.15
+access-list 128 remark normal WHOI access
+access-list 128 permit ip any 128.128.252.200 0.0.0.3
+access-list 128 permit ip any 128.128.252.0 0.0.0.15
+access-list 128 permit ip any 192.168.252.200 0.0.0.3
+access-list 128 remark Ensure MTU negotiation works with ICMP
+access-list 128 permit icmp any any time-exceeded
+access-list 128 permit icmp any any unreachable
+access-list 128 remark Ensure FBB can talk GRE to our HSN-over-FBB tunnel destination IP
+access-list 128 permit gre any host 137.110.255.83
+!
+no cdp run
+
+route-map fbb-shore permit 10
+ match ip address 1
+ match interface FastEthernet0/0/0
+!
+route-map whoi-dock permit 10
+ match ip address 1
+ match interface GigabitEthernet0/1
+ --More--         !
+route-map dhcp-shore permit 10
+ match ip address 1
+ match interface GigabitEthernet0/2
+!
+route-map marfac-shore permit 10
+ match ip address 1
+ match interface FastEthernet0/0/0
+!
+!
+snmp-server community sssg RO
+!
+control-plane
+!
+alias exec xd show ntp associations
+alias exec xs show ntp status
+alias exec time show clock
+alias exec proto show ip protocol
+alias exec int show ip interface brief
+alias exec rn show ip route
+alias exec sa show access-lists
+alias exec a show aliases
+alias exec nat show ip nat translations
+ --More--         alias exec natstat show ip nat statistics
+alias exec ospfdata show ip ospf data
+alias exec ospfnei show ip ospf nei
+alias exec bgpnei show ip bgp nei
+alias exec ospf_border show ip ospf border-routers
+banner exec ^CC
+
+
+Authorized Access Only
+
+'^C
+banner login ^CC
+
+
+Authorized Access Only
+
+
+'^C
+!
+line con 0
+ login local
+line aux 0
+line vty 0 4
+ --More--          privilege level 15
+ login local
+ transport preferred none
+ transport input ssh
+line vty 5 15
+ access-class 23 in
+ privilege level 15
+ login local
+ no exec
+ transport preferred none
+ transport input none
+!
+scheduler allocate 20000 1000
+ntp server 128.128.96.129
+ntp server 128.128.252.2
+end
+
+at-hiseasnet#int
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         128.128.252.1   YES NVRAM  up                    up      
+GigabitEthernet0/1         128.128.200.147 YES NVRAM  down                  down    
+GigabitEthernet0/2         216.86.248.179  YES DHCP   up                    up      
+FastEthernet0/0/0          192.168.0.53    YES manual administratively down down    
+FastEthernet0/1/0          199.92.161.185  YES NVRAM  up                    up      
+Serial0/2/0                128.128.252.201 YES NVRAM  down                  down    
+Serial0/2/1                unassigned      YES NVRAM  administratively down down    
+NVI0                       128.128.252.1   YES unset  up                    up      
+Tunnel10                   192.168.252.201 YES manual up                    up      
+at-hiseasnet#rn
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, + - replicated route
+
+Gateway of last resort is 192.168.252.202 to network 0.0.0.0
+
+B*    0.0.0.0/0 [200/0] via 192.168.252.202, 00:03:31
+      128.128.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        128.128.252.0/28 is directly connected, GigabitEthernet0/0
+L        128.128.252.1/32 is directly connected, GigabitEthernet0/0
+      137.110.0.0/32 is subnetted, 1 subnets
+S        137.110.255.83 [1/0] via 216.86.248.178, GigabitEthernet0/2
+      192.168.252.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.252.200/30 is directly connected, Tunnel10
+L        192.168.252.201/32 is directly connected, Tunnel10
+      199.92.161.0/24 is variably subnetted, 2 subnets, 2 masks
+C        199.92.161.0/24 is directly connected, FastEthernet0/1/0
+L        199.92.161.185/32 is directly connected, FastEthernet0/1/0
+      216.86.248.0/24 is variably subnetted, 2 subnets, 2 masks
+ --More--         C        216.86.248.0/24 is directly connected, GigabitEthernet0/2
+L        216.86.248.179/32 is directly connected, GigabitEthernet0/2
+at-hiseasnet#show bgp nei
+BGP neighbor is 128.128.252.202,  remote AS 64521, internal link
+ Description: ucsd-sdsc-roadnet-2611
+  BGP version 4, remote router ID 0.0.0.0
+  BGP state = Idle
+  Configured hold time is 20, keepalive interval is 8 seconds
+  Minimum holdtime from neighbor is 0 seconds
+  Neighbor sessions:
+    0 active, is multisession capable
+  Default minimum time between advertisement runs is 0 seconds
+
+ For address family: IPv4 Unicast
+  BGP table version 83, neighbor version 1/83
+  Output queue size : 0
+  Index 0
+  NEXT_HOP is always this router
+  Outgoing update network filter list is 28
+  Default weight 30000
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               0          0
+    Prefixes Total:                 0          0
+    Implicit Withdraw:              0          0
+    Explicit Withdraw:              0          0
+ --More--             Used as bestpath:             n/a          0
+    Used as multipath:            n/a          0
+
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    Total:                                0          0
+  Number of NLRIs in the update sent: max 1, min 0
+
+  Address tracking is enabled, the RIB does have a route to 128.128.252.202
+  Connections established 4; dropped 4
+  Last reset 00:03:38, due to Active open failed
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+  No active TCP connection
+ --More--         
+BGP neighbor is 192.168.252.202,  remote AS 64521, internal link
+ Description: ucsd-sdsc-hiseasnet-2821-tunnel-via-fbb
+  BGP version 4, remote router ID 140.142.254.202
+  BGP state = Established, up for 03:24:52
+  Last read 00:00:06, last write 00:00:02, hold time is 20, keepalive interval is 6 seconds
+  Configured hold time is 20, keepalive interval is 8 seconds
+  Minimum holdtime from neighbor is 0 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised
+    Address family IPv4 Unicast: advertised and received
+    Multisession Capability: advertised
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+ --More--             Updates:                2          1
+    Keepalives:          1881       1847
+    Route Refresh:          0          0
+    Total:               1884       1849
+  Default minimum time between advertisement runs is 0 seconds
+
+ For address family: IPv4 Unicast
+  Session: 192.168.252.202
+  BGP table version 83, neighbor version 83/0
+  Output queue size : 0
+  Index 4
+  4 update-group member
+  NEXT_HOP is always this router
+  Outgoing update network filter list is 28
+  Default weight 25000
+                                 Sent       Rcvd
+  Prefix activity:               ----       ----
+    Prefixes Current:               1          1 (Consumes 52 bytes)
+    Prefixes Total:                 2          1
+    Implicit Withdraw:              1          0
+    Explicit Withdraw:              0          0
+    Used as bestpath:             n/a          1
+    Used as multipath:            n/a          0
+ --More--         
+                                   Outbound    Inbound
+  Local Policy Denied Prefixes:    --------    -------
+    prefix-list                          10          0
+    Bestpath from this peer:              8        n/a
+    Bestpath from iBGP peer:              7        n/a
+    Invalid Path:                         4        n/a
+    Total:                               29          0
+  Number of NLRIs in the update sent: max 1, min 0
+
+  Address tracking is enabled, the RIB does have a route to 192.168.252.202
+  Connections established 1; dropped 0
+  Last reset never
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+ --More--         Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 192.168.252.201, Local port: 42000
+Foreign host: 192.168.252.202, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 1, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x1CC2B9BC):
+Timer          Starts    Wakeups            Next
+Retrans          1949         64      0x1CC2BCA1
+TimeWait            0          0             0x0
+AckHold          1846       1759             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger         3589       3588      0x1CC2C075
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss: 1507557667  snduna: 1507593563  sndnxt: 1507593563     sndwnd:  15871
+ --More--         irs: 3922954198  rcvnxt: 3922989389  rcvwnd:      15282  delrcvwnd:   1102
+
+SRTT: 1605 ms, RTTO: 2641 ms, RTV: 1036 ms, KRTT: 0 ms
+minRTT: 972 ms, maxRTT: 4572 ms, ACK hold: 200 ms
+Status Flags: active open
+Option Flags: nagle, path mtu capable
+IP Precedence value : 6
+
+Datagrams (max data segment is 1296 bytes):
+Rcvd: 3838 (out of order: 0), with data: 1848, total data bytes: 35209
+Sent: 3859 (retransmit: 64, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 1884, total data bytes: 35895
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+ --More--         
+at-hiseasnet#show intera fav ces
+GigabitEthernet0/0 is up, line protocol is up 
+  Hardware is CN Gigabit Ethernet, address is 1cdf.0f17.6bd0 (bia 1cdf.0f17.6bd0)
+  Description: HiSeasNet DMZ
+  Internet address is 128.128.252.1/28
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 1000Mb/s, media type is RJ45
+  output flow-control is XON, input flow-control is XON
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 11000 bits/sec, 13 packets/sec
+  5 minute output rate 21000 bits/sec, 13 packets/sec
+     7147016 packets input, 978991500 bytes, 0 no buffer
+     Received 55028 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+ --More--              0 input packets with dribble condition detected
+     15285035 packets output, 4049850582 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+GigabitEthernet0/1 is down, line protocol is down 
+  Hardware is CN Gigabit Ethernet, address is 1cdf.0f17.6bd1 (bia 1cdf.0f17.6bd1)
+  Description: internet from whoi dock
+  Internet address is 128.128.200.147/24
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto Speed, media type is RJ45
+  output flow-control is unsupported, input flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+ --More--           Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     1 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+GigabitEthernet0/2 is up, line protocol is up 
+  Hardware is CN Gigabit Ethernet, address is 1cdf.0f17.6bd2 (bia 1cdf.0f17.6bd2)
+  Description: WAN, FBB-LAN
+  Internet address is 216.86.248.179/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+ --More--           Full-duplex, 100Mb/s, media type is RJ45
+  output flow-control is XON, input flow-control is XON
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: weighted fair
+  Output queue: 0/1000/64/0 (size/max total/threshold/drops) 
+     Conversations  0/1/256 (active/max active/max total)
+     Reserved Conversations 0/0 (allocated/max allocated)
+     Available Bandwidth 75000 kilobits/sec
+  5 minute input rate 23000 bits/sec, 15 packets/sec
+  5 minute output rate 16000 bits/sec, 14 packets/sec
+     11000 packets input, 1640213 bytes, 0 no buffer
+     Received 1140 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     22591 packets output, 1967610 bytes, 0 underruns
+     0 output errors, 0 collisions, 3 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     5 lost carrier, 0 no carrier, 0 pause output
+ --More--              0 output buffer failures, 0 output buffers swapped out
+FastEthernet0/0/0 is administratively down, line protocol is down 
+  Hardware is FastEthernet, address is f866.f2c3.1845 (bia f866.f2c3.1845)
+  Internet address is 192.168.0.53/24
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Half-duplex, 10Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 19:35:32, output 19:14:24, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     51794 packets input, 24499983 bytes
+     Received 804 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     65590 packets output, 9183265 bytes, 0 underruns
+ --More--              0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     3 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+FastEthernet0/1/0 is up, line protocol is up 
+  Hardware is FastEthernet, address is f866.f2c3.1840 (bia f866.f2c3.1840)
+  Description: ship backdoor
+  Internet address is 199.92.161.185/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:09, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 13000 bits/sec, 21 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     10630806 packets input, 836056099 bytes
+ --More--              Received 10616424 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     63519 packets output, 5693311 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     16 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Serial0/2/0 is down, line protocol is down 
+  Hardware is WIC MBRD Serial
+  Description: "Serial line to satellite modem"
+  Internet address is 128.128.252.201/30
+  MTU 1500 bytes, BW 160000 Kbit/sec, DLY 350000 usec, 
+     reliability 254/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, loopback not set
+  Keepalive not set
+  Last input 00:06:24, output 00:06:23, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: weighted fair
+  Output queue: 0/1000/64/0 (size/max total/threshold/drops) 
+ --More--              Conversations  0/31/256 (active/max active/max total)
+     Reserved Conversations 0/0 (allocated/max allocated)
+     Available Bandwidth 120000 kilobits/sec
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     15449508 packets input, 3891063876 bytes, 0 no buffer
+     Received 7905 broadcasts, 218119 runts, 0 giants, 0 throttles
+     809128 input errors, 411937 CRC, 0 frame, 72 overrun, 0 ignored, 179000 abort
+     7188609 packets output, 909642026 bytes, 0 underruns
+     0 output errors, 0 collisions, 273 interface resets
+     7905 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     471 carrier transitions
+     DCD=down  DSR=up  DTR=down  RTS=down  CTS=up
+
+Serial0/2/1 is administratively down, line protocol is down 
+  Hardware is WIC MBRD Serial
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, loopback not set
+  Keepalive set (10 sec)
+  Last input never, output never, output hang never
+ --More--           Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: weighted fair
+  Output queue: 0/1000/64/0 (size/max total/threshold/drops) 
+     Conversations  0/0/256 (active/max active/max total)
+     Reserved Conversations 0/0 (allocated/max allocated)
+     Available Bandwidth 1158 kilobits/sec
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 3 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+     DCD=down  DSR=down  DTR=down  RTS=down  CTS=down
+
+NVI0 is up, line protocol is up 
+  Hardware is NVI
+  Interface is unnumbered. Using address of GigabitEthernet0/0 (128.128.252.1)
+  MTU 1514 bytes, BW 56 Kbit/sec, DLY 5000 usec, 
+ --More--              reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation UNKNOWN, loopback not set
+  Keepalive set (10 sec)
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+Tunnel10 is up, line protocol is up 
+  Hardware is Tunnel
+  Description: HSN-over-FBB tunnel
+  Internet address is 192.168.252.201/30
+  MTU 17916 bytes, BW 432 Kbit/sec, DLY 1000000 usec, 
+     reliability 255/255, txload 10/255, rxload 15/255
+  Encapsulation TUNNEL, loopback not set
+  Keepalive set (10 sec), retries 3
+ --More--           Tunnel source 216.86.248.179 (GigabitEthernet0/2), destination 137.110.255.83
+   Tunnel Subblocks:
+      src-track:
+         Tunnel10 source tracking subblock associated with GigabitEthernet0/2
+          Set of tunnels with source GigabitEthernet0/2, 1 member (includes iterators), on interface <OK>
+  Tunnel protocol/transport GRE/IP
+    Key disabled, sequencing disabled
+    Checksumming of packets disabled
+  Tunnel TTL 255, Fast tunneling enabled
+  Tunnel transport MTU 1336 bytes
+  Tunnel transmit bandwidth 8000 (kbps)
+  Tunnel receive bandwidth 8000 (kbps)
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 29000 bits/sec, 19 packets/sec
+  5 minute output rate 18000 bits/sec, 18 packets/sec
+     9292 packets input, 1366786 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+ --More--              14215 packets output, 1074240 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+at-hiseasnet#
+Feb  2 18:13:04.707: %LINK-3-UPDOWN: Interface Serial0/2/0, changed state to up
+Feb  2 18:13:05.707: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/2/0, changed state to up
+Feb  2 18:13:07.579: %BGP-5-ADJCHANGE: neighbor 128.128.252.202 Up 
+at-hiseasnet#
+at-hiseasnet#
+at-hiseasnet#
+at-hiseasnet#
+at-hiseasnet#int
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         128.128.252.1   YES NVRAM  up                    up      
+GigabitEthernet0/1         128.128.200.147 YES NVRAM  down                  down    
+GigabitEthernet0/2         216.86.248.179  YES DHCP   up                    up      
+FastEthernet0/0/0          192.168.0.53    YES manual administratively down down    
+FastEthernet0/1/0          199.92.161.185  YES NVRAM  up                    up      
+Serial0/2/0                128.128.252.201 YES NVRAM  up                    up      
+Serial0/2/1                unassigned      YES NVRAM  administratively down down    
+NVI0                       128.128.252.1   YES unset  up                    up      
+Tunnel10                   192.168.252.201 YES manual up                    up      
+at-hiseasnet#rn
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, + - replicated route
+
+Gateway of last resort is 128.128.252.202 to network 0.0.0.0
+
+B*    0.0.0.0/0 [200/0] via 128.128.252.202, 00:00:44
+      128.128.0.0/16 is variably subnetted, 4 subnets, 3 masks
+C        128.128.252.0/28 is directly connected, GigabitEthernet0/0
+L        128.128.252.1/32 is directly connected, GigabitEthernet0/0
+C        128.128.252.200/30 is directly connected, Serial0/2/0
+L        128.128.252.201/32 is directly connected, Serial0/2/0
+      137.110.0.0/32 is subnetted, 1 subnets
+S        137.110.255.83 [1/0] via 216.86.248.178, GigabitEthernet0/2
+      192.168.252.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.252.200/30 is directly connected, Tunnel10
+L        192.168.252.201/32 is directly connected, Tunnel10
+      199.92.161.0/24 is variably subnetted, 2 subnets, 2 masks
+C        199.92.161.0/24 is directly connected, FastEthernet0/1/0
+ --More--         L        199.92.161.185/32 is directly connected, FastEthernet0/1/0
+      216.86.248.0/24 is variably subnetted, 2 subnets, 2 masks
+C        216.86.248.0/24 is directly connected, GigabitEthernet0/2
+L        216.86.248.179/32 is directly connected, GigabitEthernet0/2
+at-hiseasnet#show bgp ne
+at-hiseasnet#show bgp ne           z 

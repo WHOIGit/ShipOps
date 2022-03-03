@@ -1,0 +1,12 @@
+$@MID@$: 18
+Date: Thu, 30 Jan 2020 17:51:27 +0000
+Author: Catie
+Type: Routine
+Subject: Science data READ_ME files & Elog
+Cruise: at42-22
+Attachment: 
+Encoding: HTML
+========================================
+<p>There should no longer be any READ_ME.txt files added to the cruise data directories.</p>
+
+<p>An Elog should be created for every cruise regardless of if science is using it or not. All SSSG science &quot;events&quot;, things like starting seawater system, cleaning the underway fluorometer, swapping out a bad CTD sensor, bird made a nest on the Vaisala sensor, basically any metadata that affects the final cruise data package should go into Elog so R2R can better track down data inconsistencies a year later.</p>

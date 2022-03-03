@@ -1,0 +1,14 @@
+$@MID@$: 31
+Date: Mon, 08 Jul 2013 00:14:48 +0000
+Author: dsims
+Sensor: SBE48
+S/N: 480040
+Calibration Date: 
+Type: General Problem
+Category: Other
+Subject: SBE 48 restarted
+Cruise: at26-02
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">I cycled the power going to the IMET,  etc. as the port vaisala had gone out.&nbsp; Everything&nbsp; came back except the  SBE48.&nbsp; I hooked it up to the netbook at 9600 baud and it said &quot;not  logging:&nbsp; low battery&quot;.&nbsp; So I did &gt;StartNow and it started logging  again.</span></p>

@@ -1,0 +1,160 @@
+$@MID@$: 9
+Date: Tue, 05 Jul 2011 11:14:10 +0000
+Author: AH
+S/N: 
+Type: Other
+equipment: Network Monitoring Tools
+Subject: SQUID reports - how to view
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>http://www.atlantis.whoi.edu/squid-reports/</p>
+$@MID@$: 10
+Date: Tue, 05 Jul 2011 13:07:31 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: Cisco Router
+Subject: Comm Ports - Devices connected to routers
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>FTP was rebuilt/moved (new motherboard) - during process, Comm Port device names changed.&nbsp; The Com port on the motherboard was disabled, and things moved around again.&nbsp; So I have updated this elog entry to the latest information</p>
+<p>minicom ESE</p>
+<p>does:</p>
+<p>/dev/ttyS0 = ESE Clock</p>
+<p>***********************************</p>
+<p>/dev/ttyS3 =</p>
+<p>2900 CISCO ROUTER - which is one being used for hiseasnet right now (9/21/2011)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>/dev/ttyS1 =</p>
+<p>MIDDLE CISCO ROUTER (one of older) - labeled atlantis2 on the front<br />
+Welcome to minicom 2.4<br />
+<br />
+OPTIONS: I18n <br />
+Compiled on Jan 25 2010, 06:49:09.<br />
+Port /dev/ttyS3<br />
+<br />
+Press CTRL-A Z for help on special keys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+at1-hiseasnet&gt;AT S7=45 S0=0 L1 V1 X4 &amp;c1 E1 Q0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+% Invalid input detected at '^' marker.<br />
+<br />
+at1-hiseasnet&gt;int<br />
+Interface&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IP-Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OK? Method Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protocol<br />
+FastEthernet0/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1&nbsp;&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+Serial0/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.201 YES NVRAM&nbsp; down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+Serial0/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unassigned&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YES NVRAM&nbsp; administratively down down&nbsp;&nbsp; &nbsp;<br />
+Ethernet1/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.200.5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YES NVRAM&nbsp; administratively down down&nbsp;&nbsp; &nbsp;<br />
+Ethernet1/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.200.147 YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+Ethernet1/2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137.110.144.66&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+Ethernet1/3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 199.92.161.185&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+at1-hiseasnet&gt;<br />
+<br />
+******************************************<br />
+/dev/ttyS2 =</p>
+<p><br />
+NEWEST CISCO ROUTER - 2900 series<br />
+OPTIONS: I18n <br />
+Compiled on Jan 25 2010, 06:49:09.<br />
+Port /dev/ttyS2<br />
+<br />
+Press CTRL-A Z for help on special keys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+at-hiseasnet#AT S7=45 S0=0 L1 V1 X4 &amp;c1 E1 Q0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+% Invalid input detected at '^' marker.<br />
+<br />
+at-hiseasnet#<br />
+at-hiseasnet#int<br />
+Interface&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IP-Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OK? Method Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protocol<br />
+GigabitEthernet0/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1&nbsp;&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+GigabitEthernet0/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.200.147 YES NVRAM&nbsp; down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+GigabitEthernet0/2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unassigned&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YES NVRAM&nbsp; down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; down&nbsp;&nbsp; &nbsp;<br />
+FastEthernet0/0/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.0.53&nbsp;&nbsp;&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+FastEthernet0/1/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 199.92.161.185&nbsp; YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+Serial0/2/0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.201 YES NVRAM&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+Serial0/2/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unassigned&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; YES NVRAM&nbsp; administratively down down&nbsp;&nbsp; &nbsp;<br />
+NVI0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1&nbsp;&nbsp; YES unset&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; up&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+at-hiseasnet#<br />
+<br />
+****************************</p>
+<p>COuld not communicate with /dev/ttyS0</p>
+<p>&nbsp;</p>
+$@MID@$: 11
+Date: Tue, 05 Jul 2011 15:49:19 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: Cisco Router
+Subject: minicom - devices
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>There are some minicom set-up files in /home/sssg on ftp for communicating with the various routers.&nbsp;</p>
+<p>**************************</p>
+<p>.minirc.hiseasnet&nbsp;&nbsp; - for the Cisco 2900 series (newest/router in use)</p>
+<p>So typing:</p>
+<p>&gt;minicom hiseasnet</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will use this set-up:<br />
+# Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS3<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu minit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+********************************</p>
+<p>.minirc.at1 - for the middle Cisco router labeled atlantis 2 on the front</p>
+<p>So typing:</p>
+<p>&gt;minicom at1</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will use this set-up:</p>
+<p># Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS2<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+*********************************</p>
+<p>********************************</p>
+<p>.minirc.at2 - for the middle Cisco router labeled atlantis 2 on the  front</p>
+<p>So typing:</p>
+<p>&gt;minicom at2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will use this set-up:</p>
+<p># Machine-generated file - use setup menu in minicom to change  parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS1<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+*********************************</p>
+<p>&nbsp;</p>
+<p>The ESE clock is on /dev/ttyS0</p>
+<p># Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS1<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8<br />
+pu parity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N<br />
+pu stopbits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No <br />
+**********************************</p>
+<p>Right now - /dev/ttyS0 does not seem to be working - have tried plugging in other router and GPS feed.&nbsp; The router that is on /dev/ttyS0 was also plugged into a different device - the router is working fine, so the problem seems to be the Comm Port<br />
+&nbsp;</p>
+$@MID@$: 12
+Date: Tue, 05 Jul 2011 19:24:53 +0000
+Author: AH
+S/N: 
+Type: General Problem
+equipment: 
+Subject: Moved To FBB to see if faster
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>I moved the network to FBB to see if it would run any faster - hiseasnet is saturated!&nbsp;&nbsp;&nbsp; Tue Jul  5 19:24:53 2011 <input type="hidden" value="Tue, 05 Jul 2011 19:24:53 +0000" name="entry_date" /></p>
+<p>Left it on for &lt; 1 hour - it definitely worked better - maybe need to switch over during high traffic hours if teacher group is not trying to use it</p>

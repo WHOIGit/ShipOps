@@ -1,0 +1,14 @@
+$@MID@$: 36
+Date: Sat, 21 Feb 2015 16:54:54 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+Component: teledyne modem
+Subject: Comtech modem removed from service
+Cruise: at26-29
+Attachment: 150221_165424_rv_atlantis_final_online.conf
+Encoding: HTML
+========================================
+<p>The comtech modem was removed from service and the new teledyne modem was brought online on 20 Feb 2014.</p>
+<p>M&amp;C port ip is 128.128.252.9, although it is not regularly connected.</p>
+<p>Config file attached, could be uploaded into modem if for some reason all settings were lost.</p>

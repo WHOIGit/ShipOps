@@ -1,0 +1,31 @@
+$@MID@$: 39
+Date: Sun, 19 Feb 2012 00:14:30 +0000
+Author: lstolp
+Type: Other
+name: currents
+server type: 
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: Jules was here 
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p>Currents2 updated w/ UHDAS python by jules... hardware updated by lstolp.. currently currents2 is currents</p>
+<p>&nbsp;</p>
+<p>The regular current currents are still on the ship.. this is a new one for the<br />
+atlantis:</p>
+<p>It is sitting in my office, attached to the internet.. the monitor is on the<br />
+blue computer rack closest to the window, the computer is labled..<br />
+currents2.atlantis.whoi.edu<br />
+199.92.161.162<br />
+<br />
+currents 1 Ubuntu 10.04.3 LTS&nbsp;&nbsp; <br />
+user dummy dummy MemTotal:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1034276 kB<br />
+model name&nbsp;&nbsp;&nbsp; : Intel(R) Pentium(R) 4 CPU 2.40GHz<br />
+Linux currents3 2.6.32-37-generic #81-Ubuntu SMP Fri Dec 2 20:35:14 UTC 2011<br />
+i686 GNU/Linux<br />
+UHDAS tarball: /home/dummy<br />
+<br />
+&nbsp;</p>

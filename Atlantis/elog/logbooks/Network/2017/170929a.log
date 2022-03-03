@@ -1,0 +1,14 @@
+$@MID@$: 59
+Date: Fri, 29 Sep 2017 15:43:47 +0000
+Author: lstolp
+S/N:  C16615326347-C2O3WT
+Type: Configuration
+equipment: cyberoam CR50iNG
+Subject: cyber2 install w/ config
+Cruise: at39-01
+Attachment: 170929_160241_Atlantis_Cyberoam_Configuration_20170929.docx,170929_160719_Atlantis_Cyberoam_20170928_Backup_C16615326347-C2O3WT_28Sep2017_13.43.39
+Encoding: HTML
+========================================
+<p>Installed a second cyberoam, this one has the lisence for Application, Web filters and IPS (Intrusion Prevention System). There are 2 ethernet bridges (Science and Ship). Alvin is not on it, they (Bruce and Tony) don&#39;t want the ALVIN network on the internet.&nbsp; Attached my notes as a docx, but the original one lives on google:</p>
+
+<p>https://docs.google.com/document/d/1QJfR4xX902TvG_K3prHKFBMAoF1Nidif-Fvq89KjxLA/edit</p>

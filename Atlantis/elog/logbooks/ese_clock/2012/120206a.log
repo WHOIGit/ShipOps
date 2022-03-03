@@ -1,0 +1,16 @@
+$@MID@$: 4
+Date: Mon, 06 Feb 2012 22:15:00 +0000
+Author: rlaird
+S/N: 9948/130077
+Clock: computer_lab
+Type: Other
+Category: Configuration
+Subject: Swapped out clock in computer lab
+Cruise: at18-18
+Attachment: 
+Encoding: HTML
+========================================
+<p>
+<p>Removed the Computer Lab ESE clock and replaced it with one in which the  50% pulse has been inverted.&nbsp; This to provide proper 1pps pulse for the  multibeam.&nbsp; (the clock used for this is the one previously pulled from the top lab.)&nbsp; This clock is not presently used for the multibeam, but is used for other things.&nbsp; So it's really a spare as far as the multibeam is concerned.</p>
+<p>Expl:&nbsp; Normal 185A ESE clock has a 1pps pulse that rises at the start  of the second.&nbsp; The EM122 needs a pulse that falls at the start of the  second.&nbsp; ESE supplied us with special firmware that does that. </p>
+</p>

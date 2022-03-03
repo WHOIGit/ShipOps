@@ -1,0 +1,16 @@
+$@MID@$: 16
+Date: Sun, 30 Sep 2018 11:23:11 +0000
+Author: Catie
+Hardware: DeckUnit | other
+Type: Inventory
+Category: General
+Subject / Summary: Rebuilt oldknudsen to run 320B/R
+Cruise: at42-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>In late 2017/early 2018 the Knudsen computer running the 320B/R had a series of problems, including problems with booting, freezing up, etc.</p>
+
+<p>&quot;NewKnudsen&quot; was brought online as the primary data machine in April 2018, running the 3260.</p>
+
+<p>&quot;OldKnudsen&quot; was rebuilt during AT42-01/September 2018 to give us a way to be able to use the 320B/R as a backup if needed. It is not fully configured for data outputs to dslog, etc. but is operational and will run the 320 if needed.</p>

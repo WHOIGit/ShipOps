@@ -1,0 +1,48 @@
+$@MID@$: 85
+Date: Thu, 07 Dec 2017 18:40:09 +0000
+Author: AH - from email
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Other
+S/N: 
+Subject / Summary: Information about outer beam ripple artifact
+Cruise: at39-02b
+Attachment: 171207_184522_ATL_EM122_heading_20171004.png,171207_185943_ATL_EM122_long_period_bathy_artifact_20170323.pdf
+Encoding: HTML
+========================================
+<p>Date: Thu, 12 Oct 2017 16:47:38 -0400<br />
+From: kjerram@ccom.unh.edu<br />
+To: rlaird@whoi.edu<br />
+Cc: Kevin Jerram &lt;kjerram@ccom.unh.edu&gt;, &#39;Vicki Ferrini&#39; &lt;ferrini@ldeo.columbia.edu&gt;, &#39;Paul Johnson&#39; &lt;pjohnson@ccom.unh.edu&gt;,<br />
+&nbsp; &nbsp; &#39;David Fisichella&#39; &lt;dfisichella@whoi.edu&gt;, lmayer@ccom.unh.edu, sssg@atlantis.whoi.edu<br />
+Subject: Re: Atlantis EM122 issues<br />
+----------------------------------------</p>
+
+<p>Hi Robbie,</p>
+
+<p>I&#39;ve taken a look at the test files and don&#39;t see much of a difference<br />
+between the PHINS configurations, unfortunately (screen captures of CUBE<br />
+surfaces attached).</p>
+
+<p>As we&#39;ve seen before, all three test files show the heading recorded in<br />
+the .all file wandering by +/- 2-3 degrees on either side of the mean<br />
+heading on time scales of 2-3 minutes. &nbsp;This wandering heading is<br />
+different from the high-frequency yaw of the ship (typically 1 deg or less<br />
+on time scales of ~10 sec in these files). &nbsp;The wandering is not a problem<br />
+in itself, but it continues to correspond with the 2-3 minute period of<br />
+the outer beam ripple (with no corresponding artifact at nadir).</p>
+
+<p>In my mind this still points to a yaw stabilization issue as evidenced by<br />
+the highly uneven ping spacing on the seafloor over many ping cycles (see<br />
+attached). &nbsp;This doesn&#39;t appear to be a bulk offset in heading, since<br />
+we&#39;ve already calibrated for that and the swath is generally oriented<br />
+normal to the very-long-term ship track. &nbsp;My primary suspects remain: a<br />
+discrepancy between the PHINS heading (or heading rate of change in the<br />
+attitude velocity datagram) and the TRU interpretation of those inputs, or<br />
+a discrepancy in timing between the PHINS and TRU.</p>
+
+<p>At this point, we have to defer to Kongsberg&#39;s thoughts on these<br />
+relationships between the heading and yaw stabilization / sounding spacing<br />
+/ outer beam ripples. &nbsp;Please keep us in the loop on your dialogue and we<br />
+will contribute whatever we can to the discussion.<br />
+Kevin</p>

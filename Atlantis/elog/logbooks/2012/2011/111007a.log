@@ -1,0 +1,109 @@
+$@MID@$: 1
+Date: Fri, 07 Oct 2011 11:42:24 +0000
+Author: AH
+Type: Cruise Preparation
+Chief Scientist: Swift
+Subject: CTD - 36 bottle rosette
+Cruise: at19 ???
+Attachment: 
+Encoding: HTML
+========================================
+<p>Thank you very much for an enjoyable and very much worthwhile visit to R/V<br />
+Atlantis today.<br />
+<br />
+As promised, I have copied below a message from Carl Mattson, senior SIO<br />
+research technician, regarding weights and tensions (and former problems)<br />
+experienced when working with the SIO 36-place rosette system. It was<br />
+experiences with shorts such as he describes which spurred our present use<br />
+of slow haul-in speeds when &gt;5000 meters of wire is out. On the recent<br />
+CLIVAR cruises with this package on Revelle, Melville, and Palmer, we have<br />
+not had a reoccurrence of this problem or other cable problems<br />
+attributable to the large rosette system.<br />
+<br />
+In fact, even on a rough two-month Southern Ocean cruise on the Palmer<br />
+earlier this year, where 8 days were lost to weather, 140 stations were<br />
+occupied without incident over a two-month period, using this package and<br />
+a standard UNOLS 0.322 CTD cable. The only reterminations were done as<br />
+part of routine maintenance. This has been typical of cruises with this<br />
+package in the past 3-4 years.<br />
+<br />
+We hope to continue to work with you to ensure that you are supportive of<br />
+our working with this rosette on R/V Atlantis in the same manner that we<br />
+have been on the other Global-class ships.<br />
+<br />
+Enjoy your weekend in San Diego.<br />
+<br />
+Best Regards,<br />
+Jim Swift<br />
+<br />
+<br />
+Date: Mon, 24 Sep 2007 11:58:47 -0700<br />
+From: Carl Mattson &lt;cmattson@ucsd.edu&gt;<br />
+To: &quot;James H. Swift&quot; &lt;jswift@ucsd.edu&gt;<br />
+Subject: Re: rosette weight and wire loads<br />
+<br />
+Jim<br />
+<br />
+&gt;From my observations over the years I would say that the actual max<br />
+working load is about 4400lbs. This may sound like an arbitrary value but<br />
+it is based on observations.<br />
+<br />
+Most manufacturers of EM-cable go by the 4 to 1 rule to determine max<br />
+working load. If this was applied to the .322 then the max working load<br />
+would be about 2900lbs. However, the .322 data sheet from Rochester Corp.<br />
+says that the max working load is less than or equal to 5000lbs. There is<br />
+a continuing argument amongst technicians about which value is closer to<br />
+the actual value.<br />
+<br />
+On some cruises on the Knorr the .322 cable has, at times, developed a<br />
+short on one or more conductors. When using the 36pl rosette this<br />
+sometimes happened just after a series of deep casts of 6000-6500M meters.<br />
+The short is usually located about 6-7KM up from the termination end. This<br />
+has happened on different cables on different cruises. It doesn't happen<br />
+often but it has happened.<br />
+<br />
+The weight of the wire (value taken from the data sheet)in seawater<br />
+(without rosette) is about 463 lbs/KM so at 6KM just the weight of the<br />
+cable is 2776lbs. The rosette in water is about 1200lbs. The total at 6KM<br />
+is about 4000lbs. A typical value read on the tension meter (on Melville)<br />
+is around 4200-4500lbs (winch stopped). When the winch is coming up<br />
+(60MPM) then add about 500lbs to that. Also, there is always some extra<br />
+tension caused by subsurface currents. Usually the short in the conductor<br />
+happens during the upcast just after going to 10M above the bottom at<br />
+depths &gt;6KM. On some occasions it was reported to be about 6200 or more.<br />
+This would give us about 2870lbs on the cable weight - 4200lbs total<br />
+theoretical weight(winch stopped). When the winch is coming up at these<br />
+depths then you can add another 500lbs to the total tension due to the<br />
+drag of the rosette.<br />
+<br />
+We have routinely used this cable with the 36PL rosette with few problems<br />
+over many years. I believe that cable problems happen when the rosette is<br />
+greater than 6000M and the winch is coming up too fast on the upcast. If<br />
+the winch speed is kept low (creeping up to 20-30MPM) and tension kept<br />
+below 4400 then it should be ok. As you come up to &lt;5700M then gradually<br />
+increase winch speed to 50MPM.<br />
+<br />
+Here is weight info on our 36PL rosette<br />
+<br />
+Rosette includes 36 10L bottles<br />
+1 36PL Seabird pylon<br />
+1 Seabird SBE9 w sensors and pumps<br />
+1 LADCP (150KHZ) BB<br />
+1 LADCP Battery pack<br />
+1 ADCP Workhorse<br />
+1 Workhorse battery pack<br />
+Altimeter, Fluorometer, transmissometer<br />
+9EA 50 pound lead weights (450 lbs)<br />
+<br />
+This data was taken using the tension meter readings on the<br />
+forward winch on Melville.<br />
+<br />
+Rosette info (from winch tension meter)<br />
+Weight in air (bottles empty): 2000lbs<br />
+Weight in air (bottles Full ): 2900lbs<br />
+Weight in water: 1200lbs (just below surface)<br />
+Weight in water (6000M out): 4600lbs<br />
+<br />
+Carl<br />
+<br />
+&nbsp;</p>

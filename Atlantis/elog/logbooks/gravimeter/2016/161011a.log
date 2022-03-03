@@ -1,0 +1,12 @@
+$@MID@$: 6
+Date: Tue, 11 Oct 2016 01:42:58 +0000
+Author: Catie
+S/N: 
+Type: General Problem
+Category: Hardware
+Subject: DNV light on buffer
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>On 7 Oct 16 the gravity computer was not receiving any data and the DNV light was on on the data buffer, although there was no DNV light or system malf light on the Control Power Supply, and all test point and thumb wheel values were normal. A power cycle of the data buffer using the switch on the back fixed the problem and it did not return.</p>

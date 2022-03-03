@@ -1,0 +1,34 @@
+$@MID@$: 10
+Date: Fri, 22 Oct 2010 09:30:12 +0000
+Author: AH - adapted from Marshall Swartz's directions
+Type: Wire
+Winch: 
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: DIRECTIONS FOR MEGGER TEST
+Cruise: all
+Attachment: 
+Encoding: HTML
+========================================
+<p>MEGGER TEST DIRECTIONS - CONDUCTOR WIRE<br />
+Test Subject:&nbsp; A301592&nbsp; -conductor sea cables onboard Atlantis.<br />
+Equipment Needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AEMC Megger model 1060 tester<br />
+&nbsp;<br />
+Test the entire length:&nbsp; termination, conductor wire, slip rings, and cabling down to lab.<br />
+&nbsp;<br />
+<br />
+Continuity test results are dependent on the cable length.&nbsp; The specs for the conductor wire installed on the Atlantis in 2010 are:&nbsp; conductors = 30.8 ohms/kilometer,&nbsp; armor = 7.9 ohms/kilometer<br />
+**So, for example, since the initial length of the wire was 9908 meters, resistance should be:<br />
+&nbsp;&nbsp;&nbsp;&nbsp; (9.908 km)*(30.8 ohms/km) = 305 ohms<br />
+Continuity testing is made at the 400kohm setting, applied for 60 seconds.&nbsp; Results are in Ohms.<br />
+Continuity:<br />
+1. end-to-end continuity of white lead from termination (or wire end) through to the lab.<br />
+2. end-to-end continuity of red lead from termination (or wire end) through to the lab.<br />
+3. end-to-end continuity of black lead from termination (or wire end) through to the lab.<br />
+4. end-to-end continuity of armor from termination (or wire end) through to the lab.<br />
+&nbsp;<br />
+Insulation resistance testing is made at 250V charge, applied continuously for ten minutes.&nbsp; Results show in ohms, DAR, PI and microfarads.<br />
+Insulation Resistance:<br />
+1. insulation resistance of white lead to ground+red+black.&nbsp;&nbsp; Must be greater than 1gigohm at 250vDC.<br />
+2. insulation resistance of red lead to ground+white+black.&nbsp;&nbsp; Must be greater than 1gigohm at 250vDC.<br />
+3. insulation resistance of white lead to ground+red+white.&nbsp;&nbsp; Must be greater than 1gigohm at 250vDC.</p>

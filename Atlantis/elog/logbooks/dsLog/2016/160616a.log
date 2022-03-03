@@ -1,0 +1,15 @@
+$@MID@$: 17
+Date: Thu, 16 Jun 2016 10:39:28 +0000
+Author: laura
+svn: dsLogCSV-114
+Type: atdatalog
+Subject: updated to latest dsLogCSV, this fixes RAD parsing rules
+Cruise: at35
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;can also parse for serial number:</p>
+<p class="p1"><span class="s1">&nbsp;Use the identifier</span></p>
+<p class="p1"><span class="s1">&quot;RAD_SERIAL_NUMBER&quot; in the ini file.</span></p>
+<p>&nbsp;</p>
+<p class="p2">&nbsp;</p>

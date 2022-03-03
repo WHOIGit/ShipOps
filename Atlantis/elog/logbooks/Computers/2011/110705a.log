@@ -1,0 +1,470 @@
+$@MID@$: 33
+Date: Tue, 05 Jul 2011 11:05:15 +0000
+Author: AH - via Laura
+Type: 
+name: ftp
+server type: 
+OS: Linux
+Location: 
+Category: Software
+Subject: UBUNTU stuff
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>
+<div id="magicdomid2"><span style="">Atlantis Ubuntu</span></div>
+<div id="magicdomid3"><span style="" class="author-p-1023">&nbsp;</span></div>
+<div id="magicdomid4"><span style="" class="author-p-1023">&nbsp;***&nbsp;  Rebuilt to Ubuntu 10.04 was able to use a lot from the 9.10 build.&nbsp;</span></div>
+<div id="magicdomid5"><span style="" class="author-p-1023">&nbsp;&nbsp;  installed 8 gigs of RAM and generic pae kernel, which recognizes it..</span></div>
+<div id="magicdomid6"><span style="" class="author-p-1023">&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid7">
+<ul class="list-bullet1">
+    <li><span style="" class="author-p-1023">&nbsp;&nbsp; Network and iptables seem to work..  have tested cabin, science and sssg</span></li>
+</ul>
+</div>
+<div id="magicdomid8">&nbsp;</div>
+<div id="magicdomid9"><span style="">Things that were done before the etherpad:</span></div>
+<div id="magicdomid10">&nbsp;</div>
+<div id="magicdomid11">&nbsp;</div>
+<div id="magicdomid12"><span style="">1. vi  /etc/udev/rules.d/70-persistent-net.rules</span></div>
+<div id="magicdomid13"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth0&nbsp; r8169&nbsp;&nbsp;&nbsp; later  number or letter</span></div>
+<div id="magicdomid14"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth5&nbsp; r8169&nbsp;&nbsp;&nbsp; second port on motherboard</span></div>
+<div id="magicdomid15">&nbsp;</div>
+<div id="magicdomid16"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gigabit network ethernet card</span></div>
+<div id="magicdomid17"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  eth1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:15:17:a7:80:f0</span></div>
+<div id="magicdomid18"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth2</span></div>
+<div id="magicdomid19"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth3</span></div>
+<div id="magicdomid20"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  eth4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:15:17:a7:80:f3</span></div>
+<div id="magicdomid21">&nbsp;</div>
+<div id="magicdomid22"><span style="">/etc/network/interfaces:</span></div>
+<div id="magicdomid23"><span style=""># This file describes the  network interfaces available on your system</span></div>
+<div id="magicdomid24"><span style=""># and how to activate them.  For more information, see interfaces(5).</span></div>
+<div id="magicdomid25">&nbsp;</div>
+<div id="magicdomid26"><span style=""># The loopback network interface</span></div>
+<div id="magicdomid27"><span style="">auto lo</span></div>
+<div id="magicdomid28"><span style="">iface lo inet  loopback</span></div>
+<div id="magicdomid29">&nbsp;</div>
+<div id="magicdomid30"><span style=""># The hiseasnet  interface</span></div>
+<div id="magicdomid31"><span style="">auto eth0</span></div>
+<div id="magicdomid32"><span style="">iface eth0 inet static</span></div>
+<div id="magicdomid33"><span style="">&nbsp;&nbsp;&nbsp; address 199.92.161.3</span></div>
+<div id="magicdomid34"><span style="">&nbsp;&nbsp;&nbsp; netmask  255.255.255.0</span></div>
+<div id="magicdomid35"><span style="">&nbsp;&nbsp;&nbsp; network 199.92.161.0</span></div>
+<div id="magicdomid36"><span style="">&nbsp;&nbsp;&nbsp; broadcast 199.92.161.255</span></div>
+<div id="magicdomid37">&nbsp;</div>
+<div id="magicdomid38"><span style="">auto eth1</span></div>
+<div id="magicdomid39"><span style="">iface eth1 inet static</span></div>
+<div id="magicdomid40"><span style="">&nbsp;&nbsp;&nbsp; address 128.128.252.2</span></div>
+<div id="magicdomid41"><span style="">&nbsp;&nbsp;&nbsp; netmask  255.255.255.240</span></div>
+<div id="magicdomid42"><span style="">&nbsp;&nbsp;&nbsp; network 128.128.252.0</span></div>
+<div id="magicdomid43"><span style="">&nbsp;&nbsp;&nbsp; broadcast 128.128.252.15</span></div>
+<div id="magicdomid44"><span style="">&nbsp;&nbsp;&nbsp; gateway  128.128.252.1</span></div>
+<div id="magicdomid45">&nbsp;</div>
+<div id="magicdomid46"><span style="">auto eth2</span></div>
+<div id="magicdomid47"><span style="">iface eth2 inet  static</span></div>
+<div id="magicdomid48"><span style="">&nbsp;&nbsp;&nbsp; address 192.168.11.1</span></div>
+<div id="magicdomid49"><span style="">&nbsp;&nbsp;&nbsp; netmask 255.255.255.0</span></div>
+<div id="magicdomid50"><span style="">&nbsp;&nbsp;&nbsp; network  192.168.11.0</span></div>
+<div id="magicdomid51"><span style="">&nbsp;&nbsp;&nbsp; broadcast 192.168.11.255</span></div>
+<div id="magicdomid52">&nbsp;</div>
+<div id="magicdomid53"><span style="">auto eth3</span></div>
+<div id="magicdomid54"><span style="">iface eth3 inet static</span></div>
+<div id="magicdomid55"><span style="">&nbsp;&nbsp;&nbsp; address 192.168.12.1</span></div>
+<div id="magicdomid56"><span style="">&nbsp;&nbsp;&nbsp; netmask  255.255.255.0</span></div>
+<div id="magicdomid57"><span style="">&nbsp;&nbsp;&nbsp; network 192.168.12.0</span></div>
+<div id="magicdomid58"><span style="">&nbsp;&nbsp;&nbsp; broadcast 192.168.12.255</span></div>
+<div id="magicdomid59">&nbsp;</div>
+<div id="magicdomid60"><span style="">auto eth4</span></div>
+<div id="magicdomid61"><span style="">iface eth4 inet static</span></div>
+<div id="magicdomid62"><span style="">&nbsp;&nbsp;&nbsp; address 192.168.13.1</span></div>
+<div id="magicdomid63"><span style="">&nbsp;&nbsp;&nbsp; netmask  255.255.255.0</span></div>
+<div id="magicdomid64"><span style="">&nbsp;&nbsp;&nbsp; network 192.168.13.0</span></div>
+<div id="magicdomid65"><span style="">&nbsp;&nbsp;&nbsp; broadcast 192.168.13.255</span></div>
+<div id="magicdomid66">&nbsp;</div>
+<div id="magicdomid67"><span style="">auto eth5</span></div>
+<div id="magicdomid68"><span style="">iface eth5 inet static</span></div>
+<div id="magicdomid69"><span style="">&nbsp;&nbsp;&nbsp; address 199.92.162.1</span></div>
+<div id="magicdomid70"><span style="">&nbsp;&nbsp;&nbsp; netmask  199.92.162.255</span></div>
+<div id="magicdomid71"><span style="">&nbsp;&nbsp;&nbsp; network 199.92.162.0</span></div>
+<div id="magicdomid72"><span style="">&nbsp;&nbsp;&nbsp; broadcast 199.92.162.255</span></div>
+<div id="magicdomid73">&nbsp;</div>
+<div id="magicdomid74"><span style="">* To change back to ftp2:</span></div>
+<div id="magicdomid75"><span style="">cp&nbsp; interfaces.ftp2&nbsp;  interfaces</span></div>
+<div id="magicdomid76">&nbsp;</div>
+<div id="magicdomid77"><span style="">and reboot, make sure  you have ftp2 unplugged or ready to swap as well.</span></div>
+<div id="magicdomid78">&nbsp;</div>
+<div id="magicdomid79">&nbsp;</div>
+<div id="magicdomid80">&nbsp;</div>
+<div id="magicdomid81"><span style="">2. bind9</span></div>
+<div id="magicdomid82"><span style="">rsync -av  128.128.252.2:/var/named/chroot/var/named/*&nbsp; /var/cache</span></div>
+<div id="magicdomid83">&nbsp;</div>
+<div id="magicdomid84"><span style="">/var/cache/bind# chown root.bind *</span></div>
+<div id="magicdomid85">&nbsp;</div>
+<div id="magicdomid86"><span style="">edit /etc/bind/named.conf.local</span></div>
+<div id="magicdomid87"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; added:</span></div>
+<div id="magicdomid88">&nbsp;</div>
+<div id="magicdomid89"><span style="">zone &quot;atlantis.whoi.edu&quot; IN&nbsp;</span></div>
+<div id="magicdomid90"><span style="">{</span></div>
+<div id="magicdomid91"><span style="">&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid92"><span style="">&nbsp;&nbsp;&nbsp; file  &quot;db.atlantis&quot;;</span></div>
+<div id="magicdomid93"><span style="">&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid94"><span style="">};</span></div>
+<div id="magicdomid95">&nbsp;</div>
+<div id="magicdomid96"><span style="">zone &quot;161.92.199.IN-ADDR.ARPA&quot; IN&nbsp;</span></div>
+<div id="magicdomid97"><span style="">{</span></div>
+<div id="magicdomid98"><span style="">&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid99"><span style="">&nbsp;&nbsp;&nbsp; file  &quot;db.199.92.161&quot;;</span></div>
+<div id="magicdomid100"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid101"><span style="">};</span></div>
+<div id="magicdomid102"><span style="">zone  &quot;alvin.whoi.edu&quot; IN&nbsp;</span></div>
+<div id="magicdomid103"><span style="">{</span></div>
+<div id="magicdomid104"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid105"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file &quot;db.alvin&quot;;</span></div>
+<div id="magicdomid106"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  allow-update { none; };</span></div>
+<div id="magicdomid107"><span style="">};</span></div>
+<div id="magicdomid108">&nbsp;</div>
+<div id="magicdomid109"><span style="">zone  &quot;162.92.199.IN-ADDR.ARPA&quot; IN&nbsp;</span></div>
+<div id="magicdomid110"><span style="">{</span></div>
+<div id="magicdomid111"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid112"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.199.92.162&quot;;</span></div>
+<div id="magicdomid113"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid114"><span style="">};</span></div>
+<div id="magicdomid115">&nbsp;</div>
+<div id="magicdomid116"><span style="">zone &quot;science.atlantis.whoi.edu&quot; IN</span></div>
+<div id="magicdomid117"><span style="">{</span></div>
+<div id="magicdomid118"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid119"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.science&quot;;</span></div>
+<div id="magicdomid120"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid121"><span style="">};</span></div>
+<div id="magicdomid122">&nbsp;</div>
+<div id="magicdomid123"><span style="">zone &quot;11.168.192.IN-ADDR.ARPA&quot; IN</span></div>
+<div id="magicdomid124"><span style="">{</span></div>
+<div id="magicdomid125"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid126"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.192.168.11&quot;;</span></div>
+<div id="magicdomid127"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid128"><span style="">};</span></div>
+<div id="magicdomid129">&nbsp;</div>
+<div id="magicdomid130"><span style="">zone &quot;ship.atlantis.whoi.edu&quot; IN</span></div>
+<div id="magicdomid131"><span style="">{</span></div>
+<div id="magicdomid132"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid133"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.ship&quot;;</span></div>
+<div id="magicdomid134"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid135"><span style="">};</span></div>
+<div id="magicdomid136">&nbsp;</div>
+<div id="magicdomid137"><span style="">zone &quot;12.168.192.IN-ADDR.ARPA&quot; IN</span></div>
+<div id="magicdomid138"><span style="">{</span></div>
+<div id="magicdomid139"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid140"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.192.168.12&quot;;</span></div>
+<div id="magicdomid141"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid142"><span style="">};</span></div>
+<div id="magicdomid143"><span style="">zone  &quot;13.168.192.IN-ADDR.ARPA&quot; IN</span></div>
+<div id="magicdomid144"><span style="">{</span></div>
+<div id="magicdomid145"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type master;</span></div>
+<div id="magicdomid146"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file  &quot;db.192.168.13&quot;;</span></div>
+<div id="magicdomid147"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow-update { none; };</span></div>
+<div id="magicdomid148"><span style="">};</span></div>
+<div id="magicdomid149">&nbsp;</div>
+<div id="magicdomid150">&nbsp;</div>
+<div id="magicdomid151"><span style="">Restarted named  (bind9):</span></div>
+<div id="magicdomid152"><span style="">root@ftp-knorr:/etc/bind# service bind9 restart</span></div>
+<div id="magicdomid153"><span style="">&nbsp;* Stopping domain  name service... bind9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [  OK ]</span></div>
+<div id="magicdomid154"><span style="">&nbsp;* Starting domain name service...  bind9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ OK ]</span></div>
+<div id="magicdomid155">&nbsp;</div>
+<div id="magicdomid156"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  lstolp&nbsp;&nbsp; 20100913</span></div>
+<div id="magicdomid157"><span style="">the logs were filling up with error messages about  EDNS and IPV6</span></div>
+<div id="magicdomid158">&nbsp;</div>
+<div id="magicdomid159"><span style="">added  ftp:/etc/default/bind9</span></div>
+<div id="magicdomid160"><span style=""># Added -4 to force ipv4 only&nbsp;&nbsp; lstolp 20100913</span></div>
+<div id="magicdomid161"><span style="">OPTIONS=&quot;-4 -u  bind&quot;</span></div>
+<div id="magicdomid162">&nbsp;</div>
+<div id="magicdomid163"><span style="">added  ftp:/etc/bind/named.conf.local</span></div>
+<div id="magicdomid164">&nbsp;</div>
+<div id="magicdomid165"><span style="">// Added following to cut down on logging  errors.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lsotlp 20100913</span></div>
+<div id="magicdomid166"><span style="">&nbsp;&nbsp;&nbsp; logging {</span></div>
+<div id="magicdomid167"><span style="">&nbsp;&nbsp;&nbsp; category  lame-servers {null; };</span></div>
+<div id="magicdomid168"><span style="">&nbsp;&nbsp;&nbsp; category edns-disabled { null; };</span></div>
+<div id="magicdomid169"><span style="">&nbsp;&nbsp;&nbsp; };</span></div>
+<div id="magicdomid170">&nbsp;</div>
+<div id="magicdomid171"><span style="">alot of the messages seem to have gone away...</span></div>
+<div id="magicdomid172">&nbsp;</div>
+<div id="magicdomid173"><span style="" class="author-p-1023">** found that cabin.hosts was not  included in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lstolp 20110329</span></div>
+<div id="magicdomid174"><span style="" class="author-p-1023">&nbsp;  /etc/bind9/named.conf.local</span></div>
+<div id="magicdomid175"><span style="" class="author-p-1023">&nbsp; added and restarted bind, then made  the fix on linus..</span></div>
+<div id="magicdomid176"><span style="" class="author-p-1023">&nbsp; linus was getting a ton of error  messages since it was</span></div>
+<div id="magicdomid177"><span style="" class="author-p-1023">&nbsp; unable to do a reverse lookup for  cabin dhpc computers..</span></div>
+<div id="magicdomid178"><span style="" class="author-p-1023">&nbsp; this seemed to solve the issue...</span></div>
+<div id="magicdomid179">&nbsp;</div>
+<div id="magicdomid180"><span style="">3. dhcp3-server</span></div>
+<div id="magicdomid181"><span style="">&nbsp;&nbsp; copied and pasted  ftp:/etc/dhcpd.conf to ubuntu:/etc/dhcp3/dhcpd.conf</span></div>
+<div id="magicdomid182"><span style="">&nbsp;&nbsp; put the  interfaces to run dhcpd on in ubuntu:/etc/default/dhcp3-server</span></div>
+<div id="magicdomid183"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  INTERFACES=&quot;eth2 eth3 eth4&quot;</span></div>
+<div id="magicdomid184"><span style="">&nbsp;&nbsp; service dhcp3-server restart</span></div>
+<div id="magicdomid185">&nbsp;</div>
+<div id="magicdomid186">&nbsp;</div>
+<div id="magicdomid187">&nbsp;</div>
+<div id="magicdomid188"><span style="">After leaving San Diego.....</span></div>
+<div id="magicdomid189"><span style="">A start of a list of  things left to do...&nbsp; I am checking this out!</span></div>
+<div id="magicdomid190">&nbsp;</div>
+<div id="magicdomid191">&nbsp;</div>
+<div id="magicdomid192">&nbsp;</div>
+<div id="magicdomid193">&nbsp;</div>
+<div id="magicdomid194"><span style="">1. check on samba,  create a config and test</span></div>
+<div id="magicdomid195">&nbsp;</div>
+<div id="magicdomid196"><span style="">/etc/samba/smb.conf</span></div>
+<div id="magicdomid197">&nbsp;</div>
+<div id="magicdomid198"><span style="">Allison did this at some point... ship_share  ship_share seems to work...</span></div>
+<div id="magicdomid199"><span style="">There is a questio about which password file to use..  smbpasswd or /etc/password</span></div>
+<div id="magicdomid200">&nbsp;</div>
+<div id="magicdomid201"><span style="">smbpasswd would be  better.. need to do some research....&nbsp; lstolp 20100909</span></div>
+<div id="magicdomid202">&nbsp;</div>
+<div id="magicdomid203">&nbsp;</div>
+<div id="magicdomid204"><span style="">2. sudo ln -s  /usr/share/zoneinfo/UTC /etc/localtime</span></div>
+<div id="magicdomid205">&nbsp;</div>
+<div id="magicdomid206"><span style="">&nbsp;&nbsp;</span></div>
+<div id="magicdomid207"><span style="">3. snmpd needs to be configured and started</span></div>
+<div id="magicdomid208"><span style="">&nbsp;&nbsp; May 10&nbsp;&nbsp;&nbsp; copied  over config /etc/snmp/snmpd.conf&nbsp;</span></div>
+<div id="magicdomid209"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copied  original config to /etc/snmp/snmpd.conf.org</span></div>
+<div id="magicdomid210"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tested  using: snmpwalk -v 1 -c sssg localhost .1.3.6.1.4.1.2021.10</span></div>
+<div id="magicdomid211"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid212"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  system:</span></div>
+<div id="magicdomid213"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; snmpwalk -v 1 -c public localhost system</span></div>
+<div id="magicdomid214"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  partition:&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid215"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; snmpwalk -v 1 -c public  localhost .1.3.6.1.4.1.2021.9</span></div>
+<div id="magicdomid216"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; load:</span></div>
+<div id="magicdomid217"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  snmpwalk -v 1 -c public localhost .1.3.6.1.4.1.2021.10</span></div>
+<div id="magicdomid218"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid219"><span style="">May 12</span></div>
+<div id="magicdomid220"><span style="">&nbsp; Edited  /etc/default/snmpd</span></div>
+<div id="magicdomid221">&nbsp;</div>
+<div id="magicdomid222"><span style="">&nbsp; # snmpd options  (use syslog, close stdin/out/err).</span></div>
+<div id="magicdomid223"><span style="">&nbsp; #SNMPDOPTS='-Lsd -Lf  /dev/null -u snmp -I -smux -p /var/run/snmpd.pid 127.0.0.1'</span></div>
+<div id="magicdomid224"><span style="">&nbsp; SNMPDOPTS='-Lsd  -Lf /dev/null -u snmp -I -smux -p /var/run/snmpd.pid'</span></div>
+<div id="magicdomid225">&nbsp;</div>
+<div id="magicdomid226">&nbsp;</div>
+<div id="magicdomid227"><span style="">4. website - figure  out server side includes, index.shmtl</span></div>
+<div id="magicdomid228"><span style="">&nbsp;&nbsp; currently it is not  running the randompic program.</span></div>
+<div id="magicdomid229"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid230"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid231"><span style="">May 11&nbsp; added  index.shml to:</span></div>
+<div id="magicdomid232"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /etc/apache2/mods-available/dir.conf</span></div>
+<div id="magicdomid233"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; ran sudo  a2enmod include</span></div>
+<div id="magicdomid234"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to get Include in Directory:</span></div>
+<div id="magicdomid235"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [sssg@ftp2 sites-enabled]$ sudo vi 000-default&nbsp;</span></div>
+<div id="magicdomid236"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid237"><span style="">&nbsp;&nbsp; #######  /etc/apache2/sites-enabled/000-default&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid238"><span style="">&nbsp;&nbsp;&nbsp; &lt;VirtualHost *:80&gt;</span></div>
+<div id="magicdomid239"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ServerAdmin  sssg@atlantis.whoi.edu</span></div>
+<div id="magicdomid240">&nbsp;</div>
+<div id="magicdomid241"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DocumentRoot /var/www/html</span></div>
+<div id="magicdomid242"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Directory /&gt;</span></div>
+<div id="magicdomid243"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Options  FollowSymLinks</span></div>
+<div id="magicdomid244"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AllowOverride None</span></div>
+<div id="magicdomid245"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/Directory&gt;</span></div>
+<div id="magicdomid246"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Directory /var/www/html&gt;</span></div>
+<div id="magicdomid247"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Options Indexes FollowSymLinks MultiViews Includes</span></div>
+<div id="magicdomid248"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  AllowOverride All</span></div>
+<div id="magicdomid249"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Order allow,deny</span></div>
+<div id="magicdomid250"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  allow from all</span></div>
+<div id="magicdomid251"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/Directory&gt;</span></div>
+<div id="magicdomid252">&nbsp;</div>
+<div id="magicdomid253"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/</span></div>
+<div id="magicdomid254"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;Directory &quot;/usr/lib/cgi-bin&quot;&gt;</span></div>
+<div id="magicdomid255"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AllowOverride  None</span></div>
+<div id="magicdomid256"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Options +ExecCGI -MultiViews  +SymLinksIfOwnerMatch</span></div>
+<div id="magicdomid257"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Order allow,deny</span></div>
+<div id="magicdomid258"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Allow from all</span></div>
+<div id="magicdomid259"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/Directory&gt;</span></div>
+<div id="magicdomid260"><span style="">################# end of  config example</span></div>
+<div id="magicdomid261"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid262"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid263"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid264"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid265"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; - I did get the html stuff over ignoring  old/backup/hold and</span></div>
+<div id="magicdomid266"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hold_probably_do_not_need :)</span></div>
+<div id="magicdomid267"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; - cgi-scripts  now live in /usr/lib/cgi-bin</span></div>
+<div id="magicdomid268"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; since /home/data is  not mounted, most are not working</span></div>
+<div id="magicdomid269"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid270"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; May 11&nbsp; Added  /home/sssg/bin/mountdata</span></div>
+<div id="magicdomid271"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - am able to mount linus's data  now&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double checked 20100909 lstolp</span></div>
+<div id="magicdomid272">&nbsp;</div>
+<div id="magicdomid273"><span style="">July 17, not sure the sssg@atlantis.whoi.edu will work  for mail delivery, will have to test it&nbsp;&nbsp; lstolp</span></div>
+<div id="magicdomid274">&nbsp;</div>
+<div id="magicdomid275"><span style="">5. I did get gmt loaded and it is in:</span></div>
+<div id="magicdomid276"><span style="">&nbsp;&nbsp;&nbsp;  /usr/local/gmt/bin</span></div>
+<div id="magicdomid277"><span style="">&nbsp;&nbsp; I am pretty sure, not sure where your cgi scripts  expect it. This</span></div>
+<div id="magicdomid278"><span style="">&nbsp;&nbsp; always seems to need a little tweaking.</span></div>
+<div id="magicdomid279">&nbsp;</div>
+<div id="magicdomid280"><span style="">6. elog is installed</span></div>
+<div id="magicdomid281"><span style="">&nbsp;&nbsp; /usr/local/elog&nbsp;</span></div>
+<div id="magicdomid282"><span style="">&nbsp;&nbsp; This config can  get copiied from the oldftp</span></div>
+<div id="magicdomid283"><span style="">&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid284"><span style="">&nbsp;&nbsp; logbooks and config copied from fedora  ftp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; September 8, 2010</span></div>
+<div id="magicdomid285">&nbsp;</div>
+<div id="magicdomid286"><span style="">7. move home directories and  password/shadow/group/gshadow from old ftp. the password files need to  be</span></div>
+<div id="magicdomid287"><span style="">cut  and pasted not copied. Leave behind old/hold/hold_probably_not_needed  :)</span></div>
+<div id="magicdomid288"><span style="">-  June 8&nbsp;&nbsp; Almost done, but need to check on users....</span></div>
+<div id="magicdomid289">&nbsp;</div>
+<div id="magicdomid290">&nbsp;</div>
+<div id="magicdomid291"><span style="">8. configure cacti.  It think cacti takes over from mrtg. cacti actually needs to be  configured from the gui.</span></div>
+<div id="magicdomid292">&nbsp;</div>
+<div id="magicdomid293"><span style="" class="author-p-1023">if  cacti admin password gets lost.. it seems to on each of the builds..  this will</span></div>
+<div id="magicdomid294"><span style="" class="author-p-1023">fix the problem:</span></div>
+<div id="magicdomid295"><span style="" class="author-p-1023">mysql  -u root -p&nbsp;</span></div>
+<div id="magicdomid296"><span style="" class="author-p-1023">mysql&gt; use cacti</span></div>
+<div id="magicdomid297"><span style="" class="author-p-1023">mysql&gt;  update user_auth set password=md5('admin') where username ='admin';</span></div>
+<div id="magicdomid298">&nbsp;</div>
+<div id="magicdomid299"><span style="">9. added /etc/hosts.allow and /etc/hosts.deny&nbsp; would  like to get the intrusion script to work and email sssg@shipname</span></div>
+<div id="magicdomid300"><span style="">&nbsp;</span></div>
+<div id="magicdomid301"><span style="">10 Added  /etc/hosts.allow and /etc/hosts.deny</span></div>
+<div id="magicdomid302"><span style="">&nbsp;&nbsp;&nbsp; Would like to figure out  how to add the intrusion mail to /etc/hosts.deny:</span></div>
+<div id="magicdomid303"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid304"><span style=""># dec 2007&nbsp; lws  added the following line to see if it would help w/ intrusions</span></div>
+<div id="magicdomid305"><span style="">ALL: ALL: spawn ( \</span></div>
+<div id="magicdomid306"><span style="">echo -e &quot;\n\</span></div>
+<div id="magicdomid307"><span style="">TCP Wrappers\:  Connection refused\n\</span></div>
+<div id="magicdomid308"><span style="">By\: $(uname -n)\n\</span></div>
+<div id="magicdomid309"><span style="">Process\: %d (pid %p)\n\</span></div>
+<div id="magicdomid310"><span style="">User\: %u\n\</span></div>
+<div id="magicdomid311"><span style="">Host\: %c\n\</span></div>
+<div id="magicdomid312"><span style="">Date\: $(date)\n\</span></div>
+<div id="magicdomid313"><span style="">&quot; | /bin/mail -s  &quot;Connection to %d blocked&quot; sssg)</span></div>
+<div id="magicdomid314">&nbsp;</div>
+<div id="magicdomid315">&nbsp;</div>
+<div id="magicdomid316">&nbsp;</div>
+<div id="magicdomid317"><span style="">11. cricket config</span></div>
+<div id="magicdomid318"><span style="">&nbsp; *** Need to add  128.1283.252.1 hiseasnet to hosts.atlantis and rerun makenewdb.local</span></div>
+<div id="magicdomid319"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to check that  the hi-seasnet router ip gets copied to /etc/hosts. Cricket needs this</span></div>
+<div id="magicdomid320"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to run&nbsp;&nbsp;  *************</span></div>
+<div id="magicdomid321">&nbsp;</div>
+<div id="magicdomid322"><span style="">&nbsp;if make any  changes to /etc/cricket/config need to recompile</span></div>
+<div id="magicdomid323"><span style="">&nbsp;&nbsp; sudo  cricket-compile</span></div>
+<div id="magicdomid324"><span style="">&nbsp;&nbsp; needed to change /etc/cricket/config/Defaults  community string</span></div>
+<div id="magicdomid325">&nbsp;</div>
+<div id="magicdomid326"><span style="">12. Copied over  ftp:/var/ftp/pub to ftp2:/srv/ftp/pub</span></div>
+<div id="magicdomid327"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; need to check the server  is ftpable...&nbsp;</span></div>
+<div id="magicdomid328"><span style="">&nbsp;&nbsp;&nbsp; works on the www after adding symbolic link,&nbsp;</span></div>
+<div id="magicdomid329"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; have not tried  ftp-ing&nbsp; May 13</span></div>
+<div id="magicdomid330">&nbsp;</div>
+<div id="magicdomid331"><span style="">13. apt-get install  logwatch</span></div>
+<div id="magicdomid332">&nbsp;</div>
+<div id="magicdomid333"><span style="">14. get_cruise and  gmt work ok. The zoom in out works fine, but the mouse over does not&nbsp;  work, it appears to get odd values and says they are not valid&nbsp;&nbsp; May 13</span></div>
+<div id="magicdomid334"><span style="">Need to tak out  debugging in /usr/lib/get_tracks&nbsp;&nbsp;&nbsp; lstolp May 14</span></div>
+<div id="magicdomid335">&nbsp;</div>
+<div id="magicdomid336">&nbsp;</div>
+<div id="magicdomid337"><span style="">Misc</span></div>
+<div id="magicdomid338"><span style="">&nbsp;</span><span style="" class="b"><b>sudo chmod 1777 mail/</b></span></div>
+<div id="magicdomid339">
+<ul class="list-bullet2">
+    <li><span style="" class="author-p-1023">&nbsp;this needs to be done on all ubuntu  installs</span></li>
+</ul>
+</div>
+<div id="magicdomid340">&nbsp;</div>
+<div id="magicdomid341"><span style="">15.  NPTD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  June 8, 2010&nbsp;</span></div>
+<div id="magicdomid342"><span style="">- need to edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  done</span></div>
+<div id="magicdomid343"><span style="">&nbsp; /usr/include/sys/timex.h</span></div>
+<div id="magicdomid344"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; add line:</span></div>
+<div id="magicdomid345"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid346"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; #define  MOD_NANO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADJ_NANO&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid347"><span style="">&nbsp;- apt-get install libcap-dev&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; done</span></div>
+<div id="magicdomid348"><span style="">&nbsp;</span></div>
+<div id="magicdomid349"><span style="">&nbsp;-sudo ./configure  --enable-linuxcaps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; done</span></div>
+<div id="magicdomid350"><span style="">&nbsp;</span></div>
+<div id="magicdomid351"><span style="">&nbsp;make; make install; cp  /usr/local/bin/ntpd /usr/sbin/.</span></div>
+<div id="magicdomid352"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid353"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  September 7, 2010</span></div>
+<div id="magicdomid354"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid355"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; cd /etc/apparmor.d/</span></div>
+<div id="magicdomid356"><span style="">&nbsp;&nbsp;&nbsp; vi usr.sbin.ntpd&nbsp;</span></div>
+<div id="magicdomid357"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; added to the  end of the file</span></div>
+<div id="magicdomid358"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS1 rw,</span></div>
+<div id="magicdomid359">&nbsp;</div>
+<div id="magicdomid360"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; sudo mv ntp.conf.dhcp ntp.conf.dhcp.not</span></div>
+<div id="magicdomid361"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid362">&nbsp;</div>
+<div id="magicdomid363"><span style="">16,&nbsp;  /home/sssg/.bashrc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lstolp&nbsp; 20100909</span></div>
+<div id="magicdomid364"><span style="">there is one in  /etc/&nbsp; but am not sure ti works there, I think it uses the above and&nbsp;</span></div>
+<div id="magicdomid365"><span style="">/etc/bash.bashrc....</span></div>
+<div id="magicdomid366">&nbsp;</div>
+<div id="magicdomid367"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid368">&nbsp;</div>
+<div id="magicdomid369">&nbsp;</div>
+<div id="magicdomid370"><span style="">17. iptables..</span></div>
+<div id="magicdomid371">&nbsp;</div>
+<div id="magicdomid372"><span style="">put iptables in /etc/iptables.rules</span></div>
+<div id="magicdomid373"><span style="">&nbsp;</span></div>
+<div id="magicdomid374">&nbsp;</div>
+<div id="magicdomid375"><span style="">#!/bin/bash</span></div>
+<div id="magicdomid376"><span style="">iptables-restore &lt;  /etc/iptables.rules</span></div>
+<div id="magicdomid377"><span style="">exit 0</span></div>
+<div id="magicdomid378"><span style="">The above starts iptables at boot time.</span></div>
+<div id="magicdomid379">&nbsp;</div>
+<div id="magicdomid380">&nbsp;</div>
+<div id="magicdomid381">&nbsp;</div>
+<div id="magicdomid382"><span style="">To start and stop iptables:</span></div>
+<div id="magicdomid383">&nbsp;</div>
+<div id="magicdomid384"><span style="">/home/sssg/bin</span></div>
+<div id="magicdomid385"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  fw.stop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will clean out iptables</span></div>
+<div id="magicdomid386"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  nosquid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will run iptables w/out&nbsp; redirection to squid</span></div>
+<div id="magicdomid387"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  withsquid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will run iptables w/ squid</span></div>
+<div id="magicdomid388"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid389">&nbsp;</div>
+<div id="magicdomid390">&nbsp;</div>
+<div id="magicdomid391"><span style="">18.  smokeping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; September  8, 2010</span></div>
+<div id="magicdomid392"><span style="">&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /etc/smokeping/config.d/Probes</span></div>
+<div id="magicdomid393"><span style="">&nbsp;edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  /etc/smokeping/config.d/Targets</span></div>
+<div id="magicdomid394"><span style="">&nbsp; edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  /usr/lib/cgi-bin/smokeping.cgi</span></div>
+<div id="magicdomid395"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - not sure how much  you have to edit, I think</span></div>
+<div id="magicdomid396"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the ubuntu istall takes care of rrdtool  and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid397"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the other stuff.</span></div>
+<div id="magicdomid398"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid399"><span style="">add smoketrace:</span></div>
+<div id="magicdomid400"><span style="">&nbsp;&nbsp; untar  smokeping-2.4.2.tar.gz</span></div>
+<div id="magicdomid401"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; /var/www/html/</span></div>
+<div id="magicdomid402"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; sudo mkdir smoketrace</span></div>
+<div id="magicdomid403"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+<div id="magicdomid404"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cd  smoketrace</span></div>
+<div id="magicdomid405"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vi .htaccess</span></div>
+<div id="magicdomid406"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AddHandler  cgi-script cgi</span></div>
+<div id="magicdomid407"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Options ExecCGI</span></div>
+<div id="magicdomid408"><span style="">&nbsp;&nbsp;&nbsp;&nbsp; mkdir -p  /var/www/html/smoketrace/script</span></div>
+<div id="magicdomid409"><span style="">&nbsp;&nbsp;&nbsp; cp  /usr/local/src/smokeping/htdocs/script/Tr.js  /var/www/html/smoketrace/script/.</span></div>
+<div id="magicdomid410"><span style="">&nbsp;&nbsp;&nbsp; cp  /usr/local/src/smokeping/htdocs/tr.html&nbsp; /var/www/html/smoketrace/.</span></div>
+<div id="magicdomid411"><span style="">&nbsp;&nbsp;&nbsp; rsync -av  /usr/local/src/smokeping/htdocs/resource&nbsp; /var/www/html/smoketrace/.</span></div>
+<div id="magicdomid412"><span style="">&nbsp;&nbsp;&nbsp; cp&nbsp;  /usr/local/src/smokeping/htdocs/tr.cgi.dist  /var/www/html/smoketrace/tr.cgi</span></div>
+<div id="magicdomid413"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; change  location of speedy in tr.cgi</span></div>
+<div id="magicdomid414">&nbsp;</div>
+<div id="magicdomid415"><span style="">sudo cp /usr/local/src/smokeping/lib/Smokeping.pm  /usr/share/perl5/smokeping/Smokeping.pm</span></div>
+<div id="magicdomid416">&nbsp;</div>
+<div id="magicdomid417">&nbsp;</div>
+<div id="magicdomid418">&nbsp;</div>
+<div id="magicdomid419"><span style="">sudo chmod u+s /usr/bin/traceroute.db</span></div>
+<div id="magicdomid420">&nbsp;</div>
+<div id="magicdomid421">&nbsp;</div>
+<div id="magicdomid422"><span style="">apt-get&nbsp; install  curl</span></div>
+<div id="magicdomid423">&nbsp;</div>
+<div id="magicdomid424"><span style="">vi  /etc/smokeping/config.d/pathnames</span></div>
+<div id="magicdomid425"><span style="">mv smokeping/  /var/www/html/.sendmail = /usr/sbin/sendmail</span></div>
+<div id="magicdomid426"><span style="">imgcache =  /var/www/html/smokeping</span></div>
+<div id="magicdomid427"><span style="">imgurl&nbsp;&nbsp; = ../smokeping</span></div>
+<div id="magicdomid428"><span style="">datadir&nbsp; = /var/lib/smokeping</span></div>
+<div id="magicdomid429"><span style="">dyndir&nbsp;&nbsp; =  /var/lib/smokeping/__cgi</span></div>
+<div id="magicdomid430"><span style="">piddir&nbsp;&nbsp; = /var/run/smokeping</span></div>
+<div id="magicdomid431"><span style="">smokemail =  /etc/smokeping/smokemail</span></div>
+<div id="magicdomid432"><span style="">tmail&nbsp;&nbsp;&nbsp; = /etc/smokeping/tmail</span></div>
+<div id="magicdomid433"><span style="">precreateperms =  2775</span></div>
+<div id="magicdomid434">&nbsp;</div>
+<div id="magicdomid435">&nbsp;</div>
+<div id="magicdomid436"><span style="">19. udp_relay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  lstolp&nbsp; 20100909</span></div>
+<div id="magicdomid437">&nbsp;</div>
+<div id="magicdomid438"><span style="">The were copied  over from the oldftp to /etc/rc.local</span></div>
+<div id="magicdomid439">&nbsp;</div>
+<div id="magicdomid440"><span style="">I tested from memory:</span></div>
+<div id="magicdomid441">&nbsp;</div>
+<div id="magicdomid442"><span style="">&nbsp;&nbsp;&nbsp; 55006&nbsp;&nbsp;&nbsp;&nbsp; gps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ok</span></div>
+<div id="magicdomid443"><span style="">&nbsp;&nbsp;&nbsp; 55007&nbsp;&nbsp;&nbsp;&nbsp;  winch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nope</span></div>
+<div id="magicdomid444"><span style="">&nbsp;&nbsp;&nbsp; 55009&nbsp;&nbsp;&nbsp;&nbsp; athena&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ok</span></div>
+<div id="magicdomid445"><span style="">&nbsp;&nbsp;&nbsp; 55010&nbsp;&nbsp;&nbsp;&nbsp; gps  and hdt&nbsp;&nbsp; nope</span></div>
+<div id="magicdomid446"><span style="">&nbsp;&nbsp;&nbsp; 55013&nbsp;&nbsp;&nbsp;&nbsp; posmv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nope</span></div>
+<div id="magicdomid447"><span style="">&nbsp;&nbsp;&nbsp; 55020&nbsp;&nbsp;&nbsp;&nbsp;  athena&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nope</span></div>
+</p>

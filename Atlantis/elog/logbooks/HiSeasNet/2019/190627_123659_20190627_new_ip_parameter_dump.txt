@@ -1,0 +1,129 @@
+'DAC 2202 VER 6.12  
+'SYELQL1622 @g
+'ACU Parameter Dump, Legacy Mode
+'CMD	Value	Result	Description
+mA	255	'*
+mB	253	'-000.3	El Trim
+mC	255	'*
+mD	240	'-001.6	Az Trim
+mE	064	'064	Mode
+mF	020	'020	Auto Thrs
+mG	000	'000	El Step Size
+mH	000	'000	Az Step Size
+mI	000	'000	Step Integral
+mJ	010	'010	Search Inc
+mK	100	'100	Search Limit
+mL	030	'030	Search Delay
+mM	000	'000	Sweep Inc
+mN	069	'069	System Type
+mO	002	'002	Gyro Type
+mP	009	'009	Polang Type
+mQ	030	'030	Pol Offset
+mR	090	'090	Pol Scale
+mS	000	'*
+mT	000	'000.0	Az Limit1
+mU	000	'*
+mV	000	'000.0	Az Limit2
+mW	004	'004	Pol Tx
+mX	012	'012	Error Type
+mY	000	'*
+mZ	000	'000.0	Az Limit3
+m[	000	'*
+m\	000	'000.0	Az Limit4
+m]	000	'*
+m^	000	'000.0	Az Limit5
+m_	000	'*
+m`	000	'000.0	Az Limit6
+ma	165	'165	Init Hdg
+mb	001	'*
+mc	189	'044.5	Lat  
+md	078	'N	Lat N/S
+me	004	'*
+mf	227	'125.1	Lon  
+mg	087	'W	Lon E/W
+mh	007	'*
+mi	008	'180.0	Sat Lon
+mj	168	'E	Sat E/W
+mk	002	'*
+ml	175	'114.5	Lcl HDG
+mm	004	'*
+mn	124	'114.8	Rmt HDG
+mo	006	'*
+mp	107	'1643	THRS
+mq	003	'*
+mr	254	'1022	Freq/MHz
+ms	038	'*
+mt	128	'9856 / 0616  Baud/KHz
+mu	118	'118	FEC/T/V
+mv	004	'004	Pol Sel
+mw	101	'*
+mx	124	'1624	AGC
+my	203	'*
+mz	016	'3249	Ext AGC
+m{	000	'*
+m|	000	'0000	Rem POL
+m}	000	'*
+m~	000	'0000	Target NID
+m	129	'129	DispT
+m€	000	'000	KuDisp
+m	000	'000	TDisp
+m‚	000	'*
+mƒ	000	'000.0	Az Limit7
+m„	000	'*
+m…	000	'000.0	Az Limit8
+m†	180	'090	El Limit12
+m‡	180	'090	El Limit34
+mˆ	180	'090	El Limit56
+m‰	180	'090	El Limit78
+mŠ	000	'000	SatSkew
+
+' 9797b VER 2.14 'SZLQÊ'PCU Parameter Dump, Legacy Mode
+'CMD	Value	Description
+n0	211	'Model Index
+n1	050	'CL Kp
+n2	050	'LV Kp
+n3	050	'AZ Kp
+n4	000	'CL Trim
+n5	000	'LV Trim
+n6	000	'HF Trim
+n7	133	'DishScan
+n8	016	'Scan Rate
+n9	017	'Error
+n:	010	'Sys ID
+n;	108	'Stat1
+
+'#
+
+
+'Modem Ver 1.02a
+'Modem Ver 1.02a
+'Comm IF Ver 1.20 Port  M&C (C)
+'Comm IF Ver 1.20 
+'CommIF parameter dump...
+'CMD	Value		Description		Enabled	Secured
+[I	199.92.161.186	'IP Address
+[N	255.255.255.0	'Netmask
+[G	199.92.161.3	'Gateway
+[0	2000		'TCP-0 Port		On	Off
+[1	2001		'TCP-1 Port		On	Off
+[2	2002		'TCP-2 Port (OpenAMIP)	On	Off
+[U	3000		'UDP Port		On	Off
+Fixed	49184		'UDP Port (ROAM)	Off	Off
+[C	9600		'M&C Baud Rate		On	Off
+[A	4800		'NMEA A Baud Rate	On	Off
+[B	4800		'NMEA B Baud Rate	On	Off
+[D1	10000		'LO Band 1
+[D2	10750		'LO Band 2
+[D3	11300		'LO Band 3
+[D4	9750		'LO Band 4
+[D5	0		'LO Band 5
+[D6	0		'LO Band 6
+[D7	0		'LO Band 7
+[D8	0		'LO Band 8
+[H	HDT		'NMEA Heading ID
+[T	80		'Web (HTTP)		On	On
+[O	255		'Enabled Mask
+[Q	16		'Secured Mask
+
+
+>

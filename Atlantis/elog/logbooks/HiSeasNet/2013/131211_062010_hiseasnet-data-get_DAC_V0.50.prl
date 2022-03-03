@@ -1,0 +1,381 @@
+#!/usr/bin/perl -w
+#
+# hiseasnet-data-get_prl, a script to collect data from 
+# the serial port on the DAC of a HiSeasNet system.
+#
+# Robbie Laird
+# Woods Hole Oceanographic Institute
+# Oct 1, 2008
+# version 0.10
+# version 0.11 scaled az/el/cr to actual values.  (divided by 10)
+# version 0.12 Added time stamp.  Added UnixTime. Improved the formatting.
+# version 0.13 Added code for daily file.
+# version 0.14 added code for the comtech modem.
+# version 0.20 lots of small changes.  Add header to file, remove desriptions.
+#		changes numorous formating items.  Now similar to calliope .csv files.
+# version 0.21  Add more data.  relative antenna azimuth, error messages, position, frequency, 
+#		threshold, DAC status, etc..
+# version 0.22	for editing
+# version 0.23  More editing, install instructions, commented out extra AGC.
+# version 0.24  Added more data collection for the Comtech Modem.
+# version 0.25  Small changes, prep for acutal use.  print to match calliope.
+# version 0.30  First final for ships.
+# version 0.31  2nd final for ships.  Moving serial port openings so that they don't hang up
+#               when then cannot be accessed.  (uplugged, power out, etc..)
+# version 0.40  Added BER collection to Modem, formatted it for graphical display.
+# version 0.50  Split into two parts, now this is ./hiseasnet-data-get_DAC_V0.50.prl
+#               This script now only talks to the DAC.
+
+
+
+# Description:  This perl script is for logging of data from 
+# the DAC-97, DAC-03 or DAC-2200 serial port to a specified 
+# logfile.  It will also log data from the serial port on the 
+# Comtech modem.  This logfile can then be parsed or plotted with 
+# other programs.
+# Notes:  
+# ---You should probably use the serial cable supplied with 
+# the system or it's equivelent.   The serial port is non-standard.
+# Pin 9 on the serial port has 24 volts on it.
+# ---The DAC ocaisionally seems to hang it's serial port.  Everything
+# else works normally, tracking is fine, but no data shows up when 
+# the port is polled.  Power cycling the DAC fixes this.  
+
+
+
+
+# Requirements: Device::SerialPort 0.12 (from cpan)
+#		Time::HiRes
+#
+  # 	Tried using with "solo" from crontab.  Seems to work, but loss of serial port (or loss
+  #	of power to DAC or modem) leaves program running.  solo work, program won't restart
+  #	excess number of instances.  But now need some way to time out, or it never restarts.
+
+
+
+##### WHOI INSTALL  ######
+#	oldftp may be a good choice.  Your perl install must include
+#       Device::SerialPort 0.12
+#       Time::HiRes
+#	cpan if these are needed.  
+#	Add /home/data/shipdata/ directory to the mailserver.
+#	chmod the permissions on it to 777.  (otherwise it will not
+#	be writeable.)  		
+#	Set up the proper com ports.  See the setup for the 
+#	Variables in the early portion of the script.  There are 
+#	some other items in this area that can also be set.  Also
+#	set the ship name, AT, OC, or KN.  If you are using a DAC-97
+#	you may have to comment out some of the program.  This will
+#	have to be worked out at the time.  P, % definately work for 
+#	the DAC-97.  S will probably not work perfectly.
+
+
+#Commands that works with the DAC-03.  H, P, S, V, q, u, @, % all work with DAC-03.  
+#Same commads should work with the DAC-97, but some have a different response.  
+#
+#	H 	Relative AZ and ship heading in tenths.  Rel. az. range is 0950 to 6250. Ships head range is 0000 3599.  
+#		DAC Response: "RrrrrHaaaa",CR, LF,">"        ????what's up with the 950 to 6250?
+
+#	P 	Az/El/Cl Position.     Azimuth/elevation/cross-level in tenths..  
+#		DAC Response: "EeeeeAaaaaCaaaa",CR, LF,">"
+
+#	p 	Az/El  in units of .05 degree.  Does not work, locks up port on DAC.  
+#  		DAC Response: “ExxxxAxxxxCxxxx” CR, LF,">"
+
+#	S 	DAC Status. Response is four ASCII status bytes,followed by the signal strength 
+#		and Remote/Local RF switching status.  Needs some serious decoding.  
+		#Columns 1, 3, (K,@) don't seem to do much, 2, 4 (H, @) do.
+#  		DAC Response: "S@@@@LnnnnRL", cr, lf, ">"
+
+#	V 	Software Version. Response is ASCII string defining software model and version number.
+#		DAC Response: "DAC-03 VER N.NN",CR, LF,">"
+
+#	q	Tuner Settings. 
+#		For DVB receiver selection, response is MHz tuning, Symbol rate and Received NID. 
+#		For SCPC or NBIF receiver selection, response is MHz portion , KHz portion and a null NID response. 
+#		Symbol rate is displayed as Ksps rate/16, i.e. 20,000 Ksps is displayed as 5000.
+#		DAC Response: "Qnnnn nnnn xxxx",CR, LF,">"
+
+#	u 	Polang / AUX / Threshold read. 
+#		Response is polang position (nnnn) and Auxiliary A/D reading (uuuu) from remote PCU and Threshold (nnnn) from the DAC. 
+#		Reads polang pot scaled to degrees for 24 volt polang systems and polang PWM output for 5v systems. 
+#		For remotely switched feeds, 000 indicates pri. feed, 128 indicates sec. feed. Aux A/D reading is 0000-4095 for 0 to 5v input.
+#		DAC Response: "GnnnnUuuuuTnnnn",CR, LF,">"
+
+#	% 	Signal Strength. 
+#		Response is average AGC signal strength over previous 200 mSeconds 
+#		followed by the Remote and Local RF switching status. Range of AGC 
+#		response is 0000 to 4095. Obsolete command now that signal strength 
+#		is appended to the status word response.  
+#		DAC Response: LnnnnRL,cr, lf, ">"
+
+#	@ 	Latitude / Longitude Position Read. 
+#		Reports North/South Latitude and East/West
+#		Longitude read from DAC front panel. Value may be from manual input or automatic
+#		GPS update. Resolution is in degrees and tens of minutes. NOTE: Higher resolution
+#		data is available from systems with GPS built into the antenna (x03, x04, x05, x06) by
+#		using the “?@↵“ command.
+#		DAC Response: “NdddmWdddm”,CR, LF,”>“.
+
+# Other Notes
+#	-This was written on a Linux system.  Probably would mostly work in Windows, 
+#	but you might need to consider the cr/lf situation.
+#	-Talking to the serial port of the DAC sometimes causes problems, may change settings.
+#	However, this is even more likely if you are _not_ using a script.
+#	You have been warned.  I'm sure it's not a problem, because you 
+#	have all of you settings written down, right?
+#
+#	At this time, this file collects el-az-cr-DAC_AGC-EbNo-Modem_AGC- (and more....) and puts them 
+#	into a comma delimited file with a header.
+#
+#	Still to do, maybe.  Split up program or files into seperate DAC and Modem
+#	data collection.  Make both into seperate programs and use them as subroutines?
+#
+#
+########################	PROGRAM STARTS HERE:      ########################
+
+use Device::SerialPort;				#This is relatively new, you might need to add it.  
+use Time::HiRes qw(gettimeofday sleep);		#needed because the data rate can be more than one/sec.
+
+$DACSerialPort      = "/dev/ttyS2";       		# port to watch.  Probably /dev/ttyS[0|1] for most.
+#$DACSerialPort      = "/dev/ttyUSB0";       		# port to watch.  Probably /dev/ttyS[0|1] for most.
+
+$SleepTime 	= 30;				# time delay between readings.  In seconds.  If -1, run once. (for crontab)
+$UnixTime 	= 1;				# set to 1 for a unix-time seconds column.  good for plots.
+$AddDate 	= 1;				# set to non-zero to add date string to file, 
+$AddTime 	= 1;				# set to non-zero to add time string to file,
+$DateLogFiles 	= 1;				# Set to 1 if you want the filenames with a date stamp and a new file (daily?)
+$LogDir    	= "/home/shipdata/hsn/";	# path to data file.  This directory must exist.
+$LogFile   	= "AT";                        # file name to output, or prefix if timestamped.  AT or KN
+#$LogFile        = "AtlSpecial";    
+$Debug          = 0;
+my $hour;
+
+# Serial Settings:  For DAC serial port.
+$DACob = Device::SerialPort->new ($DACSerialPort) || die "Can't Open $DACSerialPort: $!";
+$DACob->user_msg(1) 		|| die "failed setting user_msg";		# misc. warnings
+$DACob->error_msg(1) 		|| die "failed setting error_msg";		# hardware and data errors
+$DACob->baudrate(4800)    		|| die "failed setting baudrate";
+$DACob->parity("none")     	|| die "failed setting parity";
+$DACob->databits(8)       		|| die "failed setting databits";
+$DACob->handshake("none") 		|| die "failed setting handshake";
+#$DACob->read_char_time(100000) 		|| die "failed setting read_char_time"; 	#milliseconds.  does not accept zero.  Supposed to.  ?? 
+#$DACob->read_const_time(100) 	|| die "failed setting read_const_time";     	#milliseconds.   (Waits Xms, then gives up?)  
+$DACob->write_settings    		|| die "no settings";
+
+
+##########  Start of main loop  #############
+
+while (1){					#Run forever.
+	 if($Debug) {print STDOUT "start of loop. \n"}
+
+        #open the serial port
+        open(DEV, "<$DACSerialPort")     || die "Cannot open $DACSerialPort: $_";
+	if($Debug) {print STDOUT "\nOpened DAC serial port.\n"}
+
+
+	{local $/ = "\r\n>"; 			#Change the EOL character.  Needed because the data ends in "cr,lf,>"
+		#get the first item of data.
+		$pass=$DACob->write("P");		#Get El, Az and Crlv using "P".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#DAC Response: "EeeeeAaaaaCaaaa",CR, LF,">"
+		$ElAzCr = <DEV>;		#Get the data from the serial port.
+		$ElAzCr =~ s/\W//g;		#remove all non-word char.
+		$ElAzCr =~ s/\D/ /g;            #remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "ElAzCr is:$ElAzCr \n"}
+								
+		#Needed for DAC97, Not used with DAC03.  Use DAC-status instead for DAC03
+		#get the next data. 		#AGC is also obtained in DAC-status.  But might need this with DAC-97.
+		$pass=$DACob->write("%");		#Get the DACagc using "%".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#DAC Response: LnnnnRL,cr, lf, ">"
+		$DacAgc = <DEV>;			#Get the data from the serial port.
+		$DacAgc =~ s/\W//g;		#remove all non-word char.
+		$DacAgc =~ s/\D/ /g;		#remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "Dacagc (with % command) is: $DacAgc \n"}
+		
+		#get the next data.
+		$pass=$DACob->write("H");		#Get the Heading, rel-azimuth using "H".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#format "RrrrrHaaaa" in .1 degree units.
+		$RelazGyro = <DEV>;		#Get the data from the serial port.
+		$RelazGyro =~ s/\W//g;		#remove all non-word char.
+		$RelazGyro =~ s/\D/ /g;		#remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "RelazGyro is: $RelazGyro \n"}
+
+		#get the next data.
+		$pass=$DACob->write("S");		#Get the DAC status  using "S".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#Format is "S@@@@LnnnnRL" status/agc/remote-local
+		$DacStat = <DEV>;		#Get the data from the serial port.
+#		$DacStat =~ s/\W//g;		#remove all non-word char.
+#		$DacStat =~ s/\D/ /g;		#remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "DacStat is: $DacStat \n"}
+
+		#get the next data.
+		$pass=$DACob->write("q");		#Get the tuner settings using "q".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#Format is "Qnnnn nnnn xxxx"
+							#MHz tuning, Symbol rate and Received NID for DVB   OR
+							#MHz portion , KHz portion and a null NID response for SCPC or NBIF
+		$DacTuning = <DEV>;		#Get the data from the serial port.
+		$DacTuning =~ s/\W//g;		#remove all non-word char.
+#		$DacTuning =~ s/\D/ /g;		#remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "DacTuning is: $DacTuning \n"}
+
+		#get the next data.
+		$pass=$DACob->write("u");		#Get the Polang/aux/Threshold using "u".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#Format is "GnnnnUuuuuTnnnn"
+		$PolAuxThresh = <DEV>;		#Get the data from the serial port.
+		$PolAuxThresh =~ s/\W//g;	#remove all non-word char.
+		$PolAuxThresh=~ s/\D/ /g;	#remove all non-digit characters and replace with a space.
+		if($Debug) {print STDOUT "PolAuxThresh is: $PolAuxThresh \n"}
+
+		#get the next data.
+		$pass=$DACob->write("@");		#Get the Lat/Long using "@".
+		sleep (.1);			#DAC sometimes gets wacked out without this.
+						#format is NdddmWdddm”  (maybe is degrees and tenths?)
+		$LatLon = <DEV>;			#Get the data from the serial port.
+		$LatLon =~ s/\W//g;		#remove all non-word char.
+#		$LatLon =~ s/\D/ /g;		#remove all non-digit char#acters and replace with a space.
+		if($Debug) {print STDOUT "LatLon is: $LatLon \n"}
+
+		#save the next data to a varible, and so on.  Add more of the above blocks if you need more data.
+		}				#end of special $/
+	#close the serial port connected to the DAC
+	#$DACob->close     || die "close DAC serial port failed";
+	if($Debug) {print STDOUT "Just closed the DAC serial port.  \n\n"}
+
+
+#### Further decode/process DAC data if needed. ####
+
+	#process azimuth, elevation, cross level.
+	@ElAzCr = split(/\s+/, $ElAzCr); 	#separate azimuth, elevation, cross level.
+	$El = $ElAzCr[1]/10;			#extract, correct for actual elevation
+	$Az = $ElAzCr[2]/10;			#Extract, correct for actual azimuth
+	$Cr = $ElAzCr[3]/10;			#Extract, correct for actual cross level.
+	if($Debug) {print STDOUT "Elevation is $El, Azimuth is $Az, Crosslevel is $Cr\n"}
+
+	#Process relative azimuth, ship heading.
+	@RelazGyro = split(/\s+/, $RelazGyro);	#Separate relative azimuth, ship heading.
+	$RelAz = $RelazGyro[1]/10;		#Extract, correct for actual relative azimuth.
+	$Gyro  = $RelazGyro[2]/10;		#Extract, correct for actual ships heading
+	if($Debug) {print STDOUT "Relative Azimuth is:$RelAz, Heading is $Gyro\n"}
+
+#	DacStat.  DacStatWord needs serious processing.
+#	Removed for Atlantis, has DAC93, does not work correctly. 
+#	@DacStat = (substr($DacStat,  0, 1), substr($DacStat,  1, 4), substr($DacStat,  6, 4), substr($DacStat,  10, 2));
+#	$DacStatWord =  $DacStat[1];		#DAC status words.  How many are active?
+#	$DacAgc  = $DacStat[2];			#AGC from the DACstatus word, (versus the % command)
+#	$RemLocal = $DacStat[3];		#DAC remote local switching status.  Do I care about this at all?
+#	if($Debug) {print STDOUT "DacStat items:  Word is: $DacStatWord, AGC is: $DacAgc, Remote/local switch is: $RemLocal\n "}
+
+
+# 	#Process DacTuning.   #This version works with DAC03
+# 	@DacTuning = split(/(Q)(\d{4})(\d{4})(\d{4})/, $DacTuning);	#separate out the tuning.  cannot split on spaces.
+# 	$DacMHz  = $DacTuning[2];			#First 4 digits are megahertz
+# 	$DacKHz = $DacTuning[3];			#Next 4 digits are kilohertz or symbol rate, depending.
+# 	$Nid    = $DacTuning[4];			#Last 4 digits are nil or NID, depending.
+# 	if($Debug) {print STDOUT "DacTuning: meg is $DacMHz  kilo is  $DacKHz nid is $Nid\n "}
+
+	#Process DacTuning.  #use this for DAC97
+	@DacTuning = split(/(Q)(\d{4})(\d{4})(\d{1})/, $DacTuning);	#separate out the tuning.  cannot split on spaces.
+	$DacMHz  = $DacTuning[2];			#First 4 digits are megahertz
+	$DacKHz = $DacTuning[3];			#Next 4 digits are kilohertz or symbol rate, depending.
+	$Nid    = $DacTuning[4];			#Last 4 digits are nil or NID, depending.
+	if($Debug) {print STDOUT "DacTuning: meg is $DacMHz  kilo is  $DacKHz nid is $Nid\n"}
+
+
+
+	#Process Polang, Aux, Threshold.
+	@PolAuxThresh = split(/\s+/, $PolAuxThresh);	#Separate Polang, Aux, Threshold.
+	$Pol    = $PolAuxThresh[1];		#
+	$Aux    = $PolAuxThresh[2];		#
+	$Thresh = $PolAuxThresh[3];		#
+	if($Debug) {print STDOUT "PolAng is $Pol, Aux is $Aux, Threshold is $Thresh\n"}
+
+	#Process Latitude, Longitude.
+	@LatLon = split(/(\D)(\d+)(\D)(\d+)/, $LatLon);	#Separate latitude, longitude, NSEW.
+	$LatNS = $LatLon[1];			#North or south?
+	$Lat = $LatLon[2]/10;			#Extract, correct for actual number.
+	$LonEW = $LatLon[3];			#East or West?
+	$Lon = $LatLon[4]/10;			#Extract, correct for actual number.
+	if($Debug) {print STDOUT "Lat is $Lat $LatNS, Lon is $Lon $LonEW \n"}
+
+        if($Debug) {print STDOUT"Done with the DAC items.\n\n"}
+
+
+##############
+
+
+	if ($DateLogFiles == 1){ 
+		( $hour, $Day, $Month, $Year) = (gmtime)[2..5];
+                $Year =$Year -100;
+                $Month =   $Month + 1;
+	       #$FileDate = sprintf ("%02d-%02d-%04d_", $Day, $Month, $Year    );
+		$FileDate = sprintf ("%02d%02d%02d", $Year, $Month, $Day    );
+		}
+
+	#write the data to a line in a file.
+	open(LOG,">>${LogDir}${LogFile}${FileDate}_hsn-DAC.csv")    or  die "can't open file ${LogDir}${LogFile}${FileDate}_hsn.csv, did you make the directory??? ";
+	select(LOG), $| = 1;      		# set nonbufferd mode
+
+	if ($Debug){				#test to see if file is empty.
+        	if (!-s LOG){print STDOUT "File ${LogDir}${LogFile}${FileDate}_hsn.csv is empty.\n";}
+		else {print STDOUT "file is not empty.\n"}
+		}
+	
+	#If file is empty, write the header.  Header must be updated if data changes.
+	if (!-s LOG){					#test to see if file is empty.  (empty file means new day, need header.)
+		print ("Date,       Time_GMT, Unixtime, ");        #if it is, write the header. (new version, for calliope compatibility)
+
+#DAC03
+#		print ("    Lat, NS, Lon, EW, Gyro, AzRel, AzTrue, El, Cr, DacAgc, Thresh, "); 
+#		print ("PolAng, DacMHz, DacKHz, NID, Aux, DacStatus, RemLocal, ");
+#DAC97
+		print ("      Lat, NS, Lon, EW, Gyro,  AzRl,  AzTru, El,   Cr,   DcAgc, Thrsh, "); 
+		print ("PolAng, DcMHz, DcKHz, NID, Aux\n");
+
+
+
+		}
+
+
+        #Add a date string if called for.
+        if ($AddDate == 1) {
+                ($Day, $Month, $Year) = (gmtime)[3..5];
+                $Year =$Year + 1900;
+                $Month =   $Month + 1;
+                printf ("%04d/%02d/%02d, ", $Year, $Month, $Day    );#write to file
+                }
+        #Add a time string if called for.
+        if ($AddTime == 1) {
+                ($Sec, $Min, $Hour) = (gmtime)[0..2];
+                printf ("%02d:%02d:%02d, ", $Hour, $Min, $Sec    );#write to file
+                }
+        #add unix time in seconds if called for.
+        if ($UnixTime == 1) {
+                printf ( "%10.2f, ",  gettimeofday/1 );  #write to file
+                }
+	
+
+# modify the next line for different file formats. (comma delimited, etc)
+	# don't forget to fix the header line if you add/subtract anything here.
+#DAC03
+#	printf ("%4.1f, %1.1s,  %4.1f, %1.1s, %5.1f, %5.1f, %5.1f, %3.1f, %3.1f, %4.0f, %4.0f, ", $Lat,  $LatNS, $Lon,  $LonEW, $Gyro, $RelAz, $Az,   $El,   $Cr,   $DacAgc,  $Thresh);
+#	printf ("%3.0f, %3.0f, %3.0f, %4.0f, %4.0f, %4.4s, %2.2s\n, ", $Pol, $DacMHz, $DacKHz, $Nid, $Aux, $DacStatWord, $RemLocal); 
+#DAC97
+	printf ("%4.1f, %1.1s,  %4.1f, %1.1s, %5.1f, %5.1f, %5.1f, %3.1f, %3.1f, %4.0f, %4.0f, ", $Lat,  $LatNS, $Lon,  $LonEW, $Gyro, $RelAz, $Az,   $El,   $Cr,   $DacAgc,  $Thresh);
+	printf ("%3.0f, %3.0f, %3.0f, %4.0f, %4.0f\n", $Pol, $DacMHz, $DacKHz, $Nid, $Aux); 
+
+
+
+
+	if($Debug) {print STDOUT "Bottom of the loop coming up.  \n"}
+	if ($SleepTime == -1) {last}		#look for the -1 flag for crontab.
+	else {sleep $SleepTime}			#if no flag, do it again, forever.
+	if($Debug) {print STDOUT "Bottom of the loop past.  \n"}
+}
+undef $DACob;
+

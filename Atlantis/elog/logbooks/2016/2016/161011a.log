@@ -1,0 +1,28 @@
+$@MID@$: 2
+Date: Tue, 11 Oct 2016 16:04:10 +0000
+Author: AH
+Type: General Notes
+Chief Scientist: Gregg / Fornari
+Subject: MISO VAN combo 4165
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>MISO VAN combo 4165</p>
+$@MID@$: 3
+Date: Tue, 11 Oct 2016 16:06:07 +0000
+Author: AH
+Type: General Notes
+Chief Scientist: 
+Subject: PI ip addresses (can vary due to DHCP)
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>As of Sept 2016:</p>
+<p>Hydrolab&nbsp;&nbsp;&nbsp;&nbsp; 192.168.11.79</p>
+<p>Main Lab mid&nbsp;&nbsp;&nbsp;&nbsp; 192.168.11.42</p>
+<p>Main Lab Fwd&nbsp;&nbsp;&nbsp; 192.168.11.95</p>
+<p>Biolab&nbsp;&nbsp;&nbsp;&nbsp; 192.168.11.127</p>
+<p>Comp Lab&nbsp;&nbsp;&nbsp;&nbsp; 192.168.11.61</p>
+<p>SSSG cubicle&nbsp;&nbsp; 192.168.11.135</p>

@@ -1,0 +1,67 @@
+$@MID@$: 11
+Date: Wed, 12 Oct 2011 10:14:33 +0000
+Author: AH
+S/N: 
+Type: Configuration
+Component: router
+Subject: Minicom scripts
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>There are some minicom set-up files in /home/sssg on ftp for  communicating with the various routers (files are .minirc.ese,&nbsp;&nbsp;&nbsp; .minirc.hiseasnet, etc.)</p>
+<p>************************</p>
+<p>.minirc.ese&nbsp;&nbsp; master clock</p>
+<p>So typing:</p>
+<p>&gt;minicom ese</p>
+<p>&nbsp;</p>
+<p>will use this set-up</p>
+<p># Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS0<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8<br />
+pu parity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N<br />
+pu stopbits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No</p>
+<p>**************************</p>
+<p>&nbsp;</p>
+<p>.minirc.at1 &nbsp; - for one of the Cisco 2600 series</p>
+<p>So typing:</p>
+<p>&gt;minicom at1</p>
+<p># Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS2<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>**************************</p>
+<p>.minirc.hiseasnet&nbsp;&nbsp; - for the Cisco 2900 series (newest/router in  use)</p>
+<p>So typing:</p>
+<p>&gt;minicom hiseasnet</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will use this set-up:<br />
+# Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS3<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8<br />
+pu parity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N<br />
+pu stopbits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+<br />
+********************************</p>
+<p>.minirc.at2</p>
+<p>So typing:</p>
+<p>&gt;minicom at2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will use this set-up:</p>
+<p># Machine-generated file - use setup menu in minicom to change parameters.<br />
+pu port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /dev/ttyS1<br />
+pu baudrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9600<br />
+pu bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8<br />
+pu parity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N<br />
+pu stopbits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+pu rtscts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No<br />
+<br />
+*********************************</p>
+<p>&nbsp;</p>

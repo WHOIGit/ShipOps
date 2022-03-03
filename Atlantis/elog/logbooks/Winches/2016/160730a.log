@@ -1,0 +1,280 @@
+$@MID@$: 55
+Date: Sat, 30 Jul 2016 01:31:18 +0000
+Author: AH
+Type: Termination
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: General Problem
+Subject: RE-TERMINATION .322" WIRE
+Cruise: at36
+Attachment: 160814_150417_kink_in_wire_outside_wires_slightly_splayed.JPG,160814_150709_322wire_two_bends.JPG,160822_091553_slipring_10001.pdf
+Encoding: HTML
+========================================
+<p><style type="text/css">
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+--> </style></p>
+<p><span style="font-size: xx-large;">RETEST - full 10 minute insulation resistance tests of August 2016 termination</span></p>
+<p>Megger by Allison Heater</p>
+<p>-Re-test of Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)&nbsp; was used for the insulation resistance testing<br />
+</span></p>
+<p><span style="font-size: large;">Fluke 87 III True RMS Multimeter used for the continuity testing</span></p>
+<p><span style="font-size: large;">*** Marshall has been suggesting we use the Fluke for the continuity testing for a while.&nbsp; I had still been using the </span></p>
+<p><span style="font-size: large;">AEMC Megohmmeter for continuity.&nbsp; However, today, the AEMC did not seem to work properly in the 400KOhms position.</span></p>
+<p><span style="font-size: large;">It simply made a ticking noise.&nbsp; The green to ship measurement worked okay in the 40 Ohm position.&nbsp; At any rate, the continuity </span></p>
+<p><span style="font-size: large;">testing was completed using the Fluke 87 III </span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9190 meters</p>
+<p>Overall length = 9033 meters</p>
+<p>Air temp:&nbsp;&nbsp; 82.9 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from termination end of wire through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;"><br />
+</span><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  microF &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Green-Red &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.066 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.09 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 1.07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.076 &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.457 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.071</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.411 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.13 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.023<br />
+</span><span style="font-size: small;"><br />
+</span><span style="font-size: medium;">White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.494 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.10&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.713</span></p>
+<p><span style="font-size: medium;">White-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.604 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.21 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.706</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.643 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 0.670</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 280 Ohms</span></p>
+<p><span style="font-size: medium;">W</span><span style="font-size: medium;">hite-Green&nbsp;&nbsp;&nbsp;&nbsp; 273 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 272 Ohms</span></p>
+<p><span style="font-size: medium;">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.8 Ohms</span></p>
+<p>Values for continuity fluctuated during measurement - the reading is about the median value of the fluctuation</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">*********************************************</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: x-large;">10-Aug-2016&nbsp;&nbsp;&nbsp; RE-TERMINATED 0.322&quot; wire</span></strong></p>
+<p><span style="font-size: x-large;">There have been some problems with the 0.322&quot; wire (kinks, etc.) so ~ 500 meters of wire was cut off</span></p>
+<p><span style="font-size: x-large;">and left on the dock at WHOI.&nbsp; Therefore, a new termination was required for the at37-01 cruise. &nbsp;</span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">The slip-ring was removed and tested while we were at WHOI.&nbsp; Since no issues were found, and all the sections tested favorably</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">some more searching for issues was done (there had been some telemetry issues with some equipment during at36 - the MC400 camera system).&nbsp; This</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">was more like opening a can of worms, as redo'ing some of the connections seemed to make matters worse.&nbsp; The issue varied between having no good </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">ground connection to all other conductors (white, red and black) leaking to ground.&nbsp; The slip ring was changed (even though the one we had installed </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">tested fine), just to see if that would correct the issues.&nbsp; It did not.&nbsp; However, the new slip ring was left in.&nbsp; Meridian Slip ring Model MXO 6 Serial number 7.25 (with mecca </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">connectors - see attached photo of slipring and previous meg results) is presently installed.&nbsp; Meridian Model MX 0-4 WHOI Serial number 29.379 was removed.&nbsp; Since the new slip ring has mecca connectors on both ends, the </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">cabling from the slipring down to the Alvin hangar j-box was removed and mecca (male) pigtails were used to connect to the terminal strip.&nbsp; New mecca (female) pigtails were installed on&nbsp;</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">the drum to facilitate the connections to the slip ring.&nbsp; Some problems persisted (low insulation resistance results with red/black/white to ground/green). </span></span>&nbsp; <span style="font-size: x-large;"><span style="font-size: medium;">Finally, using the black </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">and green conductors, and beginning at the computer lab </span></span><span style="font-size: x-large;"><span style="font-size: medium;">end of the wire, the problem was tracked to the connection being made on the drum.&nbsp; A small section of the conductor wire </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">was cut off of the drum end (only about 8&quot;, not enough to reveal a new wire / tape measurement).&nbsp; The mecca pigtails were reinstalled to the &quot;fresh&quot; end of the wire.&nbsp; Then, the</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">entire wire length was tested.&nbsp; For caution's sake, Each pair was tested for insulation resistance from the termination end all the way through to the computer lab and then, prior to removing the </span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">termination end megger clamps, the continuity of that pair was also tested (i.e. make sure there was actually a good connection between the megger clamps and the conductors being tested).</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-size: medium;">Also, a few random pairs were tested for insulation resistance and continuity from the computer lab end out to the termination.&nbsp; </span></span></p>
+<p>Megger by Allison Heater</p>
+<p>-Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9190 meters</p>
+<p>Overall length = 9033 meters</p>
+<p>Air temp:&nbsp;&nbsp; 85 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from termination end of wire through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;"><br />
+</span><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Green-Red &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.336 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.076 &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.123 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.010</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.046 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.016&nbsp;&nbsp; *** also done from computer lab end to termination for 5 min&nbsp;&nbsp; insulation resistance = 2.049 GOhms&nbsp; continuity 286.2 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.473 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.712</span></p>
+<p><span style="font-size: medium;">White-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.862 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.665</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.530 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.97 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 0.671</span></p>
+<p>**Most insulation resistance tests were done for 5 minutes.&nbsp; The results above that have values for &quot;PI&quot; were tests that were run for 10 minutes</p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 286.1 Ohms</span></p>
+<p><span style="font-size: medium;">W</span><span style="font-size: medium;">hite-Green&nbsp;&nbsp;&nbsp;&nbsp; 286.4 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 285.3 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 568 Ohms</span></p>
+<p><span style="font-size: medium;">Black-White&nbsp;&nbsp;&nbsp; 568 Ohms</span></p>
+<p><span style="font-size: medium;">Red-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 567 Ohms</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">Meridian </span><span style="font-size: x-large;"><span style="font-size: medium;">Model MX 0-4 WHOI Serial number 29.379</span></span></p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p><span style="font-size: medium;">*&nbsp; The combination of:&nbsp; the cable that was removed from the Alvin hangar j-box (that connects to the slip ring), the slip ring (that was removed), and<br />
+</span></p>
+<p><span style="font-size: medium;">the pigtail that was removed that connected from the slip ring to the drum were tested (all three sections were connected together</span></p>
+<p><span style="font-size: medium;">and megger'ed all the way through) before returning them to spares (in order to insure there were not any issues with those pieces</span>).</p>
+<p>Results:&nbsp;&nbsp; (same Megger, done in lab ~74 degrees F)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</p>
+<p>Red-Blk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.25 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .003</p>
+<p>Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.26 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.89&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .002</p>
+<p>Red-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.37 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .003</p>
+<p>White-Green&nbsp;&nbsp;&nbsp; 5.27 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .002</p>
+<p>White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.86 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .002</p>
+<p>Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 5.69 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .002</p>
+<p>continuity</p>
+<p>Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .32 Ohms</p>
+<p>Green&nbsp;&nbsp;&nbsp; .32 Ohms</p>
+<p>Black&nbsp;&nbsp;&nbsp;&nbsp; .61 Ohms</p>
+<p>White&nbsp;&nbsp;&nbsp;&nbsp; .69 Ohms</p>
+<p>These tests results, and the fact that I was able to duplicate the &quot;bad&quot; results after these pieces were removed,</p>
+<p>with a different slipring and cabling, indicates that this cable-slipring combination was not the problem, and is</p>
+<p>good to return to spares.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">*************************************</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: x-large;">04-Aug-2016&nbsp;&nbsp;&nbsp; SLIP RING TESTED</span></strong></p>
+<p><span style="font-size: x-large;">Dan Fornari having telemetry issues with his instruments on the multicore</span></p>
+<p><span style="font-size: x-large;">during the first 400 meters of every cast (before and after kinks and bends)</span></p>
+<p><span style="font-size: x-large;">Slip ring brought down to computer lab for testing <br />
+</span></p>
+<p>Megger by Allison Heater</p>
+<p>-Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>lab temperature about 74 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Slip-ring only</strong>- meridian lab model mx 0-4/WHOI, S/N 29.379<span style="font-size: large;"> </span></span></p>
+<p><span style="font-size: large;">Insulation resistance test performed, as usual (10 minutes).&nbsp; For a minimum of 5 minutes of that time</span></p>
+<p><span style="font-size: large;">the slip ring was kept in motion by hooking it to a drill and</span> <span style="font-size: large;">spinning it&nbsp; -</span></p>
+<p><span style="font-size: large;">the insulation resistance values were observed during the spinning and did not </span></p>
+<p><span style="font-size: large;">fluctuate to extreme.&nbsp; None of the microF values registered anything</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                     Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Green-Red &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.21 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.01 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.01 &nbsp; &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.00 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.69 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.90 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</span></p>
+<p><span style="font-size: medium;">White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.25 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<br />
+</span></p>
+<p><span style="font-size: medium;">White-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.24 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<br />
+</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.84 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">The slip ring was kept in motion during the continuity tests.&nbsp; The test was run for about 1-2 minutes</span></p>
+<p><span style="font-size: medium;">there was some fluctuation in the continuity results because the gator clips were being spun with the </span></p>
+<p><span style="font-size: medium;">slipring (and making the connections between the wires)</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.3 Ohms</span></p>
+<p><span style="font-size: medium;">Blk-Green &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 3-6 Ohms</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp; 1-2 Ohms</span></p>
+<p><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp; 3-4 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1-2 Ohms</span></p>
+<p><span style="font-size: medium;">White-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1-2 Ohms</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">*************************************</span></p>
+<p><span style="font-size: medium;">**************************************</span></p>
+<p><strong><span style="font-size: x-large;">04-Aug-2016&nbsp;&nbsp;&nbsp; RE-TERMINATED DUE TO MULTIPLE BENDS IN WIRE AFTER MULTICORE</span></strong><span style="font-size: large;"> </span></p>
+<p><span style="font-size: x-large;">DEAD-END STYLE TERMINATION - The wire length did not change, as the DEAD-END was just</span></p>
+<p><span style="font-size: x-large;">moved up so that it was above the bends (i.e. no bends in wire supporting weight)</span></p>
+<p>Megger by Allison Heater</p>
+<p>-Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9691.0 meters</p>
+<p>Overall length = 9534.0 meters</p>
+<p>Air temp:&nbsp;&nbsp; 68.7 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from deck (with new termination) through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;">S/N:&nbsp;   154856 </span></p>
+<p><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Green-Red &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 882 MOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.09 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.06 &nbsp; &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.290 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.066</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.438 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.082</span></p>
+<p><span style="font-size: medium;">White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.735 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.99 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.754</span></p>
+<p><span style="font-size: medium;">White-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.833 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.31 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.746</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.423 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 292.6 Ohms</span></p>
+<p><span style="font-size: medium;">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp; 0.83 Ohms</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp; 295.7 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 294.3 Ohms</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">*************************************</span></p>
+<p><span style="font-size: medium;">**************************************</span></p>
+<center><a class="bottomlink" title="Goto ELOG home page" href="https://midas.psi.ch/elog/">ELOG V2.9.0-2411</a></center>
+<p><strong><span style="font-size: x-large;">29-July-2016&nbsp;&nbsp;&nbsp; RE-TERMINATED DUE TO KINK IN WIRE AFTER MULTICORE</span></strong><span style="font-size: large;"> </span></p>
+<p><strong><span style="font-size: x-large;">DEAD-END STYLE TERMINATION - The kink was about 8 &quot; above the top bitter end<br />
+</span></strong></p>
+<p><strong><span style="font-size: x-large;">of the dead-end termination (the dead-end termination had been added above our regular poured</span></strong></p>
+<p><strong><span style="font-size: x-large;">termination to accommodate use with the MISO Multicore 400</span></strong></p>
+<p>Partial Megger by Allison Heater</p>
+<p>-Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9691.0 meters</p>
+<p>Overall length = 9534.0 meters</p>
+<p>Air temp:&nbsp;&nbsp; 82 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from deck (with new termination) through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;">S/N:&nbsp;   154856 </span></p>
+<p><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Green-Red &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 748 MOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.07 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.03 &nbsp; &nbsp; &nbsp; &nbsp; 1.138 &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.016 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.038</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.034 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.146</span></p>
+<p><span style="font-size: medium;">White-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.961 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.708</span></p>
+<p><span style="font-size: medium;">White-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.363 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.705</span></p>
+<p><span style="font-size: medium;">Black-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.457 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.751</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 299.3 Ohms</span></p>
+<p><span style="font-size: medium;">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp; 0.83 Ohms</span></p>
+<p><span style="font-size: medium;">White-Green&nbsp;&nbsp;&nbsp; 299.7 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 283 Ohms</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">The distinction between a KINK and a BEND was based on the bend radius and</span></span></p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">whether the outside winds looked &quot;splayed&quot;.&nbsp; In both case, the wire was permanently</span></span></p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">deformed.&nbsp; However, the bends were determined not to have compromised the </span></span></p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">strength of the wire to a degree that would require an immediate re-termination.</span></span></p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">In other words, 2-3 additional casts were performed with the &quot;BENT&quot; wire before </span></span></p>
+<p><span style="font-size: medium;"><span style="font-size: x-large;">re-terminati</span></span><span style="font-size: x-large;">on.&nbsp; When an additional bend appeared during a cast, the wire was </span></p>
+<p><span style="font-size: x-large;">re-terminated, as described above.</span></p>

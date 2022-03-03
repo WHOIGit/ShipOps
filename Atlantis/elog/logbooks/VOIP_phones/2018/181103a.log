@@ -1,0 +1,11 @@
+$@MID@$: 8
+Date: Sat, 03 Nov 2018 21:31:29 +0000
+Author: Catie
+Type: General Problem
+Category: 
+Subject: VOIP phone uploading
+Cruise: at42-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>In late September/early October a persistent 100kbit upload was being caused by the main lab VOIP phone. For now the main lab phone is still connected to the DMZ in the computer lab, but the cable in the main lab is unplugged. If people want to use it, they can plug it in. The infrastructure for these phones at WHOI will be going away soon, we will eventually need a new VOIP set up.</p>

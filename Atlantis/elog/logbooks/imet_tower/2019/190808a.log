@@ -1,0 +1,23 @@
+$@MID@$: 45
+Date: Thu, 08 Aug 2019 04:26:07 +0000
+Author: McCabe
+Sensor: WXTP
+S/N: 
+Calibration Date: 
+Type: Fix
+Category: Hardware
+Subject: Port Vaisala Wind Errors and Spikes, Unit Replaced.
+Cruise: at42-14
+Revisions:  & Thu Aug  8 04:35:02 2019^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>Port Vaisala Wind Errors and Spikes, Unit Replaced, Problem Solved.</p>
+
+<p>Work was done over Port stop between AT42-14 and AT42-15, August 1 through 5, 2019.</p>
+
+<p>Removed unit: SN E0110002.</p>
+
+<p>Installed unit: SN E0110003.</p>
+
+<p>Retained same PTU: SN N2340039.</p>

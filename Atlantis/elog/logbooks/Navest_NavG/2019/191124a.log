@@ -1,0 +1,119 @@
+$@MID@$: 4
+Date: Sun, 24 Nov 2019 23:24:53 +0000
+Author: Emily
+Type: Instructions
+Location: 
+Subject: Catie's Guide to navG and Ranger2
+Cruise: at42-20
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>Supporting Sonardyne USBL, navest &amp; navG: In a Nutshell&nbsp; &nbsp;(created for AT42-20 but applicable to future cruises)</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>The Sonardyne beacon:</strong></p>
+
+<p>-Atlantis SSSG currently has possession of Sonardyne WMT beacon s/n 314347-002.</p>
+
+<p>-Connecting to this beacon: Plug the charging cables into the wall, into the beacon, and into a serial port. Connect to the beacon using your favorite terminal program at 9600. TeraTerm works well for this.</p>
+
+<p>-In the terminal, query for the current status and settings by sending things like &ldquo;VS &lt;enter&gt;&rdquo; and &ldquo;CS &lt;enter&gt;&rdquo;. &nbsp;You should get a reply that looks like: &gt;VS:0813,WKT1,HPR45,EXT,BT1;LI_ION;VLT16.1;IDC11.5;CAP2.4/100;T23.6;CHG. or &gt;CS:2311,TAT200,BLK100,RXW800,TXW100,NPL193,TPL193,LG0,CIS0,AT8,EC0,EU0,RSP0,PPR0.</p>
+
+<p>-More details on how to query, send commands, and the working settings for this beacon can be found in the document Ref1_AvtrakSettingsNUsefulInfo_Updated30Aug18.txt Settings specific to this s/n beacon can be found at the bottom of the document.</p>
+
+<p>-Many of the settings probably aren&rsquo;t relevant for just tracking a beacon. Things you&rsquo;ll want to pay attention to though are:</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -VS:</p>
+
+<p style="margin-left:.5in">-VS:<strong>0813</strong>,&hellip;&hellip;. 0813 is the address of the beacon you will be trying to talk to.</p>
+
+<p style="margin-left:1.0in">-VS:&hellip;&hellip;&hellip;,<strong>CAP2.4/100</strong>,&hellip;.. The 100 is the percent charge. If you&rsquo;re going down for a many hours-long deployment, this should be 100, or at least 90something anyway.</p>
+
+<p style="margin-left:.5in">-CS:</p>
+
+<p style="margin-left:1.0in">-CS:&hellip;&hellip;..,<strong>AT8</strong>&hellip;..The AT8 refers to &ldquo;awake time&rdquo;&hellip;the length of time the beacon will stay awake since its last serial or acoustic activity. AT8 means 16 hours of awake time. For wire deployments, there&rsquo;s really no harm in setting this to AT14, which means it is always on. Then you&rsquo;ll never have to worry about it going to sleep on you.</p>
+
+<p style="margin-left:.5in">-SC:</p>
+
+<p style="margin-left:1.0in">-SC:&hellip;..,<strong>DIS0</strong>,&hellip;&hellip;This means the battery is electronically connected inside. This is a good thing. Make sure it is set to this before you deploy. If this is set to DIS1, you can only talk to the beacon when it is plugged into AC power. This comes into play when setting up a beacon for a cruise and before stowing it for weeks or months. If the beacon has been or will be stowed on the shelf for weeks at a time, the battery should be ELECTRONICALLY (NOT mechanically) disconnected.</p>
+
+<p>-And remember, this beacon costs more than your car. Do not set it on the deck, ever. Wash it with fresh water and dry it after every deployment. Clean the connector and dummy with a KimWipe and re-lubricate every time they are mated.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Ranger 2:</strong></p>
+
+<p>-Make sure the NSH is turned on with the front panel-mounted switch in top lab (this will at the same time turn on the external DC power supply in the back of the rack that powers the transceiver head because the internal power from the NSH rarely if ever works properly and is apparently not fixable). Then start up Ranger2. It is normal for it to take a couple minutes to boot up fully and stop alarming.</p>
+
+<p>-If the address of your beacon has not already been added to the Ranger2 program, it will need to be. View &gt; Beacons &gt; Add. Select WMT for beacon type and add &ldquo;SSSG&rdquo; or something as the address prefix. On the next page, select the address of your beacon. Once you finish, it should show up at the bottom of the main Ranger2 screen. Click on it to start tracking the beacon. DO NOT TRACK A BEACON IF THE TRANCEIVER POLE IS NOT DOWN.</p>
+
+<p>-The only other beacon settings you may need to adjust in Ranger2 are the tracking rate Update Time and Index ID.</p>
+
+<p style="margin-left:.5in">-Update Time: View &gt; Beacons &gt; Main &gt; Update time. You need to scroll the screen all the way to the right to see the Update Time. 10 or 12 seconds should be a good time to use. You won&rsquo;t gain anything by having faster rate especially in deep water, and you will just run out of battery faster.</p>
+
+<p style="margin-left:.5in">-Index: View &gt; Telegrams &gt; ATSASCII1 &gt; your beacon address &gt; Index. More detail on this in the navest section.</p>
+
+<p>-You&rsquo;ll get better USBL data if you have a somewhat accurate sound velocity profile in there. This is a great use of the SVP Editor program on the EM122 computer. Import your CTD or XBT, extend the cast, and export it as a .pro file. Place it in C:\Users\Public\Public Documents\Sonardyne\Ranger2\Library\Environment\Sound Speed Profiles\ and then load it from Tools &gt; Environmental &gt; Load&hellip; in Ranger2.</p>
+
+<p>-Once these things are set, it is always a good idea to save a new job file for the cruise. It makes trying to track data and settings down later a whole lot easier, not to mention something that has your settings saved if you need to reboot (the old adage &ldquo;did you try turning it off and turning it back on again?&rdquo; definitely applies to the Sonardyne system also). If you&rsquo;re happy with the current setup, just do System &gt; Save As&hellip; and title the job with your cruise number.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Navest/navG:</strong></p>
+
+<p>-Navest is a background process and server that ingests and crunches all of the navigation data from the Sonardyne system and other inputs and creates the nav data files. NavG is a client that serves as a display interface for the navigation data computed and spit out by navest.&nbsp; You can find a lot of nitty-gritty info on navest/navG in the &ldquo;navest_navG_docs&rdquo; html docs on the multiproc computer or &ldquo;Ref2_navest_navG_doc &ndash; Shortcut&rdquo; elsewhere.</p>
+
+<p>-In order to do anything useful with navG, navest and Ranger2 must be running. Getting Sonardyne/Ranger2 started tracking was discussed in the previous section. Navest runs on the computer called Toplab2 (#2 on the KVM), a silver 1u Ubuntu computer in toplab, 199.92.162.11. Boot it and login as user alvin pw atlantis.</p>
+
+<p>-On the Desktop of Toplab2, there is an icon called &ldquo;LaunchNav.sh&rdquo;. Click on this icon and select &ldquo;Run&rdquo; and it will launch both navest and navG on the local machine. (Note: do not think you are all cool with your linux skills and think you can ssh up there and open a terminal and type /home/Alvin/Desktop/LaunchNav.sh. This will fail. You must walk your behind up to toplab to burn that muffin off that you ate at breakfast and click on the actual Desktop icon.)</p>
+
+<p>-You should now be able to successfully start the navG program on multiproc in the computer lab also. It won&rsquo;t start if navest is not running. Follow the instructions in &ldquo;Ref3_NavGQuickStartUserGuide.docx&rdquo; to get going with navG on multiproc if you need it.&nbsp; Probably the fastest way to check if everything is running properly is to, in navG, click the vehicles tab, click the Atlantis tab, and then click &ldquo;Center Map on Vehicle&rdquo;. If you see the ship blipping around on there, good job.</p>
+
+<p>&nbsp;</p>
+
+<p>-It possible your map grid on navG may look a little skewed if the starting position/origin of the map is thousands of miles away. To check this, look at the file <a href="mailto:alvin@199.92.162.11://home/alvin/hg/navest/navest/bin/navest.dive.ini">alvin@199.92.162.11://home/alvin/hg/navest/navest/bin/navest.dive.ini</a>. If the &ldquo;Site Origin&rdquo; and &ldquo;MAP_CENTER_LATITUDE/LONGITUDE&rdquo; positions are many hundreds or thousands of miles away, you may want to edit all of the positions in this file with ones that are closer to your current location. The precise positions you choose to fill in will not really matter for this cruise very much. ***Make sure you make a backup copy of the original AND edit a new copy before making any changes to this ini! These ini files are important for going back to old dive sites! Symbolic links are ok***</p>
+
+<p>&nbsp;</p>
+
+<p>-Now, the key to displaying the beacon you want to track on navG is three-fold: 1) You need to know the Sonardyne index of the beacon you are trying to track, 2) That index needs to match the vehicle you are trying to track in the navest.vehicle.ini file, and 3) That vehicle from the ini file must be one of the choices of vehicles to track with the navG version running in the computer lab.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -More about #1: You will find the index of the beacon you are interested in in Ranger2 in View &gt; Telegrams &gt; ATSASCII1 in the &ldquo;index&rdquo; box corresponding to the address of the beacon you are trying to track. You can change this number to be whatever you want, as long as it is not in use by another beacon. If another beacon has the index number you really really want (6 seems like a good choice), change that one first, then change yours. Just don&rsquo;t get too carried away changing numbers and tick people off later. And remember what number it was you changed from so you can set it back later and not screw somebody else up down the line who doesn&rsquo;t know as much about navest as you do after reading this document ;)</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -More about #2: The next key step is, on the navest machine, checking the file /home/alvin/hg/navest/navest/bin/navest.vehicle.ini. This file identifies [VEHICLE_1] as Alvin, [VEHICLE_2] as Sentry, [VEHICLE_3] as Atlantis, and so on and so forth. Don&rsquo;t change anything in that part. The section [SDYNE_USBL] is where the vehicle gets matched to its Sonardyne index from step #1.&nbsp; So, for example, if you want to track Alvin and Alvin&rsquo;s 914 beacon is index 7 in the ATSASCII1 section of Ranger2 &gt; View &gt; Telegrams &gt;, then in the [SDYNE_USBL] section of this file it better say VEH_1_BEACON_ID=7. Or vice versa, if you don&rsquo;t want to muck with the navest.vehicle.ini file, and it says VEH_1_BEACON_ID=5, you better go change Ranger2 &gt; View &gt; Telegrams &gt; ATSASCII1 &gt; Alvin 914 to say index 5. ***Just like for the navest.dive.ini file, I hope you made a navest.vehicle.ini.bak.YYYYMMDD and are editing a new copy before you started mucking with anything. Symbolic links are ok. There&rsquo;s lots of old ini files in /home/alvin/hg/navest/navest/bin/ini_files/.***</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -More about #3: The third piece of this puzzle is that navG in the computer lab must be able to track your vehicle of interest. Navest.vehicle.ini has like 9 different vehicles in it. As of Sept 2019, computer lab navG only has tabs to track Alvin, Sentry, Atlantis, Elev_jas, and Elev_1012. So, you are limited in navest.vehicle.ini to using [VEHICLE_1], [VEHICLE_2], [VEHICLE_3], [VEHICLE_9], and [VEHICLE_5]. If your index number from Ranger2 for your beacon of interest belongs to VEH_6_BEACON_ID= in navest.vehicle.ini, it&rsquo;s never going to show up on navG in the computer lab, no matter what you do.&nbsp; You might have to play around a little to figure out what is what in the computer lab navG. If all else fails, it is perfectly fine to set [VEH_1_BEACON_ID= ] to the index number for your beacon. NavG will always be able to track Alvin, and you can just track the little Alvin shaped icon on your instance of navG. There&rsquo;s no Alvin on your cruise to track and get confused with, so it doesn&rsquo;t matter.</p>
+
+<p>&nbsp;</p>
+
+<p>Now, as of Sept 2019, it looks like the shapes for the vehicles are all mismatched because of Jason ops. Don&rsquo;t let this freak you out and make you confused. For example, the Atlantis is showing up on navG in the shape of Sentry. The Jason beacon is showing up in the shape of Alvin. Use your brain box and the relationships between vehicles on the Sonardyne to determine which is which vehicle in navG.</p>
+
+<p>&nbsp;</p>
+
+<p>Fun stuff so you can make sure you know how to use all of this and it is working before you actually have to put something in the water: Ranger2 has a thing called simulate mode. Simulate will let you track a beacon and spit out data just like there was something in the water, even if there is not. Select it with Ranger2 &gt; Tools &gt; Advanced &gt; Simulate. When in this mode it will say SIMULATE in red letters diagonally across the range rings. Once you are in simulate mode, just click your beacon of interest down at the bottom to start &ldquo;tracking&rdquo; it. You&rsquo;ll start tracking it in Ranger2, and if you did things right, in navG also. ***IMPORTANT!!! STOP TRACKING ANY BEACONS BEFORE YOU TAKE IT OUT OF SIMULATE MODE. OTHERWISE THE TRANSCEIVER HEAD WILL BE TRYING TO TRACK A BEACON FOR REAL THAT ISN&rsquo;T REALLY THERE, FROM INSIDE ITS COZY LITTLE SEA CHEST AND WHO KNOWS WHAT BAD THINGS THAT MIGHT DO.***</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Getting USBL position data to science:</strong></p>
+
+<p>This is how I was doing it on AT42-17. You can modify this script or make a new one if you want. You&rsquo;ll have to modify it to grep for the right thing on your cruise at a minimum (more on that below):</p>
+
+<p>-On the 199.92.162.11 computer, <strong>copy</strong> the relevant /data/nav/*.DAT files from the time frame of interest for the cast into the /data/nav/hold directory (delete any previous files in hold directory first).</p>
+
+<p>-On the multiproc computer, run /home/science/bin/gettop.heatflow.pl. When prompted, name the dive &ldquo;OBS_Deployment_1&rdquo; (or whatever cast number it was).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -gettop.pl will probably also work, it will just give you slightly different format.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -gettop.heatflow.pl currently works by grepping for the pattern &lsquo;SOLN_USBL -125&rsquo;, with -125 being the longitude of the work site for cruise AT42-17. That is the part you would have to modify if you choose to go that route. gettop.pl greps for a lot of different things, so it will work no matter what, you will just have to figure out which of the 5 data sets applies to your beacon.</p>
+
+<p>-This will make a directory /home/science/data/nav/OBS_Deploment_1 with: 1) a raw folder with all the gzipped raw data, and 2) a VPR folder with a single file of the beacon&rsquo;s USBL time, lat, long, and depth.</p>
+
+<p>-Copy the OBS_Deployment_1 directory to sci0_on_memory somewhere so science can access it.</p>
+
+<p>&nbsp;</p>

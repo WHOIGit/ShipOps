@@ -1,0 +1,140 @@
+$@MID@$: 1
+Date: Sun, 30 May 2010 17:50:28 +0000
+Author: AH
+Type: Configuration
+Category: sensor
+Sensor: temp
+S/N: 03P-4035
+Calibration Date: 20-Oct-2009
+Subject / Summary: Primary Sensor on CTD - 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>temperature sensor put on CTD as primary temperature sensor.</p>
+$@MID@$: 2
+Date: Sun, 30 May 2010 17:52:26 +0000
+Author: AH
+Type: Configuration
+Category: sensor
+Sensor: temp
+S/N: 03P-4230
+Calibration Date: 6-Oct-2009
+Subject / Summary: secondary sensor of CTD - 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>temperature sensor put on CTD as secondary temperature sensor.</p>
+$@MID@$: 3
+Date: Sun, 30 May 2010 17:54:24 +0000
+Author: AH
+Type: Calibration
+Category: sensor
+Sensor: cond
+S/N: 04-3073
+Calibration Date: 7-Oct-2009
+Subject / Summary: primary conductivity sensor on CTD 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>conductivity sensor put on CTD as primary sensor 1-June-2010.</p>
+$@MID@$: 4
+Date: Sun, 30 May 2010 17:56:02 +0000
+Author: AH
+Type: Configuration
+Category: 
+Sensor: cond
+S/N: 04-3040
+Calibration Date: 7-Oct-2009
+Subject / Summary: secondary conductivity sensor on CTD 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>conductivity sensor put on CTD as secondary conductivity sensor on CTD 1-June-2010</p>
+$@MID@$: 5
+Date: Sun, 30 May 2010 17:59:57 +0000
+Author: AH
+Type: Configuration
+Category: sensor
+Sensor: pump
+S/N: 05-1132
+Calibration Date: 
+Subject / Summary: pump on CTD - primary side - 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>pump put on CTD as primary side pump</p>
+$@MID@$: 6
+Date: Sun, 30 May 2010 18:00:45 +0000
+Author: AH
+Type: Configuration
+Category: 
+Sensor: pump
+S/N: 15-1858
+Calibration Date: 
+Subject / Summary: pump on CTD 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>pump put on CTD as secondary side pump 1-June-2010</p>
+$@MID@$: 7
+Date: Sun, 30 May 2010 18:02:41 +0000
+Author: AH
+Type: Configuration
+Category: 
+Sensor: fluor
+S/N: FLNTURTD-149
+Calibration Date: 1-November-2004
+Subject / Summary: fluorometer on CTD - 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>fluorometer put on CTD - 1-June-2010</p>
+$@MID@$: 8
+Date: Sun, 30 May 2010 18:04:02 +0000
+Author: AH
+Type: Configuration
+Category: 
+Sensor: O2
+S/N: SBE43-1646
+Calibration Date: 12-June-2009
+Subject / Summary: O2 sensor on CTD - 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>O2 sensor put on CTD 1-June-2010</p>
+$@MID@$: 9
+Date: Sun, 30 May 2010 18:05:45 +0000
+Author: AH
+Type: Configuration
+Category: 
+Sensor: xmiss
+S/N: CST-1116DR
+Calibration Date: 23-April-2008
+Subject / Summary: transmissometer on CTD 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>transmissometer on CTD 1-June-2010</p>
+$@MID@$: 10
+Date: Sun, 30 May 2010 18:06:42 +0000
+Author: AH
+Type: Configuration
+Category: sensor
+Sensor: Altimeter
+S/N: 641
+Calibration Date: 
+Subject / Summary: altimeter on CTD 1-June-2010
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>altimeter put on CTD 1-June-2010</p>

@@ -1,0 +1,55 @@
+$@MID@$: 50
+Date: Fri, 22 Oct 2021 10:35:33 +0000
+Author: Catie
+Sensor: WXTS
+S/N: 
+Calibration Date: 
+Type: Inventory
+Category: Hardware
+Subject: Starboard Sensor Swapout
+Cruise: at44-trials
+Revisions:  & Fri Oct 22 10:39:51 2021^M & Fri Oct 22 10:55:39 2021^M
+Attachment: 211022_105330_Vaisala_WXT530-PTU_Ser-T4020335_CalDate-15oct2021.pdf,211022_105453_Vaisala_WXT530_Ser-T4020335_CalDate-15oct2021.pdf
+Encoding: HTML
+========================================
+<p>Vaisala C2140003 (starboard) installed in July 2021 was found to have multiple issues:</p>
+
+<p>-Data port on the unit is non-functional. Can only talk to the unit through the USB configuration port.</p>
+
+<p>-New PTU put inside the unit, T1820378, was also bad and did not output data.</p>
+
+<p>&nbsp;</p>
+
+<p>New WXT536 s/n T4150412 with PTU T4020335 was installed in its place on 21 Oct 2021.</p>
+$@MID@$: 51
+Date: Fri, 22 Oct 2021 10:40:26 +0000
+Author: Catie
+Sensor: SWR/LWR combo box | RAD
+S/N: 
+Calibration Date: 
+Type: Fix
+Category: Hardware
+Subject: Cable changed between RAD and LWR
+Cruise: at44-trials
+Revisions:  & Fri Oct 22 10:42:46 2021^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>LWR had been giving erroneous data since leaving Anacortes in July 2021.</p>
+
+<p>Problem was traced to a bad cable between the RAD and LWR....data changed when cable was wiggled. Cable changed and problem has not reoccured.</p>
+$@MID@$: 52
+Date: Fri, 22 Oct 2021 11:06:46 +0000
+Author: Catie
+Sensor: WXTP
+S/N: E0110003
+Calibration Date: 
+Type: Calibration
+Category: Hardware
+Subject: Correct cal sheet for Port WXT520 2021
+Cruise: at44-trials
+Revisions:  & Fri Oct 22 11:08:51 2021^M
+Attachment: 211022_110817_VaisalaPTU_Atlantis-Port_Serial-T1820379_Cal-2021-05-05.pdf
+Encoding: HTML
+========================================
+

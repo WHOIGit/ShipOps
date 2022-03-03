@@ -1,0 +1,63 @@
+$@MID@$: 14
+Date: Mon, 31 Oct 2011 16:31:04 +0000
+Author: AH
+S/N: 
+Type: General Problem
+equipment: NIC card configuration
+Subject: NIC card configuration on ftp
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>LAURA FIXED BY PURGING:</p>
+<p>sudo apt-get purge network-manager network-manager-gnome</p>
+<p>&nbsp;</p>
+<p>******Explanation</p>
+<p>The network interfaces are controled by:<br />
+/etc/udev/rules.d/70-persistent-net.rules<br />
+<br />
+this file tells the computer which MAC address goes to which eth#<br />
+<br />
+SUBSYSTEM==&quot;net&quot;, ACTION==&quot;add&quot;, DRIVERS==&quot;?*&quot;,  ATTR{address}==&quot;40:61:86:2e:ec:fa&quot;, ATTR{dev_id}==<br />
+&quot;0x0&quot;, ATTR{type}==&quot;1&quot;, KERNEL==&quot;eth*&quot;, NAME=&quot;eth5&quot;<br />
+<br />
+<br />
+The MAC addresses fa and fb are on the motherboard. The others are on  the card: f0,f1,f2,f3<br />
+<br />
+Looking through the logs it looks like Network-Manager rearranged some  of them:<br />
+Oct 31 11:20:18 ftp NetworkManager: &lt;info&gt;&nbsp; (eth3): carrier is OFF<br />
+Oct 31 11:20:18 ftp NetworkManager: &lt;info&gt;&nbsp; (eth3): new Ethernet  device (driver: 'e1000e')<br />
+Oct 31 11:20:18 ftp NetworkManager: &lt;info&gt;&nbsp; (eth3): exported as  /org/freedesktop/NetworkManager/Dev<br />
+ices/3<br />
+Oct 31 11:20:18 ftp kernel: [&nbsp;&nbsp; 14.552098] udev: renamed network  interface eth4_rename to eth3<br />
+Oct 31 11:20:18 ftp udevd-work[381]: error changing net interface name  eth0_rename to eth5: Device<br />
+or resource busy<br />
+<br />
+<br />
+I purged network manager:<br />
+sudo apt-get purge network-manager network-manager-gnome<br />
+<br />
+and now have:<br />
+eth1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link encap:Ethernet&nbsp; HWaddr 00:15:17:a7:80:f0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inet addr:128.128.252.2&nbsp; Bcast:128.128.252.15&nbsp;  Mask:255.255.255.240<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inet6 addr: fe80::215:17ff:fea7:80f0/64 Scope:Link<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UP BROADCAST RUNNING MULTICAST&nbsp; MTU:1500&nbsp; Metric:1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RX packets:83070 errors:0 dropped:0 overruns:0 frame:0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TX packets:74065 errors:0 dropped:0 overruns:0 carrier:0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; collisions:0 txqueuelen:100<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RX bytes:71620169 (71.6 MB)&nbsp; TX bytes:12076513 (12.0 MB)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Memory:fbee0000-fbf00000<br />
+eth4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link encap:Ethernet&nbsp; HWaddr 00:15:17:a7:80:f3<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inet addr:192.168.13.1&nbsp; Bcast:192.168.13.255&nbsp;  Mask:255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inet6 addr: fe80::215:17ff:fea7:80f3/64 Scope:Link<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UP BROADCAST RUNNING MULTICAST&nbsp; MTU:1500&nbsp; Metric:1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RX packets:66944 errors:0 dropped:0 overruns:0 frame:0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TX packets:65203 errors:0 dropped:0 overruns:0 carrier:0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; collisions:0 txqueuelen:100<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RX bytes:10924307 (10.9 MB)&nbsp; TX bytes:54576324 (54.5 MB)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Memory:fbf80000-fbfa0000<br />
+<br />
+<br />
+Can you reboot ftp now.. and we can see what happens when it comes  backup..</p>
+<p>&nbsp;</p>

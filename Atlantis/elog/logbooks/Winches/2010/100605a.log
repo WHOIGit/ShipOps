@@ -1,0 +1,135 @@
+$@MID@$: 3
+Date: Sat, 05 Jun 2010 01:46:21 +0000
+Author: CG
+Type: Wire
+Winch: Markey #2 (aft)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: Megger results
+Cruise: 15-65
+Attachment: 
+Encoding: HTML
+========================================
+<p>September 2009:</p>
+<table width="500" cellspacing="1" cellpadding="1" border="1">
+    <tbody>
+        <tr>
+            <td width="114">Wire</td>
+            <td width="91">Continuity - total (Ohms)</td>
+            <td width="101">Resistance (GigOhms)</td>
+            <td width="60">DAR</td>
+            <td width="54">PI</td>
+            <td width="48">uF</td>
+        </tr>
+        <tr>
+            <td width="114">White - Red</td>
+            <td width="91">508</td>
+            <td width="101">1.133</td>
+            <td width="60">1.06</td>
+            <td width="54">0.89</td>
+            <td width="48">0.624</td>
+        </tr>
+        <tr>
+            <td width="114">White - Black</td>
+            <td width="91">511</td>
+            <td width="101">1.881</td>
+            <td width="60">1.02</td>
+            <td width="54">1.03</td>
+            <td width="48">0.629</td>
+        </tr>
+        <tr>
+            <td width="114">White - Green</td>
+            <td width="91">630</td>
+            <td width="101">1.231</td>
+            <td width="60">1.12</td>
+            <td width="54">1.03</td>
+            <td width="48">0.939</td>
+        </tr>
+        <tr>
+            <td width="114">Red - Black</td>
+            <td width="91">511</td>
+            <td width="101">1.414</td>
+            <td width="60">1.00</td>
+            <td width="54">1.07</td>
+            <td width="48">0.634</td>
+        </tr>
+        <tr>
+            <td width="114">Red - Green</td>
+            <td width="91">495</td>
+            <td width="101">1.063</td>
+            <td width="60">1.03</td>
+            <td width="54">1.65</td>
+            <td width="48">1.020</td>
+        </tr>
+        <tr>
+            <td width="114">Black - Green</td>
+            <td width="91">257</td>
+            <td width="101">1.165</td>
+            <td width="60">1.04</td>
+            <td width="54">1.07</td>
+            <td width="48">.967</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>June 4, 2010:</p>
+<table width="500" cellspacing="1" cellpadding="1" border="1">
+    <tbody>
+        <tr>
+            <td width="115">Wire</td>
+            <td width="90">Continuity - total (Ohms)</td>
+            <td width="101">Resistance (GigOhms)</td>
+            <td width="60">DAR</td>
+            <td width="54">PI</td>
+            <td width="47">uF</td>
+        </tr>
+        <tr>
+            <td width="115">White - Red</td>
+            <td width="90">444</td>
+            <td width="101">3.328</td>
+            <td width="60">0.99</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.567</td>
+        </tr>
+        <tr>
+            <td width="115">White - Black</td>
+            <td width="90">444</td>
+            <td width="101">1.846</td>
+            <td width="60">0.86</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.542</td>
+        </tr>
+        <tr>
+            <td width="115">White - Green</td>
+            <td width="90">223</td>
+            <td width="101">1.865</td>
+            <td width="60">0.82</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.855</td>
+        </tr>
+        <tr>
+            <td width="115">Red - Black</td>
+            <td width="90">446</td>
+            <td width="101">3.675</td>
+            <td width="60">1.05</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.574</td>
+        </tr>
+        <tr>
+            <td width="115">Red - Green</td>
+            <td width="90">224</td>
+            <td width="101">2.849</td>
+            <td width="60">1.07</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.832</td>
+        </tr>
+        <tr>
+            <td width="115">Black - Green</td>
+            <td width="90">224</td>
+            <td width="101">2.872</td>
+            <td width="60">1.04</td>
+            <td width="54">&nbsp;</td>
+            <td width="47">0.882</td>
+        </tr>
+    </tbody>
+</table>

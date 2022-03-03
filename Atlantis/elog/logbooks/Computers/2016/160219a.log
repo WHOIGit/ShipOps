@@ -1,0 +1,21 @@
+$@MID@$: 76
+Date: Fri, 19 Feb 2016 18:13:26 +0000
+Author: dsims
+Type: Fix
+name: KVM Switches
+server type: network
+OS: Other
+Location: Computer Lab
+Category: Hardware
+Subject: Black Box KVM Switch Fix For New Computers after mKVM Reboot
+Cruise: at33-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">TRIED THIS METHOD 18-APRIL-2016 - IT DID NOT WORK</span> </p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">&nbsp; The new computers with only USB keyboard and mouse connections do not like to communicate with the KVM switch after rebooting said switch.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">&nbsp; After rebooting the KVM switch, unplug the aft console keyboard from the KVM switch for a few seconds.&nbsp; When you plug it back in, you should have keyboard and mouse control on all the computers. </span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">&nbsp; Prior to unplugging the keyboard, you will notice that the Scroll Lock light is stuck on.&nbsp; Once you do the fix, it will go out until you press the Scroll Lock key.&nbsp; That tells you that the keyboard and KVM switch are friends again. </span></p>

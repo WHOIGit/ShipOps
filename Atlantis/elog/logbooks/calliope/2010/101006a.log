@@ -1,0 +1,11 @@
+$@MID@$: 8
+Date: Wed, 06 Oct 2010 22:26:56 +0000
+Author: bwalden
+version: 
+Type: Fix
+Subject: Wyse data display error
+Cruise: at16-1
+Attachment: 
+Encoding: HTML
+========================================
+<p>The Wyse data text files that define the displayed data (i.e. \Calliope\TextFiles\Wyse_k12WP1.txt) use the variable name &quot;Air_Temp.value&quot; for the air temperature value. Recent changes to the general Calliope configuration have changed this variable to &quot;AT.value&quot; and therefore this change has been made to all of the Wyse display definition text files.</p>

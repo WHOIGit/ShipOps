@@ -1,0 +1,85 @@
+$@MID@$: 14
+Date: Tue, 08 Nov 2011 10:26:58 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: General Problem
+Category: survey
+S/N: 
+Subject / Summary: Nadir - too much penetration at Nadir
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">We have seen times when the em122 has too much penetration at Nadir.&nbsp; The crosstrack shows a falsely dropped center area, and the data at and surrounding the center are bad.<br />
+</span></p>
+<p><span style="font-size: large;">Suggestions from Kongsberg to alleviate this issue:<br />
+</span></p>
+<p><span style="font-size: large;">1)&nbsp;&nbsp; Adjust FiIter Settings under runtime parameters - filters and gains (see email snippet #2 below)<br />
+</span></p>
+<p><span style="font-size: large;">2)&nbsp; Alter the Along Direction of the beams - under runtime parameters - sounder main - this option worked the best for me</span></p>
+<p><span style="font-size: large;">3)&nbsp; Slowdown - if the problem may be resulting from speed or sea state - SEE EMAIL SNIPPET 1 BELOW - look at the Mode the TRU is running in (Shallow, Medium, Deep) to help indicate whether the TRU is compensating for signal noise.</span></p>
+<p><span style="font-size: large;">4)&nbsp; Sometimes need to restart TRU - this should not normally be necessary, but sometimes this makes the most improvement in the data &nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">SNIPPETS FROM EMAILS</span></p>
+<p><span style="font-size: large;">1)&nbsp; Penetration at nadir can happen when the bottom is flat and composed of soft sediment.&nbsp; Normally, steering the beams as you did is all that is required to<br />
+resolve the problem. You do not need to restart the system or stop and start pinging to get filter settings recognized, those changes are sent down to the TRU<br />
+immediately upon your selection and are applied on the next ping.&nbsp; If the bottom conditions hadn't changed (flat and soft) but ambient noise levels increased<br />
+with speed and sea state, then the TRU may have been forced to use a deeper mode setting to compensate for signal loss. A longer pulse length and increased<br />
+power levels can cause problems at nadir.&nbsp; I don't have an answer for why the data seemed better after a reboot, my guess is that you hadn't given the TRU<br />
+enough time to apply your runtime setting changes; they were used immediately after restarting SIS.&nbsp; </span></p>
+<p><span style="font-size: large;">2)&nbsp; Penetration at nadir in shallow water especially with soft sediments is a known issue. Refer to page 289 and 290 in the EM122 SIS reference manual which<br />
+explains the Along Direction and Auto Tilt settings. Also there is a penetration filter which is explained on page 297. These are the settings you need to try<br />
+when you see this nadir effect. Also what depths were you in at the time? In the future, screenshots and data will be helpful in analysis. You can always ftp<br />
+us some lines of data when you have questions on data quality. It would be interesting to look at the lines with dual swath on and then off..<br />
+<br />
+</span></p>
+$@MID@$: 15
+Date: Tue, 08 Nov 2011 10:28:36 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Fix
+Category: Software
+S/N: 
+Subject / Summary: HDDS.exe Error
+Cruise: at18-13
+Attachment: 111110_081645_HDDS_error.png
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">HDDS is the process that reads the information from the *.all files and generates the gridded information in the GEO display.&nbsp; If the HDDS process has<br />
+encountered a problem reading a file you may encounter a crash of that process.&nbsp; The DDS process is still writing the data to the *.all files and you can<br />
+restart the HDDS process by selecting &quot;tools -&gt; restart HDDS&quot; in SIS instead of restarting the whole SIS application.&nbsp; This will prevent you from losing any<br />
+of the collected raw data, but there will still be a hole in the gridded display.&nbsp; </span></p>
+<p><span style="font-size: large;">***Don't let your fragmentation levels get over 8 percent of the hard disk,<br />
+this can slow down the read/write speeds on the DDS and HDDS processes and cause you performance problems.<br />
+<br />
+</span></p>
+$@MID@$: 16
+Date: Tue, 08 Nov 2011 17:43:04 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Hardware
+S/N: 
+Subject / Summary: UPS Battery Fault
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>Bosun reported the mulitbeam in the main lab was beeping (this is the second time he has pointed this out to me - it also happened on 3Nov2011)</p>
+<p>The UPS indicated a &quot;BATTERY FAULT&quot;</p>
+<p>I monkeyed with it, and ran a manual battery test a couple of times and it managed to come back saying &quot;BATTERY OKAY&quot; -&nbsp; before I ran the test, it was indicating &quot;LOAD UNPROTECTED&quot; which was the condition we were in when I last had problems with the PreAMP (i.e I believe the PreAMP lights were unevenly lit - and the voltages across the terminals inside were different - because the UPS was not protecting the load.&nbsp; Once it passed the Battery test it went back to ONLINE and LOAD PROTECTED</p>
+<p>I am downloading the UPS manual now.&nbsp; I am not sure if we ever got one - I've never seen it.</p>
+<p>SOME INFORMATION ABOUT THE UPS:</p>
+<p>model:&nbsp; PW9135G5000-XL3UHW</p>
+<p>S/N CC021A0031</p>
+<p>EAton Powerware&nbsp;&nbsp;&nbsp; productreg.powerware.A0031</p>
+<p>Settings in UPS:&nbsp;&nbsp;&nbsp; ouput voltage 230V</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; frequency converter:&nbsp; disabled</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output freq:&nbsp;&nbsp; 60 Hz</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eco mode:&nbsp; disabled</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; slew rate:&nbsp;&nbsp; 1.0 Hz/s</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bypass transfer - if bypass AC NOK?&nbsp; NO*</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; overload prealarm&nbsp;&nbsp; 105%</p>
+<p>Not saying for sure that the above settings are correct - I'm not sure who set this up, but they seem to be &quot;mostly&quot; working so far.</p>
+<p>&nbsp;</p>

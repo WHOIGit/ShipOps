@@ -1,0 +1,21 @@
+$@MID@$: 3
+Date: Sat, 28 May 2011 10:53:40 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: Cisco Router
+Subject: Bringing up Hiseasnet on Router
+Cruise: at18-05b
+Attachment: 
+Encoding: HTML
+========================================
+<p>On ftp computer:<br />
+<br />
+minicom hiseasnet<br />
+user: sssg<br />
+pword: not yours but the regular sssg<br />
+config term<br />
+interface serial 0/2/0<br />
+no shutdown<br />
+<br />
+&nbsp;</p>

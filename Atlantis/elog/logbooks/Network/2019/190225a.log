@@ -1,0 +1,60 @@
+$@MID@$: 80
+Date: Mon, 25 Feb 2019 21:04:42 +0000
+Author: lstolp
+S/N: 1825-430F-8508
+Type: Configuration
+equipment: peplink
+Subject: peplink install with latest config
+Cruise: AT MARE ISLAND 2019
+Attachment: 190302_235903_20190302_b580hw3_1825430F8508.conf
+Encoding: plain
+========================================
+> get system
+System Information
+
+Router Name                   : peplink
+Product Model                 : Peplink Balance 580
+Hardware Revision             : 3
+Serial Number                 : 1825-430F-8508
+Firmware Version              : 6.3.1 build 1631
+
+Interface                     MAC Address
+LAN                           10:56:ca:0e:74:b4
+WAN 1                         10:56:ca:0e:74:b5
+WAN 2                         10:56:ca:0e:74:b6
+WAN 3                         10:56:ca:0e:74:b7
+WAN 4                         10:56:ca:0e:74:b8
+WAN 5                         10:56:ca:0e:74:b9
+
+> get wan
+WAN Connection [1]
+    Connection Name                : WAN1-shore
+    Connection Status              : No Cable Detected
+    Connection Type                : Ethernet
+    Connection Method              : DHCP
+
+WAN Connection [2]
+    Connection Name                : WAN2-HiSeasNet
+    Connection Status              : No Cable Detected
+    Connection Type                : Ethernet
+    Connection Method              : Static IP
+    IP Address                     : 128.128.252.202
+    Default Gateway                : 128.128.252.201
+    DNS Servers                    : 128.128.243.2
+                                     128.128.243.3
+
+WAN Connection [3]
+    Connection Name                : WAN3-InmarsatGx
+    Connection Status              : No Cable Detected
+    Connection Type                : Ethernet
+    Connection Method              : Static IP
+    IP Address                     : 10.10.4.90
+    Default Gateway                : 10.10.4.89
+    DNS Servers                    : 8.8.8.8
+                                     8.8.4.4
+
+WAN Connection [4]
+    Connection Name                : WAN4-FBB
+    Connection Status              : No Cable Detected
+    Connection Type                : Ethernet
+    Connection Method              : DHCP

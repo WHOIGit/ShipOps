@@ -1,0 +1,121 @@
+$@MID@$: 25
+Date: Tue, 05 Dec 2017 19:18:02 +0000
+Author: AH
+Type: General Problem
+Category: Hardware
+equipment: Navigation Sensor Hub
+Subject: Installed Ready Spare NSH
+Cruise: at39-02b
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed the &quot;ready spare&quot; for the Navy cruise.&nbsp; We were seeing some more red lights during AT39-02A.</p>
+
+<p>******EMAIL TALKING ABOUT PROBLEM</p>
+
+<p>Date: Thu, 12 Oct 2017 18:55:26 +0000<br />
+From: Kyle Warren &lt;Kyle.Warren@sonardyne.com&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Cc: &quot;rlaird@whoi.edu&quot; &lt;rlaird@whoi.edu&gt;, &quot;sssg@whoi.edu&quot; &lt;sssg@whoi.edu&gt;<br />
+Subject: Re: WHOI Atlantis Ranger2 system<br />
+Parts/Attachments:<br />
+&nbsp; &nbsp;1 &nbsp; OK &nbsp; &nbsp;~10 KB &nbsp; &nbsp; Text<br />
+&nbsp; &nbsp;2 Shown &nbsp; ~14 KB &nbsp; &nbsp; Text<br />
+----------------------------------------</p>
+
+<p>Hi Catie,</p>
+
+<p>The NSH failing to send power error just means that the TCVR is resetting, but the red light on the NSH is troubling,<br />
+because it may be pulling high current. Can you swap the NSH TCVR card to slot 4 and see if you get the same indication.<br />
+Can you also perform a phase calibration? Its located under tools &gt; advanced &gt; phase cal. Tracking must be off. And as<br />
+always a CEF file during the incident is alway helpful.&nbsp;</p>
+
+<p>Please let me know how this goes or if you have any further question.&nbsp;</p>
+
+<p>Thanks,</p>
+
+<p>Kyle</p>
+
+<p>Sent via the Samsung Galaxy S7, an AT&amp;T 4G LTE smartphone</p>
+
+<p><br />
+-------- Original message --------<br />
+From: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Date: 10/12/17 1:40 PM (GMT-06:00)<br />
+To: Kyle Warren &lt;Kyle.Warren@sonardyne.com&gt;<br />
+Cc: rlaird@whoi.edu, sssg@whoi.edu<br />
+Subject: WHOI Atlantis Ranger2 system</p>
+
+<p>Hello Kyle-<br />
+Thank you for your earlier responses in regards to the earlier attitude<br />
+and GPS feed questions.</p>
+
+<p>Today another issue has arisen that I&#39;m hoping you can assist with. Today<br />
+we have begun intermittently losing communications between the NSH and the<br />
+transceiver. From looking at the events viewer, the sequence of events<br />
+semms to be:</p>
+
+<p>-Tranceiver 1 Calibration command failed<br />
+(repeated 10x)<br />
+-Transceiver 1 Resetting after 10 phase calibrations with span &gt; 30<br />
+degrees<br />
+-Calibration command failed<br />
+-NSH 1 has failed to send power through transceiver card 3<br />
+(repeated dozens of times)</p>
+
+<p>The first time this occurred I tried closing and re-opening the software,<br />
+and the situation did not resolve within ~10 minutes, so I power cycled<br />
+the NSH, and this also failed to resolve the power issue within another<br />
+~10 minutes.</p>
+
+<p>At that point I power cycled again and moved the transceiver to port 3B<br />
+from 3A, and I was able to communicate with the transceiver. However this<br />
+eventually failed after a couple hours in the same fashion as the above<br />
+events viewer log.</p>
+
+<p>At this point I power cycled the NSH once more and moved the transceiver<br />
+back to port 3A, and after about 2-3 minutes of &quot;NSH 1 has failed to send<br />
+power through tranceiver card 3&quot; messages, the transceiver regained<br />
+communications.</p>
+
+<p>Another couple hours later the transceiver failed again in the same<br />
+fashion, however I did nothing, and the tranceiver regained power and<br />
+comms on its own after about 7-8 minutes.</p>
+
+<p>During these &quot;failed to send power&quot; notifications, I can see that the<br />
+lights under TCVR 3 on the front of the NSH oscillate between green 48V,<br />
+lights, and the red warning light.</p>
+
+<p>Thank you in advance for any troubleshooting assistance you can provide.</p>
+
+<p>Catie</p>
+
+<p><br />
+On Fri, 6 Oct 2017, Kyle Warren wrote:</p>
+
+<p>&gt; Robbie,<br />
+&gt;<br />
+&gt; I apologize for the delayed response. Ranger 2 does not have the option of changing the sign convention. This may need to<br />
+be discussed with PHINS. I will ask the UK on Monday to be certain there are no workarounds but as far as we know here<br />
+there isn&rsquo;t. I will also ask if we have definition for those strings spelled out somewhere.<br />
+&gt;<br />
+&gt; Also, The GPS position only updating during beacon interrogations is normal. I have never noticed this, but Dan informed<br />
+me it is normal, but could not remember why. I will ask the UK on Monday so we will both know.<br />
+&gt;<br />
+&gt; Please let me know if you have any further questions or concerns.<br />
+&gt;<br />
+&gt; Best regards,<br />
+&gt;<br />
+&gt; Kyle Warren &nbsp;| Operations Manager<br />
+&gt; Sonardyne Inc<br />
+&gt;<br />
+&gt; &nbsp;8280 Willow Place Drive North | Suite 130 | Houston | Texas 77070 | USA<br />
+&gt;<br />
+&gt;<br />
+&gt; +1 281 720 0743 (Direct) +1 281 890 2120 (Office) +1 832 859 0170 (Mobile)<br />
+&gt;<br />
+&gt;<br />
+&gt; Kyle.Warren@sonardyne.com<br />
+&nbsp;</p>
+
+<p>&nbsp;</p>

@@ -1,0 +1,16 @@
+$@MID@$: 34
+Date: Wed, 14 Aug 2013 10:48:23 +0000
+Author: AH
+Type: 
+Winch: Markey #1 (fore) | Markey #2 (aft) | Traction
+Wire: EM Cable / CTD conductor | hydrowire | trawl wire | fiber optic | 0.681 A302351
+Category: Routine
+Subject: 3PS DISPLAY - WINCH DEFINITIONS
+Cruise: at26-04
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: xx-large;">Hydro (Port/FWD) - forward markey - presently .322&quot; CTD conductor wire</span></p>
+<p><span style="font-size: xx-large;">Traction (Port/FWD) - fiber optic wire - this must be active in the computer lab during JASON ops </span></p>
+<p><span style="font-size: xx-large;">Hydro (Stbd/Aft) - presently 1/4&quot; wire</span></p>
+<p><span style="font-size: xx-large;">Traction (Stbd/Aft) - Trawl Wire</span></p>

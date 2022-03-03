@@ -1,0 +1,49 @@
+$@MID@$: 18
+Date: Tue, 06 Sep 2016 20:42:10 +0000
+Author: AH
+svn: 
+Type: Other
+Subject: Navigation Data - going continuously to shore
+Cruise: at37-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Wed, 24 Aug 2016 16:18:16 +0000 (UTC)<br />
+From: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+To: csmith@whoi.edu, sssg@whoi.edu, sssg@atlantis.whoi.edu, sssg@armstrong.whoi.edu<br />
+Cc: dfisichella@whoi.edu<br />
+Subject: WHOI shiptracker and ship's AIS and SSSG data<br />
+<br />
+Hi Chad,<br />
+<br />
+Just an FYI of what I know about the Ship's data.<br />
+<br />
+We, SSSG,<br />
+* rsync the ship's data back to shore for data checks.<br />
+* make the gps data available to WHOI's webdev group.<br />
+* send data to SAMOS (all underway data)<br />
+* send data to NOAA (subset, but includes lat and lon)<br />
+<br />
+The WHOI weddev group takes the data and plots it up as the shiptracker.<br />
+<br />
+R2R<br />
+* rsyncs the R2R ELOG data to shore that includes a 10 second GPS snapshot<br />
+<br />
+The ship's (both the Atlantis and Armstrong)<br />
+* AIS (http://www.marinetraffic.com) which is the Port Office/Marine ops. I don't even know if it can be turned off, it<br />
+could be a safety thing, but this is public. * Not sure if the ships still send weather data to NOAA<br />
+* I think they also send lat and lon etc back to the port office (I don't think this goes any where else)<br />
+<br />
+The data policy that science signs says that the gps data is 'open' and the science party signed the doc w/ out saying<br />
+anything about the underway data. It is in bold &quot;Embargo periods are not available for navigation.......&quot;.<br />
+<br />
+If it all needs to be shutdown again I *think* it would be easiest to:<br />
+* have the webdev group stop plotting the ship that is 'embargoed'<br />
+* we (SSSG) take away the availability of the data here on shore<br />
+* the techs turn off the 'emailing' of the data to SAMOS and NOAA<br />
+* I don't know about AIS or weather data to NOAA<br />
+<br />
+There are lots of pieces and parts and I am sure that there will be more as more data gets automagically sent to shore.<br />
+<br />
+thanks, laura<br />
+&nbsp;</p>

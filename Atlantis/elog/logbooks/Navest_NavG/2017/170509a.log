@@ -1,0 +1,30 @@
+$@MID@$: 3
+Date: Tue, 09 May 2017 14:13:43 +0000
+Author: AH - from email
+Type: Configuration
+Location: Other
+Subject: navest to shore
+Cruise: at37-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Tue, 9 May 2017 11:30:28 +0000 (UTC)<br />
+From: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+To: sssg@atlantis.whoi.edu<br />
+Subject: navest to shore<br />
+<br />
+Hi Allison and Catie,<br />
+<br />
+It is coming into shore, thanks. The cliff notes:<br />
+<br />
+UDP port to mnemosyn.atlantis.whoi.edu is being collected by:<br />
+<br />
+/usr/lib/cgi-bin/db_driven_data/status_screen/55904_feeder.pl<br />
+<br />
+and written to:<br />
+/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/navest.db<br />
+<br />
+which is being rsync'd to sssg1.<br />
+<br />
+cheers, laura<br />
+&nbsp;</p>

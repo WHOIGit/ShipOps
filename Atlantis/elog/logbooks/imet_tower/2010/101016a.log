@@ -1,0 +1,22 @@
+$@MID@$: 2
+Date: Sat, 16 Oct 2010 09:51:03 +0000
+Author: AH
+Sensor: WXTS | imet_barometer | imet_anemometer | imet_humidity
+S/N: 
+Calibration Date: 
+Type: General Problem
+Category: Hardware
+Subject: Some weather sensor out
+Cruise: at17-1
+Attachment: 
+Encoding: HTML
+========================================
+<p>
+<pre>
+10/14/10 @ 17:02 GMT - Starboard Vaisala sensor  stopped collecting data
+10/14/10 @ 10:45 GMT - IMET sensors stop reporting data
+10/15/10 @ 15:59 GMT - Athena computer reboot and Starboard Vaisala and IMET
+		       sensors begin reporting data again (previous attempts
+ 		       to simply reinitialize sensors may have caused the IMET
+                       to stop reporting)</pre>
+</p>

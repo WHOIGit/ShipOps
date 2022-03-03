@@ -1,0 +1,25 @@
+$@MID@$: 26
+Date: Sat, 19 Oct 2013 23:13:50 +0000
+Author: rsl
+S/N: na
+Type: General Problem
+equipment: Subnet | Switch | Other Router
+Subject: network locking up
+Cruise: at26-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>I had some trouble with the network, where the entire science network would simply lock up.&nbsp; This could generally be fixed by unplugging the network from ftp for a moment.&nbsp; &nbsp; Initially I traced this back to the main switch on the science network,&nbsp; but now I'm not so sure.&nbsp; Where the switch was plugged into ftp, the ligh was red.&nbsp; however, swapping out the switch did not fix the problem.&nbsp; Subsequently, I found a few improperly terminated ethernet cables in the hydro lab.&nbsp; (crossed pairs)&nbsp; Maybe that was the issue?&nbsp; Not sure, the problem seems to have gone away on it's own.&nbsp; Possibly a scientist with a bad computer?????</p>
+$@MID@$: 27
+Date: Sat, 19 Oct 2013 23:20:44 +0000
+Author: rsl
+S/N: na
+Type: Fix
+equipment: Subnet | Ethernet Cable
+Subject: bad wiring in hydro lab
+Cruise: at26-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>Found improperly terminated ethernet wiring.&nbsp; (The stuff in the overhead.)&nbsp; Two of them I fixed.&nbsp; I reterminated the remaining one about 8 times and then gave up and put in a new wire.&nbsp; </p>
+<p>The rj45 plugs were done straight across, that is, wor/or, wbl/bl, wgr/gr, wbr/br.&nbsp; This creates crossed pairs.&nbsp; The worst part is, the wire tester will not find this sort of error, since all the pins are still hooked up 1-1, 2-2, etc.&nbsp; </p>

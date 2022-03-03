@@ -1,0 +1,15 @@
+$@MID@$: 30
+Date: Thu, 13 Jun 2013 01:26:48 +0000
+Author: AH
+Sensor: SBE48
+S/N: 480040
+Calibration Date: 
+Type: General Problem
+Category: Software
+Subject: SBE48 stopped talking
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">I cycled the power going to the IMET, etc. as the port vaisala had gone out.&nbsp; Everything&nbsp; came back except the SBE48.&nbsp; I hooked it up to the netbook at 9600 baud and it said &quot;not logging:&nbsp; low battery&quot;.&nbsp; So I did &gt;StartNow and it started logging again.</span></p>
+<p><span style="font-size: large;">&gt;DS&nbsp;&nbsp;&nbsp; is the display status command</span></p>

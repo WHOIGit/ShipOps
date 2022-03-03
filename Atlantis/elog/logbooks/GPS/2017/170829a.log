@@ -1,0 +1,26 @@
+$@MID@$: 32
+Date: Tue, 29 Aug 2017 21:24:47 +0000
+Author: sssg
+Type: System
+gps: CNAV
+Category: Fix
+Subject: New Navigator III installed to replace the Navigator II with the bad screen.
+Cruise: at38
+Attachment: 171109_205726_SETTINGS.pdf,171109_205742_CNAV3050_on_3050-14959.pdf,171109_205757_Port_Outputs.pdf,171109_205813_FILE_and_VIEW_.pdf,171109_210039_profile_dump_CNavigator.pdf
+Encoding: HTML
+========================================
+<p>Below, find screenshots and the output from a configuration dump from teh CNavigator III:</p>
+
+<p>&nbsp;</p>
+$@MID@$: 33
+Date: Tue, 29 Aug 2017 21:26:06 +0000
+Author: rlaird
+Type: Other
+gps: CNAV
+Category: Fix
+Subject: No ZDA to USBL
+Cruise: at38
+Attachment: 
+Encoding: HTML
+========================================
+<p>The Sonardyne USBL system was not getting ZDA, thus the time sync was not working.&nbsp; Added ZDA to the output that supplies the USBL, all is fixed.</p>

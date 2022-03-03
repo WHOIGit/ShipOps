@@ -1,0 +1,84 @@
+$@MID@$: 88
+Date: Sun, 22 Dec 2019 16:00:19 +0000
+Author: Emily
+Type: Termination
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Fix
+Subject: New termination 0.322 wire
+Cruise: at42-20
+Attachment: 
+Encoding: HTML
+========================================
+<p>There were two kinks that developed about 8 meters from the termination due to surface snap loading of the Ocean Bottom Seismometers lowered by wire on cruise at42-20. They were certainly not designed for wire deployments!</p>
+
+<p>Due to the two kinks and 30 wire deployments, the 0.322 needed reterminating.</p>
+
+<p>&nbsp;</p>
+
+<p>6 December 2019</p>
+
+<p>Termination and Megger by Emily Shimada</p>
+
+<p>WIRE:&nbsp; Fwd .322 Wire, NSF-05-C128</p>
+
+<p>Tested with:&nbsp; SSSG/ComET Model 1060 AEMC Megger (returned on 11/11/19 from calibration at Simco)</p>
+
+<p>S/N:&nbsp; 154856DC DV</p>
+
+<p>Inside tape = &nbsp;&nbsp; 46 meters</p>
+
+<p>Outside tape =&nbsp; 8507.5&nbsp;meters</p>
+
+<p>Overall length =&nbsp; 8461.0 meters</p>
+
+<p>Air temp: 23.5 degrees C ; 74.3 degrees F</p>
+
+<p>Tested entire wire from termination, through drum and j-boxes to computer lab end.</p>
+
+<p>Wire pairs:</p>
+
+<p>Wires &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+<p>Green-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.434&nbsp;GOhms&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.06&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.13&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0.928&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+<p>Green-White &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.655 GOhms &nbsp; &nbsp; &nbsp; &nbsp; 1.05 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.08 &nbsp; &nbsp; &nbsp; &nbsp; 0.974&nbsp; &nbsp;&nbsp;</p>
+
+<p>Green-Black &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.488 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.00&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 1.18&nbsp; &nbsp; &nbsp; &nbsp; 0.937&nbsp; &nbsp;</p>
+
+<p>Red-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.062 GOhms &nbsp; &nbsp; &nbsp; &nbsp; 0.98&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.19&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.644&nbsp; &nbsp; &nbsp;</p>
+
+<p>Red-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.109 GOhms &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 0.91&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.23&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.649&nbsp;&nbsp;</p>
+
+<p>White-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.143 GOhms&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.97&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.16&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.610&nbsp; &nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>CONTINUITY:</p>
+
+<p>Expected value:&nbsp;&nbsp; (8.461 km) * (30.8 Ohms/km) = 260.6 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>Readings with Fluke 87 III:&nbsp; Black-Green 261 Ohms;&nbsp; Red-Green 260 Ohms;&nbsp; White-Green 259 Ohms;&nbsp; Green-Ship 1.0 Ohms&nbsp;</p>
+
+<p>Black-White 513 Ohms; White-Red 516 Ohms; Red-Black 515 Ohms</p>
+
+<p>&nbsp;</p>
+
+<p>PULL TEST:</p>
+
+<p>Termination was pull-tested to 2500 pounds for 3 minutes with no shift/movement of the mechanical termination.</p>
+$@MID@$: 89
+Date: Sun, 22 Dec 2019 16:24:11 +0000
+Author: Emily
+Type: Termination
+Winch: 
+Wire: other
+Category: Routine
+Subject: AEMC 1060 Calibration
+Cruise: at42-20
+Attachment: 191222_162549_megger.pdf
+Encoding: HTML
+========================================
+<p>The AEMC 1060 megohmmeter (s/n 154856DC DV) was calibrated by Simco electronics on 10/31/2019 and used to test the 0.322 termination completed on 12/6/19.</p>
+
+<p>The calibration certificate is attached and upcoming due date is 12 months out on 10/31/2020.</p>

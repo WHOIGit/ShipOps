@@ -1,0 +1,53 @@
+$@MID@$: 43
+Date: Mon, 09 May 2016 14:46:33 +0000
+Author: Catie
+Type: Configuration
+Category: sensor
+Sensor: fluor | turbidity
+S/N: 
+Calibration Date: 
+Subject / Summary: Proper orientation for mounting FLNTURTD
+Cruise: at34
+link: 
+Revisions: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>In talking tonight with Dave Stahlke at WETLabs, I had corroborated what we have observed, that the<br />
+output of the WETLabs fluorometer may be affected by items near, but not in-line, with the face of the<br />
+fluorometer.<br />
+<br />
+Specifically, while the expected sensed volume is about a cubic centimeter centered in between the two<br />
+optical windows of an FLNTURTD head, if a reflective or fluorescent object is adjacent to the face,<br />
+there may be a measurable offset.<br />
+<br />
+If you've ever used the fluorescing stick provided by WETLabs, bleached paper, or even your<br />
+fingernails to check the output, you likely have seen how these can be sensed in air many centimeters<br />
+away from the face.<br />
+<br />
+When in the water, where particles cause multiple reflections, this effect is more pronounced, and we<br />
+must take care to reduce it however possible.<br />
+<br />
+For example, depending on the fluorometer orientation, the white painted housing of a SBE9 pressure<br />
+case may reflect the light beam output of the fluorometer, where it can be redirected into the sensor<br />
+by reflective particles in the sensed volume.<br />
+<br />
+<span style="background-color: rgb(255, 255, 0);">For this reason, Dave recommends orienting the FL-series fluorometers such that the light beam is<br />
+pointing furthest away from any object near the face. When mounted onto the SBE9 body with the<br />
+Sea-Bird mounting kit, this means that the oval optical window with the blue and clear LEDs inside<br />
+should be closest to the SBE9 body, and thus pointing away from the body, to minimize the likelihood<br />
+of light energy taking multiple reflective paths back to the sensor.<br />
+</span><br />
+While the effect is small, it can result in measurable change to the output.<br />
+<br />
+I'm marking the plastic side of the WHOI ECO-series housings which come in my lab with an engraved and<br />
+painted line to indicate the side opposite the light beam. This will help us assure that the ECO<br />
+fluorometers are oriented to keep the beam away from objects which may cause sensing errors.<br />
+<br />
+I'll be passing along more info about suggested test and verification procedures on the WETLabs ECO<br />
+and C-star sensors in the next few days. These come from the WETLabs site and Sea-Bird Application<br />
+notes.<br />
+<br />
+If you have any questions or concerns, contact me or Dave Stahlke at WETLabs (541-929-5650 ext 215).<br />
+<br />
+&nbsp;</p>

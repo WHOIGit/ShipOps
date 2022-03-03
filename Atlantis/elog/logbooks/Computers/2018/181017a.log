@@ -1,0 +1,36 @@
+$@MID@$: 114
+Date: Wed, 17 Oct 2018 21:16:17 +0000
+Author: Mike Coons
+Type: Fix
+name: mnemosyn | Macs
+server type: network
+OS: Mac-OS
+Location: Other
+Category: Software
+Subject: Mac OS X file sharing issues with Samba
+Cruise: at42-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>OS X users have been having issues accessing files on the shared network drives, such as sci0_on_memory and data_on_memory. Files keep radomly disappearing even though they can be viewed on a windows computer.</p>
+
+<p>Apparently it&#39;s an OS X bug with Samba. Here&#39;s how to fix it:</p>
+
+<p>As admin, create a file named&nbsp;<code>nsmb.conf</code>.</p>
+
+<pre>
+<code>sudo vi /etc/nsmb.conf
+</code></pre>
+
+<p>Put the following inside:</p>
+
+<pre>
+<code>[default]
+file_ids_off=yes
+</code></pre>
+
+<p>Save. Reboot. Done.</p>
+
+<p>&nbsp;</p>
+
+<p>See this webpage:&nbsp;https://irulan.net/samba-share-refresh-problem-in-finder-on-mac-os-x/</p>

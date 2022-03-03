@@ -1,0 +1,26 @@
+$@MID@$: 47
+Date: Sun, 13 Jul 2014 19:02:23 +0000
+Author: RSL
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Hardware
+S/N: na
+Subject / Summary: UPS offline again.
+Cruise: at26-17
+Attachment: 
+Encoding: HTML
+========================================
+<p>UPS switched to &quot;unprotected mode again, fault is same one, U191, battery module fault</p>
+$@MID@$: 48
+Date: Sun, 13 Jul 2014 19:03:48 +0000
+Author: RSL
+System: EM122 - Kongsberg
+Type: Fix
+Category: Hardware
+S/N: na
+Subject / Summary: Tightened all hardware
+Cruise: at26-17
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tightened all the battery wiring hardware inside the UPS, also tightened the connections withing the battery itself.&nbsp; Reassembled and it's still working.</p>

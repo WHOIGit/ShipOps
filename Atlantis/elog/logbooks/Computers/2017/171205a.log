@@ -1,0 +1,17 @@
+$@MID@$: 98
+Date: Tue, 05 Dec 2017 12:29:40 +0000
+Author: AH - from email
+Type: Configuration
+name: ftp
+server type: network
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: SSV feeders
+Cruise: at39-02b
+Attachment: 
+Encoding: HTML
+========================================
+<p>I have the redirect of SSV running on ftp, that was not as much of a pain as I thought it would be. It should be checked before it is needed. The SSV is<br />
+coming from datalog to ftp as UDP, and ftp is redirecting the UDP to serial out ttyS7 (the last of the tty Ports on ftp (I think)). It should be running now,<br />
+if you move the db9 from ftp2 (oldftp) down to the current ftp, it might all just work :).</p>

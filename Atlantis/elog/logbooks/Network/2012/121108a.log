@@ -1,0 +1,21 @@
+$@MID@$: 19
+Date: Thu, 08 Nov 2012 14:12:08 +0000
+Author: laura
+S/N: science network
+Type: General Problem
+equipment: Subnet | Ethernet Port
+Subject: eth2 on ftp (science network)
+Cruise: at24-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>The science nework stopped working through ftp. ran tcpdump</p>
+<p>&nbsp;</p>
+<p>tcpdump -i eth2 </p>
+<p>&nbsp;</p>
+<p>and got alot of: MPCP Opcode Pause</p>
+<p>I looked it up and it seemed to mean that eth2 was getting overwhelmed w/ too much traffic, the buffers were filling up so it stopped passing traffic.&nbsp; The network worked from all other ports. I could surf the network on ftp.</p>
+<p>&nbsp;</p>
+<p>I tried powering down the science switch, but that did not bring eth2 backup on ftp. It could be that I did not wait long enough. I ended up rebooting ftp and it all came back up working. </p>
+<p>I am not sure what caused the traffic overload. </p>
+<p>&nbsp;</p>

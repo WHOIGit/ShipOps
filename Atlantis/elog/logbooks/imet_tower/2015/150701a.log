@@ -1,0 +1,18 @@
+$@MID@$: 29
+Date: Wed, 01 Jul 2015 15:33:07 +0000
+Author: Catie
+Sensor: WXTP
+S/N: E0110002/E2320003
+Calibration Date: 20 May 2015
+Type: Fix
+Category: Hardware
+Subject: Port Vaisala E2320003 Dead
+Cruise: at29-03
+Revisions: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>The Port Vaisala, E2320003 died.</p>
+<p>It was replaced July 1, 2015 with spare Vaisala E0110002.</p>
+<p>The newly calibrated PTU (L1750054) that was installed in E232003 in May 2015 was removed and placed into E0110002.</p>
+<p>&nbsp;</p>

@@ -1,0 +1,19 @@
+$@MID@$: 104
+Date: Wed, 31 Jan 2018 09:18:33 +0000
+Author: AH
+Type: Routine
+name: linus
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: mk_cruise_meta.pl
+Cruise: at39-04
+Attachment: 180131_092907_mk_cruise_meta.pl
+Encoding: HTML
+========================================
+<p>Added a script on linus to run in /home/sssg after downloading the cruise letter.&nbsp; Run the script as:</p>
+
+<p>./mk_cruise_meta.pl <em>name_of_cruise_letter</em></p>
+
+<p>script will do its best to make the file cruise_metadata to be edited and moved to /home/data.&nbsp; R2R and Laura decided on a new format, and this script will hopefully help create that format without a bunch of additional typing.&nbsp; It is not perfect, however, as the structure of the cruise letter is not always identical.&nbsp; So, the cruise_metadata file created needs to be checked and edited.</p>

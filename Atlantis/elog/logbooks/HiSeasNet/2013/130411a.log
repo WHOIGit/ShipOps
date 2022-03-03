@@ -1,0 +1,36 @@
+$@MID@$: 22
+Date: Thu, 11 Apr 2013 18:19:07 +0000
+Author: rsl
+S/N: HiSeasNet
+Type: Fix
+Component: FSK modem
+Subject: Bad fsk multiplexor.  (aka gold modem)
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>Could not talk to Codan in dome.&nbsp; Changed out upper fsk modem, now all is well.&nbsp; Also, found the Codan and the DAC signals were &quot;swapped&quot;, DAC is now on the transmit coax, Codan is on the receive coax. &nbsp; Work done by Karl Kapusta</p>
+$@MID@$: 23
+Date: Thu, 11 Apr 2013 18:22:23 +0000
+Author: rsl
+S/N: HiSeasNet
+Type: Routine
+Component: radome / antenna
+Subject: Replace PCU with newer version.
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>Replace the PCU, (in the dome), with a much new version, with much more recent updates, etc..&nbsp; Also have matching one in spares.&nbsp; Spare has been setup with all the correct parameters to drop in place.&nbsp; Work done by Karl Kapusta.</p>
+$@MID@$: 24
+Date: Thu, 11 Apr 2013 18:47:51 +0000
+Author: rsl
+S/N: HiSeasNet
+Type: General Problem
+Component: other
+Subject: DacRemP is cranky
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>Recent versions of DacRemP seems to be cranky, slow to respond.&nbsp; Reason is unknown.&nbsp; Might be because the DAC97 that runs our system is fairly old, while DacRemP is fairly new.&nbsp; Maybe try an older version of DacRemP?</p>

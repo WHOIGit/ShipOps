@@ -1,0 +1,203 @@
+$@MID@$: 77
+Date: Fri, 16 Dec 2016 17:32:00 +0000
+Author: McCabe
+S/N: 
+Type: General Problem
+Component: radome / antenna
+Subject: dome and pedestal issues
+Cruise: at37-05
+Attachment: 161216_172652_nowashers.jpg,161216_172813_pedestaltodome_nowasher.jpg,161216_172910_missing_bolt_pedestal.jpg,161216_172957_loose_strut.jpg
+Encoding: HTML
+========================================
+<p><style type="text/css">
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 65536 0 -2147483648 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#44546A;
+	font-style:italic;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1027952351;
+	mso-list-type:hybrid;
+	mso-list-template-ids:173316336 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:&#61623;;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style></p>
+<p class="MsoNormal"><a name="_GoBack"></a><b style="mso-bidi-font-weight:normal"><u><span style="font-size:12.0pt;line-height:107%">December 2016, AT37-05</span></u></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><u><span style="font-size:12.0pt;line-height:107%">Atlantis HSN / Seatel Dome and pedestal Issues:</span></u></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><u>During a routine inspection multiple issues were discovered: </u></b></p>
+<p class="MsoNormal">One of the pedestal bolts was found to be missing and many others were loose.</p>
+<p class="MsoNormal">Bolts that hold the fiberglass dome to the pedestal have no washers on the pedestal/steel side.</p>
+<p class="MsoNormal">The bolts that hold the fiberglass dome sections together have no washers at all.</p>
+<p class="MsoNormal">There are many exposed wire ends and terminals on the antenna assembly.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><u>Current Status:</u></b></p>
+<p style="text-indent:.5in" class="MsoNormal">All pedestal bolts have been tightened up, some of the pedestal to dome bolts have been replaced with proper washers and nylocks nuts.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><u>Recommendations: </u></b></p>
+<p class="MsoNormal">All bolts should have flat washers on both sides and either nylock nuts or threadlocker.</p>
+<p style="text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpFirst"><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Install nylock nuts on all 3/8&rdquo; pedestal bolts and check proper torque</p>
+<p style="text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpMiddle"><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Install flat washers and nylock nuts on all dome bolts</p>
+<p style="text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpLast"><span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>Cover exposed wiring inside dome</p>
+<p style="text-indent:-.25in;mso-list:l0 level1 lfo1" class="MsoListParagraphCxSpLast">PHOTOS</p>
+<p>Interior dome no washers</p>
+<p><a href="161216_172652/nowashers.jpg?lb=HiSeasNet"><img border="0" id="att0" name="att0" src="161216_172652/nowashers.jpg?lb=HiSeasNet&amp;thumb=1" alt="nowashers.jpg" /></a></p>
+<p>Dome to pedestal no washers</p>
+<p><a href="161216_172813/pedestaltodome_nowasher.jpg?lb=HiSeasNet"><img border="0" alt="pedestaltodome_nowasher.jpg" src="161216_172813/pedestaltodome_nowasher.jpg?lb=HiSeasNet&amp;thumb=1" name="att1" id="att1" /></a></p>
+<p>Missing bolt on pedestal</p>
+<p><a href="161216_172910/missing_bolt_pedestal.jpg?lb=HiSeasNet"><img border="0" id="att2" name="att2" src="161216_172910/missing_bolt_pedestal.jpg?lb=HiSeasNet&amp;thumb=1" alt="missing_bolt_pedestal.jpg" /></a></p>
+<p>Loose strut:</p>
+<p><a href="161216_172957/loose_strut.jpg?lb=HiSeasNet"><img border="0" alt="loose_strut.jpg" src="161216_172957/loose_strut.jpg?lb=HiSeasNet&amp;thumb=1" name="att3" id="att3" /></a></p>

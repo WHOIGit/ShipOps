@@ -1,0 +1,14 @@
+$@MID@$: 9
+Date: Tue, 03 May 2011 18:23:40 +0000
+Author: AH
+version: 4.77
+Type: Configuration
+Subject: Inter-relation between Calliope, Samos, NOAA, Ship's Data Grabber, Latest Data, and Underway data plots
+Cruise: at18-05
+Attachment: 110612_132712_Calliope_summary_page1.png,110612_132723_Calliope_summary_page2.png
+Encoding: plain
+========================================
+<p>Spreadsheet outlining inter-relationship between Calliope, Samos Data Feed, NOAA data feed, Ship's Data
+Grabber, Latest Data, and Underway Data plots.</p>
+<p>If a variable name is changed in Calliope, the change is likely to effect the other data feeds as well.&nbsp;
+See chart below.</p>

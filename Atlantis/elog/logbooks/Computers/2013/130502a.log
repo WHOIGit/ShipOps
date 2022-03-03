@@ -1,0 +1,71 @@
+$@MID@$: 52
+Date: Thu, 02 May 2013 11:36:31 +0000
+Author: lstolp
+Type: Configuration
+name: linus
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: FBB setup
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>create a tunnel to 128.128.250.51 via fbb:<br />
+</strong></p>
+<p><strong>user atlantis on linus crontab:</strong></p>
+<p># m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+*/20 * * * * /home/atlantis/bin/sssg_tunnel.sh &gt;&gt;/home/atlantis/logfiles/tunnel.log 2&gt;&amp;1<br />
+&nbsp;</p>
+<p><strong>Interfaces on mailhost:/etc/network/interfaces</strong></p>
+<p># This file describes the network interfaces available on your system<br />
+# and how to activate them. For more information, see interfaces(5).<br />
+<br />
+# The loopback network interface<br />
+auto lo<br />
+iface lo inet loopback<br />
+<br />
+# The primary network interface<br />
+auto eth0<br />
+iface eth0 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 199.92.161.2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; network 199.92.161.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 199.92.161.255<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gateway 199.92.161.3<br />
+<br />
+# FBB PORT interface<br />
+auto eth1<br />
+iface eth1 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 192.168.0.8<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; network 192.168.0.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 192.168.0.255<br />
+<br />
+<br />
+# FBB STBD&nbsp; interface<br />
+#auto eth1<br />
+#iface eth1 inet static<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 192.168.100.7<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; subnet 192.168.100.255<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 192.168.100.255</p>
+<p><br />
+# I think this independent of interfaces a # in front of auto will disable the <br />
+# interface<br />
+up route add -host 128.128.250.51 gw 192.168.0.1 dev eth1<br />
+#up route add -host 128.128.250.51 gw 192.168.100.1 dev eth1<br />
+&nbsp;</p>
+<p><strong>root@linus:~# route -n<br />
+Kernel IP routing table</strong><br />
+Destination&nbsp;&nbsp;&nbsp;&nbsp; Gateway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Genmask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Flags Metric Ref&nbsp;&nbsp;&nbsp; Use Iface<br />
+128.128.250.51&nbsp; 192.168.0.1&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.255 UGH&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth1<br />
+199.92.161.0&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.0&nbsp;&nbsp; U&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth0<br />
+192.168.0.0&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.0&nbsp;&nbsp; U&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth1<br />
+0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 199.92.161.3&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UG&nbsp;&nbsp;&nbsp; 100&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth0<br />
+root@linus:~# <br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

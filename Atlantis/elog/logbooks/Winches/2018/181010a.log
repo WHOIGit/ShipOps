@@ -1,0 +1,77 @@
+$@MID@$: 73
+Date: Wed, 10 Oct 2018 17:42:21 +0000
+Author: Catie
+Type: 
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: Retermination following 1000m chop
+Cruise: at42-02
+Attachment: 
+Encoding: HTML
+========================================
+<p><!--StartFragment--></p>
+
+<table cellpadding="0" cellspacing="0" class="frame">
+	<tbody>
+		<tr>
+			<td>
+			<p>Retermination done 10-10-18 following October 2018 1000m cut off</p>
+
+			<p>Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)&nbsp; was used for the insulation resistance testing</p>
+
+			<p>Fluke 87 III True RMS Multimeter used for the continuity testing</p>
+
+			<p>Fwd .322 Wire, NSF-3-C165</p>
+
+			<p>Air temp:&nbsp;&nbsp;&nbsp; 81 degrees F</p>
+
+			<p>Current ticker tape reading = 6746m</p>
+
+			<p>Current wire length =</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:medium">Wire pair</span><span style="font-size:medium"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </span></p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:medium">Red-Black &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.858 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.492</span></p>
+
+			<p><span style="font-size:medium">Red-White</span><span style="font-size:medium"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.429 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.17 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.23 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.517</span><span style="font-size:medium"> </span></p>
+
+			<p><span style="font-size:medium">Red-Green</span><span style="font-size:medium"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.638 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.789</span></p>
+
+			<p><span style="font-size:medium">Black-White</span><span style="font-size:medium">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.919 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.09 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.496</span></p>
+
+			<p><span style="font-size:medium">Black-Green</span><span style="font-size:medium"><span style="font-size:medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.861 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.31 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.753</span> </span></p>
+
+			<p><span style="font-size:medium">White-Green</span><span style="font-size:medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 87.8 MOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 0.96 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.77 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.743</span></p>
+
+			<p>&nbsp;</p>
+
+			<p><strong><span style="font-size:medium">CONTINUITY:</span></strong></p>
+
+			<p><span style="font-size:medium">Red-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 408 Ohms</span></p>
+
+			<p><span style="font-size:medium">Red-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 408 Ohms</span></p>
+
+			<p><span style="font-size:medium">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 208 Ohms</span></p>
+
+			<p><span style="font-size:medium">W</span><span style="font-size:medium">hite-Green&nbsp;&nbsp;&nbsp;&nbsp; 206 Ohms</span></p>
+
+			<p><span style="font-size:medium">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 202 Ohms</span></p>
+
+			<p><span style="font-size:medium">Black-White &nbsp;&nbsp;&nbsp;&nbsp; 408 Ohms</span></p>
+
+			<p><span style="font-size:medium">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.7 Ohms</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><!--EndFragment--></p>

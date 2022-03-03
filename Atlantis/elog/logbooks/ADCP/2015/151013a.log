@@ -1,0 +1,69 @@
+$@MID@$: 10
+Date: Tue, 13 Oct 2015 20:19:11 +0000
+Author: AH - emailing with Jules
+S/N: 
+Type: General Problem
+Category: Other
+Subject: OS75 reading 5% too high - Also TEMP was reading 0 (related?)
+Cruise: at31-a
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Tue, 13 Oct 2015 19:32:08 +0000<br />
+From: RDIFS &lt;RDIFS@teledyne.com&gt;<br />
+To: UHDAS ADCP group &lt;uhdas@hawaii.edu&gt;<br />
+Cc: 'Atlantis SSSG' &lt;sssg@atlantis.whoi.edu&gt;, Eric Firing &lt;efiring@hawaii.edu&gt;, RDIFS &lt;RDIFS@teledyne.com&gt;<br />
+Subject: RE: shipyard damage to OS75 makes it read low?<br />
+<br />
+Hello Jules,<br />
+<br />
+It could be the temperature. A chassis may not recognize the temperature sensor at startup. We have not been able to<br />
+recreate this error, but we know it happens occasionally. <br />
+<br />
+When this behavior occurs, in the PS0 response, it will show &quot;Sensors:&nbsp; NONE&quot;. It should say &quot;Sensors:&nbsp; TEMP&quot;.&nbsp; <br />
+<br />
+To resolve the issue, send BREAK, PS0 once or twice. Once you see &quot;TEMP&quot;, commence sampling, and verify that the<br />
+temperature is correct in the UHDAS. <br />
+<br />
+Do you have a representative data sample that you could share with us? If so, please upload the file using the FILEDROP<br />
+link in my email signature. <br />
+<br />
+Thank you. I look forward to your reply. <br />
+<br />
+Regards,<br />
+Scott<br />
+&nbsp;</p>
+<p>Date: Tue, 13 Oct 2015 09:31:03 -1000<br />
+From: UHDAS ADCP group &lt;uhdas@hawaii.edu&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;, RDIFS &lt;rdifs@teledyne.com&gt;<br />
+Cc: uhdas@hawaii.edu, Eric Firing &lt;efiring@hawaii.edu&gt;<br />
+Subject: Re: shipyard damage to OS75 makes it read low?<br />
+<br />
+<br />
+Hello again: There is a 5% error in the OS75, but it is reading TOO HIGH<br />
+and needs to be divided by 1.05.<br />
+<br />
+The question remains though, what could cause this kind of error?<br />
+Is there anything related to a ship yard&nbsp; period that would be plausible?<br />
+<br />
+Would it help to send a data snippet?<br />
+<br />
+Thanks<br />
+Jules<br />
+<br />
+&gt; &gt; <br />
+&gt; &gt; &gt; Hello RDIFS,<br />
+&gt; &gt; &gt; <br />
+&gt; &gt; &gt; Something happened to the Atlantis OS75 about 2 months ago,<br />
+&gt; &gt; &gt; when a new WH300 was put in.&nbsp; I don't know whether the WH300<br />
+&gt; &gt; &gt; has anything to do with this, but the OS75 now needs a multiplier<br />
+&gt; &gt; &gt; of about 1.05 to get reasonable values.&nbsp; The change seems to have<br />
+&gt; &gt; &gt; occurred during that long in-port period.<br />
+&gt; &gt; &gt; <br />
+&gt; &gt; &gt; Can you think of anything that would cause this to happen?<br />
+&gt; &gt; &gt; <br />
+&gt; &gt; &gt; Possibly related, the temperature is reading zero.&nbsp; This has<br />
+&gt; &gt; &gt; happened before, but power-cycling the deck unit has always brought<br />
+&gt; &gt; &gt; the temperature back.<br />
+&gt; &gt; &gt; <br />
+&nbsp;</p>

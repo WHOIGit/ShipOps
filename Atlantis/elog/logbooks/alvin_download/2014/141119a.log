@@ -1,0 +1,71 @@
+$@MID@$: 4
+Date: Wed, 19 Nov 2014 05:21:19 +0000
+Author: dsims
+script: 
+Type: Fix
+Source: 
+Data: framegrabber
+Subject: Fix for no framegrabber
+Cruise: at26-23
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">On dive 4771, there was no framegrabber data.&nbsp; Here's how to indicate that in such a way that shows up on the web pages.<br />
+</span></p>
+<p><span style="font-size: medium;">Well, it turns out to be pretty easy.&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">If there is no pre-dive form or anything done, just have the Alvin guys make one and proceed as if there was a dive.&nbsp; Before they end the dive, make sure that you enter something like:<br />
+</span></p>
+<p><span style="font-size: medium;">There was a problem with FrameGrabber, so there are no pictures and no data for this dive's Framegrabber.<br />
+</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">If the to want to enter a synopsis, then tell the Alvin guys to enter the synopsis and end the dive.&nbsp; Proceed as described below. <br />
+</span></p>
+<p><span style="font-size: medium;">Hmmmm, it's probably ok to just enter:<br />
+</span></p>
+<p><span style="font-size: medium;"><span>There was a problem with FrameGrabber, so there are no pictures and no data for this dive's Framegrabber. &lt;br&gt;&lt;br&gt;</span></span></p>
+<p><span style="font-size: medium;"><span>Above the synopsis before the dive has ended.&nbsp; I haven't tested this yet.</span><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;"><span>In any case, the below works.</span><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">If the dive has already been ended: <br />
+</span></p>
+<p><span style="font-size: medium;">ssh alvin@199.92.162.199.<br />
+</span></p>
+<p><span style="font-size: medium;">cd /webdata/alvin/alvinfg/AT(cruisenum)/Alvin-D(divenum)<br />
+</span></p>
+<p><span style="font-size: medium;">vi dive_info.txt <br />
+</span></p>
+<p><span style="font-size: medium;">Above the synopsis enter something like:<br />
+</span></p>
+<p><span style="font-size: medium;"><span>There was a problem with FrameGrabber, so there are no pictures and no data for this dive's Framegrabber. &lt;br&gt;&lt;br&gt;<br />
+</span></span></p>
+<p><span style="font-size: medium;"><span>The &lt;br&gt;&lt;br&gt; will ensure that there is a line between your message and the synopsis.</span><br />
+</span></p>
+<p><span style="font-size: medium;">Edit the dive_info.html with the same message.<br />
+</span></p>
+<p><span style="font-size: medium;">cd ..<br />
+</span></p>
+<p><span style="font-size: medium;">Edit dive_list.html.&nbsp; Scroll down to the area for the applicable dive's synopsis.&nbsp; Enter something like:<br />
+</span></p>
+<p><span style="font-size: medium;"><span>There was a problem with FrameGrabber, so there are no pictures and no data for this dive's Framegrabber. &lt;br&gt;&lt;br&gt;</span></span></p>
+<p><span style="font-size: medium;">Exit from the framegrabber computer.<br />
+</span></p>
+<p><span style="font-size: medium;">In alvindata01, run get_alvin_FG.sh to rsync all the data.<br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">That worked this time.&nbsp; Hopefully it will work for you as well.<br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>

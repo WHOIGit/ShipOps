@@ -1,0 +1,35 @@
+$@MID@$: 3
+Date: Thu, 01 Jul 2010 13:44:00 +0000
+Author: AH
+version: 4.59
+Type: Configuration
+Subject: configuration and output to csv file
+Cruise: at15-67
+Attachment: 
+Encoding: HTML
+========================================
+<p>The GPS data using the source UDP 55006 title was changed from &quot;Northstar 941&quot; to &quot;GPS Science Feed&quot; to reflect the actual source being utilized.</p>
+<p>data outputs to csv file:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; removed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AT - this was a duplicate of teh Stbd Vaisala data</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRC - this was a duplicate of the STBD Vaisala data</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; added:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AT_IMET - IMET air temperature</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all data from the thermosaliongraph</p>
+<p>&nbsp;</p>
+<p>also changed the number of decimal places for the Wnd_TS (it was outputting 4 decimal places)</p>
+<p>****CG on 7/18/10****</p>
+<p>AT is back in the csv file as it is necessary for things like the NOAA broadcast, web utilities, etc.</p>
+<p>PRC, too.</p>
+$@MID@$: 4
+Date: Thu, 01 Jul 2010 16:38:13 +0000
+Author: AH
+version: 4.59
+Type: Configuration
+Subject: GPS Science feed
+Cruise: at15-66 onward
+Attachment: 
+Encoding: HTML
+========================================
+<p>The three possible sources for GPS going to the science feed are:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp; CNAV</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; GP1850</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp; G_90D</p>

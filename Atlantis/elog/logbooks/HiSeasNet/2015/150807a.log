@@ -1,0 +1,50 @@
+$@MID@$: 51
+Date: Fri, 07 Aug 2015 15:34:43 +0000
+Author: rsl
+S/N: na
+Type: Routine
+Component: other
+Subject: Visit By Karl Kapusta
+Cruise: at30-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Annual visit from Karl Kapusta.&nbsp; No major issue prior to visit, so just normal maintenance.</p>
+<p>Noted that talking to the Codan from the computer lab failed.&nbsp; Also noted that the cabling was &quot;backwards&quot; for the two FSK modems.&nbsp; (DAC was using the Tr line and Codan was using the Rcv line.&nbsp; This is backwards, although it works fine this way.)&nbsp; Swapped the data lines above and below, problem followed the FSK modems.&nbsp; (could not talk to the Codan, but now the DAC has no comms.)&nbsp; Replaced the lower FSK modem in the Rcv line, this fixed the problem.&nbsp;</p>
+<p>Swapped out the DAC97 for newer DAC03 (from Knorr)&nbsp; DAC03 performs better, is more up-to-date, and is easier to drive.&nbsp; No problems were encountered in this swap.&nbsp; Left the DAC97 in the rack as a ready spare.&nbsp;&nbsp; Old, spare DAC97 was found to have bad display, removed from ship.</p>
+<p>Verified that data collector will work with DAC03 (vs DAC97) and checked that it was collecting data.&nbsp;</p>
+<p>Left a DAC2203 on board as a deep spare.&nbsp; This unit is NOT configured at this time.&nbsp; Long term, pedestal will be replaced with newer, more modern one, DAC97 will be removed and DAC03 and DAC2203 will be on board.&nbsp; Newer pedestal is capable, (with upgrades), of Ku band operation, present pedestal is not.</p>
+<p>Minor re-balancing done on antenna.</p>
+<p>&nbsp;</p>
+<p>********Allison Added Based on email traffic</p>
+<p><span style="font-size: large;">There was also a modem firmware upgraded needed in order to </span></p>
+<p><span style="font-size: x-large;">Robbie confirmed the upgrade was done and also briefly discussed the attenuator issue (needing one on Rx signal):</span></p>
+<p>EXCERPT EXPLAINING WHY THE FIRMWARE UPGRADE WAS NEEDED:</p>
+<p>&gt; &gt; &gt; &gt; Did you repower the modem at some point? If so Steve needs to put a route back in (he has the M&amp;C) to point<br />
+&gt; &gt; &gt; &gt; traffic back to the cisco router.<br />
+&gt; &gt; &gt; Yes, numerous times.<br />
+&nbsp;</p>
+<p><span style="font-size: large;">Date: Fri, 09 Oct 2015 10:14:31 -0400<br />
+From: rlaird@whoi.edu<br />
+To: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+Cc: sssg@whoi.edu, sssg@atlantis.whoi.edu<br />
+Subject: Re: Router won't switch<br />
+<br />
+Hi Laura<br />
+<br />
+Yes, it's all good.<br />
+<br />
+We got Jon back on the phone after his lunch and he put a bunch of configuration back in.&nbsp; There may have also been<br />
+some &quot;normal&quot; mistakes.&nbsp; I think there was at least one bad cut/paste on Jon's end.&nbsp; Final result is that the new<br />
+firmware is in, and it will now carry the routes and stuff through a reset.<br />
+<br />
+We also worked out a few other issues.&nbsp; The new dish is about 10db better than the old one.&nbsp; Turns out that it's<br />
+possible to send to much power to the modem.&nbsp; It also turns out that the error messages on the panel of the modem<br />
+are incomplete, so we missed the cause of the error for a while.&nbsp; We saw &quot;Signal strength is to low&quot;, but if we had<br />
+used the web interface, we would have seen &quot;Signal strength is to low or to high&quot;.&nbsp; We ended up putting a 6db<br />
+attenuator in the lead to the modem.&nbsp; (we can attenuate the receive signal in the dome, but then the DAC also gets<br />
+attenuated, and it like the full signal.)<br />
+<br />
+Robbie<br />
+</span></p>
+<p>&nbsp;</p>

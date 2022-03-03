@@ -1,0 +1,41 @@
+$@MID@$: 4
+Date: Fri, 24 Feb 2012 16:27:07 +0000
+Author: AH
+Type: Routine
+Subject: Data Policy - as per Laura Stolp email of 22 Feb 2012
+Cruise: all
+Attachment: 
+Encoding: HTML
+========================================
+<p>Naming Convention:<br />
+<br />
+CRUISE_ID -&gt;&nbsp; SSCCC-LL<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ie: at18-06. kn200-01, kn205, at19<br />
+<br />
+ADCP -&gt; SSCCC_LL<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * if need to restart cruise use SSCCC_LLb, SSCCC_LLc etc and rename<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the first 'cruise' to SSCCC_LLa<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ie KN301_12, if restart cruise then KN301_12b<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at19, if restart at19b<br />
+<br />
+CTD -&gt; [CRUISEID][staion number].hex<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ie. at18-01001.hex<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kn210001.hex<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some science have there own naming convention which is fine,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; but if science does not care, then we should use<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [CRUISEID][staion number].whatever<br />
+<br />
+Data collection for CTD casts.. unless science has 'there own way', should not start until the pump has turned<br />
+on. The CTD should be put in the water and sent to below the surface (5 meters), when the pumps turn on it<br />
+should be brought back to the surface and then start data collection.<br />
+<br />
+The Cruise USB for WHOI gets all data including multibeam and goes to Rick to Peter to DLA and back to Rick.. If<br />
+you could include a little routing map on the USB sticker or a index card stuck in the cover, that would be<br />
+helpful. Peter does not want/need his own USB drive anymore, if he requests one, he can certainly have it..<br />
+<br />
+ELOG.. We need to keep track of calibration dates and s/n of instruments. I am hoping to get elog to email SAMOS<br />
+whenever an instrument is changed out or calibrated, at least the one's we have control over. Until we have our<br />
+new datalogger up and running we also need to keep the Metadata.txt file up to date. This file travels w/ the<br />
+data to the repositories so is very important.<br />
+<br />
+&nbsp;</p>

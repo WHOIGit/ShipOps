@@ -1,0 +1,104 @@
+$@MID@$: 82
+Date: Thu, 28 Sep 2017 11:22:36 +0000
+Author: lstolp
+S/N: teledyne Modem
+Type: Configuration
+Component: teledyne modem
+Subject: MODEM firmware upgrade
+Cruise: at38
+Attachment: 
+Encoding: HTML
+========================================
+<p>Kevin Walsh [14:58]&nbsp;</p>
+
+<p>updated firmware</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>[14:58]&nbsp;</p>
+
+<p>restored bgpd.conf because it gets erased by firmware upgrade</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>[14:58]&nbsp;</p>
+
+<p>paradise-bgpd# write mem</p>
+
+<p>Configuration saved to /etc/bgpd.conf</p>
+
+<p>paradise-bgpd# show ip bgp</p>
+
+<p>BGP table version is 0, local router ID is 192.168.96.193</p>
+
+<p>Status codes: s suppressed, d damped, h history, * valid, &gt; best, i - internal</p>
+
+<p>Origin codes: i - IGP, e - EGP, ? - incomplete</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; Network &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Next Hop &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Metric LocPrf Weight Path</p>
+
+<p>*&gt;i0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;192.168.96.129 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;100 &nbsp; &nbsp; &nbsp;0 i</p>
+
+<p>*&gt;&nbsp;<a href="http://128.128.252.0/28" target="_blank">128.128.252.0/28</a>&nbsp;0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; 32768 i</p>
+
+<p>*&gt;&nbsp;<a href="http://128.128.252.200/30" target="_blank">128.128.252.200/30</a></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; 32768 i</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>[15:02]&nbsp;</p>
+
+<p>BridgeMode maintained - $get BridgeMode</p>
+
+<p>Leaf</p>
+
+<p>$</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>[15:02]&nbsp;</p>
+
+<p>Leaf is correct parameter</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Kevin Walsh [15:05]&nbsp;</p>
+
+<p>uploaded this image: shore cisco gateway reachable -</p>
+
+<p>Add Comment</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img alt="Inline image 1" height="141" src="https://mail.google.com/mail/u/0/?ui=2&amp;ik=33eaab65c9&amp;view=fimg&amp;th=15ec568616443749&amp;attid=0.1&amp;disp=emb&amp;realattid=ii_15ec56685d983dcf&amp;attbid=ANGjdJ_tU8HZDIhdk79qzyjvH8gUxfd_hBUBxWmqANBB5t04or45OeHrjLynS0JuzTuQlBuhHGeI1uvJj_3CqSG9PBfr24cFZJWMWm-vlre_5lminLqPKvbhjGMAZKE&amp;sz=w946-h282&amp;ats=1506597644463&amp;rm=15ec568616443749&amp;zw&amp;atsh=1" width="473" /></p>
+
+<p>&nbsp;</p>
+
+<p>@lstolp please verify off ships comms OK over HSN from shipboard LAN</p>
+
+<p>&nbsp;</p>
+
+<p>Configuration saved as</p>
+
+<table border="0" cellpadding="2" cellspacing="1" style="width:70%">
+	<tbody>
+		<tr>
+			<td>modem_ship_atlantis_09272017_new_FW</td>
+		</tr>
+	</tbody>
+</table>

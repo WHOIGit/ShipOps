@@ -1,0 +1,48 @@
+$@MID@$: 9
+Date: Fri, 05 Aug 2016 07:11:21 +0000
+Author: dsim
+script: stow and cleanse
+Type: Other
+Source: nav
+Data: general alvin data
+Subject: Changes to Stow and Cleanse scripts
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">&nbsp; Since we now don't gzip data files before downloading, I added lines to the stow and cleanse scripts that would gzip the .DAT and .VDAT files before moving them to the backups directory.<br />
+</span></p>
+$@MID@$: 10
+Date: Fri, 05 Aug 2016 07:11:31 +0000
+Author: dsims
+script: stow and cleanse
+Type: Other
+Source: nav
+Data: general alvin data
+Subject: Changes to Stow and Cleanse scripts
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">&nbsp; Since we now don't gzip data files before downloading, I added lines to the stow and cleanse scripts that would gzip the .DAT and .VDAT files before moving them to the backups directory.<br />
+</span></p>
+$@MID@$: 11
+Date: Fri, 05 Aug 2016 07:14:05 +0000
+Author: dsims
+script: 
+Type: Other
+Source: 
+Data: general alvin data
+Subject: Added Disk Useage to Scripts
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">&nbsp; I added df -h to the end of the stow and cleanse scripts to tell us the current disk usage.<br />
+</span></p>

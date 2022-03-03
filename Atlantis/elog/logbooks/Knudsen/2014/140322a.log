@@ -1,0 +1,15 @@
+$@MID@$: 5
+Date: Sat, 22 Mar 2014 14:29:12 +0000
+Author: AH
+Type: Configuration
+Category: Software
+Subject / Summary: NEPTUNE - back-up for 320B/R - drivers on system
+Cruise: at26-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>Neptune can be used as a backup for the Knudsen computer in running the 320B/R.&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1)&nbsp; Move the SCSII cable over to&nbsp; Neptune (it needs to be rerouted, but it will reach Neptune as of 3/22/2014).&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2)&nbsp; Turn on the 320B/R, then reboot Neptune.&nbsp; </p>
+<h2>***If you get the &quot;new hardware&quot; messages coming up, quickly go through loading the driver - it is on the system - should be able to tell it not to use the internet, but DO load the driver automatically.</h2>
+<p><span style="font-size: medium;"><em>If the driver is not successfully installed you may see symptoms like - only the 3.5 kHz is &quot;found&quot;.&nbsp; If this happens, reload the driver.</em></span></p>

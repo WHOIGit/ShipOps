@@ -1,0 +1,12 @@
+$@MID@$: 21
+Date: Sun, 19 Aug 2012 20:40:08 +0000
+Author: AH
+version: 
+Type: Configuration
+Subject: SSV Calculation
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>I changed the SSV calculation to use SBE45T temporarily as the SBE48Tdata is mostly non-existent or bad.</p>
+<p>I also de-activated the SBE48T for the time being in Calliope</p>

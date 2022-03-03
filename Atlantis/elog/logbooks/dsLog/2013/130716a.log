@@ -1,0 +1,11 @@
+$@MID@$: 11
+Date: Tue, 16 Jul 2013 00:13:50 +0000
+Author: dsims
+svn: 
+Type: Other
+Subject: winch_feeder decoding for winch 2
+Cruise: at26-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp; The decoding was wrong in winch_feeder.pl.&nbsp; Winch 2 is the fiber winch, not the trawl winch.&nbsp; I fixed it.</p>

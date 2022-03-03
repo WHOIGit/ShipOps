@@ -1,0 +1,37 @@
+$@MID@$: 1
+Date: Sat, 26 Jun 2010 13:19:26 +0000
+Author: AH
+System: SeaBeam
+Type: Other
+Category: Hardware
+S/N: 
+Subject / Summary: Receiver Performance Testing
+Cruise: at15-66
+Attachment: 100626_132041_receiver_performance_instructions.jpg,100626_132316_LatestData_20100624.1922.jpg,100626_132408_seabeam_test_parameters_20100624_1933.jpg
+Encoding: HTML
+========================================
+<p>Peter Lemmond requested we run some Receiver Performance tests for him (instructions inserted below).&nbsp;</p>
+<p>The most important part of the test instructions is to make sure both High Voltage Power Supplies are off, and make sure the Power Amplifier is off.</p>
+<p><a href="100626_132041/receiver_performance_instructions.jpg?lb=Multibeam"><img border="0" alt="receiver_performance_instructions.jpg" src="100626_132041/receiver_performance_instructions.jpg?lb=Multibeam&amp;thumb=1" name="att4" id="att4" style="width: 699px; height: 773px;" /></a></p>
+<p>&nbsp;&nbsp;</p>
+<p>Along with the information provided with the tests, Peter requested information regarding acoustic sources on the ship, and weather conditions at the time the test was run.&nbsp; </p>
+<p>We included a screen shot of the &quot;Latest Data&quot; from the website, and a spreadsheet with other information obtained from the Bridge and the Engineroom (see examples below).</p>
+<p><a href="100626_132316/LatestData_20100624.1922.jpg?lb=Multibeam"><img border="0" alt="LatestData_20100624.1922.jpg" src="100626_132316/LatestData_20100624.1922.jpg?lb=Multibeam&amp;thumb=1" name="att4" id="att4" style="width: 613px; height: 382px;" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;<a href="100626_132408/seabeam_test_parameters_20100624_1933.jpg?lb=Multibeam"><img border="0" alt="seabeam_test_parameters_20100624_1933.jpg" src="100626_132408/seabeam_test_parameters_20100624_1933.jpg?lb=Multibeam&amp;thumb=1" name="att4" id="att4" style="width: 492px; height: 270px;" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+$@MID@$: 2
+Date: Sat, 26 Jun 2010 13:34:48 +0000
+Author: AH
+System: SeaBeam
+Type: Fix
+Category: Hardware
+S/N: 
+Subject / Summary: Seabeam - fuse blown in one of the Capacitor Bank Modules
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>Upon trying to power up the Seabeam system to run some Receiver Performance tests (tried to power up with high voltage sources, and power amplifier first, planning to shutdown once system operational), the minicom never arrived at &quot;SBINIT COMPLETE&quot; (it timed out with an error - No Dsp response after 10 minutes, DSP_MN1 pthread_create:&nbsp; System call interruptd), and the red &quot;Fault&quot; light on the Power Amplifier remained illuminated.&nbsp; According to the Maintenance Manual, this indicates a possible blown fuse in one of the Capacitor Bank Modules (page 7-6 Fault Detection).&nbsp; The fuses were all replaced (except in the spare module), and the system was powered up again.&nbsp; The system timed out again on the first attempt, but this was probably due to it not having enough time to completely warm up.&nbsp; We started the system without the high-voltage Power Supplies, reached the &quot;SBINIT COMPLETE&quot; message, and then powered up the High-voltage Power Supplies.&nbsp; This brought the whole system up.&nbsp; The fuses were checked, and one of them was blown (R. Chandler is having some more sent out to us). </p>

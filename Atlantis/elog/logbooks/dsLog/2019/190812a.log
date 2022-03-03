@@ -1,0 +1,91 @@
+$@MID@$: 26
+Date: Mon, 12 Aug 2019 16:10:42 +0000
+Author: Catie
+svn: 
+Type: atdatalog
+Subject: Sample postCSV
+Cruise: at42-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>To run postCSV, run sudo /usr/local/bin/dsLogPostCSV /home/dslog/yourpostinifile.ini&nbsp;</p>
+
+<p>Sample of working dsLog postcsv.ini file:</p>
+
+<p>[GENERAL]</p>
+
+<p>INPUT_DATA_DIR=&quot;/underway/raw/&quot;<br />
+ROOT_DIR=&quot;/tmp/&quot;</p>
+
+<p># To create a &nbsp;single output file for entire date range set to&nbsp;<br />
+# SINGLE_LOGFILE_FLAG=1<br />
+# To create daily or hourly output file set to 0</p>
+
+<p>SINGLE_LOGFILE_FLAG=0</p>
+
+<p>#-----------------------------------------------<br />
+#--- POSTCSV - controls post processing mode<br />
+#-----------------------------------------------<br />
+[POSTCSV]<br />
+START_YEAR=2019<br />
+START_MONTH=8<br />
+START_DAY=09<br />
+START_HOUR=11<br />
+START_MINUTE=15<br />
+START_SECOND=18</p>
+
+<p>END_YEAR=2019<br />
+END_MONTH=8<br />
+END_DAY=09<br />
+END_HOUR=20<br />
+END_MINUTE=07<br />
+END_SECOND=19</p>
+
+<p><br />
+#-----------------------------------------------<br />
+#--- PAR from dsLog raw<br />
+#-----------------------------------------------<br />
+[INPUT_1]<br />
+INFILE_PREFIX=&quot;at&quot;<br />
+INFILE_EXTENSION=&quot;PAR&quot;</p>
+
+<p>NUMBER_OF_CSV_PARSE=1</p>
+
+<p># The minimum for each field is to specify what rule&nbsp;<br />
+# to use to parse the data and the ABSTRACT_INDEX</p>
+
+<p>PARSE_DATATYPE_1=&quot;SSSG_GENERIC&quot;<br />
+PARSE_ABSTRACT_INDEX_1=40<br />
+GENERIC_HEADER_STRING_1=&quot;*-&quot;<br />
+GENERIC_DELIMITER_CHARACTER_1=&quot;&quot;<br />
+GENERIC_INDEX_1=0<br />
+GENERIC_DATA_TYPE_1=1<br />
+GENERIC_DATA_PRECISION_1=2</p>
+
+<p><br />
+#-----------------------------------------------<br />
+# &nbsp;Output a CSV file<br />
+#-------------------------------------------------</p>
+
+<p>[OUTPUT_1]</p>
+
+<p># ENABLE OUTPUT<br />
+OUTPUT_ENABLE=1</p>
+
+<p>OUTPUT_INTERVAL=60</p>
+
+<p>DESTINATION_PREFIX=&quot;ATPARONLY&quot;</p>
+
+<p># specify that the first output is to a file<br />
+DESTINATION_1_TYPE=&quot;FILE&quot;</p>
+
+<p># For each output field specify the ABSTRACT_INDEX and<br />
+# a string to use for the header in data files</p>
+
+<p>OUTFIELD_ABSTRACT_INDEX_1=40<br />
+OUTFIELD_HEADER_STRING_1=&quot;PAR&quot;</p>
+
+<p>NUMBER_OF_OUTPUT_FIELDS=1<br />
+&nbsp;</p>
+
+<p>&nbsp;</p>

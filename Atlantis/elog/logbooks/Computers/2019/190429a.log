@@ -1,0 +1,24 @@
+$@MID@$: 122
+Date: Mon, 29 Apr 2019 19:26:07 +0000
+Author: lstolp
+Type: Configuration
+name: ftp
+server type: DNS
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: DNS forwarders back to WHOI
+Cruise: at42-10
+Attachment: 
+Encoding: plain
+========================================
+
+changed forwarder back to WHOi, this speeds up DNS a wee bit. 
+
+        // added WHOI nameservers lstolp 20160607
+        // removed for shipyard
+        forwarders {
+//                  8.8.8.8;
+                128.128.243.2;
+                128.128.243.3;
+       };

@@ -1,0 +1,17 @@
+$@MID@$: 40
+Date: Mon, 20 Feb 2012 00:19:51 +0000
+Author: lstolp
+Type: Configuration
+name: ftp
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: rsync to mnemosyn
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p>added following line to knorr@ftp:/home/knorr/bin/data_command.delete</p>
+<p>time (cd /home/data/ctd &amp;&amp; find . -path ./archive -prune -o -type f -mmin +5 -print) | rsync --stats --files-from=- /home/data/ctd 192.168.11.30:/home/data/ctd</p>
+<p>The line 'finds' all files that are older than 5 minutes and creates a  file of these files and then rsync's to memory ignoring the archive  directory.</p>

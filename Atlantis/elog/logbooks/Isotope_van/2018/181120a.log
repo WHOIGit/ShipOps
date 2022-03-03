@@ -1,0 +1,123 @@
+$@MID@$: 18
+Date: Tue, 20 Nov 2018 19:31:10 +0000
+Author: AH
+Type: Fix
+Category: Van / Hardware
+Subject: HIDEX - Adjust QPE    SN 2110156  - but presently showing up as 209099
+Cruise: at42-05
+Attachment: 181120_195307_Screen_Shot_2018-11-20_at_1.52.25_PM.png,181120_200051_InkedIMG_20181119_123356_(002)_LI.jpg,181120_200306_HV_setting_ver_1.44.pdf,181120_200423_Screen_Shot_2018-11-20_at_2.03.55_PM.png,181120_200535_Screen_Shot_2018-11-20_at_2.05.06_PM.png
+Encoding: HTML
+========================================
+<p><strong>THIS ENTRY IS REGARDING THE HIDEX PROBLEMS WE&#39;VE BEEN HAVING</strong></p>
+
+<p>The readings coming from the HIDEX scintillation counter were all coming out with either &quot;0&quot; values (most of the time) or extremely high values.&nbsp; The values did not make sense.&nbsp; LabLogic sent some parts that were hand-carried to Guaymas.&nbsp; Upon arrival, the CPU board was changed (as the first step toward repair).&nbsp; Once that was done, we were able to get values for the standards, when measured (rather than 0&#39;s) - see attached screenshot of measurements and efficiency calculations.</p>
+
+<p>QA tests were done, and the results were sent to HIDEX.&nbsp; Max Bracha responded&nbsp; (see email below).&nbsp; Basically the QPE (Quench parameter end point at 99% of the spectrum) results were too high (see attachement 4 for QA results just after CPU board replaced).&nbsp; Based on Max&#39;s email, and the service manual, it was determined that the offset screw on the logic unit needed to be adjusted by rotating it counter-clockwise until the QPE H3 approached 300 and the QPE C14 approached 600 (adjustment made to offset since both QPE H3 &amp; C14 were off by nearly the same amount).&nbsp; In order to to this, the scintillation counter must be turned off, the top removed (clips inside drawer), the sides removed (screws on back) the front bottom piece removed (screws on sides just behind front piece). and then the plate covering the logic board removed (behind front bottom cover, plate held by 4 screws).&nbsp; Once the board is exposed, a tiny flat head screw driver is used to rotate the screw on offset counter-clockwise (this direction reduces the value).&nbsp; Then, the counter needs to be put back together completely and turned on and the QA test run to reveal the new QPE values.</p>
+
+<p>A total of eight iterations of the above were completed.&nbsp; During the last four attempts, thevalues did not decrease any further.&nbsp; Prior to that, one complete revolution was changing the value by 20-25.&nbsp; THe final results are shown in attachment 5.</p>
+
+<p>THERE REMAINS THE ISSUE OF FIXING THE SERIAL NUMBER.&nbsp; Right now, when the scintillation counter is powered up, it takes about 5 minutes to warm up enough to communicate with the computer.&nbsp; Once it is up, one must almost always go to the installation section and &quot;get&quot; the driver information from the counter.&nbsp; Sometimes the serial number pops up as &quot;0&quot;, but it eventually seems to come up as 209099. The scintillation counter runs fine using that serial number.&nbsp; However, the real serial number is supposed to be 2110156.&nbsp; Also, prior to this time, the driver configuration saved properly in the software, and there was no need to &quot;re-get&quot; the information everytime you repowered the system.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>**************************DESCRIPTION OF &quot;STUFF&quot; CHANGING CPU BOARD</p>
+
+<p><span style="font-size:10px">I arrived at the ship today. &nbsp;I tried out the Hidex as it was and was getting the &quot;0&quot; readings for everything.</span></p>
+
+<p><span style="font-size:10px">I began by installing the new CPU board. &nbsp;There seemed to be some issues getting it set up due to the different board number. &nbsp; I got a few errors in<br />
+the Hidex Controller software (example: &nbsp;Error 61). &nbsp;I was able to continue through and the controller software seemed to load. &nbsp;I was not able to get<br />
+the nice page long listing of the parameters as specified in the Service Manual though. &nbsp;The system said &quot;printing&quot; but then a got only a very basic<br />
+session description. &nbsp;I also could not count, because the serial number was not defined.</span></p>
+
+<p><span style="font-size:10px">I went into the MicroWin software. &nbsp;There I got an error about the board too, so I went into the installation section and Driver Set-up and did &quot;get<br />
+device configuration&quot;. &nbsp;It came up with the board number, but the serial number read &quot;0&quot;. &nbsp;I tried it a couple more times and finally the serial number<br />
+came up as &quot;2090099&quot;. &nbsp;I was able to do some brief counts, and I got actual numbers. &nbsp;The counts were so short, that all I can say conclusively so far<br />
+is that the highest count value matched the highest standard value, the middle value matched the second standard value, and the blank read near zero (I<br />
+think it was 6 or something). &nbsp;I am presently running some longer counts overnight. &nbsp;If it continues to work, I will use those values to compute some<br />
+efficiencies to see if the numbers are making any sense.</span></p>
+
+<p><span style="font-size:10px">I would like to know about reading the parameters as specified in the Service Manual. &nbsp;I don&#39;t really understand why it didn&#39;t work. &nbsp;Is it mainly a<br />
+software difference (I have an older manual the uses the Commfiler software, the selections were not in the exact same locations, but I did find the Ser<br />
+- parameters - print).</span></p>
+
+<p><span style="font-size:10px">Also, as far as saving the serial number - do I just hit &quot;save&quot; in the MicroWin software? &nbsp;I had read in the serial number once and it was there; I<br />
+closed the software and when I reopened the software the board number was still there, but the serial number was gone again.</span></p>
+
+<p>***************************************EMAIL FROM HIDEX REGARDING QA RESULTS AFTER CPU BOARD CHANGE</p>
+
+<p><span style="font-size:9px">Date: Mon, 19 Nov 2018 10:45:01 +0000<br />
+From: Max Bracha &lt;max.bracha@hidex.com&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Cc: Justin Rosario &lt;support@lablogic.com&gt;, Joel Acevedo &lt;jacevedo@lablogic.com&gt;, Sarah Fuller &lt;sfuller@whoi.edu&gt;,<br />
+&nbsp; &nbsp; Ashvin Boodhun &lt;aboodhun@lablogic.com&gt;, David Fisichella &lt;dfisichella@whoi.edu&gt;, Sean Rossiter &lt;srossiter@lablogic.com&gt;,<br />
+&nbsp; &nbsp; Justin Rosario &lt;jrosario@lablogic.com&gt;, Hidex Oy &lt;info@hidex.com&gt;, Mark Grainger &lt;mgrainger@lablogic.com&gt;<br />
+Subject: VS: ALLISON 2 - Re: Vs: Hidex 300SL s/n2110156, continuing problems - [LAZ-JZTJS-525]<br />
+Parts/Attachments:<br />
+&nbsp; &nbsp;1 Shown &nbsp; ~2.6 KB &nbsp; &nbsp; Text<br />
+&nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;347 KB &nbsp; &nbsp; Application, &quot;HV setting ver 1.44.pdf&quot;<br />
+&nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.5 MB &nbsp; &nbsp; Image, &quot;InkedIMG_20181119_123356 (002)_LI.jpg&quot;<br />
+----------------------------------------</span></p>
+
+<p><span style="font-size:9px">Hi Allison,&nbsp;</span></p>
+
+<p><span style="font-size:9px">TDCRs are perfect. BGR is also OK.&nbsp;</span></p>
+
+<p><span style="font-size:9px">In case, that start points of the spectrums are OK (starting from the channel 10-30), only the QPEs should be corrected.&nbsp;</span></p>
+
+<p><span style="font-size:9px">Remove the panel, located under the drawer and find the trimmers on the right side of the Analyzer. &nbsp;</span></p>
+
+<p><span style="font-size:9px">Find the trimmers, marked on the picture</span></p>
+
+<p><span style="font-size:9px">Trim 1= Gain (adjust the difference between the QPEs)&nbsp;<br />
+Trim 2=Offset (adjust the values of QPEs)<br />
+Trim3= Zero (adjust start point of the spectrum)</span></p>
+
+<p><span style="font-size:9px">If the Starpoint of the spectrums are OK, you need to adjust the values of the QPEs (Trim2), that you will get 600+/-10 in case of C14 and 300 +/-10 in<br />
+case of H3.&nbsp;</span></p>
+
+<p><span style="font-size:9px">I have attached the instruction with the detailed description.</span></p>
+
+<p><span style="font-size:9px">Note, that QPEs should be decreased only.&nbsp;</span></p>
+
+<p><span style="font-size:9px">After the single movement of the trimmer, the QA test with the MWin should be done.&nbsp;</span></p>
+
+<p><span style="font-size:9px">The procedure, may be time consuming, but it&#39;s easy.&nbsp;<br />
+During the procedure, both side panels should be installed.&nbsp;</span></p>
+
+<p><span style="font-size:9px">If you plan to visit Europe in the future, I can go and help you :)</span></p>
+
+<p><span style="font-size:9px">Best Regards</span></p>
+
+<p><span style="font-size:9px">Max &nbsp;&nbsp;</span><br />
+***************************************************EMAIL AFTER OFFSET ADJUSTMENTS MADE (see QA results attachment 5)</p>
+
+<p>Hi Allison,&nbsp;</p>
+
+<p>The results are very good!<br />
+In case of and older unit, during the PM we accept the values: QPE= 600+/-40 and QPE= 300+/-40.<br />
+The difference between both QPEs and the TDCRs are very good too.&nbsp;</p>
+
+<p>If the instrument works fine from mechanical point of view- just keep it like this.&nbsp;</p>
+
+<p>Best Regards<br />
+Max&nbsp;<br />
+&nbsp;</p>
+
+<p>&nbsp;</p>
+$@MID@$: 19
+Date: Tue, 20 Nov 2018 20:22:20 +0000
+Author: AH
+Type: Other
+Category: scintillation counter
+Subject: HIDEX - running QA 
+Cruise: at42-05
+Attachment: 181120_202316_Hidex_300_SL_OQ_7ml_vials.par,181120_202334_Hidex_300_SL_OQ_20ml_vials.par,181120_202911_Screen_Shot_2018-11-20_at_2.05.06_PM.png
+Encoding: HTML
+========================================
+<p>run the QA test of the MWin:</p>
+
+<p>THe QA test results Hidex has been requesting from us thus far involve using one of the attached .par files to run standards.&nbsp; SInce our standards are in 20 ml vials, we&#39;ve been using the Hidex_300_SL_OQ_20ml_vials.par file.&nbsp; Make a copy of the default .par file in the mikroWin directory (so you can go back to it after the test).&nbsp; Copy the&nbsp;Hidex_300_SL_OQ_20ml_vials.par file to default.par.&nbsp; Re-start the MikroWin software.&nbsp; Place the H3 in position 1, C14 in postion 2, and blank in position 3.&nbsp; Make sure the vials are marked for reading on the template.&nbsp; Run the test.&nbsp; Export the results using &quot;line&quot;.&nbsp; The results should be in an execl file that looks something like the one attached.</p>

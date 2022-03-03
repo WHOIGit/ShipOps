@@ -1,0 +1,15 @@
+$@MID@$: 83
+Date: Tue, 21 Mar 2017 22:14:18 +0000
+Author: Catie
+System: EM122 - Kongsberg
+Type: Configuration
+Category: calibration survey
+S/N: 
+Subject / Summary: Patch test performed 19 March 2017
+Cruise: at37-10
+Attachment: 170321_221401_ATL_EM122_initial_calibration_results_20170319.pdf
+Encoding: HTML
+========================================
+<p>Patch test performed 19 March 2017 after changing the pitch offset in the Phins from -0.142 to +0.142.</p>
+<p>New Angular offsets for Attitude 1/COM2 in SIS are: Roll -0.12, Pitch 0.04, and Heading -0.02. These lines are still pending verification after further research on the correlation between vessel yaw and outer beam wobbles.</p>
+<p>Full report from MAC attached.</p>

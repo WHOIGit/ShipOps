@@ -1,0 +1,342 @@
+open 157.237.14.60
+username
+password
+
+!mkdir c:\temp\backup\frompu\slot0
+lcd c:\temp\backup\frompu\slot0
+cd EM122/SET1/SLOT0
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot1
+lcd c:\temp\backup\frompu\slot1
+cd ../../../EM122/SET1/SLOT1
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot2
+lcd c:\temp\backup\frompu\slot2
+cd ../../../EM122/SET1/SLOT2
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot3
+lcd c:\temp\backup\frompu\slot3
+cd ../../../EM122/SET1/SLOT3
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot4
+lcd c:\temp\backup\frompu\slot4
+cd ../../../EM122/SET1/SLOT4
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot5
+lcd c:\temp\backup\frompu\slot5
+cd ../../../EM122/SET1/SLOT5
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot6
+lcd c:\temp\backup\frompu\slot6
+cd ../../../EM122/SET1/SLOT6
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot7
+lcd c:\temp\backup\frompu\slot7
+cd ../../../EM122/SET1/SLOT7
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot8
+lcd c:\temp\backup\frompu\slot8
+cd ../../../EM122/SET1/SLOT8
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot9
+lcd c:\temp\backup\frompu\slot9
+cd ../../../EM122/SET1/SLOT9
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot10
+lcd c:\temp\backup\frompu\slot10
+cd ../../../EM122/SET1/SLOT10
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot11
+lcd c:\temp\backup\frompu\slot11
+cd ../../../EM122/SET1/SLOT11
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot12
+lcd c:\temp\backup\frompu\slot12
+cd ../../../EM122/SET1/SLOT12
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot13
+lcd c:\temp\backup\frompu\slot13
+cd ../../../EM122/SET1/SLOT13
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot14
+lcd c:\temp\backup\frompu\slot14
+cd ../../../EM122/SET1/SLOT14
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot15
+lcd c:\temp\backup\frompu\slot15
+cd ../../../EM122/SET1/SLOT15
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot16
+lcd c:\temp\backup\frompu\slot16
+cd ../../../EM122/SET1/SLOT16
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot17
+lcd c:\temp\backup\frompu\slot17
+cd ../../../EM122/SET1/SLOT17
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot18
+lcd c:\temp\backup\frompu\slot18
+cd ../../../EM122/SET1/SLOT18
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot19
+lcd c:\temp\backup\frompu\slot19
+cd ../../../EM122/SET1/SLOT19
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot20
+lcd c:\temp\backup\frompu\slot20
+cd ../../../EM122/SET1/SLOT20
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot21
+lcd c:\temp\backup\frompu\slot21
+cd ../../../EM122/SET1/SLOT21
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot22
+lcd c:\temp\backup\frompu\slot22
+cd ../../../EM122/SET1/SLOT22
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+!mkdir c:\temp\backup\frompu\slot23
+lcd c:\temp\backup\frompu\slot23
+cd ../../../EM122/SET1/SLOT23
+BINARY
+get tx0beamweight.txt
+get tx1beamweight.txt
+get tx2beamweight.txt
+get tx3beamweight.txt
+get tx4beamweight.txt
+get tx5beamweight.txt
+get tx6beamweight.txt
+get tx7beamweight.txt
+get tx8beamweight.txt
+
+
+quit

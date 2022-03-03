@@ -1,0 +1,18 @@
+$@MID@$: 25
+Date: Fri, 10 Jul 2015 03:31:00 +0000
+Author: Catie
+Type: Firmware
+gps: CNAV
+Category: Other
+Subject: June30 Leap Second/Firmware upgrade
+Cruise: at29-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>June 30, 2015 Leap Second</p>
+<p>-GLONASS satellites disabled prior to leap second.</p>
+<p>-CNAV had issues at the leap second, failing to continue offering GPGGA string. Issue worldwide, not just Atlantis.</p>
+<p>-Temporary fix applied July 1: Enabled DPGGA string and changed prefix to &quot;GP&quot;.</p>
+<p>-Temporary fix disabled and CNAV rebooted to restore normal GPGGA on July 5.</p>
+<p>-Firmware upgraded to Receiver v3.5.8.0 and Gator v6.2.12, also on July 5.</p>
+<p>&nbsp;</p>

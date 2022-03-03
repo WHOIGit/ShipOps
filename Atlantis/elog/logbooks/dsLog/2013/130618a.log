@@ -1,0 +1,13 @@
+$@MID@$: 9
+Date: Tue, 18 Jun 2013 15:09:26 +0000
+Author: AH
+svn: 
+Type: atdatalog
+Subject: running data collection
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: xx-large;">sudo /etc/init.d/dsLog [start|stop|restart]</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">sudo </span><span style="font-size: xx-large;">/etc/init.d/dsLogCSV [start|stop|restart]</span></p>

@@ -1,0 +1,140 @@
+$@MID@$: 37
+Date: Mon, 24 Jun 2019 12:54:03 +0000
+Author: AH - from emails
+Type: System
+gps: CNAV
+Category: Routine
+Subject: Port 1 CNAV receiver - Configured for Seapath 
+Cruise: at42-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>TO CNAV:</p>
+
+<p>Request Details</p>
+
+<p>Requester:&nbsp;sssg&amp;#x40;atlantis.whoi.edu</p>
+
+<p>Creation Date:&nbsp;Mar 8, 2019 03&amp;#x3a;09 PM</p>
+
+<p>Request ID:&nbsp;4514</p>
+
+<p>Title:&nbsp;Cnav 3050&amp;#x2f;Cnavigator III RTCM output</p>
+
+<p>Description:&nbsp;</p>
+
+<p>Hello-</p>
+
+<p>I have a CNav 3050 and CNavigator III with a valid corrections<br />
+subscription. I am attempting to output RTCM info to a Kongsberg Seapath<br />
+sensor. I enabled RTCM via the CNavigator III via Menu &gt; Port 3 (the port<br />
+connected to my Kongsberg Seapath) &gt; Output Settings &gt; Output RTCM &gt; Yes.<br />
+However, I have so far not had success getting the Seapath to recognize<br />
+the RTCM from the CNav.</p>
+
+<p>Is there a further step or setting other than that mentioned above<br />
+necessary to enable the output of the RTCM messages from Port 3 of the<br />
+CNavigator III?</p>
+
+<p>When connecting to Port 3 via a terminal on a computer, is there something<br />
+I should be seeing to verify the presence of the RTCM messages? I<br />
+currently see nothing when connected via a terminal. I also see no 1Hz<br />
+voltage oscillation on the Port 3 DB9 when solely outputting RTCM, that is<br />
+present when I enable a standard NMEA message.</p>
+
+<p>Thank you,<br />
+Catie Graver<br />
+Woods Hole Oceanographic Institution<br />
+R/V Atlantis</p>
+
+<p>Date: Fri, 8 Mar 2019 13:31:02 -0800 (PST)<br />
+From: C-Nav Support &lt;cnavsupport@oceaneering.com&gt;<br />
+To: sssg@atlantis.whoi.edu<br />
+Subject: Re: [Request ID :##4514##] Cnav 3050/Cnavigator III RTCM output</p>
+
+<p>Hi Catie,</p>
+
+<p>It is recommended to output directly from the C-Nav3050 rather from the display. Do you have an available port on the<br />
+C-Nav3050 to do this? May I know what RTCM message type that the Seapath is expecting?</p>
+
+<p>When viewing RTCM messages in a terminal, it will not be legible but you should still see the gibberish as an indicator that<br />
+it is in fact sending the messages.</p>
+
+<p>Thanks and Best Regards,</p>
+
+<p>Jacob Latta</p>
+
+<p>Date: Fri, 8 Mar 2019 23:27:48 +0000 (UTC)<br />
+From: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+To: C-Nav Support &lt;cnavsupport@oceaneering.com&gt;<br />
+Subject: Re: [Request ID :##4514##] Cnav 3050/Cnavigator III RTCM output</p>
+
+<p>Thank you Jacob for your reply.</p>
+
+<p>I can free up a Com1 on the 3050 for the purpose of feeding the Seapath. However, it is not clear to me how to enable the<br />
+output of RTCM messages from Com1. My choices in Menu &gt; CNav3050 &gt; Output Configuration &gt; Com1 seem to be limited to NMEA<br />
+message types. I am unable to locate an option similar to that in Menu &gt; Port 3 &gt; Output Settings &gt; Other Output &gt; Output<br />
+RTCM.</p>
+
+<p>The Seapath specifies RTCM-SC104 v. 2.2, 2.3 and 3 as corrections inputs. An option exists within the Seapath HMI to input<br />
+RTCM specifically from a CNav unit, and my Kongsberg service tech has assured me he has seen the CNav corrections input into<br />
+the Seapath on other vessels.</p>
+
+<p>Thank you,<br />
+Catie</p>
+
+<p>Date: Fri, 8 Mar 2019 15:57:36 -0800 (PST)<br />
+From: C-Nav Support &lt;cnavsupport@oceaneering.com&gt;<br />
+To: sssg@atlantis.whoi.edu<br />
+Subject: Re: [Request ID :##4514##] Cnav 3050/Cnavigator III RTCM output</p>
+
+<p>Hi Catie,</p>
+
+<p>You can select the RTCM message and output port on the Differential Configuration page. Since you are outputting the RTCM, you<br />
+will want to choose Base RTCM in the drop list for&nbsp;Mode and Com1 for the&nbsp;Base Output Port. You will also need to set<br />
+the&nbsp;Dynamic Mode to Dynamic if it is not already set to that.</p>
+
+<p>Thanks and Best Regards,</p>
+
+<p>Jacob Latta</p>
+
+<p>C-Nav Support<br />
+That worked. Thank you very much!<br />
+Catie</p>
+
+<p>Date: Tue, 12 Mar 2019 16:15:53 +0000 (UTC)<br />
+From: Laura Stolp &lt;lstolp@whoi.edu&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Cc: Laura Stolp &lt;lstolp@whoi.edu&gt;<br />
+Subject: Re: RTCM</p>
+
+<p>Nice :)</p>
+
+<p>On Tue, 12 Mar 2019, atlantis sssg wrote:</p>
+
+<p>&gt; Yes. I heard back from CNAV and they walked me through getting the messages out of the CNAV - some obscure settings in the<br />
+&gt; differential corrections menu and then you must use one of the native com ports on the receiver.<br />
+&gt;&nbsp;<br />
+&gt; I was ready to give up on the Seapath when I found the trick is to tell the Seapath that it is not a CNav, just a generic<br />
+&gt; receiver with generic RTCM messages, manufactured by CNav.<br />
+&gt;&nbsp;<br />
+&gt; Made new screenshots and exported a new configuration to document the settings.<br />
+&gt;&nbsp;<br />
+&gt;&nbsp;<br />
+&gt; C<br />
+&gt;&nbsp;<br />
+&gt; On Tue, 12 Mar 2019, Laura Stolp wrote:<br />
+&gt;&nbsp;<br />
+&gt; &gt; Hi Catie,<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; Any luck w/ CNAV and the RTCM message?<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; thanks, laura<br />
+&gt; &gt;&nbsp;<br />
+&gt;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>C-Nav Support</p>
+
+<p>&nbsp;</p>

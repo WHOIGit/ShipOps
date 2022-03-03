@@ -1,0 +1,22 @@
+$@MID@$: 14
+Date: Thu, 25 Apr 2019 21:03:50 +0000
+Author: AH
+Type: Software
+Category: Routine
+Subject: FWD/HYDRO WINCH (CTD) CALIBRATION
+Cruise: at42-09
+Attachment: 190425_210447_3ps_calibration_readings_20190425.xlsx
+Encoding: HTML
+========================================
+<p>We ran through a calibration check. &nbsp;The values were out of spec. &nbsp;So, we re-calibrated. &nbsp;We ran a set of calibration check values. &nbsp;We<br />
+had one reading that was off by about 6% (close to 1000 lbs tension). &nbsp;So, we went back up to close to 1000 lbs and ran three more numbers<br />
+(~1000, ~500, close to 0). &nbsp;This time the values looked good. &nbsp;So, we called it done!</p>
+
+<p>The values in the 3ps right now are:</p>
+
+<p>Low sensor value &nbsp;3932.284<br />
+Low display value &nbsp;0</p>
+
+<p>High sensor value &nbsp; 6072.136<br />
+High display value &nbsp; 4057<br />
+&nbsp;</p>

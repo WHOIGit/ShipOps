@@ -1,0 +1,178 @@
+$@MID@$: 8
+Date: Thu, 27 Aug 2015 16:21:57 +0000
+Author: lstolp 
+S/N: ADCP300 (who knows)
+Type: Configuration
+Category: Hardware
+Subject: ADCP 300 installed prior to cruise
+Cruise: at30-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installation completed on August 3, 2015</p>
+<p>A few more bits of information.&nbsp; The 300 that we put in is the exact same one that was<br />
+on the Knorr.&nbsp; I've now got the deck box plugged into the computer, (currents1).&nbsp; The<br />
+deckbox is currently plugged into port 2 on the usb dongle.&nbsp; (ttyUSB1?)&nbsp; The cable to<br />
+the transducer is not yet connected.<br />
+&nbsp;</p>
+<p>Offset angle after bottom tracking calibration w/ per Jules:</p>
+<p><br />
+I changed the angle from 55 to 50.85 so you can<br />
+do something like<br />
+<br />
+&nbsp; *************</p>
+<p>Date: Mon, 03 Aug 2015 09:40:38 -0400<br />
+From: rlaird@whoi.edu<br />
+To: jules hummon &lt;hummon@hawaii.edu&gt;<br />
+Cc: sssg@whoi.edu, fbahr@whoi.edu, sssg@atlantis.whoi.edu<br />
+Subject: Re: Neil Armstrong ADCP windows.<br />
+<br />
+Hi Jules<br />
+<br />
+We are just finishing up the installation of a 300 workhouse ADCP on the Atlantis.&nbsp; This is a permanent installation.<br />
+The ADCP has no window, is painted with bottom paint, and beam three is probably about 55 degrees to stbd.&nbsp; (55 degrees<br />
+clockwise)&nbsp; We had a loaner 300 in before, maybe everything is still ready to go.<br />
+<br />
+At the moment, I'm just finishing up the wiring from the ADCP head to the deck box, the deck box is not powered up, (but<br />
+soon will be), the Atlantis is at the dock in Woods Hole, and has a shore internet connection.<br />
+<br />
+Robbie<br />
+&nbsp;</p>
+<p>****************</p>
+<p>Date: Tue, 04 Aug 2015 09:23:53 -0400<br />
+From: UHDAS ADCP group &lt;uhdas@hawaii.edu&gt;<br />
+To: rlaird@whoi.edu<br />
+Cc: uhdas@hawaii.edu, Laura Stolp &lt;laura@striker.whoi.edu&gt;, jules hummon &lt;hummon@hawaii.edu&gt;, sssg@whoi.edu,<br />
+&nbsp;&nbsp;&nbsp; sssg@atlantis.whoi.edu<br />
+Subject: Re: Atlantis 300 ADCP<br />
+<br />
+Robbie<br />
+<br />
+I guess we're all ready to go then.<br />
+I changed the angle for the WH300 to 55deg, as you suggested.<br />
+<br />
+Cute cruise name: &quot;docktestfor300yippee&quot;&nbsp; ha ha!<br />
+<br />
+So, when you go out on the upcoming cruise, put the WH300 in<br />
+bottom track mode when the ship is over the shelf on its way out, and<br />
+we can adjust the calibration soon after that.&nbsp; If you all can<br />
+call the upcoming transit AT30_01_cal, then after we fix the<br />
+calibration angle you can call the regular cruise AT30_01.<br />
+<br />
+Who is sailing?&nbsp; Amy and Dave?&nbsp; (Hi, Amy!&nbsp; Hi, Dave!)<br />
+<br />
+Jules<br />
+********************</p>
+<p>&nbsp;Date: Thu, 06 Aug 2015 11:39:51 -0400<br />
+From: UHDAS ADCP group &lt;uhdas@hawaii.edu&gt;<br />
+To: 'Atlantis SSSG' &lt;sssg@atlantis.whoi.edu&gt;, SSSG List &lt;sssg@whoi.edu&gt;<br />
+Cc: uhdas@hawaii.edu<br />
+Subject: Atlantis ADCP issues<br />
+<br />
+Hi folks<br />
+<br />
+(1) WH300<br />
+(2) OS75<br />
+<br />
+<br />
+(1) WH300<br />
+<br />
+First of all, we can adjust the calibration of the WH300 any time.<br />
+<br />
+The calibration block looks like this:<br />
+<br />
+---------<br />
+/home/adcp/cruise/proc/wh300/cal/botmtrk/btcaluv.out<br />
+<br />
+unedited: 410 points<br />
+edited:&nbsp;&nbsp; 236 points, 2.0 min speed, 2.5 max dev<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; median&nbsp;&nbsp;&nbsp;&nbsp; mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; std<br />
+amplitude&nbsp;&nbsp; 1.0001&nbsp;&nbsp; 1.0008&nbsp;&nbsp; 0.0025<br />
+phase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.1389&nbsp;&nbsp; 4.1460&nbsp;&nbsp; 0.0790<br />
+---------<br />
+So the 55deg I dialed in needs to be adjusted to 55-(4.15) = 50.85<br />
+<br />
+<br />
+I can make that change and let you know that I did,<br />
+but then you need to<br />
+<br />
+- stop logging<br />
+- end cruise (yes, sorry, end&nbsp; AT30_01 )<br />
+- kill UHDAS GUI<br />
+<br />
+- start UHDAS GUI (so it will read the new transducer angle)<br />
+- start new cruise (yes, sorry)<br />
+- start recording<br />
+<br />
+I don't know if the next cruise was supposed to be AT30_02 or AT31<br />
+but you had better make sure before naming the next segment of this<br />
+cruise.<br />
+<br />
+Anyway, let me know if/when you want me to do this.<br />
+<br />
+(2) OS75<br />
+<br />
+The OS75 data are reading &quot;zero&quot; for temperature.&nbsp; It has done this<br />
+in the past,&nbsp;&nbsp; but it is Not Good.&nbsp; Let's try to get it back to normal<br />
+by kicking it in the pants.&nbsp; This has worked before:<br />
+- stop logging<br />
+- no need to end cruise<br />
+- turn off the deck unit<br />
+- count to 10<br />
+- turn it on<br />
+- start recording<br />
+<br />
+Does the temperature still read zero?<br />
+*******************</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+$@MID@$: 9
+Date: Thu, 27 Aug 2015 16:23:15 +0000
+Author: lstolp
+S/N: ADCP75 (s/n whoknows)
+Type: General Problem
+Category: Hardware
+Subject: temperature reading zero
+Cruise: at30-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;<br />
+&gt; &gt; The OS75 data are reading &quot;zero&quot; for temperature.&nbsp; It has done this<br />
+&gt; &gt; in the past,&nbsp;&nbsp; but it is Not Good.&nbsp; Let's try to get it back to normal<br />
+&gt; &gt; by kicking it in the pants.&nbsp; This has worked before:<br />
+&gt; <br />
+&gt;&nbsp;&nbsp;&nbsp; If you would be so kind and make the changes, I will shut everything down<br />
+&gt; after that, and power cycle the OS75.&nbsp; Hopefully that will fix things.<br />
+&nbsp;</p>
+<p>Date: Sat, 08 Aug 2015 10:45:14 -0400<br />
+From: UHDAS ADCP group &lt;uhdas@hawaii.edu&gt;<br />
+To: hummon@hawaii.edu, dropbox@rvdata.us, fbahr@whoi.edu, laura@striker.whoi.edu<br />
+Cc: uhdas@hawaii.edu<br />
+Subject: Re: Atlantis ADCP shore status<br />
+<br />
+David<br />
+<br />
+<br />
+The temperature is still at 0C.<br />
+<br />
+We need to discuss this with RDI, but separately, I should change<br />
+another setting in the code, which will require you to start another<br />
+cruise name.&nbsp; Will that be OK?&nbsp; I need to hardwire the soundspeed<br />
+to be 1530m/s to override the bad temperature.<br />
+<br />
+May I proceed?<br />
+<br />
+Jules<br />
+<br />
+<br />
+&gt; Current cruise: at30_01a&nbsp;&nbsp;&nbsp;&nbsp; ** is logging **<br />
+&gt; Database time ranges:<br />
+&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wh300 2015/08/06&nbsp; 20:31:58 to 2015/08/08&nbsp; 14:19:47&nbsp; (10 min. ago)<br />
+&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; os75nb 2015/08/06&nbsp; 20:35:00 to 2015/08/08&nbsp; 14:16:47&nbsp; (13 min. ago)<br />
+&gt; <br />
+&gt; approximate lat, lon, depth:&nbsp;&nbsp; 44 0.07597 N&nbsp;&nbsp; 58 0.56940 W&nbsp;&nbsp; depth=89<br />
+&gt; <br />
+<br />
+<br />
+&nbsp;</p>

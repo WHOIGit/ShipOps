@@ -1,0 +1,68 @@
+$@MID@$: 15
+Date: Sun, 04 Dec 2016 19:05:08 +0000
+Author: AH
+Type: Configuration
+Category: Software
+equipment: Sonardyne software
+Subject: PRDID string sign convention change
+Cruise: at37-05
+Attachment: 
+Encoding: HTML
+========================================
+<p><style type="text/css">
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 65536 0 -2147483648 0;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Comic Sans MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Comic Sans MS";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style></p>
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">PRDID string &ndash; this is the string we are now sending from the phins.<span style="mso-spacerun: yes">&nbsp; </span>This is the string that we sent for the entire previous cruise, and never heard any complaints (at37-04 Seyfried).<span style="mso-spacerun: yes">&nbsp; </span>During the in port, the phins underwent a firmware upgrade.<span style="mso-spacerun: yes">&nbsp; </span>Once back offshore, we tried to track a dredge beacon (first operation with sonardyne).<span style="mso-spacerun: yes">&nbsp; </span>The beacon was all over the place.<span style="mso-spacerun: yes">&nbsp; </span>It turned out that the PRDID string roll sign convention is now &lsquo;-&lsquo; port up, &lsquo;+&rsquo; port down.<span style="mso-spacerun: yes">&nbsp; </span>This was confirmed via ixBlue representatives (and data we collected that showed it to be true and sent in).<span style="mso-spacerun: yes">&nbsp; </span>What has not been confirmed is when it happened.<span style="mso-spacerun: yes">&nbsp; </span>We believe, that since the Alvin tracking seemed fine during the at37-04 cruise, that is happened when we upgraded the the firmware on the phins.</span></p>
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial">I (Allison) made an elog for the Sonardyne.<span style="mso-spacerun: yes">&nbsp; </span>It resides on Riley right now (199.92.162.99:8090).<span style="mso-spacerun: yes">&nbsp; </span>We need to get people to start using it and make a plan for backing it up.<span style="mso-spacerun: yes">&nbsp; </span>It is reachable via the Alvin network and is the home page on firefox on the sonardyne computer.<span style="mso-spacerun: yes">&nbsp; </span>Joint use of the system has gone remarkably well so far &ndash; but there is definitely communication issues and some people freely making changes without relaying them properly - me and Sean mostly </span><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:Wingdings;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial;
+mso-char-type:symbol;mso-symbol-font-family:Wingdings"><span style="mso-char-type:
+symbol;mso-symbol-font-family:Wingdings">L</span></span><span style="font-size:
+14.0pt;mso-bidi-font-size:12.0pt;font-family:Arial">.<span style="mso-spacerun:
+yes">&nbsp; </span>I am hoping the elog will help alleviate that.</span></p>

@@ -1,0 +1,74 @@
+$@MID@$: 2
+Date: Tue, 25 Oct 2011 10:45:34 +0000
+Author: AH
+Type: Routine
+Subject: ELOG - rsync science r2r elog to linus
+Cruise: at18-12
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: x-large;">The science elog is on a dreamplug now (June 2013)</span></p>
+<p><del>
+<p><span style="font-size: large;">logon to memory as sssg:<br />
+</span></p>
+<p><span style="font-size: large;">the SCIENCE elog directory for r2r is kept in the /shipdata&nbsp; directory under the cruise number</span></p>
+<p>&nbsp;</p>
+</del></p>
+<p><span style="font-size: large;">************</span></p>
+<p><span style="font-size: large;">it can be reached from any general use computer by using a browser to go to:<br />
+</span></p>
+<p><span style="font-size: large;">http://r2rat01:8</span><span style="font-size: large;">090</span><br />
+<span style="font-size: large;">*************************</span></p>
+<p><span style="font-size: large;">TO GET ONTO r2rat01:</span></p>
+<p><span style="font-size: large;">ssh r2root@r2rat01<br />
+pw: r2r!2010<br />
+</span>*************************************</p>
+<p>TO END A CRUISE</p>
+<p>&nbsp;<span style="font-size: large;">GO TO:</span></p>
+<pre><span style="font-size: xx-large;">http://[elog server]:8090/?cmd=ecfmhome  there are some instructions on what to do to start and end cruises there<br /></span></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">At the end of a cruise:</span></p>
+<p><del><span style="font-size: large;">rsync -rv</span> <span style="font-size: large;">/shipdata/latmix2/r2r root@linus:/home/data/</span></del></p>
+<p><span style="font-size: large;">****************</span></p>
+<p>&nbsp;</p>
+<p><del>
+<p><span style="font-size: large;">TO EXPORT to a CSV file<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GO to appropriate tab and select &quot;FIND&quot;</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pick the &quot;CSV (&quot;,&quot; separated)&quot; radio button</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pick the start and end date (or other appropriate criteria)</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then select &quot;SEARCH&quot;</span></p>
+<p>&nbsp;<span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the file will always be named &quot;export.csv&quot;&nbsp; so keep this in mind if you are saving more than one - like in the r2r case, we are saving both the &quot;SE&quot; and the &quot;DS&quot; (data snap) logbooks</span></p>
+<p><span style="font-size: large;">&gt;&nbsp; - when the cruise is over <br />
+&gt;&nbsp;&nbsp;&nbsp; and then create a csv file from the finished cruiselog and put it in<br />
+&gt;&nbsp;&nbsp;&nbsp; the proc directory named:<br />
+&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R2R_ELOG_AT18-12-SE_[yyyymmdd].csv</span></p>
+</del></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p>&nbsp;June 18, 2013:</p>
+<p>r2root@r2rat01:~$ ps -ef | grep elog<br />
+elog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1854&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp; 0 Jun17 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:00:13 /home/r2root/current/bin/elog/ecfmd -D -x -p 8090 -s /shipdata/at26-01/r2r/eventlog/elog -d /shipdata/at26-01/r2r/eventlog/elog/logbooks -c /shipdata/at26-01/r2r/eventlog/elog/elogd.cfg -y /shipdata/at26-01/r2r/info/voc -z /shipdata/at26-01/r2r/eventlog/elog/ecfm<br />
+r2relog&nbsp;&nbsp; 1926&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp; 0 Jun17 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:04:08 /usr/bin/perl /home/r2root/current/bin/r2r_rtd/cgi-bin/rt_datalog.pl -s /tmp/rt_datafile.dat -n 55000, -q 41111 -o/shipdata/at26-01/r2r/rtd -a1 -t -lsnap -r15<br />
+r2relog&nbsp;&nbsp; 1927&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp; 0 Jun17 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:00:00 ssh -nNT -C -p 22 -R 42203:localhost:22 128.128.76.6<br />
+r2root&nbsp;&nbsp;&nbsp; 7997&nbsp; 7599&nbsp; 0 16:09 pts/0&nbsp;&nbsp;&nbsp; 00:00:00 grep elog<br />
+&nbsp;</p>
+<p><del>
+<p><span style="font-size: large;">Start and stop science elogs on memory</span></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">sudo -s<br />
+/shipdata/[cruiseid]/r2r/eventlog/elog/scripts/elogd.8090 stop/start<br />
+<br />
+ps -auwx | grep elogd<br />
+<br />
+</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">**********</span></p>
+<p><span style="font-size: large;">to run elog</span></p>
+<p><span style="font-size: large;">/usr/local/sbin/elogd -x -p 8090 -s /shipdata/{cruise id}/r2r/eventlog/elog -d /shipdata/{cruise id}/r2r/eventlog/elog/logbooks -c /shipdata/{cruise id}/r2r/eventlog/elog/elogd.cfg</span></p>
+<p>&nbsp;</p>
+</del></p>
+<p>&nbsp;</p>

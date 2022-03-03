@@ -1,0 +1,676 @@
+$@MID@$: 36
+Date: Thu, 12 Sep 2013 21:31:15 +0000
+Author: AH
+Type: Wire
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: MEGGER RESULTS - .322" Conductor NSF-09-152
+Cruise: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">25 April 2014 </span></p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-098-152</p>
+<p>Inside tape = 58 meters</p>
+<p>Outside tape = 7979.5 meters</p>
+<p>Overall length = 7921.5 meters</p>
+<p>Air temp: 75 F</p>
+<p>Tested entire wire from computer lab, through, drum and j-boxes to termination</p>
+<p>&nbsp;</p>
+<p>Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-green   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 726 MOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp; &nbsp; &nbsp;&nbsp; 1.34 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.867 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-white &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 705&nbsp; MOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.564&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 805 MOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.05&nbsp; &nbsp; &nbsp;&nbsp; 1.15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.920 &nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 556 MOhms &nbsp; &nbsp; &nbsp; &nbsp; 1.05&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.566&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 747 MOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.09&nbsp; &nbsp; &nbsp; &nbsp; 1.15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.871&nbsp; &nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 566 MOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.02&nbsp; &nbsp; &nbsp; &nbsp; 1.06 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.566&nbsp; <br />
+</span></p>
+<h1>&nbsp;*The insulation resistance values are low - suspicious of the</h1>
+<h1>&nbsp;&nbsp; slip ring and/or cable running from slip ring to drum.&nbsp; It could still be the</h1>
+<h1>&nbsp;&nbsp; junction box on the drum, but I don't think so at this point.</h1>
+<p>&nbsp;</p>
+<p>CONTINUITY:</p>
+<p>Red = 245.5 - 0.86 = 244.6 Ohms</p>
+<p>Black = 246.2 - 0.86 = 245.3 Ohms</p>
+<p>White = 247.2 - 0.86 = 246.3 Ohms</p>
+<p>Green to Ship = 0.86 Ohms</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><del> </del></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><del> </del></p>
+<p>&nbsp;</p>
+<p><del> </del></p>
+<p><span style="font-size: xx-large;">17 March 2014 </span></p>
+<p>Fwd .322 Wire, NSF-098-152</p>
+<p>Inside tape = 58 meters</p>
+<p>Outside tape = 9843 meters</p>
+<p>Overall length = 9785 meters</p>
+<p>Air temp: 13.5C</p>
+<p>&nbsp;</p>
+<p>Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  Continuity Ohms &nbsp; &nbsp; &nbsp;</span></p>
+<p><span style="font-size: medium;">Red-green  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.346&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.12 &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; 1.20 &nbsp; &nbsp;&nbsp; 1.079 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 292 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-white &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.090 &nbsp; GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.17&nbsp; &nbsp;&nbsp;&nbsp; 0.694&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 592<br />
+</span></p>
+<p><span style="font-size: medium;">Black-green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.290&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.069&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 295<br />
+</span></p>
+<p><span style="font-size: medium;">White-red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.200&nbsp;&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.10 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.739 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 590 <br />
+</span></p>
+<p><span style="font-size: medium;">White-green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.539&nbsp;&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.08 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.074&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 300<br />
+</span></p>
+<p><span style="font-size: medium;">Black-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.690&nbsp;&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.15&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.739&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 584</span></p>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>09 February 14</h1>
+<p>Test by: Allison Heater</p>
+<p><span style="font-size: medium;">Spool End Tape (inside) = 58  meters<br />
+</span></p>
+<p><span style="font-size: medium;">Outside tape = 9846.5 meters <br />
+</span></p>
+<p><span style="font-size: medium;">Overall Length = 9788.5 meters</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">Megger test of 0.322&nbsp; from bare wire one deck (termination end, but no termination yet) through drum, slip ring and down to computer lab) - entire wire<br />
+</span></strong></p>
+<p><span style="font-size: medium;">Continuity:&nbsp;&nbsp; (outside air  temperature: 51.8 degrees Fahrenheit<br />
+</span></p>
+<p><span style="font-size: medium;">Green - White =&nbsp; 295.2 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Red =&nbsp; 292.0 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Black =&nbsp; 295.2 Ohms</span><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: medium;">Green - ship = 0.87 Ohms</span></p>
+<p>&nbsp;<span style="font-size: medium;">Wires</span><span style="font-size: medium;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7.18&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.31 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.698<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.98 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.30&nbsp; &nbsp; &nbsp;&nbsp; 0.697&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.384 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.12 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.11 &nbsp; &nbsp; &nbsp; 1.138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-shield      (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.688 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.18 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.23 &nbsp; &nbsp; &nbsp; 1.140 &nbsp; &nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.54 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.19 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.31 &nbsp; &nbsp; &nbsp; 0.737 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.14&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.18 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.26 &nbsp; &nbsp;&nbsp; 1.070&nbsp; <br />
+</span></p>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>27ish November 13</h1>
+<p>Test by: Catie Graver</p>
+<p><span style="font-size: medium;">Spool End Tape (inside) = 58  meters<br />
+</span></p>
+<p><span style="font-size: medium;">Outside tape = 9867.5 meters <br />
+</span></p>
+<p><span style="font-size: medium;">Overall Length = 9809.5 meters</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">Megger test of 0.322&nbsp; from bare wire on deck to bare wire on drum. No other cables/junctions included.</span></strong></p>
+<p><span style="font-size: medium;">Continuity:&nbsp;&nbsp; (outside air  temperature: Really Hot. Got to be 30C at least)<br />
+</span></p>
+<p><span style="font-size: medium;">Green - White =&nbsp; 310 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Red =&nbsp; 308 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Black =&nbsp; 308 Ohms</span><span style="font-size: large;"><br />
+</span></p>
+<p>&nbsp;<span style="font-size: medium;">Wires</span><span style="font-size: medium;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 320.3&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.98 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7.69 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.734<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; TOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.23 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ~~ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.692&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.6 &nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.72 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.69 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.133<br />
+</span></p>
+<p><span style="font-size: medium;">red-shield      (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53.7&nbsp;&nbsp; GOhms&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.86 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.10 &nbsp; &nbsp;&nbsp; 1.139 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.24 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ~~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.694<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.4&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.72 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.05 &nbsp; &nbsp;&nbsp; 1.126 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">Megger test of 0.322&nbsp; from bare wire on deck through slip ring and down to computer lab.<br />
+</span></strong></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">Continuity:&nbsp;&nbsp; (outside air  temperature: Really Hot. Got to be 30C at least)<br />
+</span></p>
+<p><span style="font-size: medium;">Green - White =&nbsp; 315 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Red =&nbsp; 313 Ohms<br />
+</span></p>
+<p><span style="font-size: medium;">Green - Black =&nbsp; 314 Ohms</span><span style="font-size: large;"><br />
+</span></p>
+<p>&nbsp;<span style="font-size: medium;">Wires</span><span style="font-size: medium;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 600 &nbsp; &nbsp; MOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.696<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 705 &nbsp; &nbsp; MOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.02 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.04 &nbsp; &nbsp;&nbsp;&nbsp; 0.697&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 365 &nbsp; &nbsp; MOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.077<br />
+</span></p>
+<p><span style="font-size: medium;">red-shield      (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 598 &nbsp; &nbsp; MOhms&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.04 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.14 &nbsp; &nbsp;&nbsp; 1.078 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 679 &nbsp;&nbsp;&nbsp; MOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 0.98 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.695<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 534 &nbsp; &nbsp; MOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.03 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.05 &nbsp; &nbsp;&nbsp; 1.071 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">Megger test of 0.322&nbsp; from bare wire on deck through slip ring and down to computer lab (after re-securing slipring, etc connections).<br />
+</span></strong></p>
+<p><span style="font-size: medium;">(outside air  temperature: Really Hot. Got to be 30C at least)<br />
+</span></p>
+<p>&nbsp;<span style="font-size: medium;">Wires</span><span style="font-size: medium;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.333 &nbsp;&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.767<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.233 &nbsp;&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.04 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.08 &nbsp; &nbsp;&nbsp;&nbsp; 0.697&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 623 &nbsp; &nbsp; &nbsp; MOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.076<br />
+</span></p>
+<p><span style="font-size: medium;">red-shield      (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.139 &nbsp;&nbsp; GOhms&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.06 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.06 &nbsp; &nbsp;&nbsp; 1.140 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.342 &nbsp;&nbsp; GOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 1.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.699<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.108 &nbsp;&nbsp; GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.04 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.12 &nbsp; &nbsp;&nbsp; 1.134 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">A new termination was completed and pull-tested on </span></strong><strong><span style="font-size: medium;">1-Dec-13</span></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><style type="text/css"></style>
+<table width="443" cellspacing="0" cellpadding="0" border="0" style="border-collapse:
+    collapse">
+    <colgroup><col width="117" style="mso-width-source:userset;mso-width-alt:4278" />  <col width="101" style="mso-width-source:userset;mso-width-alt:3693" />  <col width="75" span="3" />  </colgroup>
+    <tbody>
+        <tr height="16">
+            <td width="368" height="16" class="xl25" colspan="4"><del>Insulation Resistance Test &amp;   Continuity Test</del></td>
+            <td width="75"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25" colspan="2"><del>.322&quot; conductor wire</del></td>
+            <td class="xl26" colspan="2"><del>NSF-09-152</del></td>
+            <td><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25"><del>Test Date:</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td align="right" class="xl28"><del>12-Sep-13</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25" colspan="2"><del>Ambient Air Temperature:</del></td>
+            <td align="right" class="xl27"><del>68</del></td>
+            <td class="xl26"><del>degrees F</del></td>
+            <td><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25"><del>Test from:</del></td>
+            <td class="xl26" colspan="4"><del>Computer lab, through slipring to termination</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25"><del>Spool End Tape:</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td align="right" class="xl27"><del>58</del></td>
+            <td><del>meters</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25"><del>Outside Tape:</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td align="right" class="xl27"><del>9878</del></td>
+            <td><del>meters</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25" colspan="2"><del>Resistance per kilometer:</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td align="right" class="xl26"><del>0.0308</del></td>
+            <td><del>ohms/meter</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25" colspan="3"><del>Theoretical conductor resistance:</del></td>
+            <td align="right" class="xl26"><del>302.456</del></td>
+            <td><del>ohms</del></td>
+        </tr>
+        <tr height="23">
+            <td height="23" class="xl24" colspan="5"><del>Model 1060 AEMC Megger (SSSG/ComET)</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25" colspan="2"><del>Insulation Resistance</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26" colspan="5"><del>Insulation resistance testing is made at   250V charge, applied</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26" colspan="5"><del>continuously for ten minutes.&nbsp;   Results show in ohms, DAR, PI</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>and microfarads.</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl29"><del>WIRES</del></td>
+            <td class="xl29"><del>Ohms</del></td>
+            <td class="xl29"><del>DAR</del></td>
+            <td class="xl29"><del>PI</del></td>
+            <td class="xl29"><del>uF</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Red-White</del></td>
+            <td class="xl30"><del>3.504 Gohms</del></td>
+            <td align="right" class="xl30"><del>0.98</del></td>
+            <td align="right" class="xl30"><del>1.13</del></td>
+            <td align="right" class="xl31"><del>0.700</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Red-Black</del></td>
+            <td class="xl30"><del>3.226 Gohms</del></td>
+            <td align="right" class="xl30"><del>1.02</del></td>
+            <td align="right" class="xl30"><del>1.08</del></td>
+            <td align="right" class="xl31"><del>0.700</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Red-Green</del></td>
+            <td class="xl30"><del>2.560 Gohms</del></td>
+            <td align="right" class="xl30"><del>0.98</del></td>
+            <td align="right" class="xl30"><del>1.06</del></td>
+            <td align="right" class="xl31"><del>1.081</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Black-White</del></td>
+            <td class="xl30"><del>2.100 Gohms</del></td>
+            <td align="right" class="xl30"><del>1.08</del></td>
+            <td align="right" class="xl30"><del>1.13</del></td>
+            <td align="right" class="xl31"><del>0.700</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Black-Green</del></td>
+            <td class="xl30"><del>1.012 Gohms</del></td>
+            <td align="right" class="xl30"><del>1.05</del></td>
+            <td align="right" class="xl30"><del>1.01</del></td>
+            <td align="right" class="xl31"><del>1.072</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>White-Green</del></td>
+            <td class="xl30"><del>1.646 Gohms</del></td>
+            <td align="right" class="xl30"><del>1.07</del></td>
+            <td align="right" class="xl30"><del>1.14</del></td>
+            <td align="right" class="xl31"><del>1.143</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl25"><del>Continuity Test</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26" colspan="4"><del>Continuity testing is made at the 400kohm   setting,</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26" colspan="3"><del>applied for 60 seconds.&nbsp; Results are   in Ohms.</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl29"><del>WIRES</del></td>
+            <td class="xl29"><del>Resistance<span style="mso-spacerun: yes">&nbsp; </span>(Ohms)</del></td>
+            <td class="xl30"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Red-Green</del></td>
+            <td align="right" class="xl33"><del>297.2</del></td>
+            <td class="xl32"><del>Ohms</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Black-Green</del></td>
+            <td align="right" class="xl33"><del>299.5</del></td>
+            <td class="xl32"><del>Ohms</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>White-Green</del></td>
+            <td align="right" class="xl33"><del>298.1</del></td>
+            <td class="xl32"><del>Ohms</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl30"><del>Green-Ship</del></td>
+            <td align="right" class="xl33"><del>0.79</del></td>
+            <td class="xl32"><del>Ohms</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+        <tr height="16">
+            <td height="16" class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+            <td class="xl26"><del>&nbsp;</del></td>
+        </tr>
+    </tbody>
+</table>
+</h1>
+<p><del> </del></p>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<h1>Forward Markey Winch level wind made sudden shift 1-August-2013</h1>
+<p>NOTE:&nbsp; It does appear that the megger does not like to operate properly without a full battery charge (either that or it requires</p>
+<p>some time to warm up.&nbsp; I almost always have to throw out my first 10 minute insulation resistance test due to incorrect values)</p>
+<p><span style="font-size: large;">RETESTED WIRE TO MAKE SURE THERE WAS NO DAMAGE</span><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)<br />
+</span></p>
+<p><span style="font-size: large;">Test by: Allison Heater</span></p>
+<p><span style="font-size: large;">LENGTHS SAME AS PREVIOUS:</span></p>
+<p><span style="font-size: large;">Spool End Tape (inside) = 58  meters<br />
+</span></p>
+<p><span style="font-size: large;">New outside tape = 9878.0 meters <br />
+</span></p>
+<p><span style="font-size: large;">Overall Length = 9820 meters</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Continuity:&nbsp;&nbsp; (outside air   temperature 60 degrees F or 15.5 degrees C)<br />
+</span></p>
+<p><span style="font-size: large;">expected based on spec's:&nbsp; (9.820 km)(30.8 ohms/km) = 302.5 Ohms @ 20 degrees C<br />
+</span></p>
+<p><span style="font-size: large;">Green - White =&nbsp; 298.5 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Red =&nbsp; 296.0 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Black =&nbsp; 297.3 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Ship = &nbsp;0.8 Ohms</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">Test is from the computer lab,   through the slip ring and wire on drum to the termination:</span></p>
+<p><strike>&nbsp;</strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.396&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.62&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.700<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.122 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.34 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.58 &nbsp; &nbsp;&nbsp; 0.70&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.284 GOhms &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.20 &nbsp;&nbsp;&nbsp;&nbsp; 1.140<br />
+</span></p>
+<p><span style="font-size: medium;">red-green &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.954 GOhms&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.22 &nbsp; &nbsp;  1.082 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.763 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.16 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.26 &nbsp;&nbsp;&nbsp; 0.700<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.103 GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.36 &nbsp; &nbsp; 1.139</span></p>
+<p><span style="font-size: medium;">(green is shield) &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <br />
+</span></p>
+<p>WITH SLIP RING :MXO-4/WHOI</p>
+<p>Meggered with SSSG/COMET Megger sn: 154856</p>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>NEW TERMINATION 4-June-2013</h1>
+<p>Test by: Arianna Johns&nbsp;</p>
+<p><span style="font-size: large;">Spool End Tape (inside) = 58  meters<br />
+</span></p>
+<p><span style="font-size: large;">New outside tape = 9878.0 meters <br />
+</span></p>
+<p><span style="font-size: large;">Overall Length = 9820 meters</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Continuity:&nbsp;&nbsp; (outside air  temperature 16.2 degrees C)<br />
+</span></p>
+<p><span style="font-size: large;">Green - White =&nbsp; 299.8 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Red =&nbsp; 298.0 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Black =&nbsp; 298.0 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Ship = &nbsp;0.9 Ohms</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">Test is from the computer lab,  through the slip ring and wire on drum to the termination:</span></p>
+<p><strike>&nbsp;</strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.06&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.698<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.56 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.12 &nbsp; &nbsp;&nbsp; 0.740&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.629 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.34&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.079<br />
+</span></p>
+<p><span style="font-size: medium;">red-shield      (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.101 GOhms&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.16 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.14 &nbsp; &nbsp; 1.081 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.25 GOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.21&nbsp;&nbsp;&nbsp;&nbsp; 0.698<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.898 GOhms &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.13 &nbsp; &nbsp; 1.138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <br />
+</span></p>
+<p>WITH SLIP RING :MXO-4/WHOI</p>
+<p>Meggered with SSSG/COMET Megger sn: 154856</p>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>NEW TERMINATION 2-May-2013</h1>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Spool End Tape (inside) = 58 meters<br />
+</span></p>
+<p><span style="font-size: large;">New outside tape = 9895.5 meters <br />
+</span></p>
+<p><span style="font-size: large;">Overall Length = 9837.5 meters</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Continuity:&nbsp;&nbsp; (outside air temperature 50 degrees F)<br />
+</span></p>
+<p><span style="font-size: large;">Green - White = 290 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Red = 288 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Black = 289 Ohms<br />
+</span></p>
+<p><span style="font-size: large;">Green - Ship = 0.7 Ohms</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">Test is from the computer lab, through the slip ring and wire on drum to the termination:</span></p>
+<p><strike>&nbsp;</strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.66&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.31 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.734<br />
+</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 2.74&nbsp; GOhms&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 0.96 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.692</span></p>
+<p><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.47 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.073&nbsp; *tried twice, not sure why I did not get results for DAR or PI<br />
+</span></p>
+<p><span style="font-size: medium;">red-shield     (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.91 GOhms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.30  &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; 1.073 <br />
+</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  1.744 GOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.25 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.694<br />
+</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.96 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.32 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.064</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<h1><strike><span style="font-size: large;">NEW TERMINATION 4-June-2012<br />
+</span></strike></h1>
+<p><strike><span style="font-size: large;">Spool End Tape (inside) = 58 meters<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">New outside tape = 9920.0 meters <br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Overall Length = 9862 meters</span></strike></p>
+<p><strike><span style="font-size: large;"><br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Continuity:<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Green - White = 311.1 Ohms<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Green - Red = 306 Ohms<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Green - Black = 315 Ohms<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Green - Ship = 0.52 Ohms</span></strike><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p>&nbsp;</p>
+<p><strike><span style="font-size: large;"><strong>NEW TERMINATION - 14-MAY-2012<br />
+</strong></span><span style="font-size: large;"><strong><br />
+</strong></span><span style="font-size: medium;">Spool End Tape (inside end)=&nbsp; 58 meters</span></strike></p>
+<p><strike><span style="font-size: medium;">New outside tape = 10077.5 meters</span></strike></p>
+<p><strike><span style="font-size: medium;">Overall New length is 10,019.5 meters</span></strike></p>
+<p><strike><span style="font-size: large;">Pull test results:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; peak load 4660 lbs - held for two minutes<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Insulation Resistance and Continuity tests - 13-May-2012<br />
+</span></strike></p>
+<p><strike><span style="font-size: large;">Air temp = 11 degrees Celsius (~ 52 degrees Fahrenheit)</span></strike></p>
+<p><strike>&nbsp;<span style="font-size: large;">Test is wire on drum plus pigtail to slipring only:</span></strike></p>
+<p><strike>&nbsp;<span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></strike></p>
+<p><strike><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.27&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .76 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.34 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.107</span></strike></p>
+<p><strike><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 5.28&nbsp; GOhms&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.706</span></strike></p>
+<p><strike><span style="font-size: medium;">white-shield&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.23 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.38&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.157</span></strike></p>
+<p><strike><span style="font-size: medium;">red-shield    (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 802 MOhms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.80  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.092 </span><span style="font-size: medium;"> ****something seems to be wrong with  this conductor</span></strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ******the  resistance value was jumping all over the place and seemed to be &lt;  500 Mohms for mos tof the 10 minute test, some example </span></strike></p>
+<p><strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values:&nbsp;  @ 2min 40 sec = 353 Mohms;&nbsp; 3 min 10 sec = 347 Mohms; 3 min 29 sec =  151 Mohms; @3 min 36 sec = 53 Mohms</span></strike></p>
+<p><strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I don't usually see the meter jumping around in value like that!!!!&nbsp; I think the red conductor is bad!</span></strike></p>
+<p><strike><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.864 GOhms&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.109<br />
+</span></strike></p>
+<p><strike><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.133 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 1.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.22 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.127</span></strike></p>
+<p><strike><span style="font-size: medium;"><br />
+</span></strike></p>
+<p><strike><span style="font-size: medium;">Continuity:&nbsp;&nbsp;  expected value each    conductor:&nbsp;&nbsp;&nbsp; (</span><span style="font-size: medium;">10.0195</span><span style="font-size: medium;"> km)(30.8 ohms/km) ~ 309 ohms <br />
+</span></strike></p>
+<p><strike><span style="font-size: medium;">black + shield = 300 ohms</span></strike></p>
+<p><strike><span style="font-size: medium;">red + shield = 299 ohms</span></strike></p>
+<p><strike><span style="font-size: medium;">white  + shield = 301 ohms</span></strike></p>
+<p><strike><span style="font-size: medium;">green to ship&nbsp; ~ 0.90 ohms</span></strike></p>
+<p><strike><span style="font-size: medium;"><br />
+</span></strike></p>
+<p><strike><span style="font-size: medium;">RESULTS:&nbsp; Although the red conductor managed to pass the 10 minute test (I ran it more than once), there seemed to be something&nbsp;</span></strike></p>
+<p><strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wrong with that conductor.&nbsp; I had tested the entire cable on 13-May-2012 with the other&nbsp; - I think it is at least borderline bad and would not recommend using it!</span></strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike><span style="font-size: large;">RERAN INSULATION-RESISITANCE TEST FOR RED-SHIELD TWICE (14-MAY-2012) - ONCE ON EACH MEGGER</span></strike></p>
+<p><strike><span style="font-size: large;">These results are the new termination all the way through to the computer lab -</span></strike></p>
+<p><strike>&nbsp;<span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; microF</span></strike></p>
+<p><strike><span style="font-size: medium;">red-shield (our megger)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 404 MOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.51 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;50.00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.102</span></strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike><span style="font-size: medium;">red-shield (engineer)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 246.9 MOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.098<br />
+</span></strike></p>
+<p><strike><span style="font-size: medium;">****RED CONDUCTOR IS COMPROMISED</span></strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><strike>&nbsp;</strike></p>
+<p><span style="font-size: medium;">************OLDER - SEE BELOW</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">Spool End Tape (inside end)=&nbsp; 58 meters</span></p>
+<p><span style="font-size: medium;">New outside tape =&nbsp; 10082 meters</span></p>
+<p><span style="font-size: medium;">Overall New Length is&nbsp; 10024 meters</span></p>
+<p><span style="font-size: medium;">New termination was pull tested to 4380&nbsp; lbs for&nbsp; 3 minutes </span></p>
+<p><span style="font-size: medium;">- no movement of the tape placed above the   termination was observed. </span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: large;">25 MARCH 2012<br />
+</span></strong></p>
+<p><span style="font-family: Arial;"><span style="font-size: large;">MEG  TEST RESULTS</span></span> - <span style="font-size: large;">Test  includes spool, slipring and cable to j-box in Alvin hangar </span><br />
+&nbsp;<span style="font-size: large;"> Judging by air temperature, the spool  was probably around 11 degrees Centigrade</span></p>
+<p><strike>&nbsp;</strike><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF</span></p>
+<p><span style="font-size: medium;">white-red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.66&nbsp; GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.16 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.39 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.752</span></p>
+<p><span style="font-size: medium;">white-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.59&nbsp; GOhms&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.16 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.704</span></p>
+<p><span style="font-size: medium;">white-green   (ground)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.58 GOhms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.19 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  1.087</span></p>
+<p><span style="font-size: medium;">red-black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.33 GOhms&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.709</span></p>
+<p><span style="font-size: medium;">red-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; 8.58 GOhms&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.62 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.091</span></p>
+<p><span style="font-size: medium;">black-green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.53 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.38 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.086</span></p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Continuity:&nbsp;&nbsp;  expected value each   conductor:&nbsp;&nbsp;&nbsp; (10.024 km)(30.8 ohms/km) ~ 309 ohms <br />
+</span></p>
+<p><span style="font-size: medium;">red  + black = 587 ohms</span></p>
+<p><span style="font-size: medium;">red + white = 589 ohms</span></p>
+<p><span style="font-size: medium;">white  + black = 589 ohms</span></p>
+<p><span style="font-size: medium;">green to ship = &lt; 0.6 ohms</span></p>
+<p><span style="font-size: medium;"><br />
+</span><span style="font-size: medium;">SO  -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; red = 293.5 ohms</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  black = 293.5 ohms</span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; white = 295.5  ohms</span><span style="font-size: medium;"><br />
+</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;">RESULTS ARE ACCEPTABLE</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium;"><br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

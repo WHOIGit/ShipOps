@@ -1,0 +1,30 @@
+$@MID@$: 79
+Date: Sat, 20 Apr 2019 13:32:53 +0000
+Author: Catie
+Type: Wire
+Winch: Traction
+Wire: 0.681 A302351
+Category: 
+Subject: Fiber Optic attenuation testing 
+Cruise: at42-09
+Attachment: 190420_135551_LoadCell_tensions.jpg,190420_135611_Black300ns_Pre-Cast.jpg,190420_135620_Black300ns_5000m.jpg,190420_135630_Black300ns_Post-Cast.jpg
+Encoding: HTML
+========================================
+<p>The 681 wire was paid out to 5002m on 17 April to test for changes in the attenuation of the fibers and to check spooling tension onto the drum.</p>
+
+<p>Tension was checked by Chief Engineer attaching a Fluke meter to record milliamps on the levelwind load cell. Tension was also checked at 3 different payouts with a Dillon tensiometer between the traction head and the drum. Tensions appeared fairly consistent through the upcast.</p>
+
+<p>Fiber optic wires were checked using the Alvin Group&#39;s OFL280 FlexTester OTDR. Wires were traced pre-cast, at 2500m downcast, 5000m, 2500m upcast, and post-cast at 1310 and 1550nm at 100ns, 300ns, and 1us pulse widths with 60s averaging. Initial looks at the traces at 1550nm show little to no change in the black fiber between pre-cast, 5000m, and post-cast.</p>
+$@MID@$: 80
+Date: Sat, 20 Apr 2019 18:01:05 +0000
+Author: Catie
+Type: Wire
+Winch: Traction
+Wire: 0.681 A302351
+Category: Routine
+Subject: Armstrong advice on OTDRs
+Cruise: at42-09
+Attachment: 190420_180138_ELOG_-_1310_nm_Initial_OTDR_traces_NSF-09-F05.pdf
+Encoding: HTML
+========================================
+

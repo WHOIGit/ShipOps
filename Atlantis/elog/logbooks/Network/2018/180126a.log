@@ -1,0 +1,14 @@
+$@MID@$: 65
+Date: Fri, 26 Jan 2018 13:28:50 +0000
+Author: AH
+S/N: 
+Type: General Problem
+equipment: cyberoam CR50iNG
+Subject: "Connection to the Authentication Server is lost"
+Cruise: at39-04
+Attachment: 180126_132950_Screen_Shot_2018-01-26_at_5.38.44_AM.png,180126_133002_Screen_Shot_2018-01-26_at_7.04.32_AM.png
+Encoding: HTML
+========================================
+<p>Myabe this was just a fluke and witll never happen again, but just in case -</p>
+
+<p>See screenshot of error below.&nbsp; I kept getting this error, the first time seemed quite suddenly out of the blue, and I could not log onto the cyberoam to get to teh internet.&nbsp; I checked the rest of the network. It was just my computer.&nbsp; Then I checked another browser - error was on Firefox, I tried Safari and it worked fine.&nbsp; I pinged the cyberoam, it answered.&nbsp; I blundered around, unsure whether the error was frmo firefox or cyberoam - could not find anything helpful on internet.&nbsp; I decided that even if the cyberoam created the error, firefox must be to blame, so I did a little poking based on firefox troubleshooting webpages (not sepcific to this issue).&nbsp; I started firefox in &quot;Safe Mode&quot; (see below).&nbsp; The login page worked.&nbsp; I disabled my add-ons and restarted firefox in regular mode.&nbsp; The login page still worked.&nbsp; As I fished around I noticed that there was an add-ons page telling when the last add-on updates had been done.&nbsp; Even though I had firefox updates disabled, these were still going, and one of them had &quot;failed&quot;. &nbsp; [ Tools &gt; Add-ons &gt; select an add-on &gt; preferences &gt; Advanced&nbsp; ].&nbsp; The one that had failed was an Ad-blocker update &quot;Allow nonintrusive advertising&quot;.&nbsp; I updated it and was able to re-enable Ad-blocker and everything worked.&nbsp;</p>

@@ -1,0 +1,58 @@
+$@MID@$: 7
+Date: Sat, 24 Oct 2015 12:58:34 +0000
+Author: AH
+script: 
+Type: Fix
+Source: 
+Data: 
+Subject: HARDWARE - tape drives
+Cruise: at31-b
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: x-large;">I upgraded the firmware for the 1-Beyond computer attached tape drives as prescribed by the 1-Beyond people when Scotty reported the noisy drive to them.</span></p>
+<p><span style="font-size: x-large;">The firmware upgrade was to LTO5_F3H5.sas_hh.ro</span></p>
+<p><span style="font-size: x-large;">I ran the cleaning tape in each drive and then formatted and wrote some data to tapes.&nbsp; Thus far there is no indication of the ruckus noise the one drive was making previously.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">*****************</span></p>
+<p><span style="font-size: x-large;">The directions I followed:</span></p>
+<p><span style="font-size: x-large;">We don't typically recommend anyone run the ITDT diagnostic tests. Instead, please create a drive dump.<br />
+You can do this by clicking on the &quot;Dump&quot; button on the top left, just above where your tape drive is<br />
+listed. <br />
+I will review the files you sent, anyway, but please create a dump when you have an opportunity.<br />
+<br />
+IBM is recommending you perform a firmware update on the tape drive that is aboard the ship to see if it<br />
+remedies the unusual noises. Please see the attached latest firmware file. You can use ITDT to perform the<br />
+firmware update. <br />
+<br />
+I recommend you do the same for the tape drive that is on shore in your office. Your tape drives all<br />
+appear to have firmware that's a bit old (firmware they shipped with) - it could be good to update them.<br />
+&nbsp;1. Start by ejecting any tapes that may be loaded in your drive.<br />
+&nbsp;2. Open the LTFS Configuration window and &quot;unmount&quot; LTFS. Start &gt; All Programs &gt; IBM &gt; LTFS<br />
+&nbsp;&nbsp;&nbsp; Configuration. Click the on the T: drive letter on the left to open a drop down menu; select the top<br />
+&nbsp;&nbsp;&nbsp; &quot;blank&quot; option. Click Submit.<br />
+&nbsp;3. Open ITDT ( Start &gt; All Programs &gt; ITDT GE &gt; ITDT GE). Click the &quot;Scan&quot; button on the left, then click<br />
+&nbsp;&nbsp;&nbsp; Yes on the warning that appears. Place a check mark next to the tape drive that appears on the list,<br />
+&nbsp;&nbsp;&nbsp; then click the &quot;Update&quot; button. Browse to the location where you stored the firmware file, select it,<br />
+&nbsp;&nbsp;&nbsp; and click OK.<br />
+&nbsp;4. The firmware update will begin. Please wait up to 5 minutes for the process to completely finish. Once<br />
+&nbsp;&nbsp;&nbsp; it does, shut down your computer completely. Wait a minute before turning it on, then turn it back on.<br />
+&nbsp;5. Open the LTFS configuration window one more time and assign drive letter T to your tape drive.<br />
+You should be able to use your tape drive once again at this point. Please see if the problem is fixed and<br />
+report back - thanks in advance.</span></p>
+<p>*************</p>
+<p>ORIGINAL PROBLEM - FROM JULY 26, 2015 EMAIL TO SCOTTY:</p>
+<p>&gt; Hi Scotty,<br />
+&gt; <br />
+&gt; At least one of the tape drives (think it is just the top one at this point) is making strange noises.&nbsp; I have<br />
+only noticed it during the last two tapes I've written (the one running now, and the one previous to this).&nbsp; It was<br />
+not crying out to be cleaned after the last tape, but I ran the cleaning tape twice anyway.&nbsp; I put a tape in and<br />
+played it and it seemed better.&nbsp; But, now that I am writing another tape, it is obvioulsy not because it is noisy<br />
+again.&nbsp; The sound I associate it with is as if the tension is too high and the tape is stretching (that is<br />
+completely just what my head is thinking when I hear the noise - no real diagnosis).<br />
+&gt; <br />
+&gt; Thanks,<br />
+&gt; <br />
+&gt; Allison<br />
+&nbsp;</p>

@@ -1,0 +1,24 @@
+$@MID@$: 41
+Date: Tue, 09 Feb 2016 14:34:52 +0000
+Author: lstolp
+S/N: cisco smart switches
+Type: Configuration
+equipment: sg300_switches
+Subject: basic configuration for testing
+Cruise: at33-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>One switch in computer lab and in hydrolab using multimode panel B3 B15</p>
+<p>vlan100 &nbsp; 192.168.11.0/24</p>
+<p>vlan162 &nbsp; 199.92.162.0/24 &nbsp;Alvin network</p>
+<p>&nbsp;<span style="color: rgb(83, 48, 225); font-family: Menlo; font-size: 11px;">## cisco switches</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">199.92.161.201&nbsp; sg10-1.atlantis.whoi.edu&nbsp; &nbsp; &nbsp; &nbsp; sg10-1</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">199.92.161.202&nbsp; sg10-2.atlantis.whoi.edu&nbsp; &nbsp; &nbsp; &nbsp; sg10-2</p>
+<div>&nbsp;</div>
+<div>Use console to configure.</div>
+<div>show running</div>
+<div>show startup</div>
+<div>config term</div>
+<div>interface vlan blah</div>
+<div>interface gig blah</div>

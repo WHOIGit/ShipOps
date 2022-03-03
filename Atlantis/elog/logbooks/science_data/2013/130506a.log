@@ -1,0 +1,13 @@
+$@MID@$: 8
+Date: Mon, 06 May 2013 17:57:37 +0000
+Author: AH
+Type: Routine
+Subject: Science elog to data USB drive
+Cruise: ALL
+Attachment: 130506_175455_Screenshot1.png
+Encoding: HTML
+========================================
+<p>When there is a science elog being kept, it will be on a dreamplug.&nbsp; We are using one called r2rat01 on port 8090.&nbsp; At the end of the cruise, type:</p>
+<p>http://r2rat01:8090/at25-SE/?cmd=ecfmhome into the browser.&nbsp; This will bring up a window allowing you to download the elog and copy it to the data directory (see attachment).</p>
+<p>Select &quot;Download Archive File&quot; and save it to the download directory.&nbsp; Then select &quot;Download csv file&quot; and save it to the download directory.</p>
+<p>Next, copy both of these files to linus://home/data/r2r/eventlog/proc via linus://tmp (i.e. must first copy to the linus tmp directory and then move to the data directory).</p>

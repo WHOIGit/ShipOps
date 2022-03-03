@@ -1,0 +1,19 @@
+$@MID@$: 94
+Date: Sat, 23 Sep 2017 16:53:27 +0000
+Author: Catie
+Type: 
+name: atdatalog | ftp
+server type: 
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: Reboot Cheat Sheet - updated
+Cruise: at38
+Attachment: 170923_165458_RebootCheatSheet_23Sept17.txt
+Encoding: HTML
+========================================
+<p>Reboot Cheat Sheet - updated for database running on new FTP.</p>
+
+<p>All of the &quot;feeders.pl&quot; and &quot;redirect_svt&quot; on FTP can be invoked by /usr/lib/cgi-bin/db_driven_data/status_screen/go_rclocal.sh</p>
+
+<p>The relays are still started by /etc/rc.local</p>

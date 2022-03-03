@@ -1,0 +1,23 @@
+$@MID@$: 51
+Date: Sat, 13 Apr 2013 23:06:55 +0000
+Author: lstolp
+Type: Configuration
+name: ftp
+server type: network
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: ntop
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;little googling into ntop segmentation fault because it would only run a few <br />
+&gt; minutes at a time.&nbsp; Besides most of the 'update your version of ntop, this <br />
+&gt; bug is fixed' one of the sites said delete these two files in /var/lib/ntop/:<br />
+&gt;<br />
+&gt; addressQueue.db<br />
+&gt; dnsCache.db<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>removed above from /var/lib/ntop to see if it will run for awhile.. </p>

@@ -1,0 +1,24 @@
+$@MID@$: 87
+Date: Sun, 18 Aug 2019 23:47:57 +0000
+Author: McCabe
+S/N: 
+Type: Fix
+Component: radome / antenna
+Subject: AC Unit Faulting Out, High Refrigerent Pressure and Display Intermittently Failing.
+Cruise: at42-15, In Port
+Attachment: 
+Encoding: HTML
+========================================
+<p>AC Unit Faulting Out, High Refrigerent Pressure Error and Display Intermittent. Repair was completed 2019-08-06 in port, operation checked and confirmed 2019-08-18 at sea.</p>
+
+<p>The condensor fan fuse had failed and the display board rj45 connector at the control board was faulty.</p>
+
+<p><!--StartFragment-->Email from Kevin:</p>
+
+<pre>
+Steven from Aloha Marine fixed a connector and replaced a fuse on the
+control board and reports that Dometic AC unit is now working.</pre>
+
+<p><!--EndFragment-->Joe actually fixed the connector, re-terminated rj45 display cable.</p>
+
+<p>We still don&#39;t know why the fuse failed.</p>

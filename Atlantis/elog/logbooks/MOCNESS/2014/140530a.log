@@ -1,0 +1,39 @@
+$@MID@$: 1
+Date: Fri, 30 May 2014 02:08:01 +0000
+Author: RSL/Catie
+Owner: URI
+S/N: 
+Type: General Problem
+Category: Hardware | Electronic
+Subject: Flooded batter housing
+Cruise: at26-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>Flooded battery housing at 1000m and moc stopped communicating. Replaced all o-rings on housing.</p>
+$@MID@$: 3
+Date: Fri, 30 May 2014 02:18:19 +0000
+Author: rsl
+Owner: URI
+S/N: 
+Type: General Problem
+Category: Hardware | Electronic
+Subject: Flooded battery housing
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>When deck testing following 1st cast to 1000m, found low voltage.&nbsp; Went to change battery and found about an inch of water in the housing.&nbsp; (when flat)&nbsp; Replaced battery housing with spare housing from OSU and other battery from URI, but still not working. &nbsp; Pulled out spare underwater unit from OSU, still not working. &nbsp; Turns out, (lucky for science), that one of the Sentry techs, (Al Duester), actually built the boards for the MOCNESS.&nbsp; After many hours of work, Al repaired the underwater unit, the aux underwater unit and the deck box.&nbsp; (yes, all three were damaged)&nbsp; I would appear that if power gets to the signal cable, (via seawater), bad things happen.&nbsp; In the course of all this we also tried the spare deck box, it was ALSO not working, it had a loose wire.&nbsp; Al fixed this as well.&nbsp;</p>
+$@MID@$: 4
+Date: Fri, 30 May 2014 03:59:28 +0000
+Author: rsl
+Owner: URI
+S/N: 
+Type: General Problem
+Category: Electronic
+Subject: Bad oxygen cable
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>Found bad cable on Oxygen sensor.&nbsp; Cable has not yet failed,but is starting to crack at the junction of the &quot;Pi&quot; plug and the wire.&nbsp; Might be repairable.&nbsp; Removed for now, since science does not care and it was quick.&nbsp; Also, it's not our cable.</p>

@@ -1,0 +1,55 @@
+$@MID@$: 16
+Date: Mon, 20 Jun 2011 13:55:59 +0000
+Author: lstolp
+Type: Configuration
+name: HWS
+server type: SIS
+OS: Windows
+Location: Main Lab
+Category: Software
+Subject: added windoze ntp software
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+
+$@MID@$: 17
+Date: Mon, 20 Jun 2011 15:20:12 +0000
+Author: lstolp
+Type: Configuration
+name: mnemosyn
+server type: snmpd
+OS: Linux
+Location: Main Lab
+Category: Software
+Subject: /etc/defaults/snmpd
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>changed default to allow a different computer to check stats:</p>
+<p>&nbsp;</p>
+<p># snmpd options (use syslog, close stdin/out/err).<br />
+#SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -g snmp -I -smux -p /var/run/snmpd.pid 127.0.0.1'<br />
+SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -g snmp -I -smux -p /var/run/snmpd.pid'<br />
+&nbsp;</p>
+$@MID@$: 18
+Date: Mon, 20 Jun 2011 16:03:41 +0000
+Author: lstolp
+Type: Other
+name: kilo
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: rebuilt w/ MSI Motherboard and Ubuntu 10.04
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>started up snmpd and edited: /etc/default/snmpd</p>
+<p># snmpd options (use syslog, close stdin/out/err).<br />
+#SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -g snmp -I -smux -p /var/run/snmpd.pid 127.0.0.1'<br />
+SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -g snmp -I -smux -p /var/run/snmpd.pid'<br />
+<br />
+&nbsp;</p>

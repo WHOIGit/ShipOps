@@ -1,0 +1,18 @@
+$@MID@$: 31
+Date: Fri, 06 Jan 2017 12:11:13 +0000
+Author: AH
+Type: Other
+gps: CNAV
+Category: Routine
+Subject: Cnavigator configuration snapshot - 2017-Jan-02
+Cruise: at37-07
+Attachment: 170106_121106_cnavigator_snapshot_after_change_in_solution_control_data_monitoring_rate_20170102.html
+Encoding: HTML
+========================================
+<p>&gt; &gt; C-NaviGator II<br />
+&gt; &gt; *&nbsp; Insert a USB stick into an available USB port on the C-NaviGator.<br />
+&gt; &gt; *&nbsp; Select Menu &gt;&gt; File &gt;&gt; Take Snapshot.<br />
+&gt; &gt; *&nbsp; Tap to highlight/select the USB stick, then press the Take Snapshot button.<br />
+&gt; &gt; *&nbsp; To retrieve the Snapshot file, remove the USB stick from the C-NaviGator and insert it in a PC.<br />
+&gt; &gt; *&nbsp; Navigate to the cnav/snapshot directory on the thumbdrive.<br />
+&gt; &gt; *&nbsp; The file can be viewed in a web browser or emailed to C-Nav Support for troubleshooting purposes.</p>

@@ -1,0 +1,82 @@
+$@MID@$: 92
+Date: Thu, 23 Aug 2018 14:56:14 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Other
+Category: Hardware
+S/N: 118
+Subject / Summary: NOTES FROM KONGSBERG VISIT - GOOD TROUBLESHOOTING TIPS FROM CHUCK
+Cruise: at41
+Attachment: 180823_171303_ScreenHunter_300_Aug._23_17.07.jpg,180823_173808_info_ftpgetcmds.txt,180823_173827_info_ftpputcmds.txt,180823_173932_ftpgetcmds.dat,180823_173947_ftpputcmds.dat,180823_182000_telnet0001.pdf,180823_223541_Setup_PP4305_CPU.pdf,180826_130637_20180817_final_board_change_telnet.txt,180826_130648_SystemReport_EM122_118_20180817_122126.txt
+Encoding: HTML
+========================================
+<p>Chuck Hohing visit 2018-Aug-14</p>
+
+<p>The first thing we did was telnet to the TRU during the boot process:</p>
+
+<p><strong>telnet 157.237.14.60 -f logfile.txt</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adding the -f logfile.txt will create a logfile of the screen info</p>
+
+<p>There were a bunch of board errors as we boot (fatal error slot 15, 20, 11, 23, 22, 12, 21 ....etc.&nbsp; At boot completion we got:&nbsp; BSP good, RX good, TX =&gt; only 13 out of 24 came up. &nbsp; We were also getting a compatibility error in SIS (Chuck said this is not a big issue).&nbsp; Since the batteries had been changed on both CPU boards, Chuck expected the BIOS would need to be configured on both.</p>
+
+<p>So:</p>
+
+<p><span style="color:#FF0000"><strong>CHUCK TIP 1:&nbsp; </strong></span><strong><span style="color:#0000FF">whenever there are a TX and/or RX board errors during the boot process, start by shutting down and reseating the board&nbsp; in position 1.</span></strong></p>
+
+<p><strong><span style="color:#000000">Explanation:&nbsp; </span></strong><span style="color:#000000">apparently, although the boards are identical, the TX board in position 1 is the &quot;MASTER&quot; TX board, and the RX board in postion 1 is the &quot;MASTER&quot; RX board.&nbsp; So, never, never put a problem board in position 1!</span></p>
+
+<p>After shutting down and re-seating the board in postiion 1 (TX) - we reboot and almost all of errors were gone.&nbsp; We were still getting a warning from the board in slot #10.</p>
+
+<p><span style="color:#FF0000"><strong>CHUCK TIP 2:&nbsp; </strong></span><strong><span style="color:#0000FF">Be careful when interpretting the board position.&nbsp; There is an inconsistency in the numbering conventions and in some references the boards go from 0-23, and in others the boards go from 1-24.&nbsp; There are also references to &quot;slots&quot; and &quot;boards&quot;.&nbsp; Always check to see what the numbering convention is in the section you are working (SIS Bist, telnet, whatever)</span></strong></p>
+
+<p><strong>CPU board configuration:</strong>&nbsp; Kongsberg recommends using Putty.&nbsp; 9600 baud to talk to the TRU. <em>Verify this part with Kongsberg if you need to talk to the CPU board on the TRU:&nbsp; unplug the bottom ethernet cable and plug in your laptop there.</em>&nbsp; You need to get into the BIOS &quot;setup&quot; which involves using the &quot;F2&quot; key on the keyboard.&nbsp; Chuck pointed out that we needed a USB keyboard in order for him to be able to do that (the F2 key did not seem to work with his laptop).&nbsp; The keyboard can be plugged into any USB port on the CPU board.&nbsp; Chuck also said there might be a Putty setting to fix the keyboard thing, but he&#39;d never investigated it.&nbsp; Chuck had a document with all the items to check in the CPU BIOS.&nbsp; One he said was particularly important - <strong>boot order</strong>.</p>
+
+<p><strong>Update on em122 computer (HWS):&nbsp; </strong>The compatibility error was supposed to be corrected by running the Upgrade program.&nbsp; This program is:&nbsp; <strong>C:\\ProgramFiles(x86)\Kongsberg Maritime\SIS\PU\EM122|Update\EMSWUpgrade.exe</strong>&nbsp; .&nbsp; This program was not populating the EM122 information at the top of the page before Chuck arrived here.&nbsp; When we tried it (while he was here) it still did not populate.&nbsp; He ran <strong>EMSWInstall.exe</strong> , contained in teh same directory.&nbsp; This took about 25 minutes to run (at least).&nbsp; Chuck said it would not be a good thing to interupt this program while it was running.&nbsp; After he did this, the EMSWUpgrade.exe program page did populate the items.&nbsp; Chuck speculated that this was because of the new CPU board (that it had never been configured).</p>
+
+<p>The file:&nbsp; <strong>C:\\ProgramFiles(x86)\Kongsberg Maritime\SIS\doc\EM_doc\EM_ReleaseNotes&nbsp; </strong>contains the latest version numbers for CPU firmware (see below).&nbsp; Compare this with what comes up on the EMSWUpgrade.exe page.</p>
+
+<p><span style="color:#FF0000"><strong>CHUCK TIP 3:&nbsp; </strong></span><strong><span style="color:#0000FF">If the EMSWUpgrade.exe page specifies updates are needed, perform them one at a time (rebooting the TRU between updates is sometimes a good idea).&nbsp; Do not run EMSWUpgrade.exe and SIS at the same time.&nbsp; To do firmware updates, highlight the entire line &amp; select &quot;update firmware for items&quot;.&nbsp; When you are all done, start SIS and go to &quot;installation&quot; - on the last tab, run a &quot;system report&quot; and save it.&nbsp; That report contains all the board postions, etc.</span></strong></p>
+
+<p><strong>FIXING THE BOARD ISSUES -First Run:&nbsp; </strong>First run:&nbsp; We removed board #17, We moved board #24 to the #17 position, we reseat the board in slot 10 (board #11) that was giving the error (S/N 212184).&nbsp; We ran a BIST test (with position 24 open - no board).&nbsp; This time, board #12 (slot 11) showed 4 &quot;open channels&quot; (all these channels share the same ground).&nbsp; When we reboot (and watched via telnet), the board in slot 10 (board #11) was still giving the error.&nbsp;</p>
+
+<p><strong>MARK SHORTED CHANNELS - from previously known issues:&nbsp; </strong>We examined the files (that were still on the computer and also in sssg_on_memory - em122\CONFIGURATION\TRU_configuration_files_with_shorted_channels_turned_off_2015dec06) that contained the configuation for the shorted channels we already knew about.&nbsp; We ran ftpget and examined the files - as expected, they were not edited for the shorted channels (I had reloaded SIS 4.3.2 prior to Chuck&#39;s arrival).&nbsp; We closely examined the files that were on the computer that had been edited (0x00000000 marks the channels to shut-off so no transmit will occur through those channels) and compared those with the service report (<strong>List of disabled channels: TX36 #3 channel 22, TX36 #7 channel 4, TX36 #12&nbsp; channels 3,4,9,10,15,16</strong> - in this case the relevant position refers to the slot location).&nbsp; We then followed teh put instructions to &quot;put&quot; these in the TRU.&nbsp; After that we did a &quot;get&quot; to make sure that what we got contained the edits - it did.</p>
+
+<p><strong>LOOK FOR MORE SHORTED CHANNELS:&nbsp; </strong>Now we ran a long BIST test (telnet to 157.237.14.60 - type &gt;bist and it allows you to get detailed reports on all the channels).&nbsp; We ran tests 30-34.&nbsp; This did not reveal any additional shorted channels.</p>
+
+<p><strong>FIXING THE BOARD ISSUES -Second Run:&nbsp; </strong>We moved board 11 (from slot 10) to position 23 (slot 22).&nbsp; We moved the board from position 23 (slot22) to where we&#39;d removed #11.&nbsp; The error issue followed the board (in telnet session error was:&nbsp; *WARNING* txdcm 128 MHz Clock &quot;<em>something, something</em>&quot; needs to be reset).&nbsp; We also swapped the board with the &quot;open channels&quot; (board #12) with the board in slot 21 (position 22).&nbsp; <strong>NOTE:&nbsp; with a board missing, the TRU will take longer to boot and will fail mulitple BIST tests just due to the board being missing.</strong></p>
+
+<p><strong>ORIGINAL CPU:&nbsp; </strong>Chuck installed the original CPU Board.&nbsp; Initially, the TRU did not come up.&nbsp; Upon investigation, Chuck noted that the board was about one fingernail thickness further out than the boards around it.&nbsp; In order to reseat it properly, he had to remove the cover directly to the left of the board.&nbsp; He was then able to seat it, and the TRU came up.&nbsp; He connected his laptop and used Putty to configure the BIOS (the date had changed back to &quot;2005&quot;).&nbsp; The orginal CPU Board is now back in place, and the other is an &quot;already configured&quot; spare.</p>
+
+<p><span style="color:#FF0000"><strong>CHUCK TIP 4:&nbsp; </strong></span><strong><span style="color:#0000FF">The boards sometimes get a bit of corrosion on the pins.&nbsp; Usually, reseating them will take care of this.&nbsp; It is often necessary to remove the board next door in order to properly seat a board.&nbsp; Even a small (fingernail thickness) gap can cause a board to not function properly.</span></strong></p>
+
+<p>Summary of board positions thus far:&nbsp;&nbsp; position 22 - board with 4 &quot;opens&quot;;&nbsp; position 23 - board giving errors;&nbsp; position 24 - empty</p>
+
+<p><span style="color:#FF0000"><strong>IMPORTANT:</strong></span>&nbsp; Now, when starting SIS, we will get an error message &quot;BIST fails&quot; - this is the new normal, due to missing board.</p>
+
+<p>Also, in certain areas of the program, we still get confronted with that pop-up &quot;Configuration is generated to serial number &quot;118&quot;.&nbsp; Do you want to change it?&nbsp; WHen you select &quot;NO&quot; it still comes up trying to change the serial number, - just leave as the same number &quot;118&quot; and &quot;Accept&quot;.&nbsp; I think one place this comes up is when you are reading in (importing) pu parameters.&nbsp; If you have a telnet session open (see last attachment for more telnet info), and pu parameters are updated successfully, you should see &quot;P40 Update parameter&quot;</p>
+
+<p>After Chuck left, he contacted Norway to get advice on the odd errors on the one board we have been getting.&nbsp; They responded:</p>
+
+<p>&gt; Here was Norway&#39;s reply as I told you on the phone.<br />
+&gt;<br />
+&gt; &quot;I would leave the TX card with HV bridge error in the system, it would not make any problems.<br />
+&gt;&nbsp;<br />
+&gt; The TX DCIM 128Mhz, is the internal clock on the txboard, this is&nbsp;<br />
+&gt; controlled by the TX1 board through backplane so try moving it to see that the problem follows the card, if it does remove this<br />
+card and leave the last TX slot open.&quot;<br />
+&gt;&nbsp;<br />
+&gt;<br />
+&gt;&nbsp;<br />
+&gt; So since we moved TX36 #11 and the problem followed I&rsquo;d remove that board and put back #17 in its place.<br />
+&nbsp;</p>
+
+<p>So, I swapped some additional boards.</p>
+
+<p><span style="font-size:14px"><strong>Summary of board positions thus far:&nbsp;&nbsp; position 22 - board with 4 &quot;opens&quot;;&nbsp; position 23 - bad board that was in position 17;&nbsp; position 24 - empty (board ginving error removed) - system report attached to this elog entry.</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

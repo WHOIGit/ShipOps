@@ -1,0 +1,15 @@
+$@MID@$: 1
+Date: Thu, 01 Jul 2010 16:41:22 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: 
+Subject: shore.mode
+Cruise: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>To send internet to the cabins, etc. :</p>
+<p>&gt;shore.mode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; as root on ftp</p>
+<p>to get rid of internet in the cabins:</p>
+<p>&gt;service iptables restart</p>

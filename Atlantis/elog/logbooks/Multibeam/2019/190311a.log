@@ -1,0 +1,46 @@
+$@MID@$: 98
+Date: Mon, 11 Mar 2019 17:46:25 +0000
+Author: Catie
+System: EM122 - Kongsberg
+Type: Configuration
+Category: survey
+S/N: 
+Subject / Summary: New Feeds, Offsets and Lever Arms post-shipyard 2019
+Cruise: at42-07yard
+Attachment: 
+Encoding: HTML
+Draft: aheater
+========================================
+<p>The following feeds were added to the EM122 with the addition of the Seapath:</p>
+
+<p>-Com 3: Serial attitude from Seapath Com 9</p>
+
+<p>-Com 4: Serial GPS from Seapath Com10</p>
+
+<p>-UDP6: UDP attitude/velocity from Seapath port 3001</p>
+
+<p>-1PPS from Seapath 1PPS port via temporary cable run</p>
+
+<p>*****IT IS VERY IMPORTANT WHEN CHANGING THE ACTIVE POSITION/ATTITUDE SOURCES FROM COM1/COM2/UDP5 to COM3/COM4/UDP6 TO GO TO INSTALLATION PARAMETERS &gt; INPUT SETUP AND DESELECT &quot;ZDA CLOCK&quot; FROM THE POSITION SENSOR YOU ARE DEACTIVATING AND RESELECT FOR THE POSITION SOURCE YOU ARE ACTIVATING******&nbsp;</p>
+
+<p>Loc Com1 pre-change: Fwd -27.26953, Stbd 0.45374, Down -2.85523; Loc Com1 post-change: Fwd -27.276, Stbd 0.453, Down -2.858 (phase center of phins according to 2011 and 2019 surveys, respectively)</p>
+
+<p>Loc Com2/UDP5 pre-change: Fwd -27.26953, Stbd 0.45374, Down -2.85523; Loc Com2 post-change: Fwd -27.276, Stbd 0.453, Down -2.858 (phase center of phins according to 2011 and 2019 surveys, respectively)</p>
+
+<p>Loc Com3/UDP6 pre-change: null, null null; Loc Com3 post-change: Fwd 0, Stbd 0, Down 0 (Seapath reporting position as valid at seapath origin/0,0,0 of vessel)</p>
+
+<p>Loc Com4 pre-change: null, null, null; Loc Com4 post-change: Fwd 0, Stbd 0, Down 0 (Seapath reporting position as valid at seapath origin/0,0,0 of vessel)</p>
+
+<p>Loc Tx pre-change: Fwd -30.18129, Stbd -0.39007, Down 0.42354; Loc Tx post-change: Fwd -30.180, Stbd -0.393, Down 0.618 (based on 2011 survey of frames and 2019 survey of Tx faces, respectively)</p>
+
+<p>Loc Rx pre-change: Fwd -25.71581, Stbd -0.01110, Down 0.50488; Loc Rx post-change: Fwd -25.733, Stbd -0.012, Down 0.624 (based on 2011 survey of frames and 2019 survey of Rx faces, respectively)</p>
+
+<p>&nbsp;</p>
+
+<p>Offset Tx pre-change: Roll -0.1469, Pitch 0.0581, Heading 0.00568; Offset post-change: Roll: -0.140, Pitch 0.055, Heading 359.99 (based on 2011 survey of frames and 2019 survey of Tx faces, respectively)</p>
+
+<p>Offset Rx pre-change: Roll -0.088, Pitch 0.0277, Heading 359.86199; Offset post-change: Roll: -0.082, Pitch -0.068, Heading 0.103 (based on 2011 survey of frames and 2019 survey of Rx faces, respectively)</p>
+
+<p>Offset Com2/UDP5 pre-change: Roll -0.12, Pitch 0.04, Heading -0.02; Offset post-change: 0,0,0 (based on 2017 patch test and TBD based on upcoming patch test)</p>
+
+<p>Offset Com3/UDP6 pre-change: null, null, null; Offset post-change: 0,0,0 (in preparation for upcoming patch test)</p>

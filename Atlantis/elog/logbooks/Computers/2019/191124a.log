@@ -1,0 +1,54 @@
+$@MID@$: 126
+Date: Sun, 24 Nov 2019 14:57:46 +0000
+Author: Emily
+Type: Build
+name: ftp | ftp2 | linus | linus2
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: backups
+Subject: Bringing linus2 and ftp2 online from backup
+Cruise: at42-20
+Attachment: 
+Encoding: HTML
+========================================
+<pre>
+In the case that either linus or ftp are bricked, then the &quot;cliff notes&quot; from Laura for bringing the old LINUS online from the backup 
+dplug would be:
+
+1. Update the oldlinus /etc/passwd/ /etc/shadow /etc/group /etc/gshadow
+This would get all the users.
+
+2. Copy over /var/spool/mail  as root
+
+3. Copy over /home/users  as user
+
+4. Copy over /usr/local/cmail/outwork
+this has the index of the tar file names, copying this over and maybe 
+increasing each number by 1 would keep us from writing over files.
+
+I think that would keep mail working. The hostname and IP address of 
+oldlinus would need to be changed to linus.
+
+There are a lot of mail files for users that do not exist on linus, not 
+sure how that happened.
+
+If linus were to go belly up, it would be best to let me know ASAP and we 
+can work together to get oldlinus working. The thing to stay on top of is 
+the backups on the dplug.
+
+
+
+<strong>If FTP were to go belly up:</strong>
+
+On FTP2  (let me know ASAP)
+copy /etc/network/interfaces.ftp /etc/network/interfaces
+reboot   # this would get rid of all the odd routing I have setup for the
+          # DNS plots
+
+Would need to leave most of the webstuff and scrips as is there were so 
+many differences between the OS tha most of the scripts had to be 
+rewritten.
+
+Would need to start up iptables.shoremode and move all the ethernet cables 
+over.</pre>

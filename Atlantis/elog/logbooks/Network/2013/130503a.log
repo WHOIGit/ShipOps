@@ -1,0 +1,65 @@
+$@MID@$: 21
+Date: Fri, 03 May 2013 11:26:08 +0000
+Author: lstolp
+S/N: cmail over FBB
+Type: Configuration
+equipment: Ethernet Port | NIC card configuration
+Subject: cmail over FBB
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>cmail should work over both FBB.. normally set up to go out STBD FBB:</p>
+<p>&nbsp;</p>
+<p>roots crontab:</p>
+<p># run email using sailor_call<br />
+*/10 * * * * /usr/local/cmail/bin/sailor_call.stbdfbb striker&nbsp; &gt;&gt; /usr/local/cmail/log/ecall.log 2&gt;&amp;1<br />
+#*/10 * * * * /usr/local/cmail/bin/sailor_call.portfbb striker&nbsp; &gt;&gt; /usr/local/cmail/log/ecall.log 2&gt;&amp;1<br />
+&nbsp;</p>
+<p>/etc/networks/interfaces</p>
+<p># This file describes the network interfaces available on your system<br />
+# and how to activate them. For more information, see interfaces(5).<br />
+<br />
+# The loopback network interface<br />
+auto lo<br />
+iface lo inet loopback<br />
+<br />
+# The primary network interface<br />
+auto eth0<br />
+iface eth0 inet static<br />
+&nbsp;&nbsp;&nbsp; address 199.92.161.2<br />
+&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp; network 199.92.161.0<br />
+&nbsp;&nbsp;&nbsp; broadcast 199.92.161.255<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gateway 199.92.161.3<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dns-nameservers 199.92.161.3 128.128.243.2 128.128.243.3<br />
+<br />
+<br />
+# FBB PORT interface<br />
+#auto eth1<br />
+#iface eth1 inet static<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 192.168.0.8<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; network 192.168.0.0<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 192.168.0.255<br />
+<br />
+<br />
+# FBB&nbsp; STBD interface<br />
+auto eth1<br />
+iface eth1 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 192.168.100.7<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; subnet 192.168.100.255<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 192.168.100.255<br />
+<br />
+<br />
+<br />
+# I think this independent of interfaces a # in front of auto will disable the <br />
+# interface<br />
+#up route add -host 128.128.250.51 gw 192.168.0.1 dev eth1<br />
+up route add -host 128.128.250.51 gw 192.168.100.1 dev eth1<br />
+&nbsp;</p>
+<p>/usr/local/cmail/bin/sailor_call.stbdfbb</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

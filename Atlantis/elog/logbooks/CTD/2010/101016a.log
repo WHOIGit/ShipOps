@@ -1,0 +1,16 @@
+$@MID@$: 16
+Date: Sat, 16 Oct 2010 10:04:18 +0000
+Author: AH
+Type: General Problem
+Category: sensor
+Sensor: xmiss
+S/N: CST-854DR
+Calibration Date: 
+Subject / Summary: Condensation on lens
+Cruise: at15-53
+link: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Please follow email trail from mbheintz@umail.ucsb.edu, ian@wetlabs.com, misty@wetlabs.com from October 2010 (under ctd and under the cruise id in sssg email)</p>
+<p>The gist is, transmissometer CST-854DR was sent off in November 2009 due to condensation on a lens (witnessed by cooling the lens quickly by spraying it with condensed air).&nbsp; The reason we were looking for an issue with the Xmiss is that I did a deck calibration, and thent he sensor actually read higher in water during a cast than it read in air.&nbsp; At any rate, the Xmiss had been used during at15-53.&nbsp; Later (Oct. 2010) I received an email from Monica who is using the data from at15-53, asking if there was a problem with the sensor.&nbsp; Looking at her data, it looks like the primary issue is that a deck calibration should have been done (values used in her calibration file were from 2008).&nbsp; Her data is greatly shifted to the left (lower transmissions) from the data obtained from another sensor in the same area a few years earlier.&nbsp; A deck calibration had been done shortly before Monica's 2009 cruise.&nbsp; I am not sure why the values from this calibration were not used during her cruise.&nbsp; I also found some raw data recorded from a deck calibration immediately before her cruise (no calculations to go with it).&nbsp; I did the calculations using this raw data and ran her data with the new values.&nbsp; The new calibration coefficients did shift her data to the right&nbsp; (looked more comparable to the 2007 data).&nbsp; However, the transmission data exceeded 100% a a few shallow locations during a few of the casts.&nbsp; This leads us to wonder if there were problems with the transmissometer already, and what those problems were.</p>

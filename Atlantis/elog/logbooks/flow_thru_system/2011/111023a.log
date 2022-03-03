@@ -1,0 +1,16 @@
+$@MID@$: 9
+Date: Sun, 23 Oct 2011 12:10:11 +0000
+Author: AH
+S/N: 
+Calibration Date: 
+Sensor: Fluorometer
+Type: General Problem
+Category: Plumbing
+Subject: Fluorometer - Needed cleaning / broken fitting
+Cruise: at18-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>The fluorometer started drifting upward around 21:00Z 10/17/2011.&nbsp; I noticed it a day or two later (it was still not terrible).&nbsp; This has been a bad trip for &quot;incidents&quot; (winch level winder pin broke, etc) so when I went down to the bow thruster room to disconnect the tubing and experienced the rev'ing of the bow thruster up close and personal, I decided to wait until after the JASON was out of the water to do this.&nbsp; Several days went by and the data became very bad and eventually went to &quot;99999.99&quot;&nbsp; (6:19Z 10/22/2011) which in turn cause caused the latest data - last 24 hour plots to become messed up (not sure why yet, but the plots were shifted - example, SWR was plotting as Fluorometer).&nbsp; </p>
+<p>I finally was able to get down there and clean the fluorometer/tubing on 10/22/2011 in the afternoon.&nbsp; However, on reinstalling I broke one of the fluorometer fittings.&nbsp; We do not have another, so I fashioned a new one out of the threading that broke off, epoxy and a slightly smaller barbed fitting.&nbsp; I dried the epoxy overnight and reinstalled the fluorometer - data good 11:17Z 10/23/2011.&nbsp; I need to check the fitting frequently for a while in order to make sure it is holding up.</p>
+<p>The thermosalinograph was only down for about an hour on 10/22/2011 while I was cleaning (I replumbed the system overnight so we could use the thermosalinograph with the em122)</p>

@@ -1,0 +1,16 @@
+$@MID@$: 48
+Date: Tue, 19 Jul 2016 13:39:32 +0000
+Author: dsims
+S/N: C16214451597
+Type: Configuration
+equipment: cyberoam CR50iNG
+Subject: DHCP fix for cyberoam
+Cruise: at35
+Attachment: 160719_133357_dhcp_rule.jpg
+Encoding: HTML
+========================================
+<p>&nbsp;<span style="font-size: large;"> When we started using cyberoam on the cruise, science net lost dhcp.&nbsp;&nbsp; To fix the problem, the firewall allow-dhcp rule was changed slightly.&nbsp; Before the fix, destination said &quot;FTP&quot;.&nbsp; Changing the destination to &quot;Any IP Address&quot; got dhcp working properly.</span></p>
+<p><span style="font-size: large;">&nbsp;</span></p>
+<p><span style="font-size: large;">Below is the rule as currently used:</span></p>
+<p>&nbsp;</p>
+<p><a href="160719_133357/dhcp_rule.jpg?lb=Network"><img border="0" alt="dhcp_rule.jpg" src="160719_133357/dhcp_rule.jpg?lb=Network&amp;thumb=1" name="att0" id="att0" /></a></p>

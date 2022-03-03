@@ -1,0 +1,30 @@
+$@MID@$: 47
+Date: Sat, 08 Apr 2017 17:31:37 +0000
+Author: Catie
+Type: Other
+Category: 
+Sensor: O2
+S/N: 
+Calibration Date: 
+Subject / Summary: Timeline of oxygen sensor issues August 2016-April 2017
+Cruise: at37-11
+link: 
+Revisions:  & Thu Apr 13 16:16:23 2017^M & Sat Apr 15 11:52:20 2017^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>AT36: SBE43 0113 Installed on universal Y ch 6&amp;7 with altimeter PSA916-40852. Non-random activity observable on altimeter, no effect on oxygen sensor.</p>
+<p>AT37-03: Same configuration. Non-random activity observable on altimeter, effect on oxygen sensor present but magnitude not readily discernible (&lt;2-3 umol/kg of noise)</p>
+<p>AT37-06: Same configuration. Non-random activity along with very frequent spikes observable on altimeter, effect on oxygen sensor present but magnitude not readily discernible (&lt;2-3 umol/kg)</p>
+<p>AT37-09 Casts 001-003: Same configuration. Same observations with regards to altimeter activity and frequent spikes as AT37-06. Large oxygen hysteresis between downcasts and upcasts.</p>
+<p>AT37-09 Casts 004-013: SBE43 0072 Installed on universal Y ch 6&amp;7 with altimeter PSA916-40852. Non-random activity and spikes still observable on altimeter, and oxygen noise observable at a magnitude of ~3-5 umol/kg. Oxygen downcast/upcast hysteresis has resolved. Casts 004-0013 all conducted to &lt;1000m.</p>
+<p>AT37-09 Cast 014: Same configuration. Cast conducted to 5500m. Noticeable increase in oxygen noise proportional to depth between 1000m and 5500m. At 5500m, oxygen noise on the order of ~20 umol/kg. Same altimeter non-random activity along with spiking consistent throughout depth range.</p>
+<p>AT37-11 Cast 001: SBE43 1960 Installed on universal Y  ch 6&amp;7 with altimeter PSA916-40852. Non-random activity observable on altimeter, but no spiking. Oxygen noise magnitude ~5 umol/kg down to 2500m.</p>
+<p>AT37-11 Cast 002: SBE43 1960 Installed on *different* universal Y cable on ch 0&amp;1 with altimeter PSA916-40852. Non-random activity observable on altimeter, but no spiking. Oxygen noise magnitude ~5 umol/kg down to 2500m.</p>
+<p>AT37-11 Cast 003: Same configuration as cast 002. Plumbing path of oxygen sensor re-secured, sea cable/slipring conductor changed, although megger of all seacable conductors did not show anything too out of the ordinary. No change in altimeter or oxygen sensor behavior during the cast from cast 002.</p>
+<p>AT37-11 Cast 004: SBE43 1960 Installed on standalone cable to ch 0. Altimeter PSA916-40852 on same Y cable as previous, attached to channel 6, channel 7 dummied off. SBE5 pump s/n 3289 changed out for a spare. Non-random activity on altimeter continues, a few rare data spikes observed. No noise observable on oxygen sensor.</p>
+<p>AT37-11 Cast 005-006: SBE43 1960 installed on standalone cable to ch 0. Altimeter PSA916-40852 on standalone cable to ch 6. Pump s/n 3289 returned to service. Oxygen functioning normally, same results as cast 004, same non-random noise on altimeter with a few data spikes intermittent, but otherwise functioning as expected. Per Marshall &quot; The PSA916 altimeter behavior of 'hunting' has to do with the way the internal circuitry behaves. As you noted, it is generally accurate when within 50m of the bottom&quot;.</p>
+<p>AT37-11 Cast 007: SBE43 0072 (which was removed from service after AT37-09 Cast 014 due to noise) returned to service on standalone cable. No problems observed. </p>
+<p>*Important to note that throughout all operations altimeter has performed essential functions properly, no noticeable problems for casual operator. Bottom lock and tracking fine at expected range (within ~50m of bottom).*</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

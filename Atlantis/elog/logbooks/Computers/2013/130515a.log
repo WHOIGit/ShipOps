@@ -1,0 +1,31 @@
+$@MID@$: 53
+Date: Wed, 15 May 2013 10:18:09 +0000
+Author: lstolp
+Type: Configuration
+name: lima
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: matlab license update
+Cruise: atpostat2502
+Attachment: 
+Encoding: HTML
+========================================
+<p>matlab is located in /usr/local/MATLAB</p>
+<p>&nbsp;</p>
+<p>For Linux:<br />
+=================<br />
+<br />
+To launch the activation client,  you will need to use the activate_matlab.sh script in the  $MATLABROOT/bin folder.  To launch this script:<br />
+<br />
+1. Open a Terminal window.  On Mac OS X, go to Applications &gt; Utilities &gt; Terminal<br />
+<br />
+2. In the Terminal window, run the following commands:<br />
+<br />
+cd $MATLABROOT/bin<br />
+./activate_matlab<br />
+<br />
+(where $MATLABROOT is the MATLAB installation folder)<br />
+<br />
+NOTE: You may need administrator or superuser permissions in order to complete activation.</p>

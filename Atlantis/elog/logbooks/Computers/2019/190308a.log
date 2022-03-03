@@ -1,0 +1,32 @@
+$@MID@$: 119
+Date: Fri, 08 Mar 2019 14:53:23 +0000
+Author: Becca 
+Type: Fix
+name: ALL
+server type: time
+OS: Other
+Location: Computer Lab
+Category: Other
+Subject: NTP update
+Cruise: at42-07yard
+Attachment: 
+Encoding: HTML
+========================================
+<p>Fixed bugs in NTP code so that the timeserver is accurate on all computers and can be logged correctly. Clock was on ftp2 and linus2, now it is on ftp and linus. Updated to follow new ntp protocol: linus, ftp, neptune, atdatalog1, atdatalog2, atguru, ctd, hws, hws2,&nbsp;newknudsen, currents, currents2, lima, bitdefender, kilo,&nbsp;3ps, r2rat01, alvindata2, multiproc, mainlabnav, cyberoam, peplink, switches. Both zeus and knudsen have Windows XP and Meinburg wasn&#39;t updating correctly so time was corrected via BIOS. Mnemosyn has been changed over, but for some reason is unable to see linus.&nbsp;&nbsp;</p>
+$@MID@$: 120
+Date: Fri, 08 Mar 2019 21:18:29 +0000
+Author: lstolp
+Type: Configuration
+name: ftp | linus
+server type: time
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: NTP working on ftp and linus
+Cruise: at42-07yard
+Attachment: 
+Encoding: HTML
+========================================
+<p>use:&nbsp;<strong>ntp</strong>q -p &nbsp;</p>
+
+<p>to interrogate ntpd deamon</p>

@@ -1,0 +1,150 @@
+$@MID@$: 33
+Date: Sun, 07 Jun 2015 21:34:51 +0000
+Author: lstolp
+S/N: C16214451597
+Type: notes
+equipment: cyberoam CR50iNG
+Subject: configuration notes from Ben Cohen
+Cruise: at29-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Date: Sun, 7 Jun 2015 22:14:14 +0200<br />
+From: Nathaniel Cohen &lt;ncohen@ucsd.edu&gt;<br />
+To: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+Cc: Steve Foley &lt;sfoley@ucsd.edu&gt;, Laura Stolp &lt;lstolp@whoi.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; John Haverlack &lt;jehaverlack@alaska.edu&gt;, Ken Feldman &lt;ksf1@uw.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Scott Ferguson &lt;jscottf@hawaii.edu&gt;, Trevor Young &lt;tnyoung@hawaii.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Lee Ellett &lt;eellett@ucsd.edu&gt;<br />
+Subject: Re: Cyberoam Install using local authentication<br />
+<br />
+Hi Laura --<br />
+<br />
+Cyberoam firewall rules can include the concept of &quot;identity&quot; which is established after a<br />
+user logs in via the captive portal.&nbsp; If you enable the &quot;attach identity&quot; option on a<br />
+firewall rule then that will rule will only match traffic from logged in users or from a<br />
+specifically identified list of logged in users/groups.<br />
+<br />
+I think probably what you want to do is check attach identity on the http https and ssh<br />
+rules you've defined -- you will also select the list of users or groups that the rule<br />
+should match -- pick &quot;any user&quot; and the rule will match traffic from any logged in user<br />
+regardless of their group membership.&nbsp; If you do not check attach identity than a rule<br />
+matches traffic as in a traditional fireball (with no consideration of the cyberoam user<br />
+session table).<br />
+<br />
+So to get from your current configuration to a configuration which allows only http, https,<br />
+and ssh traffic from logged in users you would:<br />
+<br />
+1. Check attach identity and &quot;any user&quot; on each of the three rules<br />
+2. Change the set of services on each rule to restrict to the set of ports you want the<br />
+rule to match (22,80,443 -- aside: you can specify multiple destination ports on each rule<br />
+so probably would want to use a single rule to implement this policy rather than 3)<br />
+<br />
+Let me know if that helps move things forward,<br />
+<br />
+Cheers!<br />
+Ben<br />
+<br />
+################ Another EMAIL&nbsp; ############################################</p>
+<p>Date: Sun, 7 Jun 2015 22:33:31 +0200<br />
+From: Nathaniel Cohen &lt;ncohen@ucsd.edu&gt;<br />
+To: Laura Stolp &lt;laura@striker.whoi.edu&gt;<br />
+Cc: Steve Foley &lt;sfoley@ucsd.edu&gt;, Laura Stolp &lt;lstolp@whoi.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; John Haverlack &lt;jehaverlack@alaska.edu&gt;, Ken Feldman &lt;ksf1@uw.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Scott Ferguson &lt;jscottf@hawaii.edu&gt;, Trevor Young &lt;tnyoung@hawaii.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Lee Ellett &lt;eellett@ucsd.edu&gt;<br />
+Subject: Re: Cyberoam Install using local authentication<br />
+<br />
+And I missed by mistake directly answering of your question regarding the logic governing<br />
+when/how the cyberoam does http redirection.<br />
+<br />
+Cyberoam will redirect a user via http redirect if user device sends an http packet and<br />
+that packet passes all the way through the firewall rule table without matching a rule with<br />
+reject or accept action.&nbsp; You'll generally want to craft your firewall ruleset such that no<br />
+accept rules match any user traffic without an identity being attached -- that way all<br />
+traffic from non-logged-In user devices will proceed through the whole firewall ruleset<br />
+without being allowed -- then after falling off the bottom of the ruleset the cyberoam will<br />
+decide to issue the http redirect.&nbsp; After the user has logged in their traffic will Proceed<br />
+through the same firewall ruleset but this time With identity attached -- with identity<br />
+attached their traffic will match a different set of rule(s) granting them different<br />
+network privileges.<br />
+<br />
+There is still a small gotcha to remember (once things are configured correctly):<br />
+<br />
+1. HTTPS cannot be intercepted so if a user connects directly to an https resource then the<br />
+cyberoam can't redirect them.&nbsp; Some Chrome implementations are hard coded to use when<br />
+connecting to some but not all Google resources -- so just be aware and navigate to an http<br />
+site as your are testing this and developing mental model of how it works<br />
+<br />
+2. Browser search requests via &quot;awesome bar&quot; are also not intercept able - even if the<br />
+search Api they are talking to operates via http.&nbsp; So be sure to type a full host name into<br />
+the address bar rather than doing a search.<br />
+<br />
+3.&nbsp; You'll want to decide whether you want to let captive portal auto detection function or<br />
+not -- modern devices automatically connect to a magic url when joining a new network to<br />
+&quot;discover&quot; whether a network is connected via captive portal.&nbsp; If this process detects<br />
+captive portal than modal dialogue is thrown before a user prompting them to &quot;login&quot;.&nbsp; This<br />
+behavior has some use ability negatives and when opted to prevent this from<br />
+Functioning so that users only ever see the login page when it's requested through an<br />
+explicit browser action.<br />
+<br />
+Sent from my iPhone</p>
+<p>Date: Tue, 9 Jun 2015 19:58:57 +0200<br />
+From: Nathaniel Cohen &lt;ncohen@ucsd.edu&gt;<br />
+To: Laura Stolp &lt;laura@atlantis.whoi.edu&gt;<br />
+Cc: Laura Stolp &lt;laura@striker.whoi.edu&gt;, Steve Foley &lt;sfoley@ucsd.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Laura Stolp &lt;lstolp@whoi.edu&gt;, John Haverlack &lt;jehaverlack@alaska.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Ken Feldman &lt;ksf1@uw.edu&gt;, Scott Ferguson &lt;jscottf@hawaii.edu&gt;,<br />
+&nbsp;&nbsp;&nbsp; Trevor Young &lt;tnyoung@hawaii.edu&gt;, Lee Ellett &lt;eellett@ucsd.edu&gt;<br />
+Subject: Re: Cyberoam Firewall Rules<br />
+<br />
+Hi Laura -- some quick answers inline as I am via iPhone right now.<br />
+<br />
+Sent from my iPhone<br />
+<br />
+&gt; On Jun 9, 2015, at 19:15, Laura Stolp &lt;laura@atlantis.whoi.edu&gt; wrote:<br />
+&gt; <br />
+&gt; Hi Ben..<br />
+&gt; <br />
+&gt; We are getting close to deployment..<br />
+&gt; <br />
+&gt; For the firewall rules on the cyberoam. I understand that the appliance goes through the<br />
+list from top to bottom, say I put 10 rules in and realize I have missed an very important<br />
+one that should actually be looked at just before the 6th rule or it will not do anything.<br />
+<br />
+&gt; Can I insert rules at a certain point? Or will they only go in order?<br />
+&gt; <br />
+&gt; Can I reorder the firewall rules that I have already entered?<br />
+<br />
+There are some icons at the right side of each rule in the firewall list -- one of these<br />
+allows reordering the firewall rules via drag and drop and one of these is a button for<br />
+&quot;define new rule after this one&quot;<br />
+<br />
+&gt; Has anyone had any trouble w/ firefox getting the captive portal popup (popups not being<br />
+blocked)? On one of our windoze computers w/ firefox 38.0.5, the captive portal login never<br />
+shows up, but windoze exploder<br />
+&gt; does see it...<br />
+<br />
+We turned off the popup mode because popup have usability issues that require explanation<br />
+for mobile browsers and for browsers with popup blockers ...&nbsp; I'm not sure the precise<br />
+details of behaviour to expect with popup settings enabled across the various range of<br />
+browsers ...<br />
+<br />
+The way we have it configured:<br />
+<br />
+1. Not logged in User navigates to http page<br />
+2. User instead sees cyberoam login page<br />
+3. User logs in -- we turned off automatic redirection after login -- this way after<br />
+logging in user should navigate in another tab to do their actual browsing (encouraging<br />
+them to keep the cyberoam login page around so that they are more likely to logout when<br />
+they are done)<br />
+<br />
+This offers the same desirable traits provided by the popup mechanism (user Is likely to<br />
+keep around a page with logout button) but with fewer end user gotchas ...<br />
+&nbsp;</p>
+<p><br />
+&nbsp;</p>
+<p>&nbsp;</p>

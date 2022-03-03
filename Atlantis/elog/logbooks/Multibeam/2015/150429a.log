@@ -1,0 +1,59 @@
+$@MID@$: 60
+Date: Wed, 29 Apr 2015 00:04:02 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Hardware
+S/N: 
+Subject / Summary: BAD TX36 Board
+Cruise: at27-a
+Attachment: 150502_134553_TX36_board_history.xls
+Encoding: HTML
+========================================
+<p>SUMMARY -</p>
+<p>The board we sent back to Kongsberg last year for repair has failed again.&nbsp; We are now operating with one bad board installed (for cruise at27a)</p>
+<p>EXCERPT EMAIL #3 - SENT 28 April 2015<br />
+The failure did follow the board.&nbsp; Unfortunately, I was wrong, we do not have<br />
+another spare.<br />
+<br />
+Not meaning to make this too confusing -<br />
+I removed the failed board - which is the one that has been repaired once and<br />
+returned.&nbsp; It had been re-installed on March 2, 2015, and has now failed again.<br />
+It is S/N 212175.&nbsp; It was removed from slot 24.&nbsp; In it's place, I put the<br />
+&quot;other, more recently failed&quot; board.&nbsp; I did this because I anticipate that the<br />
+&quot;repaired&quot; board was still defective and needs to be returned ASAP to Kongsberg.<br />
+<br />
+We will need to operate for this cruise with one failed board.<br />
+<br />
+So, in summary, we have had 3 board failures since the installation of our em122<br />
+on the Atlantis.&nbsp; Two of these failures have been on the same board - S/N 212175<br />
+- the first time it was in slot 12 (failed in April of 2014), the second time it<br />
+was in slot 24 (failed sometime toward the end of last cruise).&nbsp; Our other board<br />
+failure is board S/N 211543 - it failed when in slot 12 (it had been the<br />
+replacement for board 212175 when it originally failed).&nbsp; Board S/N 211543 is<br />
+presently bad, and is installed in slot 24.<br />
+<br />
+We need to get a hold of a replacement (and hopefully a spare) as soon as we<br />
+can.&nbsp; I will get the board S/N 212175 that has been previously repaired off to<br />
+Kongsberg as soon as we get to WHOI (May 4).<br />
+<br />
+EXCERPT EMAIL #2 - SENT 28 April 2015<br />
+<br />
+I just read some notes from March 2, 2015.&nbsp; The board that is failing now is the<br />
+spare we just had repaired.&nbsp; I will swap boards to see if the failure follows the<br />
+board - if it does I plan to put in our spare.<br />
+<br />
+EXCERPT EMAIL #1 - SENT 28 April 2015<br />
+I have just returned to the Atlantis and we are headed out to do some survyeing.<br />
+I just ran a BIST test and got the attached results.&nbsp; I ran the test at low power<br />
+in quite shallow water (about 75 meters).&nbsp; I believe the em122 was working fine<br />
+on the last cruise, but failed the BIST on the way into port in the same way.&nbsp; We<br />
+were at the dock, so really could not do anymore testing.<br />
+<br />
+It looks like board 0-24 is at least part of the problem.&nbsp; I would like some<br />
+advice on how to proceed.&nbsp; I think we only have one spare board.&nbsp; I am, as of<br />
+yet, unable to tell whether the system will operate, due to shallow water.&nbsp; But,<br />
+by the time we reach deeper water, the science party is going to want to start<br />
+surveying.<br />
+<br />
+&nbsp;</p>

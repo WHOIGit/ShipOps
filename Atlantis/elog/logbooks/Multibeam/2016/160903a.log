@@ -1,0 +1,123 @@
+$@MID@$: 74
+Date: Sat, 03 Sep 2016 16:45:28 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Routine
+Category: calibration survey
+S/N: 
+Subject / Summary: 
+Cruise: at37-02
+Attachment: 160903_172952_pitch_cally_lines.jpg,160903_173012_heading_cally_lines.jpg,160903_173033_roll_cally_midline_zero_offset.jpg,160903_173055_roll_cally_northside1_zero_offset.jpg,160903_173115_roll_cally_northside2_zero_offset.jpg,160903_173132_roll_cally_southend1_zero_offset_.jpg,160903_173146_roll_cally_southend2_zero_offset.jpg,160904_152339_Pitch_Heading.jpg
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">A EM122 Patch test was done.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">The upcoming at37-05 cruise relies heavily on the em122.&nbsp; Therefore, they pushed for the ship to complete </span></p>
+<p><span style="font-size: large;">a patch test prior to that cruise, on the transit to Newport.&nbsp; With the Captain's help, we found some time to</span></p>
+<p><span style="font-size: large;">complete the survey prior to reaching the Panama Canal.&nbsp; Through Dan F. (and others) we enlisted the help </span></p>
+<p><span style="font-size: large;">of Vicki Ferrini and Paul Johnson from the Multibeam Oversight COmmittee to help us find appropriate tracks</span></p>
+<p><span style="font-size: large;">to use.&nbsp; In preparation for the surveys, screenshots were made of all of the relevant offsets, and a pu_parameter dump<br />
+</span></p>
+<p><span style="font-size: large;">was performed.</span></p>
+<p>****email 2016-August-26 from Paul Johnson</p>
+<p>It should be fine to calibrate the pitch, heading and roll over a period of time. &nbsp;This exercise should<br />
+only be a verification of the biases, with hopefully only very minor adjustment to the static offsets,<br />
+unlike starting with a blank slate as when a system is newly installed, &nbsp; &nbsp;However, that said, you will<br />
+want to apply the correction from each test before conducting the next test, in order to avoid any<br />
+potential &ldquo;cross-talk&rdquo; between the pitch, heading, and roll bias determinations.<br />
+<br />
+On another note, I went digging this morning and there was a patch test run for the system in 2014 during<br />
+an ECS cruise on the Mendocino Ridge (this was a group from CCOM led by Andy Armstrong). &nbsp;<br />
+<br />
+We can help look for a suitable location (depth and seafloor geometry) along the route if you want (what<br />
+port are you departing from, sorry if I missed this in another email). &nbsp;<br />
+<br />
+- Paul</p>
+<p>***NOTE - copy of 2014 report put in sssg_on_memory em122 directory</p>
+<p>*******************ANOTHER EMAIL FROM PAUL SUGGESTING SURVEY LINES AND GIVING FURTHER CALIBRATION ADVISE</p>
+<p>Hi Everyone -<br />
+For Kongsberg the normal order is Roll, Pitch, Heading, and then Roll again. &nbsp;This is done as the Roll is often<br />
+the largest contributor to errors and is the easiest of the 3 biases to detect. &nbsp;That said, there are competing<br />
+views that the order should be Pitch, Heading, and Roll as this method accounts for bleeding from the pitch and<br />
+heading errors into the roll immediately, instead of having to redo the roll at the end. &nbsp;For most modern<br />
+multibeam systems, the latency is basically undetectable, unless it is REALLY bad, especially with a deep water<br />
+system because of the cell size and the fuzziness of the slopes that you are using to detect the latency with<br />
+(basically I am saying if you don&rsquo;t have time, you probably do not need to check it). &nbsp;<br />
+<br />
+I plotted up the route that you are taking from Jamaica to Panama and it is not wonderful for conducting pitch<br />
+and heading calibration on. &nbsp; &nbsp;I have attached a figure to this email showing the regional bathymetry (left) and<br />
+the slopes for the area (right), along with the ship track that was sent out. &nbsp; Looking at areas that have<br />
+slopes between 15 and 30 degrees (green in the slope figure), especially along the planned route, &nbsp;there are not<br />
+a whole lot of choices, especially at an appropriate working depth for the EM122. &nbsp;I have identified one<br />
+potential candidate, but it is shallower than I like for an EM122, the slopes are variable, and I put it on the<br />
+edge of the existing multibeam data trying to maximize the slopes. The heading lines are separated from the<br />
+middle pitch line by 1 water depth (1400 meters) to avoid refraction effects when determine the heading bias. &nbsp;<br />
+I have put the points (decimal degrees) that make up this survey in the table below. The pitch line should be<br />
+run back and forth, while each heading line needs to be run once, but in the same direction. &nbsp; <br />
+<br />
+Longitude &nbsp;Latitude &nbsp;Line<br />
+-79.573452 15.179916 Pitch<br />
+-79.529722 15.100507 Pitch<br />
+-79.561933 15.185827 Heading 1<br />
+-79.518201 15.106417 Heading 1<br />
+-79.584971 15.174005 Heading 2<br />
+-79.541242 15.094595 Heading 2<br />
+<br />
+For the roll I would wait until you are down towards the end of your transit (you can do a rough roll check in<br />
+the shallower depths, but I would really want to redo it in the deeper water). &nbsp;At the southern portion of the<br />
+transit &nbsp;you will be in ~3500 meters of water and have flat seafloor, this will work much better for roll than<br />
+doing it in the shallower depths. &nbsp; The points below (decimal degrees) define a 4 nautical mile line that is<br />
+along your track.<br />
+Longitude Latitude<br />
+-79.71118918 11.03320434<br />
+-79.71976005 10.96682555<br />
+<br />
+Hopefully you are not already passed by the pitch location, I am also hopeful that I haven&rsquo;t made a mistake in<br />
+the calculations for the lines (this was thrown together really rapidly as I was out for the day). &nbsp;<br />
+<br />
+- Paul<br />
+********************************</p>
+<p>&nbsp;<span style="font-size: large;">1) &nbsp; </span><span style="font-size: large;">Pitch and Timing:&nbsp;&nbsp; survey name&nbsp;&nbsp; at37-02_cally_survey_2_pitch_heading&nbsp;&nbsp;&nbsp; DONE IN JAMAICAN EEZ&nbsp; times in GMT&nbsp; depths in meters</span></p>
+<p><span style="font-size: large;">Started 8/27/2016&nbsp;&nbsp; went into 8/28/2016</span></p>
+<p><span style="font-size: large;">Sloped bottom.&nbsp; Line to be done once in each direction same speed - suggested follow actual ship track on second run if deviates from the line. </span></p>
+<p><span style="font-size: large;">Paul suggested above that we could forgo the timing line due to time constraints.</span></p>
+<p><span style="font-size: large;">Line # &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start time &nbsp; &nbsp;&nbsp; Stop time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HDG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; SOG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Depth @ start &nbsp; &nbsp; &nbsp; Depth @ End</span></p>
+<p><span style="font-size: large;"> &nbsp;&nbsp; 1&amp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23:15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23:59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 330&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.2 knots&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2028&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2008&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***line went as shallow as 1250 m was not just one directional slope<br />
+</span></p>
+<p><span style="font-size: large;"> &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 23:59 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; TURN</span></p>
+<p><span style="font-size: large;">&nbsp; &nbsp;&nbsp; 4-5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00:09 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00:50 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 153 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7.8-8.8 knots &nbsp; &nbsp;&nbsp; 2008 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2028</span></p>
+<p><span style="font-size: large;">The lines were complete.&nbsp; A calibration was done using the em122 SIS calibration module.&nbsp; An additional offset of &quot;0&quot; meters</span></p>
+<p><span style="font-size: large;">was determined (i.e. no additional offset due to pitch).&nbsp; Screenshots attached.&nbsp; Screenshots were sent to Paul also.&nbsp; If there had been an offset it would have been</span></p>
+<p><span style="font-size: large;">applied before proceeding to Heading calibration.&nbsp; As the bridge steered the second line, I watched the distances between the two steered lines.&nbsp; The weather </span></p>
+<p><span style="font-size: large;">was quite clam, and the bridge stayed within about 10 meters of the previous line (often steering within 1 meter).&nbsp; The ship tracks were most closely matched in the</span></p>
+<p><span style="font-size: large;">center of the survey line(s).</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">2)&nbsp;&nbsp; Heading&nbsp;&nbsp; - </span><span style="font-size: large;">survey name&nbsp;&nbsp; at37-02_cally_survey_2_pitch_heading&nbsp;&nbsp;&nbsp; DONE IN JAMAICAN EEZ&nbsp; times in GMT&nbsp; depths in meters</span></p>
+<p><span style="font-size: large;">Two lines done both in same direction.&nbsp; Lines spaced 2800 meters apart.<span style="background-color: Yellow;"><br />
+</span></span></p>
+<p><span style="font-size: large;">Line # &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start time &nbsp;  &nbsp;&nbsp; Stop time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HDG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; SOG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Depth @ start  &nbsp; &nbsp; &nbsp; Depth @ End</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: large;">7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 01:18 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 01:58 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 327 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8-8.2 knots &nbsp; &nbsp; &nbsp; 2012 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2208</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp; 8, 9, 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TURN</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03:01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03:41&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 331&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.1 knots&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1933</span></p>
+<p><span style="font-size: large;">The lines were complete.&nbsp; A calibration was done using the em122 SIS calibration module.&nbsp; An additional offset of &quot;0&quot; meters</span></p>
+<p><span style="font-size: large;">was  determined (i.e. no additional offset due to heading).&nbsp; Screenshots  attached.&nbsp; Screenshots were sent to Paul also.&nbsp; If there had been an  offset it would have been</span></p>
+<p><span style="font-size: large;">applied before proceeding to Roll calibration.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">3) &nbsp; Roll -</span><span style="font-size: large;"><span style="font-size: large;"> survey name at37-02_cally2_roll &nbsp; DONE in Panama EEZ</span></span>&nbsp; <span style="font-size: large;"> times in GMT&nbsp; depths in meters</span></p>
+<p><span style="font-size: large;">Flat bottom.&nbsp; Same line, same speed done twice (in opposite directions).&nbsp; Depths ~3500 meters (Paul said deep is better than too shallow)</span></p>
+<p><span style="font-size: large;">Survey started on 8/28/2016 went into 8/29/2016</span></p>
+<p><span style="font-size: large;">Line # &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start time &nbsp;   &nbsp;&nbsp; Stop time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HDG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; SOG &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Depth @  start  &nbsp; &nbsp; &nbsp; Depth @ End</span></p>
+<p>&nbsp;<span style="font-size: large;">&nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 23:53 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 00:23 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 187.5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8.1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 3528 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 3529</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TURN</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01:06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3527&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3533</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">The lines were complete.&nbsp; A calibration was done using the em122 SIS calibration module.&nbsp; An additional offset of &quot;0&quot; meters</span></p>
+<p><span style="font-size: large;">was  determined (i.e. no additional  offset due to roll).&nbsp; Screenshots  attached.&nbsp; Screenshots were sent  to Paul also.&nbsp; The corridors used</span><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">in the SIS calibration module for roll are orthogonal to the direction the line is shot.&nbsp; Several corridors were examined.&nbsp; Some of these</span></p>
+<p><span style="font-size: large;">leaned toward an additional roll offset of -0.05 degrees (one can type in values with 2 decimal places and SIS accepts).&nbsp; However, the</span></p>
+<p><span style="font-size: large;">majority of corridors examined showed a &quot;0&quot; offset.&nbsp; See also - em122 directory in sssg_on_memory for screenshots of roll corridors with </span></p>
+<p><span style="font-size: large;">other offsets applied (same corridors, for comparison, showed &quot;0&quot; was overall best) .</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

@@ -1,0 +1,56 @@
+$@MID@$: 94
+Date: Sun, 31 Oct 2021 19:37:52 +0000
+Author: Catie
+S/N: 
+Type: Fix
+equipment: Sophos
+Subject: Port 4444 internal server error fix
+Cruise: at44-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>There is a bug in the Sophos if you try to use the packet capture feature of the Log Viewer, it will crash the port 4444 admin portal to the Sophos. Sophos will still function fine, but you cannot get to the admin portal anymore, it just displays &quot;Internal Server Error&quot;.</p>
+
+<p>To fix:</p>
+
+<p>-ssh to admin@192.168.11.254, put in password</p>
+
+<p>-Press 5 for device management</p>
+
+<p>-Press 3 for advanced shell</p>
+
+<p>-Type on the command line: service tomcat:restart -d -s nosync</p>
+
+<p>&nbsp;</p>
+$@MID@$: 95
+Date: Sun, 31 Oct 2021 19:45:12 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+equipment: Sophos
+Subject: Local on-ship traffic being counted towards quota when logged in
+Cruise: at44-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Discovered on 10/29 that when logged into the Sophos, local on-ship traffic has been being counted towards the daily quota.</p>
+
+<p>To fix this, I added a new firewall rule above &quot;allow-all-local-traffic&quot; called &quot;allow-local-traffic-while-logged-in&quot;.</p>
+
+<p>It has the same settings as &quot;allow-all-local-traffic&quot; except that the &quot;Match known users&quot; (which is any) box is checked, and under it the &quot;Exclude this user activity from data accounting&quot; also checked.</p>
+
+<p>If you delete the &quot;allow-all-local-traffic&quot; rule, which does not have the above boxes checked, this causes the local on-ship sites not to work at all unless you are logged in. So the old rule has to stay also, even though they are semi-redundant.</p>
+
+<p>I&#39;m sure there are some unintended consequences we haven&#39;t found yet, but the local traffic counting against the daily quota while logged in was absolutely unacceptable.</p>
+$@MID@$: 96
+Date: Sun, 31 Oct 2021 19:54:31 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+equipment: Sophos
+Subject: Added Alvin net temporarily to Sophos
+Cruise: at44-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Alvin net is temporarily going through Sophos because they need to have remote access to WHOI to keep configuring and troubleshooting the subs systems, but we did not want them to have unfettered internet access, so this was the solution. Alvin net is now bridge2 in the system, with Alvin net LAN on port 5 and Alvin net FTP side on port 6. It&#39;s Alvin net IP is 10.100.162.253....in iptables as alvingw2.</p>

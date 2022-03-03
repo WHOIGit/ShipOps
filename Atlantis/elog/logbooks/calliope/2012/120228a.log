@@ -1,0 +1,11 @@
+$@MID@$: 19
+Date: Tue, 28 Feb 2012 18:53:59 +0000
+Author: AH
+version: 
+Type: Fix
+Subject: Stbd Vaisala True Wind Direction
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p>THe definition for the Stbd Vaisala true wind direction in Calliope was lost during a system reboot.&nbsp; THis caused the variable WXTS_TD to grab the first element in the string (speed) and log it, rather than the appropriate element.&nbsp; This was fixed 18:40 GMT 2/28/2012 (effected data from about 12:00 GMT 2/26/2012 until now).</p>

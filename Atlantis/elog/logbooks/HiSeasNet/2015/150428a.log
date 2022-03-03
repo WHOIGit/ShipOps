@@ -1,0 +1,21 @@
+$@MID@$: 38
+Date: Tue, 28 Apr 2015 18:34:59 +0000
+Author: rsl
+S/N: na
+Type: General Problem
+Component: unknown
+Subject: HSN failed
+Cruise: at27-a
+Attachment: 
+Encoding: plain
+========================================
+HighSeasNet failed on Saturday, April 25, although we did not notice in until Monday.  (ship is at the dock) 
+Basic symptom is weak receive signal, low agc, which in turn causes other issues like lack of tracking.  
+
+Talked to Steve Foley, swapped out the converter in the dome.  (installed a used but good spare.)  Seemed to
+work a little bit better, but still not good at all.  EbNo around 2, tops.  Tried a brand new converter, this
+actually did not seem as good as the UBG spare, so put the UBG spare back in.  Still the same.
+
+Swapped out the LNA, no improvement at all.  
+
+Ship left the dock, still not working.  

@@ -1,0 +1,41 @@
+$@MID@$: 68
+Date: Sun, 24 Jun 2018 14:19:01 +0000
+Author: AH
+Type: Wire
+Winch: Markey #1 (fore) | Markey #2 (aft)
+Wire: EM Cable / CTD conductor | hydrowire
+Category: Routine
+Subject: 3ps calibration check
+Cruise: at40-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Mon, 19 Mar 2018 16:32:03 +0000 (UTC)<br />
+From: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+To: Chief Mate &lt;chmate@atlantis.whoi.edu&gt;<br />
+Cc: Atlantis Comet &lt;comet@atlantis.whoi.edu&gt;<br />
+Subject: 3PS Calibration Check&nbsp;</p>
+
+<p>Hi all-</p>
+
+<p>Results of today&#39;s 6 month 3PS calibration check were as follows:</p>
+
+<p>0.322/forward hydro:<br />
+Chainfall + dynamometer assembly weight: 110 lbs<br />
+Dynamometer tension: 3400 lbs.<br />
+Theoretical 3PS tension readout: 3510 lbs.<br />
+Actual 3PS readout: 3400 lbs.<br />
+%Error in readout = 110/3510 lbs = 3.13%<br />
+Appendix A specification for factor of safety 2.5 = &lt;%4</p>
+
+<p>0.25/aft hydro:<br />
+Chainfall + dynamometer assembly weight: 110 lbs<br />
+Dynamomter tension: 3020 lbs.<br />
+Theoretical 3PS tension readout: 3130 lbs.<br />
+Actual 3PS readout: 3050 lbs.<br />
+%Error in readout = 80/3130 lbs = 2.55%<br />
+Appendix A specification for factor of safety 2.0 = &lt;%3</p>
+
+<p><br />
+Catie<br />
+&nbsp;</p>

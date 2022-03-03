@@ -1,0 +1,295 @@
+$@MID@$: 71
+Date: Sat, 23 Jun 2018 16:11:16 +0000
+Author: AH - Laura
+S/N: 
+Type: Configuration
+equipment: C2960x
+Subject: output from bgpnei and show both bgp routes working (HSN and FBB-over-HSN)
+Cruise: at40-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>Date: Fri, 27 Apr 2018 19:58:37 +0000 (UTC)<br />
+From: Laura Stolp &lt;lstolp@whoi.edu&gt;<br />
+To: sssg@atlantis.whoi.edu<br />
+Subject: cisco output&nbsp;</p>
+
+<p>Hey Catie,</p>
+
+<p>Probably more info than you want :), but the first part is the output from bgpnei and show both bgp routes working (HSN and FBB-over-HSN). &nbsp;The<br />
+second three are the outputs from rn (show the route) and the gateway of last resort is the next hop.</p>
+
+<p>swapped the port and stbd fbb around in the router_feeder for the status screen.</p>
+
+<p>thanks, laura</p>
+
+<p><br />
+####################</p>
+
+<p>at-hiseasnet#bgpnei<br />
+BGP neighbor is 192.168.96.129, &nbsp;remote AS 64521, internal link<br />
+&nbsp;Description: ucsd-sdsc-roadnet-2611<br />
+&nbsp; BGP version 4, remote router ID 137.110.255.83<br />
+&nbsp; BGP state = Established, up for 11:01:57<br />
+&nbsp; Last read 00:00:05, last write 00:00:04, hold time is 20, keepalive interval is 6 seconds<br />
+&nbsp; Configured hold time is 20, keepalive interval is 8 seconds<br />
+&nbsp; Minimum holdtime from neighbor is 0 seconds<br />
+&nbsp; Neighbor sessions:<br />
+&nbsp; &nbsp; 1 active, is not multisession capable<br />
+&nbsp; Neighbor capabilities:<br />
+&nbsp; &nbsp; Route refresh: advertised and received(new)<br />
+&nbsp; &nbsp; Four-octets ASN Capability: advertised<br />
+&nbsp; &nbsp; Address family IPv4 Unicast: advertised and received<br />
+&nbsp; &nbsp; Multisession Capability: advertised<br />
+&nbsp; Message statistics:<br />
+&nbsp; &nbsp; InQ depth is 0<br />
+&nbsp; &nbsp; OutQ depth is 0</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sent &nbsp; &nbsp; &nbsp; Rcvd<br />
+&nbsp; &nbsp; Opens: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1<br />
+&nbsp; &nbsp; Notifications: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; &nbsp; Updates: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1<br />
+&nbsp; &nbsp; Keepalives: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6067 &nbsp; &nbsp; &nbsp; 5960<br />
+&nbsp; &nbsp; Route Refresh: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; &nbsp; Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6077 &nbsp; &nbsp; &nbsp; 5963<br />
+&nbsp; Default minimum time between advertisement runs is 0 seconds</p>
+
+<p>&nbsp;For address family: IPv4 Unicast<br />
+&nbsp; Session: 192.168.96.129<br />
+&nbsp; BGP table version 660, neighbor version 660/0<br />
+&nbsp; Output queue size : 0<br />
+&nbsp; Index 2<br />
+&nbsp; 2 update-group member<br />
+&nbsp; NEXT_HOP is always this router<br />
+&nbsp; Outgoing update network filter list is 28<br />
+&nbsp; Default weight 30000<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sent &nbsp; &nbsp; &nbsp; Rcvd<br />
+&nbsp; Prefix activity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ---- &nbsp; &nbsp; &nbsp; ----<br />
+&nbsp; &nbsp; Prefixes Current: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 (Consumes 52 bytes)<br />
+&nbsp; &nbsp; Prefixes Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1<br />
+&nbsp; &nbsp; Implicit Withdraw: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; &nbsp; Explicit Withdraw: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; &nbsp; Used as bestpath: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n/a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1<br />
+&nbsp; &nbsp; Used as multipath: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;n/a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Outbound &nbsp; &nbsp;Inbound<br />
+&nbsp; Local Policy Denied Prefixes: &nbsp; &nbsp;-------- &nbsp; &nbsp;-------<br />
+&nbsp; &nbsp; prefix-list &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;99 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; &nbsp; Bestpath from this peer: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25 &nbsp; &nbsp; &nbsp; &nbsp;n/a<br />
+&nbsp; &nbsp; Bestpath from iBGP peer: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 66 &nbsp; &nbsp; &nbsp; &nbsp;n/a</p>
+
+<p>&nbsp; &nbsp; Invalid Path: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;28 &nbsp; &nbsp; &nbsp; &nbsp;n/a<br />
+&nbsp; &nbsp; Total: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;218 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0<br />
+&nbsp; Number of NLRIs in the update sent: max 1, min 0</p>
+
+<p>&nbsp; Address tracking is enabled, the RIB does have a route to 192.168.96.129<br />
+&nbsp; Connections established 27; dropped 26<br />
+&nbsp; Last reset 11:03:51, due to Active open failed<br />
+&nbsp; Transport(tcp) path-mtu-discovery is enabled<br />
+&nbsp; Graceful-Restart is disabled<br />
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0<br />
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255<br />
+Local host: 128.128.252.201, Local port: 179<br />
+Foreign host: 192.168.96.129, Foreign port: 50266<br />
+Connection tableid (VRF): 0<br />
+Maximum output segment queue size: 50</p>
+
+<p>Enqueued packets for retransmit: 0, input: 0 &nbsp;mis-ordered: 0 (0 bytes)</p>
+
+<p>Event Timers (current time is 0x3CDC65D0):<br />
+Timer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Starts &nbsp; &nbsp;Wakeups &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Next<br />
+Retrans &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6562 &nbsp; &nbsp; &nbsp; &nbsp;484 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+TimeWait &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+AckHold &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5963 &nbsp; &nbsp; &nbsp; 5545 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+SendWnd &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+KeepAlive &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+GiveUp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+PmtuAger &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+DeadWait &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+Linger &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0<br />
+ProcessQ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x0</p>
+
+<p>iss: 4030098737 &nbsp;snduna: 4030214457 &nbsp;sndnxt: 4030214457 &nbsp; &nbsp; sndwnd: &nbsp;16327<br />
+irs: &nbsp;796908591 &nbsp;rcvnxt: &nbsp;797022005 &nbsp;rcvwnd: &nbsp; &nbsp; &nbsp;15928 &nbsp;delrcvwnd: &nbsp; &nbsp;456</p>
+
+<p>SRTT: 1475 ms, RTTO: 3386 ms, RTV: 1911 ms, KRTT: 0 ms<br />
+minRTT: 684 ms, maxRTT: 2708 ms, ACK hold: 200 ms<br />
+Status Flags: passive open, gen tcbs<br />
+Option Flags: nagle, path mtu capable<br />
+IP Precedence value : 6</p>
+
+<p>Datagrams (max data segment is 536 bytes):<br />
+Rcvd: 12629 (out of order: 0), with data: 5967, total data bytes: 113451<br />
+Sent: 12360 (retransmit: 484, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 6081, 6<br />
+&nbsp;Packets received in fast path: 0, fast processed: 0, slow path: 0<br />
+&nbsp;fast lock acquisition failures: 0, slow path: 0</p>
+
+<p>BGP neighbor is 192.168.252.202,&nbsp; remote AS 64521, internal link<br />
+&nbsp;Description: ucsd-sdsc-hiseasnet-2821-tunnel-via-fbb<br />
+&nbsp; BGP version 4, remote router ID 137.110.255.83<br />
+&nbsp; BGP state = Established, up for 01:12:35<br />
+&nbsp; Last read 00:00:02, last write 00:00:04, hold time is 20, keepalive interval is 6 seconds<br />
+&nbsp; Configured hold time is 20, keepalive interval is 8 seconds<br />
+&nbsp; Minimum holdtime from neighbor is 0 seconds<br />
+&nbsp; Neighbor sessions:<br />
+&nbsp;&nbsp;&nbsp; 1 active, is not multisession capable<br />
+&nbsp; Neighbor capabilities:<br />
+&nbsp;&nbsp;&nbsp; Route refresh: advertised and received(new)<br />
+&nbsp;&nbsp;&nbsp; Four-octets ASN Capability: advertised<br />
+&nbsp;&nbsp;&nbsp; Address family IPv4 Unicast: advertised and received<br />
+&nbsp;&nbsp;&nbsp; Multisession Capability: advertised<br />
+&nbsp; Message statistics:<br />
+&nbsp;&nbsp;&nbsp; InQ depth is 0<br />
+&nbsp;&nbsp;&nbsp; OutQ depth is 0</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rcvd<br />
+&nbsp;&nbsp;&nbsp; Opens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+&nbsp;&nbsp;&nbsp; Notifications:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Updates:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+&nbsp;&nbsp;&nbsp; Keepalives:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 670&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 658<br />
+&nbsp;&nbsp;&nbsp; Route Refresh:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 673&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 660<br />
+&nbsp; Default minimum time between advertisement runs is 0 seconds</p>
+
+<p>&nbsp;For address family: IPv4 Unicast<br />
+&nbsp; Session: 192.168.252.202<br />
+&nbsp; BGP table version 660, neighbor version 660/0<br />
+&nbsp; Output queue size : 0<br />
+&nbsp; Index 2<br />
+&nbsp; 2 update-group member<br />
+&nbsp; NEXT_HOP is always this router<br />
+&nbsp; Outgoing update network filter list is 28<br />
+&nbsp; Default weight 25000</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rcvd<br />
+&nbsp; Prefix activity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----<br />
+&nbsp;&nbsp;&nbsp; Prefixes Current:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 (Consumes 52 bytes)<br />
+&nbsp;&nbsp;&nbsp; Prefixes Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+&nbsp;&nbsp;&nbsp; Implicit Withdraw:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Explicit Withdraw:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Used as bestpath:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n/a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Used as multipath:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n/a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Outbound&nbsp;&nbsp;&nbsp; Inbound<br />
+&nbsp; Local Policy Denied Prefixes:&nbsp;&nbsp;&nbsp; --------&nbsp;&nbsp;&nbsp; -------<br />
+&nbsp;&nbsp;&nbsp; prefix-list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp;&nbsp;&nbsp; Bestpath from this peer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n/a<br />
+&nbsp;&nbsp;&nbsp; Bestpath from iBGP peer:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 66&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n/a<br />
+&nbsp;&nbsp;&nbsp; Invalid Path:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n/a<br />
+&nbsp;&nbsp;&nbsp; Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 218&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+&nbsp; Number of NLRIs in the update sent: max 1, min 0</p>
+
+<p>&nbsp; Address tracking is enabled, the RIB does have a route to 192.168.252.202<br />
+&nbsp; Connections established 21; dropped 20<br />
+&nbsp; Last reset 01:19:30, due to Active open failed<br />
+&nbsp; Transport(tcp) path-mtu-discovery is enabled<br />
+&nbsp; Graceful-Restart is disabled<br />
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0<br />
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255<br />
+Local host: 192.168.252.201, Local port: 37725<br />
+Foreign host: 192.168.252.202, Foreign port: 179<br />
+Connection tableid (VRF): 0<br />
+Maximum output segment queue size: 50</p>
+
+<p>Enqueued packets for retransmit: 0, input: 0&nbsp; mis-ordered: 0 (0 bytes)</p>
+
+<p>Event Timers (current time is 0x3CDD9918):<br />
+Timer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Starts&nbsp;&nbsp;&nbsp; Wakeups&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next<br />
+Retrans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 692&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+TimeWait&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+AckHold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 664&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 634&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+SendWnd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+KeepAlive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+GiveUp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+PmtuAger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1064&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1063&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x3CDDA30A<br />
+DeadWait&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+Linger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0<br />
+ProcessQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0x0</p>
+
+<p>iss: 2463234643&nbsp; snduna: 2463247625&nbsp; sndnxt: 2463247625&nbsp;&nbsp;&nbsp;&nbsp; sndwnd:&nbsp; 15187<br />
+irs: 3378409918&nbsp; rcvnxt: 3378422632&nbsp; rcvwnd:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15472&nbsp; delrcvwnd:&nbsp;&nbsp;&nbsp; 912</p>
+
+<p>SRTT: 2272 ms, RTTO: 3801 ms, RTV: 1529 ms, KRTT: 0 ms<br />
+minRTT: 1008 ms, maxRTT: 4168 ms, ACK hold: 200 ms<br />
+Status Flags: active open<br />
+Option Flags: nagle, path mtu capable<br />
+IP Precedence value : 6</p>
+
+<p>Datagrams (max data segment is 1296 bytes):<br />
+Rcvd: 1351 (out of order: 0), with data: 671, total data bytes: 12846<br />
+Sent: 1366 (retransmit: 13, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 685, tot4<br />
+&nbsp;Packets received in fast path: 0, fast processed: 0, slow path: 0<br />
+&nbsp;fast lock acquisition failures: 0, slow path: 0</p>
+
+<p><br />
+HSN routing good:<br />
+at-hiseasnet#rn<br />
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E1 - OSPF external type 1, E2 - OSPF external type 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ia - IS-IS inter area, * - candidate default, U - per-user static route<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o - ODR, P - periodic downloaded static route, + - replicated route</p>
+
+<p>Gateway of last resort is 192.168.96.129 to network 0.0.0.0</p>
+
+<p>B*&nbsp;&nbsp;&nbsp; 0.0.0.0/0 [200/0] via 192.168.96.129, 00:03:35<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.0.0/16 is variably subnetted, 4 subnets, 3 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.0/28 is directly connected, GigabitEthernet0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1/32 is directly connected, GigabitEthernet0/0<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.200/30 is directly connected, FastEthernet0/2/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.201/32 is directly connected, FastEthernet0/2/0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137.110.0.0/32 is subnetted, 1 subnets<br />
+S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137.110.255.83 [1/0] via 216.86.248.178, GigabitEthernet0/2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.96.0/32 is subnetted, 1 subnets<br />
+S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.96.129 [1/0] via 128.128.252.202<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is directly connected, FastEthernet0/0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.5/32 is directly connected, FastEthernet0/0/0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.200/30 is directly connected, Tunnel10<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.201/32 is directly connected, Tunnel10<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.0/24 is directly connected, GigabitEthernet0/2<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.179/32 is directly connected, GigabitEthernet0/2</p>
+
+<p>HSN-over-FBB routing good:<br />
+at-hiseasnet#rn<br />
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E1 - OSPF external type 1, E2 - OSPF external type 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ia - IS-IS inter area, * - candidate default, U - per-user static route<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o - ODR, P - periodic downloaded static route, + - replicated route</p>
+
+<p>Gateway of last resort is 192.168.252.202 to network 0.0.0.0</p>
+
+<p>B*&nbsp;&nbsp;&nbsp; 0.0.0.0/0 [200/0] via 192.168.252.202, 00:03:15<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.0.0/16 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.0/28 is directly connected, GigabitEthernet0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1/32 is directly connected, GigabitEthernet0/0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137.110.0.0/32 is subnetted, 1 subnets<br />
+S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137.110.255.83 [1/0] via 216.86.248.178, GigabitEthernet0/2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is directly connected, FastEthernet0/0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.5/32 is directly connected, FastEthernet0/0/0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.200/30 is directly connected, Tunnel10<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.252.201/32 is directly connected, Tunnel10<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.0/24 is directly connected, GigabitEthernet0/2<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 216.86.248.179/32 is directly connected, GigabitEthernet0/2</p>
+
+<p>&nbsp;</p>
+
+<p>Gateway of last resort is 192.168.100.1 to network 0.0.0.0</p>
+
+<p>S*&nbsp;&nbsp;&nbsp; 0.0.0.0/0 [252/0] via 192.168.100.1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.0.0/16 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.0/28 is directly connected, GigabitEthernet0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1/32 is directly connected, GigabitEthernet0/0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is variably subnetted, 2 subnets, 2 masks<br />
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.0/24 is directly connected, FastEthernet0/0/0<br />
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.100.5/32 is directly connected, FastEthernet0/0/0</p>

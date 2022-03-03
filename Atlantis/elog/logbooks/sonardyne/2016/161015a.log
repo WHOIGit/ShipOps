@@ -1,0 +1,150 @@
+$@MID@$: 8
+Date: Sat, 15 Oct 2016 11:55:49 +0000
+Author: AH - from Mike S email
+Type: Configuration
+Category: Hardware
+equipment: beacon
+Subject: Comparison old and new beacons - commands for battery 
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>For anyone interested here are Avtrak the procedures to follow when connecting and disconnecting the batteries for storage. Let me know if you have<br />
+any questions or see any errors.<br />
+<br />
+Mike<br />
+<br />
+---------------&nbsp;&nbsp; OLD AVTRAK-2 ---------------------<br />
+<br />
+If the battery is disconnected (DIS1) the unit will need to be plugged into bench power in order to establish comms and allow the battery to be<br />
+reconnected.<br />
+<br />
+Using &quot;Wideband Test Terminal&quot; WTT_00.exe:<br />
+<br />
+TO CONNECT THE BATTERY:<br />
+- Launch WTT_00.exe (installed on Toughbook TB1 C:\Sonardyne\WTT_00.exe<br />
+- Select &quot;Manual Command&quot;<br />
+-Type SC on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+- Note if DISx = DIS1 in the reply the battery is disconnected<br />
+- Type SC:Uxxxxxx,DIS0 on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+&nbsp; where Uxxxxxx is the UID of the beacon<br />
+- Note if DISx = DIS0 in the reply, the variable is stored in memory and the battery is connected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp; SC:Uxxxxxx,DIS0,STR;CS on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+<br />
+TO DISCONNECT THE BATTERY, follow the same procedure as above accept:<br />
+- Unplug the beacon from bench power, keep serial lines connected.<br />
+- Type SC:Uxxxxxx,DIS1 on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+- Note if DISx = DIS1 in the reply, the variable is stored in memory and the battery is disconnected.<br />
+- Send SC to the beacon until not reply is seen to confirm battery is disconnected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp; SC:Uxxxxxx,DIS1,STR;CS on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+<br />
+using &quot;Docklite&quot;<br />
+<br />
+TO CONNECT THE BATTERY:<br />
+- Launch &quot;Docklite&quot; select port, settings=9800,8-n-1<br />
+-Type SC&lt;cr&gt; and press &quot;Send&quot;<br />
+- Note if DISx = DIS1 in the reply the battery is disconnected<br />
+- Type SC:Uxxxxxx,DIS0 and press &quot;Send&quot;<br />
+&nbsp; where Uxxxxxx is the UID of the beacon<br />
+- Note if DISx = DIS0 in the reply, the variable is stored in memory and the battery is connected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp;SC:Uxxxxxx,DIS0,STR;CS and press &quot;Send&quot;<br />
+<br />
+TO DISCONNECT THE BATTERY, follow the same procedure as above accept:<br />
+- Unplug the beacon from bench power, keep serial lines connected.<br />
+- Type SC:Uxxxxxx,DIS1 and press &quot;Send&quot;<br />
+- Note if DISx = DIS1 in the reply, the variable is stored in memory and the battery is disconnected.<br />
+- Send SC&lt;cr&gt; to the beacon until not reply is seen to confirm battery is disconnected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp; SC:Uxxxxxx,DIS1,STR;CS on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+<br />
+----------- AVTRAK 6G WTM --------------------<br />
+<br />
+If the battery is disconnected (DIS1) plugging the unit into bench power reconnects the battery and stores it in memory.<br />
+<br />
+Using &quot;Wideband Test Terminal&quot; WTT_00.exe:<br />
+<br />
+TO DISCONNECT THE BATTERY,<br />
+- Unplug the beacon from bench power, keep serial lines connected.<br />
+- Launch WTT_00.exe (installed on Toughbook TB1 C:\Sonardyne\WTT_00.exe<br />
+- Select &quot;Manual Command&quot;<br />
+-Type SC on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+- DISx should = DIS0 in the reply (battery connected)<br />
+- Type SC:Uxxxxxx,DIS1 on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+&nbsp; where Uxxxxxx is the UID of the beacon<br />
+- Note if DISx = DIS1 in the reply, the variable is stored in memory and the battery is disconnected.<br />
+- Send SC to the beacon until not reply is seen to confirm battery is disconnected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp; SC:Uxxxxxx,DIS1,STR;CS on the &quot;Enter Command&quot; line and press &quot;Send&quot;<br />
+<br />
+using &quot;Docklite&quot;<br />
+<br />
+TO CONNECT THE BATTERY:<br />
+- Unplug the beacon from bench power, keep serial lines connected.<br />
+- Launch &quot;Docklite&quot; select port, settings=9800,8-n-1<br />
+-Type SC&lt;cr&gt; and press &quot;Send&quot;<br />
+- DISx should = DIS0 in the reply (battery connected)<br />
+- Type SC:Uxxxxxx,DIS1 and press &quot;Send&quot;<br />
+&nbsp; where Uxxxxxx is the UID of the beacon<br />
+- Note if DISx = DIS1 in the reply, the variable is stored in memory and the battery is connected.<br />
+- Send SC&lt;cr&gt; to the beacon until not reply is seen to confirm battery is disconnected.<br />
+- If for some reason the variable does not get stored (firmware dependent) try typing<br />
+&nbsp;SC:Uxxxxxx,DIS1,STR;CS and press &quot;Send&quot;<br />
+<br />
+<br />
+**********<span style="font-size: large;">MORE AVTRAK SETTINGS:</span></p>
+<p><span style="font-size: small;">Subject: Avtrak-2 configurations<br />
+<br />
+We just got an Avtrak back and some of the settings had been returned to their defaults values so I figured I would send out some of the non-default<br />
+settings to look for and other configuration tidbits. If any of these need to be different feel free to correct. We'll check all the configs and store<br />
+the report file for each beacon on ALOPSREPO/Ops_files/Subsystems Information/Navigation/Sonardyne/AvTrak Test Reports/<br />
+<br />
+For descriptions of the commands see the &quot;Avtrak Command Language&quot; manual in ALOPSREPO/Ops_files/Subsystems Information/Navigation/Sonardyne/<br />
+<br />
+Some of these can be set using the WTT software but some can only be set using manual commands so I will list the commands bellow.<br />
+<br />
+To store data before removing power or disconnecting the battery:<br />
+Command = SC:STR;CS&lt;cr&gt;<br />
+<br />
+Receiver Wait Time<br />
+Set to at least 10000<br />
+Command = CS:RXW10000&lt;cr&gt;<br />
+<br />
+Linear Gain<br />
+Set to 40<br />
+Command = CS:LG40&lt;cr&gt;<br />
+<br />
+Detection Threshold<br />
+Set to 50<br />
+Command = CS:DET50&lt;cr&gt;<br />
+<br />
+Activity Time<br />
+For Alvin set to &quot;always on&quot; = AT14<br />
+Command = CS:AT14&lt;cr&gt;<br />
+<br />
+Set Address<br />
+command = SC:Uxxxxxx,ADxxxx&lt;cr&gt;<br />
+ex: SC:U004E5A,AD1012&lt;cr&gt;<br />
+<br />
+Battery Connect/Diconnect<br />
+DIS0 = connect, DIS1 = disconnect<br />
+Command = SC: DISx&lt;cr&gt;<br />
+<br />
+I think that's about it.<br />
+<br />
+Mike</span></p>
+<p><span style="font-size: small;">Sorry guys,<br />
+<br />
+To store data used to be SC:STR;CS it looks like this may have change. This may be due to firmware upgrades in the Avtraks. the store command is now:<br />
+<br />
+command = STR&lt;cr&gt;<br />
+rely STR:OK&lt;cr&gt;<br />
+<br />
+One thing to note is that the version of WTT in the ET shop uses the old store command so if you don't do a manual store &quot;STR&lt;cr&gt;&quot; after changing any<br />
+CS settings they will be lost if the battery is disconnected.<br />
+<br />
+Mike<br />
+<br />
+</span></p>

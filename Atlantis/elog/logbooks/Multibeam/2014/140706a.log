@@ -1,0 +1,26 @@
+$@MID@$: 45
+Date: Tue, 20 May 2014 20:05:35 +0000
+Author: RSL
+System: EM122 - Kongsberg
+Type: Fix
+Category: Hardware
+S/N: na
+Subject / Summary: Replaced batteries in UPS
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>Replaced the batteries in the UPS.&nbsp; This seems to have made the UPS functional again, in spite of the manufactures claim that we needed a new power module.&nbsp; </p>
+$@MID@$: 46
+Date: Fri, 13 Jun 2014 20:17:58 +0000
+Author: RSL
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Hardware
+S/N: NA
+Subject / Summary: UPS offline again.  
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>UPS switched to &quot;unprotected mode, fault is U191, battery module fault.&nbsp; These are the new batteries.&nbsp; Loose connection somewhere?&nbsp; The multibeam runs at 26% load most of the time, but there seem to be some peaks over 60%.&nbsp; Was able to restart the UPS and the fault is gone, has not come back within a week or so.</p>

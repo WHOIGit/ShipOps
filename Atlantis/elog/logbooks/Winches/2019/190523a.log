@@ -1,0 +1,128 @@
+$@MID@$: 83
+Date: Thu, 23 May 2019 06:37:44 +0000
+Author: Emily
+Type: Termination
+Winch: 
+Wire: EM Cable / CTD conductor
+Category: Fix
+Subject: New termination due to 0.322 kink
+Cruise: at42-11
+Attachment: 
+Encoding: HTML
+========================================
+<p>The results below are from a termination done on 5/22/2019. This is the second termination we have had to redo on this cruise due to a kink found in the 0.322 cable close to the block or drum.</p>
+
+<p>22&nbsp;May 2019 PST (23 May 2019 UTC)</p>
+
+<p>Termination and Megger by Emily Shimada</p>
+
+<p>Tested with:&nbsp; Model 1060 AEMC Megger used on wall power at 250VDC setting. - S/N 154856DCDV,&nbsp;cal. date 8/6/2018&nbsp;</p>
+
+<p>Fwd .322 Wire, NSF-05-C128</p>
+
+<p>Inside tape = &nbsp;&nbsp; 46 meters</p>
+
+<p>Outside tape =&nbsp; 8551.0&nbsp;meters (tape given to Chief Mate PJ on 5/22/2019 on the Bridge)</p>
+
+<p>Overall length =&nbsp; 8597 meters</p>
+
+<p>Air temp: 14.4&nbsp;degrees C ; 57.9 degrees F</p>
+
+<p>Tested entire wire from termination, through drum and j-boxes to Computer Lab end.</p>
+
+<p><strong>INSULATION TEST&nbsp;RESULTS</strong></p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td><strong>WIRE PAIRS&nbsp; &nbsp; &nbsp; &nbsp;</strong></td>
+			<td><strong>G-OHMS&nbsp; &nbsp; &nbsp;&nbsp;</strong></td>
+			<td><strong>DAR RATIO&nbsp; &nbsp; &nbsp;&nbsp;</strong></td>
+			<td><strong>PI RATIO&nbsp; &nbsp; &nbsp;&nbsp;</strong></td>
+			<td><strong>CAPACITANCE (uF)&nbsp;</strong></td>
+		</tr>
+		<tr>
+			<td>GREEN - BLACK&nbsp;&nbsp;</td>
+			<td>6.23</td>
+			<td>1.10</td>
+			<td>1.13</td>
+			<td>1.006</td>
+		</tr>
+		<tr>
+			<td>GREEN - WHITE</td>
+			<td>8.57</td>
+			<td>1.06</td>
+			<td>1.13</td>
+			<td>0.931</td>
+		</tr>
+		<tr>
+			<td>GREEN - RED</td>
+			<td>6.85</td>
+			<td>1.08</td>
+			<td>1.17</td>
+			<td>0.939</td>
+		</tr>
+		<tr>
+			<td>BLACK - WHITE</td>
+			<td>16.46</td>
+			<td>1.05</td>
+			<td>1.13</td>
+			<td>0.621</td>
+		</tr>
+		<tr>
+			<td>BLACK - RED</td>
+			<td>14.15</td>
+			<td>1.04</td>
+			<td>1.09</td>
+			<td>0.621</td>
+		</tr>
+		<tr>
+			<td>RED - WHITE</td>
+			<td>15.06</td>
+			<td>1.05</td>
+			<td>1.09</td>
+			<td>0.652</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>CONTINUITY TEST RESULTS</strong></p>
+
+<p>Expected value:&nbsp;&nbsp; (8.551 km) * (30.8 Ohms/km) = 263.0&nbsp;Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>NOTE: Continuity readings taken with AEMC 1060 megohmeter on the&nbsp;400 kOhms setting.&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr>
+			<td>WIRE PAIRS</td>
+			<td>OHMS&nbsp;&nbsp;</td>
+		</tr>
+		<tr>
+			<td>GREEN - BLACK&nbsp; &nbsp;</td>
+			<td>246</td>
+		</tr>
+		<tr>
+			<td>GREEN - WHITE</td>
+			<td>247</td>
+		</tr>
+		<tr>
+			<td>GREEN - RED</td>
+			<td>249</td>
+		</tr>
+		<tr>
+			<td>BLACK - WHITE</td>
+			<td>489</td>
+		</tr>
+		<tr>
+			<td>BLACK - RED</td>
+			<td>490</td>
+		</tr>
+		<tr>
+			<td>RED - WHITE</td>
+			<td>491</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Termination End to Ship = 1.27 ohms</p>

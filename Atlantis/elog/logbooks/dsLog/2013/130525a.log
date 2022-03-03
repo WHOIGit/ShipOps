@@ -1,0 +1,75 @@
+$@MID@$: 6
+Date: Sat, 25 May 2013 12:36:39 +0000
+Author: AH
+svn: 28
+Type: atdatalog
+Subject: atdatalog02
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>downloaded version 28 of dsLog to atdatalog02.</p>
+<p>atdatalog02 has the USB serial device, so the ini file was copied and then the ttyM? were changed to ttyUSB? - the version and ini file has not yet been tested (i.e. if there are any problems look for typos)</p>
+$@MID@$: 7
+Date: Sat, 25 May 2013 20:28:48 +0000
+Author: AH
+svn: 28
+Type: notes
+Subject: NOAA & SAMOS
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: xx-large;">THIS IS OLD AND INCORRECT NOW I THINK</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">The root user crontab on linus</span> <span style="font-size: large;">runs the scripts that make the csv files for SAMOS &amp; NOAA.&nbsp; </span></p>
+<p><span style="font-size: large;">The sssg crontab actually sends the data files (they go to anmet@sssg1.whoi.edu for noaa and amet@sssg1.whoi.edu for samos, and then they are apparently transferred from there).</span><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">The SSSG crontab entries are:<br />
+</span></p>
+<p><span style="font-size: large;"># m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+# mail position to r2r lstolp 20110826<br />
+01 10,23 * * * /home/sssg/bin/mk_r2r_daily 2&amp;&gt; /dev/null<br />
+<br />
+#mail NOAA data hourly<br />
+56 * * * * /usr/bin/mail -s Atlantis_NOAA_data_transfer anmet\@sssg1.whoi.edu &lt; /home/data/underway/proc/noaa.tmp</span></p>
+<p><span style="font-size: large;">#the next line can be used to check the data from the ship (i.e. send it to the sssg account here as well)<br />
+#56 * * * * /usr/bin/mail -s Atlantis_NOAA_data_transfer sssg\@atlantis.whoi.edu &lt; /home/data/underway/proc/noaa.tmp<br />
+<br />
+# mail SAMOS <br />
+59 23 * * * /usr/bin/mail -s Atlantis_samos_data_transfer amet\@sssg1.whoi.edu &lt; /home/data/underway/proc/samos.tmp<br />
+</span><span style="font-size: large;">#the next line can be used to check the  data from the ship (i.e. send it to the sssg account here as well)</span></p>
+<p><span style="font-size: large;">#59 23 * * * /usr/bin/mail -s Atlantis_samos_data_transfer sssg\@atlantis.whoi.edu &lt; /home/data/underway/proc/samos.tmp</span><br />
+<br />
+&nbsp;</p>
+<p><span style="font-size: large;">The address that NOAA receives the data at is: webship@noaa.gov.&nbsp; The data are initially sent to:&nbsp; </span></p>
+<p><span style="font-size: large;">NOAA should be anmet@sssg1.whoi.edu<br />
+SAMOS should be amet@sssg1.whoi.edu<br />
+<br />
+These are aliases and the data goes to other<br />
+email addresses as well as noaa and samos so we can track that they are<br />
+working and check the data..<br />
+<br />
+</span></p>
+<p>************ <span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">crontab entries for root user:<br />
+</span></p>
+<p><span style="font-size: large;"># run make csv and dat every minute<br />
+# do not need to run make_samos.pl if running make_csvfile.pl.samostoo since this will make both<br />
+#*/1 * * * * /root/bin/suds/make_samos.pl<br />
+#samos &amp; csv files <br />
+*/1 * * * * /root/bin/suds/make_csvfile.pl.samostoo<br />
+#where are you now file<br />
+*/1 * * * * /root/bin/suds/make_datfile.pl<br />
+# make file for noaa every hour&nbsp; <br />
+55 * * * * /root/bin/suds/make_noaa.pl<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp; <br />
+</span></p>
+<p><span style="font-size: large;">******</span></p>
+<p><span style="font-size: large;"><span style="font-size: xx-large;">To verify that NOAA is getting data, can go to:</span></span></p>
+<p><span style="font-size: large;"><span style="font-size: xx-large;">http://shipobs.arh.noaa.gov/shipmail.php and look for &quot;Atlantis&quot;</span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

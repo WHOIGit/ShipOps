@@ -1,0 +1,41 @@
+$@MID@$: 12
+Date: Sat, 02 Jul 2011 12:23:24 +0000
+Author: AH - via Laura
+version: 
+Type: Other
+Subject: SCIENCE USB DATA DRIVES
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>3.&nbsp; ftp has md5deep and should be used to create end of cruise USB's<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;copysci<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;copies /home/data to /scratch1/scicd/[cruisenumber]<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;after copy, delete directories that do not have data, or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; were not used during the cruise<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;mksci_usb<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;will rsync /scratch1/scicd/[cruiseid] to /mount/Transcend<br />
+<br />
+&nbsp;</p>
+$@MID@$: 13
+Date: Sat, 02 Jul 2011 12:40:42 +0000
+Author: Laura
+version: 
+Type: Other
+Subject: Newcruise script
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>10. editd newcruise to umount c:/home/data/em122 <br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;added directories to linus:/home/data.template<br />
+&nbsp; updated: Diskinfo.txt&nbsp; <br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;cruise_participants; this one needs to go away, no pictures on USB's<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;ctd<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;ctd/doc/configs<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;ctd/doc/processint_setup<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;ctd/process<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;em122<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;r2r<br />
+<br />
+&nbsp;</p>

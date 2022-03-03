@@ -1,0 +1,13 @@
+$@MID@$: 3
+Date: Sat, 09 Apr 2016 16:28:46 +0000
+Author: Catie
+S/N: 0225
+Type: Configuration
+Category: Software
+Subject: Grav data transfer to linus
+Cruise: at33-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>There is an hourly rsync running on the gravimeter computer to rsync any new daily test point, gravity tie, etc records to the /data/gravity/logs directory. </p>
+<p>There is an hourly rsync running on linus to rsync the gravimeter computer logs directory to /home/data/gravimeter.</p>

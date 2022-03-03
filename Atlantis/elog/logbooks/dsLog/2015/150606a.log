@@ -1,0 +1,78 @@
+$@MID@$: 13
+Date: Sat, 06 Jun 2015 13:59:48 +0000
+Author: laura
+svn: dsLog-34; dsLogCSV-98, dsLogPOSTCSV-98
+Type: programs
+Subject: svn updated dsLogCSV
+Cruise: at29-01
+Attachment: 150606_135827_dsLogCSV.ini
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p><br />
+&nbsp;</p>
+$@MID@$: 14
+Date: Sat, 06 Jun 2015 17:09:09 +0000
+Author: laura
+svn: all
+Type: atdatalog
+Subject: svn commands
+Cruise: at29-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>cd /usr/local/src</p>
+<p><span style="font-family: verdana, tahoma, sans-serif;">svn co svn+ssh://atsssg@sssg11.whoi.edu/usr/local/svn/repos/dsLog dsLog</span></p>
+<p style="font-family: verdana, tahoma, sans-serif;">svn co svn+ssh://atsssg@sssg11.whoi.edu/usr/local/svin/repos/dsLogCSV/trunk dsLogCSV</p>
+<div>atsssg!2015</div>
+<div>&nbsp;</div>
+<div>cd /usr/local/src/dsLog</div>
+<div>make clean</div>
+<div>make</div>
+<div>svn info</div>
+<div>copy binary to /usr/local/bin/dsLog-svnnumber</div>
+<div>&nbsp;</div>
+<div>create link:&nbsp;</div>
+<div>ln -s /usr/local/bin/dsLog-svnnumber /usr/local/bin/dsLog</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+$@MID@$: 15
+Date: Sat, 06 Jun 2015 17:09:10 +0000
+Author: laura
+svn: all
+Type: atdatalog
+Subject: svn commands
+Cruise: at29-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>cd /usr/local/src</p>
+<p><span style="font-family: verdana, tahoma, sans-serif;">svn co svn+ssh://atsssg@sssg11.whoi.edu/usr/local/svn/repos/dsLog dsLog</span></p>
+<p style="font-family: verdana, tahoma, sans-serif;">svn co svn+ssh://atsssg@sssg11.whoi.edu/usr/local/svn/repos/dsLogCSV/trunk dsLogCSV</p>
+<div>atsssg!2015</div>
+<div>&nbsp;</div>
+<div>cd /usr/local/src/dsLog</div>
+<div>make clean&nbsp;</div>
+<div>make dsLog</div>
+<div>svn info</div>
+<div>cp dsLog /usr/local/bin/dsLog-svnnumber</div>
+<div>&nbsp;</div>
+<div>create link:&nbsp;</div>
+<div>ln -s /usr/local/bin/dsLog-svnnumber /usr/local/bin/dsLog</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;cd /usr/local/src/dsLogCSV.date or whatever number you used above</div>
+<div>make clean&nbsp;</div>
+<div>make dsLogCSV</div>
+<div>make dsLogPostCSV</div>
+<div>svn info</div>
+<div>cp dsLogCSV /usr/local/bin/dsLogCSV-svnnumber</div>
+<div>&nbsp;cp dsLogPostCSV /usr/local/bin/dsLogPostCSV-svnnumber</div>
+<div>&nbsp;</div>
+<div>create link:&nbsp;</div>
+<div>Remove soft link in /usr/local/bin first</div>
+<div>ln -s /usr/local/bin/dsLogCSV-svnnumber /usr/local/bin/dsLogCSV</div>
+<div>ln -s /usr/local/bin/dsLogPostCSV-svnnumber /usr/local/bin/dsLogPostCSV</div>

@@ -1,0 +1,159 @@
+$@MID@$: 14
+Date: Sun, 19 Jun 2011 15:49:31 +0000
+Author: lstolp
+Type: Configuration
+name: mnemosyn
+server type: 
+OS: Linux
+Location: Main Lab
+Category: Software
+Subject: ftp:/home/data rsyncing to memory:/home/data
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>user atlantis on ftp is rsyning /home/data/ to atlantis@memory:/home/data</strong></p>
+<p><strong>on ftp:<br />
+</strong></p>
+<p><strong>in /home/atlantis/binatlantis</strong></p>
+<p><strong>atlantis@ftp:~/bin$ more data_command </strong><br />
+#!/bin/bash -v<br />
+date<br />
+time rsync -az --partial --inplace --progress --stats --exclude 'archive' /home/data/* 192.168.11.30:/home/data/.<br />
+&nbsp;</p>
+<p><strong>atlantis@ftp:~/bin$ more rsync_data </strong><br />
+#!/bin/bash<br />
+# originally sl_tunnel.sh<br />
+#<br />
+# adapted to use on WHOI ships to copy<br />
+#&nbsp; ftp:/home/data/ to mnemosyn:/home/data<br />
+# <br />
+#&nbsp; input from rhagg, amaffei, slerner, rlaird, and lstolp<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20110504<br />
+#<br />
+#<br />
+#<br />
+<br />
+DATESTAMP=`date +&quot;%Y/%m/%d %H:%M:%S&quot;`<br />
+<br />
+<br />
+RSCOMMAND=&quot;/home/atlantis/bin/data_command &gt;&gt; /home/atlantis/logfiles/rsync_data<br />
+.log 2&gt;&amp;1&quot;<br />
+<br />
+echo $DATESTAMP<br />
+echo $RSCOMMAND<br />
+<br />
+CHECK_RSYNC=`ps -eo args | grep &quot;$RSCOMMAND&quot; | grep -v grep`<br />
+<br />
+<br />
+# If Rsync command not running run it<br />
+if [ -z &quot;$CHECK_RSYNC&quot; ] ; then<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Rsync Down: Running Rsync&quot;<br />
+&nbsp;&nbsp; $RSCOMMAND &amp;<br />
+else<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Rsync Up.&quot;<br />
+fi<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>this is run in atlantis's cron:<br />
+</strong></p>
+<p><strong>atlantis@ftp:~/bin$ crontab -l</strong><br />
+# m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+*/2 * * * * /home/atlantis/bin/rsync_data&gt;&gt;/home/atlantis/logfiles/rsync_data.log 2&gt;&amp;1<br />
+&nbsp;</p>
+<p><strong>and rights to a logfile:<br />
+</strong></p>
+<p><strong>atlantis@ftp:~/logfiles$ ls -la</strong><br />
+total 9932<br />
+drwxr-xr-x 2 atlantis atlantis&nbsp;&nbsp;&nbsp;&nbsp; 4096 2011-06-19 15:47 .<br />
+drwxr-xr-x 6 atlantis atlantis&nbsp;&nbsp;&nbsp;&nbsp; 4096 2011-06-18 22:51 ..<br />
+-rw-r--r-- 1 atlantis atlantis 10148341 2011-06-19 15:46 rsync_data.log<br />
+&nbsp;</p>
+$@MID@$: 15
+Date: Sun, 19 Jun 2011 16:54:17 +0000
+Author: lstolp
+Type: Configuration
+name: mnemosyn
+server type: data
+OS: Linux
+Location: Main Lab
+Category: Software
+Subject: rsync_science data to shore
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>On mnemosyn user atalntis rsync's /home/sci0/incoming and outgoing w/ the shore server atlantis@128.128.250.51</strong></p>
+<p><strong>mnemoysn:/home/atlantis/bin</strong></p>
+<p><strong>atlantis@mnemosyn:~/bin$ more rsync_command </strong><br />
+#!/bin/bash -v<br />
+echo date<br />
+time rsync -az --partial --inplace --progress --stats /home/science/outgoing/* 128.128.250.51:/srv/ftp/pub/ship/atlantis/science/incoming/.<br />
+rsync -az --partial --inplace --progress&nbsp; 128.128.250.51:/srv/ftp/pub/ship/atlantis/science/outgoing/* /home/science/incoming/.<br />
+&nbsp;</p>
+<p>atlantis@mnemosyn:~/bin$ more rsync_science <br />
+#!/bin/bash<br />
+# originally sl_tunnel.sh<br />
+#<br />
+# adapted to use on WHOI ships to copy<br />
+#&nbsp; science data to shore <br />
+# <br />
+#&nbsp; input from rhagg, amaffei, slerner, rlaird, and lstolp<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20110504<br />
+#<br />
+#<br />
+#<br />
+<br />
+DATESTAMP=`date +&quot;%Y/%m/%d %H:%M:%S&quot;`<br />
+<br />
+<br />
+RSCOMMAND=&quot;/home/atlantis/bin/rsync_command &gt;&gt; /home/atlantis/logfiles/rsync_science.log 2&gt;&amp;1&quot;<br />
+TUCOMMAND=&quot;ssh -nNT -C -p 22 -R 33522:localhost:22 sshtunnel@128.128.97.216&quot;<br />
+<br />
+echo $RSCOMMAND<br />
+<br />
+CHECK_RSYNC=`ps -eo args | grep &quot;$RSCOMMAND&quot; | grep -v grep`<br />
+CHECK_TUNNEL=`ps -eo args | grep &quot;$TUCOMMAND&quot; | grep -v grep`<br />
+<br />
+<br />
+# If Rsync command not running run it<br />
+if [ -z &quot;$CHECK_RSYNC&quot; ] ; then<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Rsync Down: Running Rsync&quot;<br />
+&nbsp;&nbsp; $RSCOMMAND &amp;<br />
+else<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Rsync Up.&quot;<br />
+fi<br />
+<br />
+# If the tunnel is not up, create the tunnel<br />
+if [ -z &quot;$CHECK_TUNNEL&quot; ] ; then<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Tunnel Down: Running Tunnel&quot;<br />
+&nbsp;&nbsp; $TUCOMMAND &amp;<br />
+else<br />
+&nbsp;&nbsp; echo $TODAY &quot;$DATESTAMP $HOSTNAME Tunnel Up.&quot;<br />
+fi<br />
+&nbsp;</p>
+<p><strong>The above is run as a crontab by user atlantis:<br />
+</strong></p>
+<p><strong>atlantis@mnemosyn:~/bin$ crontab -l</strong><br />
+# m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+*/20 * * * * /home/atlantis/bin/rsync_science&gt;&gt;/home/atlantis/logfiles/rsync_science.log 2&gt;&amp;1<br />
+&nbsp;</p>
+<p><strong>It writes to a logfile:<br />
+</strong></p>
+<p><strong>atlantis@mnemosyn:~$ ls -la logfiles/</strong><br />
+total 68<br />
+drwxr-xr-x 2 atlantis atlantis&nbsp; 4096 2011-06-18 23:40 .<br />
+drwxr-xr-x 7 atlantis atlantis&nbsp; 4096 2011-06-19 15:29 ..<br />
+-rw-r--r-- 1 atlantis atlantis 54699 2011-06-19 16:40 rsync_science.log</p>
+<p>&nbsp;</p>
+<p><strong>On 128.128.250.51 which is sssg's ftp server:</strong></p>
+<p>user:atsci </p>
+<p>pword:atsci!2011</p>
+<p>can access the data by scp or ssh: atsci@128.128.250.51</p>
+<p>To put data in outgoing from shore you need to either ftp or scp it to:</p>
+<p>atsci@128.128.250.51/pub/ship/atlantis/science/incoming/</p>
+<p>To download data you the easiest way is probably to point their browser to:</p>
+<p>fftp://128.128.250.51</p>
+<p>then click down through: pub/ship/atlantis/science/incoming/</p>
+<p>Do not delete anything in 128.128.250.51:/pub/ship/atlantis/science/incoming/</p>
+<p>it will just be copied again...</p>

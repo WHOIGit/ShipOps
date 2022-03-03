@@ -1,0 +1,20 @@
+$@MID@$: 78
+Date: Wed, 27 Jul 2016 17:08:01 +0000
+Author: dsims
+Type: Configuration
+name: ftp
+server type: DNS
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: Added Main Lab navg computer to hosts.science
+Cruise: at36
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">&nbsp; The computer that Jon Howland set up to run navG in the main lab is now 192.168.11.244.&nbsp; The host name is mainlabnav.atlantis.whoi.edu. <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

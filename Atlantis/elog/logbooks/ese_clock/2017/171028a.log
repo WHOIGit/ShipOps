@@ -1,0 +1,17 @@
+$@MID@$: 8
+Date: Sat, 28 Oct 2017 19:23:35 +0000
+Author: Catie
+S/N: 
+Clock: computer_lab
+Type: Other
+Category: Other
+Subject: New clock installed in computer lab
+Cruise: at39-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Old ESE Clock (one in place for past several years that had specially modified PPS pulse) was started displaying the wrong day of the year during at38.&nbsp;</p>
+
+<p>Clock was swapped out at WHOI on 01 Oct 2017 for a clock that did not have specially modified pulse.</p>
+
+<p>PPS settings in Phins and EM122 changed accordingly.</p>

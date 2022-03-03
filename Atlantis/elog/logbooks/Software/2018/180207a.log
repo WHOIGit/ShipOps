@@ -1,0 +1,76 @@
+$@MID@$: 12
+Date: Wed, 07 Feb 2018 15:12:36 +0000
+Author: dsims
+Type: Other
+Subject: Getting software updates
+Cruise: at39-05
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+
+<p>Note:&nbsp; After reading everything, you will find a shortcut at the bottom of the page.</p>
+
+<p>I have been using atlsci@128.128.250.51 to wget the updates for Firefox, Thunderbird, Adobe, Java and other software like the Mac security updates.&nbsp; It has worked out well.</p>
+
+<p>Usually, I find out about new updates automatically or I check from time to time.&nbsp; Here&#39;s what I have found works:</p>
+
+<p>Firefox:</p>
+
+<p style="margin-left: 40px;">Look at available updates by going to https://www.mozilla.org/en-US/firefox/new/ .&nbsp; Look on the page for &quot;Download in Another Language&quot;.&nbsp; That will have links to all the different machine and language versions.&nbsp; Right click on each version and open in new tab.&nbsp; That will start a download of the software to your computer.&nbsp; Click on the downloads and stop the download.&nbsp; Then right click on the name of the download and &quot;Copy Download Link&quot;.</p>
+
+<p>Thunderbird:</p>
+
+<p style="margin-left: 40px;">Pretty much the same instructions as for Firefox.</p>
+
+<p>Adobe Flash:</p>
+
+<p style="margin-left: 40px;">Go to adobe.com. At the bottom of the page is a link to Flash Player.&nbsp; Once you are on the Flash Player Page, click to get the download information for &#39;another operating system&#39;.&nbsp; (To use this method, you need to use a Mac to get Windows OS versions and a Windows machine to get the Mac versions.&nbsp; Either one will get Linux versions.)&nbsp; In each operating system there are two or three versions of flash available with each version feeding a different browser.&nbsp; It is best to download all three.&nbsp; You can get the download link like you did for Firefox.</p>
+
+<p>Java Runtime Environment:</p>
+
+<p style="margin-left: 40px;">Go to: https://java.com/en/download/manual.jsp.&nbsp; That will give you the links to download.&nbsp; Right click on the links for &#39;offline&#39; installation and save their link locations.&nbsp; Use those link locations instead of opening in a new tab like with Firefox, Thunderbird and Adobe Flash.&nbsp; Use that link with wget. (if you open a new tab, dont use the link you get from a stopped download.&nbsp; Instead use the URL that is listed in the new tab to download)</p>
+
+<p>&nbsp; You can get other software the same way.&nbsp; If the link you get from a stopped download doesn&#39;t work, use the URL that gave you the link, as you would with Java.</p>
+
+<p>&nbsp;</p>
+
+<p>Log into atlsci@128.128.250.51.&nbsp; Go to outgoing/sssg.</p>
+
+<p style="margin-left: 40px;">The downloads will not have the version name included.&nbsp; Here&#39;s examples of how to make that work:</p>
+
+<p style="margin-left: 80px;">wget -O (what you want the new filename to be) (paste in whatever the download link is)</p>
+
+<p style="margin-left: 80px;">wget -O Firefox_Setup_58.0.1_x64.exe https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/win64/en-GB/Firefox%20Setup%2058.0.1.exe</p>
+
+<p style="margin-left: 80px;">wget -O Firefox_Setup_58.0.1_x32.exe https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/win32/en-GB/Firefox%20Setup%2058.0.1.exe</p>
+
+<p style="margin-left: 80px;">wget -O Firefox_Setup_58.0.1.dmg https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/osx/en-GB/Firefox%20Setup%2058.0.1.exe</p>
+
+<p style="margin-left: 80px;">wget -O Firefox_58.0.1.dmg https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/mac/en-US/Firefox%2058.0.1.dmg</p>
+
+<p style="margin-left: 80px;">wget -O firefox-58.0.1-x64.tar.bz2 https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/linux-x86_64/en-GB/firefox-58.0.1.tar.bz2</p>
+
+<p style="margin-left: 80px;">wget -O firefox-58.0.1-x32.tar.bz2 https://download-installer.cdn.mozilla.net/pub/firefox/releases/58.0.1/linux-i686/en-US/firefox-58.0.1.tar.bz2</p>
+
+<p style="margin-left: 80px;">wget -O install_flash_player_28.0.0.161.exe https://fpdownload.adobe.com/get/flashplayer/pdc/28.0.0.161/install_flash_playe.exe</p>
+
+<p style="margin-left: 80px;">wget -O install_flash_player_28.0.0.161_ax.exe https://fpdownload.adobe.com/get/flashplayer/pdc/28.0.0.161/install_flash_player_ax.exe</p>
+
+<p style="margin-left: 80px;">wget -O install_flash_player_28.0.0.161_ppapi.exe https://fpdownload.adobe.com/get/flashplayer/pdc/28.0.0.161/install_flash_player_ppapi.exe</p>
+
+<p style="margin-left: 80px;">wget -O install_flash_player_osx_28.0.0.161_ppapi.dmg https://fpdownload.adobe.com/get/flashplayer/pdc/28.0.0.161/install_flash_player_osx_ppapi.dmg</p>
+
+<p style="margin-left: 80px;">wget -O install_flash_player_osx_28.0.0.161.dmg https://fpdownload.adobe.com/get/flashplayer/pdc/28.0.0.161/install_flash_player_osx.dmg</p>
+
+<p style="margin-left: 80px;">wget -O jre-8u161-windows-x64.exe javadl.oracle.com/webapps/download/AutoDL?BundleId=230542_2f38c3b165be4555a1fa6e98c45e0808</p>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<p style="margin-left: 40px;">Now for the short version.&nbsp; You can often use the previous lines for downloading Firefox by changing the version number.&nbsp; I have gotten it to work with Adobe Flash as well.&nbsp; I would guess that Thunderbird would work the same as well.&nbsp; Obviously you can&#39;t do that for Jave Runtime Environment.</p>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<p style="margin-left: 80px;">&nbsp;</p>

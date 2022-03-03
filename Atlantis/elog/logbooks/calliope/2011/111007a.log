@@ -1,0 +1,46 @@
+$@MID@$: 14
+Date: Fri, 07 Oct 2011 11:36:53 +0000
+Author: AH - from email trail
+version: 
+Type: General Problem
+Subject: email errors when set up Calliope on new machine
+Cruise: at18-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>EMAIL TRAIL - dates Sept 9 - Sept 27, 2011</p>
+<p>&nbsp;</p>
+<p>&gt; &gt; &gt; The one thing I can't seem to resolve is when I start calliope I get an error that says Outgoing Mailserver,<br />
+&gt; &gt; &gt; user or password error. All of the calliope config files appear to have the correct username and password<br />
+&gt; &gt; &gt; and IP's (the version of calliope we are running now was copied straight over from old athena), and I have<br />
+&gt; &gt; &gt; zeus now thinking its athena, I'm not sure where the mail is getting hung up. I believe the errors because<br />
+&gt; &gt; &gt; we should have seen a calliope error report come in last night and we did not. I am getting a similar<br />
+&gt; &gt; &gt; mailserver error from the NOAA MET Transfer. What am I missing?<br />
+<br />
+<br />
+&gt; &gt; Did you try just coping the /programfiles/ipworks directory over to cobraathena? I am not sure that IPWorks in<br />
+&gt; &gt; it entirety needs to be installed.<br />
+<br />
+&gt; You rock the house!!&nbsp;&nbsp; It appears your suggestion of copying the directory worked.&nbsp; I acutally copied the whole<br />
+&gt; <br />
+&gt; C:/Program Files/ActiveX/ folder which includes the following<br />
+&gt; <br />
+&gt; Catalyst<br />
+&gt; DevPower<br />
+&gt; gms<br />
+&gt; GobalMajic<br />
+&gt; GreenLeaf<br />
+&gt; IE_ActiveX<br />
+&gt; IPWorks<br />
+&gt; MoonValley<br />
+&gt; MySCP<br />
+&gt; Olectra<br />
+&gt; SST<br />
+&gt; <br />
+&gt; Anyway, at long last the NOAA MET Transfer program says<br />
+&gt; Last Transfer 27/Sep/2011 10:53:32&nbsp; instead of the cursed error messaage. YAY yay YAY yay YAY.<br />
+&gt; <br />
+&gt; I restarted calliope and now there are no 'Problems' in the pink box off to the right.&nbsp; I restarted SAMOS too,<br />
+&gt; hopefully all will go as hoped.<br />
+<br />
+&nbsp;</p>

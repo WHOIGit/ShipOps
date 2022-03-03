@@ -1,0 +1,54 @@
+$@MID@$: 5
+Date: Wed, 22 Sep 2010 08:53:50 +0000
+Author: AH
+Type: Wire
+Winch: 
+Wire: EM Cable / CTD conductor
+Category: Other
+Subject: New conductor wire .322"
+Cruise: Prior to at17-1
+Attachment: 
+Encoding: HTML
+========================================
+<p>New 0.322&quot; conductor wire spooled on drum on Sept. 8, 2010 at the WHOI dock </p>
+<p>New termination - Chinese fingers for both main termination and safety. </p>
+<p>I megger'ed the cable, including sliprings and cabling through the deck down to the computer lab.&nbsp; Results below:</p>
+<p>&gt; &gt; Test completed 9-September-2010<br />
+&gt; &gt; <br />
+&gt; &gt; Insulation Resistance Test<br />
+&gt; &gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; uF<br />
+&gt; &gt; <br />
+&gt; &gt; Ground-Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.531 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.168<br />
+&gt; &gt; <br />
+&gt; &gt; Ground-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<br />
+&gt; &gt; <br />
+&gt; &gt; Ground-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.565 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.70&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<br />
+&gt; &gt; <br />
+&gt; &gt; Red White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.63 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.714<br />
+&gt; &gt; <br />
+&gt; &gt; Red-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7.59 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<br />
+&gt; &gt; <br />
+&gt; &gt; Black-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.73 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.762<br />
+&gt; &gt; <br />
+&gt; &gt; -&nbsp; if I did not get to the Megger within a minute or so of the test<br />
+&gt; &gt; completing, I was unable to recover the uF reading (it still displays the<br />
+&gt; &gt; other values, but seems not to display the uF.<br />
+&gt; &gt; <br />
+&gt; &gt; Continuity<br />
+&gt; &gt; <br />
+&gt; &gt; Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 303 Ohms<br />
+&gt; &gt; <br />
+&gt; &gt; Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 303 Ohms<br />
+&gt; &gt; <br />
+&gt; &gt; White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 304 Ohms<br />
+&gt; &gt; <br />
+&gt; &gt; Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; 1 Ohm<br />
+&gt; &gt; <br />
+&gt; &gt; *according to my calculations the conductor resistances should be ~ 305<br />
+&gt; &gt; Ohms for our length, so those looked good.<br />
+&gt; &gt; <br />
+&gt; &gt; The total cable length was 9908 meters after spooling (this is the<br />
+&gt; &gt; termination-end-tape length minus the spool-end-length)<br />
+&nbsp;</p>
+<p>The lower value for the white-ground is likely due to the splices between the slipring and the lab.</p>
+<p>&nbsp;</p>

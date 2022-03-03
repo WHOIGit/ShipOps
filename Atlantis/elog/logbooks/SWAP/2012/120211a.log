@@ -1,0 +1,104 @@
+$@MID@$: 1
+Date: Sat, 11 Feb 2012 11:37:06 +0000
+Author: lstolp
+Type: General Problem
+Category: Hardware
+Subject: Replaced SWAP box
+Cruise: at18-18
+Attachment: 
+Encoding: HTML
+========================================
+<p>SWAP box had been removed, it is backup and running..</p>
+<p>There is a webinterface for it, but <strong>DO NOT&nbsp; </strong>use to configure, it does show interesting statistics:</p>
+<p>https://swap</p>
+<p>&nbsp;</p>
+<p>It is setup to be on the science network. It has not been integrated into the c2900 router.. </p>
+<p>Name:&nbsp;&nbsp;&nbsp; swap.science.atlantis.whoi.edu<br />
+Address: 192.168.11.219<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Useful SWAP commands:</strong></p>
+<p><strong>iwl&nbsp;&nbsp;</strong>&nbsp; - will show other antennas in the area, other SWAP boxes will show up as swap2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cell 10 - Address: 02:60:4B:49:98:C2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ESSID:&quot;swap2&quot;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mode:Ad-Hoc<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frequency:2.437 GHz (Channel 6)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signal level=-59 dBm&nbsp; Noise level=-87 dBm<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Encryption key:off<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extra:bcn_int=100<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extra:resp_rate=20<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extra:atim=0<br />
+&nbsp;</p>
+<p><strong>rn</strong>&nbsp; - will show the routing table, wlan0 is the antenna.. this shows the antenna ip</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /etc/hosts matches antenna ip with name.</p>
+<p>&nbsp;</p>
+<p>atlantis:~# rn</p>
+<p>Kernel IP routing table<br />
+Destination&nbsp;&nbsp;&nbsp;&nbsp; Gateway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Genmask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Flags Metric Ref&nbsp;&nbsp;&nbsp; Use Iface<br />
+172.28.163.122&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.255 UH&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 wlan0<br />
+172.28.181.115&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.255 UH&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 wlan0<br />
+172.28.57.114&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.255 UH&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 wlan0<br />
+10.131.8.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.0&nbsp;&nbsp; U&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth0<br />
+192.168.11.0&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.0&nbsp;&nbsp; U&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 eth1<br />
+172.28.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.0.0&nbsp;&nbsp;&nbsp;&nbsp; U&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 wlan0<br />
+0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 172.28.57.114&nbsp;&nbsp; 0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UG&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 wlan0<br />
+&nbsp;</p>
+<p><strong>/etc/hosts</strong></p>
+<p># swap2 host table<br />
+<br />
+127.0.0.1&nbsp;&nbsp;&nbsp; localhost pyramid<br />
+<br />
+p (primary)<br />
+172.28.163.122&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iselin.whoi.net<br />
+172.28.86.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iselin2.whoi.net<br />
+172.28.107.39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; swapclark.whoi.net<br />
+172.28.245.112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; akens<br />
+172.28.18.92&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mvco<br />
+172.28.205.50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; oceanus<br />
+172.28.181.115&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tioga<br />
+172.28.57.114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knorr<br />
+172.28.131.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; atlantis<br />
+172.28.255.81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shuttle<br />
+172.28.43.120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; office_test<br />
+<br />
+&nbsp;</p>
+<p>/etc/network/interfaces</p>
+<p>#<br />
+# Define your network interfaces here, then use ifup and ifdown to<br />
+# bring them up and down.&nbsp; Try not to use ifconfig directly.<br />
+#<br />
+# For dhcp interfaces, ifup will try dhclient, udhcpc, pump, and dhcpcd<br />
+# (in that order, whichever it finds first under /sbin).<br />
+#<br />
+# Comment out an 'auto' line to disable an interface.<br />
+#<br />
+# This file is rewritten by WiFiAdmin.&nbsp; You have been warned!<br />
+#<br />
+<br />
+auto lo<br />
+iface lo inet loopback<br />
+<br />
+auto eth0<br />
+iface eth0 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 10.131.8.1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 10.131.8.255<br />
+<br />
+auto eth1<br />
+iface eth1 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 192.168.11.219<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.255.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 192.168.11.255<br />
+<br />
+#auto eth2<br />
+iface eth2 inet dhcp<br />
+<br />
+auto wlan0<br />
+iface wlan0 inet static<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; address 172.28.131.8<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; netmask 255.255.0.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; broadcast 172.28.255.255<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pre-up iwconfig wlan0 essid &quot;swap2&quot; mode Ad-Hoc channel 06 rate auto retry 8 rts off frag off # Set by WiFiAdmin<br />
+<br />
+&nbsp;</p>

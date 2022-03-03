@@ -1,0 +1,37 @@
+$@MID@$: 36
+Date: Tue, 04 Nov 2014 19:58:49 +0000
+Author: AH
+Type: Configuration
+Category: sensor
+Sensor: 9plus | temp | cond | fluor | turbidity | xmiss | O2 | Altimeter
+S/N: 
+Calibration Date: 
+Subject / Summary: CTD configuration
+Cruise: at26-23
+link: 
+Revisions:  & Tue Nov  4 20:04:52 2014^M
+Attachment: 141104_195225_ctd_top_end_cap_at26-13sievert.jpg,141104_195242_ctd_bottom_end_cap_at26-23seivert.jpg,141104_195302_at26-23_sensor_config.txt
+Encoding: plain
+========================================
+ON CTD AS OF 2014-NOV-03:
+
+sensor            calibration date
+03 4230            Feb 2014
+03 2774            Feb 2014
+04 2148            Feb 2014
+04 2186            Feb 2014
+43 0113            Mar 2014
+
+PSA 916
+FLNTURTD-149
+Cstar 854DR
+***also using PMEL S/N 0005 on the 9plus this cruise - at26-23
+
+spare sensors onboard 
+ 
+sensor            calibration date
+03 4303            Feb 2014
+03 4312            Feb 2014
+04 3009            Feb 2014
+04 2645            Feb 19 2014  
+43 0072            Feb 26 2014

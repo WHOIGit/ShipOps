@@ -1,0 +1,15 @@
+$@MID@$: 79
+Date: Wed, 17 May 2017 19:21:00 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+Component: comtech modem
+Subject: Temporary ship-shore link bandwidth upgrade
+Cruise: at37-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>Uplink bandwidth has been temporarily reallocated on the AOR satellite to give Atlantis 768k in the ship-shore direction. The following configuration changes were made to the modem on 14 May 17:</p>
+<p>-BUC carrier (Tx) frequency changed from 6.3697452 to 6.36997583</p>
+<p>-Tx data rate changed from 0.256 to 0.768</p>
+<p>-L-band (Tx) output power changed from -22.0 to -20.5</p>

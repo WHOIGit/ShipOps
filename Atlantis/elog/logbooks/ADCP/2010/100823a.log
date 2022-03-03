@@ -1,0 +1,25 @@
+$@MID@$: 2
+Date: Mon, 23 Aug 2010 20:27:50 +0000
+Author: ds
+S/N: 
+Type: General Problem
+Category: General
+Subject: Temp Sensor Problems
+Cruise: at15-70
+Attachment: 
+Encoding: HTML
+========================================
+<p>20 Aug 2010</p>
+<p>&nbsp;</p>
+<p>&quot;I just saw that the OS75 transducer temp is out again (from looking at the UHDAS<br />
+vector plot).<br />
+<br />
+Apparently this has happened before; I attach some email traffic on that below.&nbsp; In<br />
+that case, toggling bottom track was related to bringing it back; perhaps simple<br />
+start/stops of the acquisition do the same?<br />
+<br />
+Frank</p>
+<p>&quot;</p>
+<p>Shut down and re-started both computer and deck box.&nbsp; It resolved the problem.</p>
+<p>Previously, cycling the bottom tracking setting solved the problem.&nbsp; I did a power reset because it had been a long time since everything had been shut down.</p>
+<p>&nbsp; </p>

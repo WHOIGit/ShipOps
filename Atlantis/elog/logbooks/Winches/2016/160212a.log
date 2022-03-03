@@ -1,0 +1,89 @@
+$@MID@$: 49
+Date: Fri, 12 Feb 2016 15:37:15 +0000
+Author: Catie
+Type: Wire
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: Routine megger of all wire segments
+Cruise: shipyard 2015-16
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: xx-large;">12 Feb 2016 </span></p>
+<p>Megger by Catie Graver</p>
+<p>-Bare .322 wire, no termination</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9787 meters</p>
+<p>Overall length = 9630 meters</p>
+<p>Air temp: 27-55 F</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><strong>Test 1: Entire wire from deck (no termination) through drum to computer lab j-box</strong></span></p>
+<p>&nbsp;Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;   &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31.93 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.24 &nbsp; &nbsp;    &nbsp;  &nbsp;&nbsp; 1.66 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.720 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    </span></p>
+<p><span style="font-size: medium;">Black-Red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.61&nbsp; GOhms &nbsp; &nbsp; &nbsp; 1.28 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 1.64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.720 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.74 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.34&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.47&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.095 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.99 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.26&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 1.54 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.715 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17.08 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.25&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.57</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.084&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.35 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.26&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.53 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.154 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; ~(9.630 km) * (30.8 Ohms/km) = ~296 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings:&nbsp; Black-White = 560 Ohms; Black-Red = 552 Ohms; Black Green = 280 Ohms; White-Red = 552 Ohms; White-Green = 282 Ohms; Red-Green = 276 Ohms; Green-ship = 3 Ohms.<br />
+</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><strong>Test2: Wire from deck (no termination) to drum (no slip ring)</strong></span></p>
+<p>&nbsp;Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;   &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 363.1 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.78 &nbsp; &nbsp;    &nbsp;  &nbsp;&nbsp; 4.88 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.717 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    </span></p>
+<p><span style="font-size: medium;">Black-Red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 265.3&nbsp; GOhms &nbsp; &nbsp; &nbsp; 1.69 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 4.82 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.714 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 281.2 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.81&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 5.46&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.152 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 283.2 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.72&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 4.97 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.709 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 262.1 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.82&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 4.26</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.024&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 158.3 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.66&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 5.01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.080 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; (9.630 km) * (30.8 Ohms/km) = 296 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings:&nbsp;  Black-White = 546 Ohms; Black-Red = 548 Ohms; Black Green = 276 Ohms;  White-Red = 546 Ohms; White-Green = 274 Ohms; Red-Green = 274 Ohms<br />
+</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><strong>Test3: Wire from drum (no slip ring) to computer lab j-box</strong></span></p>
+<p>&nbsp;Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;   &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26.05 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp; &nbsp;    &nbsp;  &nbsp;&nbsp; 1.40 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    </span></p>
+<p><span style="font-size: medium;">Black-Red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.72&nbsp; GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.15 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.31 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.005 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.46 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.14&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 1.27&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 0.005 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Red &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.08 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.17&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 1.40 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.005 &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.34 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.14&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.26</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.005&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.03 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.15&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.32 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.005 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; (~.05km) * (30.8 Ohms/km) = ~1.5 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings:&nbsp;  Black-White = 1.28 Ohms; Black-Red = 1.33 Ohms; Black Green = 1.19 Ohms;  White-Red = 1.27 Ohms; White-Green = 1.11 Ohms; Red-Green = 1.22 Ohms</span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p>&nbsp;</p>

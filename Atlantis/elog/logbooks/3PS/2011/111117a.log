@@ -1,0 +1,36 @@
+$@MID@$: 1
+Date: Thu, 17 Nov 2011 13:26:42 +0000
+Author: AH
+Type: Software
+Category: Routine
+Subject: Calibration of 3PS Peak Detection System
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">Tim and I (Allison) calibrated Channels 0 &amp; 1 on the 3PS Peak Detection System<br />
+</span></p>
+<p><span style="font-size: large;">NOTE:&nbsp; for both channels the wrap angle is 120 degrees</span></p>
+<p><span style="font-size: xx-large;"><strong>FINAL VALUES:</strong></span></p>
+<p><span style="font-size: x-large;">CHANNEL 0:<br />
+</span></p>
+<p><span style="font-size: x-large;">Calibrate Channel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Channel Multiplier = 1.9070&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: x-large;">Calibrate Sensor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sensor Offset = 1.8337<br />
+</span></p>
+<p><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><del><span style="font-size: x-large;">Sensor Multiplier = 384.4217</span></del></p>
+<p><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sensor Multiplier = 800.00&nbsp;&nbsp;&nbsp;&nbsp; when this winch was finally used it was discovered that there was an error in the original calibration (it is likely that the incorrect wrap angle was used during the calibration).&nbsp; The peak-detection system for this winch was recalibrated at sea using the CTD as a weight during a cast.&nbsp; The results were compared graphically to the regular 3PS readout data and compared well.&nbsp; The plan is to re-calibrate the system again at the dock in Barbados using the dynamometer so that a more stable load reading may be obtained and compared.<br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">CHANNEL 1:<br />
+</span></p>
+<p><span style="font-size: x-large;">Calibrate Channel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Channel  Multiplier = 1.9082 &nbsp; <br />
+</span></p>
+<p><span style="font-size: x-large;">Calibrate Sensor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sensor Offset = 1.8225<br />
+</span></p>
+<p><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Sensor Multiplier = 873.6627</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">Using these calibration values, both channels tracked to within + or - 10 lbs from zero load through 6500 lbs (most values were significantly more accurate than this, usually within 3 pounds).</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

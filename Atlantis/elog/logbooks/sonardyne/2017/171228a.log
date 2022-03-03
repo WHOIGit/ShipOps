@@ -1,0 +1,16 @@
+$@MID@$: 26
+Date: Thu, 28 Dec 2017 17:43:43 +0000
+Author: AH - from at39-01 Wheat cruise report
+Type: Configuration
+Category: Software
+equipment: Sonardyne software
+Subject: Strings from Phins
+Cruise: at39-02c
+Attachment: 
+Encoding: HTML
+========================================
+<p>Discovered through work with Sonardyne that the PhinsIII documentation for most TSS strings is incorrect. The Phins firmware upgrade in October 2016 changed the roll convention not only on PRDID TSS as was discovered in November 2016, but also the roll convention for SIMRAD EM TSS, and SIMRAD EM HEAVE2. This makes the Phins incompatible with easily sending TSS strings to the new Sonardyne Ranger2.</p>
+
+<p>&nbsp;</p>
+
+<p>On first vertical deployment of a beacon with a dummy weight to test Jason winch, found that the beacon position was experiencing ~100m position jumps. Cause traced to the PRDID TSS feed into the NSH. Ranger1 had the ability to &ldquo;invert roll&rdquo; on the PRDID TSS attitude input, this is not an option on Ranger2, so one must instead provide a feed with a sign convention that matches the Sonardyne convention already. With present configurations on the boat, the only TSS-based string available to feed the Sonardyne properly is TSS1, which does not contain heading. There is not currently a 10Hz+ heading feed available to feed to the Sonardyne independent of the attitude feed, so for the remainder of the cruise the Sonardyne was fed a non-TSS-based string (PRDID). Navigation still worked reasonably well in this configuration (as it was pre-Fall 2016).</p>

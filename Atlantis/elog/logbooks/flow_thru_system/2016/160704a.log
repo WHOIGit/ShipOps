@@ -1,0 +1,14 @@
+$@MID@$: 54
+Date: Mon, 04 Jul 2016 22:38:20 +0000
+Author: dsims
+Sensor: SBE45
+S/N: 4547129-0204
+Calibration Date: 10 June 2015
+Type: Fix
+Category: Software
+Subject: SBE45 interval set wrong on SN 340
+Cruise: at35
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">The sbe45, SN 340,&nbsp; interval was set to 10sec.&nbsp; Set the interval to 1 sec, stopped and started data.&nbsp; All is now good.</span></p>

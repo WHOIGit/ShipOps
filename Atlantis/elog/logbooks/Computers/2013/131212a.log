@@ -1,0 +1,63 @@
+$@MID@$: 62
+Date: Thu, 12 Dec 2013 13:24:51 +0000
+Author: AH
+Type: Other
+name: ftp | linus | mnemosyn
+server type: 
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: Crontab Notes
+Cruise: at26-09
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">This is mainly notes to myself, as I always forget who does what - so it is definitely not a complete account!</span></p>
+<p>shore = 128.128.96.93</p>
+<p><span style="font-size: large;"><ins>LINUS</ins></span></p>
+<p><span style="font-size: large;">sssg crontab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - data stuff (samos and noaa updates, r2r position updates)</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016-Sept-3&nbsp;&nbsp;&nbsp;&nbsp; r2r position data commented out (was bouncing, Laura checking to see if they still want)</span></p>
+<p><span style="font-size: large;">atlantis crontab&nbsp;&nbsp;&nbsp;&nbsp; - </span><span style="font-size: large;">sssg tunnel</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsync_db - rsync cruise data database to shore</span></p>
+<p><span style="font-size: large;">root crontab &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; - serverstats</span></p>
+<p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; sailor_call</span></p>
+<p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <del>make_csvfile.pl.samos </del>&nbsp; - 20150204 - don't need this anymore dsLogCSV sending samos &amp; noaa</span><span style="font-size: large;"> </span></p>
+<p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; make_datfile.pl&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where are you now file! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span></p>
+<p><span style="font-size: large;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>make_noaa.pl&nbsp;&nbsp;</del>&nbsp;&nbsp; - 20150204 - don't need this anymore dsLogCSV sending samos &amp; noaa<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; snapshottar stuff</span> (see backup scheme information)</p>
+<p>*make scripts do exactly what the titles state<br />
+&nbsp;</p>
+<p><span style="font-size: large;">cmail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - epull (pull large files from striker)</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: large;">-prunearchives (get rid of old email archives)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><ins>FTP</ins></span></p>
+<p><span style="font-size: large;">sssg crontab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - /usr/lib/cgi-bin/imet/get_data.pl</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: large;">check internet status - has fbb been up too long?</span></p>
+<p><span style="font-size: large;">atlantis crontab&nbsp;&nbsp;&nbsp; - rsync_data&nbsp;&nbsp;&nbsp; - data from ftp mount to memory</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsync_dslog&nbsp;&nbsp; - underway data to shore</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsync_elog&nbsp;&nbsp;&nbsp;&nbsp; - elog to shore </span></p>
+<p><span style="font-size: large;">root crontab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - serverstats</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; snapshottar</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: large;">squid logs</span><span style="font-size: large;"> - SARG</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p><span style="font-size: large;"><ins>MEMORY</ins></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">sssg crontab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - no crontab</span></p>
+<p><span style="font-size: large;">atlantis crontab&nbsp;&nbsp; -rsync_science&nbsp;&nbsp; - big file transfer to and from shore</span></p>
+<p><span style="font-size: large;">root crontab&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - serverstats</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <del><span style="font-size: large;">snapshottar&nbsp;&nbsp; </span></del><span style="font-size: large;"> no more 2015-apr-30<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; memory_backup.sh - backups of memory to external harddrive (see backup information)</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="font-size: large;">ATDATALOG</span></p>
+<p><span style="font-size: large;">root crontab &nbsp; &nbsp; &nbsp; -&nbsp;&nbsp; serverstats.pl </span></p>
+<p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&nbsp;&nbsp; </span><span style="font-size: large;">cat /root/atdatalog01_serverstats.log &gt;&gt;/var/log/atdatlog.serverstatus</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">&nbsp; </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

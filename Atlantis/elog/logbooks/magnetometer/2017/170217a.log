@@ -1,0 +1,85 @@
+$@MID@$: 10
+Date: Fri, 17 Feb 2017 14:57:55 +0000
+Author: AH
+S/N: 
+Type: General Problem
+Category: Hardware
+Subject: cable run
+Cruise: at37-08
+Attachment: 
+Encoding: HTML
+========================================
+<p><style type="text/css">
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Comic Sans MS";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Comic Sans MS";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style></p>
+<p class="MsoNormal"><span style="font-family:Arial">During the at37-05 cruise, it was thought that the noise issues with the Maggie were related to the cable going through the engine room spaces (winch room, propulsion room, etc).<span style="mso-spacerun: yes">&nbsp; </span>I new cable was run (temporary) and the data improved.<span style="mso-spacerun: yes">&nbsp; </span>So, Joe McCabe began the process of running a cable (permanent) from the computer lab racks to the ROV hangar.<span style="mso-spacerun: yes">&nbsp; </span>He ran it all the way to the Hydrolab in cable trays and through Rox Blocs.<span style="mso-spacerun: yes">&nbsp; </span>It is in the overhead there now.<span style="mso-spacerun: yes">&nbsp; </span>If you open the overhead engineer&rsquo;s access right by the RoxBloc to the ROV hangar, it is right up in there with the end labelled.<span style="mso-spacerun:
+yes">&nbsp; </span>Hopefully it can be completed this summer (2017 maintenance).<br />
+</span></p>
+$@MID@$: 11
+Date: Fri, 17 Feb 2017 15:11:39 +0000
+Author: AH
+S/N: 
+Type: General Problem
+Category: Hardware
+Subject: Noisy Data
+Cruise: at37-08
+Attachment: 170218_101806_noise_test_maggie_2017feb16.png,170218_101817_autotune_whoi_towfish.jpg
+Encoding: HTML
+========================================
+<p>We have been using the SeaSpy Maggie out here on the Atlantis over the last several months - mostly very successfully.&nbsp; Back in November, we ran into some<br />
+heavy noise issues, a new deck cable was run, and that mostly solved the problem.<br />
+<br />
+During this cruise (Pito Deep) we ran into noise issues again (note - both cruises were to areas where the fields are &quot;low level&quot; - I am not sure of the<br />
+terminology, but right now I think we are moving from a max that was around 32 uT down to 24 uT byt the time we reach Arica, CHILE).<br />
+<br />
+We started getting spikes in our data, and the spiking continued to worsen over time.&nbsp; Dave S (other SSSG onboard) discovered that there was an issue with the<br />
+splice between the deck cable and the umbilical leading to the towfish.&nbsp; If it was touched/moved the data spikes went wild, suggesting a loose connection in<br />
+the splice somewhere.&nbsp; So, I cut the splice out and redid it.&nbsp; At first, everything looked really good, but over the course of a day and half the spiking<br />
+returned and again was getting worse.&nbsp; So, I redid the splice a second time.<br />
+<br />
+The first time I did the splice, I noted that the umbilical shield looked corroded.&nbsp; I cleaned it up before soldering it to the ground, but I did not cut back<br />
+further.&nbsp; The second time, I cut back an additional 6-8 inches and noticed the shield looked much better.&nbsp; I cut off the &quot;somewhat corroded looking&quot; portion<br />
+before and got to &quot;shinier&quot; shield this time before re-doing the connections.&nbsp; I had high hopes, but when we plugged it all back in, it did look about 85%<br />
+better, but far from perfect.<br />
+<br />
+We ran some tests and also tried to sample at 1 Hz and it looked really bad then (most of this cruise we've used 0.2 Hz).&nbsp; So, that is where we stood up until<br />
+the ship encountered fishing gear (around Feb 15) and pulled the maggie in for an hour or so.&nbsp; When it was re-deployed, Dave S. cleaned the connector very well, and the data looked pristine for quite a few hours after that.&nbsp; I even upped the sampling rate to 1 Hz and was only getting minor, isolated spiking.&nbsp; Then Mike Daffron requested some more diagnostics.&nbsp; I ran those and sent the screenshots.&nbsp; When I set the maggie back on regular sampling, it was extremely noisy again.</p>
+<p>&nbsp;The test was:</p>
+<p>You can run this test with the mag deployed and stopped cycling, and it should take about five minutes.&nbsp; To run this test, first stop cycling, then put the SeaSPY in diagnostic mode with the &quot;\&quot; command and confirm with &quot;y ot Y&quot;. Then send the &quot; ^ &quot; command to start the test. It should run a quick noise test and then check each of the capacitor banks from 0 - 8 if it passes the noise test.</p>
+<p>Over the past several days, the maggie has definitely exhibited noisier data during the day time than at night.&nbsp; I am thinking that ship noise may be affecting the data (more going on during the day - grinding, needle gunning, etc).</p>

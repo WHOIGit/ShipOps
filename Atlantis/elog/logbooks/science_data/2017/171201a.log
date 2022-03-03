@@ -1,0 +1,18 @@
+$@MID@$: 16
+Date: Fri, 01 Dec 2017 17:19:38 +0000
+Author: Catie
+Type: Routine
+Subject: Mounting a Transcend drive on new FTP as of Aug 2017
+Cruise: at39-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>Transcend drives do not auto-mount on the new FTP machine installed August 2017.</p>
+
+<p>Everytime I have done this so far, a Transcend drive shows up as sdd1. So to mount:</p>
+
+<p>sudo mount -t ntfs /dev/sdd1 /media/Transcend/</p>
+
+<p>&nbsp;</p>
+
+<p>If you aren&#39;t positive it is sdd1, then compare what is in /dev/disk/by-uuid/ when the drive is plugged in and when it is not.</p>

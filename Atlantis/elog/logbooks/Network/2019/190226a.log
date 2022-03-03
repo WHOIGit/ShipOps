@@ -1,0 +1,40 @@
+$@MID@$: 81
+Date: Tue, 26 Feb 2019 14:18:14 +0000
+Author: lstolp
+S/N: C2900 (primary)
+Type: Configuration
+equipment: Cisco Router
+Subject: update config for KA (removed backup FBB)
+Cruise: AT MARE ISLAND 2019
+Attachment: 
+Encoding: plain
+========================================
+ip nat pool WHOI-DOCK 128.128.200.147 128.128.200.147 prefix-length 24
+ip nat pool FBB-SHORE 216.86.248.179 216.86.248.179 prefix-length 24
+ip nat pool SWAP-SHORE 192.168.100.5 192.168.100.5 prefix-length 24
+ip nat pool SHIPYARD-SHORE 192.168.202.100 192.168.202.100 prefix-length 24
+ip nat inside source route-map fbb-shore pool FBB-SHORE
+ip nat inside source route-map shipyard-shore pool SHIPYARD-SHORE
+ip nat inside source route-map swap-shore pool SWAP-SHORE
+ip nat inside source route-map whoi-dock pool WHOI-DOCK
+ip nat inside source static tcp 128.128.252.2 22 128.128.200.147 22 extendable
+ip nat inside source static tcp 128.128.252.2 80 128.128.200.147 80 extendable
+ip nat inside source static tcp 128.128.252.2 3000 128.128.200.147 3000 extendable
+ip nat inside source static tcp 128.128.252.2 8080 128.128.200.147 8080 extendable
+
+
+no ip nat pool SWAP-SHORE 192.168.100.5 192.168.100.5 prefix-length 24
+no ip nat inside source route-map swap-shore pool SWAP-SHORE
+no route-map swap-shore permit 10
+ match ip address 1
+ match interface FastEthernet0/0/0
+
+
+
+## changed to:
+ip nat pool KA-SHORE 10.10.4.91 10.10.4.91 prefix-length 24
+ip nat inside source route-map ka-shore pool KA-SHORE
+
+route-map ka-shore permit 10
+ match ip address 1
+ match interface FastEthernet0/0/0

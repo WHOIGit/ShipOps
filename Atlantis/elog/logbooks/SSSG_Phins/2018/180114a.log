@@ -1,0 +1,37 @@
+$@MID@$: 26
+Date: Sun, 14 Jan 2018 11:11:19 +0000
+Author: AH
+Type: Routine
+Subject: GPS standard deviation
+Cruise: at39-03
+Attachment: 180114_111331_1493761719225
+Encoding: HTML
+========================================
+<p>On Tue, 2 May 2017, iXBlue Customer Support wrote:</p>
+
+<p>&nbsp;Hello,<br />
+Yes, you should expect a low standard deviation from a differential GPS, but the one GPS #1 was set at was about 3 cm.&nbsp;&nbsp;Theoretically, the PHINS will jump to every next GPS position received and set that as the new position, but if the GPS position (with an extremely high confidence) changes somewhat drastically (i.e. a<br />
+few meters over a second), the PHINS may think this is an error in the GPS data. If you set the GPS standard deviation to 0.1 m (still very low) like Ethan suggested, you greatly reduce the risk of this happening.&nbsp;&nbsp;You can see that the standard deviation for GPS #2 was 3.0 meters and had good reception the entire log you sent<br />
+previously.&nbsp;&nbsp;I was busy visiting the ARMSTRONG today so I haven&#39;t gotten a chance to look at the data you just sent yet but I&#39;ll start taking a look today and hopefully can get you some answers tomorrow.&nbsp;&nbsp;It is unlikely that only the slight change to the misalignments is causing this problem but that it what I will try to figure out.&nbsp;&nbsp;I&#39;ll work on getting a visual representation of the PHINS standard deviation/ error ellipse calculation too.<br />
+I&#39;ll keep you updated with my findings and let you know if I have any other questions.<br />
+<br />
+&nbsp;Regards,<br />
+Dan<br />
+iXBlue technical support<br />
+www.ixblue.com&nbsp;&nbsp;</p>
+
+<p>Oh okay. &nbsp;I guess it went over my head that I can actually set the standard deviation for GPS1 inside the phins. &nbsp;I thought the standard deviation was taken from information inside a CNAV string. &nbsp;I will look more closely at the phins manual information he sent me and see if I understand how to set teh standard deviation inside the phins system.</p>
+
+<p>Allison</p>
+
+<p>Yes, sorry if we didn&#39;t make that clear.&nbsp;&nbsp;You can go to the SETUP --&gt; ADVANCED POSITION&nbsp;FILTERING page and see a screen like this one:<br />
+[IMAGE]<br />
+Let us know if you have any questions with this or with anything else.</p>
+
+<p>Regards,</p>
+
+<p>Dan<br />
+From: iXBlue Customer Support &lt;support@ixblue.com&gt;<br />
+To: sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Cc: rlaird &lt;rlaird@whoi.edu&gt;, Henri Batoufflet &lt;henri.batoufflet@ixblue.com&gt;, Morgan Eassh &lt;morgan.eash@ixblue.com&gt;,<br />
+&nbsp; &nbsp; David Fisichella &lt;dfisichella@whoi.edu&gt;, Marine Slingue &lt;marine.slingue@ixblue.com&gt;, Support &lt;support@ixblue.com&gt;</p>

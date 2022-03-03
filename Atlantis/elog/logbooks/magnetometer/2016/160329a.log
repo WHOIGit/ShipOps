@@ -1,0 +1,52 @@
+$@MID@$: 8
+Date: Tue, 29 Mar 2016 09:51:39 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+Category: General
+Subject: Maggie use/setup/issues/solutions AT33-02 and AT33-03
+Cruise: at33-03
+Attachment: 160329_093017_Region_and_Language.jpg
+Encoding: HTML
+========================================
+<p>SSSG Marine Magnetics SeaSpy magnetometer set up, tested, and deployed during AT33-02 and AT33-03</p>
+<p>This was first deployment running BOB software on new Windows 7 machine (CTD computer).</p>
+<p>&nbsp;</p>
+<p>Issues and solutions during these 2 cruises:</p>
+<p>-BOB software initially did not recognize CNAV GPS string, even though it was coming in to the computer on the correct com port and baud rate.</p>
+<p>Fix is per control panel settings in attached screen shot.</p>
+<p>&nbsp;</p>
+<p>-Maggie was getting low signal strength errors on approach to mid-atlantic ridge. Cause noted to be due to geographic location:</p>
+<p>&quot;The data is consistent throughout the file that Dave sent, with the mag<br />
+field about 35uT, and the signal around 153. There does not appear to be any<br />
+noticeable increase in the noise envelope for the small variations in the<br />
+mag field data over the course of the file. In lower mag fields (less than<br />
+42uT) I would expect to see less signal from the sensor anyway. So I think<br />
+that the SeaSPY is functioning well within normal operating parameters, and<br />
+that, so far the data looks good.&quot; - Mike Daffern, Marine Magnetics</p>
+<p>&quot;You are going to have weak field strength because you moving towards the<br />
+magnetic equator and will have weak geomagnetic field in your survey area. <br />
+So keep an eye on it but I'm afraid that's the conditions you have deal<br />
+with. The mid Atlantic off of Brazil is the weakest part of the geomagnetic<br />
+field.&quot; -Maurice Tivey, WHOI</p>
+<p>&nbsp;</p>
+<p>-~1x/day, got &quot;mag and gps clock out of sync&quot; errors (usually ~1 sec difference). A couple times following a re-sync of the clock, the mag lost its mind and would no longer put out good data. Once a power cycle of the mag and a new survey solved the problem. Other times when the mag lost its mind, a manual tuning of the magnetic field was required.&nbsp; </p>
+<p>The fix is (with cursor in the BOB terminal window):</p>
+<p>Type &quot;0&quot; to stop sampling.</p>
+<p>Type &quot;y&quot; to turn auto-tuning off</p>
+<p>Type &quot;L&quot;, followed by a uT value at the prompt that you expect to be measuring; i.e &quot;33&quot;</p>
+<p>Type &quot;f&quot; to take a single reading to see that the measured values have returned to somewhere near normal</p>
+<p>Type &quot;4&quot; to resume sampling at a slow data rate to allow the mag to readjust its brain.</p>
+<p>After a couple minutes of sampling with auto-tuning off, type &quot;x&quot; to re-enable auto-tuning</p>
+<p>After awhile (20 mins, maybe an hour or two) when the maggie has resumed consistent, good sampling, up the rate back to 1Hz.</p>
+<p>&nbsp;</p>
+<p>-Occasionally the mag would lose its mind mid-sampling for no reason at all, then resume normal sampling values again after a minute or two. The only teeth I could pull from Marine Magnetics was:</p>
+<p>&quot;There data does not really show any reason why the there are the hiccups<br />
+that you are seeing. I would suspect, that you crossed a target, or perhaps<br />
+a shark took a bite out of the mag, I do not think that it is something to<br />
+do with the hardware, but keep an eye on it.&quot;<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p><br />
+<br />
+&nbsp;</p>

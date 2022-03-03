@@ -1,0 +1,28 @@
+$@MID@$: 6
+Date: Sun, 08 Jun 2014 06:50:46 +0000
+Author: rsl
+Owner: URI
+S/N: 
+Type: Fix
+Category: Electronic
+Subject: removed and replaced many cables to fix problem at depth.
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed all instruments and cables not needed for this cruise.&nbsp; So basically nothing but flow, net motor and net sensor, plus battery and main housings.&nbsp; Replaced cable from battery to seacable.&nbsp; Cable from battery to main housing was replace earlier this trip.&nbsp; only one or two cables left to replace if this does not work fix it.</p>
+$@MID@$: 7
+Date: Sun, 08 Jun 2014 06:53:34 +0000
+Author: RSL
+Owner: URI
+S/N: 
+Type: General Problem
+Category: Electronic
+Subject: Still not fixed.  !!!!!!
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>Failed at depth again.&nbsp; First failed at about 1600 meters of depth.&nbsp; Got it restarted, then it failed at 1800.&nbsp; Brought it up a bit, restarted it.&nbsp; Went down again, failed around 1800 again.&nbsp; Brought it up, restarted, now retrieving.&nbsp;</p>
+<p>Failed again at 898 net depth, 1690wire out.&nbsp; Failed while tripping a net.&nbsp; Restarted.</p>
+<p>again at 659/1250.&nbsp; Restarted.&nbsp; Note that we were not trying to trip a net this time.</p>

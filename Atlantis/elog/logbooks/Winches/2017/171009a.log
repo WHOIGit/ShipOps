@@ -1,0 +1,35 @@
+$@MID@$: 63
+Date: Mon, 09 Oct 2017 06:48:28 +0000
+Author: dsims
+Type: Termination
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: Megger Findings after New Termination
+Cruise: at39-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Meggered on 10-2-2017 with sliprings that will be replaced.&nbsp; They work well now, but don&#39;t like bad weather.</p>
+
+<p>Wire&nbsp;&nbsp;&nbsp;&nbsp; Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ufd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conductivity</p>
+
+<p>G-W &nbsp; &nbsp; 4.99G &nbsp; &nbsp; &nbsp; 1.15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.23 &nbsp; &nbsp; .898 &nbsp; &nbsp;&nbsp; 245ohms</p>
+
+<p>G-B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.07G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.32&nbsp;&nbsp;&nbsp;&nbsp; .967&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 262ohms</p>
+
+<p>G-R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.40G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.23 &nbsp; &nbsp; &nbsp; 1.34 &nbsp; &nbsp; .907 &nbsp; &nbsp; 245ohms</p>
+
+<p>R-W &nbsp;&nbsp; 11.8G &nbsp; &nbsp; &nbsp; &nbsp; 1.23 &nbsp; &nbsp; &nbsp;&nbsp; 1.26 &nbsp; &nbsp; .591 &nbsp; &nbsp; 485ohms</p>
+
+<p>R-B &nbsp; &nbsp; 12.25G &nbsp; &nbsp; &nbsp; 1.21 &nbsp; &nbsp;&nbsp;&nbsp; 1.10 &nbsp; &nbsp; .631 &nbsp; &nbsp; 485ohms</p>
+
+<p>B-W &nbsp;&nbsp; 10.67G &nbsp; &nbsp;&nbsp;&nbsp; 1.18 &nbsp;&nbsp; &nbsp;&nbsp; 1.28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .636&nbsp;&nbsp;&nbsp;&nbsp; 490ohms</p>
+
+<p>&nbsp;</p>
+
+<p>I&#39;ll meggar again after I change the slip rings.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

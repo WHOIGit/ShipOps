@@ -1,0 +1,22 @@
+$@MID@$: 1
+Date: Mon, 04 Jul 2011 13:20:50 +0000
+Author: AH
+Type: Configuration
+Subject: SCRIPTS FOR WRITING USB SCIENCE DRIVES
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">2-August-2013 - You need to type the full path (i.e. /home/sssg/bin/copysci&nbsp;&nbsp; etc)<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp; Laura said she believes the scripts shoudl still be run using sudo</span></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">3.&nbsp; ftp has md5deep and should be used to create end of cruise USB's<br />
+&nbsp;&nbsp;&nbsp; &gt;sudo copysci<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;copies /home/data to /scratch1/scicd/[cruisenumber]<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;after copy, delete directories that do not have data, or<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; were not used during the cruise<br />
+&nbsp; &gt;sudo mksci_usb<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;will rsync /scratch1/scicd/[cruiseid] to /media/Transcend</span></p>
+<p><span style="font-size: large;">****NOTE - if the no_spaces script is run, make sure you are inside the /scratch1/{<em>cruisenumber</em>} directory.&nbsp; Otherwise, the directory name will be changed &quot;-&quot; changed to &quot;_&quot;, for example at18-10 will become at18_10!!!</span></p>

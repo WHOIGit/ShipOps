@@ -1,0 +1,25 @@
+$@MID@$: 27
+Date: Wed, 11 Dec 2013 06:22:44 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+Component: other
+Subject: HSN logging scripts and web plots
+Cruise: at26-09
+Attachment: 131211_062010_hiseasnet-data-get_DAC_V0.50.prl,131211_062032_hiseasnet-data-get_modem_V0.50.prl,131211_062048_DAC_control.sh,131211_062100_modem_control.sh,131211_062118_plot_modem_dy.pl,131211_062131_plot_modem_all.pl,131211_062144_plot_modem.pl,131211_062155_plot_dac_dy.pl
+Encoding: HTML
+========================================
+<p>This is a working configuration of logging scripts on memory and plotting scripts for the web for Atlantis, Dec 10 2013. All working scripts attached.</p>
+<p>On memory:</p>
+<p>/home/sssg/bin/hiseasnet-data-get_DAC_V0.50.prl</p>
+<p>/home/sssg/bin/hiseasnet-data-get_modem_V0.50.prl</p>
+<p>Logging with these scripts is started by&nbsp; &quot;sudo /home/sssg/bin/DAC_control.sh start&quot; and &quot;sudo /home/sssg/bin/modem_control.sh start&quot;&nbsp; **These are in rc.local**</p>
+<p>DATA GO TO /home/shipdata/hsn directory<br />
+&nbsp;</p>
+<p>On ftp:</p>
+<p>There are four plotting script links running from http://www.atlantis.whoi.edu/sssg/networks/networkindex.html (there is some redundancy between the modem plots).</p>
+<p>/usr/lib/cgi-bin/ships/plot_modem_dy.pl</p>
+<p>/usr/lib/cgi-bin/ships/plot_modem_all.pl</p>
+<p>/usr/lib/cgi-bin/ships/plot_modem.pl</p>
+<p>/usr/lib/cgi-bin/ships/plot_dac_dy.pl</p>
+<p>&nbsp;</p>

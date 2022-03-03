@@ -1,0 +1,15 @@
+$@MID@$: 22
+Date: Thu, 03 May 2018 11:47:35 +0000
+Author: Catie
+svn: 
+Type: atdatalog
+Subject: atdatalog01 removed from service, atdatalog02 installed
+Cruise: at40-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>atdatalog02 pressed into service as the primary machine April 2018, prior to AT40-01.</p>
+
+<p>atdatalog01 in the racks is not fully configured or ready to go as a ready spare...still need to be done and tested.</p>
+
+<p>old atdatalog01 has issues shutting down on its own on occasion. It is available as a spare in the multibeam rack until the new atdatalog01 can be fully configured and tested.</p>

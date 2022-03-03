@@ -1,0 +1,126 @@
+$@MID@$: 99
+Date: Fri, 22 Dec 2017 11:17:15 +0000
+Author: AH
+Type: Other
+name: ftp
+server type: network
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: REBOOTING FTP!!!
+Cruise: at39-02c
+Attachment: 180114_114901_example_check_iptables.pdf
+Encoding: HTML
+========================================
+<p><strong>From Laura:</strong></p>
+
+<p>&nbsp;</p>
+
+<p>When you reboot ftp (can you cut and paste to ELOG):</p>
+
+<p>&nbsp;</p>
+
+<p><strong>check ntp is working: xd</strong>&nbsp; Example:</p>
+
+<p>&nbsp; &nbsp; &nbsp;remote &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; local &nbsp; &nbsp; &nbsp;st poll reach &nbsp;delay &nbsp; offset &nbsp; &nbsp;disp<br />
+=======================================================================<br />
+*linus2.atlantis 199.92.161.3 &nbsp; &nbsp; 1 1024 &nbsp;377 0.00020 &nbsp;0.000375 0.12473</p>
+
+<p><strong>check all interfaces came up: ifconfig</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***should see eth0-eth5<br />
+<strong>## if all interfaces are up mount linus if not reboot<br />
+/root/bin/mountlinus</strong></p>
+
+<p><strong>check mounts:<br />
+mount</strong><strong>&nbsp;&nbsp;&nbsp;&nbsp; </strong>Example:</p>
+
+<p>/dev/sda1 on / type ext4 (rw,errors=remount-ro)<br />
+proc on /proc type proc (rw,noexec,nosuid,nodev)<br />
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)<br />
+none on /sys/fs/cgroup type tmpfs (rw)<br />
+none on /sys/fs/fuse/connections type fusectl (rw)<br />
+none on /sys/kernel/debug type debugfs (rw)<br />
+none on /sys/kernel/security type securityfs (rw)<br />
+udev on /dev type devtmpfs (rw,mode=0755)<br />
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)<br />
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)<br />
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)<br />
+none on /run/shm type tmpfs (rw,nosuid,nodev)<br />
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)<br />
+none on /sys/fs/pstore type pstore (rw)<br />
+/dev/sdb1 on /backups type ext4 (rw)<br />
+/dev/sdc1 on /scratch1 type ext4 (rw)<br />
+systemd on /sys/fs/cgroup/systemd type cgroup (rw,noexec,nosuid,nodev,none,name=systemd)<br />
+tmpfs on /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database type tmpfs (rw,size=50M)<br />
+/dev/sdd1 on /media/Transcend type fuseblk (rw,nosuid,nodev,allow_other,blksize=4096)</p>
+
+<p>//linus/data on /home/data type cifs (ro)</p>
+
+<p><strong>if RAMDisk is mounted run:<br />
+/usr/lib/cgi-bin/db_driven_data/status_screen/go_rclocal.sh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>****see &quot;tmpfs&quot; mount above&nbsp; - this starts the feeders</p>
+
+<p><strong>if RAMDISK is not mounted:<br />
+mount -t tmpfs -o size=50M tmpfs /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database</strong></p>
+
+<p><strong>check database:<br />
+root@ftp:/usr/lib/cgi-bin/db_driven_data/status_screen# ./check_db.pl&nbsp;&nbsp;&nbsp;&nbsp; </strong>***won&#39;t list all out here, but should see atdatalog data stuff with reasonable times</p>
+
+<p><strong>check iptables:<br />
+iptables -L&nbsp;&nbsp;&nbsp; </strong>******see attached example of when all is working</p>
+
+<p><em>NOTE:&nbsp; we are running /root/bin/iptables.shoremode as of 2018-Jan-17</em></p>
+
+<p><strong>## I think all ship/crew traffic is still allowed off, I did not get an ## atsea vs shore iptables working. iptables is being run from ## /root/bin/iptables* NOT<br />
+/home/sssg/bin.</strong></p>
+
+<p><br />
+<strong>check routes:<br />
+root@ftp:~# route -n</strong>&nbsp;&nbsp;&nbsp; Example:</p>
+
+<p>Kernel IP routing table<br />
+Destination &nbsp; &nbsp; &nbsp;&nbsp; Gateway &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Genmask &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Flags Metric Ref &nbsp; &nbsp;Use Iface<br />
+0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 128.128.252.1 &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UG &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth1<br />
+128.128.252.0 &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.240&nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth1<br />
+192.168.11.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.255.255.0 &nbsp;&nbsp;&nbsp;&nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth2<br />
+192.168.12.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 255.255.255.0 &nbsp; &nbsp; &nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; eth3<br />
+192.168.13.0 &nbsp;&nbsp;&nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 255.255.255.0 &nbsp; &nbsp; &nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth4<br />
+199.92.161.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 255.255.255.0 &nbsp; &nbsp; &nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth0<br />
+199.92.162.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 255.255.255.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp; eth5<br />
+&nbsp;</p>
+
+<p><strong>Here is some information as to why the servers are configured the way they are (from Laura email 8-Sep-2017):</strong></p>
+
+<p>Both ftp and linus are servers and really should not be rebooted if at all possible, both computers run rc.local as the last thing when they boot up. If there is an issue<br />
+w/ any of the commands it gives up and does not finish.</p>
+
+<p>I think the last time ftp was rebooted, it came up w/ out eth4 and eth5, so barfed on the rebroadcasters trying to send data out an interface that does not exist so it<br />
+exited and did mount mount the database in RAM. It may have barfed on something else, it does not write log file, it just barfs and exits.</p>
+
+<p>The rebroadcasters look to be running, but you might want to check that data is actually being broadcast.</p>
+
+<p>I don&#39;t want to mountlinus/mailhost in ftp&#39;s rc.local, because if something is not correct on a mount on linus.mailhost it will carry through to ftp and create kernel<br />
+errors w/ cifs, which will create even more issues.</p>
+
+<p>I don&#39;t want the feeders put in rc.local either. I would rather they be started by hand. They can create a lot of issues, since some feeders are dependent on other feeders<br />
+and the fact that the db is in RAM it does not exist so wind complains until it gets heading etc.</p>
+
+<p>It took me awhile to realize that lwr and swr had not been replaced by RAD in a lot of places, was still figuring it out as you all sailed away. &nbsp;I am sure there are still<br />
+some. Did you updata: &nbsp;go_rclocal.sh</p>
+
+<p>If you need to reboot ftp, then you need to take the time to remember that there are a lot of things you need to check after rebooting. It might help think of<br />
+something/somwhere else to find the issue (top, dmesg)<br />
+&nbsp;</p>
+$@MID@$: 100
+Date: Fri, 22 Dec 2017 11:20:40 +0000
+Author: AH
+Type: General Problem
+name: ftp
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Hardware
+Subject: ttyS7
+Cruise: at39-02c
+Attachment: 
+Encoding: HTML
+========================================
+<p>The new FTP lost ttyS7 (was used for the SSV to multibeam).&nbsp; It did not return when the server was reboot.&nbsp; The SSV was moved to ttyS4 for now.</p>

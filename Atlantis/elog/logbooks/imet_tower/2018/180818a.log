@@ -1,0 +1,53 @@
+$@MID@$: 43
+Date: Sat, 18 Aug 2018 16:44:06 +0000
+Author: AH
+Sensor: SWR/LWR combo box | RAD
+S/N: 
+Calibration Date: 
+Type: Routine
+Category: Other
+Subject: RAD - meaning of entries to Instrument Make:  RMR / RAD Sensor
+Cruise: at41
+Revisions:  & Sat Aug 18 17:17:10 2018^M & Sat Aug 18 17:30:33 2018^M & Sat Nov  2 11:44:22 2019^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>general information:</p>
+
+<p>PIR = precision infrared radiometer&nbsp;&nbsp; (pyrgeometer) - longwave irradiance</p>
+
+<p>PSP - precision spectral pyranometer - sun and sky (shortwave) irradiance&nbsp;&nbsp;&nbsp; 0.285-2.8 microns</p>
+
+<p>&nbsp;</p>
+
+<p>## NOTES<br />
+ADIOMETER ANALOG TO DIGITAL INTERFACE (RAD) ***<br />
+Software Version 1.17c, 2009,03,24<br />
+Digital Interface Board - Rev C. Feb 2009<br />
+Current EEPROM values:<br />
+Identifier Header= $WIR23&nbsp;&nbsp;<br />
+PSP Coeff= 7.93E-6&nbsp;&nbsp;&nbsp; from PSP Calibration certificate - Sensititvity<br />
+PIR Coeff= 3.10E-6&nbsp;&nbsp;&nbsp;&nbsp; from PIR Calibration certificate - Sensititvity<br />
+Interval Time (secs)= 10<br />
+Cmax= 2048<br />
+Reference Resistor Case= 32972.0&nbsp;&nbsp;&nbsp;&nbsp; - from CalReport &quot;Case Temperature section&quot; =&gt; Rref based on measurements of v_t = 32972<br />
+Reference Resistor Dome= 33010.0&nbsp;&nbsp;&nbsp; - from CalReport &quot;DOME TEMPERATURE&quot; section =&gt;&nbsp; Rref based on measurements of v_t = 33010<br />
+Vtherm= 4.0930, Vadc= 4.0930&nbsp;&nbsp; - from CalReport =&gt;&nbsp; Reference voltage = 4093.0 millivolts<br />
+PIR ADC Offset= -2.17 mv- from CalReport &quot;PIR THERMOPILE CIRCUIT&quot; section =&gt;&nbsp;Offset (o) = -2.2 millivolts<br />
+PIR ADC Gain= 835.75- from CalReport &quot;PIR THERMOPILE CIRCUIT&quot; section =&gt;&nbsp;Offset (o) =&nbsp; 835.75PSP ADC Offset= 0.10 mv&nbsp;&nbsp;&nbsp;&nbsp; - from CalReport &quot;PSP THERMOPILE CIRCUIT&quot; section =&gt; Offset (o) = 0.1 millivolts<br />
+PSP ADC Gain= 118.72&nbsp;&nbsp; - from CalReport &quot;PSP THERMOPILE CIRCUIT&quot; section =&gt; PSP Calibration Gain (g) = 118.72</p>
+$@MID@$: 44
+Date: Sat, 18 Aug 2018 17:35:25 +0000
+Author: RLaird
+Sensor: RAD
+S/N: 223
+Calibration Date: April 3, 2018
+Type: Calibration
+Category: Hardware
+Subject: Newly calibrated sensors.
+Cruise: at41
+Revisions:  & Sat Aug 18 17:40:09 2018^M
+Attachment: 180818_173908_Eppley-PIR-32227F3-Cal-April-2-2018-20180402.pdf,180818_173922_Eppley-SPP-38214F3-Cal-April-3-2018-20180403.pdf,180818_173933_CalReport_RAD223_1507a.pdf
+Encoding: HTML
+========================================
+<p>Installed newly calibrated SWR and LWR sensors.&nbsp; Added the cal data from each sensor the the electronics box, (#223)&nbsp; No issues.</p>

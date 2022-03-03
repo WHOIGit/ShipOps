@@ -1,0 +1,14 @@
+$@MID@$: 87
+Date: Fri, 09 Aug 2019 14:22:25 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+equipment: peplink
+Subject: Wan1 shore connection
+Cruise: at42-15
+Attachment: 190809_142418_wan1priority.jpg,191116_162058_striker_rule_shore.JPG
+Encoding: HTML
+========================================
+<p>When plugging in a shore connection (i.e. at Scripps), a wan1 priority outbound policy rule should be added as in the attached image.</p>
+
+<p>If striker is rejecting mail due to the ship&#39;s unknown ipaddress, add an outbound policy rule to send traffic from source any to destination 128.128.96.129 via wan2 hiseasnet (see image below).</p>

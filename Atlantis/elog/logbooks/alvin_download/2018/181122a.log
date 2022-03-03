@@ -1,0 +1,23 @@
+$@MID@$: 13
+Date: Thu, 22 Nov 2018 16:14:44 +0000
+Author: AH - from email
+script: 
+Type: General Problem
+Source: nav
+Data: general alvin data
+Subject: sealog_predive.sh on c+c - error - "Failed to > > > connect to localhost port 8000: Connection refused"
+Cruise: at42-05
+Attachment: 
+Encoding: HTML
+========================================
+<p>I was attempting to run sealog_predive.sh on c+c and pretty much every step gives me an error &quot;Failed to<br />
+&gt; &gt; &gt; connect to localhost port 8000: Connection refused&quot;</p>
+
+<p>SOLUTION:</p>
+
+<p>&gt; The port 8000 error means the sealing server on the c+c machine isn&rsquo;t running. To start it you can either restart the c+c machine or goto http://&lt;c+c IP address&gt;:9001<br />
+&gt; and click the &ldquo;start&rdquo; link next to sealog_server.</p>
+
+<p>In this particular case (19-Aug-2018) Catie got the Alvinites to reboot c&amp;c computer and that took care of it.</p>
+
+<p>&nbsp;</p>

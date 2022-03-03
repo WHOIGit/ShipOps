@@ -1,0 +1,109 @@
+$@MID@$: 2
+Date: Wed, 09 May 2012 09:46:42 +0000
+Author: AH
+Type: General Problem
+Category: Hardware
+Subject: AUTOSAL - brought onboard for AT20 - notes from Scripps tech
+Cruise: at20
+Attachment: 
+Encoding: HTML
+========================================
+<p>Clivar A20/22<br />
+R/V Atlantis<br />
+<br />
+Set up WHOI spare autosal, <br />
+number 10. S/N 57-525.<br />
+This is an unmodified Guildline 8400A with separate pumps.<br />
+<br />
+Pumps did not work on startup.<br />
+<br />
+AS FOUND:<br />
+Upon inspection found one pump turning very slowly, the <br />
+second pump not turning at all.<br />
+Disassembled both pumps.<br />
+Belts were loose to the point of falling off.<br />
+Bushings were frozen with congealed oil.<br />
+Leather washers were dry.<br />
+Flapper check valves were stuck shut.<br />
+Suction filters were in good condition.<br />
+<br />
+As one pump had failed to operate some time in the past, the <br />
+&quot;flush&quot; air line had been removed and the sample fill air <br />
+line attached to the still, <br />
+but only marginally, working pump.<br />
+<br />
+Maintenance Performed:<br />
+Cleaned and oiled both leather washers.<br />
+Blew out both flapper valves to unstick them.<br />
+Cleaned pump bodies.<br />
+Removed brass bushings and cleaned them.<br />
+Cleaned, descaled, and oiled drive wheel axles.<br />
+<br />
+AS LEFT:<br />
+Assembled pumps. <br />
+Oiled bushings.<br />
+Installed pumps in housings.<br />
+Adjusted belt tension to normal fit.<br />
+<br />
+Pumps work but are below original capacity.<br />
+Pumps must be turned on 5 to 10 minutes before beginning run<br />
+so they can &quot;work-in&quot; and start pumping normally.<br />
+Normally shut pumps OFF between samples. Not with this <br />
+autosal. Must leave pumps running continuously or they will <br />
+not pump properly.<br />
+Unbalanced pressure from the two pumps before reaching steady-state operation causes bubbles to form in cell arms and stick there.<br />
+<br />
+Bath cycling at 24C.<br />
+Old Worm in the cell equilibrating.<br />
+<br />
+31 Mar. 2012<br />
+Prior to station 23.<br />
+Checked salinometer 57-525 bath temperature. Stable at <br />
+23.97C.<br />
+<br />
+3 Apr.<br />
+While running station 33 autosal display was behaving <br />
+erratically. Suspect it is from bad electrical connection <br />
+amongst the chips. Reseated all socketed ICs. Much chip <br />
+creep. We'll see next run.<br />
+<br />
+During run of 060/01 noted lower arm of cell frequenty got <br />
+bubbles stuck.<br />
+Cleaned cell post run.<br />
+<br />
+During run 065/01 noted autosal readings fluctuated a bit <br />
+more rapidly than usual.<br />
+<br />
+After running 069/01 Periodic bubble sticking to lower arm <br />
+of cell. Cleaned cell in anticipation of the madness to <br />
+come upon the morrow.<br />
+<br />
+During run 074/01 noted cell coils look dull and coated, <br />
+not shiny as is expected. Appears that cell coils have become much duller with use. Noted at end of run that worm read 40 units high. Cleaned cell.<br />
+<br />
+13 Apr. Autosal 57-525 became completely unusable due to <br />
+erratic readings and large, spontaneous jumps in STBY <br />
+number and readings.<br />
+Stopped analysis after station 076/01.<br />
+<br />
+After removing autosal from service it was left running in the lab for observation.<br />
+STBY number fluctuates by more than 5 digits very rapidly (less than 3 seconds) with periodic jumps of up to 20 digits in either direction. This implies that chips are not staying seated in the sockets on the display board.<br />
+<br />
+Observed that autosal has factory original hobby grade chip sockets. Experience indicates these sockets are usable for about 10 years. After that time, corrosion buildup and loss of contact finger tension makes their use unreliable. Replacement with gold plate round hole sockets has alleviated that problem in the past.<br />
+<br />
+Did not check but suspect that BCD interface also has corrosion buildup/contact issues as during use the temperature display on the computer would shift to a nonsense value (19, or 22, or 31) when Function switch placed in READ. Probably a bit drop in the BCD function. As this did not happen every time I tend to discount the Function switch as the culprit.<br />
+<br />
+Zero value read +5, fluctuating between +4 and +9, with occasional drops to -1.<br />
+This indicates that the autosal is in need of calibration. Performance of the maintenance in section 3.0 of the service manual.<br />
+<br />
+The dull color of the cell coils may indicate the chopper circuit is no longer balanced to within specification. Again, performance of the maintenance indicated in section 3.0 of the service manual will either mitigate this problem or point out the need for cell replacement.<br />
+<br />
+The air tubing inside the autosal is yellowing and hardening. This will lead to air leakage and failure of the tubing to stay attached to the various fittings. <br />
+<br />
+As the maintenance report sheets supplied along with this autosal have a last entry from 2006 it appears that this unit has not seen service for quite some time.<br />
+<br />
+Other bath temperature values not checked.<br />
+<br />
+Individual heater control response for CKT1 or CKT2 not checked.<br />
+<br />
+&nbsp;</p>

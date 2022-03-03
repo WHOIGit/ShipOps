@@ -1,0 +1,18 @@
+$@MID@$: 8
+Date: Sun, 26 May 2013 18:58:36 +0000
+Author: AH
+Type: General Problem
+Subject: Ship & SSSG Phins
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>NO LONGER VALID</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><del>
+<p><span style="font-size: large;">The heading sources feeding the science switch</span><span style="font-size: large;"> are normally Gyro1, Gyro2 and the Ship's Phins (via a multiplexer in the ComET chartroom j-box).&nbsp; The Ship's Phins is presently off by 2 degrees, so the ComET has rewired, temporarily, so that the SSSG Phins is feeding the science switched heading source.&nbsp; It will be changed back as soon as the Ship's Phins is fixed. &nbsp; </span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">This also effects the heading data to the ADCP.&nbsp; The multiplexer is also the direct feed for the Ship's Phins to&nbsp; the ADCP.&nbsp; THerefore, for the time being, this feed is actually coming from the SSSG Phins (not independent sources).&nbsp; Again, this is temporary. </span></p>
+</del></p>
+<p>&nbsp;</p>

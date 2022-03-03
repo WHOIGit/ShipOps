@@ -1,0 +1,24 @@
+$@MID@$: 86
+Date: Wed, 03 Jan 2018 08:45:25 +0000
+Author: AH - from Peter email
+System: EM122 - Kongsberg
+Type: Other
+Category: survey
+S/N: 
+Subject / Summary: Reading xyz files into SIS
+Cruise: at39-02d
+Attachment: 
+Encoding: HTML
+========================================
+<p>Use:</p>
+
+<p>Tools-&gt;Custom-&gt;CreateGridFromAsciiFiles</p>
+
+<p>You should be using &quot;filename.h.xyz&quot; file. The name doesn&#39;t matter, but it should just be a text file, 15 header<br />
+lines, followed by lots of lat/lon/depth triplets.</p>
+
+<p>You will need to give the grid a name, browse to the xyz file.&nbsp;</p>
+
+<p>The grid will take a bit of time to create.&nbsp; Once the grid is created you need to</p>
+
+<p>import it like any other grid (File - import ...)</p>

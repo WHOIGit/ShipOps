@@ -1,0 +1,280 @@
+PSA file: C:\data\ctd\Seasave_21.psa
+
+Date: 11/04/2014
+
+Instrument configuration file: C:\data\ctd\09P-0383.xmlcon
+
+Configuration report for SBE 911plus/917plus CTD
+------------------------------------------------
+
+Frequency channels suppressed : 0
+Voltage words suppressed      : 0
+Computer interface            : RS-232C
+Deck unit                     : SBE11plus Firmware Version >= 5.0
+Scans to average              : 1
+NMEA position data added      : Yes
+NMEA depth data added         : No
+NMEA time added               : Yes
+NMEA device connected to      : PC
+Surface PAR voltage added     : Yes
+Scan time added               : No
+
+1) Frequency 0, Temperature
+
+   Serial number : 4230
+   Calibrated on : 13-Feb-14
+   G             : 4.37250714e-003
+   H             : 6.48398804e-004
+   I             : 2.27867807e-005
+   J             : 1.82932302e-006
+   F0            : 1000.000
+   Slope         : 1.00000000
+   Offset        : 0.0000
+
+2) Frequency 1, Conductivity
+
+   Serial number : 2148
+   Calibrated on : 13-Feb-14
+   G             : -1.02241717e+001
+   H             : 1.52041184e+000
+   I             : -2.32820915e-003
+   J             : 2.62534981e-004
+   CTcor         : 3.2500e-006
+   CPcor         : -9.57000000e-008
+   Slope         : 1.00000000
+   Offset        : 0.00000
+
+3) Frequency 2, Pressure, Digiquartz with TC
+
+   Serial number : 58939-0383
+   Calibrated on : 28-Dec-10
+   C1            : -4.928049e+004
+   C2            : -5.591409e-001
+   C3            : 1.510530e-002
+   D1            : 3.944700e-002
+   D2            : 0.000000e+000
+   T1            : 3.017493e+001
+   T2            : -4.671701e-004
+   T3            : 3.967900e-006
+   T4            : 3.098920e-009
+   T5            : 0.000000e+000
+   Slope         : 0.99998000
+   Offset        : 2.55200
+   AD590M        : 1.135000e-002
+   AD590B        : -8.132450e+000
+
+4) Frequency 3, Temperature, 2
+
+   Serial number : 2774
+   Calibrated on : 27-Feb-14
+   G             : 4.32548581e-003
+   H             : 6.46828338e-004
+   I             : 2.40877633e-005
+   J             : 2.46309398e-006
+   F0            : 1000.000
+   Slope         : 1.00000000
+   Offset        : 0.0000
+
+5) Frequency 4, Conductivity, 2
+
+   Serial number : 2186
+   Calibrated on : 13-Feb-14
+   G             : -1.02584283e+001
+   H             : 1.36507257e+000
+   I             : -1.96436951e-003
+   J             : 1.90369122e-004
+   CTcor         : 3.2500e-006
+   CPcor         : -9.57000000e-008
+   Slope         : 1.00000000
+   Offset        : 0.00000
+
+6) A/D voltage 0, User Polynomial
+
+   Serial number : 05
+   Calibrated on : 
+   Sensor name   : PMEL
+   A0            : -500.00000000
+   A1            : 200.00000000
+   A2            : 0.00000000
+   A3            : 0.00000000
+
+7) A/D voltage 1, User Polynomial, 2
+
+   Serial number : 05
+   Calibrated on : 
+   Sensor name   : PMEL
+   A0            : -500.00000000
+   A1            : 200.00000000
+   A2            : 0.00000000
+   A3            : 0.00000000
+
+8) A/D voltage 2, Fluorometer, WET Labs ECO-AFL/FL
+
+   Serial number : FLNTURTD-149
+   Calibrated on : 6-May-2010
+   Dark output   : 0.0600
+   Scale factor  : 1.54000000e+001
+
+9) A/D voltage 3, User Polynomial, 3
+
+   Serial number : FLNTURTD-149
+   Calibrated on : 1-Nov-2004
+   Sensor name   : Turbidity
+   A0            : -0.74000000
+   A1            : 5.00000000
+   A2            : 0.00000000
+   A3            : 0.00000000
+
+10) A/D voltage 4, Altimeter
+
+    Serial number : 383
+    Calibrated on : 
+    Scale factor  : 15.000
+    Offset        : 0.000
+
+11) A/D voltage 5, Oxygen, SBE 43
+
+    Serial number : 0113
+    Calibrated on : 14-Mar-14
+    Equation      : Sea-Bird
+    Soc           : 3.68390e-001
+    Offset        : -5.86200e-001
+    A             : -3.50010e-003
+    B             : 1.91250e-004
+    C             : -2.63540e-006
+    E             : 3.60000e-002
+    Tau20         : 1.40000e+000
+    D1            : 1.92634e-004
+    D2            : -4.64803e-002
+    H1            : -3.30000e-002
+    H2            : 5.00000e+003
+    H3            : 1.45000e+003
+
+12) A/D voltage 6, Free
+
+13) A/D voltage 7, Transmissometer, WET Labs C-Star
+
+    Serial number : CST854DR
+    Calibrated on : 11-Jan-10
+    M             : 20.3874
+    B             : -1.1825
+    Path length   : 0.250
+
+14) SPAR voltage, Unavailable
+
+15) SPAR voltage, SPAR/Surface Irradiance
+
+    Serial number     : not one
+    Calibrated on     : 
+    Conversion factor : 1.00000000
+    Ratio multiplier  : 1.00000000
+
+Scan length                   : 44
+---------------------------------------------
+Pump Control
+   This setting is only applicable to a custom build of the SBE 9plus.
+   Enable pump on / pump off commands: NO
+---------------------------------------------
+Data Acquisition:
+   Archive data:                    YES
+   Delay archiving:                 NO
+   Data archive:                    C:\data\ctd\at2623999.hex
+   Timeout (seconds) at startup:    60
+   Timeout (seconds) between scans: 20
+---------------------------------------------
+Instrument port configuration:
+   Port      = COM2
+   Baud rate = 19200
+   Parity    = N
+   Data bits = 8
+   Stop bits = 1
+---------------------------------------------
+Water Sampler Data:
+   Water Sampler Type:   SBE Carousel
+   Number of bottles:    24
+   Port:                 COM1
+   Enable remote firing: NO
+   Firing sequence:      Sequential
+   Tone for bottle fire confirmation uses PC sound card.
+---------------------------------------------
+Header information:
+   Header Choice = Prompt for Header Information
+---------------------------------------------
+TCP/IP - port numbers:
+   Data acquisition:
+      Data port:            49163
+      Status port:          49165
+      Command port:         49164
+   Remote bottle firing:
+      Command port:         49167
+      Status port:          49168
+   Remote data publishing: 
+      Converted data port:  49161
+      Raw data port:        49160
+---------------------------------------------
+Miscellaneous data for calculations
+   Depth and Average Sound Velocity
+      Latitude when NMEA is not available: 0.00000000
+   Average Sound Velocity
+      Minimum pressure [db]:               20.00000000
+      Minimum salinity [psu]:              20.00000000
+      Pressure window size [db]:           20.00000000
+      Time window size [s]:                60.00000000
+   Descent and Acceleration
+      Window size [s]:                     2.00000000
+   Plume Anomaly
+      Theta-B:                             0.00000000
+      Salinity-B                           0.00000000
+      Theta-Z / Salinity-Z                 0.00000000
+      Reference pressure [db]              0.00000000
+   Oxygen
+      Window size [s]:                     2.00000000
+      Apply hysteresis correction:         1
+      Apply Tau correction:                1
+   Potential Temperature Anomaly
+      A0:                                  0.00000000
+      A1:                                  0.00000000
+      A1 Multiplier:                       Salinity
+---------------------------------------------
+Serial Data Output:
+   Output data to serial port: NO
+---------------------------------------------
+Mark Variables:
+   No variables are selected.
+---------------------------------------------
+Shared File Output:
+   Output data to shared file: NO
+---------------------------------------------
+TCP/IP Output:
+   Raw data:
+      Output raw data to socket:              NO
+      XML wrapper and settings:               NO
+      Seconds between raw data updates:       0.00000000
+   Converted data:
+      Output converted data to socket:        NO
+      XML format:                             NO
+---------------------------------------------
+SBE 11plus Deck Unit Alarms
+   Enable minimum pressure alarm:    NO
+   Enable maximum pressure alarm:    NO
+   Enable altimeter alarm:           NO
+---------------------------------------------
+SBE 14 Remote Display
+   Enable SBE 14 Remote Display:     NO
+---------------------------------------------
+PC Alarms
+   Enable minimum pressure alarm:    NO
+   Enable maximum pressure alarm:    NO
+   Enable altimeter alarm:           NO
+   Enable bottom contact alarm:      NO
+   Alarm uses PC sound card.
+---------------------------------------------
+Options:
+   Prompt to save program setup changes: YES
+   Automatically save program setup changes on exit: NO
+   Confirm instrument configuration change: YES
+   Confirm display setup changes: YES
+   Confirm output file overwrite: YES
+   Check scan length: YES
+   Compare serial numbers: YES
+   Maximized plot may cover Seasave: NO

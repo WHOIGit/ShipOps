@@ -1,0 +1,14 @@
+$@MID@$: 58
+Date: Tue, 11 Oct 2016 15:38:54 +0000
+Author: Catie
+Sensor: Fluorometer
+S/N: WS3S-583P
+Calibration Date: 24 June 2015
+Type: General Problem
+Category: Hardware
+Subject: Problems with FlowThrough Fluorometer Operation
+Cruise: at37-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>On receipt and installation of WS3S-583P 10-6-16 the sensor did not immediately work correctly. It initially showed negative and near-zero values, before ultimately ceasing to output data. On power cycle it the internal light no longer worked and data output was a constant -9999.9. Upon unistallation and power from a 9V battery on the bench, the fluorometer showed the same behavior. After some time on the bench it spontaneously began working again, at least with a working light and showing a voltage response to fluorescence in the tube. The sensor was re-installed in the seawater system and has continued to operate. The voltage output does seem to be quite high in scale however, we will continue to monitor operation until we are able to receive a replacement.</p>

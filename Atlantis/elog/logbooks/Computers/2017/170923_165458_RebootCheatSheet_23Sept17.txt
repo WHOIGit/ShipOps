@@ -1,0 +1,39 @@
+Reboot Cheat Sheet - updated 23 Sept 2017
+
+FTP:
+
+sssg     18434     1  0 Sep08 ?        02:43:00 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/rmc_feeder.pl
+sssg     18435     1  0 Sep08 ?        00:24:22 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/rmb_feeder.pl
+sssg     18436     1  0 Sep08 ?        00:52:25 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/sbe45_feeder.pl
+sssg     18437     1  0 Sep08 ?        01:09:31 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55502 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype SBE48
+sssg     18438     1  0 Sep08 ?        00:03:45 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55503 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype flr
+sssg     18439     1  0 Sep08 ?        00:14:49 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55401 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype wxt
+sssg     18440     1  0 Sep08 ?        00:10:16 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55402 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype wxt
+sssg     18441     1  0 Sep08 ?        00:36:27 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55103 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype gyro
+sssg     18442     1  0 Sep08 ?        01:11:27 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55202 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype spd
+sssg     18443     1  0 Sep08 ?        00:01:11 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55602 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype em122
+sssg     18446     1  0 Sep08 ?        00:03:57 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/route_feeder.pl
+sssg     18447     1  0 Sep08 ?        00:56:14 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/winch_feeder.pl
+root     29569 29568  0 14:49 pts/3    00:00:00 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/wind_feeder.pl
+root     29583 29582  0 14:49 pts/3    00:00:00 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/rad_feeder.pl
+
+sssg     18437     1  0 Sep08 ?        01:09:46 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55502 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype SBE48
+sssg     18438     1  0 Sep08 ?        00:03:46 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55503 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype flr
+sssg     18439     1  0 Sep08 ?        00:14:52 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55401 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype wxt
+sssg     18440     1  0 Sep08 ?        00:10:19 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55402 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype wxt
+sssg     18441     1  0 Sep08 ?        00:36:35 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55103 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype gyro
+sssg     18442     1  0 Sep08 ?        01:11:43 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55202 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype spd
+sssg     18443     1  0 Sep08 ?        00:01:11 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55602 --database /usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db --udptype em122
+
+root      7238  7237  1 16:17 pts/2    00:00:00 /usr/bin/perl /usr/lib/cgi-bin/db_driven_data/status_screen/redirect_svt_from_UDP.pl
+
+root     16372     1  0 Sep08 ?        00:08:08 /usr/local/bin/udp-broadcast-relay.whoi -f 96 55000 eth0 eth2 eth3 ***GPS
+root     18402     1  0 Sep09 ?        00:00:07 /usr/local/bin/udp-broadcast-relay.whoi -f 99 55900 eth0 eth2   ****Special Met data for NAAMES
+root     10586     1  0 Feb10             84:30 /usr/local/bin/udp-broadcast-relay.whoi -f 83 55100 eth0 eth2 eth3 ***Gyro. 55101 if you want Phins heading.
+
+
+
+DsLog:
+
+sudo /etc/init.d/dsLog start     (this yields: root     27966     1 99 Jul28 ?        17-14:31:34 /usr/local/bin/dsLog /home/dslog/dsLog.ini -d)
+sudo /etc/init.d/dsLogCSV start  (this yields: root      1457     1 99 Sep19 ?        4-12:59:19 /usr/local/bin/dsLogCSV /home/dslog/dsLogCSV.ini -d)

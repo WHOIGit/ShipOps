@@ -1,0 +1,15 @@
+$@MID@$: 128
+Date: Thu, 27 Feb 2020 02:19:43 +0000
+Author: AH
+Type: Fix
+name: science
+server type: 
+OS: Windows
+Location: Other
+Category: Other
+Subject: Windows 10 - Samba mount errors (SMBv1 not secure)
+Cruise: at42-24
+Attachment: 200227_022409_Screen_Shot_2020-02-26_at_7.52.12_PM.png
+Encoding: HTML
+========================================
+<p>This is a description of how to temporarily re-enable SMBv1 protocol on Windows 10 machines (when science can&#39;t map our shared drives)</p>

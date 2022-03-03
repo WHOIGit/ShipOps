@@ -1,0 +1,35 @@
+$@MID@$: 19
+Date: Sun, 08 Jan 2017 11:55:52 +0000
+Author: AH
+Type: Configuration
+Subject: PHINS Port Reconfiguration / also, possible port C input problem (reconfig'ed without using)
+Cruise: at37-07
+Attachment: 170124_132606_SSSGPhinsConfigs_20170107.xls,170124_132721_Screen_Shot_2017-01-24_at_8.27.01_AM.png
+Encoding: HTML
+========================================
+<p>Ports C and D on the Phins were reconfigured to allow the baud rate for the CNAV GPS output from the phins to the em122 to be increased.&nbsp; This needed to be done during a transit as dsLog, dsLogCSV, ADCP, em122, GPS 1850 feed to phins, MOXA 199.92.161.191 output to 55101 were all affected.</p>
+<p>My original plan had been to move the 1850 GPS input to port &quot;C&quot; on the phins and then convert the &quot;Octans Standard&quot; from RS-422 back to RS-232 for use with ADCP, atdatalog01, MOXA-UDP feed to 55101.&nbsp; I could not get the 1850 GPS input to work as either RS-422 or RS-232 on Port &quot;C&quot; of the Phins.&nbsp; There might be something wrong with the port, although I was a little iffy on the RS-232 wiring for the input (does not seem to be a pin on the cable designated as ground).</p>
+<p>The final configuration (see attachment):&nbsp;&nbsp;&nbsp;&nbsp; Port &quot;C&quot; output&nbsp;&nbsp; =&gt;&nbsp; RS-422&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GPSLIKE&nbsp;&nbsp;&nbsp;&nbsp; to em122&nbsp; (CNAV gps data)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Port &quot;D&quot; input&nbsp;&nbsp;&nbsp;&nbsp; =&gt;&nbsp; RS-232&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1850 GPS</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Port &quot;D&quot; output&nbsp;&nbsp; =&gt;&nbsp; RS-232&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Octans Standard to ADCP, atdatalog01, MOXA 199.92.161.191</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>STEPS:</p>
+<p>1)&nbsp; Turn Off:&nbsp;&nbsp; dsLog, dsLogCSV, ADCP, em122, GPS1850 input to phins</p>
+<p>2)&nbsp; Convert the 1850 GPS feed in the main j-box (computer lab) from RS-422 (from chartroom) to RS-232.&nbsp; Both the input /output of the ports on the phins must have the same baud rate.&nbsp; I first tried to convert the Octans standard string from RS-232 to RS-422, but as we don't have a tried and true method of observing the RS-422 signal, and I had some problems (nothing was showing up using the sluff method of viewing it as a 232), it was easier for me to convert the GPS signal.&nbsp; Also of note,&nbsp; pins &quot;f' and &quot;g&quot; seem to work fine for either a RS-422 or RS-232 input.&nbsp; I am a little confused by that, since the cable diagram defines:&nbsp; &quot;f&quot;&nbsp; =&gt;&nbsp; Port D:RS-422 RX(+)&nbsp; and &quot;g&quot;&nbsp; =&gt; Port D:RS422 RX(-)/RS232 RX(+)&nbsp; and no pins are specified as port D RS-232 ground.</p>
+<p>3)&nbsp; Move the &quot;Octans standard&quot; string from Phins Port &quot;C&quot; to phins port &quot;D&quot;.&nbsp; NOTE:&nbsp; the previous output on &quot;D&quot; used RS-422 so it used pins &quot;P&quot; and &quot;R&quot;.&nbsp; The new output was RS-232, so needed to switch to pins &quot;P&quot; and &quot;N&quot; (&quot;N&quot; is the RS-232 ground).&nbsp; I made the mistake on the first attempt of using the original pins and just swapping - so it bears pointing out that there is a pinning diagram for the phins cable on sssg_on_memory and one on the j-box cover (notes not up-to-date).</p>
+<p>4)&nbsp; Move the &quot;GPSLIKE&quot; string to port &quot;C&quot; output - again, the original output on this port was RS-232 and used pins &quot;H&quot; &amp; &quot;G&quot;, the new signal was RS-422, so needed to be on &quot;H&quot; and &quot;J&quot;.&nbsp; Set the baud rate to 19200 (this can actually be varied now, as there is no input on Port &quot;C&quot; to confine the baud rate)</p>
+<p>5)&nbsp; Reconfigure the ADCP software for 4800 baud.</p>
+<p>- stop logging<br />
+- no need to end cruise<br />
+- kill the UHDAS GUI<br />
+<br />
+===&gt; edit /home/adcp/config/sensor_cfg.py&nbsp;&nbsp;&nbsp; (make a copy first, just in case)</p>
+<p>6)&nbsp; Change the MOXA configuration for 199.92.161.191.&nbsp; I used Zeus and teh n-port administrator to modify the baud rate for the phins portion of the output to 55101.</p>
+<p>7)&nbsp; atdatalog01 - change the phins input in dsLog.ini to 4800 baud.</p>
+<p>8)&nbsp; Reconfigure the GPS input baud rate (to match the &quot;GPSLIKE&quot; baud rate) in em122 - installation parameters</p>
+<p>9) Turn everything on, one by one, to test.</p>
+<p>Everything eventually worked.&nbsp; Initially, we lost the &quot;Time to station:&quot; and &quot;Distance to Station:&quot; on the status screen.&nbsp; This comes form the 1850 GPS, so it was suspect.&nbsp; However, I pulled the serial feed to atdatalog01 to look at it on the laptop - the signal was there, and when I plugged it back in, the status screen came back.&nbsp; So, I am unsure what actually caused that issue.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

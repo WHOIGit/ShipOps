@@ -1,0 +1,60 @@
+$@MID@$: 34
+Date: Sun, 09 Sep 2012 19:12:46 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: Other
+Category: Software
+S/N: 
+Subject / Summary: SVPEditor.py ****GREAT SOFTWARE FOR MESHING XBT & MODEL DATA OR AUTO FEEDING MODEL DATA TO SIS
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+
+<p><span style="font-size:large">SVPEditor.py is on the SIS deskop.&nbsp; Double click on it.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:large">***SERVER MODE*** To start sending model data automatically to SIS based on your location - SELECT &gt; SERVER MODE then start.</span>&nbsp; <span style="font-size:large">&nbsp; I&#39;m not sure how often it updates, but this will automatically provide SIS with SVP&#39;s based on a model which was very accurate when compared to CTD and XBT data (this was during the AT22 cruise off the coast of Canada/US in the fall of 2012 - I don&#39;t know how the model might compare during other seasons).</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:large">***EDITING MODE*** If you have actual data (should have depth, sound velocity and salinity) - select &gt;FILE - import - and then browse to the appropriate directory (we mapped the XBT directory for this cruise and browsed to it).&nbsp; Pick the appropriate file - it should then display graphically.&nbsp; Now select &gt;TOOLS - XBT load salinity&nbsp;&nbsp; and then &gt;TOOLS - Extend cast.&nbsp; To edit select &gt;MOUSE MODE and use flag to select an area for deletion, etc. (play around with it, it is pretty intuitive).&nbsp; Finally, when ready, select &gt;SEND PROFILE to put the file into SIS.&nbsp; It is then a good idea to check SIS and make sure it has received the new file.</span></p>
+
+<p>FROM REFERENCE MANUAL:</p>
+
+<p>Source: There are three alternatives:<br />
+&bull; Salinity &ndash; absorption coefficient based on salinity input.&nbsp; If the source is set to salinity, the average absorption coefficient is calculated using<br />
+the current sound profile (to find the temperature profile), the depth based on the previous pings and the specified average salinity. The average absorption coefficient<br />
+will then be calculated by SIS for the relevant frequency and it will be updated and displayed with changing depths. If the salinity in the water is constant, this is the<br />
+recommended setting.<br />
+&bull; CTD Profile &ndash; absorption coefficient based on profile input.<br />
+The absorption coefficient can be calculated from a sound speed profile that includes<br />
+information necessary to calculate an absorption profile.</p>
+
+<p>The sound speed input datagram (SSP) must be used. When using a <strong>CTD profile from an SSP datagram, the absorption coefficient profile will automatically be calculated</strong><br />
+by SIS for the required frequencies.&nbsp; It is also possible to specify the absorption coefficient directly in the SSP datagram,<br />
+but then one datagram must be made for each frequency used by the echo sounders<br />
+(i.e. the full range of 12, 31.5, 60, 70, 80, 90, 95, 100, 200, 250, 300, 350 and 400<br />
+kHz), and the frequency must be specified in each datagram. These datagrams<br />
+must have the same acquisition date and time and must be sent with no more than<br />
+10 seconds interval.<br />
+Using this CTD Profile option, which will increase the accuracy of the bottom<br />
+reflectivity data; SIS will calculate the average absorption coefficient through the<br />
+water column. The absorption coefficient values displayed will change continuously depending upon the depth.</p>
+
+<p>&bull; Manual &ndash; manually selected absorption coefficient</p>
+
+<p>It is possible to manually specify the absorption coefficient for the relevant frequency.<br />
+This must be the average absorption coefficient for the water column.<br />
+Salinity (parts per thousand): If the source is set to Salinity, the average salinity can<br />
+be entered in this field.<br />
+&lt;frequency&gt; kHz:</p>
+
+<p>If the source is set to Manual, you may supply an absorption coefficient<br />
+for your system&#39;s frequency.</p>
+
+<p><br />
+If the source is set to Salinity or CTD, the frequency field is disabled (greyed), but it will<br />
+show the current value of the absorption coefficient (dB/km) used for the frequency.</p>

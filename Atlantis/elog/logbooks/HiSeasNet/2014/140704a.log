@@ -1,0 +1,82 @@
+$@MID@$: 28
+Date: Fri, 04 Jul 2014 02:08:08 +0000
+Author: RSL
+S/N: na
+Type: General Problem
+Component: Shore based issue
+Subject: Poor signal quality.
+Cruise: at26-15
+Attachment: 
+Encoding: HTML
+========================================
+<p>Lost connection to shore.&nbsp; All ships had the same problem, turned out to be bad amplifier ashore.&nbsp; Ran on FBB until it was replace, about two days later.&nbsp; this took place around june 8th.</p>
+<p>&nbsp;</p>
+$@MID@$: 29
+Date: Fri, 04 Jul 2014 02:12:09 +0000
+Author: RSL
+S/N: na
+Type: General Problem
+Component: Shore based issue
+Subject: Bad cable in shack ashore (San Diego)
+Cruise: at26-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>Has some weird problems with EbNo going up/down and power along with it.&nbsp; Called Karl, since we were in port, he found a bad connector in the equipment shack for the transmitter.&nbsp; He swapped the cable for the time being.&nbsp; This happened around June 16th.&nbsp; While this was going on, we also had some scrolling com errors, where the error number climb at about 10/sec.&nbsp; This cleared up on it's own before it could be diagnosed.</p>
+$@MID@$: 30
+Date: Fri, 04 Jul 2014 02:21:34 +0000
+Author: RSL
+S/N: NA
+Type: Fix
+Component: FSK modem
+Subject: Bad fsk modem
+Cruise: at26-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scrolling com errors returned with a vengence.&nbsp; Turned out to be a bad FSK modem.&nbsp; Swapped the 422 serial lines top/bottom, this did not fix it.&nbsp; Then swapped lower modems, still not fix.&nbsp; Then swapped the two 422 lines back to their original positions, this fixed it.&nbsp; This suggests that both top and bottom modem are bad. &nbsp;&nbsp; Need to get replacement modems from Steve.&nbsp;&nbsp; This all happened around June 19th.</p>
+$@MID@$: 31
+Date: Fri, 04 Jul 2014 02:49:44 +0000
+Author: RSL
+S/N: NA
+Type: General Problem
+Component: Shore based issue
+Subject: Bad accelerator ashore
+Cruise: at26-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>Around June 22 lost connection to shore.&nbsp; Satellite like still up and looking good, seems like a routing issue.&nbsp; Got a hold of Steve, seems like something was wrong with the accelerator.&nbsp; (even though we don't have one, we still go through the one on shore.)&nbsp; Steve did some reconfiguring and now all is well.&nbsp; This accelerator is going to be removed in the not too distant future.</p>
+$@MID@$: 32
+Date: Fri, 04 Jul 2014 03:05:06 +0000
+Author: RSL
+S/N: na
+Type: Configuration
+Component: other
+Subject: Swapped from AOR to POR
+Cruise: at26-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>Swapped from AOR to POR.&nbsp; No problems.&nbsp; Here are the changes:</p>
+<p>New Satellite is 183E<br />
+DAC IF 75.910 (75 MHz and 0910 KHz)<br />
+<br />
+Codan Tx: 6240<br />
+<br />
+Comtech Rx: 75.9100 MHz, <br />
+Comtech Tx: 76.2050 MHz,<br />
+</p>
+<p>Power in the Comtec modem was set to -20, (which is the limit.&nbsp; If we need to cut it back any more, it will have to be done in the dome.)</p>
+$@MID@$: 33
+Date: Fri, 04 Jul 2014 03:14:58 +0000
+Author: RSL
+S/N: na
+Type: General Problem
+Component: DAC
+Subject: Drifting antenna?
+Cruise: at26-16
+Attachment: 
+Encoding: HTML
+========================================
+<p>Noticed that the connection was reallyyyyy sllooooowwwww.&nbsp; Not so unusual.&nbsp; However traffic was not maxxed out, so WTF?&nbsp; While looking at the traffic levels, also happened to glance at the &quot;error&quot; graph for the serial port, something I usually never look at.&nbsp; There were lots of errors.&nbsp; I then noticed that the EbNo was about 2.3, which suck, and was clearly the source of the errors on the serial port.&nbsp; But why is the EbNo low?&nbsp; Pattern on the spec is clearly getting soft, so must be tracking issue.&nbsp; System does not seem to be peaking well.&nbsp; Turned off tracking for about a second, then turned it back on again.&nbsp; Antenna returned to a better spot and stayed there.&nbsp; Still fine 24 hours later, but I don't know why it did this.&nbsp; Looking the history of serial errors, this appears to be a developing problem over the last month or so, although there are&nbsp; some serial errors on and off for a long time.</p>

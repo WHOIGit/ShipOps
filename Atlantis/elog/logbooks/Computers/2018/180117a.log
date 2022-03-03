@@ -1,0 +1,46 @@
+$@MID@$: 102
+Date: Wed, 17 Jan 2018 11:36:02 +0000
+Author: AH
+Type: Routine
+name: mnemosyn
+server type: data
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: rsync to shore - Memory 
+Cruise: at39-03
+Attachment: 
+Encoding: HTML
+========================================
+<p>The rsync to shore for the incoming/outgoing boxes is done via the &quot;atlantis&quot; user crontab.&nbsp; The commands used are in /home/atlantis/bin (also saee crontab -l).</p>
+
+<p>Memory now has two eth ports eth0 = science net&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eth1 = port fbb</p>
+
+<p>The large files are usually (or can be) routed through the port fbb.</p>
+
+<p>To see what route do:</p>
+
+<p>&gt;route -n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>example output:</p>
+
+<p>Kernel IP routing table<br />
+Destination &nbsp; &nbsp; Gateway &nbsp; &nbsp; &nbsp; &nbsp; Genmask &nbsp; &nbsp; &nbsp; &nbsp; Flags Metric Ref &nbsp; &nbsp;Use Iface<br />
+0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; 192.168.11.1 &nbsp; &nbsp;0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; UG &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp;0 eth0<br />
+128.128.250.51 &nbsp;192.168.0.1 &nbsp; &nbsp; 255.255.255.255 UGH &nbsp; 0 &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp;0 eth1<br />
+169.254.0.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; 255.255.0.0 &nbsp; &nbsp; U &nbsp; &nbsp; 1000 &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0 eth1<br />
+192.168.0.0 &nbsp; &nbsp; 0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; 255.255.255.0 &nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp;0 eth1<br />
+192.168.11.0 &nbsp; &nbsp;0.0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; 255.255.255.0 &nbsp; U &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp; &nbsp;0 eth0</p>
+
+<p>A route can be added or removed.&nbsp; Examples:</p>
+
+<p>sudo route del -host 128.128.250.51 gw 192.168.0.1 dev eth1<br />
+or<br />
+sudo route add -host 128.128.250.51 gw 192.168.11.1 dev eth0<br />
+&nbsp;</p>
+
+<p>When the port fbb route is removed or disabled, the route flops over to hiseasnet without needing to add the route for hiseasnet (at least as of 2018-Jan-17).&nbsp; I am not sure what happens with the port fbb route from time to time, but I was able to get to the port fbb with netbook, but still not route through it at times.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

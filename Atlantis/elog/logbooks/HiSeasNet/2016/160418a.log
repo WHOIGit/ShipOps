@@ -1,0 +1,39 @@
+$@MID@$: 59
+Date: Mon, 18 Apr 2016 16:26:52 +0000
+Author: AH
+S/N: 
+Type: Configuration
+Component: radome / antenna
+Subject: Antenna / Equipment Upgrade - part for this cruise only, part forever
+Cruise: at33-04
+Attachment: 160420_125658_400_MHz_modems_20160414113138148_[290846].pdf,160420_125713_Pol_Pot_Alignment_135328_A_[298007].pdf,160420_125734_127991_G.pdf,160420_125747_129654_B_[177079].pdf,160420_125804_139349_D_(2)_[177235].pdf,160420_125822_Linear_C-Band_Feed_123285_C2_[291027].pdf,160420_133330_circular_feed_1_wave_flange.jpg,160420_133404_hsn_circular_feed.jpg,160420_134427_DAC_parameters_at33-04_telepresence.doc,160420_134446_modem_parameters_at33-04_telepresence.doc
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">EQUIPMENT / ANTENNA UPGRADE - More &quot;power&quot; capability - Karl Kapusta came to Charleston Shipyard to perform upgrade</span></p>
+<p><span style="font-size: large;">SUMMARY:&nbsp;&nbsp; ******I (Allison) need to clarify some items with Karl K ************<br />
+</span></p>
+<p><span style="font-size: medium;">The HSN antenna was upgraded due to the at33-04 NTSB cruise that includes telepresence.&nbsp; The equipment was required for this cruise, so the opportunity arose to upgrade some pieces permanently in preparation for the trend toward more and more telepresence,&nbsp; The upgrades will allow for more power capabilities (when funding is available).</span></p>
+<p><span style="font-size: medium;">Equipment that has been upgraded and replaced permanently includes (this list need to be verified by Karl K.):&nbsp; </span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">DAC's:&nbsp; (NEW:&nbsp; DAC-2202 &amp; DAC-2200 - operate at L-Band);&nbsp; Old DAC's:&nbsp; DAC-2302 and the DAC-03 will be sent back (they only work at 70 MHz and your new RF works at L-Band) </span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">BUC (Block Up Converter - replaced the CODAN&nbsp;&nbsp; {Power consumption ranges from 40W to a maximum of 300W - I pulled this out of the modem manual, because it seemed of interest}), </span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">LNB (Low Noise Block) - replaced the LNA</span></p>
+<p style="margin-left: 40px;">&nbsp;</p>
+<p><span style="font-size: medium;">Equipment which is temporary for this cruise (will be removed at WHOI in May 2016):</span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">CDM-625 Satellite Modem - RETURN TO VERIZON - being used in place of our Q-flex teledyne modem (there are two in the rack, one is spare)</span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">Linear Feed - in place of our circular feed - the linear feed is a &quot;US&quot; only type feed used by Verizon;&nbsp; our normal feed works globally</span></p>
+<p style="margin-left: 80px;"><span style="font-size: medium;"><cite>NOTE:&nbsp; a wave flange from our circular feed was removed and used in mounting the linear feed (pictures attached)<br />
+</cite></span></p>
+<p style="margin-left: 40px;"><span style="font-size: medium;">URI 3800 Series Cisco Router - not really part of the &quot;antenna equipment&quot; (included because it is mounted in our rack and don't want to overlook removing)</span></p>
+<p style="margin-left: 40px;">&nbsp;</p>
+<p><span style="font-size: medium;">The equipment was installed and configured (DAC and modem settings are in attached Word documents).</span></p>
+<p><span style="font-size: medium;">POWER TO ANTENNA/RADOME:</span></p>
+<p><span style="font-size: medium;">There was also the issue of differing power requirements (CODAN to BUC change) to the new antenna system.&nbsp; Our present inverters are not rated or sufficient to supply the required power.<br />
+</span></p>
+<p><span style="font-size: medium;">The antenna is being powered off of the 220 Volt supply (originally run for the AC system - AC still on same).&nbsp; The present configuration is not on UPS or battery back-up of any kind.&nbsp; There is a 20 Amp breaker on one of the pedestal legs feeding the system.&nbsp; The breaker in the pedestal base is now a 15 Amp breaker.&nbsp; This feeds a new 220 Volt power ring in the dish.&nbsp; Some of the configurations needs to be clarified (i.e. better details in this documentation)<br />
+</span></p>
+<p style="margin-left: 40px;">&nbsp;</p>
+<p style="margin-left: 40px;">&nbsp;</p>
+<p style="margin-left: 40px;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

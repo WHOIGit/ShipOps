@@ -1,0 +1,47 @@
+$@MID@$: 8
+Date: Sat, 30 Apr 2016 19:31:12 +0000
+Author: AH - Catie's alvin data directory structure
+script: 
+Type: 
+Source: 
+Data: general alvin data
+Subject: Alvin Data Directory structure cheat sheet
+Cruise: at33-04
+Attachment: 160430_193059_AGuideToAlvinDataDirectories.txt
+Encoding: HTML
+========================================
+<p>A Guide to Alvin Data Directories - updated 14 March 2016<br />
+<br />
+Under the ATXX-XX cruise directory are individual directories for each dive in the format ALXXXX, along with the cumulative Framegrabber files for the entire cruise in the directory AFG_ATXX-XX.<br />
+<br />
+<br />
+-AFG_ATXX-XX:<br />
+&nbsp;&nbsp;&nbsp; -The complete suite of framegrabber files for the entire cruise, including the dive_list.html browseable web interface.<br />
+<br />
+<br />
+-ALXXXX:<br />
+&nbsp;&nbsp;&nbsp; -Audio: WMA files produced by the handheld digital audio recorders provided inside the sphere.<br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; -C+C: Engineering files produced by the pilot's Command and Control computer (linux) inside the sphere. A complete breakdown of each data record type can be found in the Alvin_Data_Formats0.2.xls, also located in this document directory.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -ExtStillCam: Time lapse photographs or short video clips produced by the External Science Camera, usually mounted on the starboard manipulator arm.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -Imagenex: Any files logged by the Imagenex computer (Windows) inside the sphere.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -Imagenex: Data produced by the Imagenex sonar<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -Temperature_Logs: 1Hz logs produced from the temperature probes located on the port window, starboard window, and science basket. <br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; -IntStills: Photos taken with the handheld cameras inside the sphere by the science observers and/or pilot.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -nav: Navigation and engineering files produced by the pilot's Navigation computer (linux) inside the sphere. A complete breakdown of each data record type can be found in the Alvin_Data_Formats0.2.xls, also located in this document directory.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -*.png or *.jpg: Underlays used for in-sphere navigation during the dive.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -*.tgt: Location of targets entered either during the pre-dive process or manually entered during the course of the dive.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -Science: Any files logged by the Science computer (Windows) inside the sphere.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -Temperature_Logs: 1Hz logs produced from the temperature probes located on the port window, starboard window, and science basket.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -CTD: 4Hz CTD records produced by a SBE49 CTD. The ultimate source of these logs is the C+C computer, however the parsed and consolidated data product is found here in the CTD directory.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -Toplab_Navest: Navigation and engineering files produced by the Atlantis Surface Control Navigation computer (linux). A complete breakdown of each data record type can be found in the Alvin_Data_Formats0.2.xls, also located in this document directory.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -*.png or *.jpg: Underlays used for Surface Control navigation during the dive.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -*.tgt: Location of targets entered either during the pre-dive process or manually entered during the course of the dive by the Surface Controller.<br />
+<br />
+&nbsp;&nbsp;&nbsp; -USBL: Raw log files of USBL navigation data produced by the Sonardyne Ranger USBL system located in Atlantis Surface Control. </p>

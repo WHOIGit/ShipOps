@@ -1,0 +1,14 @@
+$@MID@$: 88
+Date: Sun, 10 Nov 2019 21:33:21 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: 
+Subject: Offshore - leaving Scripps in this case
+Cruise: at42-19
+Attachment: 191110_213431_List_PEPLINK_policies.png,191110_213441_to_WHOI_HiSEasNet.png,191110_213451_whoi_priority.png
+Encoding: HTML
+========================================
+<p>A few PEPLINK policies need&nbsp; be added back whenleaving port from a land line connection.&nbsp; Attached is a list of all the policies.&nbsp; And the two that were deleted are also attacehed below (re-add these).</p>
+
+<p>Also check data transfer policies - they were probably increased since we had a land line!</p>

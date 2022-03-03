@@ -1,0 +1,27 @@
+$@MID@$: 52
+Date: Sun, 11 Oct 2015 02:38:50 +0000
+Author: RSL
+S/N: na
+Type: Other
+Component: radome / antenna
+Subject: Swapped the guts
+Cruise: at31-a
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed the radome from the ship and moved it to the Alvin High Bay.&nbsp; Split the dome at the equator and separated.&nbsp;&nbsp; Removed the dish.&nbsp; Removed the 9797 pedestal assembly.&nbsp; Removed the air-conditioner.&nbsp; </p>
+<p>Installed the air-conditioner that was formerly on the Knorr. &nbsp;&nbsp; Installed a 9797B pedestal that came from the Mellville.&nbsp; Installed the dish that was formerly on the Knorr.&nbsp; Re-assembled the dome and put it back in place on the ship.&nbsp; Hooked up, balanced, etc..&nbsp; &quot;New&quot; system seems to have about 10db more gain than the old one.&nbsp; Also swapped out the DAC to a 2302.&nbsp; (the DAC03 is onboard and will still work as a spare.)&nbsp; Both DACs have been configured.&nbsp; </p>
+<p>Notes:<br />
+The purpose of all this work is to bring the Atlantis system more up to date.&nbsp; The 9797B is capable of using a dual feed C/Ku band setup.&nbsp; (we don't have the Ku option at this time.)&nbsp; Most of the parts are stronger.&nbsp; The cross-level and elevation motors have brakes.&nbsp; (Yippee!!!)&nbsp; We have been suspicious of the dish for years, this swap appears to confirm that the old dish was warped, or the feed was off, or something.&nbsp; The old dish has been dumpsterized.</p>
+<p>The brakes mean that we don't have to worry if the power fails, but we still need to secure the dish if the power will be off for a long time.&nbsp; Also, there is no brake on the azimuth motor, so it will still spin around.&nbsp; </p>
+<p>The old pairs of gold modems, top/bottom, have been replaced with a single, dual channel modems.&nbsp; </p>
+<p>There is a new terminal connection strip installed.&nbsp; </p>
+<p>Spares are in the cabinet, the old spares have been removed.&nbsp; (the ones that don't fit, that is.)</p>
+<p>Electronic copies of the manuals have been placed on board.&nbsp; </p>
+<p>A few interesting things came up when setting things up.&nbsp; <br />
+&nbsp;&nbsp; -The error messages that come up on the Teledyne Modem can be truncated.&nbsp; You need to use the webpage to be certain that you are getting the correct information.<br />
+&nbsp;&nbsp; -The modem will go offline if it gets to much power, as well as to little.&nbsp; The range is -18db to -53db.&nbsp; Because the new dish is hot, we had to much power initially.&nbsp; A 6db attenuator is installed in the line that feeds the modem.&nbsp; We probably should replace this with a 10.&nbsp; In the meantime, we should keep an eye on the power level.&nbsp;&nbsp; (one of the info pages has this, along with the EbNo.)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

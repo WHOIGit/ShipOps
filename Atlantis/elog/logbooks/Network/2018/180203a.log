@@ -1,0 +1,12 @@
+$@MID@$: 66
+Date: Sat, 03 Feb 2018 12:40:38 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: cyberoam CR50iNG
+Subject: Web Filter
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="color:#000000">When creating a new policy for the first time in &quot;WEB FILTER&quot;:&nbsp; if your policy is going to deny access to certain sites, start with the template &quot;Allow All&quot;;&nbsp; if your policy is going to only allow certain sites, start with the template &quot;deny all&quot;.&nbsp; I think the only time you can see which template you&#39;ve selected is when ou are creating the policy.&nbsp; There must be another way, but I haven&#39;t found it yet. </span></p>

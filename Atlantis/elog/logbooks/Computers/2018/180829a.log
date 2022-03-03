@@ -1,0 +1,25 @@
+$@MID@$: 113
+Date: Wed, 29 Aug 2018 01:36:42 +0000
+Author: Catie
+Type: Fix
+name: knudsen
+server type: data
+OS: Windows
+Location: Computer Lab
+Category: Hardware
+Subject: When the KVM doesn't work on newknudsen...
+Cruise: at41
+Attachment: 
+Encoding: HTML
+========================================
+<p>When newknudsen is rebooted and the KVM keyboard and mouse don&#39;t work....</p>
+
+<p>1. Plug in USB or wireless keyboard/mouse</p>
+
+<p>2. Go to device manager and disable the PS2 mouse and PS2 keyboard</p>
+
+<p>3. Unplug the USB/PS2 adapter in the back</p>
+
+<p>4. Wait and then plug the USB/PS2 adapter back in. Windows will re-install the driver automatically.</p>
+
+<p>5. Congratulations. The KVM keyboard and mouse work again.</p>

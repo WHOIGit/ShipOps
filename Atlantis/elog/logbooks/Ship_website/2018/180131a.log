@@ -1,0 +1,19 @@
+$@MID@$: 5
+Date: Wed, 31 Jan 2018 09:06:10 +0000
+Author: AH
+Subject: Data plots - font size of numbers / dates on axes
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>The default font size for the axis on the data plots (gnuplot plots) was too large and unreadable.&nbsp; I created a variable in get_data.pl called font1 - this is the font size.&nbsp; As of 2018-Jan-31 the line in get_data.pl reads (right now it is on line 118 of get_data.pl):</p>
+
+<p>$font1 = 9;</p>
+
+<p>I added a line in each of the plot scripts (atmp, depth, etc.):</p>
+
+<p>set tics font &quot;,$font1&quot;</p>
+
+<p>This sets both the x and y axis to the font size designated in get_data.pl</p>
+
+<p>At font size &quot;9&quot; right now everything is legible</p>

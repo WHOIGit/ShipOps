@@ -1,0 +1,125 @@
+$@MID@$: 48
+Date: Sun, 15 Nov 2015 17:56:52 +0000
+Author: Catie and Allison
+Type: Wire
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: General Problem
+Subject: Running log of wire kinks & retermination during AT32
+Cruise: at32
+Attachment: 151115_174906_AT_1_20151112110454.log,151115_174946_AT_1_20151112130126.log,151115_174958_AT_1_20151112135644.log,151115_175447_IMG_3615.JPG,151120_171448_322_wire_kink_1.jpg,151120_171507_322_wire_kink_2.jpg,151126_123154_IMG_3738.JPG,151126_123218_IMG_3735.JPG
+Encoding: HTML
+========================================
+<p>*Retermination after cable came up from cast 023 on 23 November 2015    with one significant kinks about 5 meters from   the package.</p>
+<p>Pictures in attachments 7 and 8.</p>
+<p>This is the third re-termination this cruise!</p>
+<p><span style="font-size: xx-large;">23 November 2015 </span></p>
+<p>Termination and Megger by Catie Graver</p>
+<p>Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger) ...a couple values were verified for accuracy/consistency/comparison using the Eng Dept. Megger. No appreciable differences found.</p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9787 meters</p>
+<p>Overall length = 9630 meters</p>
+<p>Air temp: 16 C&nbsp; (61 F)</p>
+<p>Tested entire wire from termination, through drum and j-boxes to computer lab end</p>
+<p>Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;      &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-White     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.046 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp; &nbsp;    &nbsp;     &nbsp; &nbsp; 1.56 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.757&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Black &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.216&nbsp; GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.06 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.55 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.718 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 464 &nbsp; MOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.02&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 1.00&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.152 &nbsp; ****This is consistent with previous retermination values. Likely starting to see Z-kink conductor damage. </span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Need to trace further on this transit to confirm suspicion. Cut back some?<br />
+</span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.510 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.14 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; - &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.147 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.45 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.11&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.09</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; .717&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.245 GOhms &nbsp; &nbsp; &nbsp; &nbsp; 1.11&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 1.34 &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 1.159 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; (9.630 km) * (30.8 Ohms/km) = 296.0 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings:&nbsp;  Red-White 566 Ohms;&nbsp; Red-Blk 570 Ohms;&nbsp; Blk-White 570 Ohms;&nbsp; Red-GR 282  Ohms;&nbsp; Blk-GR 286 Ohms;&nbsp; White-GR 284 Ohms;&nbsp; Ship-GR 0.4 Ohms<br />
+</span></span></p>
+<p>&nbsp;</p>
+<p>*****************************</p>
+<p>*****************************</p>
+<p>&nbsp;</p>
+<p>*Retermination after cable came up from cast 014 on 18 November 2015   with one significant kinks about 6 meters from   the package.</p>
+<p>Pictures in attachments 6 and 7 are of this kink.</p>
+<p>This is the second re-termination this cruise!</p>
+<p><span style="font-size: xx-large;">18 November 2015 </span></p>
+<p>Termination and Megger by Allison Heater</p>
+<p>Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9800 meters</p>
+<p>Overall length = 9643 meters</p>
+<p>Air temp: 12 C&nbsp; (54 F)</p>
+<p>Tested entire wire from termination, through drum and j-boxes to computer lab end</p>
+<p>Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;     &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-White    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.793 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.09 &nbsp; &nbsp;    &nbsp;    &nbsp; &nbsp; 2.70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.715&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Black &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.316&nbsp; GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.10 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.99 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.763 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 234.2 MOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.05&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 0.88&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.153 &nbsp; ****could this be conductor damage (Z-kink), or is it just in the termination?&nbsp; </span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The other two connectors were good, and we are short on time, so did not investigate further &nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.59 GOhms &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.15 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2.17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.086 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.35 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.22&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.50</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; --&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.49 GOhms &nbsp; &nbsp; &nbsp; &nbsp; 1.12&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.39 &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 1.097 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; (9.643 km) * (30.8 Ohms/km) = 297.0 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings: Red = 278 Ohms ;&nbsp; Black = 281 Ohms &nbsp; ; White = 279 Ohms&nbsp; ;&nbsp; Green-Shield = 0.78 Ohms ; &nbsp; Green-Ship = 0.69 Ohms <br />
+</span></span></p>
+<p>*****************************</p>
+<p>*****************************</p>
+<p>*Retermination after cable came up from cast 003 on 12 November 2015  with two significant kinks, one ~7m from the package and one ~9m from  the package. The package experienced numerous zero tension events during  the cast in the rough weather conditions. Wire logs seem to suggest the  most significant shock loading occurred as the package was brought back  to the surface to begin data acquisition for the cast.</p>
+<p>It is worth noting that the height of the boom to the waterline is nominally 7.5m on the Atlantis.</p>
+<p>Photos of kink and relevant wire logs attached.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">13 November 2015 </span></p>
+<p>Termination and Megger by Catie Graver</p>
+<p>&nbsp;</p>
+<p>**Note- this is first new termination with new slip ring installed, s/n 29.379</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)</span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9810 meters</p>
+<p>Overall length = 9653 meters</p>
+<p>Air temp: 3 C&nbsp; (37 F)</p>
+<p>Tested entire wire from termination, through drum and j-boxes to computer lab end</p>
+<p>&nbsp;</p>
+<p>Wire pair</p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; microF &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;    &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Green-Red   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18.03 GOhms &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.35 &nbsp; &nbsp;    &nbsp;   &nbsp;&nbsp; 1.67 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.159 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    <br />
+</span></p>
+<p><span style="font-size: medium;">Green-White &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17.63&nbsp; GOhms &nbsp; &nbsp; &nbsp; 1.25 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.74 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.087 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Green-Black &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.99 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.28&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.74&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.100 &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30.54 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.31 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 1.70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.716 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">Red-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30.73 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.30&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 1.78</span><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 0.721&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">White-Black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31.07 GOhms &nbsp; &nbsp; &nbsp;&nbsp; 1.23&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.53 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 0.768 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: large;">CONTINUITY:</span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Expected value:&nbsp;&nbsp; (9.653 km) * (30.8 Ohms/km) = 297.3 Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></span></p>
+<p><span style="font-size: large;"><span style="font-size: small;">Readings:&nbsp;  Red-White 540 Ohms;&nbsp; Red-Blk 542 Ohms;&nbsp; Blk-White 544 Ohms;&nbsp; Red-GR 274  Ohms;&nbsp; Blk-GR 270 Ohms;&nbsp; White-GR 270 Ohms</span></span></p>

@@ -1,0 +1,15 @@
+$@MID@$: 90
+Date: Fri, 25 Aug 2017 20:43:24 +0000
+Author: lstolp 128.128.10.174
+Type: Build
+name: atdatalog
+server type: datalog
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: updated dsLog to svn version 36 and dsLogCSV to svn 124
+Cruise: at38
+Attachment: 
+Encoding: HTML
+========================================
+<p>Updated both atdatalog computers to latest svn version of dsLog/dsLogCSV/dsLogPostCSV</p>

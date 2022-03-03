@@ -1,0 +1,67 @@
+$@MID@$: 19
+Date: Sat, 31 Mar 2012 10:43:23 +0000
+Author: AH
+Type: Wire
+Winch: 
+Wire: EM Cable / CTD conductor
+Category: Other
+Subject: LOAD CELL INFORMATION
+Cruise: at20
+Attachment: 
+Encoding: HTML
+========================================
+<p>Robbie, Rob, Allison, Dave, et al,<br />
+The WHOI SSSG load cell custom produced by 3PSInc has the following specs, taken from<br />
+the 3PSINC drawing &quot;LP-5K-2008-0&quot;.<br />
+The load pin can be powered directly from a SBE9 or any source from 10 to 15 VDC, and<br />
+draws under 15mA across that range.<br />
+You should be aware of the orientation of the load scribe on the load cell case,<br />
+which allows alignment of the load pin to the mount so that the strain is properly<br />
+applied across the sensing bridge.<br />
+<br />
+We have no prepared cables for this cell. Simply use an Impulse or Subconn MCIL4F<br />
+with MCDLSF locking sleeve.<br />
+Since this is being used with an SIO SBE9, the connection of this cell should be left<br />
+with Rob Palomares.?<br />
+If an MCIL4F pigtail or locking sleeve are required, contact Dave Wellwood (x2657) or<br />
+George Tupper (x2683).<br />
+<br />
+Rob Palomares can setup a voltage channel on their SBE9 to provide for this load cell<br />
+output. A simple two-term equation can fully describe the load cell voltage output to<br />
+tension in pounds. The unit produces 1.000 volts output per 1,000 lbs tension.<br />
+<br />
+Call or email me if you have any questions.<br />
+<br />
+Marshall<br />
+<br />
+1. Performance:<br />
+1.1 Rated force: 5000 lbs<br />
+1.2 Output: 0 to 5 VDC<br />
+1.3 Static error band: +/- 0.5% of full scale output including non-linearity,<br />
+non-repeatablity and hysteresis.<br />
+<br />
+2.0 Electrical<br />
+2.1 Excitation: 10 to 15 Volts DC<br />
+2.2 Connection:?<br />
+MCBH-4M stainless steel base.<br />
+Pin 1: + Pwr<br />
+Pin 2: + Sig<br />
+Pin 3: - Sig<br />
+Pin 4: Pwr common.<br />
+Note: Power common and Signal - (pins 3 and 4) do not need to be isolated and can be<br />
+tied together.<br />
+2.3 Sensing element: Full bridge, 350 ohm bridge impedance.<br />
+<br />
+3.0 Mechanical:<br />
+3.1 Material 17-4PH SST per AMS 5643, Cond H1150, passivated.<br />
+3.2 Overload Rating:<br />
+&nbsp;150% of capacity (7,500 lbs) without calibration shift (safe overload.)<br />
+&nbsp;300% of capacity (15,000 lbs) without mechanical failure.<br />
+&nbsp;</p>
+<p>4.0 Environmental:<br />
+4.1 Temperature range, operating and storage: -40 deg F to + 150 deg F.<br />
+4.2 Thermal effects:?<br />
+Zero shift: less than 0.01% of capacity per deg F.</p>
+<p>Sensitivity shift: less than 0.01% of capacity per deg F.<br />
+<br />
+&nbsp;</p>

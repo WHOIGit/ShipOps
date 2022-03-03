@@ -1,0 +1,238 @@
+$@MID@$: 2
+Date: Tue, 26 Feb 2019 00:40:58 +0000
+Author: lstolp
+Antenna: both
+S/N: 
+Type: Configuration
+Component: System
+Subject: INSTALLATION NOTES
+Cruise: AT MARE ISLAND 2019
+Attachment: 190226_004407_scan0001.pdf,190226_015219_atlantis_netdiag.pdf,190226_020944_atlantis_netdiag_20190226.pdf
+Encoding: plain
+========================================
+NETWORK for NSD (KA) access
+10.10.4.88/29  
+10.10.4.89  NSD   (gateway)
+10.10.4.90  Peplink
+10.10.4.91   Cisco
+10.10.4.92
+10.10.4.93
+10.10.4.94
+
+10.10.4.88  Network
+255.255.255.248 Netmask
+10.10.4.95  Broadcast
+
+
+Using a web browser to access the dashboard of the iDirect;FBB;KA
+** need to be on the 10.10.4.88/29 network on the C2960x switch
+
+https://10.5.0.169:54080  admin/1234
+https://10.5.0.169:50443  admin/iDirect123!
+https://10.5.0.169:51080  admin/1234
+
+Using ssh in a terminal:
+ssh -p [port] admin@127.0.0.1
+
+telnet 0
+admin@telnet:127.0.0.1;53102
+
+
+## screen capture
+lauras-MacBook-Pro-2:~ laura$ ssh -p 50022 root@10.5.0.169
+The authenticity of host '[10.5.0.169]:50022 ([10.5.0.169]:50022)' can't be established.
+ECDSA key fingerprint is SHA256:8YM8Tj9AVFSTHbDM9xC/6p+74FxQWSJsJzQxaOHTAtE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[10.5.0.169]:50022' (ECDSA) to the list of known hosts.
+root@10.5.0.169's password:
+# ?
+-sh: ?: not found
+# telnet 0
+
+Entering character mode
+Escape character is '^]'.
+
+Username: admin
+Password: ****************
+[23:24:27:379875]
+
+[CX751:44753] admin@telnet:127.0.0.1;53102
+> [23:24:29:815899] UCP0!: TO( +1136), FO( -1321), PO( +0.0) <653335.788>
+rx a[23:24:39:790084] UCP0!: TO( +1148), FO( -1184), PO( +0.0) <653345.763>
+rx snr
+[23:24:45:756326] Rx SNR: 12.820000
+[23:24:45:756367] Rx raw reg: 0
+[23:24:45:756381] Rx raw reg lookup: 0
+
+[CX751:44753] admin@telnet:127.0.0.1;53102
+> [23:24:49:764426] UCP0!: TO( +1146), FO( -1270), PO( +0.0) <653355.737>
+remotestate
+[23:24:53:026297] Current Remote State:-
+[23:24:53:026332]   Auth/KeyRoll:     Succeeded (no encryption)
+[23:24:53:026373]   Txer State:       Unmuted
+[23:24:53:026402]   Rx Mode:          DVBS2 (service)
+[23:24:53:026886]
+[23:24:53:026916]   RXer 1 Status:
+[23:24:53:026929]   ==============
+[23:24:53:026946]   RXer Lock1:        LOCKED
+[23:24:53:027002]   RXer Freq:         1610.000000 Mhz
+[23:24:53:027042]   FSD:               2601298
+[23:24:53:027057]   Assigned HDLC:     0x3ca
+[23:24:53:027077]   Assigned UID:      0xe560 - 0xe56e, 0xe56f
+[23:24:53:027118]   Acq Mode:          ACQ Contention
+[23:24:53:027153]   Modem State Rx1:   In Network (0 days 00 hours 51 mins 43 sec)
+[23:24:53:027169]
+[23:24:53:027426]   RXer 2 Status:
+[23:24:53:027459]   ==============
+[23:24:53:027476]   RXer Lock2:        UNLOCKED
+[23:24:53:027521]   RXer Freq:         0.000000 Mhz
+[23:24:53:027558]   FSD:               2601298
+[23:24:53:027574]   Assigned HDLC:     0x0
+[23:24:53:027592]   Assigned UID:      0x0 - 0x0, 0x0
+[23:24:53:027613]   Acq Mode:          Invalid Acquisition Mode
+[23:24:53:027635]   Modem State Rx2:   In Init (N/A)
+[23:24:53:027649]
+
+[CX751:44753] admin@telnet:127.0.0.1;53102
+> ?
+[23:24:58:211754] Unknown Command: '?'
+
+[CX751:44753] admin@telnet:127.0.0.1;53102
+> [23:24:59:738587] UCP0!: TO( +1143), FO( -1329), PO( +0.0) <653365.711>
+help
+[23:25:01:099782]                 Driver Interface
+[23:25:01:099816] DID             Show modem identification number
+[23:25:01:099832] TERMINATE       Kill process
+[23:25:01:099853] acm_monitor     DVBS2-ACM Stats, Params and Debug
+[23:25:01:099868] acq             Acq Command
+[23:25:01:099894] atten_calc      calculate required attenuation
+[23:25:01:099909] auth
+[23:25:01:099931] authhdlr        Authentication handler
+[23:25:01:099947] bch             Bcast Msg Handler Command
+[23:25:01:099967] bmp             Query the status and information on TLV processing.
+[23:25:01:099986] bsel            Beam Selector Command
+[23:25:01:100002] btp             Burst Controller
+[23:25:01:100016] btprx1-drv-intf Driver Interface
+[23:25:01:100030] btprx2-drv-intf Driver Interface
+[23:25:01:100051] buc             BUC commands
+[23:25:01:100122] buca
+[23:25:01:100144] bucc            BUC Commissioning
+[23:25:01:100160] buci            BUC Initializer Command
+[23:25:01:100176] burstcfg        Burst Configuration info
+[23:25:01:100191] cal
+[23:25:01:100217] classifier      Packet classification information
+[23:25:01:100234] clear           Clear screen
+[23:25:01:100249] connect         Connect to child internal console server
+[23:25:01:100264] console         Console control
+[23:25:01:100338] cr              carrier record Info
+[23:25:01:100361] cxmgr           Manage the commissioned/commissioning state of the terminal
+[23:25:01:100378] dfoe_intf       DFOE Demux Layer Command
+[23:25:01:100401] dfoe_layer      DFOE layer command
+[23:25:01:100458] dist_chop       Distributor/Chopper (QoS) Layer
+[23:25:01:100485] dlmgr           Query the status of software and updates on the terminal through DownloadManager
+[23:25:01:100504] eepromsn        Show modem serial number as written in eeprom
+[23:25:01:100520] eloop           EventLoop control
+[23:25:01:100535] ems             Event Manager Status (ems [<class>]
+[23:25:01:100550] enc-drv-intf    Driver Interface
+[23:25:01:100565] encs            Encryption session
+[23:25:01:100581] ess             Event Set State
+[23:25:01:100597] eth             Show the output of ifconfig command
+[23:25:01:100612] ext
+[23:25:01:100626] fan
+[23:25:01:100642] fan_algo        Fan control algorithm
+[23:25:01:100657] gecho           Global echo
+[23:25:01:100673] geoloc          GeoLocation Command
+[23:25:01:100688] global_fio      Global File Io Manager
+[23:25:01:100704] gpsvc           GPS Service Commands
+[23:25:01:100719] gpsvc_sp        GPS Service Supplier Commands
+[23:25:01:100735] gre             GRE Command Processor
+[23:25:01:100750] gsc
+[23:25:01:100765] gsc_ib
+[23:25:01:100780] http_redirect   Http Redirect Layer information ()
+[23:25:01:100796] if_gain         calculate if network gain from calibration file
+[23:25:01:100812] inroute         inroute Info
+[23:25:01:100834] keyroll
+[23:25:01:100849] led
+[23:25:01:100865] lfc             Local Frequency Correction Control
+[23:25:01:100881] lfo             Local Frequency Offset Control
+[23:25:01:100907] mc_overlay
+[23:25:01:100921] mdm
+[23:25:01:100936] mdm-evtmgr      Event details
+[23:25:01:100956] mssgbuf         MssgBuf commands
+[23:25:01:100972] nat             NAT layer
+[23:25:01:100988] oamip_intf      OpenAMIP Interface Commands
+[23:25:01:101003] odu
+[23:25:01:101023] oobdemux        OOB Demux Layer Command
+[23:25:01:101038] openbmip
+[23:25:01:101054] ota_handler     Si/BTP Msg Handler Command
+[23:25:01:101069] params          Global params
+[23:25:01:101083] partitions_info Displays Partition information
+[23:25:01:101099] pcmd            Periodic console commands control
+[23:25:01:101115] peek            raw memory read - can be dangerous
+[23:25:01:101130] ping            Ping Utility
+[23:25:01:101144] poke            raw memory write - can be dangerous
+[23:25:01:101213] post_bist       Prints status of POST/BIST
+[23:25:01:101236] powermax        Test (or abort) BUC PowerMax Calculations
+[23:25:01:101251] proc            ChildProc control
+[23:25:01:101268] profiling       Start, Stop, Display collected profiling info
+[23:25:01:101302] ps              Show the output of the ps command
+[23:25:01:101318] qos             QoS Queue information (Dist/Chop Layer)
+[23:25:01:101332] recovery        Recovery stack
+[23:25:01:101348] remotestate     Prints status of the terminal
+[23:25:01:101366] reset           Resets operating system or applicatoin based on the sub-commands
+[23:25:01:101384] rmtevents       Remote Events Command
+[23:25:01:101399] rmtstats        Remote Stats Command
+[23:25:01:101414] rx
+[23:25:01:101428] rx2
+[23:25:01:101456] rxdiag
+[23:25:01:101470] sbuf            Socket buffer pool
+[23:25:01:101486] si
+[23:25:01:101507] skew            Skew Angle Management
+[23:25:01:101522] skew_curve      PSD and Skew Curve management
+[23:25:01:101538] spoof           TCP Spoof Layer Command
+[23:25:01:101552] ssl             Global SSL
+[23:25:01:101569] stack
+[23:25:01:101584] staging         Prepares terminal for authentication
+[23:25:01:101599] svn             SVN configuration information
+[23:25:01:101620] switch          Manage the Ethernet switch on the terminal
+[23:25:01:101636] temp            Board Temperature
+[23:25:01:101651] test_mode       Test Modes
+[23:25:01:101672] threading       Print threading stats
+[23:25:01:101688] tlev            Trace control
+[23:25:01:101703] tp              Prints timeplan status/statistics
+[23:25:01:101718] tx
+[23:25:01:101733] ucast-drv-intf  Driver Interface
+[23:25:01:101748] uconsvr         UniConsole Server control
+[23:25:01:101764] udp             UDP Header Compression information
+[23:25:01:101779] udp-hdr-comp-if UDP Header Compression Interface Command
+[23:25:01:101796] uptime          System and application uptime
+[23:25:01:101813] ur              Query the status of Update Receiver downloads, inventory, and operations
+[23:25:01:101830] usession        UniConsole Session control
+[23:25:01:101853] version         Build information
+[23:25:01:101868] versions_report Full operating environment report
+[23:25:01:101883] x509            X.509 CA handler
+[23:25:01:101899] x509Cahandler   X509 Ca Handler
+[23:25:01:101913] xoff            Disallow broadcast trace
+[23:25:01:101928] xon             Allow broadcast trace
+
+[CX751:44753] admin@telnet:127.0.0.1;53102
+> [23:25:09:714758] UCP0!: TO( +1149), FO( -1224), PO( +0.0) <653375.687>
+[23:25:19:691034] UCP0!: TO( +1143), FO( -1296), PO( +0.0) <653385.663>
+exitConnection closed by foreign host
+# exite
+-sh: exite: not found
+# exit
+Connection to 10.5.0.169 closed.
+$@MID@$: 3
+Date: Tue, 26 Feb 2019 23:30:58 +0000
+Author: lstolp
+Antenna: both
+S/N: 
+Type: Configuration
+Component: System
+Subject: laptop setup to access the dashboards
+Cruise: AT MARE ISLAND 2019
+Attachment: 190226_233157_Screen_Shot_2019-02-26_at_23.29.40.png
+Encoding: HTML
+========================================
+

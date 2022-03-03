@@ -1,0 +1,52 @@
+$@MID@$: 1
+Date: Fri, 03 May 2013 21:28:50 +0000
+Author: rsl
+Subject: How to add an entry to elog
+Cruise: WHOIDock
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<h1><b>Adding a page to <a href=""><a href="">elog:</a></a></b></h1>
+<p>Find the file &quot;elogd.cfg&quot;.&nbsp; On Knorr it's in /usr/local/elog.&nbsp; The  basic structure is fairly logical.&nbsp; At the top is a list of all the  different groups and pages. &nbsp; Using this page as an example:&nbsp; I decide  to add a page to eplain how to make this page, (or any other page).&nbsp; I  want to make a page called &quot;elog&quot;, and I want to put it in the &quot;stuff&quot;  group.&nbsp; Near the top of the .cfg file is the line &quot;Group stuff =  usb_drives&quot;&nbsp; Add &quot;elog&quot; to it, in the location that you want it to show  up.&nbsp; I want it to be at the end.&nbsp; &quot;Group stuff = usb_drives, elog&quot;.&nbsp;  Pretty simple, eh?&nbsp; Well, not done yet.&nbsp; Each page has a set of  attributes, these also have to be set.&nbsp; If, by some chance, there is a  page that already looks just the way you want, take note of that.&nbsp; That  is, do you want author, serial number, date, etc..&nbsp; (actually, you  cannot change them all, but you can change some of them.)&nbsp; Anyway, note  which page is the one you like.&nbsp;</p>
+<p>Now, find the part of the .cfg file that has (in this case), the  entry for &quot;stuff&quot; and &quot;usb_drives&quot;.&nbsp; Why?&nbsp; Because we put the entry for  the title of  elog right next the title of the entry for usb_drives.&nbsp;&nbsp;  So we want to put the entry for the page information of elog also next  to usb_drives.&nbsp; (as it turns out, this is not strictly necessecery, but  lets just keep things orderly, shall we?&nbsp; Need a spell checker also.)&nbsp;  Now, remember which page it was that was closest to what you want?&nbsp;  Because that's going to be you template.&nbsp; Find it, copy it, and paste it  in just below the usb_drives section.&nbsp; At the top of the section you  just pasted in is a keyword in [brackets].&nbsp; Change the contents of the  brackets to match the page entry at the top of the .cfg file.&nbsp; So, in  this case, it should be [elog].&nbsp; At this point, you have a functional  page <i>after</i> you restart elog.&nbsp; <b><span style="font-family: Courier New;">&quot;service elogd restart&quot;</span></b>&nbsp;  You may have to reload the webpage and/or flush the cache.&nbsp; Note that  like all software, elog is picky.&nbsp; You cannot have &quot;elog&quot; as the page up  top and [Elog] as the header for the page descriptor.&nbsp;</p>
+<h3>Page Style Editing</h3>
+<p>This page is helpful:&nbsp; http://midas.psi.ch/elog/config.html&nbsp; </p>
+<p>&nbsp;</p>
+<p>Here are two page entries from the .cfg file.&nbsp;</p>
+<p>&nbsp;[usb_drives]<br />
+Theme = whoi<br />
+Comment =&nbsp; USB <br />
+Attributes = Author, S/N, cruise, who, status<br />
+Subst cruise = $shell(cat /home/data/CRUISE_ID)<br />
+MOptions S/N= &quot;548226 2329&quot;,&quot;548226 2330&quot;,&quot;548226 2331&quot;, &quot;548226 2348&quot;, &quot;548226 2349&quot;, &quot;548226 2334&quot;, &quot;548226 2345&quot;<br />
+ROptions who&nbsp; = WHOI, science, other<br />
+ROptions status = out, in<br />
+Required Attributes = Author, S/N<br />
+Page Title = ELOG - $subject<br />
+Reverse sort = 1<br />
+Quick filter = Date, S/N<br />
+<br />
+[elog]<br />
+Theme = whoi<br />
+Comment =&nbsp; elog<br />
+Attributes = Title, Author, cruise<br />
+Comment Author = Put your name here.<br />
+Comment Subject = Put the subject here.<br />
+Subst cruise = $shell(cat /home/data/CRUISE_ID)<br />
+Required Attributes = Title, Author<br />
+Page Title = ELOG - $subject<br />
+Reverse sort = 1<br />
+Quick filter = Date<br />
+&nbsp;</p>
+<p>If you compare what's here to what you get when you do an entry, it's  fairly self explanatory.&nbsp; If there is an &quot;M&quot; in front of the entry,  that's for multiple selctions.&nbsp; And if there is an &quot;R&quot;, that also for  multiple selections, but this time with radio buttons.&nbsp; &quot;Attributes&quot; are  what show up to be filled in.&nbsp; &quot;Required Attributes&quot; must be filled  in.&nbsp; (Presumably this has to be a subset of &quot;Attributes&quot;)</p>
+<p>There is sort of a hierchy to entry control.&nbsp; For instance, &quot;Comment = bla bla&quot; produces the single line comment &quot;bla bla&quot; by itself.&nbsp; &quot;Comment Author = bla bla&quot; creates the comment &quot;bla bla&quot; in the Author line.&nbsp; Required in front of Attributes adds the requred to the items listed after atributes.&nbsp;</p>
+<p>You can edit the .cfg file directly and there is also an editor  &quot;config&quot; built into elog to do the same thing.&nbsp; There is also a link on  that page that opens a page with instructions on the syntax that eplains  it much better than I have.</p>
+<p>The &quot;Back&quot; button seems to be the same as cancel.</p>
+<p>If you want to go back to editing the page, you have to first click  on one of the page entries and then click on &quot;edit&quot;.&nbsp; It's kind of  confusing, and hard to explain, but it can be done.&nbsp; The pages are  always editable, which is nice.&nbsp; So don't worry about what you <strike>right</strike> write, you can fix it later.</p>
+<p><b>Don't forget</b> you have to <b>restart elog</b> for changes in the .cfg file to take effect.&nbsp; ([root@ftp init.d]# service elogd restart)<br />
+&nbsp;</p>
+<p>&nbsp;rsl</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

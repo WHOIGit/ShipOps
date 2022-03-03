@@ -1,0 +1,30 @@
+$@MID@$: 20
+Date: Fri, 22 May 2020 20:03:59 +0000
+Author: AH
+Type: Other
+Office_Support: Stolp
+Subject / Summary: NEW IPs
+Cruise: DCI Anacortes
+link: 
+Revisions:  & Fri May 22 20:06:56 2020^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>STRIKER</p>
+
+<p>&gt; jparkerimac:~ johnparker$ host striker<br />
+&gt; striker.whoi.edu has address 128.128.188.10<br />
+&gt; striker.whoi.edu mail is handled by 10 mx1.whoi.edu.<br />
+&gt; striker.whoi.edu mail is handled by 10 mx2.whoi.edu.</p>
+
+<p>SSSG1<br />
+&gt; jparkerimac:~ johnparker$ host sssg1<br />
+&gt; sssg1.whoi.edu has address 128.128.188.11<br />
+&gt; sssg1.whoi.edu mail is handled by 10 mx2.whoi.edu.<br />
+&gt; sssg1.whoi.edu mail is handled by 10 mx1.whoi.edu.</p>
+
+<p>MEMORY</p>
+
+<p>&gt; jparkerimac:~ johnparker$ host mnemosyn<br />
+&nbsp;&gt; mnemosyn.whoi.edu has address 128.128.188.12<br />
+&nbsp;</p>

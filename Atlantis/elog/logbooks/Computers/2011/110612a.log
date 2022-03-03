@@ -1,0 +1,25 @@
+$@MID@$: 13
+Date: Sun, 12 Jun 2011 15:10:59 +0000
+Author: AH
+Type: Configuration
+name: athena
+server type: data
+OS: Windows
+Location: Computer Lab
+Category: Software
+Subject: loaded ntp - stopped Tardis
+Cruise: at18-05b
+Attachment: 
+Encoding: HTML
+========================================
+<p>
+<p>New ntp loaded on Athena as per Laura email 19-May-2011 (and more)</p>
+<p>VERSION  DOWNLOADED FROM:<br />
+http://www.meinberg.de/english/sw/ntp.htm<br />
+&nbsp;&nbsp;  ntp-4.2.4.8@lennon-o-lpv-win32-setup.exe<br />
+<br />
+***I could not figure  out how to stop TARDIS properly, so I changed the extension on the  executable so that Athena would not find it during start-up.<br />
+&nbsp;</p>
+<p>To  check the status of ntp run:</p>
+<p>&nbsp;&nbsp; Program  files/NTP/bin/ntpstatus.bat</p>
+</p>

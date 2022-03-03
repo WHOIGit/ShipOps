@@ -1,0 +1,115 @@
+$@MID@$: 58
+Date: Thu, 03 Nov 2016 22:11:28 +0000
+Author: Cris & Simms
+Type: Termination
+Winch: Markey #1 (fore)
+Wire: EM Cable / CTD conductor
+Category: Routine
+Subject: Re-Retermination for Teske CTD && Retermination for use with TowCam
+Cruise: at37-05
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: xx-large;">12-02-16<br />
+</span></p>
+<p>Megger by Joe McCabe</p>
+<p>-Re-test of Electrical retermination by Joe McCabe</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)&nbsp; was used for the insulation resistance testing<br />
+</span></p>
+<p><span style="font-size: large;">Fluke 87 III True RMS Multimeter used for the continuity testing</span></p>
+<p><span style="font-size: large;">*** Marshall has been suggesting we use the Fluke for the continuity testing for a while.&nbsp; I had still been using the </span></p>
+<p><span style="font-size: large;">AEMC Megohmmeter for continuity.&nbsp; However, again today, the AEMC did not seem to work properly in the 400KOhms position.</span></p>
+<p><span style="font-size: large;">It simply made a ticking noise.&nbsp; The green to ship measurement worked okay in the 40 Ohm position.&nbsp; At any rate, the continuity </span></p>
+<p><span style="font-size: large;">testing was completed using the Fluke 87 III </span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9101 meters</p>
+<p>Overall length = 8944 meters</p>
+<p>Air temp:&nbsp;&nbsp;&nbsp; degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from termination end of wire through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;"><br />
+</span><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    microF &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Red-Black &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.809 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.52&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.661<br />
+</span></p>
+<p><span style="font-size: medium;">Red-White</span><span style="font-size: medium;"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.616 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 4.18 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.34 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.667</span><span style="font-size: medium;"> </span></p>
+<p><span style="font-size: medium;">Red-Green</span><span style="font-size: medium;"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.582 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 2.35 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.31 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.068</span></p>
+<p><span style="font-size: medium;">Black-White</span><span style="font-size: medium;">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.737 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.16 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.705</span></p>
+<p><span style="font-size: medium;">Black-Green</span><span style="font-size: medium;"><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.685 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.60 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.36 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.014</span>  </span></p>
+<p><span style="font-size: medium;">White-Green</span><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.743 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.47 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.14 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.063</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 535 Ohms</span></p>
+<p><span style="font-size: medium;">Red-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 535 Ohms</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 270 Ohms</span></p>
+<p><span style="font-size: medium;">W</span><span style="font-size: medium;">hite-Green&nbsp;&nbsp;&nbsp;&nbsp; 270 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 271 Ohms</span></p>
+<p><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp; 535 Ohms</span></p>
+<p><span style="font-size: medium;">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ohms</span></p>
+<p>Values for continuity fluctuated during measurement - the reading is about the median value of the fluctuation</p>
+<p>&nbsp;</p>
+<p>Retested without slipring - </p>
+<p>RG 25.51 Gohms, 1.41 Dar 2.45 PI 0.999 microF (11.25 Gohms, 8.86 Gohms on subsequent tests) </p>
+<p>WG 11.10 Gohms, 1.18 Dar 1.79 PI 1.055 microF</p>
+<p>BG 2.552 Gohms, 0.90 Dar 0.55 PI 1.007 microF</p>
+<p>Tested slipring only (disconnected from wire, tested in MainLab): </p>
+<p>RG 4.14 Gohms, 1.04 Dar 1.07 PI 0.005 microF</p>
+<p>WG 6.33 Gohms, 1.02 Dar 1.09 PI 0.005 microF</p>
+<p>BG 6.71 Gohms, 1.03 Dar 1.11 PI 0.005 microF</p>
+<p>Retested with slipring - RG 369.4 Mohms from main lab, 279.2 Mohms from wet end.</p>
+<p>&nbsp;</p>
+<p>Pull tested to 3,000 lbs for 5 minutes</p>
+<p><span style="font-size: large;">*********************************************</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">11-02-16<br />
+</span></p>
+<p>Megger by Catie Graver</p>
+<p>-Re-test of Electrical retermination by Allison Heater</p>
+<p><span style="font-size: large;">Tested with:&nbsp; Model 1060 AEMC Megger - (SSSG/ComET Megger)&nbsp; was used for the insulation resistance testing<br />
+</span></p>
+<p><span style="font-size: large;">Fluke 87 III True RMS Multimeter used for the continuity testing</span></p>
+<p><span style="font-size: large;">*** Marshall has been suggesting we use the Fluke for the continuity testing for a while.&nbsp; I had still been using the </span></p>
+<p><span style="font-size: large;">AEMC Megohmmeter for continuity.&nbsp; However, again today, the AEMC did not seem to work properly in the 400KOhms position.</span></p>
+<p><span style="font-size: large;">It simply made a ticking noise.&nbsp; The green to ship measurement worked okay in the 40 Ohm position.&nbsp; At any rate, the continuity </span></p>
+<p><span style="font-size: large;">testing was completed using the Fluke 87 III </span></p>
+<h1>S/N:<span style="mso-spacerun: yes">&nbsp;   </span>154856</h1>
+<p>Fwd .322 Wire, NSF-3-C165</p>
+<p>Inside tape = 157 meters</p>
+<p>Outside tape = 9102 meters</p>
+<p>Overall length = 8945 meters</p>
+<p>Air temp:&nbsp;&nbsp; 85 degrees F</p>
+<p><span style="font-size: large;"><strong>Test: Entire wire from termination end of wire through drum to computer lab j-box </strong></span></p>
+<p><span style="font-size: large;"><br />
+</span><span style="font-size: large;">&nbsp;Wire pair</span></p>
+<p><span style="font-size: medium;">Wires</span><span style="font-size: medium;">                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       Ohms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   microF &nbsp;  &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;       &nbsp;&nbsp; <br />
+</span></p>
+<p><span style="font-size: medium;">  </span></p>
+<p><span style="font-size: medium;">Red-Black &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.428 GOhms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 1.08 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 1.03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.664 &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p><span style="font-size: medium;">Red-White</span><span style="font-size: medium;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.739 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.26 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.696<br />
+</span></p>
+<p><span style="font-size: medium;">Red-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.317 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.28 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.065<br />
+</span><span style="font-size: small;"><br />
+</span><span style="font-size: medium;">Black-White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.554 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.78 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.65&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .666<br />
+</span></p>
+<p><span style="font-size: medium;">Black-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.188 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.19 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.013<br />
+</span></p>
+<p><span style="font-size: medium;">White-Green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.000 GOhms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 0.997</span></p>
+<p>&nbsp;</p>
+<p><strong><span style="font-size: medium;">CONTINUITY:</span></strong><span style="font-size: medium;"><br />
+</span></p>
+<p><span style="font-size: medium;">Red-Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 553 Ohms</span></p>
+<p><span style="font-size: medium;">Red-White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 553 Ohms</span></p>
+<p><span style="font-size: medium;">Red-Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 278 Ohms</span></p>
+<p><span style="font-size: medium;">W</span><span style="font-size: medium;">hite-Green&nbsp;&nbsp;&nbsp;&nbsp; 280 Ohms</span></p>
+<p><span style="font-size: medium;">Black-Green&nbsp;&nbsp;&nbsp;&nbsp; 280 Ohms</span></p>
+<p><span style="font-size: medium;">Green-Ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.6 Ohms</span></p>
+<p>Values for continuity fluctuated during measurement - the reading is about the median value of the fluctuation</p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">*********************************************</span></p>

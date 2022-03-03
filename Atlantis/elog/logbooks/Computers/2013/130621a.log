@@ -1,0 +1,92 @@
+$@MID@$: 59
+Date: Fri, 21 Jun 2013 20:41:08 +0000
+Author: AH - Laura's instructions
+Type: Configuration
+name: pi
+server type: 
+OS: Linux
+Location: Other
+Category: Hardware
+Subject: RASPBERRY PIS
+Cruise: at26-02
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">Basic Pi Info:</span></p>
+<p><span style="font-size: large;">Can use Mac Pi Tools - pifinder to find the ipaddresses of the pi's that are on a subnet.&nbsp; </span></p>
+<p><span style="font-size: large;">Can log into pi's remotely - user: sssg&nbsp;&nbsp; pw:&nbsp; same as router - as of July 201</span><span style="font-size: large;">5</span></p>
+<p><span style="font-size: large;">Main file for starting kiosk is:&nbsp; /home/pi/bin/status_screen.sh</span></p>
+<p><span style="font-size: large;">To increase the display size:&nbsp; add another -e ZoomIn to the midori line&nbsp; (where midori is started)</span></p>
+<p><span style="font-size: large;">To decrease the display size:&nbsp; delete one or more &quot;-e ZoomIn&quot; from the midori line in the status_screen.sh file</span></p>
+<p><span style="font-size: large;">To make a new card:&nbsp; use Mac tools pifiller - there is an image stored on sssg_on_memory for the kiosk - it should be appropriately named - as of July 2015 it was 2015-Jun-11_atlantis_kiosk_pi.img</span></p>
+<p>&nbsp;</p>
+<h2>&nbsp;NOTE:&nbsp; you can also use -e ZoomOut to make the display smaller, after removing all the -e ZoomIns.</h2>
+<p>&nbsp;</p>
+<p>I added an etherpad w/ PI info.. This is what I did to get it to boot to the status screen. I copied the image to:<br />
+<br />
+128.128.250.51:/srv/ftp/pub/dplug/pi/pi_weezyshipkiosk_20130610.img<br />
+<br />
+It is just under 4 gigs.. To make a 'master' so you can burn more images to sandisks:<br />
+<br />
+dd if=[INPUT IMAGE] of={DEVICE] conv=sync,noerror bs=64K<br />
+<br />
+ie:<br />
+dd if=pi_weezyshipkiosk_20130610.img of=/dev/sdc conv=sync,noerror bs=64K<br />
+<br />
+If you want to copy one of the sandisks to the netbook, that has not been touched:<br />
+dd if=/dev/sdc if=if=pi_weezyshipkiosk_20130610.img conv=sync,noerror bs=64K<br />
+<br />
+Mae sure you have the right device, bad things could happen. I have had this working well using a netbook w/ a built in reader. I<br />
+have not had much luck using a USB reader/writer.<br />
+<br />
+What is on the image:<br />
+<br />
+raspi-config<br />
+&nbsp;&nbsp;&nbsp; expand_rootfs<br />
+&nbsp;&nbsp;&nbsp; configure keyboard change from UK to US keyboard<br />
+&nbsp;&nbsp;&nbsp; check timezone<br />
+&nbsp;&nbsp;&nbsp; enable ssh<br />
+&nbsp;&nbsp;&nbsp; no desktop on boot<br />
+&nbsp;&nbsp;&nbsp; apt-get upgrade<br />
+apt-get update<br />
+apt-get install&nbsp; update<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unclutter<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; matchbox<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vim<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ntp<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; traceroute<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dnsutils<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x11-xserver-utils<br />
+<br />
+<br />
+* add line to tty1 in /etc/inittab<br />
+<br />
+#1:2345:respawn:/sbin/getty --noclear 38400 tty1<br />
+# change for autologin pi<br />
+1:2345:respawn:/bin/login -f pi tty1 &lt;/dev/tty1 &gt; /dev/tty1 2&gt;&amp;1<br />
+<br />
+* adduser sssg make sudouser and make pi a regular user<br />
+<br />
+<br />
+* create /home/pi/bin/status_screen.sh<br />
+#### start of script ###################<br />
+#/bin/sh<br />
+shore_knorr=http://sssg1.whoi.edu/cgi-bin/db_driven_data/update_screen.pl?ship=knorr<br />
+ship=http://192.168.11.1/cgi-bin/db_driven_data/update_screen.pl<br />
+# get rid of the mouse<br />
+unclutter &amp;<br />
+# prevent screen blanking<br />
+xset -dpms<br />
+xset s off<br />
+setterm -blank 0<br />
+setterm -powerdown 0<br />
+# full screen only kiosk-specialized window manager<br />
+# sudo apt-get install matchbox<br />
+matchbox-window-manager &amp;<br />
+midori -e Fullscreen -a $ship<br />
+#################### end of script ###########################<br />
+<br />
+* Add following line to end of /home/pi/.profile<br />
+cd /home/pi/bin; xinit ./status_screen.sh<br />
+<br />
+&nbsp;</p>

@@ -1,0 +1,106 @@
+$@MID@$: 4
+Date: Fri, 11 May 2012 08:15:56 +0000
+Author: AH - from Anton
+Type: Routine
+Category: Supplies
+Subject: NOTES on replacing filters in Millipore Gradient A10
+Cruise: at20
+Attachment: 
+Encoding: HTML
+========================================
+<p dir="ltr">APPARENTLY THE PARTS ANTON HAD LISTED MUST BE FOR NEWER STYLE ON ARMSTRONG.&nbsp; OURS ARE:</p>
+
+<p dir="ltr"><span style="background-color:transparent; color:#d000d0; font-family:arial; font-size:11pt">-Millipore QPAK1 CPMQ004R1</span></p>
+
+<p dir="ltr"><span style="background-color:transparent; color:#d000d0; font-family:arial; font-size:11pt">-Millipak 40 Gamma Gold MPGL046K2</span></p>
+
+<p>SUPPLIES:</p>
+
+<p>&nbsp;<del>QTY:&nbsp;&nbsp; NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MILLIPORE CATALOG #:<br />
+<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Q-GARD Purification Pack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QGARD00R1<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Quantum Ultrapure Cartridge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QTUM000EX<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Millpak 40&nbsp; final filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MPGL04SK2<br />
+<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; UV Lamp - 185 nm (Main)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZMQUVLP01<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; A-10 UV Lamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZFA10UV01</del></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;I noticed that you didn&#39;t have the &quot;185 nm&quot; Main UV lamp listed in your spares request<br />
+for your new Millipore Gradient A-10.<br />
+(It&#39;s the one that&#39;s about a foot long, Catalog # ZMQUVPL01.)<br />
+The A-10 UV lamp is much smaller and fits into the &quot;A-10&quot; module.<br />
+Replacing both of these requires opening the unit up, so doing them at the same time is a<br />
+good idea.<br />
+Below are all the catalog #s for the MilliQ Gradient A-10 spares.<br />
+<br />
+Each item should come with a printed instruction sheet; SAVE THESE for future reference,<br />
+but be be forewarned - the menu button instructions have errors. (The menu button press<br />
+sequences they describe are somewhat wrong, and you can expect it to take a bit of figuring<br />
+out on your own to get it right.<br />
+<br />
+When replacing the cartridges, always replace the &quot;Q-GARD purification pack&quot; first (That&#39;s<br />
+the white dual cartridge unit on the side), followed by the &quot;Quantum Ultrapure cartridge&quot;<br />
+(That&#39;s the single clear plastic one that goes inside of the front door.) The instructions<br />
+for starting the &quot;5-minute Air Purge Cycle&quot; seem to be correct. As the instructions say,<br />
+after the Air Purge, leave the system in the &quot;Pre-Operate&quot; mode overnight to soak the<br />
+cartridges,. The next morning, dispense 5 liters of water.<br />
+Beware: Next, they advise you to use the tip of a small screwdriver to purge the air from<br />
+the &quot;Quantum Ultrapure&quot; cartridge. (You do this through the small hole near the top of the<br />
+purple plastic door on the front side.) When you do this, be prepared, because the<br />
+cartridge is under pressure, and it will spray everywhere. (Now that I know to expect this,<br />
+I wrap paper towels around the screwdriver shaft to catch the spray. It also sprays inide<br />
+the purple door, and can get the little microswitch behind the cartridge wet if you&#39;re not<br />
+careful.<br />
+(Stupid design.)&nbsp; One other bit of good advice, again related to a really stupid design<br />
+feature: The little electrical switch inside the &quot;Point-Of-Use Trigger&quot; is NOT watertight.<br />
+If it gets wet inside, it will toast the circuit board back in the main unit that it&#39;s<br />
+connected to. (Robbie told me about this cool &quot;feature&quot;.) We keep a small ziploc baggie<br />
+zip-tied over the trigger switch to keep it dry. (A rubber glove will do the same thing,<br />
+but it won&#39;t last very long.) It makes it kind of a pain to use the trigger switch, but it<br />
+sure beats the alternative...<br />
+<br />
+&nbsp;My last gripe about the Gradient A-10 also involves the lame instructions. When you<br />
+replace the UV lamp, you have to go into the menus to reset the counters for each of the<br />
+lamps. The instructions for the A-10 UV Lamp &quot;Counter Reset&quot; are also quite wrong. (I think<br />
+they&#39;re actually for a totally differnt unit with different buttons, which makes NO sense.)<br />
+Perhaps they&#39;ve fixed this by now, but probably not. Napoleon&#39;s revenge...<br />
+<br />
+&nbsp;I *think* the countdown for the lamp replacements is 1 year (365 days), and the countdown<br />
+for the filter cartridges is 180 days.<br />
+Depending on how much yous gets used, that&#39;s probably silly, and unneccesary. Watch the TOC<br />
+ppm (Total Organic Carbon, in parts-per million) to tell when things don&#39;t look good.<br />
+(NOTE: the TOC ppm WILL ALWAYS rise when you dispense a large amount of water, even when<br />
+the filter cartridges AND both of the UV lamps are brand new.)<br />
+<br />
+Here&#39;s a dirty trick to get around the 180-day filter cartridge replacement counter:&nbsp; When<br />
+the counter gets down to &quot;0&quot; days, you&#39;ll see &quot;Replace Cartridges&quot; on the LCD readout. Put<br />
+the system into &quot;Standby&quot; mode (by pressing the &quot;Operate/Standby&quot; button for more than 2<br />
+seconds). Then, open the Point-of-use trigger switch to relieve the pressure in the system.<br />
+Then, remove the &quot;Q-GARD purification pack&quot; (dual, on the right side), and PRETEND it&#39;s a<br />
+BRAND NEW PACK, while thumbing your nose at the French. (Just reinstall your old one.)<br />
+Then, PRETEND to replace the &quot;Quantum Ultrapure&quot; cartridge (the one inside the front door).<br />
+Follow all the steps just as-if they were new filters. As you remove and then re-install<br />
+each filter, you&#39;ll see the little microswitch behind each one that senses when the<br />
+cartridges are not fully seated. That&#39;s how the system knows when you&#39;ve &quot;replaced&quot; the<br />
+cartridges. Doing them in the proper order causes the filter cartridge counter to reset<br />
+back to 180 days, just like new. Oi- LA !!!<br />
+Generally, we&#39;ve been cheating the French each 180 days, then actually installing new<br />
+cartridges &amp; lamps yearly. I&#39;m not sure if you can just remove the old lams &amp; then<br />
+re-install them again, and trick the system anually that way, but probably so, since you<br />
+have to reset the lamp counters through the menus anyway.<br />
+&nbsp;</p>
+
+<p>&nbsp;How&#39;s that for &quot;more than you probably wanted to know???<br />
+Here are all the catalog #s now.&nbsp;&nbsp; ~ Anton<br />
+<br />
+&nbsp;QTY:&nbsp;&nbsp; NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MILLIPORE CATALOG #:<br />
+<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Q-GARD Purification Pack&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QGARD00R1<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Quantum Ultrapure Cartridge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QTUM000EX<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; Millpak 40&nbsp; final filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MPGL04SK2<br />
+<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; UV Lamp - 185 nm (Main)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZMQUVLP01<br />
+&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; A-10 UV Lamp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ZFA10UV01<br />
+&nbsp;</p>

@@ -1,0 +1,10 @@
+$@MID@$: 25
+Date: Thu, 28 Dec 2017 17:42:14 +0000
+Author: AH - from at39-01 Wheat cruise report
+Type: Configuration
+Subject: string to sonardyne
+Cruise: at39-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Discovered through work with Sonardyne that the PhinsIII documentation for most TSS strings is incorrect. The Phins firmware upgrade in October 2016 changed the roll convention not only on PRDID TSS as was discovered in November 2016, but also the roll convention for SIMRAD EM TSS, and SIMRAD EM HEAVE2. This makes the Phins incompatible with easily sending TSS strings to the new Sonardyne Ranger2.</p>

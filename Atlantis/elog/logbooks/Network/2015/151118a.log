@@ -1,0 +1,16 @@
+$@MID@$: 39
+Date: Wed, 18 Nov 2015 10:24:26 +0000
+Author: Catie
+S/N: 
+Type: General Problem
+equipment: Subnet
+Subject: Science subnet lockup
+Cruise: at32
+Attachment: 
+Encoding: HTML
+========================================
+<p>Science subnet locked up again ~1000 GMT 18 Nov 2015</p>
+<p>Could not ping ftp from science net or vice versa. Could ping within science net computers ok. All other networks to ftp ok.</p>
+<p>Cyberroam box was not in line at all, so not a cyberroam problem.</p>
+<p>Started unplugging science network one jack at a time, narrowed it down to a computer in the hydrolab, but no way to track which one once the problem stopped.</p>
+<p>Nothing in ftp logs/messages to indicate a problem.</p>

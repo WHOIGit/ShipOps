@@ -1,0 +1,142 @@
+$@MID@$: 6
+Date: Fri, 24 Aug 2012 00:34:51 +0000
+Author: AH
+S/N: 
+Type: Routine
+Category: Probe
+Subject: USING TEST PROBE
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">THIS IS ALSO EXPLAINED ON PAGE 3-19 IN THE MANUAL</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">If you have a 1A8 Test Canister Part Number 301040-1. You can follow these instructions and you<br />
+should display a straight line temperature profile of 1.5 C.<br />
+<br />
+1. Turn on the MK21 Device and wait until the WinMK21 Main window opens in the display of the<br />
+laptop computer.<br />
+<br />
+2. Choose Probe from the Options menu, and then choose Selection. The Select Surface Probe Type<br />
+dialog box opens. Select an XBT probe type by clicking its option button, and then click OK.<br />
+<br />
+a. The probe type is selected and the Select Surface Probe Type dialog box closes.<br />
+<br />
+3. Do one of the following to initiate a new probe drop:<br />
+<br />
+4. Click the New Drop button.<br />
+<br />
+5. Choose New Drop from the File menu.<br />
+<br />
+a. The Realtime Data Acquisition window opens with &quot;Load Probe&quot; displayed in the Acquisition State<br />
+panel, and the probe type displayed in the Launch Information display.<br />
+<br />
+6. Insert the XBT Test Canister into the launcher.<br />
+<br />
+7. For an LM-3A Hand-Held Launcher, swing the contact lever down; for an LM-2A Deck-Mounted<br />
+Launcher or an LM-4A Thru-Hull Launcher, close the breech.<br />
+<br />
+a. Immediately after the launcher pins make contact with the contacts in the canister, the display in<br />
+the Acquisition State panel of the Realtime Data Acquisition window changes to &quot;Testing Probe&quot; for a<br />
+few seconds, then to &quot;Prepare for Launch&quot; for another few seconds, and then to &quot;Launch Probe.&quot;<br />
+<br />
+</span></p>
+<p><span style="font-size: large;">8. For an LM-3A Hand-Held Launcher only, connect the release pin of the XBT Test Canister to the<br />
+ship's hull or other metal ground using a clip lead to start the data collection.? For an LM-2A<br />
+Deck-Mounted Launcher or an LM-4A Thru-Hull Launcher, the copper ring on the underside of the black<br />
+ring on the XBT Test Canister makes contact with the ship's hull when the breach is closed and the<br />
+data collection is started automatically.<br />
+<br />
+a. &quot;Collecting MK21 Data&quot; is displayed in the Acquisition State panel of the Realtime Data<br />
+Acquisition window and data acquisition begins as if a real probe has been launched. Data acquisition<br />
+continues until the probe's terminal depth is reached or the test is terminated. A temperature data<br />
+profile appears in the Graphics display, and the data are also displayed numerically in the Launch<br />
+Information display.<br />
+<br />
+9. Verify that the displayed temperature value is 1.5C (0.1C).<br />
+<br />
+10. To terminate the test before the end of the simulated probe drop, choose Terminate from the<br />
+Actions menu. &quot;Spent Canister&quot; is briefly displayed in the Acquisition State panel, and then WinMK21<br />
+automatically switches to Post Processing<br />
+</span><br />
+<br />
+&nbsp;</p>
+$@MID@$: 7
+Date: Fri, 24 Aug 2012 00:44:17 +0000
+Author: AH
+S/N: 
+Type: Configuration
+Category: Hardware
+Subject: PINNING FOR LM3A HAND LAUNCHER
+Cruise: at22-01
+Attachment: 120824_004150_image004.jpg
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">&nbsp; WIRE COLOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PIN ON LAUNCHER</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Red&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Green&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B Lead<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C Lead<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signal Ground<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Braid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shield<br />
+<br />
+The `B' Lead is on the left, the `C' Lead is at the top, the `A' Lead is on the right, and `White',<br />
+`Signal Ground' is connected to the allen head bolt in the center:<br />
+<br />
+Some Hand Launchers after a long period of use and storage may experience an intermittent connection<br />
+where the cable enters the handle.? While utizing the Test Canister and the MK21 system collecting<br />
+1.5? C data, gently bend the cable at this point to see if loss of data occurs as seen on the WinMK21<br />
+Graphical display.</span><br />
+&nbsp;</p>
+<p><span style="font-size: large;"> The launcher cable shield is not terminated inside the cable or connector and should not be<br />
+connected to the ship.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">****NOTE:&nbsp; we do not use the Connector Box - I just included this as it is the reference to grounding the white wire to the seawater ground<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Connector Box provided has a five way binding post that must be connected to a spot on the<br />
+ship's hull that provides a connection to the sea water.&nbsp; Please refer to Page 3-8, Section 3.1.6<br />
+&quot;Connecting the Launcher Cable to the MK21/USB&quot; in the manual you have for specific details about<br />
+connections.&nbsp; Also please take a look at page 3-19, section 3.5.1 for any addition details for testing the<br />
+system using the Test Canister.</span></p>
+<p>&nbsp;</p>
+$@MID@$: 8
+Date: Fri, 24 Aug 2012 00:45:16 +0000
+Author: AH
+S/N: 
+Type: Routine
+Category: Probe
+Subject: PROBE SHELF LIFE
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">A note about probe shelf life from a guy at Sippican:<br />
+</span></p>
+<p><span style="font-size: large;"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Although the XBT Probes do have a shelf life, it is reasonable to expect an old XBT to still<br />
+function if proper storage and handling recommendations have been followed.<br />
+<br />
+Best Regards,<br />
+<br />
+<br />
+John G. Grant<br />
+Test Engineer<br />
+Lockheed Martin Sippican<br />
+774.553.6261</span><br />
+&nbsp;</p>
+$@MID@$: 9
+Date: Fri, 24 Aug 2012 16:31:36 +0000
+Author: AH
+S/N: 
+Type: Routine
+Category: Other
+Subject: CONTACT INFORMATION FOR TECHNICAL SUPPORT
+Cruise: at22-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">oceansupport.dl-sippican@imc4.ems.lmco.com</span></p>
+<p><span style="font-size: large;">john.g.grant@lmco.com <br />
+</span></p>
+<p><span style="font-size: large;">thomas.curran@lmco.com&nbsp;&nbsp; </span></p>

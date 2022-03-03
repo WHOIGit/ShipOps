@@ -1,0 +1,33 @@
+$@MID@$: 3
+Date: Fri, 17 Jun 2011 13:30:25 +0000
+Author: lstolp
+S/N: CDM550 S/N 032105576
+Type: Configuration
+Component: comtech modem
+Subject: swapped out modem and changed cable to RS530
+Cruise: at18-06
+Attachment: 110618_134747_Screen_shot_2011-06-18_at_6.45.43_AM.png
+Encoding: HTML
+========================================
+<p>The ship was unable to RX TCP packets from shore. All the lights were on, good eb/no to and from shore..&nbsp; The modem had been using an RS232 cable, we swapped it to an RS530 cable with a special adapter (DB25-DB25).&nbsp; The modem configuration needs to be changed as well (RS422).&nbsp; ****SEE NEW HISEANET PARAMETERS BELOW</p>
+<p>&nbsp;</p>
+<p>The current adapter is Steve Foley's and needs to be returned to him. Karl will send the ship one from the comtec people.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>To view ebno's on shore: http://anfmon.ucsd.edu/cgi-bin/ebno_history.pl?Atlantis+8</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>HiSeasNet: All four lights were on on the modem, the router showed the serial link to be up, but we<br />
+were unable to RX packets from shore, so the routing did not work. We worked w/ Steve, chatting on<br />
+skype, which was very helpful. He was able to see us when we pinged shore, but we could not see any of<br />
+his pings. Karl came back with another modem and a magical DB25-DB25 cable that gets used w/ the RS530<br />
+Serial Cable. When we swapped out the RS232 cable for the RS530 and used the magic adapter, we were<br />
+able to send packets back and forth. The modem configuration had to be changed as well to RS422 from<br />
+RS232. It all worked nicely. Steve noted that at installation the modem was set to RS422 and was using<br />
+the RS530 Cable with an adapter, but shortly after installation it was swapped to RS232. mmmm Steve's<br />
+thought was that we were able to get by w/ the RS232 setup because the link had not been saturated, but<br />
+here on the pacific satellite, the to ship is 512kbps and saturated, and this over whelmed the RS232. I<br />
+cannot say that I totally understand that, I should probably read up on it.<br />
+<br />
+&nbsp;</p>
+<p>&nbsp;</p>

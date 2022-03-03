@@ -1,0 +1,68 @@
+$@MID@$: 41
+Date: Wed, 11 Nov 2015 12:49:18 +0000
+Author: Catie
+Type: Fix
+Category: sensor
+Sensor: 9plus
+S/N: 0749
+Calibration Date: 
+Subject / Summary: 
+Cruise: at32
+link: 
+Revisions: 
+Attachment: 
+Encoding: HTML
+========================================
+
+$@MID@$: 42
+Date: Wed, 11 Nov 2015 12:51:03 +0000
+Author: Catie
+Type: Fix
+Category: sensor
+Sensor: 9plus
+S/N: 0749
+Calibration Date: 
+Subject / Summary: Bulkhead connector replaced 23 Aug 15
+Cruise: at30-1
+link: 
+Revisions: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Fluorometer channel bulkhead connector replaced for corrosion/bent pin 23 Aug 15.</p>
+<p>&nbsp;</p>
+<p>Sorry to hear of the problem.<br />
+Clearly you had seawater in the AG206 connector based on your description.<br />
+1. Do you have another cable (ag206f to mcil6f) for the combined fluorometer-turbidity sensor?<br />
+Be sure it is for FLNTURTD.<br />
+2. Are you sure FLNTURTD is properly set up? Do you have the test cable to check? And are you<br />
+aware of the diet coke range test? It's on the WETLabs site (not kidding about that.)<br />
+3. Can you confirm you have the replacement AG306 bulkhead and o-ring in your spares? This can<br />
+be done on the field.<br />
+4. I can send replacement eco-fl unit to agent, but can someone hand carry the sensor? Please<br />
+ask around.<br />
+5. I'm away from Tuesday afternoon Aug 25 until mid November on NB Palmer trip. Needed the<br />
+funding. Until Dave Wellwood returns Sept 4, Jason Smith, copied here, is the contact.<br />
+Copy Dave, Jason and me on correspondence please.<br />
+Marshall<br />
+<br />
+On Aug 23, 2015 8:11 PM, &quot;atlantis sssg&quot; &lt;sssg@atlantis.whoi.edu&gt; wrote:<br />
+&gt;<br />
+&gt;<br />
+&gt; Hi Marshall,<br />
+&gt;<br />
+&gt; &nbsp; We've been having sporatic problems with the Fluorometer.&nbsp; It has been working part of the<br />
+time, and then shutting off.&nbsp; We've changed out cables and it still is intermittent.<br />
+&gt;<br />
+&gt; &nbsp; While changing cables, we found a bent pin with corrosion at its base on the bulkhead<br />
+connector of the SBE9.&nbsp; The pin broke when we tried to straighten it.&nbsp; We dummied that port<br />
+off, and switched things around to use another port.&nbsp; We still have the problem.<br />
+&gt;<br />
+&gt; &nbsp; We just did our last cable swap.&nbsp; The problem is still there.<br />
+&gt;<br />
+&gt; &nbsp; Would it be possible to ship us a different fluorometer?&nbsp; I guess we should have brought<br />
+one with us.<br />
+&gt;<br />
+&gt; &nbsp; I'd also like your opinion about replacing the bulkhead connector out here?&nbsp; We have time,<br />
+and it doesn't seem hard to do.&nbsp; I just worry about possibly having problems with the Craig<br />
+Lee cruise next.&nbsp; I'll look around and see if we have o-rings for the work.</p>

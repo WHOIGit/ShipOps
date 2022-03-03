@@ -1,0 +1,234 @@
+#!/usr/bin/perl -w
+#
+# hiseasnet-data-get_prl, a script to collect data from 
+# the serial port on the DAC of a HiSeasNet system.
+#
+# Robbie Laird
+# Woods Hole Oceanographic Institute
+# Oct 1, 2008
+# version 0.10
+# version 0.11 scaled az/el/cr to actual values.  (divided by 10)
+# version 0.12 Added time stamp.  Added UnixTime. Improved the formatting.
+# version 0.13 Added code for daily file.
+# version 0.14 added code for the comtech modem.
+# version 0.20 lots of small changes.  Add header to file, remove desriptions.
+#		changes numorous formating items.  Now similar to calliope .csv files.
+# version 0.21  Add more data.  relative antenna azimuth, error messages, position, frequency, 
+#		threshold, DAC status, etc..
+# version 0.22	for editing
+# version 0.23  More editing, install instructions, commented out extra AGC.
+# version 0.24  Added more data collection for the Comtech Modem.
+# version 0.25  Small changes, prep for acutal use.  print to match calliope.
+# version 0.30  First final for ships.
+# version 0.31  2nd final for ships.  Moving serial port openings so that they don't hang up
+#               when then cannot be accessed.  (uplugged, power out, etc..)
+# version 0.40  Added BER collection to Modem, formatted it for graphical display.
+# version 0.50  Split program into two parts, this one is just for the modem.
+#               Name is now hiseasnet-data-get_modem_V0.50.prl
+#   		
+
+
+# Description:  This perl script is for logging of data from 
+# the DAC-97, DAC-03 or DAC-2200 serial port to a specified 
+# logfile.  It will also log data from the serial port on the 
+# Comtech modem.  This logfile can then be parsed or plotted with 
+# other programs.
+# Note:  You should probably use the serial cable supplied with 
+# the system or it's equivelent.   The serial port is non-standard.
+# Pin 9 on the serial port has 24 volts on it.
+
+# Requirements: Device::SerialPort 0.12 (from cpan)
+#		Time::HiRes
+#
+  # 	Tried using with "solo" from crontab.  Seems to work, but loss of serial port (or loss
+  #	of power to DAC or modem) leaves program running.  solo work, program won't restart
+  #	excess number of instances.  But now need some way to time out, or it never restarts.
+
+
+
+##### WHOI INSTALL  ######
+#	oldftp may be a good choice.  Your perl install must include
+#       Device::SerialPort 0.12
+#       Time::HiRes
+#	cpan if these are needed.  
+#	Add /home/data/shipdata/ directory to the mailserver.
+#	chmod the permissions on it to 777.  (otherwise it will not
+#	be writeable.)  		
+#	Set up the proper com ports.  See the setup for the 
+#	Variables in the early portion of the script.  There are 
+#	some other items in this area that can also be set.  Also
+#	set the ship name, AT, OC, or KN.  If you are using a DAC-97
+#	you may have to comment out some of the program.  This will
+#	have to be worked out at the time.  P, % definately work for 
+#	the DAC-97.  S will probably not work perfectly.
+
+
+# Other Notes
+#	-This was written on a Linux system.  Probably would mostly work in Windows, 
+#	but you might need to consider the cr/lf situation.
+#	-Talking to the serial port of the DAC sometimes causes problems, may change settings.
+#	However, this is even more likely if you are _not_ using a script.
+#	You have been warned.  I'm sure it's not a problem, because you 
+#	have all of you settings written down, right?
+#
+#	At this time, this file collects el-az-cr-DAC_AGC-EbNo-Modem_AGC- (and more....) and puts them 
+#	into a comma delimited file with a header.
+#
+#	Still to do, maybe.  Split up program or files into seperate DAC and Modem
+#	data collection.  Make both into seperate programs and use them as subroutines?
+#
+#
+########################	PROGRAM STARTS HERE:      ########################
+
+use Device::SerialPort;				#This is relatively new, you might need to add it.  
+use Time::HiRes qw(gettimeofday sleep);		#needed because the data rate can be more than one/sec.
+
+$ModemSerialPort = "/dev/ttyS1";
+#$ModemSerialPort = "/dev/ttyUSB2";
+
+$SleepTime 	= 30;				# time delay between readings.  In seconds.  If -1, run once. (for crontab)
+$UnixTime 	= 1;				# set to 1 for a unix-time seconds column.  good for plots.
+$AddDate 	= 1;				# set to non-zero to add date string to file, 
+$AddTime 	= 1;				# set to non-zero to add time string to file,
+$DateLogFiles 	= 1;				# Set to 1 if you want the filenames with a date stamp and a new file (daily?)
+$LogDir    	= "/home/shipdata/hsn/";	# path to data file.  This directory must exist.
+$LogFile   	= "AT";                        # file name to output, or prefix if timestamped.  AT or KN
+$Debug          = 0;
+
+
+
+# Serial Settings:  For Comtech Modem serial port.
+$Modemob = Device::SerialPort->new ($ModemSerialPort) || die "Can't Open $ModemSerialPort: $!";
+$Modemob->baudrate(4800)    || die "failed setting baudrate";
+$Modemob->parity("none")    || die "failed setting parity";
+$Modemob->databits(8)       || die "failed setting databits";
+$Modemob->handshake("none") || die "failed setting handshake";
+#$Modemob->read_char_time(1) 	|| die "failed setting read_char_time";      #milliseconds.  does not accept zero.  Supposed to.  ?? 
+#$Modemob->read_const_time(100) || die "failed setting read_const_time";     #milliseconds.   (Waits Xms, then gives up?)
+$Modemob->write_settings    || die "no settings";
+
+##### open(MODEM, "<$ModemSerialPort")     || die "Cannot open $ModemSerialPort: $_";  ### old location of this line.  Remove it if it works. 
+
+
+##########  Start of main loop  #############
+
+while (1){					#Run forever.
+	 if($Debug) {print STDOUT "start of loop. \n"}
+
+
+#	Modem Data
+#       <0000/EBN?[cr] for ebno. Response is >0000/EBN=09.7
+#       <0000/AGC?[cr] for AGC.  Response is >0000/AGC=
+
+        #open the serial port on the Comtech Modem.
+        open(MODEM, "<$ModemSerialPort")     || die "Cannot open $ModemSerialPort: $_";
+	if($Debug) {print STDOUT "\nOpened Modem serial port.\n "}
+
+        #get the first item of data from the Comtech Modem.
+        $pass=$Modemob->write("<0000/EBN?\r");  #Get the EBNO.  Return, no line feed.
+	sleep (.1);			 	#short pause.
+        $Modem_EBNO = <MODEM>;                  #Get the data from the serial port.
+        if($Debug) {print STDOUT "\nRaw Modem EbNo is $Modem_EBNO "}
+        $Modem_EBNO =~ s/>0000\///g;            #remove the ">0000/". This might be too specific.
+        $Modem_EBNO =~ s/EBN=/ /g;              #remove the "EBN=" and replace it with a space.  Too specific?
+        if($Modem_EBNO == 99.9) {$Modem_EBNO = 19.9}  #New flag value for EbNo.  Better for graphing.
+        if($Debug) {print STDOUT "Processed Modem EbNo is $Modem_EBNO "}
+
+        #get the next data.
+	sleep (.1);				#Might need short pause.
+        $pass=$Modemob->write("<0000/AGC?\r");  #Get the AGC using.
+	sleep (.1);			#short pause.
+        $Modem_AGC = <MODEM>;                   #Get the data from the serial port.
+        if($Debug) {print STDOUT "\nRaw AGC is: $Modem_AGC "}
+        $Modem_AGC =~ s/>0000\///g;             #remove the ">0000/".
+        $Modem_AGC =~  s/AGC=/ /g;              #remove the "AGC=" and replace it with a space.
+        if($Debug) {print STDOUT "Processed AGC is: $Modem_AGC "}
+
+	#get the next data.
+	sleep (.1);				#Might need short pause.
+        $pass=$Modemob->write("<0000/MGC?\r");  #Get the MGC using.
+	sleep (.1);				#short pause.
+        $Modem_MGC = <MODEM>;                   #Get the data from the serial port.
+        if($Debug) {print STDOUT "Raw MGC is: $Modem_MGC"}
+        $Modem_MGC =~ s/>0000\///g;             #remove the ">0000/".
+        $Modem_MGC =~  s/MGC=/ /g;              #remove the "MGC=" and replace it with a space.
+        if($Debug) {print STDOUT "Processsed MGC is: $Modem_MGC "}
+
+        #get the next data.
+	sleep (.1);				#Might need short pause.
+        $pass=$Modemob->write("<0000/BER?\r");  #Get the BER using.
+	sleep (.1);				#short pause.
+        $Modem_BER = <MODEM>;                   #Get the data from the serial port.
+        if($Debug) {print STDOUT "\nRaw BER is: $Modem_BER"}
+        $Modem_BER =~ s/>0000\///g;             #remove the ">0000/".
+        $Modem_BER =~  s/BER=/ /g;              #remove the "BER=" and replace it with a space.
+        substr($Modem_BER, 5, 0) = '-';         #insert a "-" sign (BER reads as x.yEz, but is really x.yE-z
+        if($Debug) {print STDOUT "True BER is: $Modem_BER"}
+        $Modem_BER = sprintf("%1.10f", $Modem_BER); #covert to fixed point (not sci. not.)
+	if($Modem_BER == 9999) {$Modem_BER = .099}  #New flag value for BER.  Better for graphing.
+        if($Debug) {print STDOUT "Re-formatted BER is: $Modem_BER\n\n"}
+
+
+
+        #save the next data to a varible, and so on.  Add more of the above blocks if you need more data.
+
+	
+	#$Modemob->close     || die "close Modem serial port failed";	#close the serial port connected to the Comtech Modem.
+	if($Debug) {print STDOUT "Just closed the Modem serial port.  \n"}
+
+
+	if ($DateLogFiles == 1){ 
+                my $hour;
+		( $hour, $Day, $Month, $Year) = (gmtime)[2..5];
+                $Year =$Year -100;
+                $Month =   $Month + 1;
+	       #$FileDate = sprintf ("%02d-%02d-%04d_", $Day, $Month, $Year    );
+		$FileDate = sprintf ("%02d%02d%02d", $Year, $Month, $Day    );
+		}
+
+	#write the data to a line in a file.
+	open(LOG,">>${LogDir}${LogFile}${FileDate}_hsn-Modem.csv")    or  die "can't open file ${LogDir}${LogFile}${FileDate}_hsn.csv, did you make the directory??? ";
+	select(LOG), $| = 1;      		# set nonbufferd mode
+
+	if ($Debug){				#test to see if file is empty.
+        	if (!-s LOG){print STDOUT "File ${LogDir}${LogFile}${FileDate}_hsn.csv is empty.\n";}
+		else {print STDOUT "file is not empty.\n"}
+		}
+	
+	#If file is empty, write the header.  Header must be updated if data changes.
+	if (!-s LOG){					#test to see if file is empty.  (empty file means new day, need header.)
+		print ("Date, Time_GMT, Unixtime, ");        #if it is, write the header. (new version, for calliope compatibility)
+		print ("MdmEbNo, MdmAgc, MdmBER, MdmMGC\n");	
+		}
+
+
+        #Add a date string if called for.
+        if ($AddDate == 1) {
+                ($Day, $Month, $Year) = (gmtime)[3..5];
+                $Year =$Year + 1900;
+                $Month =   $Month + 1;
+                printf ("%04d/%02d/%02d, ", $Year, $Month, $Day    );#write to file
+                }
+        #Add a time string if called for.
+        if ($AddTime == 1) {
+                ($Sec, $Min, $Hour) = (gmtime)[0..2];
+                printf ("%02d:%02d:%02d, ", $Hour, $Min, $Sec    );#write to file
+                }
+        #add unix time in seconds if called for.
+        if ($UnixTime == 1) {
+                printf ( "%10.2f, ",  gettimeofday/1 );  #write to file
+                }
+	
+
+# modify the next line for different file formats. (comma delimited, etc)
+	# don't forget to fix the header line if you add/subtract anything here.
+	printf ("%4.1f, %3.1f, %1.10f,  %2.80s\n",    $Modem_EBNO, $Modem_AGC, $Modem_BER, $Modem_MGC);	#write to file	
+
+
+	if($Debug) {print STDOUT "Bottom of the loop coming up.  \n"}
+	if ($SleepTime == -1) {last}		#look for the -1 flag for crontab.
+	else {sleep $SleepTime}			#if no flag, do it again, forever.
+	if($Debug) {print STDOUT "Bottom of the loop past.  \n"}
+}
+undef $Modemob;
+

@@ -1,0 +1,65 @@
+$@MID@$: 13
+Date: Sun, 27 Nov 2011 03:22:12 +0000
+Author: AH
+S/N: 
+Type: Configuration
+Component: other
+Subject: Temporary switch to IOR satellite while in Greece
+Cruise: at18-14
+Attachment: 111127_032044_Screen_shot_2011-11-27_at_5.20.24_AM.png,111127_033700_Screen_shot_2011-11-27_at_5.36.42_AM.png
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">The switch to the IOR satellite was made because the ELEV to the AOR satellite is less than 2 degrees here (Steve F. says system has never shown much success below 5 degrees)</span></p>
+<p><span style="font-size: large;">***IMPORTANT NOTE - when we go somewhere new like this - I should have checked out the expected ELEV and AZ on satellite finder months ago and talked with Steve Foley about what we expected.&nbsp; We could have predicted it would not work!</span></p>
+<p><span style="font-size: large;">This switch involved reconfiguring the router interface as well as the normal type of hiseasnet equipment changes.</span></p>
+<p><span style="font-size: large;">**************************</span></p>
+<p><span style="font-size: large;">ROUTER CHANGES:<br />
+</span></p>
+<p><span style="font-size: large;">WHEN WE GO BACK TO AOR NEED TO BACKOUT THESE CHANGES AND<br />
+LOWER POWER TO -12 dB<br />
+<br />
+1)&nbsp; change ip address to 192.168.255.90<br />
+<br />
+2)&nbsp; Laura had us:<br />
+&gt;access-list 128 permit ip any 192.168.255.88 0.0.0.3<br />
+<br />
+3)<br />
+***from config prompt<br />
+router bgp 64521<br />
+neighbor 192.168.255.89 remote-as 64521<br />
+neighbor 192.168.255.89 description ucsd-sdsc-roadnet-2611<br />
+neighbor 192.168.255.89 next-hop-self<br />
+neighbor 192.168.255.89 weight 30000<br />
+neighbor 192.168.255.89 distribute-list 28 out<br />
+no auto-summary</span></p>
+<p><span style="font-size: large;">&nbsp;***********************NEED TO BACK THESE OUT AT END OF CRUISE</span></p>
+<p><span style="font-size: large;">*********It looks like the original settings were as follows:</span></p>
+<p><span style="font-size: large;">1)&nbsp; ip address:<br />
+</span></p>
+<p><span style="font-size: large;">128.128.252.201</span></p>
+<p><span style="font-size: large;">2) access-list stuff:<br />
+</span></p>
+<p><span style="font-size: large;">access-list 1 permit 128.128.252.1<br />
+access-list 1 permit 128.128.252.2<br />
+access-list 28 permit 128.128.252.0 0.0.0.15<br />
+access-list 128 permit ip any 128.128.252.0 0.0.0.15<br />
+access-list 128 permit ip any 128.128.252.200 0.0.0.3<br />
+access-list 128 permit ip any 192.168.255.88 0.0.0.3<br />
+</span></p>
+<p><span style="font-size: large;"><br />
+</span></p>
+<p><span style="font-size: large;">3)&nbsp; neighborhood stuff</span></p>
+<p><span style="font-size: large;">router bgp 64521<br />
+&nbsp;no synchronization<br />
+&nbsp;bgp log-neighbor-changes<br />
+&nbsp;network 128.128.0.0<br />
+&nbsp;redistribute connected<br />
+&nbsp;neighbor 128.128.252.202 remote-as 64521<br />
+&nbsp;neighbor 128.128.252.202 description ucsd-sdsc-roadnet-2611<br />
+&nbsp;neighbor 128.128.252.202 next-hop-self<br />
+&nbsp;neighbor 128.128.252.202 weight 30000<br />
+&nbsp;neighbor 128.128.252.202 distribute-list 28 out<br />
+&nbsp;no auto-summary<br />
+</span></p>
+<p><span style="font-size: large;">****************<br />
+****************WE SHOULD GET WITH LAURA WHEN IT'S TIME TO PUT THESE BACK IN AND MAKE SURE IT IS ALL FUNCTIONING CORRECTLY WHEN WE'RE DONE</span></p>

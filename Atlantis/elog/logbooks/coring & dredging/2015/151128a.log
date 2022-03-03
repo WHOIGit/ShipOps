@@ -1,0 +1,31 @@
+$@MID@$: 6
+Date: Sat, 28 Nov 2015 17:24:39 +0000
+Author: Catie
+S/N: 
+Type: Inventory
+Category: Hardware
+Subject: Pinger Inventory & Testing
+Cruise: at32
+Attachment: 
+Encoding: HTML
+========================================
+<p>Benthos Model 2213, S/N 1024</p>
+<p>&nbsp;&nbsp; &nbsp; -Tested good</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -WHOI time base (Rick Sanger board)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Does not change ping rate when tilted, therefore no good for dredging</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Strongback holes are 17.5&quot; apart, so do not fit our current strongbacks aboard.</p>
+<p>&nbsp;</p>
+<p>Benthos Model 2216, S/N 1142</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Time base = ?</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Changes ping rate when tilted</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Ping volume is consistent, but is a bit on the quiet side even with new batteries</p>
+<p>&nbsp;</p>
+<p>Benthos Model 2216, S/N 1293</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Benthos time base</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Changes ping rate when tilted, although pings become very quiet in this state</p>
+<p>&nbsp;</p>
+<p>Benthos Model 2216, S/N 1113</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -WHOI time base (Rick Sanger board)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; -Does not change ping rate when tilted</p>
+<p>&nbsp;&nbsp;&nbsp; -Does not ping properly- makes more of a &quot;clack&quot; than a &quot;ping&quot; and was not visible on Knudsen</p>
+<p>&nbsp;&nbsp;&nbsp; -Missing battery pack.</p>

@@ -1,0 +1,20 @@
+$@MID@$: 27
+Date: Sat, 02 Jul 2011 12:38:26 +0000
+Author: Laura
+Type: Other
+Category: 
+Sensor: Other
+S/N: 
+Calibration Date: 
+Subject / Summary: 
+Cruise: at18-07
+link: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>8. Setup CTD processing for SSSG and SoundVelocity Profiles<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;SSSG plots will show on web only if numbered: [cruiseid][castnumber].*<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;need to change command window on CTD computer to:<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;c:\data\ctd\doc\processing_setup to run go.bat<br />
+<br />
+&nbsp;</p>

@@ -1,0 +1,96 @@
+$@MID@$: 41
+Date: Wed, 07 Nov 2012 16:02:58 +0000
+Author: lstolp
+Type: Build
+name: linus2
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: Other
+Subject: mailhost build
+Cruise: at24-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Build: Ubuntu 10.04 amd 64 server.. abmx i3 1u computer (newest variety)<br />
+<br />
+extra packages to add: apt-get update; apt-get install ntp gcc, minicom<br />
+<br />
+&nbsp;&nbsp;&nbsp; ntpd setup<br />
+<br />
+&nbsp;tar -xzf ntp-4.2.4p6.tar.gz<br />
+&nbsp; cd&nbsp; ntp-4.2.4p6/<br />
+&nbsp;mv ntpd/refclock_dumbclock.c ntpd/refclock_dumbclock.c.org<br />
+&nbsp;cp ../refclock_dumbclock.c.ese ntpd/refclock_dumbclock.c<br />
+&nbsp;./configure --enable-linuxcaps<br />
+&nbsp;make<br />
+&nbsp;make install</p>
+<p>stop ntpd<br />
+&nbsp;cp /usr/local/bin/ntp* /usr/sbin/.<br />
+<br />
+<br />
+20101201<br />
+&nbsp; * ln -s /dev/ttyS0&nbsp; /dev/dumbclock0<br />
+&nbsp;&nbsp;&nbsp;&nbsp; put above in /etc/rc.local<br />
+<br />
+&nbsp; * cd /etc/apparmor.d/<br />
+&nbsp;&nbsp;&nbsp;&nbsp; vi usr.sbin.ntpd<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; added to the end of the file<br />
+&nbsp;* /etc/init.d/ntp&nbsp;&nbsp; commented out in dhcp and if test &quot;$blah blah&nbsp; /etc/init.d/ntp<br />
+<br />
+<br />
+&nbsp;&nbsp;&nbsp; bind9<br />
+<br />
+copied over from ftp:/var/cache/bind and /etc/bind/named.conf.local; ran makenewdb.local<br />
+<br />
+0101201<br />
+per atlantis chatty log files added to /etc/default/bind9<br />
+# Added -4 to force ipv4 only&nbsp;&nbsp; lstolp 20101201<br />
+OPTIONS=&quot;-4 -u bind&quot;<br />
+<br />
+per atlantis chatty log files added to /etc/bind9/named.conf.local<br />
+// Added following to cut down on logging errors.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lsotlp 20100913<br />
+&nbsp;&nbsp;&nbsp; logging {<br />
+&nbsp;&nbsp;&nbsp; category lame-servers {null; };<br />
+&nbsp;&nbsp;&nbsp; category edns-disabled { null; };<br />
+&nbsp;&nbsp;&nbsp; };<br />
+<br />
+* restarted&nbsp; and seemed to work ok.. will have to double check when on the ship<br />
+<br />
+20110105<br />
+- zones were not loading needed to add:<br />
+&nbsp;&nbsp; /var/cache/bind/opts.cabin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -h cabingw<br />
+&nbsp; /var/cache/bind/opts.science<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -h scigw<br />
+&nbsp; /var/cache/bind/opts.ship<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -h shipgw<br />
+<br />
+&nbsp;20110106<br />
+&nbsp; - copied keys from ubuntu root to ftp root for makenewdb to work<br />
+&nbsp;&nbsp;&nbsp;&nbsp; worked for mike, but need to swap keys for ftptemp and dvdhost<br />
+&nbsp;20110106<br />
+&nbsp; - copied keys from ubuntu root to ftp root for makenewdb to work<br />
+&nbsp;&nbsp;&nbsp;&nbsp; worked for mike, but need to swap keys for ftptemp and dvdhost</p>
+<p>20110202<br />
+&nbsp; - copied keys for dvdhost and ftptemp. ran makenewdb and had<br />
+&nbsp;&nbsp;&nbsp;&nbsp; to change the rndc reload to /etc/init.d/bind9 restart and<br />
+&nbsp;&nbsp;&nbsp;&nbsp; /etc/init.d/named restart depending on the OS.<br />
+&nbsp;&nbsp;&nbsp;&nbsp; It was run a couple of times and appeared to work, did not do<br />
+&nbsp;&nbsp;&nbsp;&nbsp; much testing ie name looks ups on each of the computers or<br />
+&nbsp;&nbsp;&nbsp;&nbsp; nameservers.<br />
+<br />
+<br />
+*** Did not copy over keys etc.. FTP is the main nameserver, all the keys should go to ftp<br />
+<br />
+<br />
+<br />
+&nbsp;&nbsp;&nbsp; ln -s /usr/bin/alpine /usr/bin/pine<br />
+&nbsp;&nbsp;&nbsp; apt-get install logwatch</p>
+<p><em><strong>Have not done the this yet..<br />
+&nbsp;&nbsp;&nbsp; samba, using smbpasswd for authentication.. exporting /home/data&nbsp;&nbsp; used mike setup<br />
+</strong></em> <br />
+<br />
+&nbsp;</p>
+<p><br />
+&nbsp;</p>

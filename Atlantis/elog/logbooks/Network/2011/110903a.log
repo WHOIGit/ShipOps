@@ -1,0 +1,36 @@
+$@MID@$: 13
+Date: Sat, 03 Sep 2011 22:42:17 +0000
+Author: AH
+S/N: 
+Type: Routine
+equipment: Cisco Router
+Subject: Router commands - turning off and on interfaces like hiseasnet
+Cruise: at18-10
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: x-large;">EXAMPLE (to turn on interface to hiseasnet):<br />
+</span></p>
+<p><span style="font-size: x-large;">from ftp:<br />
+</span></p>
+<p><span style="font-size: x-large;">&gt;minicom hiseasnet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (this accesses /dev/ttyS1 and sets the baud rate, etc)<br />
+</span></p>
+<p><span style="font-size: x-large;">user:&nbsp;&nbsp;&nbsp; sssg<br />
+</span></p>
+<p><span style="font-size: x-large;">pw:&nbsp; reg laura <br />
+</span></p>
+<p><span style="font-size: x-large;"><span style="font-family: Arial;">make sure you have a prompt that looks like this:<br />
+</span></span></p>
+<p><span style="font-size: x-large;"><span style="font-family: Arial;">at-hiseasnet#</span></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: x-large;">&nbsp; not at-hiseasnet&gt; (if you get this one type &quot;ena&quot;, without the quotes, to get to admin login)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">&gt;config term<br />
+</span></p>
+<p><span style="font-size: x-large;">&gt;interface serial 0/2/0<br />
+</span></p>
+<p><span style="font-size: x-large;">&gt;no shutdown<br />
+</span></p>
+<p><span style="font-size: x-large;">(to turn off - &quot;shutdown&quot; &nbsp; instead of &quot;no shutdown&quot;<br />
+</span></p>
+<p><span style="font-size: x-large;"><br />
+</span></p>
+<p><span style="font-size: x-large;">&gt;rn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to show which port we are routing through</span></p>

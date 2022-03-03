@@ -1,0 +1,16 @@
+$@MID@$: 33
+Date: Fri, 12 Apr 2019 22:30:57 +0000
+Author: Catie
+Type: Configuration
+Category: Hardware
+equipment: Navigation Sensor Hub
+Subject: Installed repaired NSH unit
+Cruise: at42-09
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed the NSH that had gone back to Sonardyne UK in April 2018 for repair of suspected faulty power supply. Unit was returned during shipyard February 2019 and installed 10 April 2019.</p>
+
+<p>Upon installation it was found to have been loaded with firmware 2.0.3.107 while at the factory. The unit had left with firmware 2.0.2.104. So far this has not appeared to have an impact on tracking or SMS messaging with Alvin.</p>
+
+<p>Upon first boot the repaired NSH was not able to connect with the transceiver. Behavior is identical to that of the unit that was removed 10 April 2019. The NSH will provide 48V power for ~12 seconds, attempt to connect with the transceiver, time out, and power down for ~6 seconds, then repeat the cycle without ever being able to connect with the tranceiver. External 48V power supply was reinstalled to provide power to the transceiver until we receive guidance from Sonardyne.</p>

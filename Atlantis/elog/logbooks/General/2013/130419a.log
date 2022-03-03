@@ -1,0 +1,21 @@
+$@MID@$: 3
+Date: Fri, 19 Apr 2013 12:09:29 +0000
+Author: AH
+Type: Other
+Office_Support: 
+Subject / Summary: ELOG - starting and stopping
+Cruise: WHOIDock
+link: 
+Revisions:  & Fri Apr 19 12:19:20 2013^M
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">&gt;sudo /etc/init.d/elogd start|stop|restart<br />
+</span></p>
+<p><span style="font-size: large;">the configuration files are in /usr/local/elog</span></p>
+<p><span style="font-size: large;">to see process running:<br />
+</span></p>
+<p><span style="font-size: large;">[sssg@ftp ~]$ ps -ef </span><span style="font-size: large;">| grep elog<br />
+sssg&nbsp;&nbsp;&nbsp;&nbsp; 20087 19981&nbsp; 0 12:04 pts/0&nbsp;&nbsp;&nbsp; 00:00:00 grep elog<br />
+elog&nbsp;&nbsp;&nbsp;&nbsp; 28542&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp; 0 Apr10 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 00:00:12 /usr/local/bin/elogd -D -x -c /usr/local/elog/elogd.cfg</span><br />
+&nbsp;</p>

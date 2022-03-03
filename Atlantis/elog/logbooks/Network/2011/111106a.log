@@ -1,0 +1,25 @@
+$@MID@$: 15
+Date: Sun, 06 Nov 2011 11:30:56 +0000
+Author: AH
+S/N: 
+Type: Routine
+equipment: Subnet
+Subject: SHIPSHARE
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>DIRECTIONS FOR SHIPSHARE as of Nov 2011</p>
+<p>From any Windows computer connected to any network:</p>
+<p>1)&nbsp; Open &quot;Your Computer&quot; icon</p>
+<p>2)&nbsp; Click on &quot;Map Network Drive&quot; (under &quot;tools for Wondows XP)</p>
+<p>3)&nbsp; Select a drive letter such as: &quot;S:&quot;</p>
+<p>4)&nbsp; Click on:&nbsp; &quot;Connect using a different user name&quot;</p>
+<p>5)&nbsp; Enter &quot;User Name&quot; = &quot;shipshare&quot;</p>
+<p>6)&nbsp; Enter &quot;Password&quot; = &quot;shipshare&quot;</p>
+<p>7)&nbsp; In the folder box enter:&nbsp; \\office\ship_sharing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *if after you click &quot;Finish&quot; below, this does not work try redoing entering \\192.168.12.3\ship_sharing</p>
+<p>8)&nbsp; Verify that teh &quot;reconnect at logon&quot; box is checked (if this is your computer, unchecked if it is a general use computer)</p>
+<p>9)&nbsp; CLick on &quot;Finish&quot;</p>
+<p>10)&nbsp; Right click on new &quot;network location drive&quot; created on &quot;your computer&quot; to create a desktop shortcut</p>
+<p>THEN</p>
+<p>&gt;Calmly cultivate the convenient camaraderie of common crew collections.</p>

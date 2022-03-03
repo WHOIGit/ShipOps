@@ -1,0 +1,25 @@
+$@MID@$: 4
+Date: Fri, 24 Feb 2012 13:19:34 +0000
+Author: AH
+S/N: 
+Type: Routine
+Category: Software
+Subject: Bottom Tracking
+Cruise: at19
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;"><span style="font-family: Arial;">So, coming in and out of ports with a Continental Shelf (if bottom drops off quickly, not of much use),<br />
+<br />
+(1) When you leave port,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - turn bottom track on<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - start logging<br />
+(2) when you hit 500m or &quot;the next day&quot;, whichever comes first<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stop logging<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - turn BT off<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - start logging<br />
+<br />
+In general, this should be a reasonable strategy.<br />
+</span></span></p>
+<p><span style="font-size: large;">Jules email of 14 Feb 2012 - requested this as it is a valuable diagnostic tool<br />
+</span></p>

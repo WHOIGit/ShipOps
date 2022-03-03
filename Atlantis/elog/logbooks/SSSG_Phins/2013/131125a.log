@@ -1,0 +1,28 @@
+$@MID@$: 11
+Date: Mon, 25 Nov 2013 17:32:32 +0000
+Author: AH
+Type: Configuration
+Subject: Phins - NMEA strings and GPS sources
+Cruise: at26-08
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: x-large;">I removed the GST string from the CNAV sourced GPS input.&nbsp; Reading in the phins manual it is specified that:</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;If lever arms are not sufficiently accurate with respect to GPS accuracy the INS can reject the GPS when the ship is performing accelerations or turns. As a rule of the thumb the accuracy of the measurement of the lever arm in this case should be 1/10 of the accuracy of the GPS. As an example we present accuracy of GPS lever arm with respect to GPS accuracy:</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: large;">GPS Mode &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; STD on position &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Accuracy required on</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lever arm measurement</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTK GPS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 cm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size: large;"><br />
+When lever arms cannot be measured with sufficient accuracy to avoid GPS rejection the GST telegram should not be sent to the INS. In this case the INS will use and convert the quality factor 4 received in the GGA string into position SD of 0.3 m which is much greater than the SDs sent in the GST string.</span>&quot;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">Although the example given by the manual (Addendum for Installation and Configuration of AHRS and INS for Imagery Measurements, p. 18) refers to RTK, the section in the manual is not exclusive to RTK (it is V1.3 Lever Arms and Alignment to Vessel Frame)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">**************************</span></p>
+<p><span style="font-size: x-large;">****2013-Dec-18 - still inputting 2 GPS (CNAV &amp; 1850) - ixRepeater has been running on Neptune continuously monitoring for errors - only on input error (from 1850) port was recorded since 2013-Nov-25 - this was a single error, and no action was necessary on our part (system continued to work fine after error) </span></p>
+<p><span style="font-size: x-large;">We have also been successfully sending 2 GPS inputs to the phins simultaneously.&nbsp; I could not find anywhere in the manual that suggested we can not do this.&nbsp; This, in fact, seems to have been helpful.&nbsp; The ComET went up and did something to the CNAV antenna mount while in port yesterday, his change caused the CNAV to be disconnected for several minutes.&nbsp; He did not tell us until we were at sea.&nbsp; I checked our phins and the GPS2 input (1850) was still all nice and green, but the CNAV (GPS1) was saying in red &quot;GPS Rejected&quot;.&nbsp; I turned of the port A (GPS1 / CNAV) input for a few minutes and then turned it back on and everything is now green again - including the CNAV input (now says &quot;GPS1 Valid&quot;).&nbsp; </span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">Since there are certain errors from which the phins can not recover on its own, in the past our phins would have crashed.&nbsp; We would have had to ask the ship to stop at some point for at least 5 minutes so we could reset the phins.&nbsp; In this case, having two GPS's as inputs saved us potential data loss.&nbsp; </span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: x-large;">The need to tell us any time a finger touches the CNAV system or our phins has been restressed with the ComET.&nbsp; </span></p>
+<p><span style="font-size: x-large;">The phins has had two GPS inputs now since around November 15th.</span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp; So far the only errors that have occurred seem to be in association with fumbling fingers. </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

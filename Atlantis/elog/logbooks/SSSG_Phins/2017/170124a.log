@@ -1,0 +1,37 @@
+$@MID@$: 20
+Date: Tue, 24 Jan 2017 13:40:02 +0000
+Author: AH
+Type: Configuration
+Subject: PHINS - heave filter settings
+Cruise: at37-08
+Attachment: 
+Encoding: HTML
+========================================
+<p>I do not really remember anything about heave filters prior to the latest firmware upgrade (Nov 2016) - I don't remember </p>
+<p>a setting, but there is one now.&nbsp; We are presently using:</p>
+<p>&quot;REAL TIME HEAVE&quot;&nbsp; for the filter setting</p>
+<p>&nbsp;</p>
+<p>************email from Robbie 23Jan2017 answering my question about this filter</p>
+<p>I meant to respond to this, better late than never.<br />
+<br />
+&gt; Also, all of the phins ports are set to &quot;Real Time Heave Filter&quot;.&nbsp; I know we talked about this after the firmware upgrade (the other<br />
+&gt; choice is Smart heave), but I don't remember what the thought was.&nbsp; Does that sound correct (the way it is configured, in the ports<br />
+&gt; section one must select a heave filter - don't remember if there was a way to turn that off entirely, or if we wanted to).<br />
+<br />
+The Real Time heave is what it say, heave data in real time.&nbsp; (Real Time Heave Filter seems like a confusing term, as all heave data is<br />
+filtered.&nbsp; It makes more sense to just say Real Time or Smart Heave)<br />
+<br />
+Smart heave is just IxBlue's term for delayed heave.&nbsp; Remember the HIPPIE?&nbsp; Basically, if you can look at the heave number both forward and<br />
+backwards in time, you can get a more accurate heave when you average it.&nbsp; IXBlue uses a 100 second delay, so they must be looking 100<br />
+seconds forward, and 100 seconds back.<br />
+<br />
+I don't know why we don't use Smart Heave.&nbsp; Seems like it would be more accurate.&nbsp; I guess EM122 is not set up for it.&nbsp; Perhaps you are<br />
+expected to apply it in post processing.&nbsp;&nbsp; Maybe it's not that big a deal in a larger ship.&nbsp; Also, I don't need any more multibeam issues at<br />
+the moment.&nbsp; :-)<br />
+<br />
+Some day we will also have to deal with the center of motion issue with the PHINS.&nbsp; But I'm quite certain that if that number is zero, our<br />
+heave is not always correct.&nbsp; Also, zero is not really zero.&nbsp; Pretty sure the zero is not the same as &quot;off&quot;.&nbsp;&nbsp; By having zero entered, we<br />
+are telling the system that the center of motion of the ship is at the PHINS.<br />
+<br />
+Robbie<br />
+&nbsp;</p>

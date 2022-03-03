@@ -1,0 +1,69 @@
+$@MID@$: 30
+Date: Mon, 06 May 2013 15:05:56 +0000
+Author: AH
+Type: Calibration
+Category: 
+Sensor: temp | cond
+S/N: 
+Calibration Date: 
+Subject / Summary: Sending for calibration - 3 temperature, 3 conductivity sensors
+Cruise: at25
+link: 
+Revisions:  & Mon May  6 15:09:21 2013^M & Mon May  6 16:10:01 2013^M & Mon May  6 16:12:24 2013^M & Mon May  6 16:22:25 2013^M
+Attachment: 
+Encoding: HTML
+========================================
+<p><span style="font-size: large;">The following sensors have been removed from the CTD/ship and will be sent for calibration:<br />
+</span></p>
+<p><span style="font-size: large;">3plus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03P4491&nbsp;&nbsp; - last calibration 15-Feb-2012<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03P4252&nbsp;&nbsp; - last calibration 14-Feb-2012<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03P4481&nbsp;&nbsp; - last calibration 14-Feb-2012<br />
+</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">4C:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04 2768&nbsp;&nbsp;&nbsp; - last calibration 14-Feb-2012<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04 2824&nbsp;&nbsp; - last calibration 14-Feb-2012<br />
+</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04 2670&nbsp;&nbsp; - last calibration 14-Feb-2012</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *this sensor also has a note saying it was removed from the CTD due to spiking on 6-June-2012 </span><span style="font-size: large;">it was retested on deck and was okay - I think it might have had something lodged inside, or else maybe a cable issue (although it was not noisy, just offset data).&nbsp; It might be good</span>&nbsp; <span style="font-size: large;">to include this information for Seabird just in case they see any peculiar behavior during calibration</span>
+<meta content="" name="Title">
+<meta content="" name="Keywords">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="Word.Document" name="ProgId">
+<meta content="Microsoft Word 11" name="Generator">
+<meta content="Microsoft Word 11" name="Originator"><span style="font-size: larger;"><!--[if gte mso 9]><xml>
+<o:DocumentProperties>
+<o:Template>Normal</o:Template>
+<o:Revision>0</o:Revision>
+<o:TotalTime>0</o:TotalTime>
+<o:Pages>1</o:Pages>
+<o:Words>50</o:Words>
+<o:Characters>285</o:Characters>
+<o:Lines>2</o:Lines>
+<o:Paragraphs>1</o:Paragraphs>
+<o:CharactersWithSpaces>350</o:CharactersWithSpaces>
+<o:Version>11.1282</o:Version>
+</o:DocumentProperties>
+<o:OfficeDocumentSettings>
+<o:AllowPNG />
+</o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:Zoom>0</w:Zoom>
+<w:DoNotShowRevisions />
+<w:DoNotPrintRevisions />
+<w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+<w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+<w:UseMarginsForDrawingGridOrigin />
+</w:WordDocument>
+</xml><![endif]--></span><style type="text/css"></style><span style="font-size: larger;"><!--StartFragment-->.&nbsp; {This is the note from the cruise report - One cast was performed during leg 1 of the cruise.</span>      <span style="font-size: larger;"><span>&nbsp; The cast went well except that Cond 1 (primary &ndash; S/N 2670) spiked out close to the bottom and stayed for the remainder of the cast.</span>  &nbsp; </span></meta>
+</meta>
+</meta>
+</meta>
+</meta>
+</meta>
+</p>
+<p><span style="font-size: larger;">The Conductivity sensor has been replaced with one of the spares (S/N 2824). Will test again once this cruise is over and send back for repair/recal if needed</span><o:p><span style="font-size: larger;">}.&nbsp; I included some screen shots of the data - the conductivity sensor data near the bottom of the downcast and for the entire upcast is offset from the data from the other conductivity sensor.&nbsp; It looks as though it could have just had something lodged in its ductwork during that portion of the cast.</span></o:p><span style="font-size: larger;">  <!--EndFragment-->  <br />
+</span></p>

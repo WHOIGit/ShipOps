@@ -1,0 +1,24 @@
+$@MID@$: 42
+Date: Wed, 06 May 2015 16:20:16 +0000
+Author: rsl
+S/N: na
+Type: General Problem
+Component: other
+Subject: failure of battery charger for inverter
+Cruise: at27-a
+Attachment: 
+Encoding: HTML
+========================================
+<p>The battery charger for the batteries that feed the HiSeasNet system failed.&nbsp;&nbsp; Ran and extension cord to supply 110 to the system for the time being.&nbsp;&nbsp; Need to get it back on a UPS of some sort.</p>
+$@MID@$: 43
+Date: Wed, 06 May 2015 16:23:21 +0000
+Author: rsl
+S/N: na
+Type: Fix
+Component: other
+Subject: Added UPS to the dome to supply power to the antenna
+Cruise: at27-b
+Attachment: 
+Encoding: HTML
+========================================
+<p>Added UPS to the dome to supply power to the antenna, since the existing homebrew UPS system has failed.&nbsp; Still need to route the power to the dome somewhat better.&nbsp; Eventual plan is to change to a canister that does not need a UPS.&nbsp; (one that has built in brakes.)</p>

@@ -1,0 +1,38 @@
+$@MID@$: 10
+Date: Mon, 24 Apr 2017 14:42:44 +0000
+Author: AH
+Type: Linux
+Subject: MATLAB license info
+Cruise: at37-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>Catie Edit 01 Oct 2019:</p>
+
+<p>It looks like our general use computer iMacs are no longer in the license list on our Matlab account. To re-license for 2019, I had to connect to the internet and follow the automatic license update prompts within the matlab software.&nbsp; Will probably have to do the same for the Alvin iMacs.&nbsp; Alvindata machines were still in the license list. SSSG username and password for www.mathworks.com from the pw file work fine.</p>
+
+<p>&nbsp;</p>
+
+<p>The Master (WHOI) license is:&nbsp; 30690262&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>To update the license for the alvindata computers without an internet connection:</p>
+
+<p>1)&nbsp; go to www.mathworks.com on any computer with internet access and logon as sssg@atlantis.whoi.edu&nbsp; (pw in file)</p>
+
+<p>2) go to license center - licenses &nbsp; &nbsp; pick the tab &quot;install &amp; activate&quot; under &quot;related tasks&quot; on the right side of the screen, pick &quot;update license file&quot;.&nbsp; the screen should</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; now show a list of &quot;activated&quot; computers -&nbsp; the alvindata computers should both be listed there</p>
+
+<p>3)&nbsp; pick the appropriate computer and &quot;download the license file&quot;</p>
+
+<p>4)&nbsp; copy the file over to the appropriate computer to the /usr/local/MATLAB/R2015b/licenses directory (double check this is correct path, could change if entire reload is done - also, should rename the old license file)</p>
+
+<p>5)&nbsp; match the owners and permissions and name to the old license file (.lic) - I am not sure whether MATLAB grabs any and all files with the .lic extension from the licenses directory or not, maybe it does, but I matched everything to the old license file to be sure</p>
+
+<p>6)&nbsp; make sure you can still open and use MATLAB and that any license expiration messages are gone</p>
+
+<p>&nbsp;</p>
+
+<p>alvindata01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Host ID 002590DAF767&nbsp; (MAC address)</p>
+
+<p>alvindata02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Host ID 002590DAF782</p>

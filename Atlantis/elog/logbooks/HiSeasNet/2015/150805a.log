@@ -1,0 +1,57 @@
+$@MID@$: 50
+Date: Wed, 05 Aug 2015 18:44:18 +0000
+Author: laura
+S/N: 
+Type: notes
+Component: teledyne modem
+Subject: ipification traceroute
+Cruise: at30-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">[root@ftp ~]# traceroute 8.8.8.8</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;1&nbsp; hsnar.whoi.edu (128.128.252.1)&nbsp; 0.533 ms&nbsp; 0.760 ms&nbsp; 0.757 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;2&nbsp; 128.128.252.202 (128.128.252.202)&nbsp; 1.493 ms&nbsp; 1.507 ms&nbsp; 1.507 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;3&nbsp; 192.168.96.129 (192.168.96.129)&nbsp; 757.283 ms&nbsp; 758.274 ms&nbsp; 760.015 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;4&nbsp; 128.128.252.205 (128.128.252.205)&nbsp; 849.955 ms&nbsp; 850.943 ms&nbsp; 852.182 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;5&nbsp; hiseasnet-rtr.whoi.edu (128.128.252.193)&nbsp; 853.672 ms&nbsp; 854.662 ms&nbsp; 855.402 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;6&nbsp; 10.0.250.42 (10.0.250.42)&nbsp; 857.892 ms&nbsp; 857.942 ms&nbsp; 859.159 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;7&nbsp; 207.210.142.133 (207.210.142.133)&nbsp; 866.145 ms&nbsp; 851.352 ms&nbsp; 851.832 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;8&nbsp; et-10-0-0.122.chic0.tr-cps.internet2.edu (198.71.47.61)&nbsp; 898.545 ms&nbsp; 895.825 ms&nbsp; 896.055 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;9&nbsp; 72.14.220.117 (72.14.220.117)&nbsp; 896.295 ms&nbsp; 896.787 ms 162.252.69.135 (162.252.69.135)&nbsp; 897.026 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">10&nbsp; 209.85.254.120 (209.85.254.120)&nbsp; 898.766 ms 209.85.143.186 (209.85.143.186)&nbsp; 899.117 ms 209.85.254.128 (209.85.254.128)&nbsp; 901.748 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">11&nbsp; 216.239.50.234 (216.239.50.234)&nbsp; 902.987 ms 72.14.237.130 (72.14.237.130)&nbsp; 913.721 ms 216.239.50.234 (216.239.50.234)&nbsp; 905.466 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">12&nbsp; 216.239.40.22 (216.239.40.22)&nbsp; 916.701 ms&nbsp; 926.685 ms 209.85.244.83 (209.85.244.83)&nbsp; 986.354 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">13&nbsp; 216.239.49.25 (216.239.49.25)&nbsp; 918.361 ms 216.239.43.217 (216.239.43.217)&nbsp; 917.869 ms 216.239.41.58 (216.239.41.58)&nbsp; 939.537 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">14&nbsp; * * *</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">15&nbsp; google-public-dns-a.google.com (8.8.8.8)&nbsp; 939.740 ms&nbsp; 939.979 ms&nbsp; 940.462 ms</p>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>To striker:</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">[root@ftp ~]# traceroute 128.128.96.129</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">traceroute to 128.128.96.129 (128.128.96.129), 30 hops max, 60 byte packets</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;1&nbsp; hsnar.whoi.edu (128.128.252.1)&nbsp; 0.676 ms&nbsp; 0.666 ms&nbsp; 0.659 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;2&nbsp; 128.128.252.202 (128.128.252.202)&nbsp; 1.635 ms&nbsp; 1.645 ms&nbsp; 1.644 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;3&nbsp; 192.168.96.129 (192.168.96.129)&nbsp; 757.931 ms&nbsp; 758.672 ms&nbsp; 759.911 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;4&nbsp; 128.128.252.205 (128.128.252.205)&nbsp; 849.102 ms&nbsp; 850.343 ms&nbsp; 851.832 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;5&nbsp; hiseasnet-rtr.whoi.edu (128.128.252.193)&nbsp; 853.072 ms&nbsp; 854.062 ms&nbsp; 855.053 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;6&nbsp; clka-v7.whoi.edu (128.128.7.1)&nbsp; 857.792 ms&nbsp; 869.737 ms&nbsp; 869.953 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;7&nbsp; striker.whoi.edu (128.128.96.129)&nbsp; 870.442 ms&nbsp; 868.490 ms&nbsp; 868.972 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">[root@ftp ~]#&nbsp;</p>
+</div>
+<div>&nbsp;</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">[root@ftp ~]# traceroute 128.128.250.51</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">traceroute to 128.128.250.51 (128.128.250.51), 30 hops max, 60 byte packets</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;1&nbsp; hsnar.whoi.edu (128.128.252.1)&nbsp; 0.600 ms&nbsp; 0.589 ms&nbsp; 0.582 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;2&nbsp; 128.128.252.202 (128.128.252.202)&nbsp; 1.557 ms&nbsp; 1.567 ms&nbsp; 1.565 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;3&nbsp; 192.168.96.129 (192.168.96.129)&nbsp; 757.352 ms&nbsp; 758.341 ms&nbsp; 759.581 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;4&nbsp; 128.128.252.205 (128.128.252.205)&nbsp; 888.999 ms&nbsp; 889.239 ms&nbsp; 889.480 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;5&nbsp; hiseasnet-rtr.whoi.edu (128.128.252.193)&nbsp; 889.970 ms&nbsp; 890.460 ms&nbsp; 933.924 ms</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;6&nbsp; nic2b.whoi.edu (128.128.250.51)&nbsp; 932.416 ms&nbsp; 931.714 ms&nbsp; 932.178 ms</p>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>

@@ -1,0 +1,24 @@
+$@MID@$: 52
+Date: Sat, 20 Apr 2019 20:24:08 +0000
+Author: Catie
+Type: Calibration
+Category: sensor
+Sensor: 9plus | temp | cond | O2
+S/N: 
+Calibration Date: 
+Subject / Summary: Declared shipping values for CTD sensors 2019
+Cruise: at42-09
+link: 
+Revisions:  & Sat Apr 20 20:30:44 2019^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>SBE09: $50000</p>
+
+<p>SBE03 temperature: $3500</p>
+
+<p>SBE04 conductivity: $ 4200</p>
+
+<p>SBE43 oxygen: $5800</p>
+
+<p>SBE45 thermosalinigraph: $4000</p>

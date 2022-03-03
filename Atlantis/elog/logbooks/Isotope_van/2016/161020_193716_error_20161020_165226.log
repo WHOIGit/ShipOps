@@ -1,0 +1,121 @@
+-- MikroWin Driver Error Report 2016/10/20 16:52:26 --
+Hidex 300 SL, Version 1.07
+Error: 7 Instrument Error
+Error message: Vial load to det failed, collision detected
+Error source: rdGetData
+-- Program Information --
+Mikrowin version: 4.43
+Hidex 300 SL, Port: COM1, Device Config: 1
+Advanced options: 1EFF
+Measurement running: Yes
+Measurement LastCmd: RD_GETDATA, NextCmd: RD_GETDATA
+Measurement data file name: allison_vials_data
+Measurement DataType: 9, DataOrnt: 0, DataNumb: 2
+Mikrowin Plate Count: 5
+  Plate 0 type: Time
+  Plate 1 type: CNT
+  Plate 2 type: CPM
+  Plate 3 type: DPM
+  Plate 4 type: Etime
+Active Vial Pos: 7, Vial Measurement Time left: 0 s
+Total Vial Count Selected For Measurement: 10
+-- Para File contents --
+VersionStamp 107
+WellRepeatNumber 2
+RangeRepeatNumber 1
+MeasuringRangeDir 0
+ROINumber 0
+ROI 1 Isotope Free
+ROI 1 Free Limits 0 - 1023
+ROI 1 Type 0 Beta
+ROI 2 Isotope H-3
+ROI 2 Free Limits 0 - 1023
+ROI 2 Type 0 Beta
+ROI 3 Isotope H-3
+ROI 3 Free Limits 0 - 1023
+ROI 3 Type 0 Beta
+ROI 4 Isotope H-3
+ROI 4 Free Limits 0 - 1023
+ROI 4 Type 0 Beta
+ROI 5 Isotope H-3
+ROI 5 Free Limits 0 - 1023
+ROI 5 Type 0 Beta
+ROI 6 Isotope H-3
+ROI 6 Free Limits 0 - 1023
+ROI 6 Type 0 Beta
+TrayType 1
+FirstUsedRow 1
+LastUsedRow 8
+FirstUsedColumn 1
+LastUsedColumn 12
+SingleTrayMode 1
+CoolingMode: Use Cooling no, Wait for Target no, Switch Off no
+TemperatureTarget 20
+CoincidenceTime 35
+CountingTime 15
+MaxCounts 9000000
+UseDelayBefore no
+DelayBefore 0
+UseExtStd no
+ExtStdTime 1
+IonizedDelay 1
+SpectraMode 0
+PreCountDelay 0
+ActivityType 1 Low
+YGain 35
+ShowPLI 1
+PLILimit 16
+AlphaDelayTime 35
+AlphaMode 0 Counting
+AlphaTailOffset 5
+ScreenCPMType 0 None
+TargetCPM Low 10000
+TargetCPM High 10000
+TargetSigma 1
+PrinItems 1007
+PrintItems WIN 1
+PrintItems REPL 2
+PrintItems WELL_NR 4
+PrintItems WELL_NAME 8
+PrintItems TRAY 0
+PrintItems TIME 32
+PrintItems COUNTS 64
+PrintItems CPM 128
+PrintItems DPM 256
+PrintItems ETIME 512
+PrintItems DTIME 0
+PrintItems TDCR 0
+PrintItems QPIN 0
+PrintItems QPEX 0
+PrintItems SPECT 0
+PrintItems TRIP_SPECT 0
+PrintItems ASPECT 0
+PrintItems TRIP_ASPECT 0
+PrintItems 2DPLOT 0
+PrintItems CHEMI 0
+PrintItems TEMPERA 0
+iaWellByPassTable row 00 x_____x____x
+iaWellByPassTable row 01 ____________
+iaWellByPassTable row 02 ____________
+iaWellByPassTable row 03 x____xx____x
+iaWellByPassTable row 04 ____________
+iaWellByPassTable row 05 ____________
+iaWellByPassTable row 06 ____________
+iaWellByPassTable row 07 x_____x____x
+def_KinInteTime 0
+def_KinMeasTime 0
+def_KinShakeMode 0
+def_MeasFilter 0
+def_NrmOptiFlt1 0
+def_NrmOptiFlt2 0
+def_NrmOptiFlt3 0
+def_PlateOrientation 0
+def_RefrFilter 0
+def_ScnIncrWave 0
+def_ScnMeasMode 0
+def_ScnStopWave 0
+def_ScnStrtWave  0
+def_ShakeMode 0
+def_ShakeTime 0
+NrmMeasMode 0
+-- End of error report --

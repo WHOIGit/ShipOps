@@ -1,0 +1,15 @@
+$@MID@$: 1
+Date: Mon, 28 Jun 2010 21:12:43 +0000
+Author: AH
+Type: Configuration
+name: ftp2
+server type: network
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: Ubuntu kickstart disk location
+Cruise: at15-66
+Attachment: 
+Encoding: HTML
+========================================
+<p>The Ubuntu kickstart disk that Laura brought us for ftp2 is taped to the top of the ftp2 case (if you go behind the racks in the main lab you will see it there).&nbsp; I did not want to put it in the drawer as it is an important disk, and I was afraid it would get mixed with old disks, and cause confusion later if/when we needed it.</p>

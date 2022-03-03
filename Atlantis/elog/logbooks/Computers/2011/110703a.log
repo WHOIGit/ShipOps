@@ -1,0 +1,148 @@
+$@MID@$: 29
+Date: Sun, 03 Jul 2011 10:11:51 +0000
+Author: AH - from DS stuff
+Type: Other
+name: ftp
+server type: 
+OS: Linux
+Location: 
+Category: Other
+Subject: jason virtual van - iptables
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp; I (Dave Sims) added a couple of lines to ftp's iptables so that the jason virtual van<br />
+(199.92.162.200) could be viewed on all networks.&nbsp; Previously, we couldn't get the<br />
+virtual van on the cabin net (wireless).<br />
+<br />
+# allow Jason Web Van -- added by dsims 20110702<br />
+-A NOSNAT -d 199.92.162.200 -p tcp -m tcp --dport 80 -j ACCEPT<br />
+<br />
+# allow jason virtual van -- added by dsims 20110702<br />
+-A FORWARD -d 199.92.162.200 -p tcp -m tcp --dport 80 -j ACCEPT<br />
+<br />
+THESE ARE ONLY IN THE SQUID TABLES (not in no squid)</p>
+$@MID@$: 30
+Date: Sun, 03 Jul 2011 10:13:21 +0000
+Author: AH
+Type: 
+name: ALL
+server type: 
+OS: 
+Location: 
+Category: Software
+Subject: Adobe Updater - turning off
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>
+<h3 id="main_Turn_off_automatic_updates_on_Windows_OS">Turn off  automatic updates on Windows OS</h3>
+<p>If your computer is connected to  the internet, then you can change the Adobe Updater preferences to not  check for updates.</p>
+<p>To Change the Adobe Updater preferences, do the following:</p>
+<ol type="1" class="- topic/ol " xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <li>Start the AdobeUpdater.exe application  from ...\Program Files\Common Files\Adobe\Updater 5</li>
+    <li>When the update screen appears, click the Preferences button</li>
+    <li>Uncheck the Automatically Check for updates checkbox and click OK</li>
+</ol>
+<p>If your computer does not have an internet connection, then you  can manually edit the AdobeUpdaterPreferences.dat file.</p>
+<p>To manually edit the AdobeUpdaterPreferences.dat file, do the  following:</p>
+<ol type="1" class="- topic/ol " xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <li>Start the AdobeUpdater.exe application  from ...\Program Files\Common Files\Adobe\Updater 5</li>
+    <li>When the Adobe Updater dialog appears stating that there is no  Internet connection, click Cancel</li>
+    <li>Navigate to ...\Documents and Settings\[username]\Local  Settings\Application Data\Adobe\Updater5 on Windows XP or  ...\[username]\AppData\Local\Adobe\Updater5 on Vista and open  AdobeUpdaterPrefs.dat in Notepad.</li>
+    <li>If the <em>&lt;AutoCheck&gt;1&lt;/AutoCheck&gt;</em> tag already  exists, then change the value from 1 to 0. Otherwise, add the line <em>&lt;AutoCheck&gt;0&lt;/AutoCheck&gt;</em>  anywhere between the <em>&lt;AdobeUpdater&gt;&lt;/AdobeUpdater&gt;</em>  tags.</li>
+    <li>Close and save the AdobeUpdaterPrefs.dat file.</li>
+</ol>
+<h3 id="main_Turn_off_automatic_updates_on_Mac_OS">Turn off automatic  updates on Mac OS</h3>
+<p>If your computer is connected to the internet,  then you can change the Adobe Updater preferences to not check for  updates.</p>
+<p>To Change the Adobe Updater preferences, do the following:</p>
+<ol type="1" class="- topic/ol " xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <li>Start the Adobe Updater application  from /Applications/Utilities/Adobe Utilities/Adobe Updater5/.</li>
+    <li>When the update screen appears, click the Preferences link.</li>
+    <li>Uncheck the Automatically Check for updates checkbox and click OK.</li>
+</ol>
+<p>If your computer does not have an internet connection, then you  can manually edit the AdobeUpdaterPreferences.dat file.</p>
+<p>To manually edit the AdobeUpdaterPreferences.dat file, do the  following:</p>
+<ol type="1" class="- topic/ol " xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+    <li>Start the Adobe Updater application  from /Applications/Utilities/Adobe Utilities/Adobe Updater5/.</li>
+    <li>When the Adobe Updater dialog appears, stating that there is no  Internet connection, click Cancel.</li>
+    <li>Navigate to &quot;/Users/[username]/Library/Application  Support/Adobe/Updater5/&quot; and open the AdobeUpdaterPrefs.dat file in  TextEdit.</li>
+    <li>If the <em>&lt;AutoCheck&gt;1&lt;/AutoCheck&gt;</em> tag already  exists, then change the value from 1 to 0. Otherwise, add the line <em>&lt;AutoCheck&gt;0&lt;/AutoCheck&gt;</em>  anywhere between the <em>&lt;AdobeUpdater&gt;&lt;/AdobeUpdater&gt;</em>  tags.</li>
+    <li>Close and save the AdobeUpdaterPrefs.dat file.</li>
+</ol>
+</p>
+$@MID@$: 31
+Date: Sun, 03 Jul 2011 10:15:13 +0000
+Author: AH
+Type: 
+name: ftp
+server type: 
+OS: 
+Location: 
+Category: Other
+Subject: CACTI
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>Laura configured CACTI for network monitoring.</p>
+<p>User name:&nbsp; admin</p>
+<p>pw:&nbsp; laura's usual</p>
+$@MID@$: 32
+Date: Sun, 03 Jul 2011 10:40:37 +0000
+Author: AH - an email from Laura
+Type: 
+name: ALL
+server type: 
+OS: 
+Location: 
+Category: Software
+Subject: ELOG - command to start, etc
+Cruise: at18-07
+Attachment: 
+Encoding: HTML
+========================================
+<p>I have been doing some experimenting w/ elog for use as a cruise_log for R2R. I had<br />
+the interns on my last cruise use it as such. I have attached the config we used and<br />
+the get_gps_latlon perl script as well, just for ideas...<br />
+<br />
+I have used:<br />
+<br />
+Subst Cruise = $shell(cat /home/data/CRUISE_ID)<br />
+<br />
+on the Oceanus's elog, I find having the ability to search on cruise is useful.<br />
+<br />
+I thought the lat and lon would be helpful w/ HiSeasNet and FBB and SWAP, or writing a<br />
+perl script (I think Robbie has one that is just about there) that would grab ebno,<br />
+lat and lon.<br />
+<br />
+To use as script to grab information:<br />
+Subst GPS_Time = $shell(/usr/local/elog/scripts/get_gps_latlon -o gps_time -p 55150)<br />
+<br />
+One of the problems w/ the GPS one, at least on the Oceanus, ftp broadcasts all the<br />
+UDP strings, so it cannot use them. I was going to set one up on the Oceanus, that is<br />
+not rebroadcast by ftp.<br />
+<br />
+In order to use a script, elog must be run w/ the -x option, in<br />
+/etc/init.d/elogd<br />
+<br />
+/usr/local/sbin/elogd -D -c /usr/local/elog/elogd.cfg&nbsp; &gt; /dev/null 2&gt;&amp;1<br />
+<br />
+You need to add the -x<br />
+/usr/local/sbin/elogd -D -x -c /usr/local/elog/elogd.cfg&nbsp; &gt; /dev/null 2&gt;&amp;1<br />
+<br />
+and then restart <a href="">elog:</a><br />
+service elogd restart<br />
+Another interesting one is Locking the attributes so they cannot be changed:<br />
+<br />
+Locked attributes = Revisions, Event, Cruise, GPS_Time, Latitude, Longitude<br />
+<br />
+and if someone goes back to edit an entry you can grab the revision..<br />
+Subst on Edit Revisions = $Revisions&lt;br&gt;$date by $author<br />
+<br />
+I would be interested in hearing what you all think about it and what would make it<br />
+easier to use..<br />
+<br />
+&nbsp;</p>

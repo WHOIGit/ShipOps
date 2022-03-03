@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- created by MXML on Tue Jul 30 15:34:17 2013 -->
+<list>
+  <user>
+    <name>laura</name>
+    <password encoding="SHA256">OqYwQ0nWEuY6ugeMlIxPANlgHerMhPLEB8R.nGwfTZ9</password>
+    <full_name>laura stolp</full_name>
+    <last_logout>Thu May 23 15:59:54 2013</last_logout>
+    <last_activity>Sat May 25 13:41:34 2013</last_activity>
+    <email>lstolp@whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify>
+      <logbook>dsLog</logbook>
+    </email_notify>
+  </user>
+  <user>
+    <name>sssg</name>
+    <password encoding="SHA256">yB9.Fk3HJXSeI/JGGLc96Emby3RdzA/en9Ys9mixNt/</password>
+    <full_name>Shipboard Scientific Services Group</full_name>
+    <last_logout>Sun Jul 14 20:07:59 2013</last_logout>
+    <last_activity>Tue Jul 30 15:34:17 2013</last_activity>
+    <email>sssg@atlantis.whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+  <user>
+    <name>aheater</name>
+    <password encoding="SHA256">wIPsvILbmSVoAzyfDQoBTQPDOAUhTM0XSBMY1iHyKp9</password>
+    <full_name>Allison Heater</full_name>
+    <last_logout>Mon Jul 29 19:04:02 2013</last_logout>
+    <last_activity>Tue Jul 30 15:19:59 2013</last_activity>
+    <email>aheater@atlantis.whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify>
+      <logbook>General</logbook>
+      <logbook>Atlantis</logbook>
+    </email_notify>
+  </user>
+  <user>
+    <name>dsims</name>
+    <password encoding="SHA256">1aGUFD3d4KfMju1Ar4apaXs7dKlwlplAbDqtqEx.kCC</password>
+    <full_name>dsims</full_name>
+    <last_logout>Mon Jul 15 04:05:39 2013</last_logout>
+    <last_activity>Tue Jul 16 00:16:20 2013</last_activity>
+    <email>dsims@atlantis.whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+  <user>
+    <name>rlaird</name>
+    <password encoding="SHA256">Y3ruZ7jW1kEd0P4e0SGwJasXNPw7MYgBvh/BK.BgCi/</password>
+    <full_name>rlaird</full_name>
+    <last_logout>Thu Jun 20 17:43:57 2013</last_logout>
+    <last_activity>Tue Jul  9 16:51:26 2013</last_activity>
+    <email>rlaird@whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+  <user>
+    <name>cgriner</name>
+    <password encoding="SHA256">7zY.bZKlCDikpPCpn7457XVB5mlB9K6INDmycLL3.j6</password>
+    <full_name>Christopher Griner</full_name>
+    <last_logout>Mon May  6 03:33:07 2013</last_logout>
+    <last_activity>Mon May  6 17:00:10 2013</last_activity>
+    <email>cgriner@whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify>
+      <logbook>General</logbook>
+      <logbook>Atlantis</logbook>
+      <logbook>CTD</logbook>
+      <logbook>Knudsen</logbook>
+      <logbook>Multibeam</logbook>
+      <logbook>ADCP</logbook>
+      <logbook>imet_tower</logbook>
+      <logbook>xbt</logbook>
+      <logbook>magnetometer</logbook>
+      <logbook>portosal</logbook>
+      <logbook>flow_thru_system</logbook>
+      <logbook>milliq</logbook>
+      <logbook>science_wiring</logbook>
+      <logbook>atlantis_survey</logbook>
+      <logbook>ese_clock</logbook>
+      <logbook>freezers_reefers</logbook>
+      <logbook>N2_generators</logbook>
+      <logbook>fumehoods</logbook>
+      <logbook>Isotope_van</logbook>
+      <logbook>chem_van</logbook>
+      <logbook>SSSG_Phins</logbook>
+      <logbook>labs</logbook>
+      <logbook>misc_science</logbook>
+      <logbook>Winches</logbook>
+      <logbook>SHIP_Phins</logbook>
+      <logbook>GPS</logbook>
+      <logbook>3PS</logbook>
+      <logbook>IP_Cameras</logbook>
+      <logbook>video_equipment</logbook>
+      <logbook>sonardyne</logbook>
+      <logbook>Network</logbook>
+      <logbook>HiSeasNet</logbook>
+      <logbook>Sailor500</logbook>
+      <logbook>NeraB</logbook>
+      <logbook>SWAP</logbook>
+      <logbook>VOIP_phones</logbook>
+      <logbook>Computers</logbook>
+      <logbook>Software</logbook>
+      <logbook>Printers_and_plotters</logbook>
+      <logbook>Ship_website</logbook>
+      <logbook>2009</logbook>
+      <logbook>2010</logbook>
+      <logbook>2011</logbook>
+      <logbook>2012</logbook>
+      <logbook>calliope</logbook>
+      <logbook>science_data</logbook>
+      <logbook>alvin_download</logbook>
+      <logbook>usb_drives</logbook>
+      <logbook>DVD_and_other_media</logbook>
+      <logbook>dsLog</logbook>
+      <logbook>elog</logbook>
+    </email_notify>
+  </user>
+  <user>
+    <name>arianna</name>
+    <password encoding="SHA256">Cj8edDggh2MBuIfr/SUXQg48A7zR./C8wNwCPZb7BY0</password>
+    <full_name>Arianna Johns</full_name>
+    <last_logout>Sun Jun  9 00:26:07 2013</last_logout>
+    <last_activity>Sun Jun  9 13:30:17 2013</last_activity>
+    <email>ajohns@atlantis.whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+  <user>
+    <name>ajohns</name>
+    <password encoding="SHA256">Yy8J0AXnBSVPuEd24KJAkoizMp.sH6qsVakauMt8L48</password>
+    <full_name>Arianna Elizabeth Johns</full_name>
+    <last_logout>Fri Jun 28 05:41:36 2013</last_logout>
+    <last_activity>Fri Jun 28 07:58:04 2013</last_activity>
+    <email>ajohns@atlantis.whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+  <user>
+    <name>rhagg</name>
+    <password encoding="SHA256">E7f8sO/aYjIVmRUfqvcmzj6xqg6SCSd6uWqT9ArocmC</password>
+    <full_name>Robert Hagg</full_name>
+    <last_logout>Wed Jul 17 07:10:03 2013</last_logout>
+    <last_activity>Thu Jul 18 16:47:58 2013</last_activity>
+    <email>rhagg@whoi.edu</email>
+    <inactive>0</inactive>
+    <email_notify>
+      <logbook>General</logbook>
+      <logbook>Atlantis</logbook>
+      <logbook>CTD</logbook>
+      <logbook>Knudsen_320B</logbook>
+      <logbook>Knudsen_3260</logbook>
+      <logbook>Multibeam</logbook>
+      <logbook>ADCP</logbook>
+      <logbook>imet_tower</logbook>
+      <logbook>xbt</logbook>
+      <logbook>magnetometer</logbook>
+      <logbook>portosal</logbook>
+      <logbook>flow_thru_system</logbook>
+      <logbook>milliq</logbook>
+      <logbook>science_wiring</logbook>
+      <logbook>atlantis_survey</logbook>
+      <logbook>ese_clock</logbook>
+      <logbook>freezers_reefers</logbook>
+      <logbook>SSSG_Phins</logbook>
+      <logbook>coring &amp; dredging</logbook>
+      <logbook>misc_science</logbook>
+      <logbook>Winches</logbook>
+      <logbook>SHIP_Phins</logbook>
+      <logbook>GPS</logbook>
+      <logbook>3PS</logbook>
+      <logbook>IP_Cameras</logbook>
+      <logbook>video_equipment</logbook>
+      <logbook>sonardyne</logbook>
+      <logbook>Network</logbook>
+      <logbook>HiSeasNet</logbook>
+      <logbook>Sailor500</logbook>
+      <logbook>NeraB</logbook>
+      <logbook>SWAP</logbook>
+      <logbook>VOIP_phones</logbook>
+      <logbook>Computers</logbook>
+      <logbook>Software</logbook>
+      <logbook>Printers_and_plotters</logbook>
+      <logbook>Ship_website</logbook>
+      <logbook>calliope</logbook>
+      <logbook>science_data</logbook>
+      <logbook>usb_drives</logbook>
+      <logbook>DVD_and_other_media</logbook>
+      <logbook>dsLog</logbook>
+      <logbook>elog</logbook>
+      <logbook>instruction_sheets</logbook>
+    </email_notify>
+  </user>
+</list>

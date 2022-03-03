@@ -1,0 +1,24 @@
+$@MID@$: 86
+Date: Tue, 02 Jul 2019 16:15:46 +0000
+Author: ah - catie note
+S/N: 
+Type: General Problem
+Component: DAC
+Subject: AGC Stuck at low value
+Cruise: at42-12
+Attachment: 
+Encoding: HTML
+========================================
+<p>If AGC is stuck down ~ 1400 or so:</p>
+
+<p>&gt;&nbsp; Hit next until&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAT&nbsp;&nbsp; THRS&nbsp;&nbsp; MHZ&nbsp;&nbsp; NID&nbsp;&nbsp;&nbsp; display</p>
+
+<p>&gt; Hit Enter unti&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FEC SCPC</p>
+
+<p>&gt;Put cursor on SCPC</p>
+
+<p>&gt; Press down until AGC goes back to ~1800</p>
+
+<p>&gt;Put back to FEC SCPC &amp; Enter</p>
+
+<p>&gt;AGC should be unlocked now</p>

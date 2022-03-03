@@ -1,0 +1,75 @@
+$@MID@$: 19
+Date: Tue, 21 Jun 2011 20:31:38 +0000
+Author: lstolp
+Type: Routine
+name: ftp | linus | mnemosyn
+server type: backup
+OS: Linux
+Location: Main Lab
+Category: backups
+Subject: rsync and snapshottars
+Cruise: at18-06
+Attachment: 
+Encoding: HTML
+========================================
+<p>1. running an rsync on ftp to memory to copy ftp:/home/data to memory:/home/data<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;on memory /home/data/science is local to memory<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;user atlantis on ftp rsync's as user atlantis to memory<br />
+&nbsp;&nbsp;&nbsp; atlantis@ftp:~/bin$ crontab -l<br />
+&nbsp;&nbsp;&nbsp; # m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+&nbsp;&nbsp;&nbsp; */2 * * * * /home/atlantis/bin/rsync_data&gt;&gt;/home/atlantis/logfiles/rsync_data.log 2&gt;&amp;1<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;ftp:/home/atlatnis/bin has the executables<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;writes a log file to: ftp:/home/atlantis/bin/logfiles<br />
+<br />
+2.&nbsp; mnemosyn.science.atlantis.whoi.edu<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;as user atlantis rsync's /home/sci0/outgoing and /home/sci0/incoming<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;rsync's with 128.128.250.51<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;science has access via anonymous ftp and user atsci<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;run as a cronjob every 20 minutes, executables in <br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;memory:/home/atlantis/bin<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;writes a logfile: memory:/home/atlantis/logfiles<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;memory:/home/sssg holds sssg stuff<br />
+&nbsp;&nbsp; &nbsp;&bull;&nbsp;&nbsp; &nbsp;created smb.conf to export /home/data and /home/sci0<br />
+&nbsp;</p>
+<p>***********************prior to July 2011</p>
+<p>For each computer in /root/bin there is an:</p>
+<p>rsync_sssg</p>
+<p>that does the rsync-ing, an rsync-exclude holds directory's and files that are not rsync'd. This can be tweaked.&nbsp; Memory does not have one</p>
+<p>I was not sure that at this point it needed one. memory:/home/data/ is linus:/home/data backup. This is the current cruise backup of shipboard collected data.</p>
+<p>/root/bin/snapshottar&nbsp; and&nbsp; donttar.snap also backup a smaller set of files.</p>
+<p>There are older tar files of memory, linus, and ftp in memory:/backups/</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: larger;"><strong>ftp root crontab</strong></span></p>
+<p>## rsycn for backups<br />
+15 8 * * * /root/bin/rsync_sssg memory 2&amp;&gt; /dev/null<br />
+15 10 * * 2 /root/bin/rsync_sssg linux 2&amp;&gt; /dev/null<br />
+#18 3 * * * source /etc/profile;/root/bin/rsync_mini&nbsp; 2&amp;&gt; /dev/null<br />
+<br />
+## snapshottar<br />
+15 6 * * * /root/bin/snapshottar<br />
+15 7 * * * /usr/bin/scp /ftp.atlantis.snap.tar linus:/.<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: larger;"><strong>Linus root cron:</strong></span></p>
+<p>### rsync backups<br />
+&nbsp; 15 8 * * * /root/bin/rsync_sssg sssg@ftp 2&amp;&gt; /dev/null<br />
+&nbsp; 15 9 * * 2 /root/bin/rsync_sssg sssg@mnemosyn<br />
+#&nbsp;&nbsp; 15 10 * * 2 /root/bin/rsync_sssg ftptemp 2&amp;&gt; /dev/null<br />
+<br />
+## snapshottar<br />
+15 6 * * * /root/bin/snapshottar<br />
+15 7 * * * /usr/bin/scp /linus.atlantis.snap.tar sssg@ftp:/backups/.<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: larger;"><strong>memory root crontab:</strong></span></p>
+<p>root@mnemosyn:~/bin# crontab -l<br />
+# m h&nbsp; dom mon dow&nbsp;&nbsp; command<br />
+## snapshottar<br />
+15 6 * * * /root/bin/snapshottar<br />
+15 7 * * * /usr/bin/scp /mnemosyn.snap.tar sssg@ftp:/backups/.<br />
+&nbsp;</p>

@@ -1,0 +1,210 @@
+telnet:/$ errorlog delete
+Delete error log from FLASH
+telnet:/$ errorlog
+Error Log for Unit Serial number: 11449018
+Error Log from previous power cycles
+ Version: 1.19, build Build-bganx_bdu.as_1_19-5, UTC Tue Dec 10 10:33:23 2013
+-------------------------------------------------------------------------------
+Error Log from current power cycle
+ Version: 1.19, build Build-bganx_bdu.as_1_19-5, UTC Tue Dec 10 10:33:23 2013
+-------------------------------------------------------------------------------
+telnet:/$ date
+Mon Apr 18 10:50:12 2016
+telnet:/$ 
+
+
+telnet:/$ nat -s | more
+Nat interface                  : 1
+NatEnable                      : 2
+NaptEnable                     : 2
+TwoWayNatEnable                : 2
+Reserved                       : 0
+NumOfTranslations              : 0
+NumOfActiveSessions            : 0
+NumOfPktsDropped               : 0
+NumOfSessionsClosed            : 0
+CurrTranslatedLocIpAddr        : 0.0.0.0
+TranslatedLocIpRangeEnd        : 0.0.0.0
+CurrDnsTranslatedLocIpInUse    : 0.0.0.0
+CurrDnsTranslatedLocIpRangeEnd : 0.0.0.0
+RowStatus                      : 0x1
+
+Nat interface                  : 2
+NatEnable                      : 2
+NaptEnable                     : 2
+TwoWayNatEnable                : 2
+Reserved                       : 0
+NumOfTranslations              : 0
+NumOfActiveSessions            : 0
+NumOfPktsDropped               : 0
+NumOfSessionsClosed            : 0
+CurrTranslatedLocIpAddr        : 0.0.0.0
+TranslatedLocIpRangeEnd        : 0.0.0.0
+CurrDnsTranslatedLocIpInUse    : 0.0.0.0
+CurrDnsTranslatedLocIpRangeEnd : 0.0.0.0
+RowStatus                      : 0x63
+
+Nat interface                  : 3
+NatEnable                      : 1
+NaptEnable                     : 1
+TwoWayNatEnable                : 1
+Reserved                       : 0
+NumOfTranslations              : 65457
+NumOfActiveSessions            : 37
+NumOfPktsDropped               : 2963
+NumOfSessionsClosed            : 21557
+CurrTranslatedLocIpAddr        : 216.86.249.253
+TranslatedLocIpRangeEnd        : 216.86.249.253
+CurrDnsTranslatedLocIpInUse    : 216.86.249.253
+CurrDnsTranslatedLocIpRangeEnd : 216.86.249.253
+RowStatus                      : 0x1
+
+Nat interface                  : 4
+NatEnable                      : 2
+NaptEnable                     : 2
+TwoWayNatEnable                : 2
+Reserved                       : 0
+NumOfTranslations              : 0
+NumOfActiveSessions            : 0
+NumOfPktsDropped               : 0
+NumOfSessionsClosed            : 0
+CurrTranslatedLocIpAddr        : 0.0.0.0
+TranslatedLocIpRangeEnd        : 0.0.0.0
+CurrDnsTranslatedLocIpInUse    : 0.0.0.0
+CurrDnsTranslatedLocIpRangeEnd : 0.0.0.0
+RowStatus                      : 0x63
+
+Nat interface                  : 5
+NatEnable                      : 1
+NaptEnable                     : 1
+TwoWayNatEnable                : 1
+Reserved                       : 0
+NumOfTranslations              : 0
+NumOfActiveSessions            : 0
+NumOfPktsDropped               : 0
+NumOfSessionsClosed            : 0
+CurrTranslatedLocIpAddr        : 10.166.135.17
+TranslatedLocIpRangeEnd        : 10.166.135.17
+CurrDnsTranslatedLocIpInUse    : 10.166.135.17
+CurrDnsTranslatedLocIpRangeEnd : 10.166.135.17
+RowStatus                      : 0x1
+
+Successful pool reservations: 161933
+Failed pool reservations: 0
+Global scans: 0
+Global scans hits: 0
+Nat delete entry failure - no loc hash node: 0
+Nat delete entry failure - no out hash node: 0
+Nat delete entry failure - no global hash node: 0
+Nat delete entry failure - no Iid Oid node: 0
+Nat search failure hits - DNS: 10921
+Nat search failure hits - other: 0
+UpdateGlobalHashOut: 0
+TCP inactivity timeout: 3600
+Malformed: 0
+
+
+telnet:/$ showMicrelCounters 
+
+Mac address: 00.11.cf.03.92.fe
+Marvell status: port1=up port2=up port3=down port4=up port5=down port6=down port7=down 
+Port                  :       Host          1          2
+Status                :          -         up       down
+Speed                 :          -    100Mbps     10Mbps
+Duplex                :          -       full       half
+rxBytes               :  231032516  210700307          0
+rxBytesHighPrio       :          0          0          0
+rxUndersizePkts       :          0          0          0
+rxFragments           :          0          0          0
+rxOversize            :          0          0          0
+rxJabbers             :          0          0          0
+rxSymbolError         :          0          0          0
+rxCRCerror            :          0          0          0
+rxAlignmentError      :          0          0          0
+rxControl8088         :          0          0          0
+rxPausePkts           :         18          0          0
+rxBroadcast           :        685      38467          0
+rxMulticast           :          3     177213          0
+rxUnicast             :    1816886    2077674          0
+rx64bytes             :     810410          0          0
+rx65to127bytes        :     807332    2039193          0
+rx128to255bytes       :      96610     221003          0
+rx256to511bytes       :      42257      26300          0
+rx512to1023bytes      :       3559       6303          0
+rx1024to1522bytes     :      57424        555          0
+txBytes               :  210700307  231031364          0
+txBytesHighPrio       :          0          0          0
+txLateCollision       :          0          0          0
+txPausePkts           :          0          0          0
+txBroadcast           :      38467        685          0
+txMulticast           :     177213          3          0
+txUnicast             :    2077674    1816886          0
+txDeferred            :          0          0          0
+txTotalCollision      :          0          0          0
+txExcessiveCollision  :          0          0          0
+txSingleCollision     :          0          0          0
+txMultipleCollision   :          0          0          0
+rxDropPackets         :          -          0          0
+txDropPackets         :          -          0          0
+txRingFull            :          0
+rxBufAllocFailed      :          0
+rxDescriptorErrors    :          0
+rxLengthError         :        333
+rxLengthWarning       :        359
+activeRxBufCount      :          2
+maxActiveRxBufCount   :        250
+activeRxBufDropCount  :          0
+overloadRxBufDropCount:          5
+drop_packet_percentage:          0
+last reported cpuload :         11
+PacketReceived        :    2292988
+telnet:/$ 
+
+
+telnet:/$ showMarvellCounters 
+Marvell Lan Switch Statistic Counters
+Port                          0          1          2          3          4 
+Status                       Up         Up         Up       Down         Up 
+Speed                   100Mbit    100Mbit    100Mbit     10Mbit    100Mbit 
+Duplex                     Full       Full       Full       Half       Full 
+rxUnicast               1817208      21554      55927       8842    1991807 
+rxBroadcast                 685       5922      32490         13         61 
+rxPause                       0          0          0          0          0 
+rxMulticast                   3         22     177117        114          0 
+rxCRCerror                    0          0          0          0          0 
+rxAlignError                  0          0          0          0          0 
+rxGoodBytes           231087482    4832280   30334754    1367754  165042371 
+rxBadBytes                    0          0          0          0          0 
+rxUndersize                   0          0          0          0          0 
+rxFragments                   0          0          0          0          0 
+rx64bytes                810509      10099     102330        552     975696 
+rx65to127bytes           807484      11706      87286       6538     845524 
+rx128to255bytes           96628        432      57687        507     162351 
+rx256to511bytes           42272        812      17840        459       7194 
+rx512to1023bytes           3559       3960        385        857       1103 
+rx1024toMaxBytes          57444        489          6         56          0 
+rxJabber                      0          0          0          0          0 
+rxOversize                    0          0          0          0          0 
+rxDiscards                    0          0          0          0          0 
+rxFiltered                    0          0          0          0          0 
+txUnicast               2078056      26516      68532       6402    1715917 
+txBroadcast               38476      33250       6681       9593      39096 
+txPause                       0          0          0          0          0 
+txMulticast              177244     177237        139      29902     177257 
+txCRCerror                    0          0          0          0          0 
+txBytes               210742481   45264163   11381927    5848271  215440772 
+tx64bytes                     0     105507      24003      21219     897602 
+tx65to127bytes          2039564      51694      32583      11987     819509 
+tx128to255bytes          221035      57904        382      10501     152545 
+tx256to511bytes           26318       4936      17804        953      20360 
+tx512to1023bytes           6304        551        143        486       2409 
+tx1024toMaxBytes            555      16411        437        751      39845 
+txCollisions                  0          0          0          0          0 
+txLateCollision               0          0          0          0          0 
+txExcessiveCollis             0          0          0          0          0 
+txMultipleCollis              0          0          0          0          0 
+txSingleCollis                0          0          0          0          0 
+txDeferred                    0          0          0          0          0 
+txFiltered                    8          0          0     176827         14 
+txDiscards                    0          0          0          0          0 
+

@@ -1,0 +1,18 @@
+$@MID@$: 13
+Date: Sun, 06 Nov 2011 10:37:47 +0000
+Author: AH
+System: EM122 - Kongsberg
+Type: General Problem
+Category: Other
+S/N: 
+Subject / Summary: GGA missing from COM1 errors
+Cruise: at18-13
+Attachment: 
+Encoding: HTML
+========================================
+<p>WE've been getting error messages that &quot;GGA is missing from COM1&quot; - the TRU is apparently missing a GGA string every, exactly 12 minutes and 30 seconds once it starts happening.</p>
+<p>We don't know if it is something with the em122 system/softwre, or somethinfg with the CNAV.</p>
+<p>I tried feeding the 90-D GPS to the TRU instead to see if the error went away (changed to 9600 baud, eliminated all strings except GGA &amp; ZDA) - this did not work - error messages increased substantially</p>
+<p>I also tried up'ing the baud rate of the CNAV to 19200 baud - this doesn't seem to make a difference.</p>
+<p>&nbsp;</p>
+<p>Each time I try something, I wait until I am actually seeing the error message, as we sometimes go hours without it (usually it disappears during the night)</p>

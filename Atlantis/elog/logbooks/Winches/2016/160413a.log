@@ -1,0 +1,41 @@
+$@MID@$: 51
+Date: Wed, 13 Apr 2016 13:01:32 +0000
+Author: AH - Catie sent info in email - 18-Feb-2016 and 19-Feb-2016
+Type: 
+Winch: 
+Wire: fiber optic | 0.681 A302351
+Category: Other
+Subject: FO slip ring and .681 config
+Cruise: at33-03
+Attachment: 160413_130355_SlipRingConductors.jpg,160413_130419_MM-SMrepeater.jpg
+Encoding: HTML
+========================================
+<p>Here's a summary of what Atlantis has currently-<br />
+<br />
+-Standard 0.681 cable with 3 single mode fibers<br />
+<br />
+-Slip ring s/n 176870P, with -1- single mode fiber and -3- multimode fibers (all currently<br />
+terminated with ST connectors). Jason brings and uses their own slip ring that contains 3(?)<br />
+single mode fibers.<br />
+<br />
+-There is one single mode -breakout- cable that runs from the slip ring jbox in the winch room<br />
+to the computer lab forward. It contains 4 single mode fibers.<br />
+<br />
+-Jason has a single mode and multimode breakout cable with 4 fibers each that run from the<br />
+winch room to the 01 deck van area.<br />
+<br />
+Catie<br />
+&nbsp;</p>
+<p>Hi John-<br />
+<br />
+I'm attaching a photo of the conductors inside the slipring.<br />
+There is one singlemode (yellow), 3 multimode (gray), 4 heavy gauge conductors (red), and 2<br />
+thinner conductors (orange).<br />
+<br />
+The j-box mounted on the side of the drum has notation on it that it contains a multimode to<br />
+single mode repeater (picture attached), but I can't really tell you anything more about it<br />
+than that.&nbsp; It does not appear to be connected to anything presently on the slip ring or the<br />
+.681 end.<br />
+<br />
+Catie<br />
+&nbsp;</p>

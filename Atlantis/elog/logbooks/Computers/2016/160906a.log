@@ -1,0 +1,39 @@
+$@MID@$: 80
+Date: Tue, 06 Sep 2016 20:51:41 +0000
+Author: AH - LAura emial
+Type: 
+name: Macs
+server type: network
+OS: Mac-OS
+Location: Other
+Category: Other
+Subject: Running in shells / screens
+Cruise: at37-02
+Attachment: 
+Encoding: HTML
+========================================
+<p>If you ssh over to ftp type screen, this will create a screen (that was helpful :))that will continue to run when you log out<br />
+or get kicked off, so if you run ./mk_sciusb the program will continue to run in the screen.<br />
+You can do a lot with it, these the commands I usually use:<br />
+<br />
+<br />
+screen -S&nbsp; sciusb&nbsp; # will start a screen w/ name sciusb<br />
+ctrl a d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # to detach from it, leaves it running in the<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background<br />
+screen -ls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # will show a listing of all the screens you have<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; active<br />
+<br />
+lauras-MacBook-Pro:~ laura$ screen -ls<br />
+There are screens on:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1003.sciusb&nbsp;&nbsp;&nbsp;&nbsp; (Detached)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1008.ttys004.v-128-128-10-140&nbsp;&nbsp; (Detached)<br />
+2 Sockets in /var/folders/br/r_bz_1zx3d132gjg0_75vwsr0000gn/T/.screen.<br />
+<br />
+screen -r sciusb&nbsp; # will let you reattach to the screen running mk_sciusb<br />
+<br />
+exit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # from w/in screen will kill it<br />
+<br />
+crl a H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # from w/in screen will keep a log file of everything<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you do from w/in screen and the second time will stop<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the logging.<br />
+&nbsp;</p>

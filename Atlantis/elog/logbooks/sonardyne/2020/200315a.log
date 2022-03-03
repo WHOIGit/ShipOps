@@ -1,0 +1,18 @@
+$@MID@$: 37
+Date: Sun, 15 Mar 2020 23:59:54 +0000
+Author: AH
+Type: General Problem
+Category: Software
+equipment: Sonardyne software
+Subject: Can't Update UTM zone if Waypoints are Entered in System
+Cruise: at42-25
+Attachment: 
+Encoding: HTML
+========================================
+<p>From cruise report:</p>
+
+<p><strong>USBL:</strong></p>
+
+<p>Alvin had some in-sphere nav issues on a couple of dives, problem was traced to the waypoints that had been entered into Ranger2 during AT42-23. Because the USBL_2_DVL program sending location down to the sub via SMS runs on the Ranger2 computer, the UTM zone of sub nav was way off.&nbsp; When waypoints are entered into Ranger2, the system will not update its UTM zone. Once the waypoints were deleted, the UTM zone was updated and in-sphere sub nav displayed normally once again.</p>
+
+<p>&nbsp;</p>

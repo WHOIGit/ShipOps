@@ -1,0 +1,23 @@
+$@MID@$: 1
+Date: Sun, 30 May 2010 20:49:12 +0000
+Author: AH
+S/N: 
+Type: General Problem
+Category: General
+Subject: OS75 temperature registering as zero
+Cruise: at15-65
+Attachment: 
+Encoding: HTML
+========================================
+<p>Email from Jules (26-May-10):</p>
+<p>It was recently brought to my attention that the<br />
+temperature on the OS75 has been registering as<br />
+zero for the last 5 days.&nbsp; This did not happen gradually,<br />
+but between &quot;stop pinging&quot; and &quot;start pinging&quot;.&nbsp; As<br />
+far as I know, there was no cycling of power in the<br />
+interim, but the last data from the previous cruise leg shows<br />
+reasonable temperatures and the first data from the present<br />
+cruise leg (i.e. *as soon as pinging started*).</p>
+<p>&nbsp;</p>
+<p>Catie recalled the same thing happening back in Sept. of 2009.&nbsp; At that time stopping and restarting data acquisition solved the problem.&nbsp; </p>
+<p>This was done again (the deck unit was also turned off and on) and the temperature came back fine.</p>

@@ -1,0 +1,12 @@
+$@MID@$: 76
+Date: Thu, 15 Nov 2018 15:51:10 +0000
+Author: Catie
+S/N: 
+Type: Configuration
+equipment: Moxa
+Subject: Added moxa 199.92.161.192 to iptables
+Cruise: at42-05
+Attachment: 
+Encoding: HTML
+========================================
+<p>Moxa 199.92.161.192 was not in iptables for some reason, so centerbeam depth could not be relayed to the science network. Added it to iptables with the other moxas.</p>

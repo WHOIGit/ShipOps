@@ -1,0 +1,404 @@
+$@MID@$: 1
+Date: Thu, 18 Aug 2016 19:37:45 +0000
+Author: AH - Ken Feldman email
+S/N: 
+Type: Fix
+equipment: 
+Subject: Telepresence During at36 - summary
+Cruise: at37-01
+Attachment: 
+Encoding: HTML
+========================================
+<p><style type="text/css">
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Menlo Regular";
+	panose-1:2 11 6 9 3 8 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Date: Tue, 9 Aug 2016 11:37:47 -0400</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">From: Ken Feldman &lt;ksf1@uw.edu&gt;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;, SSSG List &lt;sssg@whoi.edu&gt;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Cc: Eric W. Bates &lt;ericx@whoi.edu&gt;, Kevin Walsh &lt;kwalsh@ucsd.edu&gt;, Karl Kapusta &lt;kkapusta@comm-systems.com&gt;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Subject: Expanded Satellite Coverage for Atlantis/Alvin/Sentry cruise AT36 </span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Parts/Attachments:</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;&nbsp; 1&nbsp;&nbsp; OK&nbsp;&nbsp;&nbsp; ~217 lines&nbsp; Text</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;&nbsp; 2 Shown&nbsp;&nbsp; ~271 lines&nbsp; Text</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">----------------------------------------</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Expanded Satellite Coverage for Atlantis/Alvin/Sentry cruise AT36</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Cruise AT36 was a chief scientist training cruise with half the participants on shore, utilizing telepresence capabilities to link the two groups of scientists as well as foster outreach and media coverage.</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;"><br />
+</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">There were several obstacles along the path to full telepresence operations which took a little time to sort out but in the end the telepresence effort was successful on both the science collaboration and media/outreach </span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">aspects. &nbsp;A New York Times Science Facebook Live event garnered over 35,000 active users during the event with over 65,000 views to date.</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;"><br />
+</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">The expanded service was set up through HiSeasNet and utilized the existing infrastructure in place for regular HiSeasNet service, but with a larger satellite segment. &nbsp;Regular HiSeasNet traffic flows from ship to</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">satellite to an earth station at UCSD, then through a GRE tunnel through the internet to WHOI so that the ship appears to be on campus at WHOI, then from there traffic goes to wherever on the internet it is destined. &nbsp;</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;"><br />
+</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">For the telepresence a VPN tunnel was created between the telepresence equipment on Atlantis and the University of Rhode Island Inner Space Center (ISC).</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;"><br />
+</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">At first there were problems with the Teledyne Q-Flex satellite modem that prevented communications from ship to shore. &nbsp;These problems resulted in a new set of procedures being developed when performing configuration</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">changes on these modems fleet-wide.&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">The second problem was a performance issue somewhere in GRE tunnel between UCSD and WHOI. &nbsp;Performance was not acceptable for streaming video. &nbsp;We identified an old router as the likely source. &nbsp;That was replaced but did</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">not improve the condition. &nbsp;To work around this problem routing at UCSD was altered to ensure that traffic from Atlantis to ISC did not travel through the GRE tunnel to WHOI first. &nbsp;This allowed video streaming from ship</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">to shore.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Next there were problems with the satellite connection dropping on a regular basis. &nbsp;This turned out to be due to three conditions. &nbsp;First there was a part within the radome on Atlantis that was intermittently failing.</span></span></span>&nbsp; <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">That part (level cage) was replaced and the connection was much improved. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">T</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">here were still some drops where the modem reported that the connection was solid but details in the log file of the modem showed that in fact the signal was falling too low for brief periods of time and thus was</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">cutting out. &nbsp;Kevin, in consultation with the satellite provider, was able to get the ok for Atlantis to increase power levels on 3 occasions, plus we optimized some of the cabling on the ship to improve signal strength.</span></span></span>&nbsp; <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">This also helped improve the connection.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">The third condition causing telepresence connections to drop was due to too much network traffic overloading the capacity of the satellite connection. &nbsp;This caused delays in transmitting data that were occasionally</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">enough to cause the telepresence VPN tunnel to shut down for brief periods. &nbsp;Various quality of service / traffic shaping options were investigated. &nbsp;In the end manual monitoring of the traffic and judicious suspension</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">of non-telepresence traffic was enough to maintain steady communications for the high value telepresence events.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">At some point after the bypass was implemented at the UCSD router, Eric discovered a very old 10 Mbps interface in the path leading up to the WHOI router that had been replaced and realized that the router was sending</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">too much data to that old interface. &nbsp;He corrected that condition and traffic through the GRE tunnel improved. &nbsp;The bypass at UCSD was kept in place until the last day of the cruise since all was working well. &nbsp;We did</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">verify that performance was acceptable for telepresence through the GRE tunnel between UCSD and WHOI as-is for this cruise, and operated the telepresence through the GRE tunnel successfully for the last 12 hours of the</span></span></span> <span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">cruise. &nbsp;The 10Mbps circuit should still be removed from the GRE tunnel path at some point before the next telepresence event.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal">&nbsp;</p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;"><br />
+</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">A summary log of activities is below. &nbsp;More details are available in the HiSeasNet Slack channel #rv-atlantis. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Summary of Activities by date</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160724 - Karl &amp; Kevin got satellite system switched over to expanded bandwith.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Shore talking, but no communication with the ship.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160725 - Karl, Kevin, Jon, Dave &nbsp;working on problem.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ken joined at about 2100EDT</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Kevin could talk to ship satellite, ship could not see modem.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Verified problem is in modem interface.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160726 - Discovered that modem needs to save settings, load defaults, reload saved settings, reboot&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">After that comms worked between ship and modem.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Got ISC VPN up and running. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">ship side is 128.128.252.9, shore side is 131.128.93.132</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Performance bad.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">UDP iperf tests showed 53% drop in packets to a server at UW.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">several similar tests to a WHOI server showed substantially similar results.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160727 - Verified full 7Mbps going through modem, received at UCSD, and pushed into WHOI GRE tunnel</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">tried different ports for iperf, same results.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">tried iperf server on WHOI server, same results.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Proposed using some addresses from Endeavor to use the URI GRE tunnel from UCSD instead of the WHOI GRE tunnel.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Added URI data server to mix of iperf servers to test against.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">A c2600 router was used as the WHOI end of the GRE tunnel and is old. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Eric tried to swap it out for a c2911router but was unsuccessful this day.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Laura tried swapping to an alternate interface on same router, no luck</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">tried to a backup router, but it was older and running older sw, so no go.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160728 - Eric tried rolling in the c2911 again and had BGP issues.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ship sailed, lots of dropouts. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Connection is good when up, but drops frequently and down for random lengths of time.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160728-160731 lots of troubleshooting and analysis to characterize problems(s).</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160731 - Power cycled radome pedestal.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">No apparent help. &nbsp;Might have made things worse.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ship modem power boost from -21 to -20.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Helped some, but not a lot.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Assigned IP addr to DAC, put it on network.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Tried adding Pilot Tones to the Sat carrier signals (both TX &amp; RX).</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Determined that modem often gives no indication of dropping Eb/No, but it is recorded in the modem log.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">so at least some of the times there is a dropout it is because the signal has gotten too low and PCMA unlock occurs.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Noticed that there are occasional but semi-frequent 0008 errors on the DAC. &nbsp;Details relayed to Karl.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160801 - Turned pilot tones back off, as recommended by Teledyne personnel.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Determined we have a HW and a traffic problem. &nbsp;Karl suggested replacing the level cage.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Looked at QoS options on modem. &nbsp;Not possible without changes to c2900 config. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Looked at QoS options for Cisco and also for ftp (linux - iptables tagging &amp; tc)</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160802 - Ken and Robbie swapped out Seatel Level Cage and recalibrated during 4 hour port stop.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Kevin changed ship modem TX clock source to receive reference.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ship modem power boost from -20 to -19.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ship modem power boost from -19 to -18.5.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160802-160805 - Signal much better and now staying up for hours at a time.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Still dropouts, but now only from too much data in shore -&gt; ship direction.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Looked at more QoS options, opted for manual approach at high usage times.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160805 - Pulled spectrum analyzer out of the loop so DAC signal goes directly to modem rather than through a splitter first.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Composite power level went from -39 to -44,&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">RX level now at 54.55, higher than was, but not yet to thresh of -53</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Kevin pursued determining if the large broadcaster next to us was causing interference.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Ship modem power boost from -19 to -18.5.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160806 - Ran tests to determine if WHOI GRE tunnel can now support telepresence. &nbsp;Excerpt from my email:</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Performed a number of two minute UDP iperf tests to a few servers as follows:</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;">&nbsp;</span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">1) Tested to a URI server and saw 6.99 Mbps throughput to the server, dropping 50 out of 71430 packets (0.07%). &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">2) Next tested to a server at WHOI and had 7.00 Mbps throughput with 0 packet loss.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">3) Just for good measure tested to a UW server and had 7.00 Mbps throughput, dropping 26 out of 71429 packets (0.036%)</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">3a) Kevin removed the bypass mapping on the UCSD router.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">4) Retested to the first URI server, this time through the GRE tunnel to WHOI and had 7.00 Mbps throughput, dropping 2 out of 71429 &nbsp;packets (0.0028%).</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">The telepresence connections are currently up, streaming 2 video feeds at 1Mbps each through the WHOI GRE tunnel to URI and all is working well. &nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">The 10Mbps circuit should still be removed from the GRE tunnel path at some point before the next telepresence event. &nbsp;Even if that circuit remained in place I am confident that performance should be acceptable for</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">increased bandwidth similar to the current configuration, as long as there are not overlapping increased bandwidth events on Atlantis and Armstrong.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">&nbsp;</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160807 - Transition ship to shore connection after arrival at WHOI dock.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Secured TX, end of satellite usage on ship at 1921 UTC.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">Secured TX from shore at 2359 UTC.</span></span></span></p>
+<p style="margin-bottom:0in;margin-bottom:.0001pt;mso-pagination:
+none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none" class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;"><span style="color: black;">160808 - Swap back to normal HSN frequencies.</span></span></span></p>
+<p class="MsoNormal"><span style="font-family: Verdana;"><span style="font-size: large;">&nbsp;</span></span></p>

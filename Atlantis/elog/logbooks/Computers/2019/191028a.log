@@ -1,0 +1,44 @@
+$@MID@$: 125
+Date: Mon, 28 Oct 2019 13:37:08 +0000
+Author: AH
+Type: General Problem
+name: linus
+server type: mail
+OS: Linux
+Location: Computer Lab
+Category: Hardware
+Subject: LINUS complaining - issues - LOOSE/MAYBE BAD SATA cable
+Cruise: at42-19
+Attachment: 191028_135858_linus_guts.jpg
+Encoding: HTML
+========================================
+<p>FIX - <strong>SATA cable not connecting tightly in Linus</strong> (did not test further, cable or SATA conenction on the motherboard could be bad too).&nbsp; See picture below.&nbsp; Started by making sure backups were up-to-date - guru had filled :(&nbsp; And updated linus2 mail accounts after copying and replacing oldlinus /etc/passwd; /etc/shadow; /etc/group; /etc/gshadow with up-to-date newer linus&#39; files (trying to insure correct uuids).&nbsp; After Linus came up and was happy and functional, I did not further test the SATA connection on the motherboard that is suspicious (right now plugged into empty drive slot) nor did I check the cable itself.&nbsp; Laura and I discussed, and with all on the plate right now, decided to leave well enough alone until there is a little more down time for testing.</p>
+
+<p>PROBLEM:</p>
+
+<p>&quot;Linus looks &nbsp;to be having issues. The load average is still up around 3 and dmesg is showing all sorts issues. It<br />
+complains about /dev/sdc which is your root drive, which is a bit scary.</p>
+
+<p>[ &nbsp; &nbsp;2.570759] EXT4-fs (sdc2): INFO: recovery required on readonly filesystem<br />
+[ &nbsp; &nbsp;2.571825] EXT4-fs (sdc2): write access will be enabled during recovery<br />
+[ &nbsp; &nbsp;4.778237] EXT4-fs (sdc2): orphan cleanup on readonly fs<br />
+[ &nbsp; &nbsp;4.910976] EXT4-fs (sdc2): 19 orphan inodes deleted<br />
+[ &nbsp; &nbsp;4.912117] EXT4-fs (sdc2): recovery complete<br />
+[ &nbsp; &nbsp;5.189586] EXT4-fs (sdc2): mounted filesystem with ordered data mode. Opts: (null)<br />
+[ &nbsp; &nbsp;9.316328] Adding 8326140k swap on /dev/sdc3. &nbsp;Priority:-1 extents:1 across:8326140k FS&quot;</p>
+
+<p>&nbsp;</p>
+
+<p>&quot;I feel like we had a similar problem on linus (or maybe it was ftp), but we are getting a lot kernel errors:</p>
+
+<p>[28288.491018] ata2.00: failed command: WRITE FPDMA QUEUED<br />
+[28288.491020] ata2.00: cmd 61/00:b8:98:d1:84/04:00:a8:00:00/40 tag 23 ncq 524288 out<br />
+[28288.491020]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; res 40/00:6c:00:0c:86/00:00:a8:00:00/40 Emask 0x10 (ATA bus error)<br />
+[28288.491020] ata2.00: status: { DRDY }<br />
+[28288.491020] ata2.00: failed command: WRITE FPDMA QUEUED<br />
+[28288.491022] ata2.00: cmd 61/20:c0:98:d5:84/03:00:a8:00:00/40 tag 24 ncq 409600 out<br />
+[28288.491022]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; res 40/00:6c:00:0c:86/00:00:a8:00:00/40 Emask 0x10 (ATA bus error)</p>
+
+<p>I feel like this happened before.. and the sata cable was reseated and maybe plugged into another SATA port, and all the errors went away.</p>
+
+<p>Here is an article that seems https://serverfault.com/questions/952148/failed-command-write-fpdma-queued-cause-of-server-running-slow&nbsp; &quot;</p>

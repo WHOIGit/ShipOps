@@ -1,0 +1,149 @@
+$@MID@$: 66
+Date: Fri, 27 Apr 2018 16:50:26 +0000
+Author: Catie
+Sensor: flowmeter
+S/N: 
+Calibration Date: 
+Type: Inventory
+Category: 
+Subject: Installed new pump and flowbot
+Cruise: at40-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed new flowbot...data is flowing, however data are bad (mostly 0&#39;s), so has not been incorporated into dsLog yet.</p>
+
+<p>Also installed new $20 pump to replace seabird pump in sensor loop.</p>
+
+<p>FLOWBOT TROUBLESHOOTING EMAIL (around 25-Apr-2018):</p>
+
+<p>Date: Thu, 26 Apr 2018 21:33:23 +0000 (UTC)<br />
+From: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+To: Tim Thiel &lt;tthiel@thieleng.com&gt;<br />
+Cc: Laura Stolp &lt;lstolp@whoi.edu&gt;<br />
+Subject: Re: Atlantis flow</p>
+
+<p>Hi Tim-<br />
+Checked this out this afternoon. Yes, I&#39;ve got short from Teensy 13 to resistor, short from J2 15 to resistor, and 100 Ohms between J2 15<br />
+and Teensy 13.<br />
+Catie</p>
+
+<p>On Wed, 25 Apr 2018, Tim Thiel wrote:</p>
+
+<p>&gt;&nbsp;<br />
+&gt; Ok. &nbsp;I&#39;m hearing that when you look at pin 13 of the Teensy module the trace is a solid flat horizontal line at 3 volts.<br />
+&gt;&nbsp;<br />
+&gt; If someone can take a look with an ohm-meter. &nbsp;Between Pin 15 of J2 (the off-board connector that goes to the brass flow meter and pin 13<br />
+&gt; of the Teensy module should be 100 ohms. &nbsp;The 100-ohm SMD resistor R66 provides the connection between these two pins. &nbsp;R66 is<br />
+&gt; immediately adjacent to J2-pin 15. You should see:<br />
+&gt; &nbsp;- a short from one side of the resistor to J2-15<br />
+&gt; &nbsp;- a short from the other side of the resistor to Teensy-pin 13<br />
+&gt; &nbsp;- 100 ohms from J2-15 to Teensy-pin 13<br />
+&gt;&nbsp;<br />
+&gt; Not sure what else to suggest. &nbsp;I have a couple of crazy ideas but all of them are negated by the fact that the suspect hardware was<br />
+&gt; working at one point.<br />
+&gt;&nbsp;<br />
+&gt; If you get a chance to explore with the meter, let me know what you see.<br />
+&gt;&nbsp;<br />
+&gt; Thanks,<br />
+&gt;&nbsp;<br />
+&gt; Tim<br />
+&gt; On 4/25/2018 5:34 PM, Laura Stolp wrote:<br />
+&gt; &gt; sending pictures w/ scope.<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; Wiring checked out as:<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; 5 volts on red/black (power and ground) so it is getting good power, going to sensor.<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; 3 volts square wave on pin 15 and ground on input connector from sensor, picture from lstolp@gmail.com<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; ground to 13 on teensy flat at 3 volts<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; laura and catie (mostly catie)<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; On Wed, 25 Apr 2018, Tim Thiel wrote:<br />
+&gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; hi lws,<br />
+&gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; I think I have some calibrated meters. &nbsp;I bought some extras (thieleng funds) and calibrated them when I did the run in December.<br />
+&gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; Yes pin 13 is the LED.<br />
+&gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; Let me know what else I can do.<br />
+&gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; tet<br />
+&gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; On 4/25/2018 10:17 AM, Laura Stolp wrote:<br />
+&gt; &gt; &gt; &gt; Hi tet,<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; I am not sure what Hugh is doing with the Tioga flow meter. I chatted briefly with him Monday and he is convinced that the problem<br />
+&gt; &gt; &gt; &gt; is the teensy board.<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; The Armstrong flow meter broke at the sensor, the wire corroded so I had them take the Atlantis one, all the parts and pieces.</p>
+
+<p>&gt; &gt; &gt; &gt; Catie put the Armstrong one on the Atlantis (I ordered up some more flow meters that we will need to calibrate). We have the flow<br />
+&gt; &gt; &gt; &gt; up and running, but we are not getting any data just zeros.<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; This is from today, Catie has the water flowing (slowly).<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162354.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162355.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162356.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162357.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162358.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162359.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162360.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162361.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162362.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162363.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162364.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 13, 0.0, 0.0, 0.0, 0.0, 162365.000<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; This is the version information I get.<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; FLOW - Rev. 0.006 - Built at Oct &nbsp;6 2016 16:49:46<br />
+&gt; &gt; &gt; &gt; BoardId: TEENSY-232 - Rev. 1.1 - S/N 1102<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; I repowered it:<br />
+&gt; &gt; &gt; &gt; **********************************************************************<br />
+&gt; &gt; &gt; &gt; FLOWMETER - Rev. 0.006 - Built at Oct &nbsp;6 2016 16:49:46<br />
+&gt; &gt; &gt; &gt; BoardId: TEENSY-232 - Rev. 1.1 - S/N 1102<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; --------------------------------------------------<br />
+&gt; &gt; &gt; &gt; CFG settingsVersion = 1<br />
+&gt; &gt; &gt; &gt; CFG countsPerLiter = 477<br />
+&gt; &gt; &gt; &gt; --------------------------------------------------<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 1.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 2.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 3.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 4.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 5.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 6.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 7.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 8.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 9.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 10.000<br />
+&gt; &gt; &gt; &gt; $FLOWRATE, 0, 0, 0.0, 0.0, 0.0, 0.0, 11.000<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; So at one point there were FLOW_CUMULATIVE_COUNTS.<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; &quot;In your emails you say that you confirmed that the signal was looking good at pin 15 on the Teensy PCB&#39;s connector. &nbsp;That&#39;s good.<br />
+&gt; &gt; &gt; &gt; The hall signal should then go to pin 13 of the TEENSY itself. &nbsp;Can you check to see that the signal is present there and see if it<br />
+&gt; &gt; &gt; &gt; is at proper voltage levels? Here is a helpful reference to locate the proper pin:<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; https://www.pjrc.com/teensy/card7a_rev1.pdf<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; There should be a 100 ohm resistor (R66) between the connector pin and the TEENSY module pin. &nbsp;When you get a chance take a look<br />
+&gt; &gt; &gt; &gt; and let me know what you find. &nbsp;We&#39;ll move forward from there. &quot;<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; On the diagram it looks like pin 13 on teh teensy board is (LED). Am I looking at that right?<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; will send you a picture, not sure how good it will show up.<br />
+&gt; &gt; &gt; &gt;&nbsp;<br />
+&gt; &gt; &gt; &gt; thanks, laura<br />
+&nbsp;</p>
+
+<p>&nbsp;</p>

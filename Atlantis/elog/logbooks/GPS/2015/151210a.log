@@ -1,0 +1,46 @@
+$@MID@$: 27
+Date: Thu, 10 Dec 2015 17:28:45 +0000
+Author: AH
+Type: System
+gps: CNAV
+Category: Other
+Subject: Diff Correction Cancelled for shipyard
+Cruise: at33-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>The CNAV subscription was cancelled for the shipyard period.&nbsp; Prior to cancellation, the Navigator screen read:</p>
+<p>SN 14959</p>
+<p>Status Active</p>
+<p>License SF2</p>
+<p>issued 2015-04-15 14:44:34 UTC</p>
+<p>start&nbsp;&nbsp;&nbsp; 2015-05-15&nbsp; 00:00:00 UTC</p>
+<p>end&nbsp;&nbsp;&nbsp;&nbsp; 2016-05-12</p>
+<p>region&nbsp;&nbsp;&nbsp; 0x8000</p>
+<p>network authorization:&nbsp;&nbsp; ALL</p>
+<p>I hit &quot;CANCEL ALL ACTIVE LICENSES&quot; and acknowledged</p>
+<p>Cancel Verify Code:&nbsp; 09C79BBC-8452F5DA-D8990A45-5B4C62FF</p>
+<p>CANCEL DATE:&nbsp;&nbsp; 2015-12-10&nbsp; 17:18:53 UTC</p>
+<p>DAY LEFT:&nbsp;&nbsp; 154</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>***************Confirmation sent from CNAV:</p>
+<p>Thanks for returning the correct Cancel Verification Confirmation code for C-Nav3050<br />
+SN: 14959. Your signal charges will now be stopped in accordance with your signal<br />
+agreement.<br />
+<br />
+************License History************<br />
+<br />
+<br />
+Serial No:&nbsp;&nbsp;&nbsp;&nbsp; 14959<br />
+Reference No:&nbsp; M217462<br />
+Customer Name: Woods Hole Oceanographic Institution Procurement Department<br />
+Contact Name:&nbsp; RICK CHANDLER <br />
+Vessel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atlantis<br />
+Service Level: SF2<br />
+Network Type:&nbsp; N1N2<br />
+Issued Date:&nbsp;&nbsp; 04/15/2015 <br />
+Start Date:&nbsp;&nbsp;&nbsp; 04/15/2015 <br />
+Stop Date:&nbsp;&nbsp;&nbsp;&nbsp; 05/12/2016<br />
+Cancel Date:&nbsp;&nbsp; 12/10/2015 17:18:53<br />
+&nbsp;</p>

@@ -1,0 +1,107 @@
+$@MID@$: 54
+Date: Sat, 18 May 2013 10:51:13 +0000
+Author: lstolp
+Type: Configuration
+name: mnemosyn
+server type: web
+OS: Linux
+Location: Computer Lab
+Category: Software
+Subject: geomap app installation
+Cruise: atpostat2502
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;e installed geomap on the Atlantis with Bob yesterday and we had a couple</p>
+<div>of other changes, you may have already done this: &nbsp;</div>
+<div>&nbsp;</div>
+<div>1. edit /etc/apache2/sites-enabled/000-default</div>
+<div>&nbsp; &nbsp; &nbsp;&lt;Directory /media/geomap/htdocs&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Options Indexes FollowSymLinks MultiViews</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AllowOverride None</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Order allow,deny</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allow from all</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AddType application/x-java-jnlp-file .jnlp</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/Directory&gt;</div>
+<div>&nbsp;</div>
+<div>and add the application type.</div>
+<div>&nbsp;</div>
+<div>2. We also found that getting it to run on a linux browser we had to&nbsp;</div>
+<div>associate the jnlp with javaws executable and not plain ole java</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+<div>3. &nbsp;/medai/geomapapp/htdocs/gma_paths/GMA_paths.xml</div>
+<div>&nbsp;Change every instance of</div>
+<div>&nbsp;atsea.geomapapp.org</div>
+<div>&nbsp;to</div>
+<div>&nbsp;the local url</div>
+<div>&nbsp;</div>
+<div>4. /medai/geomapapp/htdocs/gma_webstart/GeoMapApp.jnlp</div>
+<div>&nbsp;&nbsp;Change every instance of</div>
+<div>&nbsp;new.geomapapp.org</div>
+<div>&nbsp;to</div>
+<div>&nbsp;the local url</div>
+<div>&nbsp;</div>
+<div>&nbsp;5. /media/geomapapp/htdocs/gma_webstart/GeoMapAppSea.jnlp</div>
+<div>&nbsp;</div>
+<div>/etc/apache2/sites-enabled/000-default</div>
+<div>
+<div>&lt;VirtualHost *:80&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ServerAdmin sssg@atlantis.whoi.edu</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; DocumentRoot /media/geomap/htdocs</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;Directory /&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Options FollowSymLinks</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AllowOverride None</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/Directory&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;Directory /media/geomap/htdocs&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Options Indexes FollowSymLinks MultiViews</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AllowOverride None</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Order allow,deny</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allow from all</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AddType application/x-java-jnlp-file .jnlp</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/Directory&gt;</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;Directory &quot;/usr/lib/cgi-bin&quot;&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AllowOverride None</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Order allow,deny</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Allow from all</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/Directory&gt;</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ErrorLog /var/log/apache2/geomap_error.log</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; # Possible values include: debug, info, notice, warn, error, crit,</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; # alert, emerg.</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; LogLevel warn</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; CustomLog /var/log/apache2/geomap_access.log combined</div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; Alias /doc/ &quot;/usr/share/doc/&quot;</div>
+<div>&nbsp; &nbsp; &lt;Directory &quot;/usr/share/doc/&quot;&gt;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; Options Indexes MultiViews FollowSymLinks</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; AllowOverride None</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; Order deny,allow</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; Deny from all</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; Allow from 127.0.0.0/255.0.0.0 ::1/128</div>
+<div>&nbsp; &nbsp; &lt;/Directory&gt;</div>
+<div>&nbsp;</div>
+<div>&lt;/VirtualHost&gt;</div>
+<div>~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>

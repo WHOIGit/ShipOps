@@ -1,0 +1,59 @@
+$@MID@$: 81
+Date: Sat, 24 Jul 2021 21:50:25 +0000
+Author: AH
+Sensor: SBE48
+S/N: 480021
+Calibration Date: 2020-Dec-13
+Type: Calibration
+Category: Hardware
+Subject: SBE48 installed 2021-July-15
+Cruise: at43-03
+Attachment: 210724_215135_SBE_48_T0021_14Dec20.pdf
+Encoding: HTML
+========================================
+<p>Installed SBE48</p>
+
+<p>&nbsp;</p>
+
+<p>SERIALNO=0021<br />
+TCALDATE=13-Dec-20<br />
+TA0=-1.742489e-004<br />
+TA1= 3.030021e-004<br />
+TA2=-4.068236e-006<br />
+TA3= 1.960446e-007<br />
+RCALDATE=No-Cal<br />
+RTCA0= 1.000000e+000<br />
+RTCA1= 0.000000e+000<br />
+RTCA2= 0.000000e+000</p>
+$@MID@$: 82
+Date: Sat, 24 Jul 2021 21:53:35 +0000
+Author: AH
+Sensor: SBE45
+S/N: 
+Calibration Date:  2020-Dec-13
+Type: Calibration
+Category: Hardware
+Subject: Installed SBE45 - 0288
+Cruise: at43-03
+Attachment: 210724_215405_SBE_45_C0288_14Dec20.pdf,210724_215416_SBE_45_T0288_14Dec20.pdf,210724_215434_SERVICE_REPORT_1005511882.pdf,210724_215456_SERVICE_REPORT_1005511884.pdf
+Encoding: HTML
+========================================
+<p>Installed SBE45 - 0288</p>
+
+<p>&nbsp;</p>
+
+<p>SERIALNO=0288<br />
+TCALDATE=13-Dec-20<br />
+TA0= 4.638150e-006<br />
+TA1= 2.813512e-004<br />
+TA2=-3.018194e-006<br />
+TA3= 1.651304e-007<br />
+CCALDATE=13-Dec-20<br />
+CG=-9.853326e-001<br />
+CH= 1.591503e-001<br />
+CI=-4.375282e-004<br />
+CJ= 5.998750e-005<br />
+CTCOR= 3.250000e-006<br />
+CPCOR=-9.570000e-008<br />
+WBOTC= 3.341951e-007<br />
+&nbsp;</p>

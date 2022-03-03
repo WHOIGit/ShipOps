@@ -1,0 +1,67 @@
+$@MID@$: 4
+Date: Tue, 06 Feb 2018 10:08:55 +0000
+Author: AH
+S/N: 
+Generator: LN2_elan2
+Type: Routine
+Subject: Meaning of lights
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>I misunderstood the manual about the meaning of the 1/4, 1/2, 3/4, full lights - these are for the internal tank.</p>
+
+<p>When the display panel says &quot;FULL&quot; - that means the external dewar is full.</p>
+
+<p>documentation:</p>
+
+<p>Date: Mon, 5 Feb 2018 10:26:03 -0800<br />
+From: Matt Buckby &lt;mattb@mmr-tech.com&gt;<br />
+To: atlantis sssg &lt;sssg@atlantis.whoi.edu&gt;<br />
+Subject: Re: Elan2 Autotransfer<br />
+Parts/Attachments:<br />
+&nbsp; &nbsp;1 &nbsp; OK &nbsp; &nbsp;~261 lines &nbsp;Text<br />
+&nbsp; &nbsp;2 Shown &nbsp; ~265 lines &nbsp;Text<br />
+----------------------------------------</p>
+
+<p>Hi Allison,<br />
+The small lights 1/4, 1/2, 3/4, FULL indicate the internal liquefier tank. During normal operation (liquefying with the<br />
+system unlocked and the transfer tube present) you only ever see the full light come on for 10 seconds as it will then start<br />
+transferring into the tank.<br />
+If you lock the system or remove the transfer hose from the dewar (auto transfer will be turned off) and the liquefier will<br />
+fill all the way up. The full light will come on and the system will cycle on and off every 30 minutes keeping the tank<br />
+full.<br />
+&nbsp;<br />
+When the digital panel says FULL this is because the external tank is FULL. The system has tried to transfer into the tank 6<br />
+times but the sensor on the transfer tube has triggered. During this mode the system has shut down. You need to press the<br />
+transfer button to restart the system.<br />
+&nbsp;<br />
+Hope this all makes sense.<br />
+&nbsp;<br />
+Kind Regards,</p>
+
+<p>Matt Buckby<br />
+Chief Operating Officer | Senior Engineer<br />
+MMR Technologies Inc<br />
+41 Daggett Drive<br />
+San Jose, CA 95134<br />
+Tel: + 1 (650) 962 9620<br />
+www.mmr-tech.com [www.mmr-tech.com]<br />
+www.elan2.com [www.elan2.com]<br />
+&nbsp;<br />
+From: atlantis sssg<br />
+Sent: Sunday, February 04, 2018 2:31 AM<br />
+To: Matt Buckby<br />
+Subject: Re: Elan2 Autotransfer</p>
+$@MID@$: 5
+Date: Tue, 06 Feb 2018 10:10:57 +0000
+Author: AH
+S/N: 
+Generator: LN2_elan2
+Type: 
+Subject: cryosurgical spray unit - transfer spout - 1 Liter volume at a time
+Cruise: at39-04
+Attachment: 
+Encoding: HTML
+========================================
+<p>I looked in the urn after using the spout - ift looked like less than a liter.&nbsp; So, after transferring and letting the urn get to room temperature, I filled the urn with water to the approximate height the LN2 reached inside.&nbsp; I then used a measuring cup (metric) to measure the volume of water.&nbsp; It is 1 Liter!!!</p>

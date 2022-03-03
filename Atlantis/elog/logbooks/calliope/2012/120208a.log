@@ -1,0 +1,58 @@
+$@MID@$: 18
+Date: Wed, 08 Feb 2012 15:38:27 +0000
+Author: AH
+version: 
+Type: 
+Subject: Thin Client
+Cruise: at18-18
+Attachment: 
+Encoding: HTML
+========================================
+<p>The notes and manual for the thin clients is on ftp:</p>
+<p>/var/www/html/sssg</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; thin_client.html</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; thinit.ps</p>
+<p>*****************</p>
+<p>While running in the normal kiosk mode, use ctl-alt-f2 to get back to the menu.<br />
+On some versions you will have to click to get a menu for setup.&nbsp; Others will <br />
+just give you the setup screen.<br />
+<br />
+Menu:&nbsp; Highlight the session then system - setup. Then once in setup: <br />
+<br />
+Network: Disks:&nbsp; <br />
+-Enable &quot;use local flash&quot;. <br />
+-Check the box &quot;disable restart prompt&quot; <br />
+<br />
+Network: LAN:<br />
+-Hostname = URL (http://www.atlantis.whoi.edu/cgi-bin/db_driven_data/status_scre<br />
+en/update_screen.pl)<br />
+<br />
+<br />
+Sessions:&nbsp; Highlight the session and choose edit<br />
+-Edit the session name and start URL.&nbsp; <br />
+-Enable &quot;kiosk mode&quot;.<br />
+-Enable &quot;enable menu bar&quot;.&nbsp; <br />
+-Enable &quot;autostart&quot;.&nbsp; <br />
+<br />
+<br />
+Input/Time:&nbsp; <br />
+-Set time zone Africa:Casablanca <br />
+-Set time server 199.92.161.3 *ftp*<br />
+<br />
+THen save, quit and reboot.&nbsp; <br />
+<br />
+Once the reboot is complete you should have the menu bar in firefox.&nbsp; Choose<br />
+edit- preferences.&nbsp; Choose &quot;content&quot; and advanced.&nbsp; At that point enable <br />
+&quot;hide status bar&quot;.&nbsp; Click OK and close.<br />
+<br />
+Then choose open location and enter about:config.&nbsp; At that point find the <br />
+entry: browser.sessionsstore.resume_from_crash.&nbsp; Double click on this until <br />
+it toggles to false.&nbsp; At that point, close the browser.&nbsp; It may be necessary<br />
+to type ctl-alt-f2 to get to the setup menu again.&nbsp; Go back through setup and <br />
+edit the session latest_data. Disable &quot;enable menu bar&quot;&nbsp; Save, quit and <br />
+reboot again.<br />
+<br />
+**Make sure to click &quot;Save Settings&quot; after each individual change**<br />
+<br />
+That should do it. <br />
+&nbsp;</p>

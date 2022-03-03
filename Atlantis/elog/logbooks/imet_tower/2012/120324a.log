@@ -1,0 +1,32 @@
+$@MID@$: 11
+Date: Sat, 24 Mar 2012 11:44:34 +0000
+Author: lstolp
+Sensor: imet_anemometer
+S/N: WIND 306
+Calibration Date: Jan 2012
+Type: Other
+Category: Hardware
+Subject: installed newly calibrated IMET WND sensor
+Cruise: at19
+Revisions:  & Sat Mar 24 11:47:00 2012^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>removed from tower.. did not work reliabley during cruise</p>
+<p>&nbsp;</p>
+$@MID@$: 12
+Date: Sat, 24 Mar 2012 11:46:29 +0000
+Author: lstolp
+Sensor: imet_anemometer
+S/N: 305
+Calibration Date: 19 oct 2006
+Type: Other
+Category: Hardware
+Subject: replaced on mast to see if wiring or instrument was issue w/ sn306
+Cruise: at19
+Revisions:  & Sat Mar 24 11:46:45 2012^M
+Attachment: 
+Encoding: HTML
+========================================
+<p>instrument appears to work reliable, calibration out of date can be used as a wind vane, but not for real wind.. data needs to be taken out of calliope and .csv files</p>

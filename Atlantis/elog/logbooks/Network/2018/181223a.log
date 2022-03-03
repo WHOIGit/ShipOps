@@ -1,0 +1,22 @@
+$@MID@$: 77
+Date: Sun, 23 Dec 2018 17:04:58 +0000
+Author: AH
+S/N: 
+Type: Configuration
+equipment: cyberoam CR50iNG
+Subject: Cyberoam cabling configuration
+Cruise: at42-07
+Attachment: 181223_170636_cyberoam_ports_A_to_D_and_H.JPG,181223_170656_cyberoam_port_A_to_science_net_switch.JPG,181223_170718_cyberoam_port_B_to_switch_and_then_ftp_eth2.JPG,181223_170734_cyberoam_port_C_to_ship_net_switch.JPG,181223_170753_cyberoam_port_D_to_switch_then_ftp_eth3.JPG,181223_170807_cyberoam_ports_A_to_D_and_H.JPG
+Encoding: HTML
+========================================
+<p>Below - pictures of cable hook-ups.</p>
+
+<p>Port A:&nbsp; connects to a science network large switch</p>
+
+<p>Port B:&nbsp; connects to a small switch behind the rack.&nbsp; Small switch has a connection to ftp eth 2 - science network</p>
+
+<p>Port C:&nbsp; connects to a ship network large switch</p>
+
+<p>Port D:&nbsp; connects to a small switch behind the rack.&nbsp; Small switch has a connection to ftp eth 3 - ship network</p>
+
+<p>Port H:&nbsp; connects to a small HSN switch behind the rack.&nbsp; Small switch has connections to ftp eth1 and also router GE0/0</p>

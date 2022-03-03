@@ -1,0 +1,27 @@
+$@MID@$: 4
+Date: Thu, 06 Jun 2013 16:10:34 +0000
+Author: AH
+Type: Software
+Category: Routine
+Subject: 3ps user / pw
+Cruise: at26-01
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p><span style="font-size: large;">The user account on the 3ps computer is:<br />
+</span></p>
+<p><span style="font-size: large;">username:&nbsp; science<br />
+</span></p>
+<p><span style="font-size: large;">password:&nbsp; atlantis</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">The password to be administrator and actually make changes:&nbsp; 9105798 (this is the ship's international maritime organization #)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">Time Server:&nbsp; ntpd is running (it did not survive a reboot last time, so might need to be checked)</span></p>
+<p><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; config file in:&nbsp;&nbsp; \Program Files\NTP\etc\ntp.conf</span></p>
+<p>&nbsp;</p>
+<p>WINCH SETUP - LOGGING</p>
+<p><span style="font-size: large;">3PS computer lab computer ip address:&nbsp; 192.168.11.240&nbsp;&nbsp; alias 3psml</span></p>
+<p><span style="font-size: large;">udp out on 55801 is created by the program and is sent to the science network (192.168.11.255)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><span style="font-size: medium;">The windows user account:&nbsp; user&nbsp;&nbsp;&nbsp; is actually the administrative account, and has no password set as of 2014-Jan-01</span></span></p>

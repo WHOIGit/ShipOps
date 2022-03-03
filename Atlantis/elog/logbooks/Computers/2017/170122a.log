@@ -1,0 +1,33 @@
+$@MID@$: 84
+Date: Sun, 22 Jan 2017 07:31:02 +0000
+Author: dsims
+Type: Fix
+name: Macs
+server type: web
+OS: Mac-OS
+Location: Main Lab
+Category: Software
+Subject: Verifying and repairing permissions in el capitan
+Cruise: at37-08
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<h3>How to Repair Verify Disk Permissions in OS X El Capitan</h3>
+<p>Open the Terminal application (found in /Applications/Utilities/) and  use the following syntax to verify a volumes permissions, this will  verify the default root volume of a Mac:</p>
+<p><code>sudo /usr/libexec/repair_packages --verify --standard-pkgs /</code></p>
+<p>If you want to verify permissions on a different drive, specify the volume rather than &ldquo;/&rdquo;</p>
+<p>The command will run and either show permissions that differ, or  nothing, depending on what&rsquo;s found. Not surprisingly, you&rsquo;ll likely find  some variation of permissions that differs, looking something like:</p>
+<p><code>Permissions differ on &quot;usr/libexec/cups/cgi-bin&quot;, should be drwxr-xr-x , they are dr-xr-xr-x .<br />
+Permissions differ on &quot;usr/libexec/cups/daemon&quot;, should be drwxr-xr-x , they are dr-xr-xr-x .<br />
+Permissions differ on &quot;usr/libexec/cups/driver&quot;, should be drwxr-xr-x , they are dr-xr-xr-x .<br />
+Permissions differ on &quot;usr/libexec/cups/monitor&quot;, should be drwxr-xr-x , they are dr-xr-xr-x .</code></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>How to Repair Disk Permissions in OS X El Capitan from Command Line</h3>
+<p>Assuming permissions have been found which differ and you&rsquo;d like to  repair them, replace the &ndash;verify flag with &ndash;repair, and again point the  command at the same volume:</p>
+<p><code>sudo /usr/libexec/repair_packages --repair --standard-pkgs --volume /</code></p>
+<p>Repairing permissions may take a while, just like it did from Disk Utility.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

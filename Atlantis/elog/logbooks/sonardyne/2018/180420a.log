@@ -1,0 +1,20 @@
+$@MID@$: 28
+Date: Fri, 20 Apr 2018 19:25:25 +0000
+Author: RLaird
+Type: Fix
+Category: Hardware
+equipment: Transceiver
+Subject: Swapped out the USBL head
+Cruise: at39-06
+Attachment: 181021_153326_SonardyneTransceiverTestCertificate_20180329.pdf
+Encoding: HTML
+========================================
+<p>Bought a &quot;new&quot;, (to us), used transducer head.&nbsp; Swapped out the head, no issues.&nbsp; When we powered up the new head, it did not seem to be working.&nbsp; Symptoms were basically that the software was unable to talk to the head, it would then issue a break command and cycle the power.&nbsp; This would continue indefinately.&nbsp; Tried swapping the head from port 3A to 3B, no change.&nbsp; Deleted the head in the software and reinstalled it, no change.&nbsp; Tried uploading new firmware, also did not fix the problem, although we did install a newer version of firmware.&nbsp; (however, the old version was fully compatable.&nbsp; What did finally work was putting the transceiver head on it&#39;s own 48v power supply.&nbsp; The system seems to work fine this way.</p>
+
+<p>Speculation, but what might be happening is that the tranceiver is not booting fast enought.&nbsp; Why, I don&#39;t know.&nbsp; But it seems like the software is trying to reset the tranceiver before it has finished booting, and everything starts over again.&nbsp;</p>
+
+<p>Put a beacon in the water and the system seems to work well.</p>
+
+<p>&nbsp;</p>
+
+<p>Catie 20181021- Attached to this entry Transceiver Health Check Certificate from 20180329</p>

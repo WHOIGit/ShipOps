@@ -1,0 +1,101 @@
+$@MID@$: 75
+Date: Wed, 09 Dec 2015 18:23:29 +0000
+Author: lstolp
+Type: Build
+name: currents
+server type: UHDAS
+OS: Linux
+Location: Computer Lab
+Category: Hardware
+Subject: new atcurrents01 and atcurrents02
+Cruise: at33-01
+Attachment: 
+Encoding: HTML
+========================================
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">atcurrents01:(~)$ uname -a</p>
+<p>&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Linux atcurrents01 3.13.0-66-generic #108-Ubuntu SMP Wed Oct 7 15:20:27 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">atcurrents01:(~)$ lsb_release -a</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">No LSB modules are available.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Distributor ID:<span class="Apple-tab-span" style="white-space:pre">	</span>Ubuntu</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Description:<span class="Apple-tab-span" style="white-space:pre">	</span>Ubuntu 14.04.3 LTS</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Release:<span class="Apple-tab-span" style="white-space:pre">	</span>14.04</p>
+<p>&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Codename:<span class="Apple-tab-span" style="white-space:pre">	</span>trusty</p>
+<div>&nbsp;</div>
+<div>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">H/W path &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Device &nbsp; &nbsp; Class&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Description</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">==========================================================</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; system &nbsp; &nbsp; &nbsp; &nbsp; All Series (All)</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Z97-DELUXE/USB 3.1</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 64KiB BIOS</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/46 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 16GiB System Memory</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/46/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 8GiB DIMM DDR3 Synchronous 1600 MHz (0.6 ns)</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/46/1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; DIMM [empty]</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/46/2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 8GiB DIMM DDR3 Synchronous 1600 MHz (0.6 ns)</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/46/3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; DIMM [empty]</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/53 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; processor&nbsp; &nbsp; &nbsp; Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/53/54&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 256KiB L1 cache</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/53/55&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 1MiB L2 cache</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/53/56&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory &nbsp; &nbsp; &nbsp; &nbsp; 8MiB L3 cache</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; 4th Gen Core Processor DRAM Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Xeon E3-1200 v3/4th Gen Core Processor PCI Express x16</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1/0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display&nbsp; &nbsp; &nbsp; &nbsp; GF119 [GeForce GT 610]</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1/0.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; multimedia &nbsp; &nbsp; GF119 HDMI Audio Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/16 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; communication&nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/19&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eth1 &nbsp; &nbsp; &nbsp; network&nbsp; &nbsp; &nbsp; &nbsp; Ethernet Connection (2) I218-V</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1b &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; multimedia &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/2/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; network&nbsp; &nbsp; &nbsp; &nbsp; BCM4352 802.11ac Wireless Network Adapter</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/3/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; storage&nbsp; &nbsp; &nbsp; &nbsp; ASM1062 Serial ATA Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/6/0&nbsp; &nbsp; eth0 &nbsp; &nbsp; &nbsp; network&nbsp; &nbsp; &nbsp; &nbsp; I211 Gigabit Network Connection</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/7/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; communication&nbsp; MCS9922 PCIe Multi-I/O Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.3/0/7/0.1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; communication&nbsp; MCS9922 PCIe Multi-I/O Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.4/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; storage&nbsp; &nbsp; &nbsp; &nbsp; ASM1062 Serial ATA Controller</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1c.6/0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ASMedia Technology Inc.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1f &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bridge &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/100/1f.3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Intel Corporation</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scsi0&nbsp; &nbsp; &nbsp; storage &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/1/0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /dev/sda &nbsp; disk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1TB WDC WD1003FZEX-0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/1/0.0.0/1 &nbsp; &nbsp; &nbsp; &nbsp; /dev/sda1&nbsp; volume &nbsp; &nbsp; &nbsp; &nbsp; 915GiB EXT4 volume</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/1/0.0.0/2 &nbsp; &nbsp; &nbsp; &nbsp; /dev/sda2&nbsp; volume &nbsp; &nbsp; &nbsp; &nbsp; 15GiB Extended partition</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/1/0.0.0/2/5 &nbsp; &nbsp; &nbsp; /dev/sda5&nbsp; volume &nbsp; &nbsp; &nbsp; &nbsp; 15GiB Linux swap / Solaris partition</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scsi1&nbsp; &nbsp; &nbsp; storage &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/2/0.0.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /dev/sdb &nbsp; disk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2TB WDC WD2003FZEX-0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/0/2/0.0.0/1 &nbsp; &nbsp; &nbsp; &nbsp; /dev/sdb1&nbsp; volume &nbsp; &nbsp; &nbsp; &nbsp; 1863GiB EXT4 volume</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; power&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; To Be Filled By O.E.M.</p>
+</div>
+<div>&nbsp;</div>
+<p>Jules installed UHDAS, there is a new zmq</p>
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">Date: Wed, 9 Dec 2015 17:41:51 GMT</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">From: adcp@atlantis.whoi.edu</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">To: uhdas@hawaii.edu, efiring@hawaii.edu, dropbox@rvdata.us, uhdas@soest.hawaii.edu,</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; fbahr@whoi.edu, sssg@whoi.edu</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">Subject: Atlantis ADCP shore status</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">2015/12/09 17:41:50</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">atcurrents02 3.13.0-32-generic</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">no cruise set</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">zmq is enabled but zmq_publisher is not running. (details below)</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">---- heading correction ----</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">no active cruise: no heading correction calculated at this time</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">---bottom track status--------</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
