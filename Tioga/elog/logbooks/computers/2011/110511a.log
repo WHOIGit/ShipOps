@@ -1,0 +1,33 @@
+$@MID@$: 3
+Date: Wed, 11 May 2011 11:18:50 +0000
+Author: lstolp
+Cruise: ti521
+Computer: ftp
+Type: Problem Fixed | Configuration
+Category: Software
+Subject: ntp
+Attachment: 
+Encoding: HTML
+========================================
+<p>a second serial port was added by Robbie.. cool..</p>
+<p>ntp setup to serve time, with the clock plugged into /dev/ttyS1</p>
+<p>&nbsp;</p>
+<p>[root@ftp ~]# ls -la /dev/dumbclock0 <br />
+lrwxrwxrwx 1 root root 10 May 10 16:41 /dev/dumbclock0 -&gt; /dev/ttyS1<br />
+&nbsp;</p>
+$@MID@$: 4
+Date: Wed, 11 May 2011 13:16:34 +0000
+Author: rsl
+Cruise: ti521
+Computer: athena
+Type: Configuration
+Category: Software
+Subject: time services
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed ntp for windows.&nbsp; </p>
+<p>Version installed: <b>NTP 4.2.4p8, </b>obtained from http://www.meinberg.de/download/ntp/windows/ntp-4.2.4p8@lennon-o-lpv-win32-setup.exe<b><br />
+</b></p>
+<p>Initial setup did not work correctly and the service would not start.&nbsp; This was because ntp failed to stop and disable tardis.&nbsp; ntp did manage to disable K9 and windows time service.&nbsp; Manually stopped and disabled tardis, all is well.</p>
+<p>&nbsp;</p>

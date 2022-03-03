@@ -1,0 +1,290 @@
+$@MID@$: 26
+Date: Tue, 28 May 2013 12:27:22 +0000
+Author: lstolp
+Cruise: ti670
+Computer: tidatalog
+Type: Configuration | notes
+Category: General
+Subject: dsLog.ini
+Attachment: 
+Encoding: HTML
+========================================
+<p>[GENERAL]<br />
+<br />
+ROOT_DIR=&quot;/underway/raw&quot;<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+# serial threads<br />
+<br />
+## GPS <br />
+[INPUT_1]<br />
+DATA_TYPE=&quot;NAV&quot;<br />
+DATA_SOURCE=&quot;GPS&quot;<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB1&quot;<br />
+BAUD=9600<br />
+TERM_CHAR=&quot;\n&quot;<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+<br />
+DESTINATION_1=1<br />
+# For FTP csv file and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55001<br />
+# For to broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.255&quot;<br />
+DESTINATION_3_SOCKET=55000<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1_EXTENSION=&quot;GPS&quot;<br />
+<br />
+<br />
+## HDT<br />
+[INPUT_2]<br />
+DATA_TYPE=&quot;NAV&quot;<br />
+DATA_SOURCE=&quot;GYRO&quot;<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB2&quot;<br />
+BAUD=4800<br />
+TERM_CHAR=&quot;\n&quot;<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+<br />
+DESTINATION_1=1<br />
+# For FTP csv file and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55103<br />
+# For FTP to broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55100<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1_EXTENSION=&quot;HDT&quot;<br />
+<br />
+## RS485DATA_TYPE=&quot;MET&quot;<br />
+DATA_SOURCE=&quot;RS485&quot;<br />
+##<br />
+<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB3&quot;<br />
+BAUD=9600<br />
+<br />
+# time between sequences of prompts<br />
+PROMPT_SEQUENCE_INTERVAL=10<br />
+<br />
+# time between prompts within the sequence<br />
+PROMPT_SEQUENCE_INTERVAL_BETWEEN_PROMPTS=1<br />
+<br />
+# number of instruments to be prompted<br />
+PROMPT_SEQUENCE_NUMBER_OF_PROMPTS=1<br />
+<br />
+# Port Vaisala&nbsp; (PR0CRLF)<br />
+# Viasala Address is for port, but instrument is on the <br />
+# starboard side<br />
+PROMPT_1_CHAR_1=0D<br />
+PROMPT_1_CHAR_2=0A<br />
+PROMPT_1_CHAR_3=50<br />
+PROMPT_1_CHAR_4=52<br />
+PROMPT_1_CHAR_5=30<br />
+PROMPT_1_CHAR_6=0D<br />
+PROMPT_1_CHAR_7=0A<br />
+<br />
+## Port Vaisala destination options<br />
+# File<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1_EXTENSION=&quot;XTS&quot;<br />
+DESTINATION_1=1<br />
+# For FTP csv and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55401<br />
+# For FTP broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55400<br />
+<br />
+# Enable destinations for each prompt<br />
+USE_PROMPT_SPECIFIC_DESTINATIONS_FLAG=1<br />
+PROMPT_1_DESTINATION_ENABLE_1=1<br />
+PROMPT_1_DESTINATION_ENABLE_2=1<br />
+PROMPT_1_DESTINATION_ENABLE_3=1<br />
+<br />
+# Answers terms CHAR<br />
+USE_PROMPT_SPECIFIC_TERM_CHAR=1<br />
+PROMPT_1_TERM_CHAR=0A<br />
+<br />
+USE_PROMPT_SPECIFIC_DATA_TYPE=1<br />
+PROMPT_1_DATA_TYPE=&quot;MET&quot;<br />
+<br />
+USE_PROMPT_SPECIFIC_SOURCE_NAME=1<br />
+PROMPT_1_SOURCE_NAME=&quot;WXTS&quot;<br />
+<br />
+## SBE48<br />
+[INPUT_4]<br />
+## INPUT_ENABLE=0<br />
+<br />
+DATA_TYPE=&quot;SSW&quot;<br />
+DATA_SOURCE=&quot;SBE48&quot;<br />
+TERM_CHAR=&quot;\n&quot;<br />
+<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB4&quot;<br />
+BAUD=9600<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1=1<br />
+DESTINATION_1_EXTENSION=&quot;STP&quot;<br />
+# For FTP csv and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55502<br />
+# For FTP broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55500<br />
+<br />
+## Fluorometer<br />
+<br />
+[INPUT_5]<br />
+<br />
+# These are needed although not used<br />
+DATA_TYPE=&quot;SSW&quot;<br />
+DATA_SOURCE=&quot;FLR&quot;<br />
+## <br />
+<br />
+<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB6&quot;<br />
+BAUD=9600<br />
+<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+# time between sequences of prompts<br />
+PROMPT_SEQUENCE_INTERVAL=10<br />
+<br />
+# time between prompts within the sequence<br />
+PROMPT_SEQUENCE_INTERVAL_BETWEEN_PROMPTS=1<br />
+<br />
+# number of instruments to be prompted<br />
+PROMPT_SEQUENCE_NUMBER_OF_PROMPTS=1<br />
+<br />
+# SSW Fluorometer ($1RDCR)<br />
+PROMPT_1_CHAR_1=24<br />
+PROMPT_1_CHAR_2=31<br />
+PROMPT_1_CHAR_3=52<br />
+PROMPT_1_CHAR_4=44<br />
+PROMPT_1_CHAR_5=0D<br />
+## Port Vaisala destinti options<br />
+# File<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1_EXTENSION=&quot;FLR&quot;<br />
+DESTINATION_1=1<br />
+# For FTP csv and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55503<br />
+# For FTP broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55500<br />
+<br />
+<br />
+# Enable destinations for each prompt<br />
+USE_PROMPT_SPECIFIC_DESTINATIONS_FLAG=1<br />
+PROMPT_1_DESTINATION_ENABLE_1=1<br />
+PROMPT_1_DESTINATION_ENABLE_2=1<br />
+PROMPT_1_DESTINATION_ENABLE_3=1<br />
+<br />
+# Answers terms CHAR<br />
+USE_PROMPT_SPECIFIC_TERM_CHAR=1<br />
+PROMPT_1_TERM_CHAR=0D<br />
+<br />
+USE_PROMPT_SPECIFIC_DATA_TYPE=1<br />
+PROMPT_1_DATA_TYPE=&quot;SSW&quot;<br />
+<br />
+USE_PROMPT_SPECIFIC_SOURCE_NAME=1<br />
+PROMPT_1_SOURCE_NAME=&quot;FLR&quot;<br />
+<br />
+<br />
+<br />
+## SBE45<br />
+[INPUT_6]<br />
+DATA_TYPE=&quot;SSW&quot;<br />
+DATA_SOURCE=&quot;SBE45&quot;<br />
+<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB5&quot;<br />
+BAUD=9600<br />
+TERM_CHAR=&quot;\n&quot;<br />
+<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1=1<br />
+DESTINATION_1_EXTENSION=&quot;SAL&quot;<br />
+# For FTP csv and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55501<br />
+# For FTP broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55500## SBE45<br />
+[INPUT_7]<br />
+DATA_TYPE=&quot;DEP&quot;<br />
+DATA_SOURCE=&quot;KN320B&quot;<br />
+<br />
+FILENAME_PREFIX=&quot;ti&quot;<br />
+<br />
+SOURCE_TYPE=2<br />
+SERIAL_PORT_NAME=&quot;/dev/ttyUSB7&quot;<br />
+BAUD=9600<br />
+TERM_CHAR=&quot;\n&quot;<br />
+<br />
+<br />
+USE_DESTINATION_SPECIFIC_FILE_EXTENSION=1<br />
+DESTINATION_1=1<br />
+DESTINATION_1_EXTENSION=&quot;DEP&quot;<br />
+# For FTP csv and db_driven<br />
+DESTINATION_2=0<br />
+DESTINATION_2_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_2_SOCKET=55603<br />
+# For FTP broadcast<br />
+DESTINATION_3=0<br />
+DESTINATION_3_IPADDRESS=&quot;192.168.11.1&quot;<br />
+DESTINATION_3_SOCKET=55600<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+#Network Threads<br />
+<br />
+<br />
+[GUI_THREAD]<br />
+PORT=60001<br />
+#IPADDRESS=255.255.255.255<br />
+TO_IP_ADDRESS=192.92.161.3<br />
+TO_PORT=10500<br />
+destination_1=CMD_THREAD_1<br />
+<br />
+# network threads<br />
+[TCP_SERVER_THREAD]<br />
+TCP_SERVER_THREAD_SOCKET=40000<br />
+<br />
+<br />
+<br />
+<br />
+[INPUT_3]<br />
+# These are needed although not used<br />
+&nbsp;</p>

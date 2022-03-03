@@ -1,0 +1,18 @@
+$@MID@$: 4
+Date: Mon, 08 Apr 2013 12:46:48 +0000
+Author: lstolp
+Cruise: ti658
+Sensor: SBE45
+S/N: 4560880-0340 
+cal date: November 7, 2012
+Category: Hardware
+Type: Calibration
+Subject: installed April 5, 2013
+Attachment: 130408_124154_45-0340_PTest.pdf,130408_124208_TempCalibrationReport_45-0340.pdf,130408_124219_SBE45_T0340_07Nov12.pdf,130408_124229_SBE45_C0340_07Nov12.pdf,130408_124247_CondCalibrationReport_45-0340.pdf
+Encoding: HTML
+========================================
+<p>SBE45 installed on Tioga April 5th 2013..</p>
+<p>Calibration information attached to ELOG and copied to:</p>
+<p>ftp:/home/data.template/doc</p>
+<p>will eventually end up in:</p>
+<p>/home/data.template/underway/doc when dsLog is installed.</p>

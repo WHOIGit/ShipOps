@@ -1,0 +1,11 @@
+$@MID@$: 14
+Date: Tue, 11 Sep 2018 13:52:08 +0000
+Author: lstolp
+Cruise: ti1018
+Type: Cisco_Router
+Category: Configuration
+Subject: removed c2600 and replaced w/ knorr c2600
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;Added FBB to cisco router to fall over when shore is unplugged. Replaced with the Knorr's C2600. talked briefly w/ Eric about a new router w/ cell option.&nbsp;</p>

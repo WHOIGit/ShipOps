@@ -1,0 +1,13 @@
+$@MID@$: 18
+Date: Thu, 28 Feb 2013 12:47:48 +0000
+Author: lstolp
+Cruise: ti648
+Computer: adcp | currents
+Type: Configuration
+Category: Hardware | Software
+Subject: adcp computer removed, currents computer installed
+Attachment: 
+Encoding: HTML
+========================================
+<p>currents computer running UHDAS. </p>
+<p>still need to setup mail and network properly... it is using dhcp at 192.168.4.203</p>

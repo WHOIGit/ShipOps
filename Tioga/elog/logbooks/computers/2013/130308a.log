@@ -1,0 +1,33 @@
+$@MID@$: 20
+Date: Fri, 08 Mar 2013 12:40:08 +0000
+Author: lstolp
+Cruise: ti652
+Computer: adcp
+Type: notes
+Category: Hardware | Software
+Subject: UHDAS
+Attachment: 
+Encoding: HTML
+========================================
+<p>the more worrying part, of course, is how stable that serial acquisition is. If it was just a &quot;bad USB0&quot;,<br />
+that would be great (we are now on USB4)<br />
+&nbsp;</p>
+<p>I think the shore-email list already has me and eric and dropbox@rvdata<br />
+so leave those there.&nbsp; Will the ship be able to send email when it's sailing?&nbsp;&nbsp; if so, make the cron send<br />
+email at (say) 1pm local, to have the highest odds that they are at sea.&nbsp; If the ship only sends email<br />
+when they are at the pier, maybe we could have this be the protocol:<br />
+<br />
+- come in and tie up<br />
+- get the internet on line<br />
+- type this to send an email<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; daily.py --use_defaults<br />
+- stop logging<br />
+- end cruise<br />
+<br />
+<br />
+I can ask Eric if he's willing for &quot;end cruise&quot; to<br />
+actually send an email too, perhaps only &quot;if configured to do so&quot;.<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>Questions:</p>
+<p>Is there any backdoor mechanism to start and stop UHDAS from the backdoor.</p>

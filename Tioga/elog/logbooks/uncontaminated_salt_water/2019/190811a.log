@@ -1,0 +1,30 @@
+$@MID@$: 43
+Date: Sun, 11 Aug 2019 21:41:23 +0000
+Author: rlaird
+Cruise: 
+Sensor: Fluorometer
+S/N: 
+cal date: 
+Category: Plumbing
+Type: Routine
+Subject: cleaned the flurometer.
+Attachment: 
+Encoding: HTML
+========================================
+
+$@MID@$: 44
+Date: Sun, 11 Aug 2019 21:43:35 +0000
+Author: rlaird
+Cruise: 
+Sensor: Fluorometer
+S/N: 900
+cal date: na
+Category: Hardware
+Type: Problem Fixed
+Subject: replaced metrabyte module with temp spare
+Attachment: 
+Encoding: HTML
+========================================
+<p>RS232 ananlog to serial metrabyte module failed.&nbsp;&nbsp; No 232 spares available, used a 485 unit in &quot;232&quot; mode as temp replacement..</p>
+
+<p>&nbsp;</p>

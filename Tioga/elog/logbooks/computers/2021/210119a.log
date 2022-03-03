@@ -1,0 +1,12 @@
+$@MID@$: 51
+Date: Tue, 19 Jan 2021 16:06:46 +0000
+Author: lstolp
+Cruise: 
+Computer: ftp
+Type: Problem
+Category: Hardware
+Subject: usb2serial died
+Attachment: 
+Encoding: HTML
+========================================
+<p>The USB to serial for datalog died about the time the crew was looking under the sink to see what needed to be done to swap out the SBE45. I swapped over to the ADCP USB2SERIAL and used the old Tioga USB2SERIAL for the ADCP. It seems to be working ok, but will have Rick order up some new ones.</p>

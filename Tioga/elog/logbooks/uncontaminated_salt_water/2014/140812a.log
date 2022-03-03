@@ -1,0 +1,15 @@
+$@MID@$: 9
+Date: Tue, 12 Aug 2014 18:56:16 +0000
+Author: RSL
+Cruise: ti776
+Sensor: Fluorometer | SBE45 | SBE48
+S/N: na
+cal date: na
+Category: General
+Type: Other
+Subject: sink overflow, bad connections.
+Attachment: 
+Encoding: HTML
+========================================
+<p>A sink overflow got the wiring for the SBE45, SBE48 and Flurometer wet.&nbsp; Cleaned it all up and replaced the pins for the positive connections, which had corroded.&nbsp; Power for all three instruments is from the TSG (SBE45, salinity) switch on the rack.&nbsp; The FLURO switch does not seem to do anything.&nbsp; The SBE45, SBE48 and Flurometer are not damaged, as all are submersible.&nbsp; The DGH was also untouched.&nbsp;&nbsp; Moved the wiring to a higher location, but it's still under the sink.</p>
+<p>The wiring and terminal strip need to be moved to a higher location, perhaps above the breaker box in the lab.&nbsp; Need a small box with terminal strips.&nbsp; Present terminal strip has 10 connections, but does not include the wiring for the SBE48.&nbsp; (two or three more wires.)</p>

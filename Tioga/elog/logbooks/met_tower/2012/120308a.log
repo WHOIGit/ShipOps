@@ -1,0 +1,29 @@
+$@MID@$: 1
+Date: Thu, 08 Mar 2012 16:12:31 +0000
+Author: lstolp
+Cruise: ti588
+Sensor: WTX520
+S/N: G0410026
+cal date: September 21, 2011
+Type: install
+Category: taken off Oceanus.. 
+Subject: WXT520
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed on Mast.. still need to finish Calliope setup for wind</p>
+<p>&nbsp;</p>
+<p>Need height of mast to sea level for barometer..</p>
+<p>&nbsp;</p>
+<p>Need all the Metadata.. Need to update calliope's metadata..</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>** The Vaisala WXT520 is mounted and all of the cables are dressed and secured.<br />
+Note that while the address for this WXT520 is &quot;P&quot; (port), it's on the stbd<br />
+side.</p>
+<p>&nbsp;</p>
+<p>** I found the setting for the wind offset and set it to 185, (which is about&nbsp;&nbsp; <br />
+correct).&nbsp; Calliope may have an issue here.&nbsp; The relative wind did not change<br />
+at all.&nbsp; So, assuming I put the entry in the correct location, calliope is<br />
+applying this change somewhere further down the line, but it should be applied<br />
+before this point.&nbsp; Or, we are displaying raw relative, not ship relative.</p>

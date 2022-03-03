@@ -1,0 +1,33 @@
+$@MID@$: 10
+Date: Thu, 21 Aug 2014 09:31:00 +0000
+Author: lstolp
+Cruise: ti778
+Part: CTD Sensor
+S/N: tansmissometer
+cal date: na
+Type: Other
+Category: General
+Subject: notes 
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;Be sure to keep both the transmissometer windows clean (as well as the face of the</p>
+<div>fluorometer and the STM turbidity sensor). I recommend using a Kimwipe dampened with</div>
+<div>vinegar, followed by a dry Kimwipe, before and after each station. Vinegar does a</div>
+<div>better job with organic fouling, but isopropanol will work too.</div>
+<div>&nbsp;</div>
+<div>- I checked the voltage reported by the SBE9-0484 for the transmissometer to allow you</div>
+<div>observe any drift, following the recommendations WETLabs and SeaBird make for user</div>
+<div>maintenance in their Application Notes.</div>
+<div>&nbsp;</div>
+<div>Voltage in air, open beam, is 4.728v. (&quot;Vair&quot;) on 2014-08-14.</div>
+<div>Voltage with beam blocked is 0.057v (&quot;Vdark&quot;) on 2014-08-14.</div>
+<div>&nbsp;</div>
+<div>Compare these values to what you see reported by SeaSave fixed dlisplay for analog</div>
+<div>channel V1 (second voltage channel) after cleaning the lenses.</div>
+<div>&nbsp;</div>
+<div>There is an updated application note which discusses calculating the coefficients for</div>
+<div>the WETLabs CStar transmissometer, SBE AppNote number 91, which is NOT in the zip file</div>
+<div>I sent. I have included it here. The old AppNote 7 is not wrong, but AppNote 91 is</div>
+<div>updated. Both should give you the same answers.</div>
+<div>&nbsp;</div>

@@ -1,0 +1,45 @@
+$@MID@$: 1
+Date: Sat, 05 Oct 2013 13:20:19 +0000
+Author: mswartz
+Cruise: 
+Type: wire
+Category: Problem Fixed
+Subject: New CTD wire termination installed
+Attachment: 
+Encoding: HTML
+========================================
+<div>The Tioga A301592 sea cable was reterminated on 03 Oct 2013 by Marshall Swartz at request of Capt. Houtler.</div>
+<div>The original termination was already cut off and on the dock with approx 20-30m of cable removed. This is  destined for pull-test. I removed the existing electrical end at the  clevis, and pulled the boot off the termination without cutting the  wire so the pull test is undisturbed.</div>
+<div>&nbsp;</div>
+<div>PLEASE RETURN the clevis to Swartz after the pull test is completed.<br />
+<br />
+On the wire to be terminated, the condition of outer armor was average.  Generally, galvanizing is intact but large areas of surface rusting is  found, with some minor degradation of strand diameter. This is typical  of a heavily used cable.</div>
+<p><br />
+<span style="font-family:courier new,monospace"><span style="font-family:courier new,monospace">Installed a used WHOI clevis/Cerrobend type termination with yellow urethane boot and new delrin bending plug.<br />
+<br />
+</span>On peel-back, inner armor corrosion condition was slightly  worse than outer armor. I judged the mechanical condition to be  satisfactory for making a safe termination given the limited loads  encountered on Tioga. This deterioration is typical of aging cable,  especially where repeated use has worn galvanizing of the inner armor  layer.<br />
+</span></p>
+<div><span style="font-family:courier new,monospace"><br />
+*** SAFETY RECOMMENDATION- RETERMINATE EVERY THREE MONTHS OR LESS.<br />
+Due  to the corrosion evident on both inner and outer strands, this wire  should be mechanically reterminated at least every three months, as a  surface inspection of the outer armor cannot judge the condition of the  armor within the clevis termination. <br />
+</span></div>
+<div><span style="font-family:courier new,monospace"><br />
+*** I would recommend replacing this wire with newer A301592 at the earliest opportunity due to its corroded condition.<br />
+<br />
+The marker tape fragment showing 000217.0 meters at the termination end is taped and written into the Tioga wire log book.<br />
+<br />
+Installed a new Impulse neoprene RMG4FS pigtail with G-MLS-S  stainless locking sleeve, because the old pigtail, while still appearing  good on the outside, had water in the jute spacers inside the  insulation.<br />
+</span></div>
+<p><span style="font-family:courier new,monospace">A Scotchcast 821 splicekit was used for the physical splice.<br />
+</span><span style="font-family:courier new,monospace">Splice wiring was soldered with the following lead assignments (</span><span style="font-family:courier new,monospace">seacable, RMG4FS pin#)<br />
+</span><span style="font-family:courier new,monospace">armor, pin 1<br />
+</span><span style="font-family:courier new,monospace">black, pin 2<br />
+</span><span style="font-family:courier new,monospace">white, pin 3<br />
+</span><span style="font-family:courier new,monospace">red, pin 4<br />
+<br />
+</span><span style="font-family:courier new,monospace">Complete  sea cable was NOT electrically inspected end to end. Multimeter test at  2Gohm range showed insulation resistance in excess of 2Gohms between  any lead at 8V at termination end.</span></p>
+<p><span style="font-family:courier new,monospace">I recommend doing end-to-end resistance test on all four leads and record details in wire logbook and eLog.<br />
+</span></p>
+<div><span style="font-family:courier new,monospace">by Marshall Swartz (mswartz@whoi.edu) x2246.</span></div>
+<p><span style="font-family:courier new,monospace"><br />
+[end]</span></p>

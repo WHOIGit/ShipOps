@@ -1,0 +1,51 @@
+$@MID@$: 4
+Date: Mon, 28 Apr 2014 12:17:12 +0000
+Author: lstolp
+Cruise: 
+Type: Wire
+Category: .322 termination
+Subject: Returminated .322 wire
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reterminated .322 wire using poured socket with Cerrobend. &nbsp;Ken did this on way back to WHOI&nbsp;Reterminated electrical portion using solder, scotchckote and scotch 33 tape.</p>
+<p>ground is green cable to outside of socket..</p>
+<p>The RMG end ground and black show water instruction. Ground end was 'black' cleaned off w/ sandpaper..&nbsp;</p>
+<p>green to big pin (ground) ok&nbsp;</p>
+<table width="500" border="1" cellpadding="1" cellspacing="5">
+    <caption>CTD Termination</caption>
+    <tbody>
+        <tr>
+            <td width="72"><strong>322 cable</strong></td>
+            <td width="82"><strong>RMG cable</strong></td>
+            <td width="7"><strong>ohms</strong></td>
+            <td width="-4"><strong>comments</strong></td>
+        </tr>
+        <tr>
+            <td width="72">White<span class="Apple-tab-span" style="white-space:pre">	</span></td>
+            <td width="82">green</td>
+            <td width="7">18.1</td>
+            <td width="-4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="72">black&nbsp;<span class="Apple-tab-span" style="white-space:pre">	</span></td>
+            <td width="82">black</td>
+            <td width="7">19.8</td>
+            <td width="-4">RMG cable had black patina</td>
+        </tr>
+        <tr>
+            <td width="72">red<span class="Apple-tab-span" style="white-space:pre">	</span></td>
+            <td width="82">red</td>
+            <td width="7">18.6</td>
+            <td width="-4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="72">green<span class="Apple-tab-span" style="white-space:pre">	</span></td>
+            <td width="82">white</td>
+            <td width="7">1.1</td>
+            <td width="-4">ground.. &nbsp;RMG copper very black, sandpaper to clean</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

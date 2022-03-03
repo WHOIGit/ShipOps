@@ -1,0 +1,100 @@
+$@MID@$: 12
+Date: Fri, 03 Feb 2017 12:57:39 +0000
+Author: lstolp
+Cruise: ti926
+Part: CTD | CTD Sensor
+S/N: 090484
+cal date: 2017
+Type: Configuration
+Category: 
+Subject: new sensors and new calibration files for CTD
+Attachment: 170203_125739_Tioga_20170131_SBE90484_cruisepak.zip
+Encoding: HTML
+========================================
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">Date: Thu, 2 Feb 2017 13:11:15 -0500</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">From: Marshall Swartz &lt;mswartz@whoi.edu&gt;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">To: Laura Stolp &lt;laura@striker.whoi.edu&gt;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Cc: David Wellwood &lt;dwellwood@whoi.edu&gt;, Ken Ken Houtler Tioga &lt;khoutler@whoi.edu&gt;,</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp; &nbsp; Ian G Hanley &lt;ihanley@whoi.edu&gt;, Marshall Swartz &lt;mswartz@whoi.edu&gt;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Subject: Re: Tioga CTD</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Parts/Attachments:</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp;&nbsp; 1.1 &nbsp; OK &nbsp; &nbsp; 168 lines&nbsp; Text</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp;&nbsp; 1.2 Shown &nbsp; ~172 lines&nbsp; Text</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp;&nbsp; 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 458 KB &nbsp; &nbsp; Application</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">----------------------------------------</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Ken, Ian and Laura,</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Attached is the file&nbsp;Tioga_20170131_SBE90484_cruisepak.zip containing all needed files for</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">updating the SeaBird SeaSave V7 for the updated sensors, along with the *annotated</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">report,txt describing the changes, application notes for supporting info, and the .PDFs</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">from calibrations.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">** Read the file&nbsp;<b>Tioga_20170131_SBE90484_cruisepak_annotated report.txt</b>&nbsp;for the details on</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">the changes.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">All needed files are included in this .zip including:</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">1. the newly updated base file .XMLCON to be installed on your computer;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">2. all .xml files for the sensors;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">3. all PDFs where available for the sensors;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">4. the files from the lab test series TEST3, including .hex, .hdr and .xmlcon, documenting</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">the laboratory post-sensor-swap verification of all channels.&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">5. File for sensor AFLT-013 ( AFLT-013-20161123.pdf )&nbsp;is part of the zip file but this</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">sensor has NOT been loaded into the SBE9 XMLCON, since it is not installed onto the SBE9.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">If AFLT-013 is installed, you can simply update the XMLCON for this sensor.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Dave can provide the updated sensor AFLT-013 fluorometer to be installed onto the SBE9 body</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">in place of FLRTD-364. Sensor AFLT-013 was calibrated in Dec 2016.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Any questions or other needs?</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Marshall</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">p.s.: below is part of the info on the report.txt:</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Date: 01/31/2017</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Mswartz note: &nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">1. The NMEA option is TURNED OFF in this xmlcon file.&nbsp; Depending on Tioga's&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">configuration of the GPS feed input, select the proper choice.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">2. The SBE43 was calibrated in April 2016. It was not used after cal, and</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">in my opinion is acceptable for use on Tioga through the 2017 season.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">3. The SBE9 pressure channel was checked at atmospheric pressure in</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">vertical orientation, same as the SBE9 is used on the Tioga rosette. The&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">calibrated pressure reading at atmospheric was found to be within 0.2 dbar</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">of the zero gauge value expected, and is acceptable for use.</span></p>
+<div><span style="font-variant-ligatures: no-common-ligatures">
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">- Marshall Swartz 1/31/2017</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Instrument configuration file: E:\Dropbox\work\Caldata\cruise_packs\Tioga-</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">20170128\Tioga_cruisepak_20170131\Tioga_20170131_SBE90484_cruisepak.xmlcon</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">On Tue, Jan 31, 2017 at 10:01 AM, Marshall Swartz &lt;</span><span style="font-variant-ligatures: no-common-ligatures; color: #ffffff; background-color: #000000">mswartz@whoi.edu</span><span style="font-variant-ligatures: no-common-ligatures">&gt; wrote:</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp; &nbsp; &nbsp; Dave will be getting the CTD and pylon mounted tomorrow. I'll send you the new</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp; &nbsp; &nbsp; xmlcon along with PDFs later today.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">&nbsp; &nbsp; &nbsp; Temp, cond and oxygen were changed out. The pressure sensor zero was checked.&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">The STM was swapped.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Same cstar and fluorometer.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Sensors are in the same Channel position they were when found.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">All the connectors were inspected and lubed, and look good.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Pylon and mechanical release assembly require &nbsp;rinsing daily with fresh water. There</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">is active corrosion on the solenoid faces that will soon require service. It should</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">be good through this year, but we will keep a close watch. I have taken photos of all</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">the solenoid faces as a reference. If the solenoid has a penetrating leak, the pylon</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">can flood, which will be a total loss.&nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">I cannot overemphasize the need to use fresh water rinsing of the pylon and release</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">assembly, and to remove and inspect the release assembly and solenoid faces every</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">week. George, Dave and I can show you how to do that.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">See the Seabird application notes for the pylon maintenance.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Ken, the sbe43 has not been used since it was recalibrated in April 2016. This also</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">should be good through the 2017 season.</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-variant-ligatures: no-common-ligatures">Marshall</span></p>
+<div><span style="font-variant-ligatures: no-common-ligatures"><br />
+</span></div>
+</span></div>

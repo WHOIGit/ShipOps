@@ -1,0 +1,52 @@
+$@MID@$: 11
+Date: Tue, 09 Sep 2014 13:52:03 +0000
+Author: lstolp
+Cruise: ti786
+Sensor: SBE48
+S/N: SBE48 V 1.0  SERIAL NO. 0013    09 Sep 2014  13:29:13
+cal date: 
+Category: notes
+Type: Problem Fixed
+Subject: SBE48 not sending data
+Attachment: 
+Encoding: HTML
+========================================
+<p>It looks like the conectors were extermely corroded and the system may not have been getting enough volts. Robbie swapped connectors out and now it is working again :).. </p>
+<p>&nbsp;</p>
+<p>S&gt;</p>
+<p>&nbsp;</p>
+<p><br />
+SBE48 V 1.0&nbsp; SERIAL NO. 0013&nbsp;&nbsp;&nbsp; 09 Sep 2014&nbsp; 13:29:13<br />
+not logging: low battery<br />
+sample interval = 5 seconds<br />
+number of samples to average = 12<br />
+samplenumber = 299593, free = 0<br />
+serial sync mode disabled<br />
+real-time output enabled<br />
+temperature = 21.39 deg C<br />
+S&gt;<br />
+timeout<br />
+SBE 48<br />
+S&gt;<br />
+?cmd S&gt;<br />
+?cmd S&gt;<br />
+SBE48 V 1.0&nbsp; SERIAL NO. 0013&nbsp;&nbsp;&nbsp; 09 Sep 2014&nbsp; 13:33:27<br />
+not logging: low battery<br />
+sample interval = 5 seconds<br />
+number of samples to average = 12<br />
+samplenumber = 299593, free = 0<br />
+serial sync mode disabled<br />
+real-time output enabled<br />
+temperature = 21.39 deg C<br />
+S&gt;<br />
+SBE48 V 1.0&nbsp; 0013<br />
+temperature:&nbsp; 17-nov-12<br />
+&nbsp;&nbsp;&nbsp; TA0 = -2.771682e-05<br />
+&nbsp;&nbsp;&nbsp; TA1 = 2.801842e-04<br />
+&nbsp;&nbsp;&nbsp; TA2 = -2.614672e-06<br />
+&nbsp;&nbsp;&nbsp; TA3 = 1.666984e-07<br />
+rtc:&nbsp; 01-aug-03<br />
+&nbsp;&nbsp;&nbsp; RTCA0 = 0.000000e+00<br />
+&nbsp;&nbsp;&nbsp; RTCA1 = 0.000000e+00<br />
+&nbsp;&nbsp;&nbsp; RTCA2 = 0.000000e-41<br />
+&nbsp;</p>

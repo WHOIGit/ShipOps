@@ -1,0 +1,116 @@
+$@MID@$: 6
+Date: Thu, 27 Jun 2013 15:24:45 +0000
+Author: lstolp
+Cruise: ti677
+Type: Cisco_Router
+Category: General
+Subject: old router config
+Attachment: 130627_152431_ti-hiseasnet.cfg.20130627oldrouter
+Encoding: HTML
+========================================
+<p>swapped out routers..</p>
+<p>&nbsp;</p>
+<p>ti-hiseasnet#show version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+Cisco Internetwork Operating System Software <br />
+IOS (tm) C2600 Software (C2600-IK9O3S3-M), Version 12.3(22), RELEASE SOFTWARE (fc2)<br />
+Technical Support: http://www.cisco.com/techsupport<br />
+Copyright (c) 1986-2007 by cisco Systems, Inc.<br />
+Compiled Wed 24-Jan-07 16:48 by ccai<br />
+Image text-base: 0x80008098, data-base: 0x81A11604<br />
+<br />
+ROM: System Bootstrap, Version 12.2(7r) [cmong 7r], RELEASE SOFTWARE (fc1)<br />
+ROM: C2600 Software (C2600-IK9O3S3-M), Version 12.3(22), RELEASE SOFTWARE (fc2)<br />
+<br />
+ti-hiseasnet uptime is 2 hours, 55 minutes<br />
+System returned to ROM by power-on<br />
+System restarted at 12:33:52 UTC Thu Jun 27 2013<br />
+System image file is &quot;flash:flash:c2600-ik9o3s3-mz.123-22&quot;<br />
+<br />
+<br />
+This product contains cryptographic features and is subject to United<br />
+States and local country laws governing import, export, transfer and<br />
+use. Delivery of Cisco cryptographic products does not imply<br />
+third-party authority to import, export, distribute or use encryption.<br />
+Importers, exporters, distributors and users are responsible for<br />
+compliance with U.S. and local country laws. By using this product you<br />
+agree to comply with applicable laws and regulations. If you are unable<br />
+to comply with U.S. and local laws, return this product immediately.<br />
+<br />
+A summary of U.S. laws governing Cisco cryptographic products may be found at:<br />
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html<br />
+<br />
+If you require further assistance please contact us by sending email to<br />
+export@cisco.com.<br />
+<br />
+cisco 2611XM (MPC860P) processor (revision 0x100) with 93184K/5120K bytes of memory.<br />
+Processor board ID JAE073000Q5 (1182407224)<br />
+M860 processor: part number 5, mask 2<br />
+Bridging software.<br />
+X.25 software, Version 3.0.0.<br />
+4 Ethernet/IEEE 802.3 interface(s)<br />
+2 FastEthernet/IEEE 802.3 interface(s)<br />
+2 Serial(sync/async) network interface(s)<br />
+32K bytes of non-volatile configuration memory.<br />
+32768K bytes of processor board System flash (Read/Write)<br />
+<br />
+Configuration register is 0x2102<br />
+<br />
+ti-hiseasnet#<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+$@MID@$: 7
+Date: Thu, 27 Jun 2013 17:37:21 +0000
+Author: lstolp
+Cruise: ti677
+Type: Cisco_Router
+Category: Problem
+Subject: replaced router 
+Attachment: 
+Encoding: HTML
+========================================
+<p>ti-hiseasnet#show version <br />
+Cisco Internetwork Operating System Software <br />
+IOS (tm) C2600 Software (C2600-IK9O3S3-M), Version 12.3(22), RELEASE SOFTWARE (fc2)<br />
+Technical Support: http://www.cisco.com/techsupport<br />
+Copyright (c) 1986-2007 by cisco Systems, Inc.<br />
+Compiled Wed 24-Jan-07 16:48 by ccai<br />
+Image text-base: 0x80008098, data-base: 0x81A11604<br />
+<br />
+ROM: System Bootstrap, Version 12.2(7r) [cmong 7r], RELEASE SOFTWARE (fc1)<br />
+ROM: C2600 Software (C2600-IK9O3S3-M), Version 12.3(22), RELEASE SOFTWARE (fc2)<br />
+<br />
+ti-hiseasnet uptime is 1 hour, 9 minutes<br />
+System returned to ROM by power-on<br />
+System restarted at 16:28:27 UTC Thu Jun 27 2013<br />
+System image file is &quot;flash:flash:c2600-ik9o3s3-mz.123-22&quot;<br />
+<br />
+<br />
+This product contains cryptographic features and is subject to United<br />
+States and local country laws governing import, export, transfer and<br />
+use. Delivery of Cisco cryptographic products does not imply<br />
+third-party authority to import, export, distribute or use encryption.<br />
+Importers, exporters, distributors and users are responsible for<br />
+compliance with U.S. and local country laws. By using this product you<br />
+agree to comply with applicable laws and regulations. If you are unable<br />
+to comply with U.S. and local laws, return this product immediately.<br />
+<br />
+A summary of U.S. laws governing Cisco cryptographic products may be found at:<br />
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html<br />
+<br />
+If you require further assistance please contact us by sending email to<br />
+export@cisco.com.<br />
+<br />
+cisco 2611XM (MPC860P) processor (revision 0x100) with 125952K/5120K bytes of memory.<br />
+Processor board ID JAE074701W6 (1457560173)<br />
+M860 processor: part number 5, mask 2<br />
+Bridging software.<br />
+X.25 software, Version 3.0.0.<br />
+4 Ethernet/IEEE 802.3 interface(s)<br />
+2 FastEthernet/IEEE 802.3 interface(s)<br />
+2 Serial(sync/async) network interface(s)<br />
+32K bytes of non-volatile configuration memory.<br />
+32768K bytes of processor board System flash (Read/Write)<br />
+<br />
+Configuration register is 0x2102<br />
+<br />
+&nbsp;</p>

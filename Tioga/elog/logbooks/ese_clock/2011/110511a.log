@@ -1,0 +1,13 @@
+$@MID@$: 2
+Date: Wed, 11 May 2011 13:40:21 +0000
+Author: rsl
+Cruise: ti521
+S/N: 
+Type: serial
+Category: Other
+Subject: new serial cable
+Attachment: 
+Encoding: HTML
+========================================
+<p>Made proper clock adaptor to connect to our rj11 serial cables.&nbsp; (<strong>NOTE</strong>, ese clocks do <em>not</em> have a standard serial port, do <em>not</em> use standard serial connections to the 9 pin port.)</p>
+<p>Plugged clock into ftp /dev/ttyS1</p>

@@ -1,0 +1,15 @@
+$@MID@$: 16
+Date: Wed, 19 Aug 2015 22:11:34 +0000
+Author: RSL
+Cruise: ti835
+Sensor: Fluorometer
+S/N: WS3S-1032P
+cal date: -
+Category: Plumbing
+Type: Problem Fixed
+Subject: checked flurometer and plumbing
+Attachment: 
+Encoding: HTML
+========================================
+<p>Removed the flurometer, cleaned it, and checked it by itself.&nbsp; Did the check where one inserts a white zip tie, the flurometer is definitely working.&nbsp; Voltage went up/down with zip tie in/out, this was recorded by dsLog.&nbsp; </p>
+<p>Removed and &quot;cleaned&quot; all the plumbing.&nbsp; Clean might not be quite the right word, but it's better.&nbsp; It also seems likely that the small quick disconnect fitting was clogged, or possibly something else in the system.&nbsp; A lot of junk came out.&nbsp; I removed the quick disconnect, it seemed kind of clogged beyond repair.&nbsp; Re-assembled everyting, but did not test it, as I don't know how to get the sea water pump running.&nbsp;&nbsp; I left all the valves shut, system is dry.&nbsp; </p>

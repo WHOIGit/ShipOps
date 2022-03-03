@@ -1,0 +1,22 @@
+$@MID@$: 2
+Date: Tue, 28 Sep 2010 21:33:02 +0000
+Author: lstolp
+Cruise: 
+Type: Furuno
+Category: Problem | Problem fixed
+Subject: too many sentences being sent out..  changed to just GPRMC
+Attachment: 
+Encoding: HTML
+========================================
+
+$@MID@$: 3
+Date: Tue, 28 Sep 2010 21:35:08 +0000
+Author: bwalden
+Cruise: 
+Type: Moxa
+Category: Configuration
+Subject: added moxa to send gps out upd port 10515
+Attachment: 
+Encoding: HTML
+========================================
+

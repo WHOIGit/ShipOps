@@ -1,0 +1,71 @@
+;
+; EUSBSCSI.INF - INF file for installation of eUSB SCSI Adapter.
+; 
+; Copyright (C) SCM Microsystems Inc., 1999-2000.
+;
+;
+
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%Mfg%
+LayoutFile=LAYOUT.INF
+DriverVer=05/26/2000, 1.0.2.12
+CataLogFile = EUSBSCSI.CAT
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[DestinationDirs]
+EUSBSCSI.CopyList      = 10, system32\drivers
+
+[Manufacturer]
+%Mfg%=Mfg.Section
+
+[Mfg.Section]
+%USB\VID_050D&PID_0115.DeviceDesc%=EUSBSCSI, USB\VID_050d&PID_0115
+
+[EUSBSCSI.NT]
+CopyFiles=EUSBSCSI.CopyList
+DriverVer=05/26/2000, 1.0.2.12
+
+[EUSBSCSI.CopyList]
+EUSBSCSI.SYS
+
+[EUSBSCSI.NT.Services]
+Addservice = EUSBSCSI, 0x00000003, EUSBSCSI.AddService
+
+[EUSBSCSIAddReg]
+HKR,,DriverFlags,0x10001,%DriverFlags%
+
+[EUSBSCSI.AddService]
+DisplayName    = %EUSBSCSI.SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %12%\EUSBSCSI.SYS
+AddReg		= EUSBSCSIAddReg
+
+
+; DriverFlags field bitmap definition
+; 0x00010000	=> Enable DriverFlags, Mandatory for all
+; 0x00000001	=> Reserved
+; 0x00000002	=> Reserved
+; 0x00000004	=> Disable timeout in eUSCSI Firmware
+; 0x00000008	=> Disable TURBO option in eUSCSI firmware
+; 0x00000010	=> Force CBC Protocol
+; 0x00000020	=> Force BONLY Protocol
+; 0x00000040	=> Disable RemoteWakeup
+; 0x00000080	=> Disable ASPI and SPTI
+; 0x00000100	=> SmartMedia Disable ECC Verify
+; 0x00000200	=> SmartMedia Disable Write Multiple
+; 0x00000400	=> SmartMedia Disable CIS Check
+; 0x00000800	=> SmartMedia Enable Write Verify
+
+
+[Strings]
+Mfg="Belkin Components"
+USB\VID_050D&PID_0115.DeviceDesc="Belkin USB SCSI Adapter"
+EUSBSCSI.SvcDesc="Belkin USB Mass Storage Driver"
+DriverFlags = "0x00010000"

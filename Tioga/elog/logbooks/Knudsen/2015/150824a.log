@@ -1,0 +1,21 @@
+$@MID@$: 1
+Date: Mon, 24 Aug 2015 15:44:32 +0000
+Author: lstopl
+Cruise: ti836
+S/N: K2K-04-0143
+Type: Problem
+Category: Hardware
+Subject: Echo control software freezes
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+<p>serial data is sending out garbage:</p>
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">sssg@ftp:/home/data/archive/ti833/underway/raw$ more ti20150814_1958.DEP</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">DEP 2015/08/14 19:58:38.991 KN320B</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">?????????C??????????B?T;;?V7??u7?B3?Z??P??tU?wT5??????a?&#660;)y??j?5?V</p>
+<p dir="rtl" style="margin: 0px; font-size: 11px; font-family: Menlo;">??&#1807;?&#5548;3?5??U)?U7Q???9~G??9?C?)RE?!???!&quot;?O????y7???W?7??</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ??J?,7?^?&#1870;?v?#Ttw9%?</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">?M??????????C??????????B?T?</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">5?ov?g?T?3?O4P?U??&delta;!??u??R?????!#e?)Q?</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>

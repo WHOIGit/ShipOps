@@ -1,0 +1,12 @@
+$@MID@$: 29
+Date: Mon, 10 Jun 2013 13:18:11 +0000
+Author: rsl
+Cruise: ti672
+Computer: ftp
+Type: Problem | Problem Fixed
+Category: Software
+Subject: ftp stuck
+Attachment: 
+Encoding: HTML
+========================================
+<p>Unable to log into ftp from away.&nbsp; As it turns out also unable to log in locally. &nbsp; I could get to the login, (locally), but it would never give me a chance  to type the password.&nbsp; I'm guessing some process had run away.&nbsp; Rebooted to fix.</p>

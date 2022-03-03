@@ -1,0 +1,50 @@
+$@MID@$: 21
+Date: Fri, 18 Mar 2016 11:11:45 +0000
+Author: lstolp
+Cruise: ti867
+Sensor: SBE48
+S/N: 480019
+cal date: 19-feb-16
+Category: Software
+Type: Calibration
+Subject: sbe48 not logging data and updated metadata files on ftp:/home/data/underway/doc and template
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;<span style="font-family: Menlo; font-size: 11px;">?cmd S&gt;DS</span><span style="font-family: Menlo; font-size: 11px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">SBE 48 V 2.0a &nbsp; SERIAL NO. 0019&nbsp; &nbsp; 01 Jan 1980&nbsp; 00:00:14</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">battery voltage = 12.1</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">logging not started</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">sample interval = 0 seconds</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">number of samples to average = 4</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">samplenumber = 0, free = 4699867</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">serial sync mode disabled</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">real-time output enabled</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">SBE 39 configuration = temperature only</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">binary upload does not include time</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">temperature = 5.57 deg C</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">S&gt;DC</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">SBE48 V 2.0a &nbsp; 00019</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">temperature:&nbsp; 19-feb-16</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; TA0 = -2.407645e-04</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; TA1 = 3.173262e-04</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; TA2 = -5.178047e-06</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; TA3 = 2.254826e-07</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">S&gt;</p>
+<div style="font-family: verdana, tahoma, sans-serif;">&nbsp;</div>
+<div style="font-family: verdana, tahoma, sans-serif;">
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">SBE 48 V 2.0a &nbsp; SERIAL NO. 0019&nbsp; &nbsp; 18 Mar 2016&nbsp; 10:19:36</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">battery voltage = 12.1</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">logging not started</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">sample interval = 0 seconds</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">number of samples to average = 4</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">samplenumber = 0, free = 4699867</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">serial sync mode disabled</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">real-time output enabled</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">SBE 39 configuration = temperature only</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">binary upload does not include time</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">temperature = 5.55 deg C</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">S&gt;startnow</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">S&gt;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#&nbsp; 5.5515, 18 Mar 2016, 10:2</p>
+</div>

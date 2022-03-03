@@ -1,0 +1,71 @@
+$@MID@$: 46
+Date: Sun, 25 Sep 2016 12:30:42 +0000
+Author: lstolp
+Cruise: ti906
+Computer: tidatalog
+Type: Problem | Problem Fixed
+Category: Hardware
+Subject: hard drive died, replaced
+Attachment: 160925_122933_ti_dsLogCSV_20160925.ini,160925_123028_ti_dsLog_20160925.ini
+Encoding: HTML
+========================================
+<p>&nbsp;hard drive died and replaced. Had issues w/ KVM and ata.1 errors, replace SATA cable to HD and took out riser. This computer should probably be replaced.</p>
+<p>updated to Ubuntu 14.04 server;&nbsp;</p>
+<p><span style="font-family: Menlo; font-size: 11px;">sssg@tidatalog:/home/dslog$ uname -a&nbsp;</span>Linux tidatalog 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux</p>
+<p>&nbsp;</p>
+<p>attached latest dsLog ini files.&nbsp;</p>
+<p>/etc/rc.local&quot;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#!/bin/sh -e</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># rc.local</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># This script is executed at the end of each multiuser runlevel.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># Make sure that the script will &quot;exit 0&quot; on success or any other</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># value on error.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># In order to enable or disable this script just change the execution</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># bits.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># By default this script does nothing.</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># start dsLog up at boot</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/etc/init.d/dsLog start</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">/etc/init.d/dsLogCSV start</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># backdoor tunnel for access from shore</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">autossh -M0 -N -R20622:localhost:22 -o &quot;ServerAliveInterval 120&quot; -o &quot;ServerAliveCountM</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">ax 3&quot; -o &quot;StrictHostKeyChecking=no&quot; -o &quot;BatchMode=yes&quot; -i /home/tioga/.ssh/id_rsa ssht</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">unnel@128.128.97.216 &amp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">/etc/network/interfaces:<br />
+&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">sssg@tidatalog:~$ more /etc/network/interfaces</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># This file describes the network interfaces available on your system</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># and how to activate them. For more information, see interfaces(5).</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;"># The loopback network interface</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">auto lo</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">iface lo inet loopback</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">auto eth0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">iface eth0 inet static</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; address 192.168.4.15</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; netmask 255.255.255.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; network 192.168.4.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; broadcast 192.168.4.255</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; dns-nameservers 128.128.243.3</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; gateway 192.168.4.3</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">#1 The secondary network interface</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">auto eth1</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">iface eth1 inet static</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; address 192.168.0.6</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; netmask 255.255.255.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; network 192.168.0.0</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">&nbsp; &nbsp; &nbsp; broadcast 192.168.0.255</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo; min-height: 13px;">&nbsp;</p>
+<p style="margin: 0px; font-size: 11px; font-family: Menlo;">up route add -net 128.128.96.0 netmask 255.255.252.0 gw 192.168.0.1</p>
+<div>&nbsp;</div>

@@ -1,0 +1,14 @@
+$@MID@$: 5
+Date: Mon, 20 May 2013 12:23:28 +0000
+Author: lstolp
+Cruise: ti668
+Type: Wireless
+Category: Problem fixed
+Subject: replaced wireless with Cisco Air1200
+Attachment: 
+Encoding: HTML
+========================================
+<p>SSID tiogawireless</p>
+<p>set BRV1 interface to dhsp then add to leasse on ftp</p>
+<p>community string changed to sssg</p>
+<p>Need to fix this when I am on the ship ...</p>

@@ -1,0 +1,38 @@
+$@MID@$: 7
+Date: Tue, 28 Jan 2014 21:22:56 +0000
+Author: lstolp
+Cruise: ti729
+Part: CTD | CTD Sensor
+S/N: SBE9 s/n 0484
+cal date: SBE in March 2013
+Type: Configuration
+Category: Hardware
+Subject: new calibration
+Attachment: 140128_212241_Tioga-20140128-SBE90484-setup.rar
+Encoding: HTML
+========================================
+<p>an and Ken,<br />
+The SBE9 s/n 0484 has been setup and configured with newly calibrated SBE3, 4 and 43<br />
+sensors.<br />
+I've attached an RAR file for you, and am bringing a thumb drive for use you offload the<br />
+same data when we bring the SBE9.<br />
+<br />
+The SBE9 pressure channel was calibrated at SBE in March 2013 and not used since it was<br />
+shipped here.<br />
+The .RAR file contains all necessary files (XML for each sensor, and PDFs where<br />
+available), including a PSA file to start the SeaSave.<br />
+It also contains appnotes for the particular sensors installed.<br />
+<br />
+Con files are saved as .XMLCON format.<br />
+You'll have to change the .XMLCON to:<br />
+- set the proper RS232 port used for the:<br />
+&nbsp;&nbsp; -&nbsp; SBE9 data,<br />
+&nbsp;&nbsp; - for the SBE32 pylon comms,<br />
+&nbsp;&nbsp; - and for how you acquire NMEA (deck unit or PC, and then for the PC port).<br />
+- set the XMLCON to show you have the pylon installed. It is not set now.<br />
+<br />
+Let me know if you have questions.<br />
+Regards, Marshall<br />
+<br />
+--<br />
+&nbsp;</p>

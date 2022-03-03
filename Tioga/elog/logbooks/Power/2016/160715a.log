@@ -1,0 +1,12 @@
+$@MID@$: 2
+Date: Fri, 15 Jul 2016 19:31:53 +0000
+Author: rlaird
+Cruise: 
+Type: Science_Rack
+Category: Problem | Problem fixed
+Subject: Replaced batteries in UPS, cleaned.
+Attachment: 
+Encoding: HTML
+========================================
+<p>Load tested UPS by pulling plug, system immediately went down.&nbsp; Replaced batteries, all seems well.&nbsp; Tested for 20 minutes, UPS still indicated another 10 minutes available.</p>
+<p>Also cleaned out UPS vents, as they were 100% clogged up with dust.</p>

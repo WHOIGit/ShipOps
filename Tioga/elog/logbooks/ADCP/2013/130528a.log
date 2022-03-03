@@ -1,0 +1,29 @@
+$@MID@$: 3
+Date: Tue, 28 May 2013 12:36:16 +0000
+Author: lstolp
+Cruise: ti670
+S/N: 
+Type: Other
+Category: Hardware
+Subject: ADCP/ADCP deckunit not working
+Attachment: 130528_124026_tioga_300adcp_20130524.cap
+Encoding: HTML
+========================================
+<p>testing for RDI.. ADCP seems to collect data for awhile then it dies .. </p>
+$@MID@$: 4
+Date: Tue, 28 May 2013 14:33:34 +0000
+Author: lstolp
+Cruise: ti670
+S/N: ADCP DeckUnit
+Type: Routine
+Category: Software
+Subject: comports on windoze ADCP computer
+Attachment: 
+Encoding: HTML
+========================================
+<p>Now:<br />
+ADCP - com1,&nbsp; 9600,8,n,1<br />
+Nav-&nbsp;&nbsp; com9,&nbsp; 9600,8,n,1<br />
+RPH-&nbsp;&nbsp; com10, 4800,8,n,1<br />
+<br />
+&nbsp;</p>
