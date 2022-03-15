@@ -141,6 +141,9 @@ while (1) {
  	     {
                my $chr = chop($comp[1]);
                $wxt{$wkey} = $comp[1];
+               print "variable = $comp[1]\n" if $debug;
+               print "\$wkey = $wkey\n" if $debug;
+               print "wxt = $wxt{$wkey}\n" if $debug;
              }
           }
 
@@ -162,6 +165,7 @@ my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT
 
               $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
               VALUES ('$key', '$field1', '$value')");
+              print "inserted into latest_data= $key ** $field1   ** $value\n" if $debug;
 
              }
 

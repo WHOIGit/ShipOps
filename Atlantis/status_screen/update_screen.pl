@@ -11,7 +11,7 @@ use POSIX qw(strftime);
 use CGI::Pretty qw( :html3 );
 use Getopt::Long;
 
-#$debug = 1;
+$debug = 0;
 $db_name = "/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db";
 $ship = "Atlantis";
 @months = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');

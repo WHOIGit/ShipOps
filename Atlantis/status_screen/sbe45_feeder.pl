@@ -58,6 +58,7 @@ my $mesg;
 my $sbe45s = "0";
 my $sbe45c = "0";
 my $sbe45sv = "0";
+my $sbe45t = "0";
 
 # get options from the command line 
 GetOptions('debug' => \$debug, 'port=s' => \$port, 'database=s' => \$db_name,
@@ -100,8 +101,12 @@ while (1) {
         my $chr = chop($sbe45s);
         $sbe45c = $strings[5];   # conductivity in S/m
         $chr = chop($sbe45c);
-        $sbe45sv= $strings[7];   # conductivity in S/m
+        $sbe45sv= $strings[7]; 
         $chr = chop($sbe45sv);
+        $sbe45t= $strings[4];   
+        $chr = chop($sbe45t);
+        print "sbet = $sbe45t\n" if $debug;
+
 
 my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
                 { PrintError => 0} ) || die "Cannot connect.";
@@ -119,6 +124,8 @@ my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT
               VALUES ('SBE45C', '$field1', '$sbe45c')");
               $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
               VALUES ('SSV', '$field1', '$sbe45sv')");
+              $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              VALUES ('SBE45T', '$field1', '$sbe45t')");
 
   $dbh->do("PRAGMA synchronous = OFF");
   $dbh->disconnect();
