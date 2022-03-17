@@ -1,0 +1,102 @@
+#! /usr/bin/perl 
+#
+# 20110304   lstolp  took out -w and debug
+#                    too many error messages
+#
+# 20200228   lstolp   using command line wget to  wtfismyip
+#                     this query should go out the weightd balance 
+#                     peplin rule   
+# 
+
+
+use DBI;
+use Getopt::Long;
+use strict;
+use Net::Traceroute::PurePerl;
+
+my $db_name;
+my $username;
+my $password;
+my $dell;
+my $dbh;
+
+my $sealink_route = "10.188.94.4";
+my $fx_route = "10.0.1.1";
+
+my $debug = 0;
+
+
+$db_name = "/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db";
+  
+$dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password, { PrintError => 0} ) || die "Can no
+t connect.";
+
+my $table_result = $dbh->do( "CREATE TABLE latest_data (
+              header  VARCHAR(10) PRIMARY KEY ,
+              udp_time VARCHAR (10),
+              data VARCHAR (180),
+              timeEnter VARCHAR(120))" );
+
+if ($debug) {
+  if (!defined($table_result)) {
+        print STDERR "Table already created\n";
+  } else {
+        print STDERR "Table created\n";
+  }
+}
+
+my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT ON latest_data
+        BEGIN
+            UPDATE latest_data SET timeEnter = strftime('%s', 'now')
+                        WHERE rowid = new.rowid;
+        END");
+
+if ($debug) {
+  if (!defined($trigger_result)) {
+        print STDERR "Trigger already created\n";
+  } else {
+        print STDERR "Trigger created\n";
+  }
+}
+my $i = 0
+while (my $i < 3) {
+   my $t = new Net::Traceroute::PurePerl(
+      host           => "128.128.250.51",
+      debug          => 0,
+      max_ttl        => 5,
+      query_timeout  => 5,
+      packetlen      => 40,
+      protocol       => 'udp',); # Or icmp );
+$t->traceroute;
+my $router=$t->hop_query_host(3,0);
+if ($router eq $sealink_route) { 
+	print("Sealink is up");
+}
+if ($router eq $fx_route) {
+	print("FX is up");
+}
+
+
+$i = $i +1 
+
+
+
+$dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+                VALUES ('Networkuse', '00:00:00', '$route')");
+
+  sleep 10;
+}
+
+
+
+## remove whitespace
+sub strip{
+    my @out = @_;
+    for (@out) {
+        s/^\s+//;
+        s/\s+$//;
+    }
+    return wantarray ? @out : $out[0];
+  }
+
+

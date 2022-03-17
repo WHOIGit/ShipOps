@@ -1,0 +1,127 @@
+#!/usr/bin/perl
+#
+#   20110516       javery
+#                  non whoi ships port messages are raw: they don't have the format of
+#                  the calliope messages, with |header time message| separated by white space.
+#                  So they need to be "cooked" to get them from raw to calliope form.
+#
+#   20110527       javery
+#                  added --multi
+#                       this assumes two or more strings "seperated by "/n" aka newline
+#                       use join or split to join the line of split it
+#                        --multi join
+#                        --multi split
+#   20130417       lstolp
+#                  add options for udp data sent from dsLog
+#
+#
+#   20130126       asimoneau and lstolp
+#                  - general clean up similar to rmc_feeder.pl
+#
+#
+#   20130129       ams and lws
+#                  -moved database connect and disconnect around
+#                  -now fuser shows the the database as not constantly open
+#                  
+#  20161010        lws
+#                  - changed database to be written to memory, using tmpfs filesystem
+#                  - added a sleep 1, since this comes in so fast
+#
+#
+#  version 20130129
+#
+
+
+
+use strict;
+use warnings;
+use DBI;
+use IO::Socket::INET;
+use Getopt::Long;
+
+#$| = 1;
+
+my $debug = 0;
+
+# udpport number
+my $port = "55505";
+
+# sqlite db setup
+my $db_name = "/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db";
+my $username;
+my $password;
+my $type;
+my $udp_type;
+
+# misc variables to initialize
+my @messages;
+my @strings;
+my $field1;
+my $field2;
+my $mesg;
+my $aml_sv = "0";
+my $aml_st = "0";
+
+# get options from the command line 
+GetOptions('debug' => \$debug, 'port=s' => \$port, 'database=s' => \$db_name,
+         'udptype=s' => \$udp_type); 
+
+my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
+                { PrintError => 0} ) || die "Cannot connect.";
+
+my $table_result = $dbh->do( "CREATE TABLE latest_data (
+              header  VARCHAR(10) PRIMARY KEY ,
+              udp_time VARCHAR (10),
+              data VARCHAR (180),
+              timeEnter VARCHAR(120))" );
+
+# write immediately to the database
+$dbh->do("PRAGMA synchronous = OFF");
+# disconnect from the database before starting loop
+$dbh->disconnect();
+
+
+
+
+if ($debug) {
+  if (!defined($table_result)) {
+        print STDERR "Table already created\n";
+  } else {
+        print STDERR "Table created\n";
+  }
+}
+
+
+while (1) {
+        my $sock = IO::Socket::INET->new(Proto => 'udp', LocalPort => $port, Reuse => 1 );
+        $sock->recv($mesg, 180);
+        print STDERR "\n\n Start of Loop Input message: $mesg" if $debug;
+        @strings = split (" ", $mesg);
+        print "\@strings = @strings\n" if $debug;
+        $field1 = $strings[2];
+        $aml_sv = $strings[5];
+        $aml_st = $strings[4];
+
+my $dbh = DBI->connect( "dbi:SQLite:". $db_name, $username, $password,
+                { PrintError => 0} ) || die "Cannot connect.";
+
+my $trigger_result = $dbh->do("CREATE TRIGGER insert_data_timeEnter AFTER INSERT ON latest_data
+        BEGIN
+            UPDATE latest_data SET timeEnter = strftime('%s', 'now')
+                        WHERE rowid = new.rowid;
+        END");
+ 
+       
+              $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              VALUES ('AML_SV', '$field1', '$aml_sv')");
+              $dbh->do( "INSERT OR REPLACE INTO latest_data (header, udp_time, data)
+              VALUES ('AML_ST', '$field1', '$aml_st')");
+
+  $dbh->do("PRAGMA synchronous = OFF");
+  $dbh->disconnect();
+  sleep 1;
+      close($sock)
+
+       }
+
+

@@ -1,0 +1,19 @@
+Latitude:CNAV:3:%3d&#176 %6.3f' %s:latitude:Longitude:CNAV:5:%3d&#176 %6.3f' %s:longitude
+Speedlog:SPD:0:%5.1f knots::Heading:GYRO:0:%6.1f &#176::
+SOG:SOG:0:%5.1f knots::COG:COG:0:%6.1f &#176::
+Distance to Station:DTWP:0:%6.1f nm::Time to Station:TTWP:0:%d;%02d:hrsmin::
+::::blank:::::blank
+True Wind Speed:WXTS_TS:0:%5.1f m/s  %6.2f knots:knots:True Wind Direction:WXTS_TD:0:%5.1f &#176:
+Air Temperature:WXTP_Ta:0:%5.1f&#176C  %5.1f &#176F:airtemp: Air Pressure:WXTP_Pa:0:%7.1f mbar::
+Rel Humidity:WXTS_Ua:0:%5.1f %::::::blank
+Short Wave Radiation:sw:0:%5.1f W/m^2::Long Wave Radiation:lw:0:%5.1f W/m^2::
+PAR:PAR:0:%5.1f uE::::::blank
+::::blank:::::blank
+Sea Temp (SBE48):SBE48:0:%5.1f&#176C  %5.1f &#176F:airtemp:Sea Surface Salinity:SBE45S:0:%5.3f PSU::
+Sea Temp (SBE45):SBE45T:0:%5.1f&#176C  %5.1f &#176F:airtemp:Trans25:VSIG25:0:%5.2f Tr::
+Valeport Temp:VAL_ST:0:%5.1f&#176C  %5.1f &#176F:airtemp:Trans10:VSIG10:0:%5.2f Tr::
+Fluorometer:FLR:0:%5.1f:airtemp:Flow:FLOW:0:%5.3f Lpm::
+SSV:VAL_SV:0:%7.3f m/s::::::blank
+::::blank:::::blank
+::::blank:12 kHz Depth:Depth12:0:%7d meters:
+::::blank:EK80 Depth:ek80depth:0:%7d meters:
