@@ -1,5 +1,9 @@
 # ShipOps
 
+## Armstrong directory structure
+- dsLog ini files reside under /home/dslog
+- Perl scripts reside under /usr/lib/cgi-bin/db_driven_data/status_screen on dockna.whoi.edu
+
 ## Atlantis directory structure
 - Binaries reside under /usr/local/bin on atdatalog01
 - Source code resides under /usr/local/src/dsLog and /usr/local/src/dsLogCSV-126
