@@ -1,0 +1,411 @@
+#R/V Tioga CSV data file  (Time stamps are GMT)
+#Date, Time_GMT, Dec_Lat, Dec_Lon, HDT, COG, SOG, WXTP_Ta, WXTP_Pa, WXTP_Ri, WXTP_Rc, WXTP_Dm, WXTP_Sm, WXTP_Ua, WXTP_TS, WXTP_TD, SBE45S, SBE45T, SBE48, FLR, SBE45V, Depth200, HdChkSum=00
+#2014/07/16,18:34:01,41.524475,-70.671840,26.5,104.9,000.0,22.2,1010.3,2.0,203.76,140,1.5,89.0,1.50,166.50,28.8439,23.7013,21.6310,01355.50,1524.53,nan, 00
+#
+#
+#-----------------------------------------------
+#
+# created for running dsLogCsv on the R/V Tioga
+# t. thiel and lstolp
+# 20140716
+#
+#-----------------------------------------------
+#--- Abstract Index Table
+#   1   Gyrocompass Heading from $HEHDT
+#   2   GPS Latitude from $GPRMC
+#   3   GPS Longitude from $GPRMC
+#   4   GPS COG from $GPRMC
+#   5   GPS SOG from $GPRMC
+#   6   Temperature from SBE48
+#   7   Speed from $VDVBW
+#   8   LWR
+#   9   SWR
+#  10   Temperature from SBE45
+#  11   Conductivity from SBE45
+#  12   Salinity from SBE45
+#  13   Sound velocity from SBE45
+#  14   Flourometer
+#  15   Depth12
+#  16   xCalc SSSV perl
+#  17   
+#  18   
+#  19   
+#  20   Port Vaisalla Address
+#  21   Port Vaisalla Wind Direction
+#  22   Port Vaisalla Wind Speed Min
+#  23   Port Vaisalla Wind Speed Avg
+#  24   Port Vaisalla Wind Speed Max
+#  25   Port Vaisalla Temperature
+#  26   Port Vaisalla Humidity
+#  27   Port Vaisalla Pressure
+#  28   Port Vaisalla Rain Accumulation
+#  29   Port Vaisalla Rain Intensity
+#  30   Stbd Vaisalla Address
+#  31   Stbd Vaisalla Wind Direction
+#  33   Stbd Vaisalla Wind Speed Min
+#  33   Stbd Vaisalla Wind Speed Avg
+#  34   Stbd Vaisalla Wind Speed Max
+#  35   Stbd Vaisalla Temperature
+#  36   Stbd Vaisalla Humidity
+#  37   Stbd Vaisalla Pressure
+#  38   Stbd Vaisalla Rain Accumulation
+#  39   Stbd Vaisalla Rain Intensity
+#  40
+#  41
+#  42
+#  
+#-----------------------------------------------
+#-----------------------------------------------
+
+[GENERAL]
+
+INPUT_DATA_DIR="/home/tthiel/data/tioga_data"
+ROOT_DIR="/home/tthiel/data/tioga_csv"
+
+#-----------------------------------------------
+#--- POSTCSV - controls post processing mode
+#-----------------------------------------------
+[POSTCSV]
+START_YEAR=2014
+START_MONTH=9
+START_DAY=9
+START_HOUR=0
+START_MINUTE=0
+START_SECOND=0
+
+END_YEAR=2014
+END_MONTH=9
+END_DAY=11
+END_HOUR=3
+END_MINUTE=0
+END_SECOND=0
+
+
+#-----------------------------------------------
+#--- CNAV - dslog
+#-----------------------------------------------
+[INPUT_1]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="GPS"
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55001
+
+NUMBER_OF_CSV_PARSE=4
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="GPRMC_LAT_DECDEG"
+PARSE_ABSTRACT_INDEX_1=2
+
+PARSE_DATATYPE_2="GPRMC_LON_DECDEG"
+PARSE_ABSTRACT_INDEX_2=3
+
+PARSE_DATATYPE_3="GPRMC_COG"
+PARSE_ABSTRACT_INDEX_3=4
+
+PARSE_DATATYPE_4="GPRMC_SOG"
+PARSE_ABSTRACT_INDEX_4=5
+
+#-----------------------------------------------
+#--- Gyrocompass
+#-----------------------------------------------
+[INPUT_2]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="HDT"
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55103
+
+NUMBER_OF_CSV_PARSE=1
+
+PARSE_DATATYPE_1="GPHDT_HDG"
+PARSE_ABSTRACT_INDEX_1=1
+
+#-----------------------------------------------
+# MET Data on 485 loop
+#-----------------------------------------------
+[INPUT_3]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="XTS"
+
+SOURCE_TYPE="UDP"
+#IN_SOCKET=55903
+IN_SOCKET=55401
+
+NUMBER_OF_CSV_PARSE=10
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+
+# Port Vai Address
+PARSE_DATATYPE_1="VAI_ADDRESS"
+PARSE_ABSTRACT_INDEX_1=20
+MUST_CONTAIN_1="WXTS"
+
+# Port Vai Wind Direction
+PARSE_DATATYPE_2="VAI_WIND_DIRECTION_AVG"
+PARSE_ABSTRACT_INDEX_2=21
+MUST_CONTAIN_2="WXTS"
+
+# Port Wind Speed Min
+PARSE_DATATYPE_3="VAI_WIND_SPEED_MIN"
+PARSE_ABSTRACT_INDEX_3=22
+MUST_CONTAIN_3="WXTS"
+
+# Port Vai Wind Speed Avg
+PARSE_DATATYPE_4="VAI_WIND_SPEED_AVG"
+PARSE_ABSTRACT_INDEX_4=23
+MUST_CONTAIN_4="WXTS"
+
+# Port Vai Wind Speed Max
+PARSE_DATATYPE_5="VAI_WIND_SPEED_MAX"
+PARSE_ABSTRACT_INDEX_5=24
+MUST_CONTAIN_5="WXTS"
+
+# Port Vai Temperature
+PARSE_DATATYPE_6="VAI_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_6=25
+MUST_CONTAIN_6="WXTS"
+
+# Port Vai Humidity
+PARSE_DATATYPE_7="VAI_HUMIDITY"
+PARSE_ABSTRACT_INDEX_7=26
+MUST_CONTAIN_7="WXTS"
+
+# Port Vai Pressure
+PARSE_DATATYPE_8="VAI_PRESSURE"
+PARSE_ABSTRACT_INDEX_8=27
+MUST_CONTAIN_8="WXTS"
+
+# Port Vai Rain Accumulation
+PARSE_DATATYPE_9="VAI_RAIN_ACCUMULATION"
+PARSE_ABSTRACT_INDEX_9=28
+MUST_CONTAIN_9="WXTS"
+
+# Port Vai Rain Intensity
+PARSE_DATATYPE_10="VAI_RAIN_INTENSITY"
+PARSE_ABSTRACT_INDEX_10=29
+MUST_CONTAIN_10="WXTS"
+
+#-----------------------------------------------
+# $FLR
+#-----------------------------------------------
+[INPUT_4]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="FLR"
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55503
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="FLR_MILLIVOLTS"
+PARSE_ABSTRACT_INDEX_1=14
+
+#-----------------------------------------------
+# SBE45
+#-----------------------------------------------
+[INPUT_5]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="SAL"
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55501
+
+NUMBER_OF_CSV_PARSE=4
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SBE45_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_1=10
+
+PARSE_DATATYPE_2="SBE45_CONDUCTIVITY"
+PARSE_ABSTRACT_INDEX_2=11
+
+PARSE_DATATYPE_3="SBE45_SALINITY"
+PARSE_ABSTRACT_INDEX_3=12
+
+PARSE_DATATYPE_4="SBE45_SOUNDVELOCITY"
+PARSE_ABSTRACT_INDEX_4=13
+
+#-----------------------------------------------
+# SBE48
+#-----------------------------------------------
+[INPUT_6]
+INFILE_PREFIX="ti"
+INFILE_EXTENSION="STP"
+
+SOURCE_TYPE="UDP"
+IN_SOCKET=55502
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SBE48_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_1=6
+
+
+### Quanties Calculated by dsLogCsv ###
+
+#-----------------------------------------------
+# SSV
+[SSV_1]
+TEMPERATURE_ABSTRACT_INDEX=6
+SALINITY_ABSTRACT_INDEX=12
+
+#-----------------------------------------------
+# PORT BAROMETER
+[BAROMETER_1]
+RAW_PRESSURE_ABSTRACT_INDEX=27
+SENSOR_HEIGHT=14.2
+
+#-----------------------------------------------
+# STBD BAROMETER
+[BAROMETER_2]
+RAW_PRESSURE_ABSTRACT_INDEX=37
+SENSOR_HEIGHT=14.2
+
+#-----------------------------------------------
+# Port TRUEWIND
+[TRUEWIND_1]
+WIND_DIR_ABSTRACT_INDEX=21
+WIND_SPEED_ABSTRACT_INDEX=23
+COG_ABSTRACT_INDEX=4
+SOG_ABSTRACT_INDEX=5
+HDG_ABSTRACT_INDEX=1
+
+
+#-----------------------------------------------
+[OUTPUT_1]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=60
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="TI60_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=7
+OUTFIELD_HEADER_STRING_3="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_4=1
+OUTFIELD_HEADER_STRING_4="HDT"
+
+OUTFIELD_ABSTRACT_INDEX_5=4
+OUTFIELD_HEADER_STRING_5="COG"
+
+OUTFIELD_ABSTRACT_INDEX_6=5
+OUTFIELD_HEADER_STRING_6="SOG"
+
+OUTFIELD_ABSTRACT_INDEX_7=25
+OUTFIELD_HEADER_STRING_7="WXTP_Ta"
+
+OUTFIELD_ABSTRACT_INDEX_8=27
+OUTFIELD_HEADER_STRING_8="WXTP_Pa"
+
+OUTFIELD_ABSTRACT_INDEX_9=29
+OUTFIELD_HEADER_STRING_9="WXTP_Ri"
+
+OUTFIELD_ABSTRACT_INDEX_10=28
+OUTFIELD_HEADER_STRING_10="WXTP_Rc"
+
+OUTFIELD_ABSTRACT_INDEX_11=21
+OUTFIELD_HEADER_STRING_11="WXTP_Dm"
+
+OUTFIELD_ABSTRACT_INDEX_12=23
+OUTFIELD_HEADER_STRING_12="WXTP_Sm"
+
+OUTFIELD_ABSTRACT_INDEX_13=26
+OUTFIELD_HEADER_STRING_13="WXTP_Ua"
+
+
+OUTFIELD_TYPE_14="TRUEWIND_SPEED_1"
+OUTFIELD_HEADER_STRING_14="WXTP_TS"
+
+OUTFIELD_TYPE_15="TRUEWIND_DIRECTION_1"
+OUTFIELD_HEADER_STRING_15="WXTP_TD"
+
+OUTFIELD_ABSTRACT_INDEX_16=12
+OUTFIELD_HEADER_STRING_16="SBE45S"
+
+OUTFIELD_ABSTRACT_INDEX_17=6
+OUTFIELD_HEADER_STRING_17="SBE48T"
+
+OUTFIELD_TYPE_18="BAROMETER_1"
+OUTFIELD_HEADER_STRING_18="BAROM_P"
+
+OUTFIELD_ABSTRACT_INDEX_19=14
+OUTFIELD_HEADER_STRING_19="FLR"
+
+OUTFIELD_TYPE_20="SSV_1"
+OUTFIELD_HEADER_STRING_20="SSVdslog"
+
+OUTFIELD_ABSTRACT_INDEX_21=13
+OUTFIELD_HEADER_STRING_21="SSV_SBE45"
+
+OUTFIELD_ABSTRACT_INDEX_22=44
+OUTFIELD_HEADER_STRING_22="Depth12"
+
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=22
+
+#DESTINATION_2=0
+#DESTINATION_2_IPADDRESS="127.0.0.1"
+#DESTINATION_2_SOCKET=44445
+
+#-----------------------------------------------
+[OUTPUT_2]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=20
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="SSW20_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=6
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=10
+OUTFIELD_HEADER_STRING_1="SBE45T"
+
+OUTFIELD_ABSTRACT_INDEX_2=11
+OUTFIELD_HEADER_STRING_2="SBE45C"
+
+OUTFIELD_ABSTRACT_INDEX_3=12
+OUTFIELD_HEADER_STRING_3="SBE45S"
+
+OUTFIELD_ABSTRACT_INDEX_4=6
+OUTFIELD_HEADER_STRING_4="SBE48T"
+
+OUTFIELD_ABSTRACT_INDEX_5=13
+OUTFIELD_HEADER_STRING_5="SBE4SSV"
+
+OUTFIELD_TYPE_6="SSV_1"
+OUTFIELD_HEADER_STRING_6="dslogSSV"
+
+#-----------------------------------------------
+

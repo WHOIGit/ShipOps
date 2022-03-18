@@ -1,0 +1,578 @@
+#ifndef DSLOGCSV_H
+#define DSLOGCSV_H
+/* ----------------------------------------------------------------------
+
+  dsLogCSV  header
+
+   Modification History:
+   DATE 	AUTHOR 	COMMENT
+  04 Nov 2009   jch     create from rov.h
+
+  2012-12-20   tt       - mods to have prompt specific destinations
+  2012-12-21   tt       - remove nOfPromptSequences from logging_descriptor_t
+  2012-12-21   tt       - replace promptSequences[] array with promptSequence in logging_descriptor_t
+  2012-12-22   tt       - changes to support prompt specific termination characters
+  2012-12-22   tt       - changes to support prompt specific data types and source names
+  2012-12-22   tt       - changes to support prompt specific syncopation
+  2012-12-26   tt       - changes to support prompt specific reply window
+  2013-01-02   tt       - changes to support destination specific file prefix and extension
+  2013-05-01   tt       - added inputNumber to logging_descriptor_t
+  2015-10-19   tt       - added elements to support data from flowmeter
+---------------------------------------------------------------------- */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+#include "launch_timer.h"
+#include "dsLogTalk.h"
+
+//-----------------------------------------------------------------------------------
+#ifndef ROV_PROCESS_INC
+#define ROV_PROCESS_INC
+
+//#define  DEBUG_ROV_INI
+
+#define DEFAULT_INI_FILE  "dslogcsv.ini"
+
+#define NULL_EXTRA_ARG_VALUE  -9999
+
+#define LOGGING_STATUS_INTERVAL  5.0
+
+
+#define MAX_NUMBER_OF_THREADS    1024
+
+#define DEFAULT_NO_ENTRY        "NO_ENTRY"
+#define NO_SOURCE_TYPE          99
+#define NO_IN_SOCKET            99
+#define NULL_GREP_FIELD         "NO_GREP_FIELD_ENTERED"
+#define DEFAULT_NO_SERIAL_PORT  "NO_SERIAL_PORT"
+#define DEFAULT_PATHNAME        "."
+#define LOG_THREAD_OFFSET       256
+#define OUTPUT_THREAD_OFFSET       512
+#define MAX_LOGGING_STRING_LENGTH   4096
+
+#define MAX_N_OF_INPUTS         256
+#define MAX_N_OF_CSV_PARSE 256
+#define MAX_N_OF_CSV_OUTPUTS 32
+#define MAX_N_OF_ABSTRACT_DATA 512
+#define MAX_N_OF_OUTFIELD 512
+
+// - define size of arrays that control calculating ssv, barometer, truewind, etc.
+#define MAX_CALCULATION_CONTROL_INDEX 8
+
+//-----------------------------------------------------------------------------------
+enum {
+  OUT_TYPE_DEFAULT_TYPE,
+  OUT_TYPE_DIFF,
+  OUT_TYPE_NORMDIFF,
+  OUT_TYPE_SCALE_OFFSET,
+  OUT_TYPE_SSV,
+  OUT_TYPE_BAROMETER,
+  OUT_TYPE_TRUEWIND_SPEED,
+  OUT_TYPE_TRUEWIND_DIRECTION,
+  OUT_TYPE_TRUEWIND_BOTH,
+  OUT_TYPE_TRUEWIND_DEBUG,
+  OUT_TYPE_INVALID_TYPE
+};
+
+//-----------------------------------------------------------------------------------
+// outputFileFormat values:
+enum {
+  OUTFILE_FORMAT_DSLOGCSV,
+  OUTFILE_FORMAT_SAMOS,
+  OUTFILE_FORMAT_NOAA,
+  OUTFILE_FORMAT_INVALID_VALUE
+};
+
+//-----------------------------------------------------------------------------------
+// csvParseDataType values:
+enum {
+  CPD_GPGGA_UTC_TIME,
+  CPD_GPGGA_UTC_HOUR,
+  CPD_GPGGA_UTC_MINUTE,
+  CPD_GPGGA_UTC_SECOND,
+  CPD_GPGGA_UTC_FRACTION,
+  CPD_GPGGA_LAT_DECDEG,
+  CPD_GPGGA_LAT_DECMIN,
+  CPD_GPGGA_LAT_DECSEC,
+  CPD_GPGGA_LAT_NOAA,
+  CPD_GPGGA_LON_DECDEG,
+  CPD_GPGGA_LON_DECMIN,
+  CPD_GPGGA_LON_DECSEC,
+  CPD_GPGGA_LON_NOAA,
+  CPD_GPGGA_QUALITY,
+  CPD_GPGGA_NUM_SAT,
+  CPD_GPGGA_DILUTION,
+  CPD_GPGGA_ALTITUDE,
+  CPD_GPGGA_GEOID_HEIGHT,
+  CPD_GPGGA_FIX_AGE,
+  CPD_GPGGA_STATION_ID,
+  CPD_GPRMB_STATUS,
+  CPD_GPRMB_CTE_MAG,
+  CPD_GPRMB_CTE_DIR,
+  CPD_GPRMB_ORIGIN_ID,
+  CPD_GPRMB_DEST_ID,
+  CPD_GPRMB_DEST_LAT,
+  CPD_GPRMB_DEST_LON,
+  CPD_GPRMB_RANGE,
+  CPD_GPRMB_BEARING,
+  CPD_GPRMB_DEST_SPEED,
+  CPD_GPRMB_ARRIVAL_ALARM,
+  CPD_GPRMC_UTC_TIME,
+  CPD_GPRMC_UTC_HOUR,
+  CPD_GPRMC_UTC_MINUTE,
+  CPD_GPRMC_UTC_SECOND,
+  CPD_GPRMC_UTC_FRACTION,
+  CPD_GPRMC_RCVR_STATUS,
+  CPD_GPRMC_LAT_DECDEG,
+  CPD_GPRMC_LAT_DECMIN,
+  CPD_GPRMC_LAT_DECSEC,
+  CPD_GPRMC_LAT_NOAA,
+  CPD_GPRMC_LON_DECDEG,
+  CPD_GPRMC_LON_DECMIN,
+  CPD_GPRMC_LON_DECSEC,
+  CPD_GPRMC_LON_NOAA,
+  CPD_GPRMC_SOG,
+  CPD_GPRMC_COG,
+  CPD_GPRMC_COG_SAMOS,
+  CPD_GPRMC_UTC_DATE,
+  CPD_GPRMC_UTC_YEAR,
+  CPD_GPRMC_UTC_MONTH,
+  CPD_GPRMC_UTC_DAY,
+  CPD_GPRMC_MAGVAR,
+  CPD_GPVTG_TRUE_TRACK,
+  CPD_GPVTG_MAGNETIC_TRACK,
+  CPD_GPVTG_SPEED_KNOTS,
+  CPD_GPVTG_SPEED_KPH,
+  CPD_GPZDA_UTC_TIME,
+  CPD_GPZDA_UTC_HOUR,
+  CPD_GPZDA_UTC_MINUTE,
+  CPD_GPZDA_UTC_SECOND,
+  CPD_GPZDA_UTC_FRACTION,
+  CPD_GPZDA_UTC_DATE,
+  CPD_GPZDA_UTC_YEAR,
+  CPD_GPZDA_UTC_MONTH,
+  CPD_GPZDA_UTC_DAY,
+  CPD_GPZDA_LOCALZONE_HOURS,
+  CPD_GPZDA_LOCALZONE_MINUTES,
+  CPD_GNGGA_UTC_TIME,
+  CPD_GNGGA_UTC_HOUR,
+  CPD_GNGGA_UTC_MINUTE,
+  CPD_GNGGA_UTC_SECOND,
+  CPD_GNGGA_UTC_FRACTION,
+  CPD_GNGGA_LAT_DECDEG,
+  CPD_GNGGA_LAT_DECMIN,
+  CPD_GNGGA_LAT_DECSEC,
+  CPD_GNGGA_LAT_NOAA,
+  CPD_GNGGA_LON_DECDEG,
+  CPD_GNGGA_LON_DECMIN,
+  CPD_GNGGA_LON_DECSEC,
+  CPD_GNGGA_LON_NOAA,
+  CPD_GNGGA_QUALITY,
+  CPD_GNGGA_NUM_SAT,
+  CPD_GNGGA_DILUTION,
+  CPD_GNGGA_ALTITUDE,
+  CPD_GNGGA_GEOID_HEIGHT,
+  CPD_GNGGA_FIX_AGE,
+  CPD_GNGGA_STATION_ID,
+  CPD_GNRMB_STATUS,
+  CPD_GNRMB_CTE_MAG,
+  CPD_GNRMB_CTE_DIR,
+  CPD_GNRMB_ORIGIN_ID,
+  CPD_GNRMB_DEST_ID,
+  CPD_GNRMB_DEST_LAT,
+  CPD_GNRMB_DEST_LON,
+  CPD_GNRMB_RANGE,
+  CPD_GNRMB_BEARING,
+  CPD_GNRMB_DEST_SPEED,
+  CPD_GNRMB_ARRIVAL_ALARM,
+  CPD_GNRMC_UTC_TIME,
+  CPD_GNRMC_UTC_HOUR,
+  CPD_GNRMC_UTC_MINUTE,
+  CPD_GNRMC_UTC_SECOND,
+  CPD_GNRMC_UTC_FRACTION,
+  CPD_GNRMC_RCVR_STATUS,
+  CPD_GNRMC_LAT_DECDEG,
+  CPD_GNRMC_LAT_DECMIN,
+  CPD_GNRMC_LAT_DECSEC,
+  CPD_GNRMC_LAT_NOAA,
+  CPD_GNRMC_LON_DECDEG,
+  CPD_GNRMC_LON_DECMIN,
+  CPD_GNRMC_LON_DECSEC,
+  CPD_GNRMC_LON_NOAA,
+  CPD_GNRMC_SOG,
+  CPD_GNRMC_COG,
+  CPD_GNRMC_COG_SAMOS,
+  CPD_GNRMC_UTC_DATE,
+  CPD_GNRMC_UTC_YEAR,
+  CPD_GNRMC_UTC_MONTH,
+  CPD_GNRMC_UTC_DAY,
+  CPD_GNRMC_MAGVAR,
+  CPD_GNVTG_TRUE_TRACK,
+  CPD_GNVTG_MAGNETIC_TRACK,
+  CPD_GNVTG_SPEED_KNOTS,
+  CPD_GNVTG_SPEED_KPH,
+  CPD_GNZDA_UTC_TIME,
+  CPD_GNZDA_UTC_HOUR,
+  CPD_GNZDA_UTC_MINUTE,
+  CPD_GNZDA_UTC_SECOND,
+  CPD_GNZDA_UTC_FRACTION,
+  CPD_GNZDA_UTC_DATE,
+  CPD_GNZDA_UTC_YEAR,
+  CPD_GNZDA_UTC_MONTH,
+  CPD_GNZDA_UTC_DAY,
+  CPD_GNZDA_LOCALZONE_HOURS,
+  CPD_GNZDA_LOCALZONE_MINUTES,
+  CPD_HEHDT_HDG,
+  CPD_HEHDT_HDG_SAMOS,
+  CPD_GPHDT_HDG,
+  CPD_SBE45_TEMPERATURE,
+  CPD_SBE45_CONDUCTIVITY,
+  CPD_SBE45_SALINITY,
+  CPD_SBE45_SOUNDVELOCITY,
+  CPD_SBE48_TEMPERATURE,
+  CPD_FLR_MILLIVOLTS,
+  CPD_VAI_ADDRESS,
+  CPD_VAI_WIND_DIRECTION_AVG,
+  CPD_VAI_WIND_SPEED_MIN,
+  CPD_VAI_WIND_SPEED_AVG,
+  CPD_VAI_WIND_SPEED_MAX,
+  CPD_VAI_TEMPERATURE,
+  CPD_VAI_HUMIDITY,
+  CPD_VAI_PRESSURE,
+  CPD_VAI_RAIN_ACCUMULATION,
+  CPD_VAI_RAIN_INTENSITY,
+  CPD_VDVBW_WATER_SPEED_AHEAD,
+  CPD_VDVBW_WATER_SPEED_STBD,
+  CPD_VDVBW_WATER_SPEED_STATUS,
+  CPD_VDVBW_GROUND_SPEED_AHEAD,
+  CPD_VDVBW_GROUND_SPEED_STBD,
+  CPD_VDVBW_GROUND_SPEED_STATUS,
+  CPD_SWR_RADIATION,
+  CPD_LWR_DOME_TEMPERATURE,
+  CPD_LWR_BODY_TEMPERATURE,
+  CPD_LWR_THERMOPILE_VOLTAGE,
+  CPD_LWR_RADIATION,
+  CPD_PASHR_TIME,
+  CPD_PASHR_HEADING,
+  CPD_PASHR_ROLL,
+  CPD_PASHR_PITCH,
+  CPD_PASHR_HEAVE,
+  CPD_PASHR_ROLL_ACCURACY,
+  CPD_PASHR_PITCH_ACCURACY,
+  CPD_PASHR_HEADING_ACCURACY,
+  CPD_PASHR_GPS_FLAG,
+  CPD_PASHR_IMU_FLAG,
+  CPD_PASHR_ATT_SECONDS,
+  CPD_PASHR_ATT_HEADING,
+  CPD_PASHR_ATT_PITCH,
+  CPD_PASHR_ATT_ROLL,
+  CPD_PASHR_ATT_MRMS,
+  CPD_PASHR_ATT_BRMS,
+  CPD_PASHR_ATT_REAQUISITION,
+  CPD_TSS1_RAW_STRING,
+  CPD_TSS1_RAW_ACCEL_HOR,
+  CPD_TSS1_RAW_ACCEL_VER,
+  CPD_TSS1_RAW_HEAVE,
+  CPD_TSS1_RAW_PITCH,
+  CPD_TSS1_RAW_ROLL,
+  CPD_TSS1_ACCEL_HOR,
+  CPD_TSS1_ACCEL_VER,
+  CPD_TSS1_HEAVE,
+  CPD_TSS1_PITCH,
+  CPD_TSS1_ROLL,
+  CPD_TSS1_STATUS,
+  CPD_PKEL_DEPTH_1,
+  CPD_PKEL_STATUS_1,
+  CPD_PKEL_DUCER_DEPTH_1,
+  CPD_PKEL_DEPTH_2,
+  CPD_PKEL_STATUS_2,
+  CPD_PKEL_DUCER_DEPTH_2,
+  CPD_PHINS_HEADING,
+  CPD_PHTRO_PITCH,
+  CPD_PHTRO_PITCH_FRAME,
+  CPD_PHTRO_ROLL,
+  CPD_PHTRO_ROLL_FRAME,
+  CPD_PHLIN_SURGE_LIN,
+  CPD_PHLIN_SWAY_LIN,
+  CPD_PHLIN_HEAVE_LIN,
+  CPD_PHSPD_SURGE_SPD,
+  CPD_PHSPD_SWAY_SPD,
+  CPD_PHSPD_HEAVE_SPD,
+  CPD_KIDPT_DEPTH,
+  CPD_KIDPT_BEAMS_GOOD,
+  CPD_KIDPT_FREQUENCY,
+  CPD_XCALC_SSV,
+  CPD_XCALC_TRUEWIND_SPEED,
+  CPD_XCALC_TRUEWIND_DIRECTION,
+  CPD_FLOW_RAW_COUNTS,
+  CPD_FLOW_CUMULATIVE_COUNTS,
+  CPD_FLOW_FLOW_LAST_SECOND,
+  CPD_FLOW_FLOW_LAST_MINUTE,
+  CPD_FLOW_FLOW_LAST_HOUR,
+  CPD_FLOW_FLOW_LAST_24HOURS,
+  CPD_FLOW_ELAPSED_SECONDS,
+  CPD_AML_SSV_TEMPERATURE,
+  CPD_AML_SSV_SSV,
+  CPD_RAD_SERIAL_NUMBER,
+  CPD_RAD_NUMBER,
+  CPD_RAD_PIR,
+  CPD_RAD_LW,
+  CPD_RAD_TCASE,
+  CPD_RAD_TDOME,
+  CPD_RAD_SW,
+  CPD_RAD_T_AVR,
+  CPD_RAD_BATT,
+  CPD_TRANS_ARG1,
+  CPD_TRANS_ARG2,
+  CPD_TRANS_ARG3,
+  CPD_TRANS_ARG4,
+  CPD_TRANS_ARG5,
+  CPD_SSSG_GENERIC,
+  CPD_INVALID_TYPE
+};
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+   int thread_num;
+   char *thread_name;
+   void *(*thread_function) (void *);
+   void *thread_launch_arg;
+   int extra_arg_1;
+   int extra_arg_2;
+   int extra_arg_3;
+   int extra_arg_4;
+   pthread_t thread;
+}
+thread_table_entry_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct {
+   char     *sio_com_port_name;
+   int      baud;
+   int      parity;
+   int      data_bits;
+   int      stop_bits;
+   int      flow_control;
+   int      echo;
+   char     auto_mux_term_char;
+   int      auto_mux_enabled;		// if this is set to 1 (true) then check the term character
+   double   busTimeout;
+   double   pollingInterval;
+
+} serialPort_t;
+
+//-----------------------------------------------------------------------------------
+#define PARSE_VALUE_TYPE_INT     0
+#define PARSE_VALUE_TYPE_DOUBLE  1
+#define PARSE_VALUE_TYPE_STRING  2
+
+#define PARSE_INT_FORMAT_TYPE_DECIMAL     0
+#define PARSE_INT_FORMAT_TYPE_HEX_NONE    1
+#define PARSE_INT_FORMAT_TYPE_HEX_0X      2
+#define PARSE_INT_FORMAT_TYPE_OCTAL_NONE  3
+
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  int parseAbstractIndex;
+  int parseDataType;
+
+  char *mustContain;
+  char *mustContain2;
+  char *mustNotContain;
+
+  char *rawScanfString;
+
+  int csvParseIndex;  // indicates what field this is
+  char *delimiterString;
+  int valueType;
+  int intFormatType;
+  int intValue;
+  double doubleValue;
+
+  //--- items below added 2016-03-07 and are intended to be used only with SSSG_GENERIC
+  char *genericHeaderString;
+  char genericDelimiterChar;
+  int genericIndex;
+  bool genericDelimiterAfterHeader;
+  bool genericUseHeaderString;
+  int genericDataType;
+  int genericDataPrecision;
+  int genericDelimiterSkipCount;
+}   csv_parse_descriptor_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+   char                 *sourceName;
+   char                 *dataType;
+   char                 *filenamePrefix;
+   source_type_t        sourceType;
+   int                  inSocketNumber;
+   int                  outSocketNumber;
+   char                 *outIpAddress;
+   serialPort_t         theSerialPort;
+   int                  timeStampFlag;
+   int                  dailyLogfilesFlag; 
+   int                  singleLogfileFlag; 
+   int                  numberOfCsvParse;
+   csv_parse_descriptor_t csvParse[MAX_N_OF_CSV_PARSE];
+   int                  useDestinationSpecificFileExtension; 
+   distribution_t       destinations[MAX_N_OF_DESTINATIONS];
+   int                  nOfDestinations;
+   bool                 active;
+   int                  inputNumber;
+   int                  threadNumber;
+  bool                 useFileHeaderFlag;
+  char                 *fileHeaderString;
+
+  int outputFileFormat;
+  char *shipName;
+
+  // elements below used only in post processing mode
+  char *infileDirectory;
+  char *infilePrefix;
+  char *infileExtension;
+}   logging_descriptor_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  rov_time_t lastRxTime;
+  char *dataString;
+}   csv_abstract_data_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate diff's
+  int minuendAbstractIndex;
+  int subtrahendAbstractIndex;
+  int precision;
+}   calculate_diff_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate normalized diff's
+  int minuendAbstractIndex;
+  int subtrahendAbstractIndex;
+  double normThreshold;
+  double normOffset;
+  int precision;
+}   calculate_normdiff_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate scaled and offset values
+  int inputAbstractIndex;
+  double scale;
+  double offset;
+  int precision;
+}   calculate_scale_offset_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate ssv
+  int temperatureAbstractIndex;
+  int salinityAbstractIndex;
+  double pressure;
+  int precision;
+}   calculate_ssv_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate barometer
+  int rawPressureAbstractIndex;
+  double sensorHeight;
+  int precision;
+}   calculate_barometer_data_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  // items needed to calculate truewind
+  int cogAbstractIndex;
+  int sogAbstractIndex;
+  int hdgAbstractIndex;
+  int windSpeedAbstractIndex;
+  int windDirectionAbstractIndex;
+  double zlr;
+  int precision;
+}   calculate_truewind_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  calculate_normdiff_t normdiff[MAX_CALCULATION_CONTROL_INDEX];
+  calculate_diff_t diff[MAX_CALCULATION_CONTROL_INDEX];
+  calculate_scale_offset_t scale_offset[MAX_CALCULATION_CONTROL_INDEX];
+  calculate_ssv_t ssv[MAX_CALCULATION_CONTROL_INDEX];
+  calculate_barometer_data_t barometer[MAX_CALCULATION_CONTROL_INDEX];
+  calculate_truewind_t truewind[MAX_CALCULATION_CONTROL_INDEX];
+} calculated_values_config_t;
+
+//-----------------------------------------------------------------------------------
+typedef struct
+{
+  int outputEnable;
+  int outputInterval;
+  bool timestampEnable;
+  int outputFileFormat;
+  char termChar1;
+  char termChar2;
+  char *shipName;
+  char *shipCallSign;
+  char *noaaVersionString;
+  char *outputPrefix1;
+  char *outputPrefix2;
+  char *outputDelimiter;
+  char *badDataString;
+  int numberOfOutputFields;
+  char *dateHeaderString;
+  char *timeHeaderString;
+  bool outfieldEnable[MAX_N_OF_OUTFIELD];
+  int outfieldType[MAX_N_OF_OUTFIELD];
+  int calculationControlIndex[MAX_N_OF_OUTFIELD];
+  int outfieldAbstractIndex[MAX_N_OF_OUTFIELD];
+  char *outfieldHeaderString[MAX_N_OF_OUTFIELD];
+  int outfieldWidth[MAX_N_OF_OUTFIELD];
+  double outfieldAgeLimit[MAX_N_OF_OUTFIELD];
+
+  int lastNoaaHour;
+
+  logging_descriptor_t logging;
+}   csv_output_descriptor_t;
+
+//-----------------------------------------------------------------------------------
+extern int make_thread_table_entry (int thread_num, const char *thread_name, void *(*thread_function) (void *), void *thread_launch_arg, int extra_arg_1, int extra_arg_2, int extra_arg_3, int extra_arg_4);
+
+extern thread_table_entry_t global_thread_table[MAX_NUMBER_OF_THREADS];
+extern int readIniDslogProcess(FILE * ini_fd, logging_descriptor_t *localLoggingList, int *nOfLoggers, csv_output_descriptor_t *localOutputList, int *nOfOutputs,distribution_t *singleLogFile, logging_descriptor_t *singleLog);
+extern  int logOpenAsciiLogFile (distribution_t *thisDestination,logging_descriptor_t *loggingDescriptor);
+extern  int logThisNow(distribution_t *thisDestination,logging_descriptor_t *loggingDescriptor, char *recordData);
+extern  void flushAsciiLogAndClose (distribution_t *thisDestination,logging_descriptor_t *loggingDescriptor, char *recordData);
+
+
+extern char *dsLogIniFilename;
+extern startup_t  startup;
+extern csv_abstract_data_t csvAbstractData[MAX_N_OF_ABSTRACT_DATA];
+extern  logging_descriptor_t     theLoggingList[MAX_N_OF_INPUTS];
+extern  csv_output_descriptor_t csvOutputList[MAX_N_OF_CSV_OUTPUTS];
+extern  distribution_t           theGlobalLogFile;
+extern  logging_descriptor_t     theGlobalLog;
+
+extern calculated_values_config_t calcValuesConfig;
+
+
+#endif
+
+
+#endif // DSLOGCSV_H

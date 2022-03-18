@@ -1,0 +1,58 @@
+------------------------------------------------------------------------------------
+
+                                   FULL TABLE
+                                  ************
+  index  course  sspeed  windir  zeroln  shiphd |  appspd |  appdir  trudir  truspd
+      1     0.0     0.0    90.0     0.0     0.0 |     5.0 |    90.0    90.0     5.0
+      2     0.0     0.0    90.0     0.0    90.0 |     5.0 |   180.0   180.0     5.0
+      3     0.0     5.0     0.0     0.0     0.0 |     5.0 |     0.0     0.0     0.0
+      4     0.0     5.0     0.0     0.0     0.0 |     0.0 |     0.0   180.0     5.0
+      5   180.0     5.0   180.0     0.0   180.0 |     5.0 |     0.0     0.0    10.0
+      6    90.0     5.0    90.0     0.0    90.0 |     5.0 |   180.0   225.0     7.1
+      7    90.0     5.0   135.0     0.0    45.0 |     5.0 |   180.0   225.0     7.1
+      8   225.0     5.0   270.0     0.0   225.0 |     5.0 |   135.0    90.0     7.1
+      9   270.0     3.0    90.0     0.0   270.0 |     4.0 |     0.0    36.9     5.0
+     10     0.0     0.0     0.0     0.0     0.0 |     0.0 |     0.0     0.0     0.0
+     11     2.0 -9999.0     0.0     0.0     0.0 |     0.0 |     0.0  1111.0  9999.0
+     12 -1111.0 -9999.0  1111.0     0.0  5555.0 |  9999.0 |     0.0  1111.0  9999.0
+     13    -2.0     8.0     8.0     0.0     8.0 |     3.0 |     0.0  1111.0  9999.0
+     14     3.0    -6.0     0.0     0.0     8.0 |     3.0 |     0.0  1111.0  9999.0
+     15     0.0     0.0    -9.0     0.0     8.0 |     3.0 |     0.0  1111.0  9999.0
+     16     0.0     0.0     7.0     0.0     8.0 |    -4.0 |     0.0  1111.0  9999.0
+     17     5.0     1.0     2.0     0.0   -13.0 |     2.0 |     0.0  1111.0  9999.0
+
+                   NOTE:  Wind speed measured by anemometer is identical                                       to apparent wind speed (appspd).
+
+------------------------------------------------------------------------------------
+
+                               MISSING DATA TABLE
+                              ********************
+          index  course  sspeed  windir  shiphd  appspd  trudir  truspd
+             11     2.0 -9999.0     0.0     0.0     0.0  1111.0  9999.0
+             12 -1111.0 -9999.0  1111.0  5555.0  9999.0  1111.0  9999.0
+
+------------------------------------------------------------------------------------
+
+                               TRUEWINDS ERRORS
+                              ******************
+        Truewinds range test failed.  Course value #13 invalid.
+        Truewinds range test failed.  Vessel speed value #14 invalid.
+        Truewinds range test failed.  Wind direction value #15 invalid.
+        Truewinds range test failed.  Wind speed value #16 invalid.
+        Truewinds range test failed.  Ship heading value #17 invalid.
+
+        Truewinds data test:  Vessel speed value #11 missing.
+        Truewinds data test:  Course value #12 missing.
+        Truewinds data test:  Vessel speed value #12 missing.
+        Truewinds data test:  Wind direction value #12 missing.
+        Truewinds data test:  Wind speed value #12 missing.
+        Truewinds data test:  Ship heading value #12 missing.
+
+------------------------------------------------------------------------------------
+
+                                 DATA REVIEW
+                                *************
+                            no data missing =   15
+                       part of data missing =    1
+                           all data missing =    1
+                         failed range tests =    5

@@ -1,6 +1,8 @@
 # ShipOps
 
 ## Armstrong directory structure
+- Binaries reside under /usr/local/bin on ardatalog01
+- Source code resides under /usr/local/src/dsLog and /usr/local/src/dsLogCSV
 - dsLog ini files reside under /home/dslog
 - Perl scripts reside under /usr/lib/cgi-bin/db_driven_data/status_screen on dockna.whoi.edu
 
