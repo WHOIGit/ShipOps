@@ -17,3 +17,6 @@
 - Source code resides under /usr/local/src/dsLog and /usr/local/src/dsLog/dsLogCSV
 - dsLog ini files reside under /home/dslog
 - Perl scripts reside under /usr/lib/cgi-bin/db_driven_data/status_screen on dockti.whoi.edu
+
+## Manor directory
+- Nagios checks residing on manor
