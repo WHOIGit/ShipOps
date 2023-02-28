@@ -1,0 +1,3 @@
+sudo timeout 180 /usr/local/bin/dsLog /home/dslog/dsLog_transcal_dark.ini
+sudo timeout 180 /usr/local/bin/dsLog /home/dslog/dsLog_transcal_light.ini
+sudo timeout 180 /usr/local/bin/dsLog /home/dslog/dsLog_transcal_fresh.ini

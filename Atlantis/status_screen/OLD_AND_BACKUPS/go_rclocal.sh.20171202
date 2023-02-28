@@ -1,0 +1,51 @@
+#!/bin/bash
+# 
+#  Updating for dsLog UPD ports.
+#               january 17, 2013  lws and ams
+#
+#
+#added route_feeder.pl and winch_feeder.pl  20130609
+
+# database 
+database="/usr/lib/cgi-bin/db_driven_data/status_screen/sqlite_database/datascreen.db";
+
+# gprmc for cog sog dec_lat and dec_lon
+/usr/lib/cgi-bin/db_driven_data/status_screen/rmc_feeder.pl &
+/usr/lib/cgi-bin/db_driven_data/status_screen/rmb_feeder.pl &
+# sbe45  need to 
+/usr/lib/cgi-bin/db_driven_data/status_screen/sbe45_feeder.pl &
+
+# sbe48
+/usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55502 --database $database --udptype SBE48 &
+# FLR
+/usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55503 --database $database --udptype flr &
+# Port Vaisala  this parses the data
+/usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55401 --database $database --udptype wxt &
+# STBD Vaisala this parses the data
+/usr/lib/cgi-bin/db_driven_data/status_screen/wx_feeder.pl --port 55402 --database $database --udptype wxt &
+# gyro
+/usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55103 --database $database --udptype gyro &
+# SpeedLog
+/usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55202 --database $database --udptype spd &
+# em122 
+/usr/lib/cgi-bin/db_driven_data/status_screen/udp_db_feeder.pl --port 55602 --database $database --udptype em122 &
+
+
+
+# These feeders should be done after all the other ones are working
+# Knudsen Depth 3260 or 320
+# /usr/lib/cgi-bin/db_driven_data/status_screen/depth_feeder.3260.pl &
+/usr/lib/cgi-bin/db_driven_data/status_screen/depth_feeder.320BR.pl &
+
+# sound velocity
+#/usr/lib/cgi-bin/db_driven_data/status_screen/ssv_feeder.pl &
+
+# creates wind for both
+/usr/lib/cgi-bin/db_driven_data/status_screen/wind_feeder.pl &
+
+# route feeder 
+/usr/lib/cgi-bin/db_driven_data/status_screen/route_feeder.pl &
+# winch feeder 
+/usr/lib/cgi-bin/db_driven_data/status_screen/winch_feeder.pl &
+# lwr and swr feeder
+/usr/lib/cgi-bin/db_driven_data/status_screen/rad_feeder.pl &

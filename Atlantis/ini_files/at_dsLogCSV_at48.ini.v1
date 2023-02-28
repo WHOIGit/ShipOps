@@ -1,0 +1,1458 @@
+#Date, Time_GMT, Dec_Lat, Dec_Lon, SPD, HDT, COG, SOG, WXTP_Ta, WXTS_Ta, WXTP_Pa, WXTS_Pa, WXTP_Ri, WXTS_Ri, WXTP_Rc, WXTS_Rc, WXTP_Dm, WXTS_Dm, WXTP_Sm, WXTS_Sm, WXTP_Ua, WXTS_Ua, WXTP_TS, WXTS_TS, WXTP_TD, WXTS_TD, SWR, LWR, PAR, SBE45S, SBE48T, FLR, SSV, Depth12, Depth35, HdChkSum=00 
+#2013/03/23,00:00:01,-34.900096,-56.202505,000.00,068.7,071.6,0.04,18.8,18.7,1017.4,1017.4,0.0,0.0,83.82,63.73,277,304,0.4,0.6,40.1,40.0,0.40,0.59,342.75,10.99,-10.591,296.5,7.38,28.7496,20.4439,00091.80,1524.37,nan,nan
+#
+#
+#-----------------------------------------------
+#
+# created for running dsLogCsv on the R/V Atlantis
+# t. thiel
+# 2014-04-29
+# update 20141015
+# updated 20150130  lstolp
+# updated 20160810  for RAD_SW and RAD_LW
+# lstolp commented out IMU, GPS 
+# changed SPD to speed through the water piece of VDVBW string
+#-----------------------------------------------
+#--- Abstract Index Table
+#   1   Gyrocompass Heading from $HEHDT
+#   2   GPS Latitude from $GPRMC
+#   3   GPS Longitude from $GPRMC
+#   4   GPS COG from $GPRMC
+#   5   GPS SOG from $GPRMC
+#   6   Temperature from SBE48
+#   7   Speed through the water from $VDVBW
+#   8   LW from RAD
+#   9   SW from RAD
+#  10   Temperature from SBE45
+#  11   Conductivity from SBE45
+#  12   Salinity from SBE45
+#  13   Sound velocity from SBE45
+#  14   THIS DOES NOT EXIST ANYMORE - xCalc SSV perl
+#  15   Fluorometer
+#  16   Knudsen Depth12
+#  17   Knudsen Depth 3.5
+#  18  EM122  Center Depth KIDPT_DEPTH 
+#  19   
+#  20   Port Vaisala Address
+#  21   Port Vaisala Wind Direction
+#  22   Port Vaisala Wind Speed Min
+#  23   Port Vaisala Wind Speed Avg
+#  24   Port Vaisala Wind Speed Max
+#  25   Port Vaisala Temperature
+#  26   Port Vaisala Humidity
+#  27   Port Vaisala Pressure
+#  28   Port Vaisala Rain Accumulation
+#  29   Port Vaisala Rain Intensity
+#  30   Stbd Vaisala Address
+#  31   Stbd Vaisala Wind Direction
+#  32   Stbd Vaisala Wind Speed Min
+#  33   Stbd Vaisala Wind Speed Avg
+#  34   Stbd Vaisala Wind Speed Max
+#  35   Stbd Vaisala Temperature
+#  36   Stbd Vaisala Humidity
+#  37   Stbd Vaisala Pressure
+#  38   Stbd Vaisala Rain Accumulation
+#  39   Stbd Vaisala Rain Intensity
+#  40   PAR Sensor
+#  41
+#  42   CNAV GPS Latitude from $GPRMC
+#  43   CNAV GPS Longitude from $GPRMC
+#  44   CNAV GPS COG from $GPRMC
+#  45   CNAV GPS SOG from $GPRMC
+#  46   FRN1850 GPS Latitude from $GPRMC
+#  47   FRN1850 GPS Longitude from $GPRMC
+#  48   FRN1850 GPS COG from $GPRMC
+#  49   FRN1850 GPS SOG from $GPRMC
+#
+#  50   GPGGA_UTC_HOUR  from $GPGGA
+#  51   GPGGA_UTC_MINUTE  from $GPGGA
+#  52   GPGGA_UTC_SECOND  from $GPGGA
+#  53   GPZDA_UTC_YEAR  from $GPZDA
+#  54   GPZDA_UTC_MONTH  from $GPZDA
+#  55   GPZDA_UTC_DAY from $GPZDA
+#  
+#
+#  60  Coda PASHR  PASHR_HEADING
+#  61  Coda PASHR  PASHR_PITCH
+#  62  Coda PASHR  PASHR_ROLL
+#  63  Coda PASHR  PASHR_HEAVE
+#  64  Coda PASHR  PASHR_ROLL_ACCURACY
+#  65  Coda PASHR  PASHR_PITCH_ACCURACY
+#  66  Coda PASHR  PASHR_HEADING_ACCURACY
+#  67  Coda PASHR  PASHR_IMU_FLAG
+#
+#  70  PHINS HEHDT  PHINS_HEADING
+#  71  PHINS PHTRO  PHTRO_ROLL
+#  72  PHINS PHTRO  PHTRO_PITCH
+#  73  PHINS PHLIN  PHLIN_SURGE_LIN
+#  74  PHINS PHLIN  PHLIN_SWAY_LIN
+#  75  PHINS PHLIN  PHLIN_HEAVE_LIN
+#  76  PHINS PHSPD  PHSPD_SURGE_SPD
+#  77  PHINS PHSPD  PHSPD_SWAY_SPD
+#  78  PHINS PHSPD  PHSPD_HEAVE_SPD
+#  79  PHINS PHTRO  PHTRO_PITCH_FRAME
+#  80  PHINS PHTRO  PHTRO_ROLL_FRAME
+#
+#  90  SCIGPS GPRMC GPRMC_LAT_NOAA
+#  91  SCIGPS GPRMC GPRMC_LON_NOAA
+#  92  SCIGPS GPGGA GPGGA_LAT_NOAA
+#  93  SCIGPS GPGGA GPGGA_LON_NOAA
+#  94  SCIGPS GPRMC GPRMC_COG_SAMOS
+#  95  GYRO   HEHDT HEHDT_GYROHDG_SAMOS
+#
+#  99 FLOW FLOW_LAST_MINUTE
+#  
+#
+#  101 TRANS25 Reference  TRANS25_ref
+#  102 TRANS25 Signal	 TRANS25_sig
+#  103 TRANS25 Signal Cor TRANS25_sigcor
+#  104 TRANS25 therm	 TRANS25_therm
+#  105 TRANS25 reference  TRANS25_ref
+#
+#  
+#-----------------------------------------------
+#-----------------------------------------------
+
+[GENERAL]
+
+ROOT_DIR="/underway/proc"
+
+#-----------------------------------------------
+#--- Science GPS
+#-----------------------------------------------
+[INPUT_1]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55001
+##switched source GPS - usually set to CNAV
+
+NUMBER_OF_CSV_PARSE=13
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="GPRMC_LAT_DECDEG"
+PARSE_ABSTRACT_INDEX_1=2
+
+PARSE_DATATYPE_2="GPRMC_LON_DECDEG"
+PARSE_ABSTRACT_INDEX_2=3
+
+PARSE_DATATYPE_3="GPRMC_COG"
+PARSE_ABSTRACT_INDEX_3=4
+
+PARSE_DATATYPE_4="GPRMC_SOG"
+PARSE_ABSTRACT_INDEX_4=5
+
+PARSE_DATATYPE_5="GPRMC_LAT_NOAA"
+PARSE_ABSTRACT_INDEX_5=90
+
+PARSE_DATATYPE_6="GPRMC_LON_NOAA"
+PARSE_ABSTRACT_INDEX_6=91
+
+PARSE_DATATYPE_7="GPRMC_COG_SAMOS"
+PARSE_ABSTRACT_INDEX_7=94
+
+PARSE_DATATYPE_7="GPGGA_UTC_HOUR"
+PARSE_ABSTRACT_INDEX_7=50
+
+PARSE_DATATYPE_7="GPGGA_UTC_MINUTE"
+PARSE_ABSTRACT_INDEX_7=51
+
+PARSE_DATATYPE_7="GPGGA_UTC_SECOND"
+PARSE_ABSTRACT_INDEX_7=52
+
+PARSE_DATATYPE_7="GPZDA_UTC_YEAR"
+PARSE_ABSTRACT_INDEX_7=53
+
+PARSE_DATATYPE_7="GPZDA_UTC_MONTH"
+PARSE_ABSTRACT_INDEX_7=54
+
+PARSE_DATATYPE_7="GPZDA_UTC_DAY"
+PARSE_ABSTRACT_INDEX_7=55
+
+#-----------------------------------------------
+#--- Science GPS
+#-----------------------------------------------
+[INPUT_2]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55005
+##switched source GPS - usually set to CNAV
+
+NUMBER_OF_CSV_PARSE=4
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="GPRMC_LAT_DECDEG"
+PARSE_ABSTRACT_INDEX_1=46
+
+PARSE_DATATYPE_2="GPRMC_LON_DECDEG"
+PARSE_ABSTRACT_INDEX_2=47
+
+PARSE_DATATYPE_3="GPRMC_COG"
+PARSE_ABSTRACT_INDEX_3=48
+
+PARSE_DATATYPE_4="GPRMC_SOG"
+PARSE_ABSTRACT_INDEX_4=49
+
+
+#-----------------------------------------------
+#--- Gyrocompass
+#-----------------------------------------------
+[INPUT_3]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55103
+
+NUMBER_OF_CSV_PARSE=2
+
+PARSE_DATATYPE_1="HEHDT_HDG"
+PARSE_ABSTRACT_INDEX_1=1
+
+PARSE_DATATYPE_2="HEHDT_HDG_SAMOS"
+PARSE_ABSTRACT_INDEX_2=95
+
+
+
+#-----------------------------------------------
+#--- PHINS String
+#-----------------------------------------------
+[INPUT_4]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55102
+
+NUMBER_OF_CSV_PARSE=11
+
+PARSE_DATATYPE_1="PHINS_HEADING"
+PARSE_ABSTRACT_INDEX_1=70
+
+PARSE_DATATYPE_2="PHTRO_ROLL"
+PARSE_ABSTRACT_INDEX_2=71
+
+PARSE_DATATYPE_3="PHTRO_PITCH"
+PARSE_ABSTRACT_INDEX_3=72
+
+PARSE_DATATYPE_4="PHLIN_SURGE_LIN"
+PARSE_ABSTRACT_INDEX_4=73
+
+PARSE_DATATYPE_5="PHLIN_SWAY_LIN"
+PARSE_ABSTRACT_INDEX_5=74
+
+PARSE_DATATYPE_6="PHLIN_HEAVE_LIN"
+PARSE_ABSTRACT_INDEX_6=75
+
+PARSE_DATATYPE_7="PHSPD_SURGE_SPD"
+PARSE_ABSTRACT_INDEX_7=76
+
+PARSE_DATATYPE_8="PHSPD_SWAY_SPD"
+PARSE_ABSTRACT_INDEX_8=77
+
+PARSE_DATATYPE_9="PHSPD_HEAVE_SPD"
+PARSE_ABSTRACT_INDEX_9=78
+
+PARSE_DATATYPE_10="PHTRO_PITCH_FRAME"
+PARSE_ABSTRACT_INDEX_10=79
+
+PARSE_DATATYPE_11="PHTRO_ROLL_FRAME"
+PARSE_ABSTRACT_INDEX_11=80
+
+
+#-----------------------------------------------
+# MET Data on 485 loop
+#-----------------------------------------------
+[INPUT_5]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55400
+
+NUMBER_OF_CSV_PARSE=20
+
+# Port Vai Address
+PARSE_DATATYPE_1="VAI_ADDRESS"
+PARSE_ABSTRACT_INDEX_1=20
+MUST_CONTAIN_1="WXTP"
+
+# Port Vai Wind Direction
+PARSE_DATATYPE_2="VAI_WIND_DIRECTION_AVG"
+PARSE_ABSTRACT_INDEX_2=21
+MUST_CONTAIN_2="WXTP"
+
+# Port Wind Speed Min
+PARSE_DATATYPE_3="VAI_WIND_SPEED_MIN"
+PARSE_ABSTRACT_INDEX_3=22
+MUST_CONTAIN_3="WXTP"
+
+# Port Vai Wind Speed Avg
+PARSE_DATATYPE_4="VAI_WIND_SPEED_AVG"
+PARSE_ABSTRACT_INDEX_4=23
+MUST_CONTAIN_4="WXTP"
+
+# Port Vai Wind Speed Max
+PARSE_DATATYPE_5="VAI_WIND_SPEED_MAX"
+PARSE_ABSTRACT_INDEX_5=24
+MUST_CONTAIN_5="WXTP"
+
+# Port Vai Temperature
+PARSE_DATATYPE_6="VAI_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_6=25
+MUST_CONTAIN_6="WXTP"
+
+# Port Vai Humidity
+PARSE_DATATYPE_7="VAI_HUMIDITY"
+PARSE_ABSTRACT_INDEX_7=26
+MUST_CONTAIN_7="WXTP"
+
+# Port Vai Pressure
+PARSE_DATATYPE_8="VAI_PRESSURE"
+PARSE_ABSTRACT_INDEX_8=27
+MUST_CONTAIN_8="WXTP"
+
+# Port Vai Rain Accumulation
+PARSE_DATATYPE_9="VAI_RAIN_ACCUMULATION"
+PARSE_ABSTRACT_INDEX_9=28
+MUST_CONTAIN_9="WXTP"
+
+# Port Vai Rain Intensity
+PARSE_DATATYPE_10="VAI_RAIN_INTENSITY"
+PARSE_ABSTRACT_INDEX_10=29
+MUST_CONTAIN_10="WXTP"
+
+#----------------------
+# Stbd Vai Address
+PARSE_DATATYPE_11="VAI_ADDRESS"
+PARSE_ABSTRACT_INDEX_11=30
+MUST_CONTAIN_11="WXTS"
+
+# Stbd Vai Wind Direction
+PARSE_DATATYPE_12="VAI_WIND_DIRECTION_AVG"
+PARSE_ABSTRACT_INDEX_12=31
+MUST_CONTAIN_12="WXTS"
+
+# Stbd Wind Speed Min
+PARSE_DATATYPE_13="VAI_WIND_SPEED_MIN"
+PARSE_ABSTRACT_INDEX_13=32
+MUST_CONTAIN_13="WXTS"
+
+# Stbd Vai Wind Speed Avg
+PARSE_DATATYPE_14="VAI_WIND_SPEED_AVG"
+PARSE_ABSTRACT_INDEX_14=33
+MUST_CONTAIN_14="WXTS"
+
+# Stbd Vai Wind Speed Max
+PARSE_DATATYPE_15="VAI_WIND_SPEED_MAX"
+PARSE_ABSTRACT_INDEX_15=34
+MUST_CONTAIN_15="WXTS"
+
+# Stbd Vai Temperature
+PARSE_DATATYPE_16="VAI_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_16=35
+MUST_CONTAIN_16="WXTS"
+
+# Stbd Vai Humidity
+PARSE_DATATYPE_17="VAI_HUMIDITY"
+PARSE_ABSTRACT_INDEX_17=36
+MUST_CONTAIN_17="WXTS"
+
+# Stbd Vai Pressure
+PARSE_DATATYPE_18="VAI_PRESSURE"
+PARSE_ABSTRACT_INDEX_18=37
+MUST_CONTAIN_18="WXTS"
+
+# Stbd Vai Rain Accumulation
+PARSE_DATATYPE_19="VAI_RAIN_ACCUMULATION"
+PARSE_ABSTRACT_INDEX_19=38
+MUST_CONTAIN_19="WXTS"
+
+# Stbd Vai Rain Intensity
+PARSE_DATATYPE_20="VAI_RAIN_INTENSITY"
+PARSE_ABSTRACT_INDEX_20=39
+MUST_CONTAIN_20="WXTS"
+
+#-----------------------------------------------
+# $VDVBW
+#-----------------------------------------------
+[INPUT_6]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55202
+
+NUMBER_OF_CSV_PARSE=1
+
+# to use to parse the data and the ABSTRACT_INDEX
+#  Speed over ground is not what doppler speedlog is good at in deep water
+PARSE_DATATYPE_1="VDVBW_WATER_SPEED_AHEAD"
+PARSE_ABSTRACT_INDEX_1=7
+
+#-----------------------------------------------
+# SBE45
+#-----------------------------------------------
+[INPUT_7]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55501
+
+NUMBER_OF_CSV_PARSE=4
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SBE45_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_1=10
+
+PARSE_DATATYPE_2="SBE45_CONDUCTIVITY"
+PARSE_ABSTRACT_INDEX_2=11
+
+PARSE_DATATYPE_3="SBE45_SALINITY"
+PARSE_ABSTRACT_INDEX_3=12
+
+PARSE_DATATYPE_4="SBE45_SOUNDVELOCITY"
+PARSE_ABSTRACT_INDEX_4=13
+
+#-----------------------------------------------
+# SBE48
+#-----------------------------------------------
+[INPUT_8]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55502
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SBE48_TEMPERATURE"
+PARSE_ABSTRACT_INDEX_1=6
+
+#-----------------------------------------------
+# RAD SW and LW
+#-----------------------------------------------
+[INPUT_9]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55406
+
+NUMBER_OF_CSV_PARSE=2
+
+# The minimum for each field is to specify what rule 
+PARSE_DATATYPE_1="RAD_LW"
+PARSE_ABSTRACT_INDEX_1=8
+
+PARSE_DATATYPE_2="RAD_SW"
+PARSE_ABSTRACT_INDEX_2=9
+
+
+#-----------------------------------------------
+# PAR
+#-----------------------------------------------
+[INPUT_10]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55405
+INPUT_ENABLE=1
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="SSSG_GENERIC"
+PARSE_ABSTRACT_INDEX_1=40
+GENERIC_HEADER_STRING_1="*-"
+GENERIC_DELIMITER_CHARACTER_1=""
+GENERIC_INDEX_1=0
+GENERIC_DATA_TYPE_1=1
+GENERIC_DATA_PRECISION_1=2
+
+
+#-----------------------------------------------
+# Knudsen Depth
+#-----------------------------------------------
+[INPUT_11]
+SOURCE_TYPE="UDP"
+
+#pick one set of input parameters - either 320B/R or 3260
+
+#320
+#IN_SOCKET=55603
+#3260
+IN_SOCKET=55608
+
+NUMBER_OF_CSV_PARSE=2
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="PKEL_DEPTH_1"
+
+#this is because the PKEL strings are different
+#for the 320 high freq is first, for the 3260 the low freq is first in the string
+#Select this when 320B/R is in use: 12kHz 
+#PARSE_ABSTRACT_INDEX_1=16
+#Select this when 3260 is in use: 12 kHz
+PARSE_ABSTRACT_INDEX_1=17
+
+PARSE_DATATYPE_2="PKEL_DEPTH_2"
+#Select this when 320B/R is in use: 3.5kHz
+#PARSE_ABSTRACT_INDEX_2=17
+#Select this when 3260 is in use: 3.5kHz
+PARSE_ABSTRACT_INDEX_2=16
+
+
+#-----------------------------------------------
+# FLR
+#-----------------------------------------------
+[INPUT_12]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55503
+
+NUMBER_OF_CSV_PARSE=1
+
+PARSE_DATATYPE_1="FLR_MILLIVOLTS"
+PARSE_ABSTRACT_INDEX_1=15
+
+
+#-----------------------------------------------
+# EM124 Depth
+#-----------------------------------------------
+[INPUT_13]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55602
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule 
+# to use to parse the data and the ABSTRACT_INDEX
+#PARSE_DATATYPE_1="KIDPT_DEPTH"
+PARSE_DATATYPE_1="KBDPT_DEPTH"
+PARSE_ABSTRACT_INDEX_1=18
+
+#---------------------------------------------
+#  Flowmeter
+#---------------------------------------------
+[INPUT_14]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55506
+
+NUMBER_OF_CSV_PARSE=1
+
+# The minimum for each field is to specify what rule
+# to use to parse the data and the ABSTRACT_INDEX
+PARSE_DATATYPE_1="FLOW_LAST_MINUTE"
+PARSE_ABSTRACT_INDEX_1=99
+
+#-----------------------------------------------
+#--- TRANS25
+#-----------------------------------------------
+[INPUT_15]
+SOURCE_TYPE="UDP"
+IN_SOCKET=55510
+
+NUMBER_OF_CSV_PARSE=5
+
+PARSE_DATATYPE_1="TRANS_ARG1"
+PARSE_ABSTRACT_INDEX_1=101
+
+PARSE_DATATYPE_2="TRANS_ARG2"
+PARSE_ABSTRACT_INDEX_2=102
+
+PARSE_DATATYPE_3="TRANS_ARG3"
+PARSE_ABSTRACT_INDEX_3=103
+
+PARSE_DATATYPE_4="TRANS_ARG4"
+PARSE_ABSTRACT_INDEX_4=104
+
+PARSE_DATATYPE_5="TRANS_ARG5"
+PARSE_ABSTRACT_INDEX_5=105
+
+
+
+
+
+### Quanties Calculated by dsLogCsv ###
+
+#-----------------------------------------------
+# SSV
+# SBE45S and SBE48T
+[SSV_1]
+TEMPERATURE_ABSTRACT_INDEX=6
+SALINITY_ABSTRACT_INDEX=12
+
+
+# SSV_2
+# SBE45T and SBE45S
+# I know it calculates its own, but curious how our calculations compare to the SBE45s
+[SSV_2]
+TEMPERATURE_ABSTRACT_INDEX=10
+SALINITY_ABSTRACT_INDEX=12
+
+
+#-----------------------------------------------
+# PORT BAROMETER
+[BAROMETER_1]
+RAW_PRESSURE_ABSTRACT_INDEX=27
+#SENSOR_HEIGHT=14.2
+#14.2 is the Knorrs height
+SENSOR_HEIGHT=20.6
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# STBD BAROMETER
+[BAROMETER_2]
+RAW_PRESSURE_ABSTRACT_INDEX=37
+#SENSOR_HEIGHT=14.2
+#14.2 is the Knorrs height
+SENSOR_HEIGHT=20.6
+
+ 
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# Port TRUEWIND
+[TRUEWIND_1]
+WIND_DIR_ABSTRACT_INDEX=21
+WIND_SPEED_ABSTRACT_INDEX=23
+COG_ABSTRACT_INDEX=4
+SOG_ABSTRACT_INDEX=5
+HDG_ABSTRACT_INDEX=1
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# Stbd TRUEWIND
+[TRUEWIND_2]
+WIND_DIR_ABSTRACT_INDEX=31
+WIND_SPEED_ABSTRACT_INDEX=33
+COG_ABSTRACT_INDEX=4
+SOG_ABSTRACT_INDEX=5
+HDG_ABSTRACT_INDEX=1
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=2
+
+
+#-----------------------------------------------
+# DIFF SBE48 vs SBE45
+#----------------------------------------------
+[DIFF_1]
+MINUEND_ABSTRACT_INDEX=6
+SUBTRAHEND_ABSTRACT_INDEX=10
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=4
+
+#-----------------------------------------------
+# DIFF PHINS  vs GRYO
+#----------------------------------------------
+[NORMDIFF_1]
+MINUEND_ABSTRACT_INDEX=70
+SUBTRAHEND_ABSTRACT_INDEX=1
+
+# Specifies number of digits to right of decimal point (default is 3)
+OUTPUT_PRECISION=4
+
+
+#-----------------------------------------------
+[OUTPUT_1]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=60
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="AT"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+
+###IS THIS LEFT OVER FROM INITIAL TESTING - DOES NOT DO ANYTHING?
+#specify that the output is UDP
+# This would go to ftp as the entire string of data
+#DESTINATION_2_TYPE="UDP"
+#DESTINATION_2_IPADDRESS="199.92.161.3"
+#DESTINATION_2_SOCKET=55900
+
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=7
+OUTFIELD_HEADER_STRING_3="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_4=1
+OUTFIELD_HEADER_STRING_4="HDT"
+
+OUTFIELD_ABSTRACT_INDEX_5=4
+OUTFIELD_HEADER_STRING_5="COG"
+
+OUTFIELD_ABSTRACT_INDEX_6=5
+OUTFIELD_HEADER_STRING_6="SOG"
+
+OUTFIELD_ABSTRACT_INDEX_7=25
+OUTFIELD_HEADER_STRING_7="WXTP_Ta"
+
+OUTFIELD_ABSTRACT_INDEX_8=35
+OUTFIELD_HEADER_STRING_8="WXTS_Ta"
+
+OUTFIELD_ABSTRACT_INDEX_9=27
+OUTFIELD_HEADER_STRING_9="WXTP_Pa"
+
+OUTFIELD_ABSTRACT_INDEX_10=37
+OUTFIELD_HEADER_STRING_10="WXTS_Pa"
+
+OUTFIELD_ABSTRACT_INDEX_11=29
+OUTFIELD_HEADER_STRING_11="WXTP_Ri"
+
+OUTFIELD_ABSTRACT_INDEX_12=39
+OUTFIELD_HEADER_STRING_12="WXTS_Ri"
+
+OUTFIELD_ABSTRACT_INDEX_13=28
+OUTFIELD_HEADER_STRING_13="WXTP_Rc"
+
+OUTFIELD_ABSTRACT_INDEX_14=38
+OUTFIELD_HEADER_STRING_14="WXTS_Rc"
+
+OUTFIELD_ABSTRACT_INDEX_15=21
+OUTFIELD_HEADER_STRING_15="WXTP_Dm"
+
+OUTFIELD_ABSTRACT_INDEX_16=31
+OUTFIELD_HEADER_STRING_16="WXTS_Dm"
+
+OUTFIELD_ABSTRACT_INDEX_17=23
+OUTFIELD_HEADER_STRING_17="WXTP_Sm"
+
+OUTFIELD_ABSTRACT_INDEX_18=33
+OUTFIELD_HEADER_STRING_18="WXTS_Sm"
+
+OUTFIELD_ABSTRACT_INDEX_19=26
+OUTFIELD_HEADER_STRING_19="WXTP_Ua"
+
+OUTFIELD_ABSTRACT_INDEX_20=36
+OUTFIELD_HEADER_STRING_20="WXTS_Ua"
+
+OUTFIELD_TYPE_21="TRUEWIND_SPEED_1"
+OUTFIELD_HEADER_STRING_21="WXTP_TS"
+
+OUTFIELD_TYPE_22="TRUEWIND_SPEED_2"
+OUTFIELD_HEADER_STRING_22="WXTS_TS"
+
+OUTFIELD_TYPE_23="TRUEWIND_DIRECTION_1"
+OUTFIELD_HEADER_STRING_23="WXTP_TD"
+
+OUTFIELD_TYPE_24="TRUEWIND_DIRECTION_2"
+OUTFIELD_HEADER_STRING_24="WXTS_TD"
+
+OUTFIELD_ABSTRACT_INDEX_25=9
+OUTFIELD_HEADER_STRING_25="RAD_SW"
+
+OUTFIELD_ABSTRACT_INDEX_26=8
+OUTFIELD_HEADER_STRING_26="RAD_LW"
+
+OUTFIELD_ABSTRACT_INDEX_27=12
+OUTFIELD_HEADER_STRING_27="SBE45S"
+
+OUTFIELD_ABSTRACT_INDEX_28=6
+OUTFIELD_HEADER_STRING_28="SBE48T"
+
+OUTFIELD_TYPE_29="BAROMETER_1"
+OUTFIELD_HEADER_STRING_29="BAROM_P"
+
+OUTFIELD_TYPE_30="BAROMETER_2"
+OUTFIELD_HEADER_STRING_30="BAROM_S"
+
+OUTFIELD_ABSTRACT_INDEX_31=15
+OUTFIELD_HEADER_STRING_31="FLR"
+
+OUTFIELD_TYPE_32="SSV_1"
+OUTFIELD_HEADER_STRING_32="SSVdslog"
+
+OUTFIELD_ABSTRACT_INDEX_33=16
+OUTFIELD_HEADER_STRING_33="Depth12"
+
+OUTFIELD_ABSTRACT_INDEX_34=17
+OUTFIELD_HEADER_STRING_34="Depth35"
+
+
+OUTFIELD_ABSTRACT_INDEX_35=18
+OUTFIELD_HEADER_STRING_35="EM124"
+
+OUTFIELD_ABSTRACT_INDEX_36=40
+OUTFIELD_HEADER_STRING_36="PAR"
+
+# specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=36
+
+
+#------------------------------------------------------
+# Compare SBE45, SBE48, and SSV (SBE45SSV and dsLogSSV
+#------------------------------------------------------
+
+[OUTPUT_2]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=20
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="AT_SSW20_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=12
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=7
+OUTFIELD_HEADER_STRING_3="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_4=1
+OUTFIELD_HEADER_STRING_4="HDT"
+
+OUTFIELD_ABSTRACT_INDEX_5=6
+OUTFIELD_HEADER_STRING_5="SBE48T"
+
+OUTFIELD_ABSTRACT_INDEX_6=10
+OUTFIELD_HEADER_STRING_6="SBE45T"
+
+OUTFIELD_ABSTRACT_INDEX_7=11
+OUTFIELD_HEADER_STRING_7="SBE45C"
+
+OUTFIELD_ABSTRACT_INDEX_8=12
+OUTFIELD_HEADER_STRING_8="SBE45S"
+
+OUTFIELD_ABSTRACT_INDEX_9=13
+OUTFIELD_HEADER_STRING_9="SSV_SBE45"
+
+OUTFIELD_TYPE_10="SSV_2"
+OUTFIELD_HEADER_STRING_10="SSV_sbe45_calc"
+
+OUTFIELD_TYPE_11="DIFF_1"
+OUTFIELD_HEADER_STRING_11="SBE48_SBE45_DIFF"
+
+OUTFIELD_ABSTRACT_INDEX_12=99
+OUTFIELD_HEADER_STRING_12="FLOW"
+#-----------------------------------------------
+#  Compare SCIGPS, CNAV GPS, and  GPS data
+#-----------------------------------------------
+[OUTPUT_3]
+OUTPUT_ENABLE=0
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=10
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="AT_GPS10_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=10
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="CNAV_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="CNAV_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=4
+OUTFIELD_HEADER_STRING_3="CNAV_COG"
+
+OUTFIELD_ABSTRACT_INDEX_4=5
+OUTFIELD_HEADER_STRING_4="CNAV_SOG"
+
+OUTFIELD_ABSTRACT_INDEX_5=46
+OUTFIELD_HEADER_STRING_5="FRN1850_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_6=47
+OUTFIELD_HEADER_STRING_6="FRN1850_LON"
+
+OUTFIELD_ABSTRACT_INDEX_7=48
+OUTFIELD_HEADER_STRING_7="FRN1850_COG"
+
+
+OUTFIELD_ABSTRACT_INDEX_8=49
+OUTFIELD_HEADER_STRING_8="FRN1850_SOG"
+
+
+OUTFIELD_ABSTRACT_INDEX_9=7
+OUTFIELD_HEADER_STRING_9="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_10=1
+OUTFIELD_HEADER_STRING_10="HDT"
+
+
+
+
+#-----------------------------------------------
+#  Create an IMU csv file for plotting
+#----------------------------------------------
+[OUTPUT_4]
+OUTPUT_ENABLE=0
+
+# specify the interval (in seconds) between output strings being created and output
+#OUTPUT_INTERVAL=1
+OUTPUT_INTERVAL=10
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="AT_IMU10_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=13
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=7
+OUTFIELD_HEADER_STRING_3="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_4=70
+OUTFIELD_HEADER_STRING_4="PHINS_HEADING"
+
+OUTFIELD_ABSTRACT_INDEX_5=1
+OUTFIELD_HEADER_STRING_5="HDT"
+
+
+OUTFIELD_ABSTRACT_INDEX_6=71
+OUTFIELD_HEADER_STRING_6="PHTRO_ROLL"
+
+OUTFIELD_ABSTRACT_INDEX_7=80
+OUTFIELD_HEADER_STRING_7="PHTRO_ROLL_FRAME"
+
+OUTFIELD_ABSTRACT_INDEX_8=72
+OUTFIELD_HEADER_STRING_8="PHTRO_PITCH"
+
+OUTFIELD_ABSTRACT_INDEX_9=79
+OUTFIELD_HEADER_STRING_9="PHTRO_PITCH_FRAME"
+
+OUTFIELD_ABSTRACT_INDEX_10=73
+OUTFIELD_HEADER_STRING_10="PHLIN_SURGE_LIN"
+
+OUTFIELD_ABSTRACT_INDEX_11=74
+OUTFIELD_HEADER_STRING_11="PHLIN_SWAY_LIN"
+
+OUTFIELD_ABSTRACT_INDEX_12=74
+OUTFIELD_HEADER_STRING_12="PHLIN_HEAVE_LIN"
+
+OUTFIELD_ABSTRACT_INDEX_13=76
+OUTFIELD_HEADER_STRING_13="PHSPD_SURGE_SPD"
+
+OUTFIELD_ABSTRACT_INDEX_14=77
+OUTFIELD_HEADER_STRING_14="PHSPD_SWAY_SPD"
+
+OUTFIELD_ABSTRACT_INDEX_15=78
+OUTFIELD_HEADER_STRING_15="PHSPD_HEAVE_SPD"
+
+OUTFIELD_TYPE_16="NORMDIFF_1"
+OUTFIELD_HEADER_STRING_16="PHINS_GYRO_DIFF"
+
+#-------------------------------------------------
+#  SSV from flow thru to UDP port for use with em122
+#  format is space delimited:     SST   SSV
+#ftp will read this udp port and redirect the string out
+#to a serial port
+#-----------------------------------------------
+
+[OUTPUT_5]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=1
+TIMESTAMP_ENABLE=0
+## options for string output
+#OUTPUT_PREFIX_1="SMUDGE"
+OUTPUT_DELIMITER=" "
+
+#****   @@@
+#*TRY THIS FOR FEED - Allison Jan 2017????
+#****
+TERM_CHAR_1="\r"
+TERM_CHAR_2="\n"
+
+#specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=2
+
+# For parsed data specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+# For calculated values use OUTFIELD_TYPE 
+# Set HEADER_STRING to null to prevent UDP transmit of headers at points new files
+# would be opened.   Just a note - I thought the header default is supposed to be null 
+
+
+# For EM122 wants Sea Temperature space SSV
+# Using SBE48 and SBE48 needs to be set to output data 1Hz
+# INTERVAL=0  use DS command to show current setup
+#OUTFIELD_ABSTRACT_INDEX_1=6
+#ABSTRACT INDEX VALUES -    6=SBE48T, 10=SBE45T, 13= SBE45V
+OUTFIELD_HEADER_STRING_1=""
+OUTFIELD_ABSTRACT_INDEX_1=10
+
+#OUTFIELD_TYPE_2="SSV_2"
+OUTFIELD_ABSTRACT_INDEX_2=13
+OUTFIELD_AGE_LIMIT_2=60
+OUTFIELD_HEADER_STRING_2=""
+
+#specify that the output is UDP
+DESTINATION_1_TYPE="UDP"
+DESTINATION_1_IPADDRESS="10.100.161.3"
+DESTINATION_1_SOCKET=55504
+
+#------------------------------------------------------
+# OUTPUT NOAA data
+#------------------------------------------------------
+
+[OUTPUT_6]
+OUTPUT_ENABLE=1
+
+OUTPUT_FILE_FORMAT="NOAA"
+
+# DO NOT need to specify the interval (in seconds) between output strings
+# this is done at the top of the hour and over writes noaa.tmp
+OUTPUT_INTERVAL=60
+
+# Do NOT need to specify the string to use in data file names
+# DESTINATION_PREFIX="noaa_"
+
+# specify ship call sign
+SHIP_CALL_SIGN="KAQP"
+
+# specify ship name
+SHIP_NAME="ATLANTIS"
+
+# specify VERSION number
+NOAA_VERSION="SCS v4.0.0"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=8
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=90
+OUTFIELD_HEADER_STRING_1="ddmm.mmmh"
+
+OUTFIELD_ABSTRACT_INDEX_2=91
+OUTFIELD_HEADER_STRING_2="ddmm.mmmh"
+
+OUTFIELD_TYPE_3="TRUEWIND_DIRECTION_1"
+OUTFIELD_HEADER_STRING_3="deg"
+
+OUTFIELD_TYPE_4="TRUEWIND_SPEED_1"
+OUTFIELD_HEADER_STRING_4="m/s"
+
+OUTFIELD_ABSTRACT_INDEX_5=25
+OUTFIELD_HEADER_STRING_5="C"
+
+OUTFIELD_ABSTRACT_INDEX_6=26
+OUTFIELD_HEADER_STRING_6="%"
+
+OUTFIELD_TYPE_7="BAROMETER_1"
+OUTFIELD_HEADER_STRING_7="hPa"
+
+OUTFIELD_ABSTRACT_INDEX_8=6
+OUTFIELD_HEADER_STRING_8="C"
+
+
+
+#-------------------------------------------------
+#  Output 7 SAMOS file
+#-------------------------------------------------
+
+[OUTPUT_7]
+
+# ENABLE OUTPUT
+OUTPUT_ENABLE=1
+
+# specify OUTPUT FORMAT for SAMOS
+OUTPUT_FILE_FORMAT="SAMOS"
+
+# specify ship call sign
+SHIP_CALL_SIGN="KAQP"
+
+#specify ship name
+SHIP_NAME="ATLANTIS"
+
+# specify output interval
+OUTPUT_INTERVAL=60
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="samos_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=29
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="LA"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="LO"
+
+OUTFIELD_ABSTRACT_INDEX_3=5
+OUTFIELD_HEADER_STRING_3="SOG"
+
+OUTFIELD_ABSTRACT_INDEX_4=94
+OUTFIELD_HEADER_STRING_4="COG"
+
+OUTFIELD_ABSTRACT_INDEX_5=95
+OUTFIELD_HEADER_STRING_5="GY"
+
+OUTFIELD_ABSTRACT_INDEX_6=9
+OUTFIELD_HEADER_STRING_6="SWR"
+
+OUTFIELD_ABSTRACT_INDEX_7=8
+OUTFIELD_HEADER_STRING_7="LWR"
+
+OUTFIELD_ABSTRACT_INDEX_8=6
+OUTFIELD_HEADER_STRING_8="SST"
+
+OUTFIELD_ABSTRACT_INDEX_9=11
+OUTFIELD_HEADER_STRING_9="SSC"
+
+OUTFIELD_ABSTRACT_INDEX_10=12
+OUTFIELD_HEADER_STRING_10="SAL"
+
+OUTFIELD_TYPE_11="TRUEWIND_DIRECTION_2"
+OUTFIELD_HEADER_STRING_11="WSTD"
+
+OUTFIELD_TYPE_12="TRUEWIND_SPEED_2"
+OUTFIELD_HEADER_STRING_12="WSTS"
+
+
+OUTFIELD_ABSTRACT_INDEX_13=35
+OUTFIELD_HEADER_STRING_13="WSAT"
+
+OUTFIELD_TYPE_14="BAROMETER_2"
+OUTFIELD_HEADER_STRING_14="WSBP"
+
+OUTFIELD_ABSTRACT_INDEX_15=36
+OUTFIELD_HEADER_STRING_15="WSRH"
+
+OUTFIELD_ABSTRACT_INDEX_16=38
+OUTFIELD_HEADER_STRING_16="WSRC"
+
+OUTFIELD_ABSTRACT_INDEX_17=39
+OUTFIELD_HEADER_STRING_17="WSRI"
+
+OUTFIELD_ABSTRACT_INDEX_18=31
+OUTFIELD_HEADER_STRING_18="WSRD"
+
+OUTFIELD_ABSTRACT_INDEX_19=33
+OUTFIELD_HEADER_STRING_19="WSRS"
+
+OUTFIELD_TYPE_20="TRUEWIND_DIRECTION_1"
+OUTFIELD_HEADER_STRING_20="WPTD"
+
+OUTFIELD_TYPE_21="TRUEWIND_SPEED_1"
+OUTFIELD_HEADER_STRING_21="WPTS"
+
+
+OUTFIELD_ABSTRACT_INDEX_22=25
+OUTFIELD_HEADER_STRING_22="WPAT"
+
+OUTFIELD_TYPE_23="BAROMETER_1"
+OUTFIELD_HEADER_STRING_23="WPBP"
+
+OUTFIELD_ABSTRACT_INDEX_24=26
+OUTFIELD_HEADER_STRING_24="WPRH"
+
+OUTFIELD_ABSTRACT_INDEX_25=28
+OUTFIELD_HEADER_STRING_25="WPRC"
+
+OUTFIELD_ABSTRACT_INDEX_26=29
+OUTFIELD_HEADER_STRING_26="WPRI"
+
+OUTFIELD_ABSTRACT_INDEX_27=21
+OUTFIELD_HEADER_STRING_27="WPRD"
+
+OUTFIELD_ABSTRACT_INDEX_28=23
+OUTFIELD_HEADER_STRING_28="WPRS"
+
+#requested by samos 2021-July
+OUTFIELD_ABSTRACT_INDEX_29=10
+OUTFIELD_HEADER_STRING_29="SBE45T"
+
+
+#---------------------------------------
+#   Output a calculated SSV value for distribution
+#--------------------------------------
+#---------put thermosalinograph SSV on UDP 55500
+[OUTPUT_8]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=5
+TIMESTAMP_ENABLE=1
+
+OUTPUT_DELIMITER=" "
+
+#specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=1
+
+# For parsed data specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+# For calculated values use OUTFIELD_TYPE 
+# Set HEADER_STRING to null to prevent UDP transmit of headers at points new files
+# would be opened.   Just a note - I thought the header default is supposed to be null 
+
+#ABSTRACT INDEX VALUES -    6=SBE48T, 10=SBE45T, 13= SBE45V  14= SV perl Calc
+OUTPUT_PREFIX_1="SSV"
+OUTPUT_PREFIX_2="SBE45raw"
+OUTFIELD_AGE_LIMIT_2=60
+OUTFIELD_ABSTRACT_INDEX_1=13
+
+## linus for status_screen
+#specify that the output is UDP
+DESTINATION_1_TYPE="UDP"
+DESTINATION_1_IPADDRESS="10.100.161.3"
+DESTINATION_1_SOCKET=55500
+
+
+[OUTPUT_9]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=10
+
+# specify the string to use in data file names
+DESTINATION_PREFIX="AT_TRANS25_"
+
+# specify that the first output is to a file
+DESTINATION_1_TYPE="FILE"
+
+# specify the number of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=9
+
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+OUTFIELD_ABSTRACT_INDEX_1=2
+OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+OUTFIELD_ABSTRACT_INDEX_2=3
+OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+OUTFIELD_ABSTRACT_INDEX_3=7
+OUTFIELD_HEADER_STRING_3="SPD"
+
+OUTFIELD_ABSTRACT_INDEX_4=1
+OUTFIELD_HEADER_STRING_4="HDT"
+
+OUTFIELD_ABSTRACT_INDEX_5=101
+OUTFIELD_HEADER_STRING_5="TRANS25_ref"
+
+OUTFIELD_ABSTRACT_INDEX_6=102
+OUTFIELD_HEADER_STRING_6="TRANS25_sig"
+
+OUTFIELD_ABSTRACT_INDEX_7=103
+OUTFIELD_HEADER_STRING_7="TRANS25_sigcor"
+
+OUTFIELD_ABSTRACT_INDEX_8=104
+OUTFIELD_HEADER_STRING_8="TRANS25_calc"
+
+OUTFIELD_ABSTRACT_INDEX_9=105
+OUTFIELD_HEADER_STRING_9="TRANS25_therm"
+
+#-------------------------------------------------
+#at48 - build a string as close to:
+#      > 4242.1003,06752.5959, 32.4681, 7.4702,2017/05/05,13:20:11 ,20170505,132011
+#      > latitude,longitude,salinity,temperature,date,time,date,time
+#-----------------------------------------------
+
+[OUTPUT_10]
+OUTPUT_ENABLE=1
+
+# specify the interval (in seconds) between output strings being created and output
+OUTPUT_INTERVAL=1
+TIMESTAMP_ENABLE=1
+## options for string output
+#OUTPUT_PREFIX_1="SMUDGE"
+OUTPUT_DELIMITER=","
+
+#specify the nuber of data fields in each output string
+NUMBER_OF_OUTPUT_FIELDS=4
+
+OUTFIELD_HEADER_STRING_1=""
+OUTFIELD_ABSTRACT_INDEX_1=42
+
+OUTFIELD_ABSTRACT_INDEX_2=43
+OUTFIELD_HEADER_STRING_2=""
+
+OUTFIELD_ABSTRACT_INDEX_2=12
+OUTFIELD_HEADER_STRING_2=""
+
+OUTFIELD_ABSTRACT_INDEX_2=10
+OUTFIELD_HEADER_STRING_2=""
+
+#specify that the output is UDP
+DESTINATION_1_TYPE="UDP"
+DESTINATION_1_IPADDRESS="10.100.161.3"
+DESTINATION_1_SOCKET=55901
+
+
+#-----------------------------------------------
+###DO NOT DELETE - 
+#
+####THIS IS NEEDED DURING at39 - NAAMES CRUISE!!!!
+#
+#
+#start up by uncommenting the relevant lines below
+
+###MUPPETS
+#[OUTPUT_9]
+#OUTPUT_ENABLE=1
+#
+# specify the interval (in seconds) between output strings being created and output
+#OUTPUT_INTERVAL=10
+#
+#specify that the output is UDP
+# This would go to ftp as the entire string of data
+#DESTINATION_1_TYPE="UDP"
+#DESTINATION_1_IPADDRESS="10.100.161.3"
+#DESTINATION_1_SOCKET=55900
+
+## No need to send it back to itself
+##DESTINATION_2_TYPE="UDP"
+##DESTINATION_2_IPADDRESS="127.0.0.1"
+##DESTINATION_2_SOCKET=55900
+
+# For each output field specify the ABSTRACT_INDEX and
+# a string to use for the header in data files
+
+#OUTFIELD_ABSTRACT_INDEX_1=2
+#OUTFIELD_HEADER_STRING_1="Dec_LAT"
+
+#OUTFIELD_ABSTRACT_INDEX_2=3
+#OUTFIELD_HEADER_STRING_2="Dec_LON"
+
+#OUTFIELD_ABSTRACT_INDEX_3=7
+#OUTFIELD_HEADER_STRING_3="SPD"
+
+#OUTFIELD_ABSTRACT_INDEX_4=1
+#OUTFIELD_HEADER_STRING_4="HDT"
+
+#OUTFIELD_ABSTRACT_INDEX_5=4
+#OUTFIELD_HEADER_STRING_5="COG"
+
+#OUTFIELD_ABSTRACT_INDEX_6=5
+#OUTFIELD_HEADER_STRING_6="SOG"
+
+#OUTFIELD_ABSTRACT_INDEX_7=25
+#OUTFIELD_HEADER_STRING_7="WXTP_Ta"
+
+#OUTFIELD_ABSTRACT_INDEX_8=35
+#OUTFIELD_HEADER_STRING_8="WXTS_Ta"
+
+#OUTFIELD_ABSTRACT_INDEX_9=27
+#OUTFIELD_HEADER_STRING_9="WXTP_Pa"
+
+#OUTFIELD_ABSTRACT_INDEX_10=37
+#OUTFIELD_HEADER_STRING_10="WXTS_Pa"
+ 
+#OUTFIELD_ABSTRACT_INDEX_11=29
+#OUTFIELD_HEADER_STRING_11="WXTP_Ri"
+
+#OUTFIELD_ABSTRACT_INDEX_12=39
+#OUTFIELD_HEADER_STRING_12="WXTS_Ri"
+
+#OUTFIELD_ABSTRACT_INDEX_13=28
+#OUTFIELD_HEADER_STRING_13="WXTP_Rc"
+
+#OUTFIELD_ABSTRACT_INDEX_14=38
+#OUTFIELD_HEADER_STRING_14="WXTS_Rc"
+
+#OUTFIELD_ABSTRACT_INDEX_15=21
+#OUTFIELD_HEADER_STRING_15="WXTP_Dm"
+
+#OUTFIELD_ABSTRACT_INDEX_16=31
+#OUTFIELD_HEADER_STRING_16="WXTS_Dm"
+
+#OUTFIELD_ABSTRACT_INDEX_17=23
+#OUTFIELD_HEADER_STRING_17="WXTP_Sm"
+
+#OUTFIELD_ABSTRACT_INDEX_18=33
+#OUTFIELD_HEADER_STRING_18="WXTS_Sm"
+
+#OUTFIELD_ABSTRACT_INDEX_19=26
+#OUTFIELD_HEADER_STRING_19="WXTP_Ua"
+
+#OUTFIELD_ABSTRACT_INDEX_20=36
+#OUTFIELD_HEADER_STRING_20="WXTS_Ua"
+
+#OUTFIELD_TYPE_21="TRUEWIND_SPEED_1"
+#OUTFIELD_HEADER_STRING_21="WXTP_TS"
+
+#OUTFIELD_TYPE_22="TRUEWIND_SPEED_2"
+#OUTFIELD_HEADER_STRING_22="WXTS_TS"
+
+#OUTFIELD_TYPE_23="TRUEWIND_DIRECTION_1"
+#OUTFIELD_HEADER_STRING_23="WXTP_TD"
+
+#OUTFIELD_TYPE_24="TRUEWIND_DIRECTION_2"
+#OUTFIELD_HEADER_STRING_24="WXTS_TD"
+
+#OUTFIELD_ABSTRACT_INDEX_25=9
+#OUTFIELD_HEADER_STRING_25="SWR"
+
+#OUTFIELD_ABSTRACT_INDEX_26=8
+#OUTFIELD_HEADER_STRING_26="LWR"
+
+#OUTFIELD_ABSTRACT_INDEX_27=12
+#OUTFIELD_HEADER_STRING_27="SBE45S"
+
+#OUTFIELD_ABSTRACT_INDEX_28=6
+#OUTFIELD_HEADER_STRING_28="SBE48T"
+
+#OUTFIELD_TYPE_29="BAROMETER_1"
+#OUTFIELD_HEADER_STRING_29="BAROM_P"
+
+#OUTFIELD_TYPE_30="BAROMETER_2"
+#OUTFIELD_HEADER_STRING_30="BAROM_S"
+
+#OUTFIELD_ABSTRACT_INDEX_31=15
+#OUTFIELD_HEADER_STRING_31="FLR"
+
+#OUTFIELD_TYPE_32="SSV_1"
+#OUTFIELD_HEADER_STRING_32="SSVdslog"
+
+#OUTFIELD_ABSTRACT_INDEX_33=16
+#OUTFIELD_HEADER_STRING_33="Depth12"
+
+#OUTFIELD_ABSTRACT_INDEX_34=17
+#OUTFIELD_HEADER_STRING_34="Depth35"
+
+
+#OUTFIELD_ABSTRACT_INDEX_35=18
+#OUTFIELD_HEADER_STRING_35="EM122"
+# specify the nuber of data fields in each output string
+#NUMBER_OF_OUTPUT_FIELDS=35
+####END MUPPETS

@@ -1,0 +1,20 @@
+Latitude:GPS:2:%3d&#176 %6.3f' %s:latitude:Longitude:GPS:4:%3d&#176 %6.3f' %s:longitude
+Speedlog:SPD:0:%5.1f knots::Heading:GYRO:0:%6.1f &#176::
+SOG:SOG:0:%5.1f knots::COG:COG:0:%6.1f &#176::
+Time to Station:TTWP:0:%d;%02d:hrsmin:Distance to Station:DTWP:0:%6.1f nm::
+::::blank:::::blank
+True Wind Speed:WXTS_TS:0:%5.1f m/s  %6.2f knots:knots:True Wind Direction:WXTS_TD:0:%5.1f &#176:
+Air Temperature:WXTS_Ta:0:%5.1f&#176C  %5.1f &#176F:airtemp: Air Pressure:WXTS_Pa:0:%7.1f mbar::
+Rel Humidity:WXTS_Ua:0:%5.1f %::::::blank
+ShortWave Radiation:sw:0:%5.1f W/m^2::LongWave Radiation:lw:0:%5.1f W/m^2::
+::::blank:::::blank
+Sea Temp:SBE48:0:%5.1f&#176C  %5.1f &#176F:airtemp:Sea Surface Salinity:SBE45S:0:%5.3f PSU::
+Fluorometer:FLR:0:%5.1f mV::SSV:SSV:0:%7.2f m/s::
+::::blank:Flow Rate:FLOW:0:%5.1f mL/sec::
+3.5 kHz Depth:Depth35:0:%7d meters::::::blank:
+12 KHz Depth:Depth12:0:%7d meters::EM122:0:%7d meters::
+::::blank:::::blank
+Winch is:Winch:0:%s::::::blank:
+Winch Tension:Winch:1:%8d lbs::::::blank:
+Winch Out:Winch:2:%8d m::Internet Connection:Networkuse:0:%s::
+Winch Speed:Winch:3:%8d m/min::Uptime:Networkuse:1:%5.1f hours::
