@@ -20,3 +20,7 @@
 
 ## Manor directory
 - Nagios checks residing on manor
+
+## database directory
+- Python feeder code
+- Other python code to import, export and validate SQLite database
