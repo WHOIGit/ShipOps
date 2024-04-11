@@ -1,0 +1,26 @@
+SQLite armstrong.db notes:
+
+Please see the wiki entry for the Armstrong Website for a comprehensive overview and detailed instructions on the sqlite database. 
+
+IMPORTANT NOTES:
+- Do not delete or alter the armstrong.db
+- In the case that the armstrong.db file is deleted, run ./make-table to regenerate the database and array table in the correct format
+- ./import-data can be run to add a row to the table, but it is not needed for database/feeder functionality
+- checkdb is set up as an alias and can be run as sssg from anywhere on the webserver to query the database
+- output-data.py queries the database and outputs the contents in json format to the data.json file
+
+STARTUP:
+- ./startup.sh is run by root to start the feeders
+- ./output-data.py & is run by root update the data.json file every second
+- ./shutdown.sh can be run by root to stop all feeders
+- ./startup.sh can be run by root to restart all feeders
+
+FEEDERS:
+- All UDP feeders are located in the feeders/ directory 
+- Feeders can be run individually or with /startup.sh as root
+- feeders are designed to connect with the database, check that the table exists, and then write to the "array" table
+- if the variable that the feeders are adding does not exist, they will append the row to the table
+- if the variable that the feeders are adding does exist, they will overwrite the row with the latest data
+- create a new feeder using template-feeder.py 
+- Instructions for creating a new feeder are commented out in the template
+- Run the feeder in the background as root (ex: ./new-feeder.py &)
