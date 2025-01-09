@@ -1,0 +1,36 @@
+           readers:
+           - class: PolledSerialReader
+             kwargs:
+                port: /dev/ttyUSB4
+#               start_cmd:
+#                 - __PAUSE__ 10
+                pre_read_cmd: 
+                  - \r\nPR0\r\n
+                  - __PAUSE__ 2
+                  - \r\nSR0\r\n
+                  - __PAUSE__ 10
+#                 - $3RD\r
+#               stop_cmd:
+#                 - __PAUSE__ 1
+           transforms:
+           - class: PrefixTransform
+             kwargs:
+               prefix: "WXTS"
+           - class: TimestampTransform
+             kwargs:
+               time_format: "%Y/%m/%d %H:%M:%S.%f"
+           - class: PrefixTransform
+             kwargs:
+               prefix: "MET"
+           - class: RegexReplaceTransform
+             kwargs:
+               patterns: {'WXTS PR0': 'WXTP PR0'}
+           writers:
+           - class: UDPWriter
+             kwargs:
+               port: 57304
+               destination: 10.100.100.30
+           - class: TextFileWriter
+             kwargs:
+                filename: /home/admin_paul.mena/logs/vaisalas_both.log
+                truncate: True
