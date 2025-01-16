@@ -1,0 +1,26 @@
+2024 EFC
+
+SQLite armstrong.db and python feeder notes:
+
+The purpose of the sqlite armstrong.db is to manage a live dataset from the Armstrong's sensors and instrumentation. The database is able to simultaneously connect with multiple python feeders, continuously update a dataset which is stored as an array, respond to queries from users and scripts, and output datasets that are used on the website for the status screens and widgets. Please see the wiki entry regarding the Armstrong Website for a comprehensive overview and detailed instructions on the sqlite database. 
+
+IMPORTANT NOTES:
+- Do not delete or alter the armstrong.db file
+- In the case that the armstrong.db file is deleted, run ./make-database to regenerate the database and table in the correct format
+- user: sssg can run alias "checkdb" from anywhere on the webserver to query the database
+- output-json.py queries the database and outputs the contents in json format to the data.json file
+
+STARTUP PROCEDURE:
+- ./startup.sh (as sssg) used to start all feeders listed in the startup script. Comment/uncomment feeders as needed. 
+- ./output-json.py & (as sssg) should be run on server startup and must run continuously in the background. This script updates the data.json file every half-second. A cronjob can be set to ensure the script is continuously running and restart the process if needed. 
+- ./shutdown.sh (as sssg) used to stop all feeders
+
+FEEDERS:
+- All UDP feeders are located in the feeders/ directory 
+- Feeders can be run individually or by running /startup.sh as root
+- Feeders block the user from independently listening to the port when the feeder is running.  
+- Each feeder binds to the assigned UDP port, stores a UDP message, parses the message, connects with the sqlite database, checks that the table exists, and then writes the data to the "array" table
+- Feeders will overwrite the corresponding row in the array with the latest data, so the database should never become too large
+- New feeders can be made using template-feeder.py. Once started, the new row will be appended to the array
+- Instructions for creating a new feeder are included as comments in the template-feeder.py file
+- Run the feeder in the background as root (ex: ./new-feeder.py &)
