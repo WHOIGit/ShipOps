@@ -5,13 +5,6 @@
 cd /opt/openrvdas
 source venv/bin/activate
 
-InPort=/dev/ttyUSB4
-InBaud=9600
-OutPort=57304
-OutHost=10.100.128.22
-Label1=WXTP
-Label2=MET
-LogDir=/home/admin_paul.mena/logs
 ConfigDir=/home/admin_paul.mena/config
 ConfigFile1=${ConfigDir}/vaisala_port.yaml
 ConfigFile2=${ConfigDir}/vaisala_star.yaml
