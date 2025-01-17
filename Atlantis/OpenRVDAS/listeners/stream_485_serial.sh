@@ -12,7 +12,7 @@ ConfigFile=${ConfigDir}/new_mario_485_all.yaml
 # Use listener with config file - no other arguments
 # add '-v' to crank up the logging level
 
-logger/listener/listen.py --config_file ${ConfigFile} 
+logger/listener/listen.py --config_file ${ConfigFile} -v
 
 # Deactivate virtual environment
 
