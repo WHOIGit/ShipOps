@@ -1,0 +1,57 @@
+################################################################################
+# Primary logger configuration
+################################################################################
+
+readers:
+  - class: PolledSerialReader
+    kwargs:
+      port: /dev/ttyUSB4              # Serial port to read data from
+      timeout: 1                     # Timeout in seconds for each command
+      eol: "\r\n"                    # End-of-line character sequence
+      pre_read_cmd:                  # Commands sent to instruments before reading
+        pause:
+          - "__PAUSE__ 9"            # Initial pause
+        pr0:
+          - "\r\nPR0\r\n"            # Command for Port Vaisala (PR0)
+        sr0:
+          - "\r\nSR0\r\n"            # Command for Starboard Vaisala (SR0)
+        3rd:
+          - "$3RD\r"                 # Command for Fluorometer or third instrument
+      stop_cmd: "__PAUSE__ 10"       # Command to stop interaction with instruments
+
+transforms:
+  - class: SplitTransform
+    kwargs:
+      sep: "\r\n"                    # Split incoming data into individual records
+
+  - class: TimestampTransform        # Add timestamps to incoming data
+    kwargs:
+      time_format: "%Y/%m/%d %H:%M:%S.%f"
+
+  - class: RegexReplaceTransform
+    kwargs:
+      patterns:
+        # Annotate fluorometer lines
+        '\*\+': 'FLR *+'
+
+        # Annotate PR0 lines
+        'PR0': 'SSW PR0'
+
+        # Annotate SR0 lines
+        'SR0': 'SSW SR0'
+
+writers:
+  # LogfileWriter for instrument-specific logs
+  - class: LogfileWriter
+    kwargs:
+      filebase:
+        'SSW PR0': /home/admin_paul.mena/logs/port_vaisala  # Port Vaisala logs
+        'SSW SR0': /home/admin_paul.mena/logs/starboard_vaisala  # Starboard Vaisala logs
+        'FLR ':    /home/admin_paul.mena/logs/fluorometer  # Fluorometer logs
+      suffix: '.log'                 # Log file suffix
+
+  # LogfileWriter for raw data (all records)
+  - class: LogfileWriter
+    kwargs:
+      filebase: /home/admin_paul.mena/logs/raw_output        # Unified raw data log
+      suffix: '.log'    
