@@ -1,0 +1,65 @@
+import socket
+import datetime
+import sys
+from pathlib import Path
+import serial
+
+def setup_udp_socket():
+    """Create and return a UDP socket."""
+    return socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+def get_timestamp():
+    """Generate current timestamp in the required format."""
+    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+def process_line(line, sock):
+    """Process a single line of the log file and send to appropriate output."""
+    line = line.strip()
+    timestamp = get_timestamp()
+    output = f"SSW {timestamp} SBE48 {line}"
+    
+    with open('SBE48.log', 'a') as f:
+        f.write(output + '\n')
+    sock.sendto(output.encode(), ('localhost', 57322))
+
+def setup_serial():
+    """Create and return a serial port connection."""
+    try:
+        ser = serial.Serial(
+            port='/dev/ttyUSB22',
+            baudrate=9600,
+            bytesize=serial.EIGHTBITS,
+            parity=serial.PARITY_NONE,
+            stopbits=serial.STOPBITS_ONE,
+            timeout=1
+        )
+        return ser
+    except serial.SerialException as e:
+        print(f"Error opening serial port: {e}")
+        sys.exit(1)
+
+def main():
+    # Create output directory if it doesn't exist
+    Path('SBE48.log').touch()
+    
+    # Setup UDP socket and serial port
+    sock = setup_udp_socket()
+    ser = setup_serial()
+    
+    try:
+        while True:
+            if ser.in_waiting:
+                # Read a line from the serial port
+                line = ser.readline().decode('utf-8')
+                process_line(line, sock)
+                
+    except KeyboardInterrupt:
+        print("\nExiting program")
+    except Exception as e:
+        print(f"Error processing serial data: {e}")
+    finally:
+        ser.close()
+        sock.close()
+
+if __name__ == "__main__":
+    main()
