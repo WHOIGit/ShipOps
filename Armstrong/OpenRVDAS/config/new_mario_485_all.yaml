@@ -1,0 +1,121 @@
+################################################################################
+# Primary logger configuration
+################################################################################
+readers:
+  - class: PolledSerialReader
+    kwargs:
+      # Which serial port to read from
+      port: /dev/ttyUSB4
+
+      # Timeout (in seconds) for a response before moving to the next command
+      timeout: 1
+      
+      # The line termination to look for in instrument responses
+      eol: "\r"
+
+      # Poll commands: dictionary, keyed by "instrument ID" (PR0, SR0, 3rd)
+      pre_read_cmd:
+        pause: "__PAUSE__ 9"
+        pr0:
+#         - "__PAUSE__ 10"   # Wait 10 secs for line to clear, if needed
+          - "\r\nPR0\r\n"        # Then send poll for 'Port' Vaisala
+        sr0:
+          - "\r\nSR0\r\n"        # Poll 'Starboard' Vaisala
+        3rd:
+          - "$3RD\r"         # Poll the fluorometer
+      # Optional command to be sent after the loop ends (may not always be used)
+      stop_cmd: "__PAUSE__ 10"
+
+################################################################################
+# Transforms
+#
+# The transforms process raw data to add labels, timestamps, or modify content
+################################################################################
+transforms:
+  # 1) Tag each record with a "WXTS" prefix
+  - class: PrefixTransform
+    kwargs:
+      prefix: "WXTS"
+
+  # 2) Append a timestamp to each record
+  - class: TimestampTransform
+    kwargs:
+      time_format: "%Y/%m/%d %H:%M:%S.%f"
+
+  # 3) Regex patterns to clean and annotate the data
+  - class: RegexReplaceTransform
+    kwargs:
+      patterns:
+        # Annotate fluorometer lines as FLR
+        "(\*\\+[0-9.]+)": "FLR \\1"
+        # Rename 'Port' Vaisala as SSW PR0
+        "WXTP PR0": "SSW PR0"
+        # Rename 'Starboard' Vaisala as SSW SR0
+        "WXTS SR0": "SSW SR0"
+        # Remove extra newlines
+        "(\n)+": ""
+        # Remove stray carriage returns
+        "(\r)+": ""
+
+################################################################################
+# Writers
+#
+# Direct each instrument’s data to appropriate log files and UDP streams
+################################################################################
+writers:
+  - class: ComposedWriter
+    kwargs:
+      writers:
+        #-------------------------------------------------
+        # 1) Port Vaisala
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            # If a line contains "PR0" => it’s the Port Vaisala
+            regex: "PR0"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/port_vaisala.log"
+            truncate: False
+
+        - class: UDPWriter
+          record_filter:
+            regex: "PR0"
+          kwargs:
+            port: 57304
+            destination: "10.100.128.22"
+
+        #-------------------------------------------------
+        # 2) Starboard Vaisala
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            # If a line contains "SR0" => it’s the Starboard Vaisala
+            regex: "SR0"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/starboard_vaisala.log"
+            truncate: False
+
+        - class: UDPWriter
+          record_filter:
+            regex: "SR0"
+          kwargs:
+            port: 57404
+            destination: "10.100.128.22"
+
+        #-------------------------------------------------
+        # 3) Fluorometer
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            # The fluorometer lines typically start with '*+'
+            regex: "(\*\\+[0-9.]+)"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/fluorometer.log"
+            truncate: False
+
+        - class: UDPWriter
+          record_filter:
+            regex: "(\*\\+[0-9.]+)"
+          kwargs:
+            port: 57504
+            destination: "10.100.128.22"
