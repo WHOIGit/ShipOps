@@ -9,16 +9,16 @@ import sys
 ################################
 
 OPENRVDAS_PATH='/opt/openrvdas'
-IN_PORT='/dev/ttyUSB2'
+IN_PORT='/dev/ttyUSB22'
 IN_BAUD=9600
-BUFFER_PORT=56302
+BUFFER_PORT=56322
 INTERVAL=8
 TIME_FORMAT='%Y/%m/%d %H:%M:%S.%f'
 LABEL1='SBE48'
 LABEL2='SSW'
 LOG_DIR='/home/admin_paul.mena/logs'
-OUT_PORT=57302
-OUT_HOST='10.100.128.22'
+OUT_PORT=57322
+OUT_HOST='10.100.100.30'
 
 ################################
 
