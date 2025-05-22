@@ -1,19 +1,20 @@
 #!/bin/bash
 
 # Serial input
+echo "starting CNAV"
 ./stream_cnav_serial.sh 2>/dev/null &
-./stream_seapath_serial.sh 2>/dev/null &
-./stream_posmv_serial.sh 2>/dev/null &
-./stream_dps112_serial.sh 2>/dev/null &
-./stream_sbe45_serial.sh 2>/dev/null &
-./stream_rad_serial.sh 2>/dev/null &
-./stream_par_serial.sh 2>/dev/null &
+sleep 2
+echo "starting GYRO1"
 ./stream_gyro1_serial.sh 2>/dev/null &
-./stream_ssv_serial.sh 2>/dev/null &
-./stream_vaisala_port_serial.sh 2>/dev/null &
+sleep 2
+echo "starting SBE48"
+python ./stream_sbe48_serial.py 2>/dev/null &
+sleep 2
+echo "starting SBE45"
+./stream_sbe45_serial.sh 2>/dev/null &
+sleep 2
+echo "starting the RS485 loop"
+./stream_485_serial_notransform.sh 2>/dev/null &
+sleep 2
+python ./atlantis_rs485_udp_processor.py 2>/dev/null &
 
-python3 ./stream_sbe48_serial.py &
-
-# UDP streams
-# ./stream_cnav_udp.sh 2>&1 &
-# ./stream_dps112_udp.sh 2>&1 &

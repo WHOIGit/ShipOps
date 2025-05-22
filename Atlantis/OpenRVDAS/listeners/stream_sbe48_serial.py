@@ -5,20 +5,21 @@ import serial
 import socket
 import subprocess
 import sys
+import datetime
 
 ################################
 
 OPENRVDAS_PATH='/opt/openrvdas'
-IN_PORT='/dev/ttyUSB22'
+IN_PORT='/dev/ttyUSB2'
 IN_BAUD=9600
-BUFFER_PORT=56322
+BUFFER_PORT=56302
 INTERVAL=8
 TIME_FORMAT='%Y/%m/%d %H:%M:%S.%f'
 LABEL1='SBE48'
 LABEL2='SSW'
-LOG_DIR='/home/admin_paul.mena/logs'
-OUT_PORT=57322
-OUT_HOST='10.100.100.30'
+LOG_DIR='/home/sssg/openrvdas_support/logs'
+OUT_PORT=57302
+OUT_HOST='10.100.161.10'
 
 ################################
 
@@ -56,6 +57,9 @@ def read_serial_data():
 
 def run_openrvdas_listener():
     # Run listener
+    now = datetime.datetime.now()
+    date_str = now.strftime('%Y%m%d')
+    hour_str = now.strftime('%H')
     venv_exec = os.path.join(OPENRVDAS_PATH, 'venv/bin/python')
     subprocess.Popen([
         venv_exec,
@@ -66,7 +70,7 @@ def run_openrvdas_listener():
         '--time_format', TIME_FORMAT,
         '--transform_timestamp',
         '--transform_prefix', LABEL2,
-        '--write_file', f'{LOG_DIR}/serial_SBE48.log',
+        '--write_file', f'{LOG_DIR}/at{date_str}_{hour_str}00.SBE48',
         '--write_udp', f'{OUT_HOST}:{OUT_PORT}'
     ], cwd=OPENRVDAS_PATH)
 
