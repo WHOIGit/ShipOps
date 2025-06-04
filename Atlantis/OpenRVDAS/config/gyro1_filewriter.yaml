@@ -1,0 +1,27 @@
+           readers:
+           - class: SerialReader
+             kwargs:
+                port: /dev/ttyUSB1
+                baudrate: 4800
+#               eol: \r
+           transforms:
+           - class: PrefixTransform
+             kwargs:
+               prefix: GYRO
+           - class: TimestampTransform
+             kwargs:
+               time_format: '%Y/%m/%d %H:%M:%S.%f'
+           - class: PrefixTransform
+             kwargs:
+               prefix: NAV
+           writers:
+           - class: UDPWriter
+             kwargs:
+               port: 57301
+               destination: 10.100.161.10
+           - class: FileWriter
+             kwargs:
+                filename: /home/sssg/openrvdas_support/logs/at
+                split_by_time: True
+                split_interval: 1H
+                time_format: '%Y%m%d_%H00.HDT'
