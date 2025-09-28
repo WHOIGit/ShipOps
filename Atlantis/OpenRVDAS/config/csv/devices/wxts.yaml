@@ -1,0 +1,56 @@
+devices:
+  wxts:
+    device_type: "WXTS"
+    description: "WXTS device"
+    fields:
+      WindDirectionAverage: "WXTSWindDirectionAverage"
+      WindSpeedMinimum: "WXTSWindSpeedMinimum"
+      WindSpeedAverage: "WXTSWindSpeedAverage"
+      WindSpeedMaximum: "WXTSWindSpeedMaximum"
+      Temperature: "WXTSTemperature"
+      RelativeHumidity: "WXTSRelativeHumidity"
+      AirPressure: "WXTSAirPressure"
+      RainAccumulation: "WXTSRainAccumulation"
+      RainIntensity: "WXTSRainIntensity"
+
+device_types:
+  WXTS:
+    description: "WXTS Heading"
+    # MET 2023/09/17 22:41:38.453 WXTS SR0,Dm=205D,Sn=0.1M,Sm=0.4M,Sx=1.5M,Ta=17.6C,Ua=71.9P,Pa=1016.4H,Rc=0.18M,Ri=3.4M
+
+    # FOR LIVE DATA
+    # format: "MET {TimestampDate} {TimestampTime} WXTS {VaisalaAddress},{WindDirectionAverage},{WindSpeedMinimum},{WindSpeedAverage},{WindSpeedMaximum},{Temperature},{RelativeHumidity},{AirPressure},{RainAccumulation},{RainIntensity}"
+
+    # FOR SIMUALATED DATA (doesn't have labels or timestamp)
+    format: "WXTS SR{VaisalaAddress},Dm={WindDirectionAverage}D,Sn={WindSpeedMinimum}M,Sm={WindSpeedAverage}M,Sx={WindSpeedMaximum}M,Ta={Temperature}C,Ua={RelativeHumidity}P,Pa={AirPressure}H,Rc={RainAccumulation}M,Ri={RainIntensity}M"
+
+    fields:
+      VaisalaAddress:
+        description: "Vaisala address (WXTS)"
+      WindDirectionAverage:
+        description: "Direction average"
+        units: degrees
+      WindSpeedMinimum:
+        description: "Minimum wind speed"
+        units: m/s
+      WindSpeedAverage:
+        description: "Average wind speed"
+        units: m/s
+      WindSpeedMaximum:
+        description: "Maximum wind speed"
+        units: m/s
+      Temperature:
+        description: "Temperature"
+        units: degrees C
+      RelativeHumidity:
+        description: "Relative humidity"
+        units: percent
+      AirPressure:
+        description: "Air pressure"
+        units: hPa
+      RainAccumulation:
+        description: "Rain accumulation"
+        units: mm
+      RainIntensity:
+        description: "Rain intensity"
+        units: mm/h

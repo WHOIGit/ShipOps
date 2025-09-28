@@ -1,0 +1,24 @@
+devices:
+  sbe45:
+    device_type: "SBE45"
+    description: "SBE45 device"
+    fields:
+      Temperature: "Temperature"
+      Conductivity: "Conductivity"
+      Salinity: "Salinity"
+      SoundVelocity: "SoundVelocity"
+
+device_types:
+  SBE45:
+    description: "SBE45 Heading"
+    # SSW 2025/06/13 17:30:33.761496 SBE45  11.9937,  0.75597,   5.6956, 1461.915
+    format: "SSW {TimestampDate} {TimestampTime} SBE45  {Temperature:f},  {Conductivity:f},  {Salinity:f}, {SoundVelocity:f}"
+    fields:
+      Temperature:
+        description: "Temperature in degrees Celsius"
+      Conductivity:
+        description: "Conductivity"
+      Salinity:
+        description: "Salinity"
+      SoundVelocity:
+        description: "Sound velocity in m/s"

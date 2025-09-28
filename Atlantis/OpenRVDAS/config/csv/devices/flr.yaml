@@ -1,0 +1,21 @@
+devices:
+  flr:
+    device_type: "FLR"
+    description: "FLR device"
+    fields:
+      Reading: "FLRReading"
+
+device_types:
+  FLR:
+    description: "FLR Heading"
+    # SSW 2025/07/18 17:01:13.260 FLR *+00436.10
+
+    # FOR LIVE DATA
+    # format: "SSW {TimestampDate} {TimestampTime} FLR {Reading}"
+
+    # FOR SIMUALATED DATA (doesn't have labels or timestamp)
+    format: "FLR {Reading}"
+
+    fields:
+      Reading:
+        description: "Fluorometer reading"

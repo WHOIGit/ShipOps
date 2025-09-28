@@ -1,0 +1,18 @@
+devices:
+  gyr1:
+    device_type: "GYR1"
+    description: "GYR1 device"
+    fields:
+      HeadingTrue: "HeadingTrue"
+      CheckSum: "CheckSum"
+
+device_types:
+  GYR1:
+    description: "$HEHDT Heading"
+    # NAV 2025/06/11 06:59:59.276963 GYRO $
+    format: "NAV {TimestampDate} {TimestampTime} GYRO $HEHDT,{HeadingTrue:f},T*{CheckSum:x}"
+    fields:
+      HeadingTrue:
+        description: "True heading in degrees"
+      CheckSum:
+        description: "Checksum for the GYR1 message"

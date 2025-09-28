@@ -1,0 +1,145 @@
+loggers:
+  cnav:
+    configs:
+    - cnav->off
+    - cnav->file/cached
+  output_cnav:
+    configs:
+    - output_cnav->off
+    - output_cnav->file
+
+modes:
+  'off':
+    cnav: cnav->off
+    output_cnav: output_cnav->off
+  'on':
+    cnav: cnav->file/cached
+    output_cnav: output_cnav->file
+
+default_mode: 'on'
+
+configs:
+  cnav->off: {}
+  output_cnav->off: {}
+
+  ###################################################################
+  ## CNAV GPS
+  ###################################################################
+  cnav->file/cached:
+    name: cnav->file/cached
+    readers:
+    - class: SerialReader
+      kwargs:
+        port: /dev/ttyUSB0
+        baudrate: 4800
+    writers:
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: cnav
+        - class: ParseTransform
+          kwargs:
+#            definition_path: /home/sssg/openrvdas_support/config/csv/devices/cnav.yaml,/opt/openrvdas/contrib/devices/Trimble.yaml
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/cnav.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: PrefixTransform
+          kwargs:
+            prefix: CNAV
+        - class: TimestampTransform
+          kwargs:
+            time_format: "%Y/%m/%d %H:%M:%S.%f"
+        - class: PrefixTransform
+          kwargs:
+            prefix: NAV
+        writers:
+        # On the server, this would be a FileWriter with split_by_time and split_interval arguments
+        # This is a TextFileWriter right now so that I can add the truncate argument, which is unnecessary on the server
+        # (needs to be updated)
+        - class: TextFileWriter
+          kwargs:
+            filename: /home/sssg/openrvdas_support/logs/test_cnav.log
+            truncate: True
+
+  ###################################################################
+  ## CNAV output
+  ###################################################################
+  output_cnav->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            CNAVGPSTime:
+              seconds: 0
+            CNAVLatitude:
+              seconds: 0
+            CNAVLongitude:
+              seconds: 0
+            CNAVSpeedKt:
+              seconds: 0
+            CNAVCourseTrue:
+              seconds: 0
+            CNAVGPSStatus:
+              seconds: 0
+            CNAVFixQuality:
+              seconds: 0
+            CNAVNumSats:
+              seconds: 0
+            CNAVHDOP:
+              seconds: 0
+            CNAVAntennaHeight:
+              seconds: 0
+            CNAVGeoidHeight:
+              seconds: 0
+            CNAVSpeedKm:
+              seconds: 0
+            CNAVCourseMag:
+              seconds: 0
+            CNAVGPSDay:
+              seconds: 0
+            CNAVGPSMonth:
+              seconds: 0
+            CNAVGPSYear:
+              seconds: 0
+            CNAVGPSDate:
+              seconds: 0
+            CNAVMode:
+              seconds: 0
+            CNAVMagneticVar:
+              seconds: 0
+            CNAVMagneticVarEorW:
+              seconds: 0
+            CNAVLastDGPSUpdate:
+              seconds: 0
+            CNAVDGPSStationID:
+              seconds: 0
+            CNAVLocalHours:
+              seconds: 0
+            CNAVLocalZone:
+              seconds: 0
+            CNAVCheckSum:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{CNAVGPSTime}, {CNAVLatitude}, {CNAVLongitude}, {CNAVSpeedKt}, {CNAVCourseTrue}, {CNAVGPSStatus}, {CNAVFixQuality}, {CNAVNumSats}, {CNAVHDOP}, {CNAVAntennaHeight}, {CNAVGeoidHeight}, {CNAVSpeedKm}, {CNAVCourseMag}, {CNAVGPSDay}, {CNAVGPSMonth}, {CNAVGPSYear}, {CNAVGPSDate}, {CNAVMode}, {CNAVMagneticVar}, {CNAVMagneticVarEorW}, {CNAVLastDGPSUpdate}, {CNAVDGPSStationID}, {CNAVLocalHours}, {CNAVLocalZone}, {CNAVCheckSum}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: TextFileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/test_cnav.csv
+        header: "DATE_GMT, TIME_GMT, GPS_TIME, LATITUDE, LONGITUDE, SPEED_KT, COURSE_TRUE, GPS_STATUS, FIX_QUALITY, NUM_SATS, HDOP, ANTENNA_HEIGHT, GEOID_HEIGHT, SPEED_KM, COURSE_MAG, GPS_DAY, GPS_MONTH, GPS_YEAR, GPS_DATE, MODE, MAGNETIC_VAR, MAGNETIC_VAR_EW, LAST_DGPS_UPDATE, DGPS_STATION_ID, LOCAL_HOURS, LOCAL_ZONE, CHECKSUM"
+        truncate: True

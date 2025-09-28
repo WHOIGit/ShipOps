@@ -1,0 +1,14 @@
+readers:
+- class: SerialReader
+  module: contrib.whoi.logger.readers.serial_reader
+  kwargs:
+    port: /dev/ttyUSB2
+    baudrate: 9600
+    prefix: SSW
+    time_format: '%Y/%m/%d %H:%M:%S.%f'
+    sensor: SBE48
+writers:
+- class: TextFileWriter
+  kwargs:
+    filename: /home/sssg/openrvdas_support/logs/test_custom_module.log
+    truncate: true

@@ -1,27 +1,24 @@
-           readers:
-           - class: SerialReader
-             kwargs:
-                port: /dev/ttyUSB2
-                baudrate: 9600
-#               eol: "\r"
-           transforms:
-           - class: PrefixTransform
-             kwargs:
-               prefix: SBE48
-           - class: TimestampTransform
-             kwargs:
-               time_format: '%Y/%m/%d %H:%M:%S.%f'
-           - class: PrefixTransform
-             kwargs:
-               prefix: SSW
-           writers:
-           - class: UDPWriter
-             kwargs:
-               port: 57302
-               destination: 10.100.161.10
-           - class: FileWriter
-             kwargs:
-                filename: /home/sssg/openrvdas_support/logs/at
-                split_by_time: True
-                split_interval: 1H
-                time_format: '%Y%m%d_%H00.SBE48'
+readers:
+- class: SerialReader
+  kwargs: {baudrate: 9600, port: /dev/ttyUSB2, allow_empty: True}
+transforms:
+- class: PrefixTransform
+  kwargs: {prefix: 'SBE48'}
+- class: TimestampTransform
+  kwargs: {time_format: '%Y-%m-%d %H:%M:%S.%f'}
+- class: PrefixTransform
+  kwargs: {prefix: 'SSW'}
+writers:
+- class: UDPWriter
+  kwargs:
+    port: 57302
+- class: UDPWriter
+  kwargs:
+    port: 57302
+    destination: 10.100.161.10
+- class: FileWriter
+  kwargs:
+    filename: /home/sssg/openrvdas_support/logs/at
+    split_by_time: True
+    split_interval: 1H
+    time_format: '%Y%m%d_%H00.SBE48'

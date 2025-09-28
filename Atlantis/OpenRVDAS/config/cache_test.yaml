@@ -1,0 +1,22 @@
+loggers:
+  cache_debug:
+    configs:
+    - cache_debug->stdout
+
+modes:
+  on:
+    cache_debug: cache_debug->stdout
+
+default_mode: on
+
+configs:
+  cache_debug->stdout:
+    readers:
+      class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            "*": -1  # all fields updated in the last 1 second
+    writers:
+      class: TerminalWriter

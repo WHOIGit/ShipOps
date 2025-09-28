@@ -7,14 +7,17 @@
            transforms:
            - class: PrefixTransform
              kwargs:
-               prefix: NAV
+               prefix: GPS
            - class: TimestampTransform
              kwargs:
                time_format: '%Y/%m/%d %H:%M:%S.%f'
            - class: PrefixTransform
              kwargs:
-               prefix: GPS
+               prefix: NAV
            writers:
+           - class: UDPWriter
+             kwargs:
+               port: 57300
            - class: UDPWriter
              kwargs:
                port: 57300
