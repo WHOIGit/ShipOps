@@ -17,8 +17,8 @@ def setup_output_socket():
     return socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 def get_timestamp():
-    """Generate current timestamp in the required format."""
-    return datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S')
+    """Generate current timestamp in the required format with fractional seconds."""
+    return datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S.%f')[:-3]
 
 def get_log_filename(data_type):
     """Generate log filename with current date and hour.
