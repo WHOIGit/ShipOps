@@ -21,5 +21,5 @@ sleep 2
 # echo "starting the RS485 loop"
 # ./stream_485_serial_notransform.sh 2>/dev/null &
 # sleep 2
-# python ./claude_atlantis_rs485_udp_processor.py 2>/dev/null &
+# python atlantis_iso8601_rs485_udp_processor.py 2>/dev/null &
 
