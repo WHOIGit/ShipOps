@@ -12,7 +12,7 @@ ConfigFile=${ConfigDir}/sbe48_filewriter.yaml
 # Use listener with config file - no other arguments
 # add '-v' to crank up the logging level
 
-logger/listener/listen.py --config_file ${ConfigFile} -v 
+/opt/openrvdas/logger/listener/listen.py --config_file ${ConfigFile} -v 
 
 # Deactivate virtual environment
 

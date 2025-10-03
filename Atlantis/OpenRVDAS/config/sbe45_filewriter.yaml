@@ -25,6 +25,6 @@ writers:
 - class: FileWriter
   kwargs:
     filename: /home/sssg/openrvdas_support/logs/at
-    split_by_time: True
+#   split_by_time: True
     split_interval: 1H
     time_format: '%Y%m%d_%H00.SBE45'
