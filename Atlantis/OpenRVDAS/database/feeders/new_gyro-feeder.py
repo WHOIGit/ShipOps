@@ -1,34 +1,34 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
+# efc 2023 store UDP message in sqlite database
 
 import socket
+import json
 import sqlite3
 import time
-import numbers
+import re
 
 while True: 
     # UDP message from datalog
-    port = 55666
+    port = 57301
     sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     sock.bind(("",port))
     
     # Receive and store udp msg
     data, addr = sock.recvfrom(1024)
     msg = data.decode()
-    array = msg.split()
+    string = re.split(r'=|,| ', msg)
+    #print (string)
     
-    if array[4] == 'T':
-        time.sleep(0.5)
+    if string[3] == "$HEHDT":
     
-    else:
-
         # Define variables 
-        id = "SonicFlow"  
+        id = "Heading"  
         timestamp = int(time.time())
-        value = array[4]
-        unit = " L/m"
+        value = int(float(string[4]))
+        unit = "°"
 
         # Connect to sqlite db
-        dbfile = "/var/www/html/database/armstrong.db"
+        dbfile = "atlantis.db"        
         conn = sqlite3.connect(dbfile)
         cursor = conn.cursor()
         table = cursor.execute("""SELECT name FROM sqlite_master WHERE type='table' AND name='array'; """).fetchall()
@@ -40,5 +40,3 @@ while True:
             cursor.execute("REPLACE INTO array (id, timestamp, value, unit) VALUES (?, ?, ?, ?)", (id, timestamp, value, unit))
             conn.commit()
             conn.close()
-else:
-    time.sleep(1)

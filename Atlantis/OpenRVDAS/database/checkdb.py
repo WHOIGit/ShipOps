@@ -1,28 +1,23 @@
-#!/usr/bin/env python3
-#
-# 2023 EFC
-#
-# Python script to query contents of the sqlite database and output the current results
-#
-# This script can be set as alias *checkdb* which can be called from anywhere on the server as user: sssg
+#!/usr/bin/python3
+#script to check contents of the sqlite database 
 
 import sqlite3
 import json
 import datetime
 import time
 
-dbfile = "/var/www/html/database/armstrong.db" # Absolute filepath to database
+dbfile = "/var/www/html/database/atlantis.db"
 
 # Connect to the database
 conn = sqlite3.connect(dbfile)
 cursor = conn.cursor()
 
-# Select all data from the table named "array"
+# Select all data from the table
 cursor.execute('SELECT * FROM array')
 result = cursor.fetchall()
 conn.close()
 
-# Iterate through each row in the database using for loop
+# Iterate variables of each row in the database using for loop
 for row in result:
     id = row[0]
     epoch = row[1]
@@ -43,5 +38,5 @@ for row in result:
     
     list = [timestamp, id, (value + unit), flag]
     
-    # Print out human readable database to command line interface
+    # Print out readable database to CLI
     print ("{: <25} {:<18} {:<25} {:<20}".format(*list))

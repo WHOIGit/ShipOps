@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+# efc 2023 store UDP message in sqlite database
 
 import socket
+import json
 import sqlite3
 import time
-import datetime
 
 while True:
     # UDP message from datalog
@@ -15,29 +16,29 @@ while True:
     data, addr = sock.recvfrom(1024)
     try:
         msg = data.decode()
-        array = msg.split(",")
+        string = msg.split(",")
+        #print (string)
 
         # Prevent index errors
-        if len(array) == 6:
+        if len(string) == 6:
 
             # Define variables 
             timestamp = int(time.time())
-            dateTime = datetime.datetime.now()
             
             id1 = "Tension"  
-            value1 = int(float(array[2]))
+            value1 = int(float(string[2]))
             unit1 = "lbs"
     
             id2 = "Payout"  
-            value2 = float(array[4])
+            value2 = float(string[4])
             unit2 = "m"
     
             id3 = "Speed"  
-            value3 = float(array[3])
+            value3 = float(string[3])
             unit3 = "m/min"
     
             # Connect to sqlite db
-            dbfile = "/var/www/html/database/armstrong.db"
+            dbfile = "atlantis.db"
             conn = sqlite3.connect(dbfile)
             cursor = conn.cursor()
             table = cursor.execute("""SELECT name FROM sqlite_master WHERE type='table' AND name='array'; """).fetchall()
@@ -51,13 +52,12 @@ while True:
         
                 cursor.execute("REPLACE INTO array (id, timestamp, value, unit) VALUES (?, ?, ?, ?)", (id2, timestamp, value2, unit2))
                   
-                cursor.execute("REPLACE INTO array (id, timestamp, value, unit) VALUES (?, ?, ?, ?)", (id3, timestamp, value3, unit3)) 
-                
+                cursor.execute("REPLACE INTO array (id, timestamp, value, unit) VALUES (?, ?, ?, ?)", (id3, timestamp, value3, unit3))
+        
                 conn.commit()
                 conn.close()
                 
-                time.sleep(1) 
+                time.sleep(0.5) 
         
     except UnicodeDecodeError: # Handle decode error when winches are switched
-        
-        time.sleep(1)
+        time.sleep(0.5)

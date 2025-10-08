@@ -9,7 +9,7 @@ import re
 
 while True: 
     # UDP message from datalog
-    port = 57304
+    port = 57404
     sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
     sock.bind(("",port))
     
@@ -23,15 +23,15 @@ while True:
     timestamp = int(time.time())
 
     id1 = "Humidity" 
-    value1 = string[16][:-1]
+    value1 = string[17][:-1]
     unit1 = "%"
     
     id2 = "Pressure" 
-    value2 = string[18][:-1]
+    value2 = string[19][:-1]
     unit2 = " hPa"
     
     id3 = "Temperature"     
-    value3 = string[14][:-1]
+    value3 = string[15][:-1]
     unit3 = "°C"
 
     # Connect to sqlite db

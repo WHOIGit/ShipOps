@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+# efc 2023 store UDP message in sqlite database
 
 import socket
+import json
 import sqlite3
 import time
 
@@ -13,9 +15,10 @@ while True:
     # Receive and store udp msg
     data, addr = sock.recvfrom(1024)
     msg = data.decode()
-    array = msg.split()
+    string = msg.split()
+    #print (string)
     
-    if array[5] == "NAN" or array[4] == "NAN" or array[7] == "NAN" or array[6] == "NAN" : 
+    if string[5] == "NAN" or string[4] == "NAN" or string[7] == "NAN" or string[6] == "NAN" : 
         time.sleep = 0.5 
         
     else :
@@ -25,17 +28,17 @@ while True:
         
         jsVariable1 = "windsp"
         id1 = "WindSpeed"  
-        ms = ( float(array[5]))
+        ms = ( float(string[5]) + float(string[7]) ) / 2
         value1 = int(ms * 1.944)
         unit1 = " kts"
  
         jsVariable2 = "winddir"
         id2 = "WindDirection"  
-        value2 = int( float(array[4]))
+        value2 = int(( float(string[4]) + float(string[6]) ) / 2 )
         unit2 = "°"
 
         # Connect to sqlite db
-        dbfile = "/var/www/html/database/armstrong.db"
+        dbfile = "atlantis.db"
         conn = sqlite3.connect(dbfile)
         cursor = conn.cursor()
         table = cursor.execute("""SELECT name FROM sqlite_master WHERE type='table' AND name='array'; """).fetchall()

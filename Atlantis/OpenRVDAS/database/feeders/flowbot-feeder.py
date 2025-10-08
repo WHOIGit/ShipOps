@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+# efc 2023 store UDP message in sqlite database
 
 import socket
+import json
 import sqlite3
 import time
 
@@ -13,17 +15,18 @@ while True:
     # Receive and store udp msg
     data, addr = sock.recvfrom(1024)
     msg = data.decode()
-    array = msg.split()
+    string = msg.split()
+    #print (string)
     
     # Define variables 
     id = "Flowbot"
     timestamp = int(time.time())
-    flow = float(array[7][:-1]) * 60 / 1000
+    flow = float(string[7][:-1]) * 60 / 1000
     value =  "%.2f" % flow
     unit = " L/m"
 	
     # Connect to sqlite db
-    dbfile = "/var/www/html/database/armstrong.db"
+    dbfile = "atlantis.db"    
     conn = sqlite3.connect(dbfile)
     cursor = conn.cursor()
     table = cursor.execute("""SELECT name FROM sqlite_master WHERE type='table' AND name='array'; """).fetchall()

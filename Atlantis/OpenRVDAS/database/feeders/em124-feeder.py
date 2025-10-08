@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+# efc 2023 translate UDP message to JSON string
 
 import socket
+import json
 import sqlite3
 import time
 import re
@@ -15,15 +17,18 @@ while True:
     data, addr = sock.recvfrom(1024)
     msg = data.decode()
     string = re.split(r'=|,| ', msg)
+    #print (string)
     
     # Define variables 
     id = "EM124"
     timestamp = int(time.time())
-    value = string[7]
+    waterdepth = float(string[5])
+    shipdepth = float(string[6])   
+    value = int(waterdepth + shipdepth)
     unit = " m"
             
     # Connect to sqlite db
-    dbfile = "/var/www/html/database/armstrong.db"
+    dbfile = "atlantis.db"    
     conn = sqlite3.connect(dbfile)
     cursor = conn.cursor()
     table = cursor.execute("""SELECT name FROM sqlite_master WHERE type='table' AND name='array'; """).fetchall()
