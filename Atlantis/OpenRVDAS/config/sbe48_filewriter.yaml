@@ -5,7 +5,12 @@ transforms:
 - class: PrefixTransform
   kwargs: {prefix: 'SBE48'}
 - class: TimestampTransform
-  kwargs: {time_format: '%Y-%m-%d %H:%M:%S.%f'}
+  kwargs:
+    time_format: '%Y-%m-%dT%H:%M:%S.%fZ'
+- class: RegexReplaceTransform
+  kwargs:
+    patterns:
+      '(\.\d{3})\d{3}Z': '\1Z'
 - class: PrefixTransform
   kwargs: {prefix: 'SSW'}
 writers:

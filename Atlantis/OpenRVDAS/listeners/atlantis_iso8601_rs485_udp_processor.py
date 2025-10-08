@@ -17,8 +17,9 @@ def setup_output_socket():
     return socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 def get_timestamp():
-    """Generate current timestamp in ISO 8601 format (UTC, no microseconds)."""
-    return datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    """Generate current timestamp in ISO 8601 format (UTC, with milliseconds)."""
+    now = datetime.datetime.utcnow()
+    return now.strftime('%Y-%m-%dT%H:%M:%S') + f'.{now.microsecond // 1000:03d}Z'
 
 def get_log_filename(data_type):
     """Generate log filename with current date and hour.
