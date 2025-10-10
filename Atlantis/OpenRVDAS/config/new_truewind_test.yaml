@@ -1,0 +1,161 @@
+loggers:
+  new_truewind:
+    configs:
+    - new_truewind->off
+    - new_truewind->on
+
+modes:
+  'off':
+    new_truewind: new_truewind->off
+  'on':
+    new_truewind: new_truewind->on
+
+default_mode: 'on'
+
+configs:
+  new_truewind->off: {}
+
+  new_truewind->on:
+
+    readers:
+
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            # CNAV GPS fields
+            CNAVLatitude:
+              seconds: -1
+            CNAVLongitude:
+              seconds: -1
+            CNAVCourseTrue:
+              seconds: -1
+            CNAVSpeedKt:
+              seconds: -1
+            # GYRO1 fields
+            HeadingTrue:
+              seconds: -1
+            # Vaisala fields
+            # WXTPWindDirectionAverage:
+            #   seconds: -1
+            # WXTPWindSpeedAverage:
+            #   seconds: -1
+            # WXTSWindDirectionAverage:
+            #   seconds: -1
+            # WXTSWindSpeedAverage:
+            #   seconds: -1
+
+    transforms: 
+
+    - class: InterpolationTransform
+      kwargs:
+        interval: 10
+        window: 10
+        metadata_interval: 10
+        field_spec:
+          LatestCNAVLatitude:
+            source: CNAVLatitude
+            algorithm: {type: nearest}
+          LatestCNAVLongitude:
+            source: CNAVLongitude
+            algorithm: {type: nearest}
+          LatestHeadingTrue:
+            source: HeadingTrue
+            algorithm: {type: nearest}
+          LatestCNAVCourseTrue:
+            source: CNAVCourseTrue
+            algorithm: {type: nearest}
+          LatestCNAVSpeedKt:
+            source: CNAVSpeedKt
+            algorithm: {type: nearest}
+          # LatestWXTPWindDirectionAverage:
+          #   source: WXTPWindDirectionAverage
+          #   algorithm: {type: nearest}
+          # LatestWXTPWindSpeedAverage:
+          #   source: WXTPWindSpeedAverage
+          #   algorithm: {type: nearest}
+          # LatestWXTSWindDirectionAverage:
+          #   source: WXTSWindDirectionAverage
+          #   algorithm: {type: nearest}
+          # LatestWXTSWindSpeedAverage:
+          #   source: WXTSWindSpeedAverage
+          #   algorithm: {type: nearest}
+
+    # - class: CarloniTrueWindTransform
+    #   module: contrib.whoi.logger.transforms.carloni_tw_transform.py
+    #   kwargs:
+    #     zlr_deg: 0.0
+    #     cog_field: LatestCNAVCourseTrue
+    #     sog_field: LatestCNAVSpeedKt
+    #     hdg_field: LatestHeadingTrue
+    #     wind_dir_field: LatestWXTPWindDirectionAverage
+    #     wind_spd_field: LatestWXTPWindSpeedAverage
+    #     output_prefix: TW_Port
+
+    # - class: TrueWindsTransform
+    #   kwargs:
+    #     wind_dir_field: LatestWXTPWindDirectionAverage
+    #     wind_speed_field: LatestWXTPWindSpeedAverage
+    #     heading_field: LatestHeadingTrue
+    #     speed_field: LatestCNAVSpeedKt
+    #     course_field: LatestCNAVCourseTrue
+    #     true_dir_name: port_true_wind_dir
+    #     true_speed_name: port_true_wind_speed
+    #     apparent_dir_name: PortApparentWindDir
+
+    # - class: TrueWindsTransform
+    #   kwargs:
+    #     wind_dir_field: LatestWXTSWindDirectionAverage
+    #     wind_speed_field: LatestWXTSWindSpeedAverage
+    #     heading_field: LatestHeadingTrue
+    #     speed_field: LatestCNAVSpeedKt
+    #     course_field: LatestCNAVCourseTrue
+    #     true_dir_name: starboard_true_wind_dir
+    #     true_speed_name: starboard_true_wind_speed
+    #     apparent_dir_name: StarboardApparentWindDir
+
+    - class: FormatTransform
+      kwargs:
+        # Dec_LAT, Dec_LON, SPD, HDT, COG, SOG, true_wind_speed, true_wind_dir
+        format_str: "{LatestCNAVLatitude}, {LatestCNAVLongitude}, {SPD}, {LatestHeadingTrue}, {LatestCNAVCourseTrue}, {LatestCNAVSpeedKt}, {LatestWXTPWindDirectionAverage}, {LatestWXTPWindSpeedAverage}, {LatestWXTSWindDirectionAverage}, {LatestWXTSWindSpeedAverage}, {PortApparentWindDir}, {StarboardApparentWindDir}, {port_true_wind_dir}, {port_true_wind_speed}, {starboard_true_wind_dir}, {starboard_true_wind_speed}"
+        defaults:
+          LatestCNAVLatitude: "NAN"
+          LatestCNAVLongitude: "NAN"
+          SPD: "0.000"
+          LatestHeadingTrue: "NAN"
+          LatestCNAVCourseTrue: "NAN"
+          LatestCNAVSpeedKt: "NAN"
+          LatestWXTPWindDirectionAverage: "NAN"
+          LatestWXTPWindSpeedAverage: "NAN"
+          LatestWXTSWindDirectionAverage: "NAN"
+          LatestWXTSWindSpeedAverage: "NAN"
+          port_true_wind_speed: "NAN"
+          port_true_wind_dir: "NAN"
+          starboard_true_wind_speed: "NAN"
+          starboard_true_wind_dir: "NAN"
+          PortApparentWindDir: "NAN"
+          StarboardApparentWindDir: "NAN"
+
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+          
+
+    writers:
+
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/TRUEWIND
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, Dec_LAT, Dec_LON, SPD, HDT, COG, SOG, PTWNDDIRAVG, PTWNDSPAVG, SBWNDDIRAVG, SBWNDSPAVG, port_true_wind_dir, port_true_wind_speed, starboard_true_wind_dir, starboard_true_wind_speed"
+        time_format: '%y%m%d_0000.csv'
+
+    # - class: UDPWriter
+    #   kwargs:
+    #     destination: 10.100.128.22
+    #     port: 56000
+
+
+

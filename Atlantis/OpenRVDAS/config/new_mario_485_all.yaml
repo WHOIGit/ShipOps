@@ -1,0 +1,86 @@
+################################################################################
+# Primary logger configuration
+################################################################################
+
+readers:
+  - class: PolledSerialReader
+    kwargs:
+      port: /dev/ttyUSB4
+      timeout: 1
+      eol: "\r\n"
+      pre_read_cmd:
+        pause:
+          - "__PAUSE__ 9"
+        pr0:
+          - "\r\nPR0\r\n"
+        sr0:
+          - "\r\nSR0\r\n"
+        3rd:
+          - "$3RD\r"
+      stop_cmd: "__PAUSE__ 10"
+
+transforms:
+  - class: SplitTransform
+    kwargs:
+      sep: "\r\n"
+      
+  - class: TimestampTransform
+    kwargs:
+      time_format: "%Y/%m/%d %H:%M:%S.%f"
+
+  - class: RegexReplaceTransform
+    kwargs:
+      patterns:
+        # Annotate fluorometer lines
+        '\*\+': 'FLR *+'
+
+        # Annotate PR0 lines
+        'PR0': 'SSW PR0'
+
+        # Annotate SR0 lines
+        'SR0': 'SSW SR0'
+
+writers:
+  - class: ComposedWriter
+    kwargs:
+      writers:
+        #-------------------------------------------------
+        # 1) Port Vaisala (PR0) lines
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            mode: include
+            regex: "SSW PR0,.*"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/port_vaisala.log"
+            truncate: False
+
+        #-------------------------------------------------
+        # 2) Starboard Vaisala (SR0) lines
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            mode: include
+            regex: "SSW SR0,.*"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/starboard_vaisala.log"
+            truncate: False
+
+        #-------------------------------------------------
+        # 3) Fluorometer (*+ lines)
+        #-------------------------------------------------
+        - class: TextFileWriter
+          record_filter:
+            mode: include
+            regex: "FLR \\*\\+.*"
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/fluorometer.log"
+            truncate: False
+
+        #-------------------------------------------------
+        # 4) Raw Data Debugging (captures everything)
+        #-------------------------------------------------
+        - class: TextFileWriter
+          kwargs:
+            filename: "/home/admin_paul.mena/logs/raw_output.log"
+            truncate: False

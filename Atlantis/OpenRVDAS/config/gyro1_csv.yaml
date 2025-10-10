@@ -1,0 +1,85 @@
+loggers:
+  gps:
+    configs:
+    - gps->off
+    - gps->file/cached
+  output_gps:
+    configs:
+    - output_gps->off
+    - output_gps->file
+
+modes:
+  'off':
+    gps: gps->off
+    output_gps: output_gps->off
+  'on':
+    gps: gps->file/cached
+    output_gps: output_gps->file
+
+default_mode: 'on'
+
+configs:
+  gps->off: {}
+  output_gps->off: {}
+
+  ###################################################################
+  ## GPS
+  ###################################################################
+  gps->file/cached:
+    name: gps->file/cached
+    readers:
+    readers:
+    - class: UDPReader
+      kwargs:
+        port: 57301
+    writers:
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: gyr1
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/gyro1.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+#        Test log
+    # - class: TextFileWriter
+    #   kwargs:
+    #     filename: /home/sssg/openrvdas_support/logs/test_gyro1.log
+    #     truncate: True
+
+  ###################################################################
+  ## GPS output
+  ###################################################################
+  output_gps->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            HeadingTrue:
+              seconds: 0
+            CheckSum:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{HeadingTrue}, {CheckSum}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_GYRO1_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, HEADING_TRUE, CHECKSUM"
+        time_format: '%y%m%d_0000.csv'

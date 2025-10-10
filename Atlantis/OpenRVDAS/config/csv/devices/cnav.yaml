@@ -1,0 +1,84 @@
+devices:
+  cnav:
+    device_type: "CNAV"
+    description: "CNAV GPS device - GPRMC only (Working Configuration)"
+    fields:
+      # GPRMC fields only
+      GPSTime: "CNAVGPSTime"
+      GPSStatus: "CNAVGPSStatus"
+      Latitude: "CNAVLatitude"
+      NorS: "CNAVNorS"
+      Longitude: "CNAVLongitude"
+      EorW: "CNAVEorW"
+      SpeedKt: "CNAVSpeedKt"
+      CourseTrue: "CNAVCourseTrue"
+      GPSDate: "CNAVGPSDate"
+      MagneticVar: "CNAVMagneticVar"
+      MagneticVarEorW: "CNAVMagneticVarEorW"
+      Mode: "CNAVMode"
+      CheckSum: "CNAVCheckSum"
+      NumSats: "CNAVNumSats"
+
+device_types:
+  CNAV:
+    description: "CNAV GPS device"
+    format:
+      GPRMC: "NAV {TimestampDate} {TimestampTime} GPS $GPRMC,{GPSTime:f},{GPSStatus:w},{Latitude:nlat},{NorS:w},{Longitude:nlat},{EorW:w},{SpeedKt:f},{CourseTrue:f},{GPSDate:w},{MagneticVar:of},{MagneticVarEorW:ow},{Mode:w}*{CheckSum:x}"
+      GPVTG: "NAV {TimestampDate} {TimestampTime} GPS $GPVTG,{CourseTrue:f},T,{CourseMag:of},M,{SpeedKt:f},N,{SpeedKm:f},K,{Mode:w}*{CheckSum:x}"
+      GPGGA: "NAV {TimestampDate} {TimestampTime} GPS $GPGGA,{GPSTime:f},{Latitude:nlat},{NorS:w},{Longitude:nlat},{EorW:w},{FixQuality:d},{NumSats:d},{HDOP:f},{AntennaHeight:f},M,{GeoidHeight:f},M,{LastDGPSUpdate:f},{DGPSStationID:d}*{CheckSum:x}"
+      GPZDA: "NAV {TimestampDate} {TimestampTime} GPS $GPZDA,{GPSTime:f},{GPSDay:d},{GPSMonth:d},{GPSYear:d},{LocalHours:d},{LocalZone:d}*{CheckSum:x}"
+
+    fields:
+      # Time and Date fields
+      GPSTime:
+        description: "GPS time in HHMMSS.SS format"
+        # units: "HHMMSS.SS"
+      GPSDate:
+        description: "GPS date in DDMMYY format"
+        # units: "DDMMYY"
+
+      # Position fields
+      Latitude:
+        description: "Latitude in decimal degrees"
+        # units: "degrees"
+      NorS:
+        description: "North/South hemisphere indicator"
+        # units: "N/S"
+      Longitude:
+        description: "Longitude in decimal degrees"
+        # units: "degrees"
+      EorW:
+        description: "East/West hemisphere indicator"
+        # units: "E/W"
+
+      # Speed and Course fields
+      SpeedKt:
+        description: "Speed over ground in knots"
+        # units: "knots"
+      CourseTrue:
+        description: "Course over ground (true)"
+        # units: "degrees"
+      MagneticVar:
+        description: "Magnetic variation"
+        # units: "degrees"
+      MagneticVarEorW:
+        description: "Magnetic variation East/West"
+        # units: "E/W"
+
+      # GPS Quality fields
+      GPSStatus:
+        description: "GPS status (A=Active/Valid, V=Void/Invalid)"
+        # units: "A/V"
+      Mode:
+        description: "Mode indicator (A=Autonomous, D=Differential, E=Estimated, etc.)"
+        # units: "mode"
+
+      # Checksum
+      CheckSum:
+        description: "NMEA checksum"
+        # units: "hex"
+      
+      # GPGGA fields
+      NumSats:
+        description: "Number of satellites being tracked"
+        # units: "count"

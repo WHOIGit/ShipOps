@@ -1,0 +1,14 @@
+# flr:
+#   class: Serial
+#   port: /tmp/tty_flr
+#  filebase: /home/pmena_admin/my_git/underway_rvdas/test_data/status_screen/ar20240528_2000.FLR
+
+# xts:
+#   class: Serial
+#   port: /tmp/tty_xts
+#   filebase: /home/pmena_admin/my_git/underway_rvdas/test_data/status_screen/ar20240528_2000.XTS
+
+rs485:
+  class: Serial
+  port: /tmp/tty_rs485
+  filebase: /home/pmena_admin/my_git/underway_rvdas/test_data/at50-32/serial_485_stripped.log

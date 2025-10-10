@@ -1,0 +1,17 @@
+#wxts:
+#  class: UDP
+#  port: 57504
+#  filebase: /home/priv_benjamin.foley/at20250718_1700.XTS
+#  use_timestamps: true
+
+wxtp:
+  class: UDP
+  port: 57504
+  filebase: /home/priv_benjamin.foley/at20250718_1700.XTP
+  use_timestamps: true
+
+#flr:
+#  class: UDP
+#  port: 57504
+#  filebase: /home/priv_benjamin.foley/at20250718_1700.FLR
+#  use_timestamps: true

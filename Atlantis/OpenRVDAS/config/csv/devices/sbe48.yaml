@@ -1,0 +1,31 @@
+devices:
+  sbe48:
+    device_type: "SBE48"
+    description: "SBE48 device"
+    fields:
+      Temperature: "SBE48Temperature"
+      DeviceDay: "SBE48DeviceDay"
+      DeviceMonth: "SBE48DeviceMonth"
+      DeviceYear: "SBE48DeviceYear"
+      DeviceTime: "SBE48DeviceTime"
+
+device_types:
+  SBE48:
+    description: "SBE48 Temperature Logger"
+    format: 
+      # SSW 2025-06-11 06:00:05 SBE48 #  6.3325, 11 Jun 2025, 06:04:28
+      # SSW 2025/07/14 20:02:28.973057 SBE48 # 10.8309, 14 Jul 2025, 20:07:23
+      - "SSW {TimestampDate} {TimestampTime} SBE48 # {Temperature}, {DeviceDay} {DeviceMonth} {DeviceYear}, {DeviceTime}"
+      - "SSW {TimestampDate} {TimestampTime} SBE48 #  {Temperature}, {DeviceDay} {DeviceMonth} {DeviceYear}, {DeviceTime}"
+      - "SSW {TimestampDate} {TimestampTime} SBE48"
+    fields:
+      Temperature:
+        description: "Temperature in degrees Celsius"
+      DeviceDay:
+        description: "Device day"
+      DeviceMonth:
+        description: "Device month"
+      DeviceYear:
+        description: "Device year"
+      DeviceTime:
+        description: "Device time"
