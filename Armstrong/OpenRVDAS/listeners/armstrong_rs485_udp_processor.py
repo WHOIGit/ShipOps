@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 # Define the base log directory
-LOG_DIR = Path('/home/admin_paul.mena/logs')
+LOG_DIR = Path('/home/sssg/openrvdas_support/logs')
 
 def setup_udp_socket(port):
     """Create and bind a UDP socket to receive data."""
@@ -18,7 +18,7 @@ def setup_output_socket():
 
 def get_timestamp():
     """Generate current timestamp in the required format."""
-    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    return datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S')
 
 def get_log_filename(data_type):
     """Generate log filename with current date and hour.
@@ -29,7 +29,7 @@ def get_log_filename(data_type):
     now = datetime.datetime.now()
     date_str = now.strftime('%Y%m%d')
     hour_str = now.strftime('%H')
-    return f"ar{date_str}_{hour_str}00.{data_type}"
+    return f"at{date_str}_{hour_str}00.{data_type}"
 
 def ensure_log_directory():
     """Create log directory if it doesn't exist."""
@@ -52,19 +52,19 @@ def process_line(line, sock):
         output = f"MET {timestamp} WXTP {line}"
         with open(get_log_path('XTP'), 'a') as f:
             f.write(output + '\n')
-        sock.sendto(output.encode(), ('localhost', 57304))
+        sock.sendto(output.encode(), ('10.100.161.10', 57304))
         
     elif line.startswith('SR0'):
         output = f"MET {timestamp} WXTS {line}"
         with open(get_log_path('XTS'), 'a') as f:
             f.write(output + '\n')
-        sock.sendto(output.encode(), ('localhost', 57404))
+        sock.sendto(output.encode(), ('10.100.161.10', 57404))
         
     elif line.startswith('*+'):
         output = f"SSW {timestamp} FLR {line}"
         with open(get_log_path('FLR'), 'a') as f:
             f.write(output + '\n')
-        sock.sendto(output.encode(), ('localhost', 57504))
+        sock.sendto(output.encode(), ('10.100.161.10', 57504))
 
 def main():
     # Ensure log directory exists

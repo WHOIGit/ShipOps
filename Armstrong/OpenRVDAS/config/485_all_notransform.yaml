@@ -4,16 +4,16 @@
                 port: /dev/ttyUSB4
                 timeout: 1
                 eol: \r
-                pre_read_cmd: 
+                pre_read_cmd:
                    pause:  # not prompts, so expect this to timeout
                      - __PAUSE__ 9
                    pr0:
                      - \r\nPR0\r\n
-                   sr0: 
+                   sr0:
                      - \r\nSR0\r\n
-                   3rd: 
+                   3rd:
                      - $3RD\r
-                stop_cmd: 
+                stop_cmd:
                   - __PAUSE__ 10
            writers:
            - class: UDPWriter
@@ -22,5 +22,5 @@
                destination: 127.0.0.1
            - class: TextFileWriter
              kwargs:
-                filename: /home/admin_paul.mena/logs/serial_485_all_notransform.log
+                filename: /home/sssg/openrvdas_support/logs/serial_485_all_notransform.log
                 truncate: True
