@@ -11,7 +11,7 @@ import datetime
 import time
 import json
 
-dbfile = "/var/www/html/database/armstrong.db" # absolute path to target sqlite database
+dbfile = "/var/www/html/database/atlantis.db" # absolute path to target sqlite database
 
 while True: 
 
