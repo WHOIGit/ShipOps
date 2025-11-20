@@ -2,9 +2,10 @@
 #
 #Start python feeders for Atlantis True Wind testing
 
-python ./new_cnav-feeder.py & #lat, long, sog, cog from CNAV
-#/winch-feeder.py & #payout, tension, speed for all three wires
-python ./new_gyro-feeder.py & #heading
+python ./test_cnav-feeder-rmc.py 2>/dev/null &
+python ./new_gyro-feeder.py 2>/dev/null & 
+python ./test_sbe45-feeder.py 2>/dev/null &
+python ./test_sbe48-feeder.py 2>/dev/null &
 
 #./wxtp-feeder.py & #port vaisala: humidity, temperature, pressure
 #./wxts-feeder.py & #need to make feeder for stbd vaisala
