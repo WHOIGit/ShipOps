@@ -49,23 +49,30 @@ def process_line(line, sock):
 
     timestamp = get_timestamp()
     
-    if line.startswith('PR0'):
+    if 'PR0' in line:
         output = f"MET {timestamp} WXTP {line}"
         with open(get_log_path('XTP'), 'a') as f:
             f.write(output + '\n')
+        sock.sendto(output.encode(), ('127.0.0.1', 57304))
         sock.sendto(output.encode(), ('10.100.161.10', 57304))
         
-    elif line.startswith('SR0'):
+        
+    elif 'SR0' in line:
         output = f"MET {timestamp} WXTS {line}"
         with open(get_log_path('XTS'), 'a') as f:
             f.write(output + '\n')
+        sock.sendto(output.encode(), ('127.0.0.1', 57404))
         sock.sendto(output.encode(), ('10.100.161.10', 57404))
         
-    elif line.startswith('*+'):
+
+        
+    elif '*+' in line:
         output = f"SSW {timestamp} FLR {line}"
         with open(get_log_path('FLR'), 'a') as f:
             f.write(output + '\n')
+        sock.sendto(output.encode(), ('127.0.0.1', 57504))
         sock.sendto(output.encode(), ('10.100.161.10', 57504))
+        
 
 def main():
     # Ensure log directory exists

@@ -1,0 +1,88 @@
+loggers:
+  cnav:
+    configs:
+    - cnav->off
+    - cnav->file/cached
+  output_cnav:
+    configs:
+    - output_cnav->off
+    - output_cnav->file
+
+modes:
+  'off':
+    cnav: cnav->off
+    output_cnav: output_cnav->off
+  'on':
+    cnav: cnav->file/cached
+    output_cnav: output_cnav->file
+
+default_mode: 'on'
+
+configs:
+  cnav->off: {}
+  output_cnav->off: {}
+
+  ###################################################################
+  ## CNAV GPS
+  ###################################################################
+  cnav->file/cached:
+    name: cnav->file/cached
+    readers:
+    - class: UDPReader
+      kwargs:
+        port: 57300
+    writers:
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: cnav
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/cnav.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+#        Test log
+    # - class: TextFileWriter
+    #   kwargs:
+    #     filename: /home/sssg/openrvdas_support/logs/test_cnav.log
+    #     truncate: True
+
+  ###################################################################
+  ## CNAV output
+  ###################################################################
+  output_cnav->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            CNAVLatitude:
+              seconds: 0
+            CNAVLongitude:
+              seconds: 0
+            CNAVCourseTrue:
+              seconds: 0
+            CNAVSpeedKt:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{CNAVLatitude}, {CNAVLongitude}, {CNAVCourseTrue}, {CNAVSpeedKt}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_CNAV_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, Dec_LAT, Dec_LON, COG, SOG"
+        time_format: '%y%m%d_0000.csv'

@@ -1,0 +1,92 @@
+loggers:
+  sbe48:
+    configs:
+    - sbe48->off
+    - sbe48->file/cached
+  output_sbe48:
+    configs:
+    - output_sbe48->off
+    - output_sbe48->file
+
+modes:
+  'off':
+    sbe48: sbe48->off
+    output_sbe48: output_sbe48->off
+  'on':
+    sbe48: sbe48->file/cached
+    output_sbe48: output_sbe48->file
+
+default_mode: 'on'
+
+configs:
+  sbe48->off: {}
+  output_sbe48->off: {}
+
+  ###################################################################
+  ## SBE48
+  ###################################################################
+  sbe48->file/cached:
+    name: sbe48->file/cached
+    readers:
+    # - class: TextFileReader
+    #   kwargs:
+    #     file_spec: /home/sssg/openrvdas_support/logs/at20250611_0600.SBE48
+    #     interval: 1
+    - class: UDPReader
+      kwargs:
+        port: 57302
+    writers:
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: sbe48
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/sbe48.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+  #  Test logs
+    # - class: TextFileWriter
+    #   kwargs:
+    #     filename: /home/sssg/openrvdas_support/logs/test_sbe48.log
+    #     truncate: True
+    # - class: FileWriter
+    #   kwargs:
+    #     filename: /home/sssg/openrvdas_support/logs/at
+    #     split_by_time: True
+    #     split_interval: 1H
+    #     time_format: '%Y%m%d_%H00.SBE48'
+
+  ###################################################################
+  ## SBE48 output
+  ###################################################################
+  output_sbe48->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            SBE48Temperature:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{SBE48Temperature}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_SBE48_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, TEMPERATURE"
+        time_format: '%y%m%d_0000.csv'

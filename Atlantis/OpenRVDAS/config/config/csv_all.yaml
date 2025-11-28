@@ -1,0 +1,200 @@
+loggers:
+  csv_all:
+    configs:
+    - csv_all->off
+    - csv_all->file
+
+modes:
+  'off':
+    csv_all: csv_all->off
+  'on':
+    csv_all: csv_all->file
+
+default_mode: 'on'
+
+configs:
+  csv_all->off: {}
+
+  ###################################################################
+  ## Output from CNAV, GYRO1, SBE45, and SBE48
+  ###################################################################
+  csv_all->file:
+    name: csv_all->file
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            # CNAV GPS fields
+            CNAVLatitude:
+              seconds: -1
+            CNAVLongitude:
+              seconds: -1
+            CNAVCourseTrue:
+              seconds: -1
+            CNAVSpeedKt:
+              seconds: -1
+            # GYRO1 fields
+            HeadingTrue:
+              seconds: -1
+            # SBE45 fields
+            Salinity:
+              seconds: -1
+            SoundVelocity:
+              seconds: -1
+            # SBE48 fields
+            SBE48Temperature:
+              seconds: -1
+            # WXTP fields
+            WXTPTemperature:
+              seconds: -1
+            WXTPAirPressure:
+              seconds: -1
+            WXTPRainIntensity:
+              seconds: -1
+            WXTPRainAccumulation:
+              seconds: -1
+            WXTPWindDirectionAverage:
+              seconds: -1
+            WXTPWindSpeedAverage:
+              seconds: -1
+            WXTPRelativeHumidity:
+              seconds: -1
+            # WXTS fields
+            WXTSTemperature:
+              seconds: -1
+            WXTSAirPressure:
+              seconds: -1
+            WXTSRainIntensity:
+              seconds: -1
+            WXTSRainAccumulation:
+              seconds: -1
+            WXTSWindDirectionAverage:
+              seconds: -1
+            WXTSWindSpeedAverage:
+              seconds: -1
+            WXTSRelativeHumidity:
+              seconds: -1
+            # FLR fields
+            FLRReading:
+              seconds: -1
+    transforms:
+    - class: InterpolationTransform
+      kwargs:
+        interval: 60
+        window: 60
+        metadata_interval: 60
+        field_spec:
+          LatestCNAVLatitude:
+            source: CNAVLatitude
+            algorithm: {type: nearest}
+          LatestCNAVLongitude:
+            source: CNAVLongitude
+            algorithm: {type: nearest}
+          LatestHeadingTrue:
+            source: HeadingTrue
+            algorithm: {type: nearest}
+          LatestCNAVCourseTrue:
+            source: CNAVCourseTrue
+            algorithm: {type: nearest}
+          LatestCNAVSpeedKt:
+            source: CNAVSpeedKt
+            algorithm: {type: nearest}
+          LatestSalinity:
+            source: Salinity
+            algorithm: {type: nearest}
+          LatestSBE48Temperature:
+            source: SBE48Temperature
+            algorithm: {type: nearest}
+          LatestSoundVelocity:
+            source: SoundVelocity
+            algorithm: {type: nearest}
+          # WXTP fields
+          LatestWXTPTemperature:
+            source: WXTPTemperature
+            algorithm: {type: nearest}
+          LatestWXTPAirPressure:
+            source: WXTPAirPressure
+            algorithm: {type: nearest}
+          LatestWXTPRainIntensity:
+            source: WXTPRainIntensity
+            algorithm: {type: nearest}
+          LatestWXTPRainAccumulation:
+            source: WXTPRainAccumulation
+            algorithm: {type: nearest}
+          LatestWXTPWindDirectionAverage:
+            source: WXTPWindDirectionAverage
+            algorithm: {type: nearest}
+          LatestWXTPWindSpeedAverage:
+            source: WXTPWindSpeedAverage
+            algorithm: {type: nearest}
+          LatestWXTPRelativeHumidity:
+            source: WXTPRelativeHumidity
+            algorithm: {type: nearest}
+          # WXTS fields
+          LatestWXTSTemperature:
+            source: WXTSTemperature
+            algorithm: {type: nearest}
+          LatestWXTSAirPressure:
+            source: WXTSAirPressure
+            algorithm: {type: nearest}
+          LatestWXTSRainIntensity:
+            source: WXTSRainIntensity
+            algorithm: {type: nearest}
+          LatestWXTSRainAccumulation:
+            source: WXTSRainAccumulation
+            algorithm: {type: nearest}
+          LatestWXTSWindDirectionAverage:
+            source: WXTSWindDirectionAverage
+            algorithm: {type: nearest}
+          LatestWXTSWindSpeedAverage:
+            source: WXTSWindSpeedAverage
+            algorithm: {type: nearest}
+          LatestWXTSRelativeHumidity:
+            source: WXTSRelativeHumidity
+            algorithm: {type: nearest}
+          # FLR fields
+          LatestFLRReading:
+            source: FLRReading
+            algorithm: {type: nearest}
+    - class: FormatTransform
+      kwargs:
+        # Format: Dec_LAT, Dec_LON, SPD, HDT, COG, SOG, WXTP_Ta, WXTS_Ta, WXTP_Pa, WXTS_Pa, WXTP_Ri, WXTS_Ri, WXTP_Rc, WXTS_Rc, WXTP_Dm, WXTS_Dm, WXTP_Sm, WXTS_Sm, WXTP_Ua, WXTS_Ua SBE45S, SBE48T, FLR, SSVdslog
+        format_str: "{LatestCNAVLatitude}, {LatestCNAVLongitude}, {SPD}, {LatestHeadingTrue}, {LatestCNAVCourseTrue}, {LatestCNAVSpeedKt}, {LatestWXTPTemperature}, {LatestWXTSTemperature}, {LatestWXTPAirPressure}, {LatestWXTSAirPressure}, {LatestWXTPRainIntensity}, {LatestWXTSRainIntensity}, {LatestWXTPRainAccumulation}, {LatestWXTSRainAccumulation}, {LatestWXTPWindDirectionAverage}, {LatestWXTSWindDirectionAverage}, {LatestWXTPWindSpeedAverage}, {LatestWXTSWindSpeedAverage}, {LatestWXTPRelativeHumidity}, {LatestWXTSRelativeHumidity}, {LatestSalinity}, {LatestSBE48Temperature}, {LatestFLRReading}, {LatestSoundVelocity}"
+        defaults:
+          LatestCNAVLatitude: "NAN"
+          LatestCNAVLongitude: "NAN"
+          SPD: "0.000"
+          LatestHeadingTrue: "NAN"
+          LatestCNAVCourseTrue: "NAN"
+          LatestCNAVSpeedKt: "NAN"
+          LatestWXTPTemperature: "NAN"
+          LatestWXTSTemperature: "NAN"
+          LatestWXTPAirPressure: "NAN"
+          LatestWXTSAirPressure: "NAN"
+          LatestWXTPRainIntensity: "NAN"
+          LatestWXTSRainIntensity: "NAN"
+          LatestWXTPRainAccumulation: "NAN"
+          LatestWXTSRainAccumulation: "NAN"
+          LatestWXTPWindDirectionAverage: "NAN"
+          LatestWXTSWindDirectionAverage: "NAN"
+          LatestWXTPWindSpeedAverage: "NAN"
+          LatestWXTSWindSpeedAverage: "NAN"
+          LatestWXTPRelativeHumidity: "NAN"
+          LatestWXTSRelativeHumidity: "NAN"
+          LatestFLRReading: "NAN"
+          LatestSalinity: "NAN"
+          LatestSBE48Temperature: "NAN"
+          LatestSoundVelocity: "NAN"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, Dec_LAT, Dec_LON, SPD, HDT, COG, SOG, WXTP_Ta, WXTS_Ta, WXTP_Pa, WXTS_Pa, WXTP_Ri, WXTS_Ri, WXTP_Rc, WXTS_Rc, WXTP_Dm, WXTS_Dm, WXTP_Sm, WXTS_Sm, WXTP_Ua, WXTS_Ua, SBE45S, SBE48T, FLR, SSVdslog"
+        time_format: '%y%m%d_0000.csv'

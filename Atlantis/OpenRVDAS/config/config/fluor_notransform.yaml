@@ -1,0 +1,21 @@
+           readers:
+           - class: PolledSerialReader
+             kwargs:
+                port: /dev/ttyUSB4
+                eol: \r
+#               start_cmd:
+#                 - __PAUSE__ 10
+                pre_read_cmd: 
+                  - $3RD\r
+                  - __PAUSE__ 10
+#               stop_cmd:
+#                 - __PAUSE__ 10
+           writers:
+           - class: UDPWriter
+             kwargs:
+               port: 57304
+               destination: 10.100.100.30
+           - class: TextFileWriter
+             kwargs:
+                filename: /home/admin_paul.mena/logs/serial_fluor_only.log
+                truncate: True

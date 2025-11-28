@@ -1,0 +1,88 @@
+loggers:
+  sbe45:
+    configs:
+    - sbe45->off
+    - sbe45->file/cached
+  output_sbe45:
+    configs:
+    - output_sbe45->off
+    - output_sbe45->file
+
+modes:
+  'off':
+    sbe45: sbe45->off
+    output_sbe45: output_sbe45->off
+  'on':
+    sbe45: sbe45->file/cached
+    output_sbe45: output_sbe45->file
+
+default_mode: 'on'
+
+configs:
+  sbe45->off: {}
+  output_sbe45->off: {}
+
+  ###################################################################
+  ## SBE45
+  ###################################################################
+  sbe45->file/cached:
+    name: sbe45->file/cached
+    readers:
+    - class: UDPReader
+      kwargs:
+        port: 57303
+    writers:
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: sbe45
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/sbe45.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+# #   Test log
+#     - class: TextFileWriter
+#       kwargs:
+#         filename: /home/sssg/openrvdas_support/logs/test_sbe45.log
+#         truncate: True
+
+  ###################################################################
+  ## SBE45 output
+  ###################################################################
+  output_sbe45->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            Temperature:
+              seconds: 0
+            Conductivity:
+              seconds: 0
+            Salinity:
+              seconds: 0
+            SoundVelocity:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{Temperature}, {Conductivity}, {Salinity}, {SoundVelocity}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_SBE45_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, TEMPERATURE, CONDUCTIVITY, SALINITY, SOUND_VELOCITY"
+        time_format: '%y%m%d_0000.csv'
