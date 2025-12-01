@@ -1,0 +1,220 @@
+loggers:
+  rs485:
+    configs:
+    - rs485->off
+    - rs485->cached
+  output_flr:
+    configs:
+    - output_flr->off
+    - output_flr->file
+  output_wxtp:
+    configs:
+    - output_wxtp->off
+    - output_wxtp->file
+  output_wxts:
+    configs:
+    - output_wxts->off
+    - output_wxts->file
+
+modes:
+  'off':
+    rs485: rs485->off
+    output_flr: output_flr->off
+    output_wxtp: output_wxtp->off
+    output_wxts: output_wxts->off
+  'on':
+    rs485: rs485->cached
+    output_flr: output_flr->file
+    output_wxtp: output_wxtp->file
+    output_wxts: output_wxts->file
+
+default_mode: 'on'
+
+configs:
+  rs485->off: {}
+  output_flr->off: {}
+  output_wxtp->off: {}
+  output_wxts->off: {}
+
+  ###################################################################
+  ## RS485
+  ###################################################################
+  rs485->cached:
+    readers:
+    - class: UDPReader
+      kwargs:
+        port: 57504
+    writers:
+
+    ############# Fluorometer #############
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: RegexFilterTransform
+          kwargs:
+            pattern: "^FLR"
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: flr
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/flr.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+    ############# Vaisala Port #############
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: RegexFilterTransform
+          kwargs:
+            pattern: "^WXTP"
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: wxtp
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/wxtp.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+    ############# Vaisala Starboard #############
+    - class: ComposedWriter
+      kwargs:
+        transforms:
+        - class: RegexFilterTransform
+          kwargs:
+            pattern: "^WXTS"
+        - class: TimestampTransform
+        - class: PrefixTransform
+          kwargs:
+            prefix: wxts
+        - class: ParseTransform
+          kwargs:
+            definition_path: /home/sssg/openrvdas_support/config/csv/devices/wxts.yaml
+        writers:
+        - class: CachedDataWriter
+          kwargs:
+            data_server: localhost:8766
+
+  ###################################################################
+  ## Fluorometer Output
+  ###################################################################
+  output_flr->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            FLRReading:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{FLRReading}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_FLR_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, READING"
+        time_format: '%y%m%d_0000.csv'
+
+  ###################################################################
+  ## Vaisala Port Output
+  ###################################################################
+  output_wxtp->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            WXTPWindDirectionAverage:
+              seconds: 0
+            WXTPWindSpeedMinimum:
+              seconds: 0
+            WXTPWindSpeedAverage:
+              seconds: 0
+            WXTPWindSpeedMaximum:
+              seconds: 0
+            WXTPTemperature:
+              seconds: 0
+            WXTPRelativeHumidity:
+              seconds: 0
+            WXTPAirPressure:
+              seconds: 0
+            WXTPRainAccumulation:
+              seconds: 0
+            WXTPRainIntensity:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{WXTPWindDirectionAverage}, {WXTPWindSpeedMinimum}, {WXTPWindSpeedAverage}, {WXTPWindSpeedMaximum}, {WXTPTemperature}, {WXTPRelativeHumidity}, {WXTPAirPressure}, {WXTPRainAccumulation}, {WXTPRainIntensity}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_WXTP_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, WXTP_Dm, WXTP_Sn, WXTP_Sm, WXTP_Sx, WXTP_Ta, WXTP_Ua, WXTP_Pa, WXTP_Rc, WXTP_Ri"
+        time_format: '%y%m%d_0000.csv'
+        
+  ###################################################################
+  ## Vaisala Starboard Output
+  ###################################################################
+  output_wxts->file:
+    readers:
+    - class: CachedDataReader
+      kwargs:
+        data_server: localhost:8766
+        subscription:
+          fields:
+            WXTSWindDirectionAverage:
+              seconds: 0
+            WXTSWindSpeedMinimum:
+              seconds: 0
+            WXTSWindSpeedAverage:
+              seconds: 0
+            WXTSWindSpeedMaximum:
+              seconds: 0
+            WXTSTemperature:
+              seconds: 0
+            WXTSRelativeHumidity:
+              seconds: 0
+            WXTSAirPressure:
+              seconds: 0
+            WXTSRainAccumulation:
+              seconds: 0
+            WXTSRainIntensity:
+              seconds: 0
+    transforms:
+    - class: FormatTransform
+      kwargs:
+        format_str: "{WXTSWindDirectionAverage}, {WXTSWindSpeedMinimum}, {WXTSWindSpeedAverage}, {WXTSWindSpeedMaximum}, {WXTSTemperature}, {WXTSRelativeHumidity}, {WXTSAirPressure}, {WXTSRainAccumulation}, {WXTSRainIntensity}"
+    - class: TimestampTransform
+      kwargs:
+        time_format: "%Y/%m/%d, %H:%M:%S.%f"
+        sep: ", "
+    writers:
+    - class: FileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/csv/AT_WXTS_
+        split_by_time: True
+        header: "DATE_GMT, TIME_GMT, WXTS_Dm, WXTS_Sn, WXTS_Sm, WXTS_Sx, WXTS_Ta, WXTS_Ua, WXTS_Pa, WXTS_Rc, WXTS_Ri"
+        time_format: '%y%m%d_0000.csv'

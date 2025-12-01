@@ -1,0 +1,59 @@
+loggers:
+  tw_ingest_udp:
+    configs:
+      - tw_ingest_udp->on
+
+configs:
+  tw_ingest_udp->on:
+    routes:
+      - reader:
+          class: UDPReader
+          kwargs:
+            port: 57300
+        transforms:
+          - class: ParseTransform
+            kwargs:
+              definition_path: "/home/sssg/openrvdas_support/config/csv/devices/cnav.yaml"
+        writers:
+          - class: CachedDataWriter
+            kwargs:
+              data_server: localhost:8766
+
+      - reader:
+          class: UDPReader
+          kwargs:
+            port: 57301
+        transforms:
+          - class: ParseTransform
+            kwargs:
+              definition_path: "/home/sssg/openrvdas_support/config/csv/devices/gyro1.yaml"
+        writers:
+          - class: CachedDataWriter
+            kwargs:
+              data_server: localhost:8766
+
+      - reader:
+          class: UDPReader
+          kwargs:
+            port: 57304
+        transforms:
+          - class: ParseTransform
+            kwargs:
+              definition_path: "/home/sssg/openrvdas_support/config/csv/devices/wxtp.yaml"
+        writers:
+          - class: CachedDataWriter
+            kwargs:
+              data_server: localhost:8766
+
+      - reader:
+          class: UDPReader
+          kwargs:
+            port: 57404
+        transforms:
+          - class: ParseTransform
+            kwargs:
+              definition_path: "/home/sssg/openrvdas_support/config/csv/devices/wxts.yaml"
+        writers:
+          - class: CachedDataWriter
+            kwargs:
+              data_server: localhost:8766

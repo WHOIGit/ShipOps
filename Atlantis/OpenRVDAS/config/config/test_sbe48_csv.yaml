@@ -1,0 +1,24 @@
+loggers:
+  udp_test:
+    configs:
+    - udp_test->off
+    - udp_test->log
+modes:
+  'off':
+    udp_test: udp_test->off
+  'on':
+    udp_test: udp_test->log
+default_mode: 'on'
+configs:
+  udp_test->off: {}
+  udp_test->log:
+    name: udp_test->log
+    readers:
+    - class: UDPReader
+      kwargs:
+        port: 57302
+    writers:
+    - class: TextFileWriter
+      kwargs:
+        filename: /home/sssg/openrvdas_support/logs/udp_test.log
+        truncate: True

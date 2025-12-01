@@ -1,0 +1,42 @@
+{
+  "Latitude": {
+    "timestamp": 1764342518,
+    "value": "32\u00b0 42.400812&apos;",
+    "unit": "N"
+  },
+  "Longitude": {
+    "timestamp": 1764342518,
+    "value": "117\u00b0 14.184131&apos;",
+    "unit": "W"
+  },
+  "SBE45Temp": {
+    "timestamp": 1764342518,
+    "value": "19.18",
+    "unit": "\u00b0C"
+  },
+  "SBE45Sal": {
+    "timestamp": 1764342518,
+    "value": "0.05",
+    "unit": " PSU"
+  },
+  "Heading": {
+    "timestamp": 1764342518,
+    "value": "128",
+    "unit": "\u00b0"
+  },
+  "SBE48Temp": {
+    "timestamp": 1764342518,
+    "value": "17.5",
+    "unit": "\u00b0C"
+  },
+  "COG": {
+    "timestamp": 1764342518,
+    "value": "172.44",
+    "unit": "\u00b0"
+  },
+  "SOG": {
+    "timestamp": 1764342518,
+    "value": "0.0",
+    "unit": " kts"
+  }
+}

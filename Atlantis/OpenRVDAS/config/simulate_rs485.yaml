@@ -1,17 +1,14 @@
-#wxts:
-#  class: UDP
-#  port: 57504
-#  filebase: /home/priv_benjamin.foley/at20250718_1700.XTS
-#  use_timestamps: true
+# cnav:
+#   class: UDP
+#   port: 57001
+#   filebase: /home/mcarloni_admin/my_git/shipop_works/truewind/openrvdas/rawdata/at20250730_1500_stripped.GPS
 
-wxtp:
+# gyro:
+#   class: UDP
+#   port: 57002
+#   filebase: /home/mcarloni_admin/my_git/shipop_works/truewind/openrvdas/rawdata/at20250730_1500_stripped.HDT
+
+rs485:
   class: UDP
-  port: 57504
-  filebase: /home/priv_benjamin.foley/at20250718_1700.XTP
-  use_timestamps: true
-
-#flr:
-#  class: UDP
-#  port: 57504
-#  filebase: /home/priv_benjamin.foley/at20250718_1700.FLR
-#  use_timestamps: true
+  port: 57204
+  filebase: /home/sssg/openrvdas_support/logs/ar20250218_1000_sorted.rs485_all
